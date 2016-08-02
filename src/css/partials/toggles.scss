@@ -1,0 +1,105 @@
+// toggles on Container
+
+.menuOut {
+
+}
+
+.logoOut {
+  .logoHolder.positionFixed {
+    top: -50vh;
+  }
+
+  .buttonHolder.positionFixed {
+    top: -50vh;
+  }
+}
+
+.menuOutTop {
+  .positionCenter.backgroundGridOffWhite {
+  }
+
+  .menu.positionTopCenter {
+    top: -10vh;
+  }
+}
+
+.menuOutBottom {
+  .menu.positionBottom {
+    bottom: -10vh;
+  }
+}
+
+.menuOutLeft {
+
+  .menuLeft {
+      width: 10vw;
+      height:  100vh;
+      left: 0;
+  }
+
+  .logoHolder.floatLeft {
+    left: 10vw;
+  }
+}
+
+.menuOutRight {
+  .menuRight {
+      width: 10vw;
+      height:  100vh;
+      right: 0;
+  }
+
+  .logoHolder.floatRight {
+    right: 10vw;
+  }
+}
+
+// Right Out / Left Out //
+
+.CenterRightOut {
+  .module.positionCenterOut.positionAbsolute  {
+    left: 100%;
+    right: -100%;
+  }
+
+  .module.positionCenterRightOut {
+    left: 0%;
+  }
+}
+
+.CenterLeftOut {
+  .module.positionCenterOut.positionAbsolute  {
+    left: -100%;
+    right: 100%;
+  }
+
+  .module.positionCenterLeftOut {
+    left: 0;
+  }
+}
+
+.dribbbleListed {
+  .dribbble.fluid.heightQuarterStatic.widthQuarter {
+        height: 25vh;
+        width: 100%;
+  }
+}
+
+.moduleSideBarOut {
+  .moduleSideBar {
+    left: 0;
+  }
+}
+
+.logoWhiteSwitch {
+  .menu.backgroundGridYellow.positionAbsolute.positionBottom {
+    background: #fff;
+  }
+}
+
+.logoWhiteSwitch {
+  .menu.positionAbsolute.positionTopCenter {
+    background: $yellow;
+  }
+}
+

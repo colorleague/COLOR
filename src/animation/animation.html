@@ -1,0 +1,281 @@
+<div class="container"
+	ng:class="{'CenterRightOut' : CenterRightOutSwitch,
+			   'CenterLeftOut' : CenterLeftOutSwitch,
+			   'menuOut' : menuOutSwitch,
+			   'menuOutTop' : menuOutTopSwitch,
+			   'menuOutBottom' : menuOutBottomSwitch,
+			   'menuOutLeft' : menuOutLeftSwitch,
+			   'menuOutRight' : menuOutRightSwitch,
+			   'logoOut' : logoOutSwitch,
+			   'logoWhiteSwitch' : logoWhiteSwitch
+			}">
+
+			<div class="wrapper">
+
+			<!-- Background Layer -->
+			<div class="module backgroundGridOffWhite positionFixed positionCenter easing">
+				<div class="svgFloor"></div>
+
+				<man class="svgMan animated infinite pulse"></man>
+				<lady class="svgLady animated infinite pulse"></lady>
+
+				<man class="svgMan2 animated infinite pulse"></man>
+				<lady class="svgLady2 animated infinite pulse"></lady>
+				<!--
+				<desk class="svgDesk1"></desk>
+				<desk class="svgDesk2"></desk>
+				<desk class="svgDesk3"></desk>
+				<desk class="svgDesk4"></desk>
+				<lady class="svgLady1"></lady>
+				<lady class="svgLady2"></lady>
+				<lady class="svgLady3"></lady>
+				<lady class="svgLady4"></lady> -->
+			</div>
+
+			<!-- Interaction Layers -->
+			<div class="module positionAbsolute positionCenterOut easing">
+
+				<!-- logo out -->
+				<div class="logoHolder positionFixed easing">
+					<logo></logo>
+
+					<p class="leftText fontSizeThree fontColorOpacityGrey easing">
+
+					<span>Design</span>
+					<img class="iconSvg mini positionRelative" src="./svg/icons/yellow/arrow-down.svg">
+					</p>
+
+					<p class="rightText fontSizeThree fontColorOpacityGrey easing">
+					<span>Development</span>
+					<img class="iconSvg mini positionRelative" src="./svg/icons/yellow/arrow-down.svg">
+					</p>
+
+					<p class="leftText2 fontSizeThree fontColorOpacityGrey easing">
+
+					<span>Design</span>
+					<img class="iconSvg mini positionRelative" src="./svg/icons/yellow/arrow-down.svg">
+					</p>
+
+					<p class="rightText2 fontSizeThree fontColorOpacityGrey easing">
+					<span>Development</span>
+					<img class="iconSvg mini positionRelative" src="./svg/icons/yellow/arrow-down.svg">
+					</p>
+
+				</div>
+
+				<div class="buttonHolder positionFixed positionTopCenter easing">
+
+					<div class="infoHolder positionRelative fluid widthFull easing floatLeft text-align-center">
+						<p class="fontColorThird fontSizeThree">Located in <b> Atlanta, Ga</b>. Established in 2016, an <span class="underline">Independent</span> Design Studio.</p>
+					</div>
+
+						<div class="featButton easing floatLeft"
+
+							ng:click="CenterRightOutSwitch = !CenterRightOutSwitch; CenterLeftOutSwitch = false; menuOutBottomSwitch = !menuOutBottomSwitch"
+							>
+
+							<p class="featButtonText">Gone Fishin'</p>
+
+							<p class="featBeforeText fontColorThird">Go Left</p>
+
+							<span class="bubbleMenu below">
+								<div class="backgroundGridYellow fluid heightHalf widthFull">
+									<span class="icon backgroundGridWhite floatLeft"></span>
+									<span class="fontSizeThree fontColorSecondary">Nigel</span>
+								</div>
+								<div class="backgroundGridWhite fluid heightHalf widthFull">
+								</div>
+							</span>
+						</div>
+
+						<div class="featButton Mid easing floatRight"
+
+							ng:click="CenterLeftOutSwitch = !CenterLeftOutSwitch; CenterRightOutSwitch = false; menuOutTopSwitch = !menuOutTopSwitch"
+							>
+							<p class="featButtonText">or</p>
+						</div>
+
+						<div class="featButton easing floatRight"
+
+							ng:click="CenterLeftOutSwitch = !CenterLeftOutSwitch; CenterRightOutSwitch = false; menuOutTopSwitch = !menuOutTopSwitch"
+							>
+							<p class="featButtonText">Learn More</p>
+
+
+							<p class="featBeforeText fontColorThird">Go Right</p>
+
+							<span class="bubbleMenu top">
+								<div class="backgroundGridYellow fluid heightHalf widthFull">
+									<span class="icon backgroundGridWhite floatLeft"></span>
+									<span class="fontSizeThree fontColorSecondary">Nigel</span>
+								</div>
+								<div class="backgroundGridWhite fluid heightHalf widthFull">
+								</div>
+							</span>
+						</div>
+				</div>
+			</div>
+
+			<div class="module positionAbsolute positionCenterLeftOut easing">
+				<previewPage></previewPage>
+			</div>
+
+			<div class="module positionAbsolute positionCenterRightOut easing">
+				<previewPage></previewPage>
+			</div>
+
+	</div>
+
+
+	<!-- Pop Up -->
+	<div class="wrapper positionAbsolute positionPopup backgroundGridYellow easing" ng-class="{'active' : popup}">
+		<!-- Interaction Layers -->
+		<div class="module positionAbsolute positionCenter easing">
+			<div class="backgroundGridYellow fluid heightHalf widthFull">
+				
+			</div>
+			<div class="backgroundGridWhite fluid heightHalf widthQuarter floatLeft">
+				<h5 class="fontColorOpacityGrey fontSizeThree floatLeft">close</h5>
+				<p class="fontColorOpacityGrey fontSizeThree floatLeft">Quite a bit 
+					<span class="indexStamp positionAbsolute positionCenter backgroundGridYellow fontColorWhite fontSizeOne">1</span>of text to get the... "pallet" wet.</p>
+			</div>
+			<div class="backgroundGridOffWhite fluid heightHalf widthQuarter floatLeft">
+				<h5 class="fontColorOpacityGrey fontSizeThree floatLeft">close</h5>
+				<p class="fontColorOpacityGrey fontSizeThree floatLeft">Quite a bit 
+					<span class="indexStamp backgroundGridYellow fontColorWhite fontSizeOne">1</span>of text to get the... "pallet" wet.</p>
+			</div>
+			<div class="backgroundGridWhite fluid heightHalf widthQuarter floatLeft">
+				<h5 class="fontColorOpacityGrey fontSizeThree floatLeft">close</h5>
+				<p class="fontColorOpacityGrey fontSizeThree floatLeft">Quite a bit 
+					<span class="indexStamp positionAbsolute positionCenter backgroundGridYellow fontColorWhite fontSizeOne">1</span>of text to get the... "pallet" wet.</p>
+			</div>
+			<div class="backgroundGridOffWhite fluid heightHalf widthQuarter floatLeft">
+				<h5 class="fontColorOpacityGrey fontSizeThree floatLeft">close</h5>
+				<p class="fontColorOpacityGrey fontSizeThree floatLeft">Quite a bit 
+					<span class="indexStamp backgroundGridYellow fontColorWhite fontSizeOne">1</span>of text to get the... "pallet" wet.</p>
+			</div>
+		</div>
+	</div>
+
+	<!-- Pop Up -->
+	<div class="wrapper positionAbsolute positionPopup backgroundGridYellow overflowy easing" ng-class="{'active' : popup1}">
+
+		<teamPage ng-show="popup1"></teamPage>
+	</div>
+
+	<!-- Pop Up -->
+	<div class="wrapper positionAbsolute positionPopup backgroundGridYellow overflowy easing" ng-class="{'active' : popup2}">
+
+		<projectPage ng-show="popup2"></projectPage>
+	</div>
+
+	<!-- Pop Up -->
+	<div class="wrapper positionAbsolute positionPopup backgroundGridYellow overflowy easing" ng-class="{'active' : popup3}">
+
+		<postPage ng-show="popup3"></postPage>
+	</div>
+
+	<!-- Pop Up -->
+	<div class="wrapper positionAbsolute positionPopup backgroundGridYellow overflowy easing" ng-class="{'active' : popup4}">
+
+		<categoryPage ng-show="popup4"></categoryPage>
+	</div>
+
+	<!-- Pop Up -->
+	<div class="wrapper positionAbsolute positionPopup backgroundGridYellow overflowy easing" ng-class="{'active' : popup5}">
+
+		<stylePage ng-show="popup5"></stylePage>
+	</div>
+
+	<!-- Pop Up -->
+	<div class="wrapper positionAbsolute positionPopup backgroundGridYellow overflowy easing" ng-class="{'active' : popup6}">
+
+		<infoPage ng-show="popup6"></infoPage>
+	</div>
+
+	<!-- Pop Up -->
+	<div class="wrapper positionAbsolute positionPopup backgroundGridYellow overflowy easing" ng-class="{'active' : popup7}">
+
+		<projectdetailspage ng-show="popup7"></projectdetailspage>
+	</div>
+
+	<!-- Pop Up -->
+	<div class="wrapper positionAbsolute positionPopup backgroundGridYellow overflowy easing" ng-class="{'active' : popup8}">
+
+		<featuredetailspage ng-show="popup8"></featuredetailspage>
+	</div>
+
+	<!-- Pop Up -->
+	<div class="wrapper positionAbsolute positionPopup backgroundGridYellow overflowy easing" ng-class="{'active' : popup9}">
+
+		<icondetailspage ng-show="popup9"></icondetailspage>
+	</div>
+
+	<!-- Pop Up -->
+	<div class="wrapper positionAbsolute positionPopup backgroundGridYellow overflowy easing" ng-class="{'active' : popup10}">
+
+		<teamdetailspage ng-show="popup10"></teamdetailspage>
+	</div>
+
+	<!-- Pop Up -->
+	<div class="wrapper positionAbsolute positionPopup backgroundGridYellow overflowy easing" ng-class="{'active' : popup11}">
+
+		<appdetailspage ng-show="popup11"></appdetailspage>
+	</div>
+
+	<!-- Pop Up -->
+	<div class="wrapper positionAbsolute positionPopup backgroundGridYellow overflowy easing" ng-class="{'active' : popup12}">
+
+		<productdetailspage ng-show="popup12"></productdetailspage>
+	</div>
+
+	<!-- Pop Up -->
+	<div class="wrapper positionAbsolute positionPopup backgroundGridYellow overflowy easing" ng-class="{'active' : popup13}">
+
+		<postdetailspage ng-show="popup13"></postdetailspage>
+	</div>
+
+	<!-- Pop Up -->
+	<div class="wrapper positionAbsolute positionPopup backgroundGridYellow overflowy easing" ng-class="{'active' : popup14}">
+
+		<videodetailspage ng-show="popup14"></videodetailspage>
+	</div>
+
+	<!-- Pop Up -->
+	<div class="wrapper positionAbsolute positionPopup backgroundGridYellow overflowy easing" ng-class="{'active' : popup15}">
+
+		<resumedetailspage ng-show="popup15"></resumedetailspage>
+	</div>
+
+	<!-- Pop Up -->
+	<div class="wrapper positionAbsolute positionPopup backgroundGridYellow overflowy easing" ng-class="{'active' : popup16}">
+
+		<plannerdetailspage ng-show="popup16"></plannerdetailspage>
+	</div>
+
+	<!-- Pop Up -->
+	<div class="wrapper positionAbsolute positionPopup backgroundGridYellow overflowy easing" ng-class="{'active' : popup17}">
+
+		<howdetailspage ng-show="popup17"></howdetailspage>
+	</div>
+
+	<!-- designer member -->
+	<div class="wrapper positionAbsolute positionPopup backgroundGridYellow overflowy easing" ng-class="{'active' : popup18}">
+
+		<memeberdetailspage ng-show="popup18"></memeberdetailspage>
+	</div>
+
+	<!-- Pop Over -->
+	<div ng-show="popover" class="wrapper positionAbsolute positionPopover positionTopCenter backgroundOpacityGrey easing">
+
+		<popPage ng-show="popover"></popPage>
+
+	</div>
+
+	<menutop></menutop>
+	<menubread></menubread>
+	<menuleft></menuleft>
+	<menuright></menuright>
+	<menubottom></menubottom>
+
+</div>

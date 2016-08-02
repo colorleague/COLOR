@@ -1,0 +1,47 @@
+<ul class="fluid widthStatic">
+	<li class="dribbble fluid heightQuarterStatic widthQuarter floatLeft" ng-repeat="item in wordpress | limitTo:pagination.count | orderBy:item.ID | filter: filters">
+
+		<div class="spacedTiny backgroundGridWhite box-shadow border-radius">
+
+			<div class="spacedTiny backgroundWhite ">
+
+				<!-- Post Info -->
+				<div ng-click="popPreview = !popPreview" class="fluid widthFull heightFull">
+
+					<div class="photo">
+						<img ng-src="{{item.featured_image.source}}">
+
+						<div class="infoOverlay">
+		          			<h2 class="fontRegularOne fontColorThird">{{item.title}} <span>$12</span></h2>
+		          			<h2 class="fontRegularOne fontColorThird">{{item.terms.category[0].name}}</h2>
+		          		</div>
+
+					</div>
+
+					<div class="info">
+	          			<h2 class="fontRegularOne fontColorThird">{{item.title}} <span>$12</span></h2>
+		          		<h2 class="fontRegularOne fontColorThird">{{item.terms.category[0].name}}</h2>
+	          		</div>
+
+	          	</div>
+
+          	</div>
+
+      	</div>
+
+      	<postpreviewpage></postpreviewpage>
+	</li>
+
+	<li class="fluid heightQuarterStatic widthQuarter floatLeft" ng-click="paginationToggle();">	   <!-- Post Pagination -->
+
+		<div class="spacedTiny backgroundGridYellow box-shadow border-radius">
+			<div class="spacedSmall">
+				<h2 class="fluid widthFull fontColorWhite fontSizeSix floatLeft">
+					More
+				</h2>
+          	</div>
+      	</div>
+
+	</li>
+
+</ul>

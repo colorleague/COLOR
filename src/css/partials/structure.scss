@@ -1,0 +1,255 @@
+// Window Sizes
+$windowWidth: 100vw;
+$windowHeight: 100vh;
+
+$moduleWidth: 100%;
+$moduleHeight: 100%;
+
+// Body
+
+body, .container, .wrapper {
+  width: $windowWidth;
+  height: $windowHeight;
+  overflow: hidden;
+}
+
+hr {
+    display: block;
+    margin: 0;
+    visibility: hidden;
+    height: 2.5vh;
+    width: 100%;
+    border: none;
+    float: left;
+}
+
+body::-webkit-scrollbar {
+    visibility: hidden;
+}
+ 
+body::-webkit-scrollbar-track {
+   visibility: hidden;
+}
+ 
+body::-webkit-scrollbar-thumb {
+  visibility: hidden;
+}
+
+svg {
+  min-width: 100%;
+  max-height: 100%;
+}
+
+.overflowy {
+	overflow-y: scroll;
+}
+
+.module {
+  width: $moduleWidth;
+  height: $moduleHeight;
+}
+
+.fluid {
+	position: relative;
+}
+
+.fluid.widthFull {
+	width: 100%;
+}
+
+.fluid.widthStatic {
+	width: 100%;
+	max-width: 1000px;
+	margin: auto;
+}
+
+.widthThreeQuarter {
+	width: 75%;
+}
+
+.widthThird {
+    width: 33%;
+}
+
+.fluid.widthHalf {
+	width: 50%;
+}
+
+.fluid.widthQuarter {
+	width: 25%;
+}
+
+.fluid.widthEight {
+	width: 12.5%;
+}
+
+.fluid.heightFullStatic {
+    height: 100%;
+    min-height : 100%;
+    max-height: 100vh;
+    margin: auto;
+}
+
+.fluid.heightHalfFlex {
+	height: auto;
+	min-height: 50vh;
+}
+
+.fluid.heightAnyFlex {
+    height: auto;
+    min-height: 0vh;
+}
+
+.fluid.heightFullFlex {
+	height: auto;
+	min-height: 100vh;
+}
+
+.fluid.heightQuarterStatic {
+	height: 25vh;
+}
+
+.fluid.heightEightStatic {
+    height: 12.5vh;
+}
+
+.fluid.heightFull {
+	height: 100%;
+}
+
+.fluid.heightHalf {
+	height: 50%;
+}
+
+.fluid.widthFullFlexSpacedSmall {
+    margin: auto;
+    max-width: calc(100% - 5vw);
+    width: 100%;
+    padding-right: 2.5vw;
+    padding-left: 2.5vw;
+}
+
+
+.fluid.heightFullFlexSpacedSmall {
+    margin: auto;
+    max-height: calc(50% - 5vh);
+    height: 100%;
+    padding-top: 2.5vh;
+    padding-bottom: 2.5vh;
+}
+
+.fluid.widthHalfFlexSpacedMid {
+    margin: auto;
+    max-width: calc(50% - 10vw);
+    width: 100%;
+    padding-right: 5vw;
+    padding-left: 5vw;
+}
+
+.fluid.widthHalfFlexSpacedSmall {
+    margin: auto;
+    max-width: calc(50% - 5vw);
+    width: 100%;
+    padding-right: 2.5vw;
+    padding-left: 2.5vw;
+}
+
+.fluid.heightHalfFlexSpacedMid {
+    margin: auto;
+    min-height: calc(50% - 10vh);
+    height: 100%;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+}
+
+.fluid.heightHalfFlexSpacedSmall {
+    margin: auto;
+    min-height: calc(50% - 5vh);
+    height: 100%;
+    padding-top: 2.5vh;
+    padding-bottom: 2.5vh;
+}
+
+.fluid.heightQuarter {
+	height: 25%;
+}
+
+.fluid.heightEight {
+	height: 12.5%;
+}
+
+.floatLeft {
+  float: left;
+}
+
+.floatRight {
+  float: right;
+}
+
+.spacedTiny {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    height: calc(100% - 2.5vh);
+    width: calc(100% - 2.5vh);
+}
+
+.spacedSmall {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    height: calc(100% - 5vh);
+    width: calc(100% - 5vh);
+}
+
+.spacedLeftBordered {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    height: calc(100% - 1px);
+    width: calc(100% - 1px);
+    border-left: 1px solid #fcd829;
+}
+
+.spacedBottomBordered {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    height: calc(100% - 1px);
+    width: calc(100% - 1px);
+    border-bottom: 1px solid #fcd829;
+}
+
+.spacedMid {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    height: calc(100% - 10vh);
+    width: calc(100% - 10vh);
+}
+
+.spacedLarge {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    height: calc(100% - 15vh);
+    width: calc(100% - 15vh);
+}
