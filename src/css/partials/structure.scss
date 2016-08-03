@@ -7,7 +7,7 @@ $moduleHeight: 100%;
 
 // Body
 
-body, .container, .wrapper {
+body, .container, .wrapper  {
   width: $windowWidth;
   height: $windowHeight;
   overflow: hidden;
@@ -85,7 +85,7 @@ svg {
 
 .fluid.heightFullStatic {
     height: 100%;
-    min-height : 100%;
+    min-height : 100vh;
     max-height: 100vh;
     margin: auto;
 }
@@ -132,7 +132,7 @@ svg {
 
 .fluid.heightFullFlexSpacedSmall {
     margin: auto;
-    max-height: calc(50% - 5vh);
+    max-height: calc(100% - 5vh);
     height: 100%;
     padding-top: 2.5vh;
     padding-bottom: 2.5vh;

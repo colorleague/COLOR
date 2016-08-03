@@ -79,6 +79,11 @@ span.textGrey {
     text-shadow: 0vh 0.25vh 0.25vh rgba(191, 107, 62, 0.25);
 }
 
+.text-shadow {
+    text-shadow: 0vh 0.25vh 0.25vh rgba(191, 107, 62, 0.25);
+}
+
+
 .opacity1 {
     opacity: .1;
 }
@@ -149,6 +154,12 @@ body {
 
 .backgroundGridYellow {
     background: $yellow url("/svg/grid.svg");
+    background-repeat: repeat;
+    background-position: 50% 0;
+}
+
+.backgroundGridBlue {
+    background: $colorOpacityBlue url("/svg/grid.svg");
     background-repeat: repeat;
     background-position: 50% 0;
 }

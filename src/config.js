@@ -283,6 +283,38 @@ app.directive("plannerdetailspage", function(){
   }
 });
 
+// landing details
+app.directive("landingdetailspage", function(){
+  return {
+    restrict: 'E',
+    template: require('directives/pages/landingdetails.html')
+  }
+});
+
+// landing details two
+app.directive("landingdetailstwopage", function(){
+  return {
+    restrict: 'E',
+    template: require('directives/pages/landingdetailstwo.html')
+  }
+});
+
+// landing details three
+app.directive("landingdetailsthreepage", function(){
+  return {
+    restrict: 'E',
+    template: require('directives/pages/landingdetailsthree.html')
+  }
+});
+
+// landing details four
+app.directive("landingdetailsfourpage", function(){
+  return {
+    restrict: 'E',
+    template: require('directives/pages/landingdetailsfour.html')
+  }
+});
+
 // Preview
 app.directive("postpreviewpage", function(){
 	return {

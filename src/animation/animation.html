@@ -7,7 +7,11 @@
 			   'menuOutLeft' : menuOutLeftSwitch,
 			   'menuOutRight' : menuOutRightSwitch,
 			   'logoOut' : logoOutSwitch,
-			   'logoWhiteSwitch' : logoWhiteSwitch
+			   'logoWhiteSwitch' : logoWhiteSwitch,
+			   	'popup19' : popup19,
+			   	'popup20' : popup20,
+			   	'popup21' : popup21,
+			   	'popup22' : popup22
 			}">
 
 			<div class="wrapper">
@@ -16,11 +20,11 @@
 			<div class="module backgroundGridOffWhite positionFixed positionCenter easing">
 				<div class="svgFloor"></div>
 
-				<man class="svgMan animated infinite pulse"></man>
-				<lady class="svgLady animated infinite pulse"></lady>
+				<man class="svgMan easing animated infinite pulse"></man>
+				<lady class="svgLady easing animated infinite pulse"></lady>
 
-				<man class="svgMan2 animated infinite pulse"></man>
-				<lady class="svgLady2 animated infinite pulse"></lady>
+				<man class="svgMan2 easing animated infinite pulse"></man>
+				<lady class="svgLady2 easing animated infinite pulse"></lady>
 				<!--
 				<desk class="svgDesk1"></desk>
 				<desk class="svgDesk2"></desk>
@@ -39,25 +43,25 @@
 				<div class="logoHolder positionFixed easing">
 					<logo></logo>
 
-					<p class="leftText fontSizeThree fontColorOpacityGrey easing">
+					<p ng:click="popup22 = !popup22; logoOutSwitch = !logoOutSwitch;" class="animatedlong dela15 infinite pulse leftText fontSizeThree fontColorOpacityGrey easing">
 
 					<span>Design</span>
 					<img class="iconSvg mini positionRelative" src="./svg/icons/yellow/arrow-down.svg">
 					</p>
 
-					<p class="rightText fontSizeThree fontColorOpacityGrey easing">
+					<p ng:click="popup21 = !popup21; logoOutSwitch = !logoOutSwitch;" class="animatedlong dela10 infinite pulse rightText fontSizeThree fontColorOpacityGrey easing">
 					<span>Development</span>
 					<img class="iconSvg mini positionRelative" src="./svg/icons/yellow/arrow-down.svg">
 					</p>
 
-					<p class="leftText2 fontSizeThree fontColorOpacityGrey easing">
+					<p ng:click="popup20 = !popup20; logoOutSwitch = !logoOutSwitch;" class="animatedlong dela5 infinite pulse leftText2 fontSizeThree fontColorOpacityGrey easing">
 
-					<span>Design</span>
+					<span>Content</span>
 					<img class="iconSvg mini positionRelative" src="./svg/icons/yellow/arrow-down.svg">
 					</p>
 
-					<p class="rightText2 fontSizeThree fontColorOpacityGrey easing">
-					<span>Development</span>
+					<p ng:click="popup19 = !popup19; logoOutSwitch = !logoOutSwitch;" class="animatedlong dela20 infinite pulse rightText2 fontSizeThree fontColorOpacityGrey easing">
+					<span>Graphic</span>
 					<img class="iconSvg mini positionRelative" src="./svg/icons/yellow/arrow-down.svg">
 					</p>
 
@@ -264,6 +268,31 @@
 
 		<memeberdetailspage ng-show="popup18"></memeberdetailspage>
 	</div>
+
+	<!-- landing member -->
+	<div class="wrapper positionAbsolute positionPopup overflowy easing" ng-class="{'active' : popup19}">
+
+		<landingdetailspage ng-show="popup19"></landingdetailspage>
+	</div>
+
+	<!-- landing member -->
+	<div class="wrapper positionAbsolute positionPopup overflowy easing" ng-class="{'active' : popup20}">
+
+		<landingdetailstwopage ng-show="popup20"></landingdetailstwopage>
+	</div>
+
+	<!-- landing dev member -->
+	<div class="wrapper positionAbsolute positionPopup overflowy easing" ng-class="{'active' : popup21}">
+
+		<landingdetailsthreepage ng-show="popup21"></landingdetailsthreepage>
+	</div>
+
+	<!-- landing design member -->
+	<div class="wrapper positionAbsolute positionPopup overflowy easing" ng-class="{'active' : popup22}">
+
+		<landingdetailsfourpage ng-show="popup22"></landingdetailsfourpage>
+	</div>
+
 
 	<!-- Pop Over -->
 	<div ng-show="popover" class="wrapper positionAbsolute positionPopover positionTopCenter backgroundOpacityGrey easing">

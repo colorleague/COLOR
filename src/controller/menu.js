@@ -4,6 +4,19 @@ export default function($scope, $http, $state ) {
 		console.log(this);
 	}
 
+	// landing popup close
+	$scope.popupclose = function() {
+		$scope.popup19 = false,
+		$scope.popup20 = false,
+		$scope.popup21 = false,
+		$scope.popup22 = false,
+		$scope.logoOutSwitch = false
+	}
+
+	$scope.showParentheader = function(id) {
+    	return  ! (popup19 === true || popup20 === true || popup21 === true || popup22 === true);
+ 	}
+
 	$scope.foo();
 
 	// init

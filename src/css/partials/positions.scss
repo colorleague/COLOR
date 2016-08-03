@@ -83,6 +83,17 @@
   @include positionLeft;
 }
 
+// Left Center
+@mixin positionLeftCenter {
+  left: 0;
+  top:0;
+  bottom:0;
+}
+
+.positionLeftCenter {
+  @include positionLeftCenter;
+}
+
 // Top
 @mixin positionTopCenter {
 	top: 0;

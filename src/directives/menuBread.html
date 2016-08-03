@@ -1,8 +1,4 @@
 <div class="menuBread positionAbsolute positionBread">
-
-	<img class="button positionRelative floatLeft" src="./svg/icons/yellow/arrow-left.svg">
-	<h5 class="fontColorOpacityGrey fontSizeThree floatLeft">Title</h5>
-
 	<!-- Close Breadcrumb -->
 	<!-- popup 1 -->
 	<div ng-show="popup1" ng-click="popup1 = false">
@@ -22,34 +18,145 @@
 	<h5 class="fontColorOpacityGrey fontSizeThree floatLeft">close</h5>
 	</div>
 
+	<!-- left hide from popup 19, 20, 21, 22 left back & close -->
+	<div ng-hide="popup19 || popup20 || popup21 || popup22" ng-click="popupclose();">
 
-	<div class="button mini positionRelative floatLeft">
-		<p class="fontColorThird fontSizeOne text-align-center">Yt</p>
-		<span class="bubbleMenu below">
-			<div class="backgroundGridYellow fluid heightHalf widthFull">
-				<span class="icon backgroundGridWhite floatLeft"></span>
-					<p class="fontColorThird fontSizeThree floatLeft">Top</p>
-			</div>
-			<div class="backgroundGridWhite fluid heightHalf widthFull">
-			</div>
-		</span>
+		<img class="button tiny positionRelative floatLeft" src="./svg/icons/yellow/arrow-left.svg">
+		<div class="button auto positionRelative floatLeft">
+			<p class="fontColorThird fontSizeOne text-align-center">Home</p>
+			<span class="bubbleMenu below">
+				<div class="backgroundGridYellow fluid heightHalf widthFull">
+					<span class="icon backgroundGridWhite floatLeft"></span>
+						<p class="fontColorThird fontSizeThree floatLeft">Top</p>
+				</div>
+				<div class="backgroundGridWhite fluid heightHalf widthFull">
+				</div>
+			</span>
+		</div>
+
+		<img class="button mini positionRelative floatLeft" src="./svg/icons/yellow/arrow-close.svg">
+		<div class="button tiny positionRelative floatLeft">
+			<p class="fontColorThird fontSizeOne text-align-center">Close</p>
+			<span class="bubbleMenu below">
+				<div class="backgroundGridYellow fluid heightHalf widthFull">
+					<span class="icon backgroundGridWhite floatLeft"></span>
+						<p class="fontColorThird fontSizeThree floatLeft">Top</p>
+				</div>
+				<div class="backgroundGridWhite fluid heightHalf widthFull">
+				</div>
+			</span>
+		</div>
 	</div>
 
 
-	<img class="button mini positionRelative floatRight" src="./svg/icons/yellow/arrow-right.svg">
-	<h5 class="fontColorOpacityGrey fontSizeThree floatRight">Right</h5>
+	<!-- left popup 19, 20, 21, 22 left back & close -->
+	<div ng-show="popup19 || popup20 || popup21 || popup22" ng-click="popupclose();">
 
-	<img class="button mini positionRelative floatRight" src="./svg/icons/yellow/arrow-plus.svg">
+		<img class="button tiny positionRelative floatLeft" src="./svg/icons/yellow/arrow-left.svg">
+		<div class="button tiny positionRelative floatLeft">
+			<p class="fontColorThird fontSizeOne text-align-center">Story</p>
+			<span class="bubbleMenu below">
+				<div class="backgroundGridYellow fluid heightHalf widthFull">
+					<span class="icon backgroundGridWhite floatLeft"></span>
+						<p class="fontColorThird fontSizeThree floatLeft">Top</p>
+				</div>
+				<div class="backgroundGridWhite fluid heightHalf widthFull">
+				</div>
+			</span>
+		</div>
+
+		<img class="button mini positionRelative floatLeft" src="./svg/icons/yellow/arrow-close.svg">
+		<div class="button tiny positionRelative floatLeft">
+			<p class="fontColorThird fontSizeOne text-align-center">Close</p>
+			<span class="bubbleMenu below">
+				<div class="backgroundGridYellow fluid heightHalf widthFull">
+					<span class="icon backgroundGridWhite floatLeft"></span>
+						<p class="fontColorThird fontSizeThree floatLeft">Top</p>
+				</div>
+				<div class="backgroundGridWhite fluid heightHalf widthFull">
+				</div>
+			</span>
+		</div>
+	</div>
+
+	<!-- right popup 19, 20, 21, 22 left back & close -->
+	<div class="floatRight" ng-show="popup19 || popup20 || popup21 || popup22" ng-click="popupclose();">
+
+		<img class="button tiny positionRelative floatLeft" src="./svg/icons/yellow/arrow-left.svg">
+		<div class="button auto positionRelative floatLeft">
+			<p class="fontColorThird fontSizeOne text-align-center">Close</p>
+			<span class="bubbleMenu below">
+				<div class="backgroundGridYellow fluid heightHalf widthFull">
+					<span class="icon backgroundGridWhite floatLeft"></span>
+						<p class="fontColorThird fontSizeThree floatLeft">Top</p>
+				</div>
+				<div class="backgroundGridWhite fluid heightHalf widthFull">
+				</div>
+			</span>
+		</div>
+
+		<img class="button mini positionRelative floatLeft" src="./svg/icons/yellow/arrow-close.svg">
+
+		<div class="button tiny positionRelative floatLeft">
+			<p class="fontColorThird fontSizeOne text-align-center">Story</p>
+			<span class="bubbleMenu below">
+				<div class="backgroundGridYellow fluid heightHalf widthFull">
+					<span class="icon backgroundGridWhite floatLeft"></span>
+						<p class="fontColorThird fontSizeThree floatLeft">Top</p>
+				</div>
+				<div class="backgroundGridWhite fluid heightHalf widthFull">
+				</div>
+			</span>
+		</div>
+
+		<img class="button tiny positionRelative floatLeft" src="./svg/icons/yellow/arrow-right.svg">
+	</div>
+
+	<!-- hide right popup 19, 20, 21, 22 left back & close -->
+	<div class="floatRight" ng-hide="popup19 || popup20 || popup21 || popup22" ng-click="popupclose();">
+
+		<img class="button tiny positionRelative floatLeft" src="./svg/icons/yellow/arrow-left.svg">
+		<div class="button tiny positionRelative floatLeft">
+			<p class="fontColorThird fontSizeOne text-align-center">Close</p>
+			<span class="bubbleMenu below">
+				<div class="backgroundGridYellow fluid heightHalf widthFull">
+					<span class="icon backgroundGridWhite floatLeft"></span>
+						<p class="fontColorThird fontSizeThree floatLeft">Top</p>
+				</div>
+				<div class="backgroundGridWhite fluid heightHalf widthFull">
+				</div>
+			</span>
+		</div>
+
+		<img class="button mini positionRelative floatLeft" src="./svg/icons/yellow/arrow-close.svg">
+
+		<div class="button auto positionRelative floatLeft">
+			<p class="fontColorThird fontSizeOne text-align-center">Home</p>
+			<span class="bubbleMenu below">
+				<div class="backgroundGridYellow fluid heightHalf widthFull">
+					<span class="icon backgroundGridWhite floatLeft"></span>
+						<p class="fontColorThird fontSizeThree floatLeft">Top</p>
+				</div>
+				<div class="backgroundGridWhite fluid heightHalf widthFull">
+				</div>
+			</span>
+		</div>
+
+		<img class="button tiny positionRelative floatLeft" src="./svg/icons/yellow/arrow-right.svg">
+	</div>
 
 </div>
-
 <!-- Bottom Bread -->
 <div class="menuBread positionAbsolute positionBreadBottom">
+
+	<!-- popup 14 hide -->
+	<div ng-hide="popup14" ng-click="popup14 = false">
+		<img class="button mini positionRelative floatLeft" src="./svg/icons/yellow/arrow-up.svg">
+		<h5 class="fontColorOpacityGrey fontSizeThree floatLeft">Swicths?</h5>
+	</div>
+
 	<img class="button mini positionRelative floatRight" src="./svg/icons/yellow/arrow-down.svg">
 	<h5 class="fontColorOpacityGrey fontSizeThree floatRight">Switches</h5>
 
-
-	<img class="button mini positionRelative floatLeft" src="./svg/icons/yellow/arrow-up.svg">
-	<h5 class="fontColorOpacityGrey fontSizeThree floatLeft">Swicths?</h5>
 
 </div>

@@ -25,6 +25,11 @@ $breakpoint-phone: 500px;
 
 @media (max-width: $breakpoint-phone) {
 
+  .menuRight, .menuLeft {
+    width: 50%;
+    z-index: 100;
+  }
+
   .resizeHeightFull.fluid.heightHalf {
     height: 100%;
   }

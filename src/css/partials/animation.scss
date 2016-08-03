@@ -34,21 +34,31 @@
   animation-fill-mode: both;
 }
 
-.animatedLong {
-  -webkit-animation-duration: 5s;
-  animation-duration: 5s;
+.animatedlong {
+  -webkit-animation-duration: 2.5s;
+  animation-duration: 2.5s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
 }
 
-.animatedVeryLong {
+.animatedverylong {
   -webkit-animation-duration: 10s;
   animation-duration: 10s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
 }
 
-.animated.infinite, .animatedLong.infinite, .animatedVeryLong.infinite {
+.animated.infinite {
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+.animatedlong.infinite {
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+.animatedverylong.infinite {
   -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
 }

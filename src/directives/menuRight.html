@@ -1,4 +1,6 @@
-			<div class="menuRight backgroundGridWhite positionAbsolute positionRight easing">
+			<div class="menuRight backgroundGridWhite positionAbsolute positionRight easing"
+				 ng-mouseenter="menuOutRightSwitch = true"
+				 ng-mouseleave="menuOutRightSwitch = false">
 				<ul class="list">
 
 					<li ng:click="menuOutRightSwitch = !menuOutRightSwitch">
@@ -49,7 +51,9 @@
 								</div>
 							</span>
 						</li>
-						<li ng:click="popup8 = !popup8">
+
+						<!-- feature pop link -->
+						<li ng:click="popup8 = !popup8; logoOutSwitch = false;">
 							<span class="imageicon"><img class="positionRelative floatLeft" src="./svg/icons/white/arrow-close.svg"></span>feature details
 							<span class="bubbleMenu">
 								<div class="backgroundGridYellow fluid heightHalf widthFull">
@@ -58,6 +62,7 @@
 								</div>
 							</span>
 						</li>
+
 						<li ng:click="popup9 = !popup9">
 							<span class="imageicon"><img class="positionRelative floatLeft" src="./svg/icons/white/arrow-close.svg"></span>icon details
 							<span class="bubbleMenu">

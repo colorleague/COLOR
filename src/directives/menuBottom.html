@@ -1,10 +1,26 @@
-<div ng-hide="popup2" class="menu backgroundGridYellow positionAbsolute positionBottom">
+<div class="menu backgroundGridYellow positionAbsolute positionBottom">
 
 	<div class="logoHolder positionRelative floatLeft">
 		<logoshort ng-show="logoWhiteSwitch"></logoshort>
 		<logoshortwhite ng-hide="logoWhiteSwitch"></logoshortwhite>
 	</div>
-	<div class="button positionRelative floatLeft">
+
+	<!-- popup 14 -->
+	<div ng:show="popup14">
+		<div  class="button positionRelative floatLeft">
+			<p class="fontColorThird fontSizeThree floatLeft">Joe Rogan Experience #829 - Wayne Federman</p>
+			<span class="bubbleMenu above">
+				<div class="backgroundGridYellow fluid heightHalf widthFull">
+					<span class="icon backgroundGridWhite floatLeft"></span>
+						<p class="fontColorThird fontSizeThree floatLeft">Top</p>
+				</div>
+				<div class="backgroundGridWhite fluid heightHalf widthFull">
+				</div>
+			</span>
+		</div>
+	</div>
+
+	<div ng:hide="popup14" class="button positionRelative floatLeft">
 		<img class="iconSvg positionRelative floatLeft" src="./svg/icons/white/arrow-left.svg">
 		<span class="bubbleMenu above">
 			<div class="backgroundGridYellow fluid heightHalf widthFull">
@@ -16,7 +32,7 @@
 		</span>
 	</div>
 
-	<div class="button positionRelative floatLeft">
+	<div ng:hide="popup14" class="button positionRelative floatLeft">
 		<img class="iconSvg positionRelative floatLeft" src="./svg/icons/white/arrow-down.svg">
 		<span class="bubbleMenu above">
 			<div class="backgroundGridYellow fluid heightHalf widthFull">
@@ -28,8 +44,8 @@
 		</span>
 	</div>
 
-	<div class="button positionRelative floatLeft">
-		<img class="iconSvg positionRelative floatLeft" src="./svg/icons/white/arrow-down.svg">
+	<div ng:hide="popup14" class="button positionRelative floatLeft">
+		<img class="iconSvg positionRelative floatLeft" src="./svg/icons/white/arrow-right.svg">
 		<span class="bubbleMenu above">
 			<div class="backgroundGridYellow fluid heightHalf widthFull">
 				<span class="icon backgroundGridWhite floatLeft"></span>
@@ -40,7 +56,7 @@
 		</span>
 	</div>
 
-	<div class="button positionRelative floatLeft">
+	<div ng:hide="popup14" class="button positionRelative floatLeft">
 		<img class="iconSvg positionRelative floatLeft" src="./svg/icons/white/arrow-up.svg">
 		<span class="bubbleMenu above">
 			<div class="backgroundGridYellow fluid heightHalf widthFull">
@@ -53,9 +69,8 @@
 	</div>
 
 
-	<ul class="list">
+	<ul ng:hide="popup14" class="list">
 		<li class="backgroundOnHoverTeam">
-			<img class="iconSvg positionRelative floatLeft" src="./svg/icons/white/arrow-up.svg">
 			<p class="fontColorThird fontSizeThree floatLeft">Top</p>
 
 			<span class="bubbleMenu above">
@@ -70,7 +85,7 @@
 		</li>
 	</ul>
 
-	<span class="scorllDownTab">
+	<span class="animated infinite pulse scorllDownTab tiny">
 		<img class="positionRelative floatRight" src="./svg/icons/white/arrow-down.svg">
 	</span>
 

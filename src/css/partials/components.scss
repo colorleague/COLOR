@@ -187,6 +187,22 @@
     }
 }
 
+.featButton.mini {
+	margin: 0 .5vh;
+
+	p.featButtonText.mini {
+	    padding: 0 .5vw
+	}
+}
+
+.featButton.mini.first {
+	margin:0 .5vh 0 0;
+}
+
+.featButton.mini.last {
+	margin: 0 0 0 .5vh;
+}
+
 .featButton.mix {
 	background: none;
 
@@ -335,6 +351,46 @@
 	top: 0vh;
 }
 
+.authorBubble {
+	height: 10vh;
+	width: 10vh;
+	border-radius: 1vh;
+	margin: auto;
+	overflow: hidden;
+}
+
+.authorBubble.reply {
+	margin: 0 0 0 5%;
+}
+
+.authorBubbleInfo {
+    height: 10vh;
+    width: auto;
+    border-radius: 1vh;
+    padding: 1vh 0vh 0vh 1vh;
+    overflow: hidden;
+}
+
+hr.line {
+    display: block;
+    margin: 2.5vh 0;
+    visibility: visible;
+    height: 0;
+    width: 100%;
+    float: left;
+    border-bottom: 1px solid $yellow;
+}
+
+hr.lineGrey {
+    display: block;
+    margin: 2.5vh 0;
+    visibility: visible;
+    height: 0;
+    width: 100%;
+    float: left;
+    border-bottom: 1px solid $colorOpacityGrey;
+}
+
 .menu .featButton {
     margin: 2.5vh 1.25vw;
 }
@@ -474,6 +530,42 @@
 	z-index: 1;
 }
 
+.annotate.first {
+	top: 10%;
+	bottom: auto;
+	left: 0;
+	right: 50%;
+}
+
+.annotate.second {
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+
+.annotate.third {
+	top: auto;
+	bottom: 0;
+	left: 50%;
+	right: 0;
+}
+
+.annotate.fourth {
+	top: 10%;
+	bottom: auto;
+	left: 50%;
+	right: 0;
+}
+
+.annotate.fifth {
+	top: auto;
+	bottom: 0;
+	left: 0;
+	right: 50%;
+}
+
+
 .annotateMenu {
 	display: block;
 	position: absolute;
@@ -498,16 +590,19 @@
 }
 
 .cardLeft {
-    width: 30%;
+    width: 40%;
+    height: 75%;
     right: auto;
     position: absolute;
     left: 5%;
 	bottom: -10%;
     margin: auto;
+    opacity: .5;
 }
 
 .cardCenter {
 	width: 40%;
+	height: 75%;
 	left: 0;
 	right: 0;
 	bottom: 0%;
@@ -516,12 +611,14 @@
 }
 
 .cardRight {
-    width: 30%;
+    width: 40%;
+    height: 75%;
     right: 5%;
     position: absolute;
     left: auto;
 	bottom: -10%;
     margin: auto;
+    opacity: .5;
 }
 
 .cardBubble {
@@ -537,6 +634,20 @@
     background: #fafafa;	
 }
 
+.scorllDownTab.tiny {
+    position: absolute;
+    top: auto;
+    bottom: 3.75vh;
+    border-radius: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    height: 2.5vh;
+    width: 2.5vh;
+    padding: 2.5vh;
+    background: $yellow;
+    border-radius: 50%;
+}
 
 .scorllDownTab {
     position: absolute;

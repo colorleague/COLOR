@@ -1,4 +1,6 @@
-<div class="menuLeft backgroundGridYellow positionAbsolute positionLeft easing">
+<div class="menuLeft backgroundGridYellow positionAbsolute positionLeft easing"
+				 ng-mouseenter="menuOutLeftSwitch = true"
+				 ng-mouseleave="menuOutLeftSwitch = false">
 	<ul class="list">
 		<li ng:click="menuOutLeftSwitch = !menuOutLeftSwitch">
 			<span class="imageicon"><img class="positionRelative floatLeft" src="./svg/icons/white/arrow-close.svg"></span>close
@@ -89,6 +91,36 @@
 
 		<li ng:click="popup18 = !popup18">
 			<span class="imageicon"><img class="positionRelative floatLeft" src="./svg/icons/white/arrow-close.svg"></span>member details
+			<span class="bubbleMenu">
+				<div class="backgroundGridYellow fluid heightHalf widthFull">
+				</div>
+				<div class="backgroundGridWhite fluid heightHalf widthFull">
+				</div>
+			</span>
+		</li>
+
+		<li ng:click="popup19 = !popup19">
+			<span class="imageicon"><img class="positionRelative floatLeft" src="./svg/icons/white/arrow-close.svg"></span>landing details
+			<span class="bubbleMenu">
+				<div class="backgroundGridYellow fluid heightHalf widthFull">
+				</div>
+				<div class="backgroundGridWhite fluid heightHalf widthFull">
+				</div>
+			</span>
+		</li>
+
+		<li ng:click="menuOutBottomSwitch = !menuOutBottomSwitch">
+			<span class="imageicon"><img class="positionRelative floatLeft" src="./svg/icons/white/arrow-close.svg"></span>bottom menu
+			<span class="bubbleMenu">
+				<div class="backgroundGridYellow fluid heightHalf widthFull">
+				</div>
+				<div class="backgroundGridWhite fluid heightHalf widthFull">
+				</div>
+			</span>
+		</li>
+
+		<li ng:click="menuOutTopSwitch = !menuOutTopSwitch">
+			<span class="imageicon"><img class="positionRelative floatLeft" src="./svg/icons/white/arrow-close.svg"></span>top menu
 			<span class="bubbleMenu">
 				<div class="backgroundGridYellow fluid heightHalf widthFull">
 				</div>

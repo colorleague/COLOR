@@ -55,6 +55,16 @@
 	    width: 5vw;
     }
 
+    .button.tiny {
+	    height: 2.5vh;
+	    width: 2.5vw;
+    }
+
+    .button.auto {
+	    height: 2.5vh;
+	    width: auto;
+    }
+
 	.logoHolder {
 		top: 0;
 	    width: 10vw;
@@ -65,7 +75,8 @@
 
 .menuRight, .menuLeft {
 	top: 0;
-    width: 10vw;
+    min-width: 200px;
+    max-width: 200px;
     height:  100vh;
 	box-shadow: 0 0 1vh rgba(131, 131, 131, 0.25);
     z-index: 10;
@@ -115,7 +126,7 @@
 }
 
 .menuLeft {
-    left: -10vw;
+    left: -200px;
 	border-radius: 0 1vh 1vh 0;
 
 	.bubbleMenu {
@@ -125,7 +136,7 @@
 }
 
 .menuRight {
-    right: -10vw;
+    right: -200px;
 	border-radius: 1vh 0 0 1vh;
 
 	.bubbleMenu {
@@ -210,10 +221,34 @@ ul.sectionList {
 	    }
 	}
 
+   li.centered {
+	    position: absolute;
+	    left: 0;
+	    right: 0;
+	    width: 50%;
+	    margin: auto;
+	    float: none;
+   }
+
 	li.active, li:hover {
 	    color: $colorThird;
 	    border: .5vh solid $colorThird;
 	}
+}
+
+ul.sectionList.mini {
+	height: 5vh;
+	width: 100%;
+
+   li {
+	    height: 3.75vh;
+	    padding: 0vh .75vw;
+	    margin: 0 .625vh;
+	    border-radius: 2.5vh;
+	    line-height: 3.75vh;
+	    font-size: 2vh;
+   }
+
 }
 
 ul.moduleList {
