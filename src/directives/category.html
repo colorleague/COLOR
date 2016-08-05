@@ -9,34 +9,32 @@
 			<ipadlinewhite class="svgLady animated infinite pulse"></ipadlinewhite >
 			<ipadlineon class="svgLady animated infinite pulse"></ipadlineon >
 
-		</div>
-
-		<div class="spacedSmall fluid heightHalfFlex floatLeft">
-			<h2 class="fluid widthFull fontColorWhite fontSizeFive floatLeft">.</h2>
-			<h2 class="fluid widthFull fontColorWhite fontSizeSix floatLeft"><span class="number">490</span>ProductsAvailable</h2>
-			<h2 class="fluid widthFull fontColorWhite fontSizeEight floatLeft"><span class="number">490</span>Products
-
-				<span class="spanButtonSeven floatRight backgroundGridWhite fontColorPrimary fontSizeSeven">
-					<span class="imageicon">
-						<img class="positionRelative floatLeft" src="./svg/icons/yellow/arrow-close.svg">
-					</span>
-					No
-				</span>
-				<span class="spanButtonSeven floatRight backgroundGridWhite fontColorPrimary fontSizeSeven">
-					<span class="imageicon">
-						<img class="positionRelative floatLeft" src="./svg/icons/yellow/arrow-close.svg">
-					</span>
-					yes
+			<h2 class="fluid widthFull fontColorThird fontSizeFour floatLeft">
+				<span class="number floatLeft">All</span>
+				<span class="number underline floatLeft">Projects</span>
+				<span class="imageicon floatLeft">
+					<img class="positionRelative floatLeft" src="./svg/icons/yellow/arrow-down.svg">
 				</span>
 			</h2>
-			<ul class="categoryList">
 
-				<li class="fontColorPrimary fontSizeThree">
+
+		</div>
+
+		<div class="spacedSmall fluid heightHalfFlex widthStatic floatLeft">
+
+			<hr>
+			<h2>
+				<div class="moduleButton floatRight">
 					<span class="imageicon">
-						<img class="positionRelative floatLeft" src="./svg/icons/yellow/arrow-close.svg">
+						<img class="positionRelative floatLeft" src="./svg/icons/yellow/arrow-down.svg">
 					</span>
-					<a class="fontColorSecondary fontSizeThree floatLeft">Angular</a>
-				</li>
+					<a ng-click="paginationToggle();dribbbleListedSwitch = !dribbbleListedSwitch" class="fontColorWhite fontSizeThree floatLeft">Most recent</a>
+				</div>
+			</h2>
+
+
+
+			<ul class="categoryList">
 				<li class="fontColorPrimary fontSizeThree">
 					<span class="imageicon">
 						<img class="positionRelative floatLeft" src="./svg/icons/yellow/arrow-close.svg">
@@ -155,7 +153,9 @@
 				</li>
 
 			</ul>
+
 		</div>
+
 	</div>
 
 		<!-- Responsive -->

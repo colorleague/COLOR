@@ -24,6 +24,7 @@
 		    left: -10vw;
 		    text-align: center;
 		    float: left;
+		    z-index: 0;
 
 		    span {
 		    	width:100%;
@@ -43,6 +44,7 @@
 		    right: -10vw;
 		    text-align: center;
 		    float: left;
+		    z-index: 0;
 
 		    span {
 		    	width:100%;
@@ -63,6 +65,7 @@
 		    text-align: center;
 		    float: left;
 		    opacity: .25%;
+		    z-index: 0;
 
 		    span {
 		    	width:100%;
@@ -83,6 +86,7 @@
 		    text-align: center;
 		    float: left;
 		    opacity: .25%;
+		    z-index: 0;
 
 		    span {
 		    	width:100%;
@@ -378,7 +382,7 @@ hr.line {
     height: 0;
     width: 100%;
     float: left;
-    border-bottom: 1px solid $yellow;
+    border-bottom: .5vh solid $yellow;
 }
 
 hr.lineGrey {
@@ -388,7 +392,17 @@ hr.lineGrey {
     height: 0;
     width: 100%;
     float: left;
-    border-bottom: 1px solid $colorOpacityGrey;
+    border-bottom: .5vh solid $colorOpacityGrey;
+}
+
+hr.lineWhite {
+    display: block;
+    margin: 2.5vh 0;
+    visibility: visible;
+    height: 0;
+    width: 100%;
+    float: left;
+    border-bottom: .5vh solid #ffffff;
 }
 
 .menu .featButton {
@@ -429,8 +443,7 @@ hr.lineGrey {
 }
 
 .number {
-	padding: 0 1.25vw;
-	margin: 0 1.25vw;
+	padding: 0 .5vw 0 0;
 }
 
 .indexStamp {
@@ -444,6 +457,20 @@ hr.lineGrey {
 	text-align: center;
 	float: left;
     margin: 0 1vh;
+}
+
+.indexStamp.right {
+    top: -5vh;
+    right: -5vh;
+    left: auto;
+}
+
+.indexStamp.rightCenter {
+    top: 0;
+    bottom: 0;
+    right: -5vh;
+    left: auto;
+    margin: auto;
 }
 
 .indexStamp.mini {
@@ -683,13 +710,37 @@ hr.lineGrey {
 
 
 .dribbble {
+
+	.photo.Card {
+		width: 100%;
+		height: 50%;
+		overflow: hidden;
+		position: relative;
+	}
+
+	.photo.Full {
+		width: 100%;
+		height: 100%;
+		overflow: hidden;
+		position: relative;
+	}
+
 	.photo {
 		width: 100%;
 		height: 75%;
 		overflow: hidden;
+		position: relative;
 
 		img {
-			width: 100%;
+			min-width: 100%;
+			min-height: 100%;
+			max-width: 200%;
+			position: absolute;
+			left: 0;
+			right: 0;
+			top: 0;
+			bottom: 0;
+			margin: auto;
 		}
 
 		.infoOverlay {
@@ -697,6 +748,445 @@ hr.lineGrey {
 			top: 0;
 			width: 100%;
 			height: 100%;
+		}
+
+		.social {
+			background: #fff;
+			border-radius: .5vh;
+			width: 5vh;
+			height: 5vh;
+			position: absolute;
+			top: 1vh;
+			right: 1vh;
+		}
+
+		.categoryBubble {
+		    border-radius: .5vh;
+		    padding: .5vh;
+		    position: absolute;
+		    top: 1vh;
+		    left: 1vh;
+		}
+
+		.categoryBubble.Yellow {
+		    background: #fcd829;
+		    color: #fff;
+		}
+
+		.categoryBubble.Blue {
+		    background: #5f7c7a;
+		    color: #fff;
+		}
+
+		.categoryBubble.White {
+		    background: #ffffff;
+		    color: #5f7c7a;
+		}
+	}
+
+	.info {
+		height: 25%;
+		width: 100%;
+	}
+}
+
+
+.ui8 {
+
+	.photo.Card {
+		width: 100%;
+		height: 50%;
+		overflow: hidden;
+		position: relative;
+	}
+
+	.photo.Full {
+		width: 100%;
+		height: 100%;
+		overflow: hidden;
+		position: relative;
+	}
+
+	.photo {
+		width: 100%;
+		height: 75%;
+		overflow: hidden;
+		position: relative;
+
+		img {
+			min-width: 100%;
+			min-height: 100%;
+			max-width: 200%;
+			position: absolute;
+			left: 0;
+			right: 0;
+			top: 0;
+			bottom: 0;
+			margin: auto;
+		}
+
+		.infoOverlay {
+			position: absolute;
+			top: 0;
+			width: 100%;
+			height: 100%;
+		}
+
+		.social {
+			background: #fff;
+			border-radius: .5vh;
+			width: 5vh;
+			height: 5vh;
+			position: absolute;
+			top: 1vh;
+			right: 1vh;
+		}
+
+		.categoryBubble {
+		    border-radius: .5vh;
+		    padding: .5vh;
+		    position: absolute;
+		    top: 1vh;
+		    left: 1vh;
+		}
+
+		.categoryBubble.Yellow {
+		    background: #fcd829;
+		    color: #fff;
+		}
+
+		.categoryBubble.Blue {
+		    background: #5f7c7a;
+		    color: #fff;
+		}
+
+		.categoryBubble.White {
+		    background: #ffffff;
+		    color: #5f7c7a;
+		}
+	}
+
+	.info {
+		height: 25%;
+		width: 100%;
+	}
+}
+
+.carder {
+
+	.photo.Card {
+		width: 100%;
+		height: 50%;
+		overflow: hidden;
+		position: relative;
+	}
+
+	.photo.Full {
+		width: 100%;
+		height: 100%;
+		overflow: hidden;
+		position: relative;
+	}
+
+	.photo {
+		width: 100%;
+		height: 75%;
+		overflow: hidden;
+		position: relative;
+
+		img {
+			min-width: 100%;
+			min-height: 100%;
+			max-width: 200%;
+			position: absolute;
+			left: 0;
+			right: 0;
+			top: 0;
+			bottom: 0;
+			margin: auto;
+		}
+
+		.infoOverlay {
+			position: absolute;
+			top: 0;
+			width: 100%;
+			height: 100%;
+		}
+
+		.social {
+			background: #fff;
+			border-radius: .5vh;
+			width: 5vh;
+			height: 5vh;
+			position: absolute;
+			top: 1vh;
+			right: 1vh;
+		}
+
+		.categoryBubble {
+		    border-radius: .5vh;
+		    padding: .5vh;
+		    position: absolute;
+		    top: 1vh;
+		    left: 1vh;
+		}
+
+		.categoryBubble.Yellow {
+		    background: #fcd829;
+		    color: #fff;
+		}
+
+		.categoryBubble.Blue {
+		    background: #5f7c7a;
+		    color: #fff;
+		}
+
+		.categoryBubble.White {
+		    background: #ffffff;
+		    color: #5f7c7a;
+		}
+	}
+
+	.info {
+		height: 25%;
+		width: 100%;
+	}
+}
+
+.muzli {
+
+	.photo.Card {
+		width: 100%;
+		height: 50%;
+		overflow: hidden;
+		position: relative;
+	}
+
+	.photo.Full {
+		width: 100%;
+		height: 100%;
+		overflow: hidden;
+		position: relative;
+	}
+
+	.photo {
+		width: 100%;
+		height: 75%;
+		overflow: hidden;
+		position: relative;
+
+		img {
+			min-width: 100%;
+			min-height: 100%;
+			max-width: 200%;
+			position: absolute;
+			left: 0;
+			right: 0;
+			top: 0;
+			bottom: 0;
+			margin: auto;
+		}
+
+		.infoOverlay {
+			position: absolute;
+			top: 0;
+			width: 100%;
+			height: 100%;
+		}
+
+		.social {
+			background: #fff;
+			border-radius: .5vh;
+			width: 5vh;
+			height: 5vh;
+			position: absolute;
+			top: 1vh;
+			right: 1vh;
+		}
+
+		.categoryBubble {
+		    border-radius: .5vh;
+		    padding: .5vh;
+		    position: absolute;
+		    top: 1vh;
+		    left: 1vh;
+		}
+
+		.categoryBubble.Yellow {
+		    background: #fcd829;
+		    color: #fff;
+		}
+
+		.categoryBubble.Blue {
+		    background: #5f7c7a;
+		    color: #fff;
+		}
+
+		.categoryBubble.White {
+		    background: #ffffff;
+		    color: #5f7c7a;
+		}
+	}
+
+	.info {
+		height: 25%;
+		width: 100%;
+	}
+}
+
+.tinder {
+
+	.photo.Card {
+		width: 100%;
+		height: 50%;
+		overflow: hidden;
+		position: relative;
+	}
+
+	.photo.Full {
+		width: 100%;
+		height: 100%;
+		overflow: hidden;
+		position: relative;
+	}
+
+	.photo {
+		width: 100%;
+		height: 75%;
+		overflow: hidden;
+		position: relative;
+
+		img {
+			min-width: 100%;
+			min-height: 100%;
+			max-width: 200%;
+			position: absolute;
+			left: 0;
+			right: 0;
+			top: 0;
+			bottom: 0;
+			margin: auto;
+		}
+
+		.infoOverlay {
+			position: absolute;
+			top: 0;
+			width: 100%;
+			height: 100%;
+		}
+
+		.social {
+			background: #fff;
+			border-radius: .5vh;
+			width: 5vh;
+			height: 5vh;
+			position: absolute;
+			top: 1vh;
+			right: 1vh;
+		}
+
+		.categoryBubble {
+		    border-radius: .5vh;
+		    padding: .5vh;
+		    position: absolute;
+		    top: 1vh;
+		    left: 1vh;
+		}
+
+		.categoryBubble.Yellow {
+		    background: #fcd829;
+		    color: #fff;
+		}
+
+		.categoryBubble.Blue {
+		    background: #5f7c7a;
+		    color: #fff;
+		}
+
+		.categoryBubble.White {
+		    background: #ffffff;
+		    color: #5f7c7a;
+		}
+	}
+
+	.info {
+		height: 25%;
+		width: 100%;
+	}
+}
+
+.swipe {
+
+	.photo.Card {
+		width: 100%;
+		height: 50%;
+		overflow: hidden;
+		position: relative;
+	}
+
+	.photo.Full {
+		width: 100%;
+		height: 100%;
+		overflow: hidden;
+		position: relative;
+	}
+
+	.photo {
+		width: 100%;
+		height: 75%;
+		overflow: hidden;
+		position: relative;
+
+		img {
+			min-width: 100%;
+			min-height: 100%;
+			max-width: 200%;
+			position: absolute;
+			left: 0;
+			right: 0;
+			top: 0;
+			bottom: 0;
+			margin: auto;
+		}
+
+		.infoOverlay {
+			position: absolute;
+			top: 0;
+			width: 100%;
+			height: 100%;
+		}
+
+		.social {
+			background: #fff;
+			border-radius: .5vh;
+			width: 5vh;
+			height: 5vh;
+			position: absolute;
+			top: 1vh;
+			right: 1vh;
+		}
+
+		.categoryBubble {
+		    border-radius: .5vh;
+		    padding: .5vh;
+		    position: absolute;
+		    top: 1vh;
+		    left: 1vh;
+		}
+
+		.categoryBubble.Yellow {
+		    background: #fcd829;
+		    color: #fff;
+		}
+
+		.categoryBubble.Blue {
+		    background: #5f7c7a;
+		    color: #fff;
+		}
+
+		.categoryBubble.White {
+		    background: #ffffff;
+		    color: #5f7c7a;
 		}
 	}
 
@@ -769,4 +1259,67 @@ hr.lineGrey {
 	position: absolute;
 	width: 100%;
 	 height: 100%;
+}
+
+.featSearch {
+	width: calc(100% - 5vh);
+    height: calc(15vh - 10vh);
+    padding: 2.5vh;
+    border-radius: 1vh;
+    border: none;
+    color: #fff;
+}
+
+.rotate {
+
+/* Safari */
+-webkit-transform: rotate(-90deg);
+
+/* Firefox */
+-moz-transform: rotate(-90deg);
+
+/* IE */
+-ms-transform: rotate(-90deg);
+
+/* Opera */
+-o-transform: rotate(-90deg);
+
+/* Internet Explorer */
+filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+
+}
+
+.rotate.left {
+    position: fixed;
+    /* left: 0; */
+    top: 18vh;
+    left: -17.5vh;
+    width: auto;
+    height: auto;
+}
+
+.fullSVG {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+.authorBubbles {
+	width: 10vh;
+	height: 10vh;
+	border-radius: 50%;
+	border: 2.5vh solid #fff;
+}
+
+.techText {
+    height: 3.75vh;
+    padding: 0vh 1.5vw;
+    margin: 0vh 1.25vh 1.25vh;
+    border-radius: 2.5vh;
+    line-height: 3.75vh;
+    font-size: 2vh;
+    text-align: center;
+    background: #fff;
+    color: #5f7c7a;
+    border: 0.5vh solid #fcd829;
+    z-index: 1;
 }

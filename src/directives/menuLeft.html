@@ -29,7 +29,7 @@
 		</li>
 
 
-		<li ng:click="popup1 = !popup1">
+		<li ng:click="popup1 = !popup1; logoOutSwitch = true;">
 			<span class="imageicon"><img class="positionRelative floatLeft" src="./svg/icons/white/arrow-close.svg"></span>team
 			<span class="bubbleMenu">
 				<div class="backgroundGridYellow fluid heightHalf widthFull">
@@ -59,7 +59,7 @@
 			</span>
 		</li>
 
-		<li ng:click="popup4 = !popup4">
+		<li ng:click="popup4 = !popup4; logoOutSwitch = true">
 			<span class="imageicon"><img class="positionRelative floatLeft" src="./svg/icons/white/arrow-close.svg"></span>category
 			<span class="bubbleMenu">
 				<div class="backgroundGridYellow fluid heightHalf widthFull">
@@ -121,6 +121,16 @@
 
 		<li ng:click="menuOutTopSwitch = !menuOutTopSwitch">
 			<span class="imageicon"><img class="positionRelative floatLeft" src="./svg/icons/white/arrow-close.svg"></span>top menu
+			<span class="bubbleMenu">
+				<div class="backgroundGridYellow fluid heightHalf widthFull">
+				</div>
+				<div class="backgroundGridWhite fluid heightHalf widthFull">
+				</div>
+			</span>
+		</li>
+
+		<li ng:click="categoryAllSwitch = !categoryAllSwitch">
+			<span class="imageicon"><img class="positionRelative floatLeft" src="./svg/icons/white/arrow-close.svg"></span>all category
 			<span class="bubbleMenu">
 				<div class="backgroundGridYellow fluid heightHalf widthFull">
 				</div>

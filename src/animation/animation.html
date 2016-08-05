@@ -70,7 +70,7 @@
 				<div class="buttonHolder positionFixed positionTopCenter easing">
 
 					<div class="infoHolder positionRelative fluid widthFull easing floatLeft text-align-center">
-						<p class="fontColorThird fontSizeThree">Located in <b> Atlanta, Ga</b>. Established in 2016, an <span class="underline">Independent</span> Design Studio.</p>
+						<p class="fontColorThird fontSizeThree">Located in <b> Atlanta, Ga</b>. Established in 2016, an <span ng-click="popup17 = true; logoOutSwitch = true" class="underline">Independent</span> Design Studio.</p>
 					</div>
 
 						<div class="featButton easing floatLeft"
@@ -159,6 +159,18 @@
 					<span class="indexStamp backgroundGridYellow fontColorWhite fontSizeOne">1</span>of text to get the... "pallet" wet.</p>
 			</div>
 		</div>
+	</div>
+
+	<!-- Search Pop Up -->
+	<div class="wrapper positionAbsolute positionPopup backgroundGridYellow overflowy easing" ng-class="{'active' : searchSwitch}">
+
+		<categorySearchPage ng-show="searchSwitch"></categorySearchPage>
+	</div>
+
+	<!-- All Pop Up -->
+	<div class="wrapper positionAbsolute positionPopup backgroundGridYellow overflowy easing" ng-class="{'active' : categoryAllSwitch}">
+
+		<categoryAllPage ng-show="categoryAllSwitch"></categoryAllPage>
 	</div>
 
 	<!-- Pop Up -->

@@ -63,6 +63,12 @@ svg {
 	margin: auto;
 }
 
+.fluid.widthStaticMini {
+    width: 100%;
+    max-width: 750px;
+    margin: auto;
+}
+
 .widthThreeQuarter {
 	width: 75%;
 }
@@ -77,6 +83,10 @@ svg {
 
 .fluid.widthQuarter {
 	width: 25%;
+}
+
+.fluid.widthFive {
+    width: 20%;
 }
 
 .fluid.widthEight {
@@ -105,8 +115,16 @@ svg {
 	min-height: 100vh;
 }
 
+.fluid.heightHalfStatic {
+    height: 50vh;
+}
+
 .fluid.heightQuarterStatic {
 	height: 25vh;
+}
+
+.fluid.heightEightStatic {
+    height: 12.5vh;
 }
 
 .fluid.heightEightStatic {
@@ -117,8 +135,16 @@ svg {
 	height: 100%;
 }
 
+.heightThreeQuarter {
+    height: 75%;
+}
+
 .fluid.heightHalf {
 	height: 50%;
+}
+
+.fluid.heightThird {
+    height: 33%;
 }
 
 .fluid.widthFullFlexSpacedSmall {
@@ -215,9 +241,19 @@ svg {
     left: 0;
     right: 0;
     margin: auto;
-    height: calc(100% - 1px);
-    width: calc(100% - 1px);
-    border-left: 1px solid #fcd829;
+    width: calc(100% - .5vh);
+    border-left: .5vh solid #ffffff;
+}
+
+.spacedLeftBorderedYellow {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: calc(100% - .5vh);
+    border-left: .5vh solid #fcd829;
 }
 
 .spacedBottomBordered {
@@ -227,9 +263,19 @@ svg {
     left: 0;
     right: 0;
     margin: auto;
-    height: calc(100% - 1px);
-    width: calc(100% - 1px);
-    border-bottom: 1px solid #fcd829;
+    height: calc(100% - .5vh);
+    border-bottom: .5vh solid #ffffff;
+}
+
+.spacedBottomBorderedYellow {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    height: calc(100% - .5vh);
+    border-bottom: .5vh solid #fcd829;
 }
 
 .spacedMid {

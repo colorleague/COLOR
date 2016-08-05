@@ -158,6 +158,21 @@ app.directive("categorypage", function(){
 	}
 });
 
+app.directive("categorysearchpage", function(){
+  return {
+    restrict: 'E',
+    template: require('directives/categorysearch.html')
+  }
+});
+
+
+app.directive("categoryallpage", function(){
+  return {
+    restrict: 'E',
+    template: require('directives/categorysearchall.html')
+  }
+});
+
 
 app.directive("infopage", function(){
 	return {
@@ -185,6 +200,13 @@ app.directive("postlist", function(){
     restrict: 'E',
     template: require('directives/postlist.html')
 	}
+});
+
+app.directive("searchlist", function(){
+  return {
+    restrict: 'E',
+    template: require('directives/pages/searchlist.html')
+  }
 });
 
 // Detail Pages

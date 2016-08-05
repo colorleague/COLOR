@@ -47,6 +47,16 @@
   @include positionBottomCenter;
 }
 
+@mixin positionBottomCenterOverlay {
+  bottom: -12.5%;
+  left: 0;
+  right: 0;
+}
+
+.positionBottomCenterOverlay {
+  @include positionBottomCenterOverlay;
+}
+
 // Bread
 @mixin positionBread {
   top: 10vh;

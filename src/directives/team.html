@@ -5,164 +5,365 @@
 		<div class="spacedMid border-radius">
 
 
+			<!-- 1 by 1 -->
+			<div class="fluid heightQuarter widthFull floatLeft">
+				<div class="spacedMid border-radius">
+					<div class="fluid heightFull widthStatic">
+						
+						<h2 class="fluid widthFull fontColorWhite fontSizeEight floatLeft text-align-center">
+	
+							Our Team
+						</h2>
 
-			<!-- Size of card -->
-			<div ng-repeat="mates in team" class="fluid heightQuarter widthQuarter floatLeft">
-				<div ng-click="popPreview = !popPreview" class="spacedSmall backgroundGridWhite border-radius">
-
-					<div class="spacedSmall border-radius">
-						<h2 class="fluid widthFull fontColorPrimary fontSizeTwo floatLeft text-align-center">
-							{{mates.name}}
+						<h2 class="fluid widthFull fontColorThird fontSizeTwo floatLeft text-align-center">
+							of talent goof-balls
 						</h2>
 					</div>
-
-					<span class="rightTab mini">
-						<img class="positionRelative floatRight" src="./svg/icons/yellow/arrow-right.svg">
-					</span>
-
-					<span class="bottomTab mini">
-						<img class="positionRelative floatRight" src="./svg/icons/yellow/arrow-down.svg">
-					</span>
-
-					<img class="fluid positionAbsolute positionBottomCenter widthHalf" src="./person/1.png">
-
-					<div class="positionAbsolute positionBottomCenter backgroundOpacityGrey fluid heightHalf widthFull floatLeft">
-						<div class="spacedTiny">
-							<h2 class="fluid widthFull fontColorSecondary fontRegularTwo floatLeft text-align-left">
-								Nigel Johnson<br>
-								3,040 views
-							</h2>
-						</div>
-
-						<img class="iconSvg mini positionAbsolute positionBottomCenter floatLeft" src="./svg/icons/yellow/arrow-close.svg">
-					</div>
-
 				</div>
-
-
-				<!-- Post Preview -->
-				<div ng-class="{'active' : popPreview}" class="backgroundOpacityGrey positionPreview positionPopup positionFixed fluid heightFullFlex widthFull easing">
-
-					<!-- Responsive -->
-						<div ng:show="popPreview" class="spacedMid border-radius">
-
-							<!-- Size of card -->
-							<div class="fluid heightFullFlex widthFull floatLeft">
-								<div class="spacedSmall backgroundGridWhite border-radius overflowy">
-
-										<h2 class="fluid widthFull fontColorWhite fontSizeEight floatLeft"><span class="number">.
-										</h2>
-
-										<h2 class="fluid widthFull fontColorPrimary fontSizeEight floatLeft">
-											Title:{{mates.name}}
-											<span ng-click="popPreview = false" class="spanButtonEight floatRight backgroundGridWhite fontColorPrimary fontSizeEight">Close</span>
-										</h2>
-
-										<h2 class="fluid widthFull fontColorPrimary fontSizeThree floatLeft">
-											author name:{{item.author.name}}
-										</h2>
-
-										<h2 class="fluid widthFull fontColorPrimary fontSizeThree floatLeft">
-											category:{{item.terms.category[0].name}}
-										</h2>
-
-										<h2 class="fluid widthFull fontColorThird fontSizeThree floatLeft">						format:{{item.format}}
-										</h2>
-
-									<div class="backgroundGrey fluid positionRelative heightHalf widthHalf floatLeft">
-										<div class="spacedSmall backgroundGridWhite border-radius box-shadow">
-											<div class="spacedSmall overflowHidden">
-												<div class="featurePhoto">
-													<img ng-src="{{item.featured_image.source}}">
-												</div>
-											</div>
-										</div>
-									</div>
-
-									<div class="fluid positionRelative heightHalf widthHalf floatLeft">
-										<div class="spacedSmall backgroundGridYellow border-radius box-shadow">
-											<div class="spacedSmall">
-
-												<h2 class="fluid widthFull fontColorWhite fontSizeThree floatLeft bordered-bottom"><span class="number">490</span>Like
-													<span class="spanButtonThree floatRight backgroundGridWhite fontColorPrimary fontSizeThree">No</span>
-													<span class="spanButtonThree floatRight backgroundGridWhite fontColorPrimary fontSizeThree">yes</span>
-												</h2>
-
-
-												<h2 class="fluid widthFull fontColorWhite fontSizeThree floatLeft bordered-bottom"><span class="number">490</span>Views
-													<span class="spanButtonThree floatRight backgroundGridWhite fontColorPrimary fontSizeThree">No</span>
-													<span class="spanButtonThree floatRight backgroundGridWhite fontColorPrimary fontSizeThree">yes</span>
-												</h2>
-
-												<h2 class="fluid widthFull fontColorWhite fontSizeThree floatLeft bordered-bottom"><span class="number">490</span>Comments
-													<span class="spanButtonThree floatRight backgroundGridWhite fontColorPrimary fontSizeThree">No</span>
-													<span class="spanButtonThree floatRight backgroundGridWhite fontColorPrimary fontSizeThree">yes</span>
-												</h2>
-
-												<p class="fluid widthFull fontColorWhite fontRegularTwo floatLeft"><span class="number">490</span>
-
-												colorleage is a ____.
-												We are 3 dudes, 4 ladies a kid and a dog.
-
-												owned and operated out of our home office (garage out back).
-
-												All full stack of technial genius, an Illustrator, Back-End Developer & Designers, Former Co worker working toward the greatest goal: Making Dope Shit!
-
-												Whether it be UI/ UX, creating cartoons for client / app previetations or developing entire brand infilstuctors, we got it.
-												
-												using "fluid design" maximizing user interaction by taking advantage of any and all capibilites of all platforms we design or develope software and content for</p>
-
-											</div>
-										</div>
-									</div>
-
-
-												<hr>
-
-
-									<div class="fluid positionRelative heightHalfFlex widthHalf floatLeft">
-										<div class="spacedSmall">
-
-											<p class="fluid widthFull fontColorThird fontSizeFour floatLeft">
-
-											<h2 class="fluid widthFull fontColorThird fontSizeThree floatLeft"><span class="number">Title:{{item.title}}
-											</h2>
-
-											<h2 class="fluid widthFull fontColorThird fontSizeThree floatLeft"><span class="number">Format:{{item.format}}
-											</h2>
-
-
-											<h2 class="fluid widthFull fontColorThird fontSizeThree floatLeft"><span class="number">date:{{item.date}}
-											</h2>
-
-											<h2 class="fluid widthFull fontColorThird fontSizeThree floatLeft"><span class="number">author name:{{item.author.name}}
-											</h2>
-
-											<h2 class="fluid widthFull fontColorThird fontSizeThree floatLeft"><span class="number">avatar:{{item.author.avatar}}
-											</h2>
-
-											<h2 class="fluid widthFull fontColorThird fontSizeThree floatLeft"><span class="number">excerpt:{{item.excerpt}}
-											</h2>
-
-											<h2 class="fluid widthFull fontColorThird fontSizeThree floatLeft"><span class="number">link:{{item.link}}
-											</h2>
-
-											<h2 class="fluid widthFull fontColorThird fontSizeThree floatLeft"><span class="number">first category name:{{item.terms.category[0].name}}
-											</h2>
-											</p>
-
-										</div>
-									</div>
-
-									<hr>
-
-								</div>
-
-							</div>
-				</div>
-
 			</div>
 
-		</div>
+			<ul class="sortList">
+				<li class="fontColorPrimary fontSizeThree">
+					<span class="imageicon">
+						<img class="positionRelative floatLeft" src="./svg/icons/yellow/arrow-close.svg">
+					</span>
+					<a class="fontColorSecondary fontSizeThree floatLeft">Angular</a>
+				</li>
+
+				<li class="fontColorPrimary fontSizeThree">
+					<span class="imageicon">
+						<img class="positionRelative floatLeft" src="./svg/icons/yellow/arrow-close.svg">
+					</span>
+					<p class="fontColorSecondary fontSizeThree floatLeft">React</p>
+				</li>
+
+				<li class="fontColorPrimary fontSizeThree">
+					<span class="imageicon">
+						<img class="positionRelative floatLeft" src="./svg/icons/yellow/arrow-close.svg">
+					</span>
+					<a class="fontColorSecondary fontSizeThree floatLeft">Angular</a>
+				</li>
+
+				<li class="fontColorPrimary fontSizeThree">
+					<span class="imageicon">
+						<img class="positionRelative floatLeft" src="./svg/icons/yellow/arrow-close.svg">
+					</span>
+					<p class="fontColorSecondary fontSizeThree floatLeft">React</p>
+				</li>
+
+				<li class="fontColorPrimary fontSizeThree">
+					<span class="imageicon">
+						<img class="positionRelative floatLeft" src="./svg/icons/yellow/arrow-close.svg">
+					</span>
+					<a class="fontColorSecondary fontSizeThree floatLeft">Angular</a>
+				</li>
+
+				<li class="fontColorPrimary fontSizeThree">
+					<span class="imageicon">
+						<img class="positionRelative floatLeft" src="./svg/icons/yellow/arrow-close.svg">
+					</span>
+					<p class="fontColorSecondary fontSizeThree floatLeft">React</p>
+				</li>
+
+				<li class="fontColorPrimary fontSizeThree">
+					<span class="imageicon">
+						<img class="positionRelative floatLeft" src="./svg/icons/yellow/arrow-close.svg">
+					</span>
+					<a class="fontColorSecondary fontSizeThree floatLeft">Angular</a>
+				</li>
+
+				<li class="fontColorPrimary fontSizeThree">
+					<span class="imageicon">
+						<img class="positionRelative floatLeft" src="./svg/icons/yellow/arrow-close.svg">
+					</span>
+					<p class="fontColorSecondary fontSizeThree floatLeft">React</p>
+				</li>
+
+				<li class="fontColorPrimary fontSizeThree">
+					<span class="imageicon">
+						<img class="positionRelative floatLeft" src="./svg/icons/yellow/arrow-close.svg">
+					</span>
+					<a class="fontColorSecondary fontSizeThree floatLeft">Angular</a>
+				</li>
+
+				<li class="fontColorPrimary fontSizeThree">
+					<span class="imageicon">
+						<img class="positionRelative floatLeft" src="./svg/icons/yellow/arrow-close.svg">
+					</span>
+					<p class="fontColorSecondary fontSizeThree floatLeft">React</p>
+				</li>
+
+				<li class="fontColorPrimary fontSizeThree">
+					<span class="imageicon">
+						<img class="positionRelative floatLeft" src="./svg/icons/yellow/arrow-close.svg">
+					</span>
+					<a class="fontColorSecondary fontSizeThree floatLeft">Angular</a>
+				</li>
+
+				<li class="fontColorPrimary fontSizeThree">
+					<span class="imageicon">
+						<img class="positionRelative floatLeft" src="./svg/icons/yellow/arrow-close.svg">
+					</span>
+					<p class="fontColorSecondary fontSizeThree floatLeft">React</p>
+				</li>
+
+			</ul>
+
+			<hr>
+			<hr>
+			<hr>
+			<hr>
+
+			<!-- Size of card -->
+			<ul class="fluid heightQuarter widthFull floatLeft">
+				<li ng-repeat="mates in team | limitTo:4" class="fluid heightFull widthQuarter floatLeft">
+					
+					<div ng-click="memberPreview = !memberPreview" class="spacedSmall backgroundGridWhite border-radius">
+
+						
+
+						<img class="fluid positionAbsolute positionBottomCenter widthFull" src="./person/1.png">
+
+						<div class="positionAbsolute positionBottomCenter backgroundOpacityWhiteGradient fluid heightQuarter widthFull floatLeft">
+							<div class="spacedTiny">
+								<h2 class="fluid widthFull fontColorThird fontSizeThree floatLeft text-align-left">
+									{{mates.name}}
+								</h2>
+
+								<span class="indexStamp positionAbsolute positionCenter backgroundGridSecondary fontColorWhite fontSizeOne">1</span>
+							</div>
+						</div>
+
+					</div>
+
+
+					<!-- Post Preview -->
+
+					<!-- designer member -->
+					<div class="wrapper positionFixed positionPopup backgroundGridYellow overflowy easing" ng-class="{'active' : memberPreview}">
+
+						<memeberdetailspage ng-show="memberPreview"></memeberdetailspage>
+
+					</div>
+
+
+				</li>
+			</ul>
+
+			<!-- Size of card -->
+			<ul class="fluid heightHalf widthQuarter floatLeft">
+				<li ng-repeat="mates in team | limitTo:1" class="fluid heightFull widthFull floatLeft">
+					
+					<div ng-click="memberPreview = !memberPreview" class="spacedSmall backgroundGridWhite border-radius">
+
+						
+
+						<img class="fluid positionAbsolute positionBottomCenter widthFull" src="./person/1.png">
+
+						<div class="positionAbsolute positionBottomCenter backgroundOpacityWhiteGradient fluid heightQuarter widthFull floatLeft">
+							<div class="spacedTiny">
+								<h2 class="fluid widthFull fontColorThird fontSizeSix floatLeft text-align-left">
+									{{mates.name}}
+								</h2>
+
+								<span class="indexStamp positionAbsolute positionCenter backgroundGridSecondary fontColorWhite fontSizeOne">1</span>
+							</div>
+						</div>
+
+					</div>
+
+
+					<!-- Post Preview -->
+
+					<!-- designer member -->
+					<div class="wrapper positionFixed positionPopup backgroundGridYellow overflowy easing" ng-class="{'active' : memberPreview}">
+
+						<memeberdetailspage ng-show="memberPreview"></memeberdetailspage>
+
+					</div>
+
+
+				</li>
+			</ul>
+
+			<div class="fluid heightHalf widthHalf floatLeft">
+				<hr>
+
+				<h2 class="fluid widthFull fontColorWhite fontSizeEight floatLeft text-align-center">
+					Our Team
+				</h2>
+
+				<h2 class="fluid widthFull fontColorThird fontSizeTwo floatLeft text-align-center">
+					of talent goof-balls
+				</h2>
+
+				<hr>
+
+				<ul class="sortList">
+					<li class="fontColorPrimary fontSizeThree">
+						<span class="imageicon">
+							<img class="positionRelative floatLeft" src="./svg/icons/yellow/arrow-close.svg">
+						</span>
+						<a class="fontColorSecondary fontSizeThree floatLeft">Angular</a>
+					</li>
+
+					<li class="fontColorPrimary fontSizeThree">
+						<span class="imageicon">
+							<img class="positionRelative floatLeft" src="./svg/icons/yellow/arrow-close.svg">
+						</span>
+						<p class="fontColorSecondary fontSizeThree floatLeft">React</p>
+					</li>
+
+					<li class="fontColorPrimary fontSizeThree">
+						<span class="imageicon">
+							<img class="positionRelative floatLeft" src="./svg/icons/yellow/arrow-close.svg">
+						</span>
+						<a class="fontColorSecondary fontSizeThree floatLeft">Angular</a>
+					</li>
+
+					<li class="fontColorPrimary fontSizeThree">
+						<span class="imageicon">
+							<img class="positionRelative floatLeft" src="./svg/icons/yellow/arrow-close.svg">
+						</span>
+						<p class="fontColorSecondary fontSizeThree floatLeft">React</p>
+					</li>
+
+					<li class="fontColorPrimary fontSizeThree">
+						<span class="imageicon">
+							<img class="positionRelative floatLeft" src="./svg/icons/yellow/arrow-close.svg">
+						</span>
+						<a class="fontColorSecondary fontSizeThree floatLeft">Angular</a>
+					</li>
+
+					<li class="fontColorPrimary fontSizeThree">
+						<span class="imageicon">
+							<img class="positionRelative floatLeft" src="./svg/icons/yellow/arrow-close.svg">
+						</span>
+						<p class="fontColorSecondary fontSizeThree floatLeft">React</p>
+					</li>
+
+					<li class="fontColorPrimary fontSizeThree">
+						<span class="imageicon">
+							<img class="positionRelative floatLeft" src="./svg/icons/yellow/arrow-close.svg">
+						</span>
+						<a class="fontColorSecondary fontSizeThree floatLeft">Angular</a>
+					</li>
+
+					<li class="fontColorPrimary fontSizeThree">
+						<span class="imageicon">
+							<img class="positionRelative floatLeft" src="./svg/icons/yellow/arrow-close.svg">
+						</span>
+						<p class="fontColorSecondary fontSizeThree floatLeft">React</p>
+					</li>
+
+					<li class="fontColorPrimary fontSizeThree">
+						<span class="imageicon">
+							<img class="positionRelative floatLeft" src="./svg/icons/yellow/arrow-close.svg">
+						</span>
+						<a class="fontColorSecondary fontSizeThree floatLeft">Angular</a>
+					</li>
+
+					<li class="fontColorPrimary fontSizeThree">
+						<span class="imageicon">
+							<img class="positionRelative floatLeft" src="./svg/icons/yellow/arrow-close.svg">
+						</span>
+						<p class="fontColorSecondary fontSizeThree floatLeft">React</p>
+					</li>
+
+					<li class="fontColorPrimary fontSizeThree">
+						<span class="imageicon">
+							<img class="positionRelative floatLeft" src="./svg/icons/yellow/arrow-close.svg">
+						</span>
+						<a class="fontColorSecondary fontSizeThree floatLeft">Angular</a>
+					</li>
+
+					<li class="fontColorPrimary fontSizeThree">
+						<span class="imageicon">
+							<img class="positionRelative floatLeft" src="./svg/icons/yellow/arrow-close.svg">
+						</span>
+						<p class="fontColorSecondary fontSizeThree floatLeft">React</p>
+					</li>
+
+				</ul>
+			</div>
+
+			<!-- Size of card -->
+			<ul class="fluid heightHalf widthQuarter floatLeft">
+				<li ng-repeat="mates in team | limitTo:1" class="fluid heightFull widthFull floatLeft">
+					
+					<div ng-click="memberPreview = !memberPreview" class="spacedSmall backgroundGridWhite border-radius">
+
+						<img class="fluid positionAbsolute positionBottomCenter widthFull" src="./person/1.png">
+
+						<div class="positionAbsolute positionBottomCenter backgroundOpacityWhiteGradient fluid heightQuarter widthFull floatLeft">
+							<div class="spacedTiny">
+
+
+						
+
+								<h2 class="fluid widthFull fontColorThird fontSizeSix floatLeft text-align-left">
+									{{mates.name}}
+								</h2>
+
+								<span class="indexStamp positionAbsolute positionCenter backgroundGridSecondary fontColorWhite fontSizeOne">1</span>
+							</div>
+						</div>
+
+					</div>
+
+
+					<!-- Post Preview -->
+
+					<!-- designer member -->
+					<div class="wrapper positionFixed positionPopup backgroundGridYellow overflowy easing" ng-class="{'active' : memberPreview}">
+
+						<memeberdetailspage ng-show="memberPreview"></memeberdetailspage>
+
+					</div>
+
+
+				</li>
+			</ul>
+
+			<!-- Size of card -->
+			<ul class="fluid heightHalf widthFull floatLeft">
+				<li ng-repeat="mates in team" class="fluid heightFull widthQuarter floatLeft">
+					
+					<div ng-click="memberPreview = !memberPreview" class="spacedSmall backgroundGridWhite border-radius">
+
+						<span class="rightTab mini">
+							<img class="positionRelative floatRight" src="./svg/icons/yellow/arrow-right.svg">
+						</span>
+
+						
+
+						<img class="fluid positionAbsolute positionBottomCenter widthFull" src="./person/1.png">
+
+						<div class="positionAbsolute positionBottomCenter backgroundOpacityWhiteGradient fluid heightQuarter widthFull floatLeft">
+							<div class="spacedTiny">
+								<h2 class="fluid widthFull fontColorThird fontSizeFour text-shadow floatLeft text-align-left">
+									{{mates.name}}
+								</h2>
+
+								<span class="indexStamp positionAbsolute positionCenter backgroundGridSecondary fontColorWhite fontSizeOne">1</span>
+							</div>
+						</div>
+
+					</div>
+
+
+					<!-- Post Preview -->
+
+					<!-- designer member -->
+					<div class="wrapper positionFixed positionPopup backgroundGridYellow overflowy easing" ng-class="{'active' : memberPreview}">
+
+						<memeberdetailspage ng-show="memberPreview"></memeberdetailspage>
+
+					</div>
+
+
+				</li>
+			</ul>
+
 	</div>
 </div>

@@ -1,0 +1,110 @@
+<!-- Interaction Layers -->
+<div class="module positionAbsolute positionCenter easing">
+	<div class="backgroundGridBlue fluid heightHalfFlex widthFull">
+
+		<!-- Background Layer -->
+		<div class="module fluid heightFull widthFull positionAbsolute positionCenter easing">
+
+			<ipadlinewhite class="svgLady animated infinite pulse opacity1"></ipadlinewhite>
+			<ipadlinewhite class="svgMan animated infinite pulse opacity1"></ipadlinewhite>
+
+		</div>
+		<div class="spacedSmall fluid heightHalfFlex widthStatic floatLeft">
+			<div class="module fluid heightThird widthFull positionRelative">
+			</div>
+
+			<h2 class="fluid widthFull fontColorThird fontSizeSeven floatLeft">
+				<span class="number floatLeft">All</span>
+				<span class="number underline floatLeft">Projects</span>
+				<span class="imageicon floatLeft">
+					<img class="positionRelative floatLeft" src="./svg/icons/yellow/arrow-down.svg">
+				</span>
+
+				<div class="moduleButton floatRight">
+					<span class="imageicon">
+						<img class="positionRelative floatLeft" src="./svg/icons/yellow/arrow-down.svg">
+					</span>
+					<a ng-click="paginationToggle();dribbbleListedSwitch = !dribbbleListedSwitch" class="fontColorWhite fontSizeThree floatLeft">Most recent</a>
+				</div>
+			</h2>
+
+			<h2 class="fluid widthFull fontColorWhite fontSizeThree floatLeft">
+				UI Kits, <b>Wireframes</b> and more
+
+				<span class="floatRight text-align-left fontColorOpacityGrey"><b>Fonts</b> starting at $5</span>
+			</h2>
+
+			<input class="featSearch backgroundGridBlue" type="" placeholder="Some of our projects.." name="">
+			<hr>
+
+			<h2 class="fluid widthFull fontColorOpacityGrey fontSizeOne floatLeft">
+				UI Kits, <b>Wireframes</b>, <b>Fonts</b> and more
+				<span class="floatRight fontColorThird text-align-left"><b>Fonts</b> and more, starting at $5</span>
+			</h2>
+
+		</div>
+	</div>
+
+		<!-- Responsive -->
+	<div class="backgroundGridWhite fluid heightFullFlex widthFull resizeWidthFull resizeHeightFull floatLeft"
+		 ng:class="{
+				   'dribbbleListed' : dribbbleListedSwitch,
+				   'dribbbleGrid' : dribbbleGridSwitch,
+				   'moduleSideBarOut' : moduleSideBarSwitch
+				}">
+		<div class="moduleList fluid widthFull">
+			<div class="moduleButton floatLeft">
+				<span class="imageicon">
+					<img class="positionRelative floatLeft" src="./svg/icons/yellow/arrow-close.svg">
+				</span>
+				<a ng-click="moduleSideBarSwitch = !moduleSideBarSwitch" class="fontColorSecondary fontSizeThree floatLeft">Menu</a>
+			</div>
+
+			<div class="moduleButton floatRight">
+				<span class="imageicon">
+					<img class="positionRelative floatLeft" src="./svg/icons/yellow/arrow-close.svg">
+				</span>
+				<a ng-click="paginationToggle();dribbbleListedSwitch = !dribbbleListedSwitch" class="fontColorSecondary fontSizeThree floatLeft">List</a>
+			</div>
+
+			<div class="moduleButton floatRight">
+				<span class="imageicon">
+					<img class="positionRelative floatLeft" src="./svg/icons/yellow/arrow-close.svg">
+				</span>
+				<a ng-click="paginationToggle();dribbbleListedSwitch = !dribbbleListedSwitch" class="fontColorSecondary fontSizeThree floatLeft">Grid</a>
+			</div>
+
+			<div class="moduleButton floatRight">
+				<span class="imageicon">
+					<img class="positionRelative floatLeft" src="./svg/icons/yellow/arrow-close.svg">
+				</span>
+				<a ng-click="paginationToggle();dribbbleListedSwitch = !dribbbleListedSwitch" class="fontColorSecondary fontSizeThree floatLeft">See All</a>
+			</div>
+
+			<ul class="sectionList fluid widthStatic">
+				<li>Featured</li>
+				<li>Latest</li>
+				<li>Popular</li>
+			</ul>
+		</div>
+
+		<div class="moduleSideBar backgroundGridSecondary floatRight easing">
+			<div class="moduleButton floatLeft">
+				<span class="imageicon">
+					<img class="positionRelative floatLeft" src="./svg/icons/yellow/arrow-close.svg">
+				</span>
+				<a ng-click="moduleSideBarSwitch = !moduleSideBarSwitch" class="fontColorSecondary fontSizeThree floatLeft">Menu</a>
+
+				<input type="checkbox" name="">
+				<div class="moduleButton floatRight">
+				<span class="imageicon">
+					<img class="positionRelative floatLeft" src="./svg/icons/yellow/arrow-close.svg">
+				</span>
+				<a ng-click="paginationToggle();dribbbleListedSwitch = !dribbbleListedSwitch" class="fontColorSecondary fontSizeThree floatLeft">Grid</a>
+			</div>
+			</div>
+		</div>
+		
+		<searchlist ng:show="categoryAllSwitch"></searchlist>
+	</div>
+</div>
