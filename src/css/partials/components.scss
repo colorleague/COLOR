@@ -1323,3 +1323,12 @@ filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
     border: 0.5vh solid #fcd829;
     z-index: 1;
 }
+
+pre {
+    display: block;
+    unicode-bidi: embed;
+        float: left;
+    width: 100%;
+    z-index: 1;
+    white-space: pre;
+}			

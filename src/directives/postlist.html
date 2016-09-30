@@ -1,4 +1,39 @@
 <ul class="fluid widthStatic">
+
+			<ul class="categoryList">
+				<li class="fontColorPrimary fontSizeThree">
+					<span class="imageicon">
+						<img class="positionRelative floatLeft" src="./svg/icons/yellow/arrow-close.svg">
+					</span>
+					<a class="fontColorSecondary fontSizeThree floatLeft">Angular</a>
+				</li>
+				<li class="fontColorPrimary fontSizeThree">
+					<span class="imageicon">
+						<img class="positionRelative floatLeft" src="./svg/icons/yellow/arrow-close.svg">
+					</span>
+					<a class="fontColorSecondary fontSizeThree floatLeft">Angular</a>
+				</li>
+				<li class="fontColorPrimary fontSizeThree">
+					<span class="imageicon">
+						<img class="positionRelative floatLeft" src="./svg/icons/yellow/arrow-close.svg">
+					</span>
+					<a class="fontColorSecondary fontSizeThree floatLeft">Angular</a>
+				</li>
+				<li class="fontColorPrimary fontSizeThree">
+					<span class="imageicon">
+						<img class="positionRelative floatLeft" src="./svg/icons/yellow/arrow-close.svg">
+					</span>
+					<a class="fontColorSecondary fontSizeThree floatLeft">Angular</a>
+				</li>
+				<li class="fontColorPrimary fontSizeThree">
+					<span class="imageicon">
+						<img class="positionRelative floatLeft" src="./svg/icons/yellow/arrow-close.svg">
+					</span>
+					<a class="fontColorSecondary fontSizeThree floatLeft">Angular</a>
+				</li>
+			</ul>
+
+
 	<li class="dribbble fluid heightQuarterStatic widthQuarter floatLeft" ng-repeat="item in wordpress | limitTo:pagination.count | orderBy:item.ID | filter: filters">
 
 		<div class="spacedTiny backgroundGridWhite box-shadow border-radius">
@@ -13,7 +48,9 @@
 
 						<div class="infoOverlay">
 		          			<h2 class="fontRegularOne fontColorThird categoryBubble Yellow">{{item.terms.category[0].name}}</h2>
-		          			<div class="social"></div>
+		          			<div class="social">
+								<img class="iconSvg positionRelative floatLeft" src="./svg/icons/white/youtube.svg">
+							</div>
 		          		</div>
 
 					</div>

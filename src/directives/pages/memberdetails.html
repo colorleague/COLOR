@@ -601,106 +601,103 @@
 	</div>
 
 	<!-- testimonial -->
-	<div class="module fluid heigthHalf widthFull positionRelative floatLeft">
-		<div class="fluid heightHalfFlex widthStatic positionRelative">
-			<div class="fluid spacedSmall positionRelative floatLeft">
 
-			<hr>
+	<hr>
 
-			<div class="module fluid widthStaticMini positionRelative">
+	<div class="module fluid heightAnyFlex widthFull positionRelative floatLeft">
+		<div class="module fluid widthStatic positionRelative">
 
-				<div class="authorBubbles backgroundTeam floatLeft"> </div>
+			<div class="fluid heightEight widthFull positionRelative floatLeft">
+				<div ng-init ="test1 = true" class="fluid heighFull widthFull positionRelative floatLeft">
+					<span class="leftTab mini"
+						  ng-click="test1 = true; test2 = false; test3 = false; test4 = false; test5 = false">
+						<img class="positionRelative floatLeft" src="./svg/icons/yellow/arrow-left.svg">
+					</span>
 
-				<h2 class="fluid fontColorThird fontSizeEight floatRight">
-					<hr>
-					<span class="number underline">490</span>Nigel
+					<span class="rightTab mini"
+						  ng-click="test1 = false; test2 = true; test3 = false; test4 = false; test5 = false">
+						<img class="positionRelative floatLeft" src="./svg/icons/yellow/arrow-right.svg">
+					</span>
 
-					<div class="moduleButton floatRight">
-						<span class="imageicon">
-							<img class="positionRelative floatLeft" src="./svg/icons/white/arrow-close.svg">
-						</span>
-						<a ng-click="paginationToggle();dribbbleListedSwitch = !dribbbleListedSwitch" class="fontColorWhite fontSizeThree floatLeft">See All</a>
-					</div>
-				</h2>
+					<h2 ng-show="test1" class="fluid widthFull heightFull fontColorThird backgroundGridWhite border-radius fontSizeOne floatLeft">
 
+							<span class="fluid widthQuarter heightFull floatLeft">
+							<div class="authorBubbles backgroundTeam floatLeft"> </div>
+
+							</span>
+						
+							<span class="fluid widthHalf heightFull floatLeft">
+
+								<div class="spacedSmall">
+								"1 View exceptions from all of your frameworks, platforms and environments in one place.
+								Rollbar gives you the context and insights you need to find and fix bugs faster.
+								Keep your software healthy and users happy."</div>
+
+							</span>
+
+							<div class="moduleButton floatRight">
+								<span class="imageicon">
+									<img class="positionRelative floatLeft" src="./svg/icons/white/arrow-close.svg">
+								</span>
+								<a ng-click="paginationToggle();dribbbleListedSwitch = !dribbbleListedSwitch" class="fontColorWhite fontSizeThree floatLeft">See All</a>
+							</div>
+
+					</h2>
+
+					<h2 ng-show="test2" class="fluid widthFull fontColorWhite fontSizeOne floatLeft">
+						"2 View exceptions from all of your frameworks, platforms and environments in one place.
+			Rollbar gives you the context and insights you need to find and fix bugs faster.
+			Keep your software healthy and users happy."
+					</h2>
+
+					<h2 ng-show="test3" class="fluid widthFull fontColorWhite fontSizeOne floatLeft">
+						"3 View exceptions from all of your frameworks, platforms and environments in one place.
+			Rollbar gives you the context and insights you need to find and fix bugs faster.
+			Keep your software healthy and users happy."
+					</h2>
+
+					<h2 ng-show="test4" class="fluid widthFull fontColorWhite fontSizeOne floatLeft">
+						"4 View exceptions from all of your frameworks, platforms and environments in one place.
+			Rollbar gives you the context and insights you need to find and fix bugs faster.
+			Keep your software healthy and users happy."
+					</h2>
+
+					<h2 ng-show="test5" class="fluid widthFull fontColorWhite fontSizeOne floatLeft">
+						"5 View exceptions from all of your frameworks, platforms and environments in one place.
+			Rollbar gives you the context and insights you need to find and fix bugs faster.
+			Keep your software healthy and users happy."
+					</h2>
+
+				<!-- <div ng-init ="test1 = true" class="fluid widthFull heightEightStatic fontColorWhite fontSizeOne floatLeft">
+
+					<span ng-click="test1 = true; test2 = false; test3 = false; test4 = false; test5 = false" class="floatLeft imageicon">
+						<img class="positionRelative floatLeft" src="./svg/icons/white/arrow-close.svg">
+					</span>
+
+					<span ng-click="test1 = false; test2 = true; test3 = false; test4 = false; test5 = false" class="floatLeft imageicon">
+						<img class="positionRelative floatLeft" src="./svg/icons/white/arrow-close.svg">
+					</span>
+
+					<span ng-click="test1 = false; test2 = false; test3 = true; test4 = false; test5 = false" class="floatLeft imageicon">
+						<img class="positionRelative floatLeft" src="./svg/icons/white/arrow-close.svg">
+					</span>
+
+					<span ng-click="test1 = false; test2 = false; test3 = false; test4 = true; test5 = false" class="floatLeft imageicon">
+						<img class="positionRelative floatLeft" src="./svg/icons/white/arrow-close.svg">
+					</span>
+
+					<span ng-click="test1 = false; test2 = false; test3 = false; test4 = false; test5 = true" class="floatLeft imageicon">
+						<img class="positionRelative floatLeft" src="./svg/icons/white/arrow-close.svg">
+					</span>
+				</div> -->
+
+				</div>
 			</div>
 
 		</div>
-
-		<div class="fluid spacedSmall positionRelative floatLeft">
-			<span class="leftTab mini">
-				<img class="positionRelative floatLeft" src="./svg/icons/yellow/arrow-left.svg">
-			</span>
-
-			<span class="rightTab mini">
-				<img class="positionRelative floatLeft" src="./svg/icons/yellow/arrow-left.svg">
-			</span>
-
-		<h2 ng-show="test1" class="fluid widthFull fontColorWhite fontSizeOne floatLeft">
-			"1 View exceptions from all of your frameworks, platforms and environments in one place.
-Rollbar gives you the context and insights you need to find and fix bugs faster.
-Keep your software healthy and users happy."
-		</h2>
-
-		<h2 ng-show="test2" class="fluid widthFull fontColorWhite fontSizeOne floatLeft">
-			"2 View exceptions from all of your frameworks, platforms and environments in one place.
-Rollbar gives you the context and insights you need to find and fix bugs faster.
-Keep your software healthy and users happy."
-		</h2>
-
-		<h2 ng-show="test3" class="fluid widthFull fontColorWhite fontSizeOne floatLeft">
-			"3 View exceptions from all of your frameworks, platforms and environments in one place.
-Rollbar gives you the context and insights you need to find and fix bugs faster.
-Keep your software healthy and users happy."
-		</h2>
-
-		<h2 ng-show="test4" class="fluid widthFull fontColorWhite fontSizeOne floatLeft">
-			"4 View exceptions from all of your frameworks, platforms and environments in one place.
-Rollbar gives you the context and insights you need to find and fix bugs faster.
-Keep your software healthy and users happy."
-		</h2>
-
-		<h2 ng-show="test5" class="fluid widthFull fontColorWhite fontSizeOne floatLeft">
-			"5 View exceptions from all of your frameworks, platforms and environments in one place.
-Rollbar gives you the context and insights you need to find and fix bugs faster.
-Keep your software healthy and users happy."
-		</h2>
-
-		<div ng-init ="test1 = true" class="fluid widthFull heightEightStatic fontColorWhite fontSizeOne floatLeft">
-
-			<span ng-click="test1 = true; test2 = false; test3 = false; test4 = false; test5 = false" class="floatLeft imageicon">
-				<img class="positionRelative floatLeft" src="./svg/icons/white/arrow-close.svg">
-			</span>
-
-			<span ng-click="test1 = false; test2 = true; test3 = false; test4 = false; test5 = false" class="floatLeft imageicon">
-				<img class="positionRelative floatLeft" src="./svg/icons/white/arrow-close.svg">
-			</span>
-
-			<span ng-click="test1 = false; test2 = false; test3 = true; test4 = false; test5 = false" class="floatLeft imageicon">
-				<img class="positionRelative floatLeft" src="./svg/icons/white/arrow-close.svg">
-			</span>
-
-			<span ng-click="test1 = false; test2 = false; test3 = false; test4 = true; test5 = false" class="floatLeft imageicon">
-				<img class="positionRelative floatLeft" src="./svg/icons/white/arrow-close.svg">
-			</span>
-
-			<span ng-click="test1 = false; test2 = false; test3 = false; test4 = false; test5 = true" class="floatLeft imageicon">
-				<img class="positionRelative floatLeft" src="./svg/icons/white/arrow-close.svg">
-			</span>
-		</div>
-
-		</div>
-
-		<input class="featSearch backgroundGridBlue" type="" placeholder="Some of our projects.." name="">
-		<hr>
-
-		<h2 class="fluid widthFull fontColorOpacityGrey fontSizeOne floatLeft">
-			UI Kits, <b>Wireframes</b>, <b>Fonts</b> and more
-			<span class="floatRight fontColorThird text-align-left"><b>Fonts</b> and more, starting at $5</span>
-		</h2>
-
 	</div>
-</div>
+
+	<hr>
 
 	<!-- Responsive -->
 	<div class="backgroundGridYellow fluid heightFull widthFull resizeWidthFull resizeHeightFull floatLeft">
@@ -712,28 +709,29 @@ Keep your software healthy and users happy."
 
 				<div class="cardBubble"></div>
 
-				<lady class="svgLady"></lady>
-				<h5 class="fontColorPrimary fontSizeThree floatLeft">close</h5>
+				<div class="fluid heightHalf widthFull floatLef">
 
-				<div class="authorBubble backgroundTeam floatLeft"></div>
+					<ul class="sectionList fluid widthStatic">
+						<li>Featured</li>
+					</ul>
 
-				<div class="authorBubbleInfo fluid heightFull widthThreeQuarter">
+					<h2 class="fluid widthFull fontColorPrimary fontSizeFour floatLeft">
+						Fluid Container in fixed width area
+					</h2>
 
-					<h2 class="fluid widthFull fontColorThird fontSizeOne floatRight">
+					<pre>
+						
+						This is code
+					</pre>
+
+
+					<hr class="lineGrey">
+
+					<h2 class="fluid widthFull fontColorThird fontRegularOne floatRight">
 						How to make modern art
 					</h2>
 
-					<h2 class="fluid widthFull fontColorOpacityBlue fontSizeOne floatRight">
-						h3h3Productions
-					</h2>
-
-					<h2 class="fluid widthFull fontColorOpacityBlue fontSizeOne floatRight">
-						subscribe <b>1,989,947</b>
-					</h2>
-
 				</div>
-
-				<hr class="line">
 
 
 			</div>
@@ -744,21 +742,25 @@ Keep your software healthy and users happy."
 
 				<div class="cardBubble"></div>
 
-				<lady class="svgLady"></lady>
-				<div class="fluid heighFull widthFull floatLef">
+				<div class="fluid heightHalf widthFull floatLef">
 
-					<ul class="sortList">
-					<li class="fontColorPrimary fontSizeThree">
-						<span class="imageicon">
-							<img class="positionRelative floatLeft" src="./svg/icons/yellow/arrow-close.svg">
-						</span>
-						<a class="fontColorSecondary fontSizeThree floatLeft">Angular</a>
-					</li>
+					<ul class="sectionList fluid widthStatic">
+						<li>Featured</li>
+					</ul>
 
-				</ul>
+					<h2 class="fluid widthFull fontColorPrimaty fontSizeFive floatLeft">
+						Fluid Container in fixed width area
+					</h2>
+
+
+					<hr class="lineGrey">
+
+					<h2 class="fluid widthFull fontColorThird fontRegularOne floatRight">
+						How to make modern art
+					</h2>
+
 				</div>
 
-				<hr class="line">
 			</div>
 		</div>
 
@@ -773,14 +775,17 @@ Keep your software healthy and users happy."
 						<li>Featured</li>
 					</ul>
 
-					<hr class="line">
-
-					<h2 class="fluid widthFull fontColorPrimaty fontSizeFive floatLeft">
+					<h2 class="fluid widthFull fontColorPrimary fontSizeFive floatLeft">
 						Fluid Container in fixed width area
 					</h2>
 
+					<pre>
+						
+						This is code
+					</pre>
 
-					<hr class="line">
+
+					<hr class="lineGrey">
 
 					<h2 class="fluid widthFull fontColorThird fontRegularOne floatRight">
 						How to make modern art
@@ -792,334 +797,6 @@ Keep your software healthy and users happy."
 
 	</div>
 
-	<!-- 1 by 1 -->
-	<div class="fluid heightQuarter widthFull floatLeft">
-		<div class="spacedMid border-radius">
-			<div class="fluid heightFull widthStatic">
-				
-				<h2 class="fluid widthFull fontColorWhite fontSizeEight floatLeft text-align-center">
-					<span class="indexStamp positionAbsolute positionCenter backgroundGridSecondary fontColorWhite fontSizeOne">1</span>
-					Who
-				</h2>
-
-				<h2 class="fluid widthFull fontColorThird fontSizeFour floatLeft text-align-center">
-					I am
-				</h2>
-			</div>
-		</div>
-	</div>
-
-	<!-- 1 by 1 -->
-	<div class="fluid heightQuarter widthFull floatLeft">
-		<div class="spacedMid border-radius">
-			<div class="fluid heightFull widthStatic">
-
-					<ul class="categoryList">
-						<li class="fontColorPrimary fontSizeThree">
-							<span class="imageicon">
-								<img class="positionRelative floatLeft" src="./svg/icons/yellow/arrow-close.svg">
-							</span>
-							<a class="fontColorSecondary fontSizeThree floatLeft">Angular</a>
-						</li>
-
-						<li class="fontColorPrimary fontSizeThree">
-							<span class="imageicon">
-								<img class="positionRelative floatLeft" src="./svg/icons/yellow/arrow-close.svg">
-							</span>
-							<a class="fontColorSecondary fontSizeThree floatLeft">Angular</a>
-						</li>
-
-						<li class="fontColorPrimary fontSizeThree">
-							<span class="imageicon">
-								<img class="positionRelative floatLeft" src="./svg/icons/yellow/arrow-close.svg">
-							</span>
-							<a class="fontColorSecondary fontSizeThree floatLeft">Angular</a>
-						</li>
-
-						<li class="fontColorPrimary fontSizeThree">
-							<span class="imageicon">
-								<img class="positionRelative floatLeft" src="./svg/icons/yellow/arrow-close.svg">
-							</span>
-							<a class="fontColorSecondary fontSizeThree floatLeft">Angular</a>
-						</li>
-
-						<li class="fontColorPrimary fontSizeThree">
-							<span class="imageicon">
-								<img class="positionRelative floatLeft" src="./svg/icons/yellow/arrow-close.svg">
-							</span>
-							<a class="fontColorSecondary fontSizeThree floatLeft">Angular</a>
-						</li>
-
-						<li class="fontColorPrimary fontSizeThree">
-							<span class="imageicon">
-								<img class="positionRelative floatLeft" src="./svg/icons/yellow/arrow-close.svg">
-							</span>
-							<a class="fontColorSecondary fontSizeThree floatLeft">Angular</a>
-						</li>
-
-						<li class="fontColorPrimary fontSizeThree">
-							<span class="imageicon">
-								<img class="positionRelative floatLeft" src="./svg/icons/yellow/arrow-close.svg">
-							</span>
-							<a class="fontColorSecondary fontSizeThree floatLeft">Angular</a>
-						</li>
-					</ul>
-
-			</div>
-		</div>
-	</div>
-
-	<!-- 1 by 1 -->
-	<div class="fluid heightQuarter widthFull floatLeft">
-		<div class="spacedMid border-radius">
-			<div class="fluid heightFull widthStatic">
-				
-				<h2 class="fluid widthFull fontColorWhite fontSizeEight floatLeft text-align-center">
-					<span class="indexStamp positionAbsolute positionCenter backgroundGridSecondary fontColorWhite fontSizeOne">1</span>
-					What
-				</h2>
-
-				<h2 class="fluid widthFull fontColorThird fontSizeFour floatLeft text-align-center">
-					I Do
-				</h2>
-				<hr>
-
-				<ul class="sectionList fluid widthStatic">
-						<li>Featured</li>
-					</ul>
-
-					<ul class="sortList">
-						<li class="fontColorPrimary fontSizeThree">
-							<span class="imageicon">
-								<img class="positionRelative floatLeft" src="./svg/icons/yellow/arrow-close.svg">
-							</span>
-							<a class="fontColorSecondary fontSizeThree floatLeft">Angular</a>
-						</li>
-					</ul>
-
-					<ul class="categoryList">
-						<li class="fontColorPrimary fontSizeThree">
-							<span class="imageicon">
-								<img class="positionRelative floatLeft" src="./svg/icons/yellow/arrow-close.svg">
-							</span>
-							<a class="fontColorSecondary fontSizeThree floatLeft">Angular</a>
-						</li>
-					</ul>
-
-				<ipadlineon class="fluid widthFull heightFull positionBottomCenter positionAbsolute"></ipadlineon>
-			</div>
-		</div>
-	</div>
-
-	<!-- 1 by 1 -->
-	<div class="fluid heightQuarter widthFull floatLeft">
-		<div class="spacedMid border-radius">
-			<div class="fluid heightFull widthStatic">
-				
-				<h2 class="fluid widthFull fontColorWhite fontSizeEight floatLeft text-align-center">
-					<span class="indexStamp positionAbsolute positionCenter backgroundGridSecondary fontColorWhite fontSizeOne">1</span>
-					When
-				</h2>
-
-				<h2 class="fluid widthFull fontColorThird fontSizeFour floatLeft text-align-center">
-					I've done it
-				</h2>
-				<hr>
-
-				<ul class="sectionList fluid widthStatic">
-						<li>Featured</li>
-					</ul>
-
-					<ul class="sortList">
-						<li class="fontColorPrimary fontSizeThree">
-							<span class="imageicon">
-								<img class="positionRelative floatLeft" src="./svg/icons/yellow/arrow-close.svg">
-							</span>
-							<a class="fontColorSecondary fontSizeThree floatLeft">Angular</a>
-						</li>
-					</ul>
-
-					<ul class="categoryList">
-						<li class="fontColorPrimary fontSizeThree">
-							<span class="imageicon">
-								<img class="positionRelative floatLeft" src="./svg/icons/yellow/arrow-close.svg">
-							</span>
-							<a class="fontColorSecondary fontSizeThree floatLeft">Angular</a>
-						</li>
-					</ul>
-
-				<ipadlineon class="fluid widthFull heightFull positionBottomCenter positionAbsolute"></ipadlineon>
-			</div>
-		</div>
-	</div>
-
-	<!-- 1 by 1 -->
-	<div class="fluid heightQuarter widthFull floatLeft">
-		<div class="spacedMid border-radius">
-			<div class="fluid heightFull widthStatic">
-				
-				<h2 class="fluid widthFull fontColorWhite fontSizeEight floatLeft text-align-center">
-					<span class="indexStamp positionAbsolute positionCenter backgroundGridSecondary fontColorWhite fontSizeOne">1</span>
-					Where
-				</h2>
-
-				<h2 class="fluid widthFull fontColorThird fontSizeFour floatLeft text-align-center">
-					can you find my work
-				</h2>
-				<hr>
-
-				<ul class="sectionList fluid widthStatic">
-						<li>Featured</li>
-					</ul>
-
-					<ul class="sortList">
-						<li class="fontColorPrimary fontSizeThree">
-							<span class="imageicon">
-								<img class="positionRelative floatLeft" src="./svg/icons/yellow/arrow-close.svg">
-							</span>
-							<a class="fontColorSecondary fontSizeThree floatLeft">Angular</a>
-						</li>
-					</ul>
-
-					<ul class="categoryList">
-						<li class="fontColorPrimary fontSizeThree">
-							<span class="imageicon">
-								<img class="positionRelative floatLeft" src="./svg/icons/yellow/arrow-close.svg">
-							</span>
-							<a class="fontColorSecondary fontSizeThree floatLeft">Angular</a>
-						</li>
-					</ul>
-
-				<ipadlineon class="fluid widthFull heightFull positionBottomCenter positionAbsolute"></ipadlineon>
-			</div>
-		</div>
-	</div>
-
-	<!-- 1 by 1 -->
-	<div class="fluid heightQuarter widthFull floatLeft">
-		<div class="spacedMid border-radius">
-			<div class="fluid heightFull widthStatic">
-				
-				<h2 class="fluid widthFull fontColorWhite fontSizeEight floatLeft text-align-center">
-					<span class="indexStamp positionAbsolute positionCenter backgroundGridSecondary fontColorWhite fontSizeOne">1</span>
-					Why
-				</h2>
-
-				<h2 class="fluid widthFull fontColorThird fontSizeFour floatLeft text-align-center">
-					I do it
-				</h2>
-				<hr>
-
-				<ul class="sectionList fluid widthStatic">
-						<li>Featured</li>
-					</ul>
-
-					<ul class="sortList">
-						<li class="fontColorPrimary fontSizeThree">
-							<span class="imageicon">
-								<img class="positionRelative floatLeft" src="./svg/icons/yellow/arrow-close.svg">
-							</span>
-							<a class="fontColorSecondary fontSizeThree floatLeft">Angular</a>
-						</li>
-					</ul>
-
-					<ul class="categoryList">
-						<li class="fontColorPrimary fontSizeThree">
-							<span class="imageicon">
-								<img class="positionRelative floatLeft" src="./svg/icons/yellow/arrow-close.svg">
-							</span>
-							<a class="fontColorSecondary fontSizeThree floatLeft">Angular</a>
-						</li>
-					</ul>
-
-				<ipadlineon class="fluid widthFull heightFull positionBottomCenter positionAbsolute"></ipadlineon>
-			</div>
-		</div>
-	</div>
-
-	<!-- 1 by 1 -->
-	<div class="fluid heightQuarter widthFull floatLeft">
-		<div class="spacedMid border-radius">
-			<div class="fluid heightFull widthStatic">
-				
-				<h2 class="fluid widthFull fontColorWhite fontSizeEight floatLeft text-align-center">
-					<span class="indexStamp positionAbsolute positionCenter backgroundGridSecondary fontColorWhite fontSizeOne">1</span>
-					How
-				</h2>
-
-				<h2 class="fluid widthFull fontColorThird fontSizeFour floatLeft text-align-center">
-					to get in contact with me
-				</h2>
-				<hr>
-
-				<ul class="sectionList fluid widthStatic">
-						<li>Featured</li>
-					</ul>
-
-					<ul class="sortList">
-						<li class="fontColorPrimary fontSizeThree">
-							<span class="imageicon">
-								<img class="positionRelative floatLeft" src="./svg/icons/yellow/arrow-close.svg">
-							</span>
-							<a class="fontColorSecondary fontSizeThree floatLeft">Angular</a>
-						</li>
-					</ul>
-
-					<ul class="categoryList">
-						<li class="fontColorPrimary fontSizeThree">
-							<span class="imageicon">
-								<img class="positionRelative floatLeft" src="./svg/icons/yellow/arrow-close.svg">
-							</span>
-							<a class="fontColorSecondary fontSizeThree floatLeft">Angular</a>
-						</li>
-					</ul>
-
-				<ipadlineon class="fluid widthFull heightFull positionBottomCenter positionAbsolute"></ipadlineon>
-			</div>
-		</div>
-	</div>
-
-	<!-- 1 by 1 -->
-	<div class="fluid heightQuarter widthFull floatLeft">
-		<div class="spacedMid border-radius">
-			<div class="fluid heightFull widthStatic">
-				
-				<h2 class="fluid widthFull fontColorWhite fontSizeEight floatLeft text-align-center">
-					<span class="indexStamp positionAbsolute positionCenter backgroundGridSecondary fontColorWhite fontSizeOne">1</span>
-					Blog border
-				</h2>
-
-				<h2 class="fluid widthFull fontColorThird fontSizeFour floatLeft text-align-center">
-					Direction
-				</h2>
-				<hr>
-
-				<ul class="sectionList fluid widthStatic">
-						<li>Featured</li>
-					</ul>
-
-					<ul class="sortList">
-						<li class="fontColorPrimary fontSizeThree">
-							<span class="imageicon">
-								<img class="positionRelative floatLeft" src="./svg/icons/yellow/arrow-close.svg">
-							</span>
-							<a class="fontColorSecondary fontSizeThree floatLeft">Angular</a>
-						</li>
-					</ul>
-
-					<ul class="categoryList">
-						<li class="fontColorPrimary fontSizeThree">
-							<span class="imageicon">
-								<img class="positionRelative floatLeft" src="./svg/icons/yellow/arrow-close.svg">
-							</span>
-							<a class="fontColorSecondary fontSizeThree floatLeft">Angular</a>
-						</li>
-					</ul>
-
-				<ipadlineon class="fluid widthFull heightFull positionBottomCenter positionAbsolute"></ipadlineon>
-			</div>
-		</div>
-	</div>
 	<!-- Responsive -->
 	<div class="fluid heightFull widthHalf floatLeft">
 
@@ -1380,9 +1057,9 @@ Keep your software healthy and users happy."
 						<div class="fluid positionRelative heightFull widthQuarter floatLeft">
 							<div class="spacedSmall backgroundGridWhite border-radius">
 
-								<div class="spacedLarge">
-									<div class="fluid positionRelative heightFull widthFull floatLeft">
-										<span class="indexStamp positionAbsolute positionCenter backgroundGridSecondary fontColorWhite fontSizeOne">1</span>
+								<div class="spacedLarge"><span class="indexStamp positionAbsolute positionCenter backgroundGridSecondary fontColorWhite fontSizeOne">1</span>
+
+									<div class="fluid positionRelative heightFull widthFull floatLeft overflowy">
 
 										<h2 class="fluid widthFull fontColorPrimary fontSizeFour floatLeft">
 											Plan
@@ -1391,9 +1068,85 @@ Keep your software healthy and users happy."
 										<h2 class="fluid widthFull fontColorThird fontSizeTwo floatLeft">
 											Direction
 										</h2>
-										<hr>
 
-										<ipadlineon class="fluid widthFull heightFull positionBottomCenter positionAbsolute"></ipadlineon>
+
+										<hr class="lineGrey">
+
+										<div class="authorBubbleInfo fluid widthThreeQuarter">
+
+											<h2 class="fluid widthFull fontColorPrimary fontSizeOne floatRight text-align-right">
+												<img class="iconSvg tiny positionRelative floatLeft" src="./svg/icons/yellow/arrow-close.svg">How to make modern art
+											</h2>
+
+											<h2 class="fluid widthFull fontColorPrimary fontSizeOne floatRight text-align-right">
+												<img class="iconSvg tiny positionRelative floatLeft" src="./svg/icons/yellow/arrow-close.svg">How to make modern art
+											</h2>
+
+											<h2 class="fluid widthFull fontColorPrimary fontSizeOne floatRight text-align-right">
+												<img class="iconSvg tiny positionRelative floatLeft" src="./svg/icons/yellow/arrow-close.svg">How to make modern art
+											</h2>
+
+										</div>
+
+										<hr class="lineGrey">
+
+										<div class="authorBubble backgroundTeam floatLeft"></div>
+
+										<div class="authorBubbleInfo fluid widthThreeQuarter">
+
+											<h2 class="fluid widthFull fontColorPrimary fontSizeOne floatRight">
+												How to make modern art
+											</h2>
+
+											<h2 class="fluid widthFull fontColorPrimary fontSizeOne floatRight">
+												h3h3Productions
+											</h2>
+
+											<h2 class="fluid widthFull fontColorWhite fontSizeOne floatRight">
+												subscribe <b>1,989,947</b>
+											</h2>
+
+										</div>
+
+										<hr class="lineGrey">
+
+										<div class="authorBubble backgroundTeam floatLeft"></div>
+
+										<div class="authorBubbleInfo fluid widthThreeQuarter">
+
+											<h2 class="fluid widthFull fontColorPrimary fontSizeOne floatRight">
+												How to make modern art
+											</h2>
+
+											<h2 class="fluid widthFull fontColorPrimary fontSizeOne floatRight">
+												h3h3Productions
+											</h2>
+
+											<h2 class="fluid widthFull fontColorWhite fontSizeOne floatRight">
+												subscribe <b>1,989,947</b>
+											</h2>
+
+										</div>
+
+										<hr class="lineGrey">
+
+										<div class="authorBubble backgroundTeam floatLeft"></div>
+
+										<div class="authorBubbleInfo fluid widthThreeQuarter">
+
+											<h2 class="fluid widthFull fontColorPrimary fontSizeOne floatRight">
+												How to make modern art
+											</h2>
+
+											<h2 class="fluid widthFull fontColorPrimary fontSizeOne floatRight">
+												h3h3Productions
+											</h2>
+
+											<h2 class="fluid widthFull fontColorWhite fontSizeOne floatRight">
+												subscribe <b>1,989,947</b>
+											</h2>
+
+										</div>
 
 									</div>
 								</div>
@@ -1805,103 +1558,15 @@ Keep your software healthy and users happy."
 						<div class="fluid positionRelative heightQuarter widthHalf floatLeft">
 							<div class="spacedSmall backgroundGridWhite border-radius">
 
-								<div class="spacedLarge">
+								<div class="spacedSmall">
 									<div class="fluid positionRelative heightFull widthFull floatLeft">
 										<span class="indexStamp positionAbsolute positionCenter backgroundGridSecondary fontColorWhite fontSizeOne">1</span>
 
-										<h2 class="fluid widthFull fontColorPrimary fontSizeFour floatLeft">
-											Plan
-										</h2>
-
-										<h2 class="fluid widthFull fontColorThird fontSizeTwo floatLeft">
-											Direction
-										</h2>
-										<hr>
-
-										<ipadlineon class="fluid widthFull heightFull positionBottomCenter positionAbsolute"></ipadlineon>
-
-									</div>
-								</div>
-
-								<span class="scorllDownTab mini">
-									<img class="positionRelative floatRight" src="./svg/icons/yellow/arrow-down.svg">
-								</span>
-
-							</div>
-						</div>
-
-						<!-- Card component -->
-						<div class="fluid positionRelative heightQuarter widthHalf floatLeft">
-							<div class="spacedSmall backgroundGridWhite border-radius">
-
-								<div class="spacedLarge">
-									<div class="fluid positionRelative heightFull widthFull floatLeft">
-										<span class="indexStamp positionAbsolute positionCenter backgroundGridSecondary fontColorWhite fontSizeOne">1</span>
-
-										<h2 class="fluid widthFull fontColorPrimary fontSizeFour floatLeft">
-											Prep
-										</h2>
-
-										<h2 class="fluid widthFull fontColorThird fontSizeTwo floatLeft">
-											Materials
-										</h2>
-										<hr>
-
-										<ipadlineon class="fluid widthFull heightFull positionBottomCenter positionAbsolute"></ipadlineon>
-
-									</div>
-								</div>
-
-								<span class="scorllDownTab mini">
-									<img class="positionRelative floatRight" src="./svg/icons/yellow/arrow-down.svg">
-								</span>
-
-							</div>
-						</div>
-
-
-						<!-- Card component -->
-						<div class="fluid positionRelative heightQuarter widthHalf floatLeft">
-							<div class="spacedSmall backgroundGridWhite border-radius">
-
-								<div class="spacedLarge">
-									<div class="fluid positionRelative heightFull widthFull floatLeft">
-										<span class="indexStamp positionAbsolute positionCenter backgroundGridSecondary fontColorWhite fontSizeOne">1</span>
-
-										<h2 class="fluid widthFull fontColorPrimary fontSizeFour floatLeft">
-											Preform
-										</h2>
-
-										<h2 class="fluid widthFull fontColorThird fontSizeTwo floatLeft">
-											Immitation
-										</h2>
-										<hr>
-
-										<ipadlineon class="fluid widthFull heightFull positionBottomCenter positionAbsolute"></ipadlineon>
-
-									</div>
-								</div>
-
-								<span class="scorllDownTab mini">
-									<img class="positionRelative floatRight" src="./svg/icons/yellow/arrow-down.svg">
-								</span>
-
-							</div>
-						</div>
-
-						<!-- Card component -->
-						<div class="fluid positionRelative heightQuarter widthHalf floatLeft">
-							<div class="spacedSmall backgroundGridWhite border-radius">
-
-								<div class="spacedLarge">
-									<div class="fluid positionRelative heightFull widthFull floatLeft">
-										<span class="indexStamp positionAbsolute positionCenter backgroundGridSecondary fontColorWhite fontSizeOne">1</span>
-
-										<h2 class="fluid widthFull fontColorPrimary fontSizeFour floatLeft">
+										<h2 class="fluid widthFull fontColorPrimary fontSizeThree floatLeft">
 											Perfect
 										</h2>
 
-										<h2 class="fluid widthFull fontColorThird fontSizeTwo floatLeft">
+										<h2 class="fluid widthFull fontColorThird fontSizeOne floatLeft">
 											Distribution
 										</h2>
 										<hr>
@@ -1911,9 +1576,81 @@ Keep your software healthy and users happy."
 									</div>
 								</div>
 
-								<span class="scorllDownTab mini">
-									<img class="positionRelative floatRight" src="./svg/icons/yellow/arrow-down.svg">
-								</span>
+							</div>
+						</div>
+
+						<!-- Card component -->
+						<div class="fluid positionRelative heightQuarter widthHalf floatLeft">
+							<div class="spacedSmall backgroundGridWhite border-radius">
+
+								<div class="spacedSmall">
+									<div class="fluid positionRelative heightFull widthFull floatLeft">
+										<span class="indexStamp positionAbsolute positionCenter backgroundGridSecondary fontColorWhite fontSizeOne">1</span>
+
+										<h2 class="fluid widthFull fontColorPrimary fontSizeThree floatLeft">
+											Perfect
+										</h2>
+
+										<h2 class="fluid widthFull fontColorThird fontSizeOne floatLeft">
+											Distribution
+										</h2>
+										<hr>
+
+										<ipadlineon class="fluid widthFull heightFull positionBottomCenter positionAbsolute"></ipadlineon>
+
+									</div>
+								</div>
+
+							</div>
+						</div>
+
+
+						<!-- Card component -->
+						<div class="fluid positionRelative heightQuarter widthHalf floatLeft">
+							<div class="spacedSmall backgroundGridWhite border-radius">
+
+								<div class="spacedSmall">
+									<div class="fluid positionRelative heightFull widthFull floatLeft">
+										<span class="indexStamp positionAbsolute positionCenter backgroundGridSecondary fontColorWhite fontSizeOne">1</span>
+
+										<h2 class="fluid widthFull fontColorPrimary fontSizeThree floatLeft">
+											Perfect
+										</h2>
+
+										<h2 class="fluid widthFull fontColorThird fontSizeOne floatLeft">
+											Distribution
+										</h2>
+										<hr>
+
+										<ipadlineon class="fluid widthFull heightFull positionBottomCenter positionAbsolute"></ipadlineon>
+
+									</div>
+								</div>
+
+							</div>
+						</div>
+
+						<!-- Card component -->
+						<div class="fluid positionRelative heightQuarter widthHalf floatLeft">
+							<div class="spacedSmall backgroundGridWhite border-radius">
+
+								<div class="spacedSmall">
+									<div class="fluid positionRelative heightFull widthFull floatLeft">
+										<span class="indexStamp positionAbsolute positionCenter backgroundGridSecondary fontColorWhite fontSizeOne">1</span>
+
+										<h2 class="fluid widthFull fontColorPrimary fontSizeThree floatLeft">
+											Perfect
+										</h2>
+
+										<h2 class="fluid widthFull fontColorThird fontSizeOne floatLeft">
+											Distribution
+										</h2>
+										<hr>
+
+										<ipadlineon class="fluid widthFull heightFull positionBottomCenter positionAbsolute"></ipadlineon>
+
+									</div>
+								</div>
 
 							</div>
 						</div>
@@ -1932,30 +1669,24 @@ Keep your software healthy and users happy."
 
 				<div class="cardBubble"></div>
 
-				<lady class="svgLady"></lady>
-				<h5 class="fontColorPrimary fontSizeThree floatLeft">close</h5>
+				<div class="fluid heightHalf widthFull floatLef">
 
-				<div class="authorBubble backgroundTeam floatLeft"></div>
+					<ul class="sectionList fluid widthStatic">
+						<li>Featured</li>
+					</ul>
 
-				<div class="authorBubbleInfo fluid heightFull widthThreeQuarter">
+					<h2 class="fluid widthFull fontColorPrimary fontSizeTwo floatLeft">
+						Fluid Container in fixed width area
+					</h2>
 
-					<h2 class="fluid widthFull fontColorThird fontSizeOne floatRight">
+					<h2 class="fluid widthFull fontColorThird fontRegularOne floatRight">
 						How to make modern art
 					</h2>
 
-					<h2 class="fluid widthFull fontColorOpacityBlue fontSizeOne floatRight">
-						h3h3Productions
-					</h2>
 
-					<h2 class="fluid widthFull fontColorOpacityBlue fontSizeOne floatRight">
-						subscribe <b>1,989,947</b>
-					</h2>
+					<hr class="line">
 
 				</div>
-
-				<hr class="line">
-
-
 			</div>
 		</div>
 
@@ -1964,98 +1695,24 @@ Keep your software healthy and users happy."
 
 				<div class="cardBubble"></div>
 
-				<lady class="svgLady"></lady>
-				<div class="fluid heighFull widthFull floatLef">
+				<div class="fluid heightHalf widthFull floatLef">
 
-					<ul class="sortList">
-					<li class="fontColorPrimary fontSizeThree">
-						<span class="imageicon">
-							<img class="positionRelative floatLeft" src="./svg/icons/yellow/arrow-close.svg">
-						</span>
-						<a class="fontColorSecondary fontSizeThree floatLeft">Angular</a>
-					</li>
+					<ul class="sectionList fluid widthStatic">
+						<li>Featured</li>
+					</ul>
 
-					<li class="fontColorPrimary fontSizeThree">
-						<span class="imageicon">
-							<img class="positionRelative floatLeft" src="./svg/icons/yellow/arrow-close.svg">
-						</span>
-						<p class="fontColorSecondary fontSizeThree floatLeft">React</p>
-					</li>
+					<h2 class="fluid widthFull fontColorPrimary fontSizeTwo floatLeft">
+						Fluid Container in fixed width area
+					</h2>
 
-					<li class="fontColorPrimary fontSizeThree">
-						<span class="imageicon">
-							<img class="positionRelative floatLeft" src="./svg/icons/yellow/arrow-close.svg">
-						</span>
-						<a class="fontColorSecondary fontSizeThree floatLeft">Angular</a>
-					</li>
+					<h2 class="fluid widthFull fontColorThird fontRegularOne floatRight">
+						How to make modern art
+					</h2>
 
-					<li class="fontColorPrimary fontSizeThree">
-						<span class="imageicon">
-							<img class="positionRelative floatLeft" src="./svg/icons/yellow/arrow-close.svg">
-						</span>
-						<p class="fontColorSecondary fontSizeThree floatLeft">React</p>
-					</li>
 
-					<li class="fontColorPrimary fontSizeThree">
-						<span class="imageicon">
-							<img class="positionRelative floatLeft" src="./svg/icons/yellow/arrow-close.svg">
-						</span>
-						<a class="fontColorSecondary fontSizeThree floatLeft">Angular</a>
-					</li>
+					<hr class="line">
 
-					<li class="fontColorPrimary fontSizeThree">
-						<span class="imageicon">
-							<img class="positionRelative floatLeft" src="./svg/icons/yellow/arrow-close.svg">
-						</span>
-						<p class="fontColorSecondary fontSizeThree floatLeft">React</p>
-					</li>
-
-					<li class="fontColorPrimary fontSizeThree">
-						<span class="imageicon">
-							<img class="positionRelative floatLeft" src="./svg/icons/yellow/arrow-close.svg">
-						</span>
-						<a class="fontColorSecondary fontSizeThree floatLeft">Angular</a>
-					</li>
-
-					<li class="fontColorPrimary fontSizeThree">
-						<span class="imageicon">
-							<img class="positionRelative floatLeft" src="./svg/icons/yellow/arrow-close.svg">
-						</span>
-						<p class="fontColorSecondary fontSizeThree floatLeft">React</p>
-					</li>
-
-					<li class="fontColorPrimary fontSizeThree">
-						<span class="imageicon">
-							<img class="positionRelative floatLeft" src="./svg/icons/yellow/arrow-close.svg">
-						</span>
-						<a class="fontColorSecondary fontSizeThree floatLeft">Angular</a>
-					</li>
-
-					<li class="fontColorPrimary fontSizeThree">
-						<span class="imageicon">
-							<img class="positionRelative floatLeft" src="./svg/icons/yellow/arrow-close.svg">
-						</span>
-						<p class="fontColorSecondary fontSizeThree floatLeft">React</p>
-					</li>
-
-					<li class="fontColorPrimary fontSizeThree">
-						<span class="imageicon">
-							<img class="positionRelative floatLeft" src="./svg/icons/yellow/arrow-close.svg">
-						</span>
-						<a class="fontColorSecondary fontSizeThree floatLeft">Angular</a>
-					</li>
-
-					<li class="fontColorPrimary fontSizeThree">
-						<span class="imageicon">
-							<img class="positionRelative floatLeft" src="./svg/icons/yellow/arrow-close.svg">
-						</span>
-						<p class="fontColorSecondary fontSizeThree floatLeft">React</p>
-					</li>
-
-				</ul>
 				</div>
-
-				<hr class="line">
 			</div>
 		</div>
 
@@ -2070,32 +1727,9 @@ Keep your software healthy and users happy."
 						<li>Featured</li>
 					</ul>
 
-					<ul class="sortList">
-						<li class="fontColorPrimary fontSizeThree">
-							<span class="imageicon">
-								<img class="positionRelative floatLeft" src="./svg/icons/yellow/arrow-close.svg">
-							</span>
-							<a class="fontColorSecondary fontSizeThree floatLeft">Angular</a>
-						</li>
-					</ul>
-
-					<ul class="categoryList">
-						<li class="fontColorPrimary fontSizeThree">
-							<span class="imageicon">
-								<img class="positionRelative floatLeft" src="./svg/icons/yellow/arrow-close.svg">
-							</span>
-							<a class="fontColorSecondary fontSizeThree floatLeft">Angular</a>
-						</li>
-					</ul>
-
-					<hr class="line">
-
-					<h2 class="fluid widthFull fontColorPrimaty fontSizeFive floatLeft">
+					<h2 class="fluid widthFull fontColorPrimary fontSizeTwo floatLeft">
 						Fluid Container in fixed width area
 					</h2>
-
-
-					<hr class="line">
 
 					<h2 class="fluid widthFull fontColorThird fontRegularOne floatRight">
 						How to make modern art
@@ -2104,48 +1738,6 @@ Keep your software healthy and users happy."
 
 					<hr class="line">
 
-					<div class="featButton mini first floatLeft easing"
-						 ng:click="menuOutBottomSwitch = !menuOutBottomSwitch"
-						>
-						<p class="featButtonText mini">Add to</p>
-						<span class="bubbleMenu above">
-							<div class="backgroundGridYellow fluid heightHalf widthFull">
-								<span class="icon backgroundGridWhite floatLeft"></span>
-								<span class="fontSizeThree fontColorSecondary">Nigel</span>
-							</div>
-							<div class="backgroundGridWhite fluid heightHalf widthFull">
-							</div>
-						</span>
-					</div>
-
-					<div class="featButton mini floatLeft easing"
-						 ng:click="menuOutBottomSwitch = !menuOutBottomSwitch"
-						>
-						<p class="featButtonText mini">Share</p>
-						<span class="bubbleMenu above">
-							<div class="backgroundGridYellow fluid heightHalf widthFull">
-								<span class="icon backgroundGridWhite floatLeft"></span>
-								<span class="fontSizeThree fontColorSecondary">Nigel</span>
-							</div>
-							<div class="backgroundGridWhite fluid heightHalf widthFull">
-							</div>
-						</span>
-					</div>
-
-					<div class="featButton mini last floatRight easing"
-						 ng:click="menuOutBottomSwitch = !menuOutBottomSwitch"
-						>
-						<p class="featButtonText mini">Nope</p>
-						<span class="bubbleMenu above">
-							<div class="backgroundGridYellow fluid heightHalf widthFull">
-								<span class="icon backgroundGridWhite floatLeft"></span>
-								<span class="fontSizeThree fontColorSecondary">Nigel</span>
-							</div>
-							<div class="backgroundGridWhite fluid heightHalf widthFull">
-							</div>
-						</span>
-					</div>
-
 				</div>
 			</div>
 		</div>
@@ -2159,101 +1751,12 @@ Keep your software healthy and users happy."
 				
 				<h2 class="fluid widthFull fontColorWhite fontSizeEight floatLeft text-align-center">
 					<span class="indexStamp positionAbsolute positionCenter backgroundGridSecondary fontColorWhite fontSizeOne">1</span>
-					Plan
+					Gettin' Technical
 				</h2>
 
 				<h2 class="fluid widthFull fontColorThird fontSizeFour floatLeft text-align-center">
-					Direction
+					front end & back end tools
 				</h2>
-				<hr>
-
-				<ipadlineon class="fluid widthFull heightFull positionBottomCenter positionAbsolute"></ipadlineon>
-			</div>
-		</div>
-	</div>
-
-	<!-- 1 by 1 -->
-	<div class="fluid heightQuarter widthFull floatLeft">
-		<div class="spacedMid border-radius">
-			<div class="fluid heightFull widthStatic">
-				
-				<h2 class="fluid widthFull fontColorWhite fontSizeEight floatLeft text-align-center">
-					<span class="indexStamp positionAbsolute positionCenter backgroundGridSecondary fontColorWhite fontSizeOne">1</span>
-					Plan
-				</h2>
-
-				<h2 class="fluid widthFull fontColorThird fontSizeFour floatLeft text-align-center">
-					Direction
-				</h2>
-				<hr>
-
-				<ul class="sectionList fluid widthStatic">
-						<li>Featured</li>
-					</ul>
-
-					<ul class="sortList">
-						<li class="fontColorPrimary fontSizeThree">
-							<span class="imageicon">
-								<img class="positionRelative floatLeft" src="./svg/icons/yellow/arrow-close.svg">
-							</span>
-							<a class="fontColorSecondary fontSizeThree floatLeft">Angular</a>
-						</li>
-					</ul>
-
-					<ul class="categoryList">
-						<li class="fontColorPrimary fontSizeThree">
-							<span class="imageicon">
-								<img class="positionRelative floatLeft" src="./svg/icons/yellow/arrow-close.svg">
-							</span>
-							<a class="fontColorSecondary fontSizeThree floatLeft">Angular</a>
-						</li>
-					</ul>
-
-				<ipadlineon class="fluid widthFull heightFull positionBottomCenter positionAbsolute"></ipadlineon>
-			</div>
-		</div>
-	</div>
-
-	<!-- Fluid Fixed -->
-	<div class="fluid backgroundTeam heightHalfFlex widthFull floatLeft overflowHidden">
-		<!-- CSS Overlay -->
-		<div class="backgroundOpacityBlue module fluid heightFullFlex widthFull positionAbsolute positionCenter easing"></div>
-		<div class="fluid heightAnyFlex widthStatic backgroundGridWhite">
-			<div class="fluid heightAnyFlex widthFull resizeWidthFull resizeHeightFull floatLeft backgroundGridWhite">
-
-				<div class="fluid heightHalfFlexSpacedMid widthHalfFlexSpacedMid positionRelative floatLeft">
-
-					<h2 class="fluid widthFull fontSizeSix fontColorPrimary fontSizeFive floatLeft">
-						Planing is <b class="fontColorSecondary"> an understatment</b>
-					</h2>
-
-					<div class="fluid heightEightStatic widthFull floatLeft box-shadow border-radius">
-						<hr>
-								<h2 class="fluid widthFull fontSizeTwo fontColorPrimary floatLeft">
-									Planing is <b class="fontColorSecondary"> an understatment</b>
-								</h2>
-
-					</div>
-
-					<b class="fluid underline widthFull fontSizeTwo fontColorThird fontSizeFive floatLeft">
-						Fluid Container in fixed width area
-					</b>
-
-					<p class="fluid underline widthFull fontSizeTwo fontColorPrimary fontSizeFive floatLeft">
-						Fluid Container in fixed width area
-					</p>
-
-					<i class="fluid underline widthFull fontSizeTwo fontColorPrimary fontSizeFive floatLeft">
-						Fluid Container in fixed width area
-					</i>
-				</div>
-
-				<div class="fluid heightHalfFlexSpacedMid widthHalfFlexSpacedMid positionRelative floatLeft">
-
-					<p class="fluid widthFull fontColorPrimary fontSizeOne floatLeft">
-						From Ui to ux, you;ve gotta come clean and responsive. Prepared for all platforms and interested in building for upcomong tech, VR HERE WE COME!
-					</p>
-				</div>
 			</div>
 		</div>
 	</div>
@@ -2394,7 +1897,7 @@ Keep your software healthy and users happy."
 				<div class="fluid heightHalfFlexSpacedMid widthHalfFlexSpacedMid positionRelative floatLeft">
 
 					<h2 class="fluid widthFull fontSizeSix fontColorWhite fontSizeFive floatLeft">
-						Fluid Container in fixed width area
+						Link cloud
 					</h2>
 
 					<p class="fluid widthFull fontSizeTwo fontColorWhite fontSizeFive floatLeft">

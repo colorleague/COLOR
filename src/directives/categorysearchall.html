@@ -34,7 +34,7 @@
 				<span class="floatRight text-align-left fontColorOpacityGrey"><b>Fonts</b> starting at $5</span>
 			</h2>
 
-			<input class="featSearch backgroundGridBlue" type="" placeholder="Some of our projects.." name="">
+			<input ng-model="filters.title" class="featSearch backgroundGridBlue" type="" placeholder="Some of our projects.." name="">
 			<hr>
 
 			<h2 class="fluid widthFull fontColorOpacityGrey fontSizeOne floatLeft">
@@ -82,7 +82,7 @@
 			</div>
 
 			<ul class="sectionList fluid widthStatic">
-				<li>Featured</li>
+				<li ng-click="filters.terms.category.name = 'SEO'">Featured</li>
 				<li>Latest</li>
 				<li>Popular</li>
 			</ul>

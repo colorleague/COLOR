@@ -162,6 +162,7 @@ ul.categoryList {
 	    // Commons
 	    text-align: center;
 	    position: relative;
+	    box-shadow: 0 0 1vh rgba(131, 131, 131, 0.125);
 	    background: #fff;
 	    float: left;
 	    margin: 1vh 1vw 0 0;
@@ -281,6 +282,12 @@ ul.moduleList {
     height: 2.5vh;
     width: 2.5vh;
     padding: 1.25vh;
+}
+
+.iconSvg.tiny {
+    height: 2.5vh;
+    width: 2.5vh;
+    padding: 0;
 }
 
 span.bubble {

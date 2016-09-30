@@ -34,18 +34,12 @@
 								<div class="spacedSmall">
 
 									<h2 class="fluid widthFull fontColorWhite fontSizeEight floatLeft text-align-center text-shadow">
-										using jquery
+										"JQUERY"
 									</h2>
 
 									<hr>
 
-									<h2 class="fluid widthFull fontColorWhite fontSizeThree floatLeft text-align-center">
-										Buttons | Github | Download
-									</h2>
-
-									<hr>
-
-									<h2 class="fluid widthFull fontColorWhite fontSizeTwo floatLeft text-align-center">
+									<h2 class="fluid widthFull fontColorThird fontSizeTwo floatLeft text-align-center">
 										#821 & Fight Companion <i>with Joey Diaz</i>
 									</h2>
 
@@ -222,16 +216,17 @@
 						</div>
 
 
-						<!-- Card component -->
+						
 						<div class="fluid heightThreeQuarter widthFull floatLeft">
-							<div class="fluid positionRelative heightHalf widthHalf floatLeft">
+							<!-- Card component -->
+							<div class="fluid positionRelative heightQuarter widthHalf floatLeft">
 								<div class="spacedSmall backgroundGridWhite border-radius">
 
-									<div class="spacedLarge">
+									<div class="spacedSmall">
 										<div class="fluid positionRelative heightFull widthFull floatLeft">
 											<span class="indexStamp positionAbsolute positionCenter backgroundGridSecondary fontColorWhite fontSizeOne">1</span>
 
-											<h2 class="fluid widthFull fontColorPrimary fontSizeThree floatLeft">
+											<h2 class="fluid widthFull fontColorPrimary fontSizeTwo floatLeft">
 												Tommy chong
 											</h2>
 
@@ -243,23 +238,19 @@
 
 										</div>
 									</div>
-
-									<span class="scorllDownTab mini">
-										<img class="positionRelative floatRight" src="./svg/icons/yellow/arrow-down.svg">
-									</span>
 
 								</div>
 							</div>
 
 							<!-- Card component -->
-							<div class="fluid positionRelative heightHalf widthHalf floatLeft">
+							<div class="fluid positionRelative heightQuarter widthHalf floatLeft">
 								<div class="spacedSmall backgroundGridWhite border-radius">
 
-									<div class="spacedLarge">
+									<div class="spacedSmall">
 										<div class="fluid positionRelative heightFull widthFull floatLeft">
 											<span class="indexStamp positionAbsolute positionCenter backgroundGridSecondary fontColorWhite fontSizeOne">1</span>
 
-											<h2 class="fluid widthFull fontColorPrimary fontSizeThree floatLeft">
+											<h2 class="fluid widthFull fontColorPrimary fontSizeTwo floatLeft">
 												Tommy chong
 											</h2>
 
@@ -271,24 +262,20 @@
 
 										</div>
 									</div>
-
-									<span class="scorllDownTab mini">
-										<img class="positionRelative floatRight" src="./svg/icons/yellow/arrow-down.svg">
-									</span>
 
 								</div>
 							</div>
 
 
 							<!-- Card component -->
-							<div class="fluid positionRelative heightHalf widthHalf floatLeft">
+							<div class="fluid positionRelative heightQuarter widthHalf floatLeft">
 								<div class="spacedSmall backgroundGridWhite border-radius">
 
-									<div class="spacedLarge">
+									<div class="spacedSmall">
 										<div class="fluid positionRelative heightFull widthFull floatLeft">
 											<span class="indexStamp positionAbsolute positionCenter backgroundGridSecondary fontColorWhite fontSizeOne">1</span>
 
-											<h2 class="fluid widthFull fontColorPrimary fontSizeThree floatLeft">
+											<h2 class="fluid widthFull fontColorPrimary fontSizeTwo floatLeft">
 												Tommy chong
 											</h2>
 
@@ -300,23 +287,19 @@
 
 										</div>
 									</div>
-
-									<span class="scorllDownTab mini">
-										<img class="positionRelative floatRight" src="./svg/icons/yellow/arrow-down.svg">
-									</span>
 
 								</div>
 							</div>
 
 							<!-- Card component -->
-							<div class="fluid positionRelative heightHalf widthHalf floatLeft">
+							<div class="fluid positionRelative heightQuarter widthHalf floatLeft">
 								<div class="spacedSmall backgroundGridWhite border-radius">
 
-									<div class="spacedLarge">
+									<div class="spacedSmall">
 										<div class="fluid positionRelative heightFull widthFull floatLeft">
 											<span class="indexStamp positionAbsolute positionCenter backgroundGridSecondary fontColorWhite fontSizeOne">1</span>
 
-											<h2 class="fluid widthFull fontColorPrimary fontSizeThree floatLeft">
+											<h2 class="fluid widthFull fontColorPrimary fontSizeTwo floatLeft">
 												Tommy chong
 											</h2>
 
@@ -328,10 +311,6 @@
 
 										</div>
 									</div>
-
-									<span class="scorllDownTab mini">
-										<img class="positionRelative floatRight" src="./svg/icons/yellow/arrow-down.svg">
-									</span>
 
 								</div>
 							</div>
@@ -351,7 +330,7 @@
 				<div class="spacedLarge">
 					<div class="spacedMid border-radius overflowy">
 						<h2 class="fluid widthFull fontColorWhite text-shadow fontSizeTwo floatLeft text-align-center">
-							Related Projects
+							Related Projects (Using feature)
 						</h2>
 						<h2 class="fluid widthFull fontColorPrimary text-shadow fontSizeOne floatLeft text-align-center">
 							Inspiration & Components
@@ -759,20 +738,29 @@
 	<div class="fluid heightFull widthFull floatLeft">
 
 		<!-- Background Layer -->
-		<div class="backgroundYellowGradient module fluid heightFull widthFullpositionAbsolute positionCenter easing">
+		<div class="backgroundYellowGradient module fluid heightFull widthFullpositionAbsolute positionCenter easing" ng-init="person1 = true">
 			<div class="backgroundGrid module fluid heightFull widthFull positionAbsolute positionCenter easing">
 			</div>
 			<logoaltwhite class="opacity1"></logoaltwhite>
 
 
-			<img class="fluid positionAbsolute positionBottomCenter widthHalf" src="./person/1.png">
+			<img ng:show="person1" class="fluid positionAbsolute positionBottomCenter widthHalf" src="./person/1.png">
+
+			<img ng:show="person2" class="fluid positionAbsolute positionBottomCenter widthHalf" src="./person/2.png">
+
+			<img ng:show="person3" class="fluid positionAbsolute positionBottomCenter widthHalf" src="./person/3.png">
+
+			<img ng:show="person4" class="fluid positionAbsolute positionBottomCenter widthHalf" src="./person/4.png">
+
 		</div>
 
 		<div class="spacedLarge">
 				<div class="spacedLarge">
 
 						<!-- Card component -->
-						<div class="fluid positionRelative heightHalf widthQuarter floatLeft">
+						<div class="fluid positionRelative heightHalf widthQuarter floatLeft"
+							 ng-mouseenter="person1 = true; person2 = false; person3 = false"
+				 			>
 							<div class="spacedSmall backgroundGridWhite border-radius">
 
 								<div class="spacedLarge">
@@ -788,20 +776,16 @@
 										</h2>
 										<hr>
 
-										<ipadlineon class="fluid widthFull heightFull positionBottomCenter positionAbsolute"></ipadlineon>
 
 									</div>
 								</div>
-
-								<span class="scorllDownTab mini">
-									<img class="positionRelative floatRight" src="./svg/icons/yellow/arrow-down.svg">
-								</span>
 
 							</div>
 						</div>
 
 						<!-- Card component -->
-						<div class="fluid positionRelative heightHalf widthHalf floatLeft">
+						<div class="fluid positionRelative heightHalf widthHalf floatLeft"
+							ng-mouseenter="person1 = true; person2 = false; person3 = false; person4 = false">
 							<div class="fluid positionRelative heightFull widthFull floatLeft">
 
 
@@ -819,7 +803,8 @@
 						</div>
 
 						<!-- Card component -->
-						<div class="fluid positionRelative heightHalf widthQuarter floatLeft">
+						<div class="fluid positionRelative heightHalf widthQuarter floatLeft"
+							ng-mouseenter="person1 = false; person2 = true; person3 = false; person4 = false">
 							<div class="spacedSmall backgroundGridWhite border-radius">
 
 								<div class="spacedLarge">
@@ -835,20 +820,16 @@
 										</h2>
 										<hr>
 
-										<ipadlineon class="fluid widthFull heightFull positionBottomCenter positionAbsolute"></ipadlineon>
 
 									</div>
 								</div>
-
-								<span class="scorllDownTab mini">
-									<img class="positionRelative floatRight" src="./svg/icons/yellow/arrow-down.svg">
-								</span>
 
 							</div>
 						</div>
 
 						<!-- Card component -->
-						<div class="fluid positionRelative heightHalf widthQuarter floatLeft">
+						<div class="fluid positionRelative heightHalf widthQuarter floatLeft"
+							ng-mouseenter="person1 = false; person2 = false; person3 = true; person4 = false">
 							<div class="spacedSmall backgroundGridWhite border-radius">
 
 								<div class="spacedLarge">
@@ -864,14 +845,9 @@
 										</h2>
 										<hr>
 
-										<ipadlineon class="fluid widthFull heightFull positionBottomCenter positionAbsolute"></ipadlineon>
 
 									</div>
 								</div>
-
-								<span class="scorllDownTab mini">
-									<img class="positionRelative floatRight" src="./svg/icons/yellow/arrow-down.svg">
-								</span>
 
 							</div>
 						</div>
@@ -879,7 +855,8 @@
 					
 
 						<!-- Card component -->
-						<div class="fluid positionRelative heightHalf widthQuarter floatRight">
+						<div class="fluid positionRelative heightHalf widthQuarter floatRight"
+							ng-mouseenter="person1 = false; person2 = false; person3 = false; person4 = true">
 							<div class="spacedSmall backgroundGridWhite border-radius">
 
 								<div class="spacedLarge">
@@ -895,14 +872,9 @@
 										</h2>
 										<hr>
 
-										<ipadlineon class="fluid widthFull heightFull positionBottomCenter positionAbsolute"></ipadlineon>
 
 									</div>
 								</div>
-
-								<span class="scorllDownTab mini">
-									<img class="positionRelative floatRight" src="./svg/icons/yellow/arrow-down.svg">
-								</span>
 
 							</div>
 						</div>
