@@ -1,0 +1,63 @@
+<!-- author info -->
+   <span class="
+      showOnHoverSwitch
+      positionRelative
+      widthFullFlex
+      heightQuarterFlex 
+      backgroundColorWhite floatLeft">
+      <ul class="
+      backgroundColorThree positionRelative widthFifthFlex heightFullFlex floatRight zindexOne easing">
+         <li ng:click="$parent.postpreview = false" class="centerdiv text-align-center positionRelative heightFullFlex paddingTwoFive easing">
+            <span class="textOnHoverSwitch paddingTwoFive positionRelative buttonbox-shadowDark border-radius1 backgroundColorOne backgroundColorTwoOnHover centerdiv fontSizeTwoFive fontColorWhite fontColorOneOnHover lineHeightFive easing">
+            download
+            <span class="marginTwoFiveLeft floatRight animated enterUpObject delay025 zindexOne positionRelative widthTwoFivevh heightTwoFive"><img src="./svg/arrow-down.svg" class="widthFullFlex heightFullFlex"></span>
+            </span>
+         </li>
+      </ul>
+      <span class="positionRelative widthFifthFlex  heightFullFlex 
+      backgroundColorFour floatLeft easing zindexOne" ng-repeat="member in team | filter: member.firstname = post.author | limitTo:1:0">
+      <span
+         ng:init="showonhover = true"
+         ng:mouseenter="showonhover = false;"
+         ng:mouseleave="showonhover = true;"
+         class="zindexOne positionRelative heightFullFlex widthFullFlex floatLeft">
+      <span id="beep" class="zindexOne positionRelative heightFullFlex widthFullFlex floatLeft easing">
+      <span class="zindexOne positionRelative heightFullFlex widthFullFlex floatLeft easing">
+      <span ng:show="showonhover">
+      <span class="
+         heightFullFlex
+         widthFullFlex
+         positionAbsolute positionBottomRight" ng-repeat="pics in member.photos | limitTo:1:1">
+      <img class="
+         widthFullFlex
+         positionAbsolute positionBottomRight" ng-src="./person/{{pics.link}}.png">
+      </span>
+      </span>
+      <span ng:show="!showonhover">
+      <span class="
+         heightFullFlex
+         widthFullFlex
+         positionAbsolute positionBottomRight" ng-repeat="pics in member.photos | limitTo:1:0">
+      <img class="
+         widthFullFlex
+         positionAbsolute positionBottomRight" ng-src="./person/{{pics.link}}.png">
+      </span>
+      </span>
+      </span>
+      </span>
+      </span>
+      </span>
+
+      <span class="backgroundColorWhite widthSixZeroFlex floatLeft">
+         <div class="spacedMid border-radius1 overflowhidden positionRelative">
+            <!-- layer -->
+            <span class="
+               floatLeft
+               text-align-left
+               widthFullFlex paddingTwoFive positionRelative border-radius1
+               fontSizeTwoFive fontColorSix fontColorFourOnHover lineHeightFive easing">
+            <b class="bordered-bottomOneSmall">{{post.brand}}</b> based in <b class="bordered-bottomOneSmall">{{post.location}}</b> {{post.review}}</span><br>
+         </div>
+         </div>
+      </span>
+   </span>

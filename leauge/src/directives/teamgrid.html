@@ -1,0 +1,2874 @@
+<!-- fluid list (no scroll) -->
+   <ul class="backgroundColorOne positionRelative widthFullFlex heightFullFlex floatLeft easing">
+
+   <!-- storyline components -->
+   <span class="zindexOne positionRelative widthFullFlex heightFullFlex floatLeft easing">
+
+
+      <span
+         class="backgroundGridColorOne positionRelative widthFullFlex heightFullFlex floatLeft easing zindexOne">
+
+
+         <span ng:init="showphoto1 = true"
+         class="positionRelative spacedHuge floatLeft easing">
+
+            <!-- horizontal list components -->
+            <ul class="positionRelative widthFullFlex heightThirdFlex floatLeft easing">
+
+               <!-- first member -->
+               <span ng:mouseenter="showphoto0 = true" ng:mouseleave="showphoto0 = false" class="positionRelative widthFifthFlex heightFullFlex floatLeft easing">
+
+                  <li ng-repeat="member in team | limitTo:1:0" class="positionRelative widthFullFlex heightFullFlex floatLeft easing">
+
+                  <span class="textOnHoverSwitch positionRelative widthFullFlex heightFullFlex floatLeft easing">
+
+                     
+
+                     <span
+                        ng:click="previewteam = true"
+                        ng:init="showonhover = true"
+                        ng:mouseenter="showonhover = false;"
+                        ng:mouseleave="showonhover = true;"
+                        class="zindexOne positionRelative widthFullFlex heightFullFlex floatLeft easing">
+                     <span id="beep" class="zindexOne border-radius1 box-shadowThreeStraight positionRelative widthFullFlex heightFullFlex floatLeft easing">
+                     <span class="zindexOne backgroundGridColorOneTwo border-radius1 box-shadowThreeStraight overflowhidden positionRelative spacedMid floatLeft easing">
+                     <span class="floatLeft animated enterUpObject delay025 zindexOne positionAbsolute positionTopRight widthTwoFive heightTwoFive"><img src="./svg/pageend.svg" class="positionAbsolute positionRight widthTwoFive"></span>
+                     </span>
+
+                     <span class="
+                        widthFullFlex
+                        heightFullFlex
+                        zindexFive
+                        positionAbsolute positionCenter" ng:show="showonhover
+                        ">
+                           <span class="widthFullFlex
+                           positionRelative marginauto easing floatLeft">
+                                 
+                              <b class=" widthFullFlex floatLeft positionRelative lineHeightFour fontSizeThree text-align-left fontColorFour text-shadow05One zindexOne">
+                              {{member.name}}</b>
+                           </span>
+
+                        </span>
+
+
+                     <span class="
+                        widthFullFlex
+                        heightFullFlex
+                        zindexFive
+                        positionAbsolute positionCenter" ng:show="!showonhover
+                        ">
+                           <span class="widthFullFlex
+                           positionRelative marginauto easing floatLeft">
+                                 
+                              <b class=" widthFullFlex floatLeft positionRelative lineHeightFour fontSizeThree text-align-left fontColorFour text-shadow05One zindexOne">
+                              {{member.name}}</b>
+                           </span>
+
+                           <span class="widthFullFlex
+                           positionRelative marginauto easing floatLeft">
+                                 
+                              <b class=" widthFullFlex floatLeft positionRelative lineHeightThree fontSizeTwoFive text-align-left fontColorThree text-shadow05One zindexOne">
+                              {{member.position}}</b>
+                           </span>
+
+                           <span class="widthFullFlex
+                           positionAbsolute positionBottomRight marginauto easing floatLeft">
+                              <b class="marginTwoFive backgroundColorFour floatRight positionRelative lineHeightThree fontSizeTwoFive text-align-right fontColorOffWhite text-shadow025Five zindexOne">
+                              @{{member.twitter}}</b>
+                           </span>
+
+                        </span>
+
+                     <span ng:show="showphoto0">
+                        <span class="
+                           zindexOne
+                           heightFullFlex
+                           widthFullFlex
+                           positionAbsolute positionBottom" ng-repeat="pics in member.photos | limitTo:1:12">
+                        <img class="
+                           widthThreeQuarterFlex
+                           positionAbsolute positionBottom" ng-src="./person/{{pics.link}}.png">
+                        </span>
+                     </span>
+
+                     <span ng:show="showphoto1">
+                        <span class="
+                           zindexOne
+                           heightFullFlex
+                           widthFullFlex
+                           positionAbsolute positionBottom" ng-repeat="pics in member.photos | limitTo:1:0">
+                        <img class="
+                           widthThreeQuarterFlex
+                           positionAbsolute positionBottom" ng-src="./person/{{pics.link}}.png">
+                        </span>
+                     </span>
+
+                     <span ng:show="showphoto2">
+                        <span class="
+                           zindexOne
+                           heightFullFlex
+                           widthFullFlex
+                           positionAbsolute positionBottom" ng-repeat="pics in member.photos | limitTo:1:0">
+                        <img class="
+                           widthThreeQuarterFlex
+                           positionAbsolute positionBottom" ng-src="./person/{{pics.link}}.png">
+                        </span>
+                     </span>
+
+                     <span ng:show="showphoto3">
+                        <span class="
+                           zindexOne
+                           heightFullFlex
+                           widthFullFlex
+                           positionAbsolute positionBottom" ng-repeat="pics in member.photos | limitTo:1:0">
+                        <img class="
+                           widthThreeQuarterFlex
+                           positionAbsolute positionBottom" ng-src="./person/{{pics.link}}.png">
+                        </span>
+                     </span>
+
+                     <span ng:show="showphoto4">
+                        <span class="
+                           zindexOne
+                           heightFullFlex
+                           widthFullFlex
+                           positionAbsolute positionBottom" ng-repeat="pics in member.photos | limitTo:1:0">
+                        <img class="
+                           widthThreeQuarterFlex
+                           positionAbsolute positionBottom" ng-src="./person/{{pics.link}}.png">
+                        </span>
+                     </span>
+
+                     <span ng:show="showphoto5">
+                        <span class="
+                           zindexOne
+                           heightFullFlex
+                           widthFullFlex
+                           positionAbsolute positionBottom" ng-repeat="pics in member.photos | limitTo:1:3">
+                        <img class="
+                           widthThreeQuarterFlex
+                           positionAbsolute positionBottom" ng-src="./person/{{pics.link}}.png">
+                        </span>
+                     </span>
+
+                     <span ng:show="showphoto6">
+                        <span class="
+                           zindexOne
+                           heightFullFlex
+                           widthFullFlex
+                           positionAbsolute positionBottom" ng-repeat="pics in member.photos | limitTo:1:2">
+                        <img class="
+                           widthThreeQuarterFlex
+                           positionAbsolute positionBottom" ng-src="./person/{{pics.link}}.png">
+                        </span>
+                     </span>
+
+                     <span ng:show="showphoto7">
+                        <span class="
+                           zindexOne
+                           heightFullFlex
+                           widthFullFlex
+                           positionAbsolute positionBottom" ng-repeat="pics in member.photos | limitTo:1:1">
+                        <img class="
+                           widthThreeQuarterFlex
+                           positionAbsolute positionBottom" ng-src="./person/{{pics.link}}.png">
+                        </span>
+                     </span>
+
+                     <span ng:show="showphoto8">
+                        <span class="
+                           zindexOne
+                           heightFullFlex
+                           widthFullFlex
+                           positionAbsolute positionBottom" ng-repeat="pics in member.photos | limitTo:1:3">
+                        <img class="
+                           widthThreeQuarterFlex
+                           positionAbsolute positionBottom" ng-src="./person/{{pics.link}}.png">
+                        </span>
+                     </span>
+
+                     <span ng:show="showphoto9">
+                        <span class="
+                           zindexOne
+                           heightFullFlex
+                           widthFullFlex
+                           positionAbsolute positionBottom" ng-repeat="pics in member.photos | limitTo:1:2">
+                        <img class="
+                           widthThreeQuarterFlex
+                           positionAbsolute positionBottom" ng-src="./person/{{pics.link}}.png">
+                        </span>
+                     </span>
+
+                     <span ng:show="showphoto10">
+                        <span class="
+                           zindexOne
+                           heightFullFlex
+                           widthFullFlex
+                           positionAbsolute positionBottom" ng-repeat="pics in member.photos | limitTo:1:2">
+                        <img class="
+                           widthThreeQuarterFlex
+                           positionAbsolute positionBottom" ng-src="./person/{{pics.link}}.png">
+                        </span>
+                     </span>
+
+                     <span ng:show="showphoto11">
+                        <span class="
+                           zindexOne
+                           heightFullFlex
+                           widthFullFlex
+                           positionAbsolute positionBottom" ng-repeat="pics in member.photos | limitTo:1:2">
+                        <img class="
+                           widthThreeQuarterFlex
+                           positionAbsolute positionBottom" ng-src="./person/{{pics.link}}.png">
+                        </span>
+                     </span>
+
+                     <span ng:show="showphoto12">
+                        <span class="
+                           zindexOne
+                           heightFullFlex
+                           widthFullFlex
+                           positionAbsolute positionBottom" ng-repeat="pics in member.photos | limitTo:1:2">
+                        <img class="
+                           widthThreeQuarterFlex
+                           positionAbsolute positionBottom" ng-src="./person/{{pics.link}}.png">
+                        </span>
+                     </span>
+
+
+                     </span>
+                     </span>
+
+                  </span>
+
+                  <previewteam></previewteam>
+
+                  </li>
+                  
+               </span>
+
+               <!-- first member -->
+               <span ng:mouseenter="showphoto1 = true" ng:mouseleave="showphoto1 = false" class="positionRelative widthFifthFlex heightFullFlex floatLeft easing">
+
+                  <li ng-repeat="member in team | limitTo:1:0" class="positionRelative widthFullFlex heightFullFlex floatLeft easing">
+
+                  <span class="textOnHoverSwitch positionRelative widthFullFlex heightFullFlex floatLeft easing">
+
+                     
+
+                     <span
+                        ng:click="previewteam = true"
+                        ng:init="showonhover = true"
+                        ng:mouseenter="showonhover = false;"
+                        ng:mouseleave="showonhover = true;"
+                        class="zindexOne positionRelative widthFullFlex heightFullFlex floatLeft easing">
+                     <span id="beep" class="zindexOne border-radius1 box-shadowThreeStraight positionRelative widthFullFlex heightFullFlex floatLeft easing">
+                     <span class="zindexOne backgroundGridColorOneTwo border-radius1 box-shadowThreeStraight overflowhidden positionRelative spacedMid floatLeft easing">
+                     <span class="floatLeft animated enterUpObject delay025 zindexOne positionAbsolute positionTopRight widthTwoFive heightTwoFive"><img src="./svg/pageend.svg" class="positionAbsolute positionRight widthTwoFive"></span>
+                     </span>
+
+                     <span class="
+                        widthFullFlex
+                        heightFullFlex
+                        zindexFive
+                        positionAbsolute positionCenter" ng:show="showonhover
+                        ">
+                           <span class="widthFullFlex
+                           positionRelative marginauto easing floatLeft">
+                                 
+                              <b class=" widthFullFlex floatLeft positionRelative lineHeightFour fontSizeThree text-align-left fontColorFour text-shadow05One zindexOne">
+                              {{member.name}}</b>
+                           </span>
+
+                        </span>
+
+
+                     <span class="
+                        widthFullFlex
+                        heightFullFlex
+                        zindexFive
+                        positionAbsolute positionCenter" ng:show="!showonhover
+                        ">
+                           <span class="widthFullFlex
+                           positionRelative marginauto easing floatLeft">
+                                 
+                              <b class=" widthFullFlex floatLeft positionRelative lineHeightFour fontSizeThree text-align-left fontColorFour text-shadow05One zindexOne">
+                              {{member.name}}</b>
+                           </span>
+
+                           <span class="widthFullFlex
+                           positionRelative marginauto easing floatLeft">
+                                 
+                              <b class=" widthFullFlex floatLeft positionRelative lineHeightThree fontSizeTwoFive text-align-left fontColorThree text-shadow05One zindexOne">
+                              {{member.position}}</b>
+                           </span>
+
+                           <span class="widthFullFlex
+                           positionAbsolute positionBottomRight marginauto easing floatLeft">
+                              <b class="marginTwoFive backgroundColorFour floatRight positionRelative lineHeightThree fontSizeTwoFive text-align-right fontColorOffWhite text-shadow025Five zindexOne">
+                              @{{member.twitter}}</b>
+                           </span>
+
+                        </span>
+
+                     <span ng:show="showphoto0">
+                        <span class="
+                           zindexOne
+                           heightFullFlex
+                           widthFullFlex
+                           positionAbsolute positionBottom" ng-repeat="pics in member.photos | limitTo:1:6">
+                        <img class="
+                           widthThreeQuarterFlex
+                           positionAbsolute positionBottom" ng-src="./person/{{pics.link}}.png">
+                        </span>
+                     </span>
+
+                     <span ng:show="showphoto1">
+                        <span class="
+                           zindexOne
+                           heightFullFlex
+                           widthFullFlex
+                           positionAbsolute positionBottom" ng-repeat="pics in member.photos | limitTo:1:12">
+                        <img class="
+                           widthThreeQuarterFlex
+                           positionAbsolute positionBottom" ng-src="./person/{{pics.link}}.png">
+                        </span>
+                     </span>
+
+                     <span ng:show="showphoto2">
+                        <span class="
+                           zindexOne
+                           heightFullFlex
+                           widthFullFlex
+                           positionAbsolute positionBottom" ng-repeat="pics in member.photos | limitTo:1:0">
+                        <img class="
+                           widthThreeQuarterFlex
+                           positionAbsolute positionBottom" ng-src="./person/{{pics.link}}.png">
+                        </span>
+                     </span>
+
+                     <span ng:show="showphoto3">
+                        <span class="
+                           zindexOne
+                           heightFullFlex
+                           widthFullFlex
+                           positionAbsolute positionBottom" ng-repeat="pics in member.photos | limitTo:1:0">
+                        <img class="
+                           widthThreeQuarterFlex
+                           positionAbsolute positionBottom" ng-src="./person/{{pics.link}}.png">
+                        </span>
+                     </span>
+
+                     <span ng:show="showphoto4">
+                        <span class="
+                           zindexOne
+                           heightFullFlex
+                           widthFullFlex
+                           positionAbsolute positionBottom" ng-repeat="pics in member.photos | limitTo:1:0">
+                        <img class="
+                           widthThreeQuarterFlex
+                           positionAbsolute positionBottom" ng-src="./person/{{pics.link}}.png">
+                        </span>
+                     </span>
+
+                     <span ng:show="showphoto5">
+                        <span class="
+                           zindexOne
+                           heightFullFlex
+                           widthFullFlex
+                           positionAbsolute positionBottom" ng-repeat="pics in member.photos | limitTo:1:5">
+                        <img class="
+                           widthThreeQuarterFlex
+                           positionAbsolute positionBottom" ng-src="./person/{{pics.link}}.png">
+                        </span>
+                     </span>
+
+                     <span ng:show="showphoto6">
+                        <span class="
+                           zindexOne
+                           heightFullFlex
+                           widthFullFlex
+                           positionAbsolute positionBottom" ng-repeat="pics in member.photos | limitTo:1:3">
+                        <img class="
+                           widthThreeQuarterFlex
+                           positionAbsolute positionBottom" ng-src="./person/{{pics.link}}.png">
+                        </span>
+                     </span>
+
+                     <span ng:show="showphoto7">
+                        <span class="
+                           zindexOne
+                           heightFullFlex
+                           widthFullFlex
+                           positionAbsolute positionBottom" ng-repeat="pics in member.photos | limitTo:1:2">
+                        <img class="
+                           widthThreeQuarterFlex
+                           positionAbsolute positionBottom" ng-src="./person/{{pics.link}}.png">
+                        </span>
+                     </span>
+
+                     <span ng:show="showphoto8">
+                        <span class="
+                           zindexOne
+                           heightFullFlex
+                           widthFullFlex
+                           positionAbsolute positionBottom" ng-repeat="pics in member.photos | limitTo:1:4">
+                        <img class="
+                           widthThreeQuarterFlex
+                           positionAbsolute positionBottom" ng-src="./person/{{pics.link}}.png">
+                        </span>
+                     </span>
+
+                     <span ng:show="showphoto9">
+                        <span class="
+                           zindexOne
+                           heightFullFlex
+                           widthFullFlex
+                           positionAbsolute positionBottom" ng-repeat="pics in member.photos | limitTo:1:3">
+                        <img class="
+                           widthThreeQuarterFlex
+                           positionAbsolute positionBottom" ng-src="./person/{{pics.link}}.png">
+                        </span>
+                     </span>
+
+                     <span ng:show="showphoto10">
+                        <span class="
+                           zindexOne
+                           heightFullFlex
+                           widthFullFlex
+                           positionAbsolute positionBottom" ng-repeat="pics in member.photos | limitTo:1:2">
+                        <img class="
+                           widthThreeQuarterFlex
+                           positionAbsolute positionBottom" ng-src="./person/{{pics.link}}.png">
+                        </span>
+                     </span>
+
+                     <span ng:show="showphoto11">
+                        <span class="
+                           zindexOne
+                           heightFullFlex
+                           widthFullFlex
+                           positionAbsolute positionBottom" ng-repeat="pics in member.photos | limitTo:1:2">
+                        <img class="
+                           widthThreeQuarterFlex
+                           positionAbsolute positionBottom" ng-src="./person/{{pics.link}}.png">
+                        </span>
+                     </span>
+
+                     <span ng:show="showphoto12">
+                        <span class="
+                           zindexOne
+                           heightFullFlex
+                           widthFullFlex
+                           positionAbsolute positionBottom" ng-repeat="pics in member.photos | limitTo:1:1">
+                        <img class="
+                           widthThreeQuarterFlex
+                           positionAbsolute positionBottom" ng-src="./person/{{pics.link}}.png">
+                        </span>
+                     </span>
+
+
+                     </span>
+                     </span>
+
+                  </span>
+
+                  <previewteam></previewteam>
+
+                  </li>
+                  
+               </span>
+
+               <!-- first member -->
+               <span ng:mouseenter="showphoto2 = true" ng:mouseleave="showphoto2 = false" class="positionRelative widthFifthFlex heightFullFlex floatLeft easing">
+
+                  <li ng-repeat="member in team | limitTo:1:0" class="positionRelative widthFullFlex heightFullFlex floatLeft easing">
+
+                  <span class="textOnHoverSwitch positionRelative widthFullFlex heightFullFlex floatLeft easing">
+
+                     
+
+                     <span
+                        ng:click="previewteam = true"
+                        ng:init="showonhover = true"
+                        ng:mouseenter="showonhover = false;"
+                        ng:mouseleave="showonhover = true;"
+                        class="zindexOne positionRelative widthFullFlex heightFullFlex floatLeft easing">
+                     <span id="beep" class="zindexOne border-radius1 box-shadowThreeStraight positionRelative widthFullFlex heightFullFlex floatLeft easing">
+                     <span class="zindexOne backgroundGridColorOneTwo border-radius1 box-shadowThreeStraight overflowhidden positionRelative spacedMid floatLeft easing">
+                     <span class="floatLeft animated enterUpObject delay025 zindexOne positionAbsolute positionTopRight widthTwoFive heightTwoFive"><img src="./svg/pageend.svg" class="positionAbsolute positionRight widthTwoFive"></span>
+                     </span>
+
+                     <span class="
+                        widthFullFlex
+                        heightFullFlex
+                        zindexFive
+                        positionAbsolute positionCenter" ng:show="showonhover
+                        ">
+                           <span class="widthFullFlex
+                           positionRelative marginauto easing floatLeft">
+                                 
+                              <b class=" widthFullFlex floatLeft positionRelative lineHeightFour fontSizeThree text-align-left fontColorFour text-shadow05One zindexOne">
+                              {{member.name}}</b>
+                           </span>
+
+                        </span>
+
+
+                     <span class="
+                        widthFullFlex
+                        heightFullFlex
+                        zindexFive
+                        positionAbsolute positionCenter" ng:show="!showonhover
+                        ">
+                           <span class="widthFullFlex
+                           positionRelative marginauto easing floatLeft">
+                                 
+                              <b class=" widthFullFlex floatLeft positionRelative lineHeightFour fontSizeThree text-align-left fontColorFour text-shadow05One zindexOne">
+                              {{member.name}}</b>
+                           </span>
+
+                           <span class="widthFullFlex
+                           positionRelative marginauto easing floatLeft">
+                                 
+                              <b class=" widthFullFlex floatLeft positionRelative lineHeightThree fontSizeTwoFive text-align-left fontColorThree text-shadow05One zindexOne">
+                              {{member.position}}</b>
+                           </span>
+
+                           <span class="widthFullFlex
+                           positionAbsolute positionBottomRight marginauto easing floatLeft">
+                              <b class="marginTwoFive backgroundColorFour floatRight positionRelative lineHeightThree fontSizeTwoFive text-align-right fontColorOffWhite text-shadow025Five zindexOne">
+                              @{{member.twitter}}</b>
+                           </span>
+
+                        </span>
+
+                     <span ng:show="showphoto0">
+                        <span class="
+                           zindexOne
+                           heightFullFlex
+                           widthFullFlex
+                           positionAbsolute positionBottom" ng-repeat="pics in member.photos | limitTo:1:6">
+                        <img class="
+                           widthThreeQuarterFlex
+                           positionAbsolute positionBottom" ng-src="./person/{{pics.link}}.png">
+                        </span>
+                     </span>
+
+                     <span ng:show="showphoto1">
+                        <span class="
+                           zindexOne
+                           heightFullFlex
+                           widthFullFlex
+                           positionAbsolute positionBottom" ng-repeat="pics in member.photos | limitTo:1:6">
+                        <img class="
+                           widthThreeQuarterFlex
+                           positionAbsolute positionBottom" ng-src="./person/{{pics.link}}.png">
+                        </span>
+                     </span>
+
+                     <span ng:show="showphoto2">
+                        <span class="
+                           zindexOne
+                           heightFullFlex
+                           widthFullFlex
+                           positionAbsolute positionBottom" ng-repeat="pics in member.photos | limitTo:1:12">
+                        <img class="
+                           widthThreeQuarterFlex
+                           positionAbsolute positionBottom" ng-src="./person/{{pics.link}}.png">
+                        </span>
+                     </span>
+
+                     <span ng:show="showphoto3">
+                        <span class="
+                           zindexOne
+                           heightFullFlex
+                           widthFullFlex
+                           positionAbsolute positionBottom" ng-repeat="pics in member.photos | limitTo:1:0">
+                        <img class="
+                           widthThreeQuarterFlex
+                           positionAbsolute positionBottom" ng-src="./person/{{pics.link}}.png">
+                        </span>
+                     </span>
+
+                     <span ng:show="showphoto4">
+                        <span class="
+                           zindexOne
+                           heightFullFlex
+                           widthFullFlex
+                           positionAbsolute positionBottom" ng-repeat="pics in member.photos | limitTo:1:0">
+                        <img class="
+                           widthThreeQuarterFlex
+                           positionAbsolute positionBottom" ng-src="./person/{{pics.link}}.png">
+                        </span>
+                     </span>
+
+                     <span ng:show="showphoto5">
+                        <span class="
+                           zindexOne
+                           heightFullFlex
+                           widthFullFlex
+                           positionAbsolute positionBottom" ng-repeat="pics in member.photos | limitTo:1:4">
+                        <img class="
+                           widthThreeQuarterFlex
+                           positionAbsolute positionBottom" ng-src="./person/{{pics.link}}.png">
+                        </span>
+                     </span>
+
+                     <span ng:show="showphoto6">
+                        <span class="
+                           zindexOne
+                           heightFullFlex
+                           widthFullFlex
+                           positionAbsolute positionBottom" ng-repeat="pics in member.photos | limitTo:1:3">
+                        <img class="
+                           widthThreeQuarterFlex
+                           positionAbsolute positionBottom" ng-src="./person/{{pics.link}}.png">
+                        </span>
+                     </span>
+
+                     <span ng:show="showphoto7">
+                        <span class="
+                           zindexOne
+                           heightFullFlex
+                           widthFullFlex
+                           positionAbsolute positionBottom" ng-repeat="pics in member.photos | limitTo:1:2">
+                        <img class="
+                           widthThreeQuarterFlex
+                           positionAbsolute positionBottom" ng-src="./person/{{pics.link}}.png">
+                        </span>
+                     </span>
+
+                     <span ng:show="showphoto8">
+                        <span class="
+                           zindexOne
+                           heightFullFlex
+                           widthFullFlex
+                           positionAbsolute positionBottom" ng-repeat="pics in member.photos | limitTo:1:5">
+                        <img class="
+                           widthThreeQuarterFlex
+                           positionAbsolute positionBottom" ng-src="./person/{{pics.link}}.png">
+                        </span>
+                     </span>
+
+                     <span ng:show="showphoto9">
+                        <span class="
+                           zindexOne
+                           heightFullFlex
+                           widthFullFlex
+                           positionAbsolute positionBottom" ng-repeat="pics in member.photos | limitTo:1:4">
+                        <img class="
+                           widthThreeQuarterFlex
+                           positionAbsolute positionBottom" ng-src="./person/{{pics.link}}.png">
+                        </span>
+                     </span>
+
+                     <span ng:show="showphoto10">
+                        <span class="
+                           zindexOne
+                           heightFullFlex
+                           widthFullFlex
+                           positionAbsolute positionBottom" ng-repeat="pics in member.photos | limitTo:1:3">
+                        <img class="
+                           widthThreeQuarterFlex
+                           positionAbsolute positionBottom" ng-src="./person/{{pics.link}}.png">
+                        </span>
+                     </span>
+
+                     <span ng:show="showphoto11">
+                        <span class="
+                           zindexOne
+                           heightFullFlex
+                           widthFullFlex
+                           positionAbsolute positionBottom" ng-repeat="pics in member.photos | limitTo:1:2">
+                        <img class="
+                           widthThreeQuarterFlex
+                           positionAbsolute positionBottom" ng-src="./person/{{pics.link}}.png">
+                        </span>
+                     </span>
+
+                     <span ng:show="showphoto12">
+                        <span class="
+                           zindexOne
+                           heightFullFlex
+                           widthFullFlex
+                           positionAbsolute positionBottom" ng-repeat="pics in member.photos | limitTo:1:1">
+                        <img class="
+                           widthThreeQuarterFlex
+                           positionAbsolute positionBottom" ng-src="./person/{{pics.link}}.png">
+                        </span>
+                     </span>
+
+
+                     </span>
+                     </span>
+
+                  </span>
+
+                  <previewteam></previewteam>
+
+                  </li>
+                  
+               </span>
+
+               <!-- first member -->
+               <span ng:mouseenter="showphoto3 = true" ng:mouseleave="showphoto3 = false" class="positionRelative widthFifthFlex heightFullFlex floatLeft easing">
+
+                  <li ng-repeat="member in team | limitTo:1:0" class="positionRelative widthFullFlex heightFullFlex floatLeft easing">
+
+                  <span class="textOnHoverSwitch positionRelative widthFullFlex heightFullFlex floatLeft easing">
+
+                     
+
+                     <span
+                        ng:click="previewteam = true"
+                        ng:init="showonhover = true"
+                        ng:mouseenter="showonhover = false;"
+                        ng:mouseleave="showonhover = true;"
+                        class="zindexOne positionRelative widthFullFlex heightFullFlex floatLeft easing">
+                     <span id="beep" class="zindexOne border-radius1 box-shadowThreeStraight positionRelative widthFullFlex heightFullFlex floatLeft easing">
+                     <span class="zindexOne backgroundGridColorOneTwo border-radius1 box-shadowThreeStraight overflowhidden positionRelative spacedMid floatLeft easing">
+                     <span class="floatLeft animated enterUpObject delay025 zindexOne positionAbsolute positionTopRight widthTwoFive heightTwoFive"><img src="./svg/pageend.svg" class="positionAbsolute positionRight widthTwoFive"></span>
+                     </span>
+
+                     <span class="
+                        widthFullFlex
+                        heightFullFlex
+                        zindexFive
+                        positionAbsolute positionCenter" ng:show="showonhover
+                        ">
+                           <span class="widthFullFlex
+                           positionRelative marginauto easing floatLeft">
+                                 
+                              <b class=" widthFullFlex floatLeft positionRelative lineHeightFour fontSizeThree text-align-left fontColorFour text-shadow05One zindexOne">
+                              {{member.name}}</b>
+                           </span>
+
+                        </span>
+
+
+                     <span class="
+                        widthFullFlex
+                        heightFullFlex
+                        zindexFive
+                        positionAbsolute positionCenter" ng:show="!showonhover
+                        ">
+                           <span class="widthFullFlex
+                           positionRelative marginauto easing floatLeft">
+                                 
+                              <b class=" widthFullFlex floatLeft positionRelative lineHeightFour fontSizeThree text-align-left fontColorFour text-shadow05One zindexOne">
+                              {{member.name}}</b>
+                           </span>
+
+                           <span class="widthFullFlex
+                           positionRelative marginauto easing floatLeft">
+                                 
+                              <b class=" widthFullFlex floatLeft positionRelative lineHeightThree fontSizeTwoFive text-align-left fontColorThree text-shadow05One zindexOne">
+                              {{member.position}}</b>
+                           </span>
+
+                           <span class="widthFullFlex
+                           positionAbsolute positionBottomRight marginauto easing floatLeft">
+                              <b class="marginTwoFive backgroundColorFour floatRight positionRelative lineHeightThree fontSizeTwoFive text-align-right fontColorOffWhite text-shadow025Five zindexOne">
+                              @{{member.twitter}}</b>
+                           </span>
+
+                        </span>
+
+                     <span ng:show="showphoto0">
+                        <span class="
+                           zindexOne
+                           heightFullFlex
+                           widthFullFlex
+                           positionAbsolute positionBottom" ng-repeat="pics in member.photos | limitTo:1:6">
+                        <img class="
+                           widthThreeQuarterFlex
+                           positionAbsolute positionBottom" ng-src="./person/{{pics.link}}.png">
+                        </span>
+                     </span>
+
+                     <span ng:show="showphoto1">
+                        <span class="
+                           zindexOne
+                           heightFullFlex
+                           widthFullFlex
+                           positionAbsolute positionBottom" ng-repeat="pics in member.photos | limitTo:1:6">
+                        <img class="
+                           widthThreeQuarterFlex
+                           positionAbsolute positionBottom" ng-src="./person/{{pics.link}}.png">
+                        </span>
+                     </span>
+
+                     <span ng:show="showphoto2">
+                        <span class="
+                           zindexOne
+                           heightFullFlex
+                           widthFullFlex
+                           positionAbsolute positionBottom" ng-repeat="pics in member.photos | limitTo:1:6">
+                        <img class="
+                           widthThreeQuarterFlex
+                           positionAbsolute positionBottom" ng-src="./person/{{pics.link}}.png">
+                        </span>
+                     </span>
+
+                     <span ng:show="showphoto3">
+                        <span class="
+                           zindexOne
+                           heightFullFlex
+                           widthFullFlex
+                           positionAbsolute positionBottom" ng-repeat="pics in member.photos | limitTo:1:12">
+                        <img class="
+                           widthThreeQuarterFlex
+                           positionAbsolute positionBottom" ng-src="./person/{{pics.link}}.png">
+                        </span>
+                     </span>
+
+                     <span ng:show="showphoto4">
+                        <span class="
+                           zindexOne
+                           heightFullFlex
+                           widthFullFlex
+                           positionAbsolute positionBottom" ng-repeat="pics in member.photos | limitTo:1:0">
+                        <img class="
+                           widthThreeQuarterFlex
+                           positionAbsolute positionBottom" ng-src="./person/{{pics.link}}.png">
+                        </span>
+                     </span>
+
+                     <span ng:show="showphoto5">
+                        <span class="
+                           zindexOne
+                           heightFullFlex
+                           widthFullFlex
+                           positionAbsolute positionBottom" ng-repeat="pics in member.photos | limitTo:1:4">
+                        <img class="
+                           widthThreeQuarterFlex
+                           positionAbsolute positionBottom" ng-src="./person/{{pics.link}}.png">
+                        </span>
+                     </span>
+
+                     <span ng:show="showphoto6">
+                        <span class="
+                           zindexOne
+                           heightFullFlex
+                           widthFullFlex
+                           positionAbsolute positionBottom" ng-repeat="pics in member.photos | limitTo:1:3">
+                        <img class="
+                           widthThreeQuarterFlex
+                           positionAbsolute positionBottom" ng-src="./person/{{pics.link}}.png">
+                        </span>
+                     </span>
+
+                     <span ng:show="showphoto7">
+                        <span class="
+                           zindexOne
+                           heightFullFlex
+                           widthFullFlex
+                           positionAbsolute positionBottom" ng-repeat="pics in member.photos | limitTo:1:2">
+                        <img class="
+                           widthThreeQuarterFlex
+                           positionAbsolute positionBottom" ng-src="./person/{{pics.link}}.png">
+                        </span>
+                     </span>
+
+                     <span ng:show="showphoto8">
+                        <span class="
+                           zindexOne
+                           heightFullFlex
+                           widthFullFlex
+                           positionAbsolute positionBottom" ng-repeat="pics in member.photos | limitTo:1:4">
+                        <img class="
+                           widthThreeQuarterFlex
+                           positionAbsolute positionBottom" ng-src="./person/{{pics.link}}.png">
+                        </span>
+                     </span>
+
+                     <span ng:show="showphoto9">
+                        <span class="
+                           zindexOne
+                           heightFullFlex
+                           widthFullFlex
+                           positionAbsolute positionBottom" ng-repeat="pics in member.photos | limitTo:1:5">
+                        <img class="
+                           widthThreeQuarterFlex
+                           positionAbsolute positionBottom" ng-src="./person/{{pics.link}}.png">
+                        </span>
+                     </span>
+
+                     <span ng:show="showphoto10">
+                        <span class="
+                           zindexOne
+                           heightFullFlex
+                           widthFullFlex
+                           positionAbsolute positionBottom" ng-repeat="pics in member.photos | limitTo:1:4">
+                        <img class="
+                           widthThreeQuarterFlex
+                           positionAbsolute positionBottom" ng-src="./person/{{pics.link}}.png">
+                        </span>
+                     </span>
+
+                     <span ng:show="showphoto11">
+                        <span class="
+                           zindexOne
+                           heightFullFlex
+                           widthFullFlex
+                           positionAbsolute positionBottom" ng-repeat="pics in member.photos | limitTo:1:3">
+                        <img class="
+                           widthThreeQuarterFlex
+                           positionAbsolute positionBottom" ng-src="./person/{{pics.link}}.png">
+                        </span>
+                     </span>
+
+                     <span ng:show="showphoto12">
+                        <span class="
+                           zindexOne
+                           heightFullFlex
+                           widthFullFlex
+                           positionAbsolute positionBottom" ng-repeat="pics in member.photos | limitTo:1:1">
+                        <img class="
+                           widthThreeQuarterFlex
+                           positionAbsolute positionBottom" ng-src="./person/{{pics.link}}.png">
+                        </span>
+                     </span>
+
+
+                     </span>
+                     </span>
+
+                  </span>
+
+                  <previewteam></previewteam>
+
+                  </li>
+                  
+               </span>
+
+               <!-- first member -->
+               <span ng:mouseenter="showphoto4 = true" ng:mouseleave="showphoto4 = false" class="positionRelative widthFifthFlex heightFullFlex floatLeft easing">
+
+                  <li ng-repeat="member in team | limitTo:1:0" class="positionRelative widthFullFlex heightFullFlex floatLeft easing">
+
+                  <span class="textOnHoverSwitch positionRelative widthFullFlex heightFullFlex floatLeft easing">
+
+                     
+
+                     <span
+                        ng:click="previewteam = true"
+                        ng:init="showonhover = true"
+                        ng:mouseenter="showonhover = false;"
+                        ng:mouseleave="showonhover = true;"
+                        class="zindexOne positionRelative widthFullFlex heightFullFlex floatLeft easing">
+                     <span id="beep" class="zindexOne border-radius1 box-shadowThreeStraight positionRelative widthFullFlex heightFullFlex floatLeft easing">
+                     <span class="zindexOne backgroundGridColorOneTwo border-radius1 box-shadowThreeStraight overflowhidden positionRelative spacedMid floatLeft easing">
+                     <span class="floatLeft animated enterUpObject delay025 zindexOne positionAbsolute positionTopRight widthTwoFive heightTwoFive"><img src="./svg/pageend.svg" class="positionAbsolute positionRight widthTwoFive"></span>
+                     </span>
+
+                     <span class="
+                        widthFullFlex
+                        heightFullFlex
+                        zindexFive
+                        positionAbsolute positionCenter" ng:show="showonhover
+                        ">
+                           <span class="widthFullFlex
+                           positionRelative marginauto easing floatLeft">
+                                 
+                              <b class=" widthFullFlex floatLeft positionRelative lineHeightFour fontSizeThree text-align-left fontColorFour text-shadow05One zindexOne">
+                              {{member.name}}</b>
+                           </span>
+
+                        </span>
+
+
+                     <span class="
+                        widthFullFlex
+                        heightFullFlex
+                        zindexFive
+                        positionAbsolute positionCenter" ng:show="!showonhover
+                        ">
+                           <span class="widthFullFlex
+                           positionRelative marginauto easing floatLeft">
+                                 
+                              <b class=" widthFullFlex floatLeft positionRelative lineHeightFour fontSizeThree text-align-left fontColorFour text-shadow05One zindexOne">
+                              {{member.name}}</b>
+                           </span>
+
+                           <span class="widthFullFlex
+                           positionRelative marginauto easing floatLeft">
+                                 
+                              <b class=" widthFullFlex floatLeft positionRelative lineHeightThree fontSizeTwoFive text-align-left fontColorThree text-shadow05One zindexOne">
+                              {{member.position}}</b>
+                           </span>
+
+                           <span class="widthFullFlex
+                           positionAbsolute positionBottomRight marginauto easing floatLeft">
+                              <b class="marginTwoFive backgroundColorFour floatRight positionRelative lineHeightThree fontSizeTwoFive text-align-right fontColorOffWhite text-shadow025Five zindexOne">
+                              @{{member.twitter}}</b>
+                           </span>
+
+                        </span>
+
+                     <span ng:show="showphoto0">
+                        <span class="
+                           zindexOne
+                           heightFullFlex
+                           widthFullFlex
+                           positionAbsolute positionBottom" ng-repeat="pics in member.photos | limitTo:1:6">
+                        <img class="
+                           widthThreeQuarterFlex
+                           positionAbsolute positionBottom" ng-src="./person/{{pics.link}}.png">
+                        </span>
+                     </span>
+
+                     <span ng:show="showphoto1">
+                        <span class="
+                           zindexOne
+                           heightFullFlex
+                           widthFullFlex
+                           positionAbsolute positionBottom" ng-repeat="pics in member.photos | limitTo:1:6">
+                        <img class="
+                           widthThreeQuarterFlex
+                           positionAbsolute positionBottom" ng-src="./person/{{pics.link}}.png">
+                        </span>
+                     </span>
+
+                     <span ng:show="showphoto2">
+                        <span class="
+                           zindexOne
+                           heightFullFlex
+                           widthFullFlex
+                           positionAbsolute positionBottom" ng-repeat="pics in member.photos | limitTo:1:6">
+                        <img class="
+                           widthThreeQuarterFlex
+                           positionAbsolute positionBottom" ng-src="./person/{{pics.link}}.png">
+                        </span>
+                     </span>
+
+                     <span ng:show="showphoto3">
+                        <span class="
+                           zindexOne
+                           heightFullFlex
+                           widthFullFlex
+                           positionAbsolute positionBottom" ng-repeat="pics in member.photos | limitTo:1:6">
+                        <img class="
+                           widthThreeQuarterFlex
+                           positionAbsolute positionBottom" ng-src="./person/{{pics.link}}.png">
+                        </span>
+                     </span>
+
+                     <span ng:show="showphoto4">
+                        <span class="
+                           zindexOne
+                           heightFullFlex
+                           widthFullFlex
+                           positionAbsolute positionBottom" ng-repeat="pics in member.photos | limitTo:1:12">
+                        <img class="
+                           widthThreeQuarterFlex
+                           positionAbsolute positionBottom" ng-src="./person/{{pics.link}}.png">
+                        </span>
+                     </span>
+
+                     <span ng:show="showphoto5">
+                        <span class="
+                           zindexOne
+                           heightFullFlex
+                           widthFullFlex
+                           positionAbsolute positionBottom" ng-repeat="pics in member.photos | limitTo:1:5">
+                        <img class="
+                           widthThreeQuarterFlex
+                           positionAbsolute positionBottom" ng-src="./person/{{pics.link}}.png">
+                        </span>
+                     </span>
+
+                     <span ng:show="showphoto6">
+                        <span class="
+                           zindexOne
+                           heightFullFlex
+                           widthFullFlex
+                           positionAbsolute positionBottom" ng-repeat="pics in member.photos | limitTo:1:4">
+                        <img class="
+                           widthThreeQuarterFlex
+                           positionAbsolute positionBottom" ng-src="./person/{{pics.link}}.png">
+                        </span>
+                     </span>
+
+                     <span ng:show="showphoto7">
+                        <span class="
+                           zindexOne
+                           heightFullFlex
+                           widthFullFlex
+                           positionAbsolute positionBottom" ng-repeat="pics in member.photos | limitTo:1:3">
+                        <img class="
+                           widthThreeQuarterFlex
+                           positionAbsolute positionBottom" ng-src="./person/{{pics.link}}.png">
+                        </span>
+                     </span>
+
+                     <span ng:show="showphoto8">
+                        <span class="
+                           zindexOne
+                           heightFullFlex
+                           widthFullFlex
+                           positionAbsolute positionBottom" ng-repeat="pics in member.photos | limitTo:1:5">
+                        <img class="
+                           widthThreeQuarterFlex
+                           positionAbsolute positionBottom" ng-src="./person/{{pics.link}}.png">
+                        </span>
+                     </span>
+
+                     <span ng:show="showphoto9">
+                        <span class="
+                           zindexOne
+                           heightFullFlex
+                           widthFullFlex
+                           positionAbsolute positionBottom" ng-repeat="pics in member.photos | limitTo:1:5">
+                        <img class="
+                           widthThreeQuarterFlex
+                           positionAbsolute positionBottom" ng-src="./person/{{pics.link}}.png">
+                        </span>
+                     </span>
+
+                     <span ng:show="showphoto10">
+                        <span class="
+                           zindexOne
+                           heightFullFlex
+                           widthFullFlex
+                           positionAbsolute positionBottom" ng-repeat="pics in member.photos | limitTo:1:4">
+                        <img class="
+                           widthThreeQuarterFlex
+                           positionAbsolute positionBottom" ng-src="./person/{{pics.link}}.png">
+                        </span>
+                     </span>
+
+                     <span ng:show="showphoto11">
+                        <span class="
+                           zindexOne
+                           heightFullFlex
+                           widthFullFlex
+                           positionAbsolute positionBottom" ng-repeat="pics in member.photos | limitTo:1:4">
+                        <img class="
+                           widthThreeQuarterFlex
+                           positionAbsolute positionBottom" ng-src="./person/{{pics.link}}.png">
+                        </span>
+                     </span>
+
+                     <span ng:show="showphoto12">
+                        <span class="
+                           zindexOne
+                           heightFullFlex
+                           widthFullFlex
+                           positionAbsolute positionBottom" ng-repeat="pics in member.photos | limitTo:1:3">
+                        <img class="
+                           widthThreeQuarterFlex
+                           positionAbsolute positionBottom" ng-src="./person/{{pics.link}}.png">
+                        </span>
+                     </span>
+
+
+                     </span>
+                     </span>
+
+                  </span>
+
+                  <previewteam></previewteam>
+
+                  </li>
+                  
+               </span>
+
+
+            </ul>
+
+            <!-- horizontal list components -->
+            <ul class="positionRelative widthFullFlex heightThirdFlex floatLeft easing">
+
+               <!-- first member -->
+               <span ng:mouseenter="showphoto5 = true" ng:mouseleave="showphoto5 = false" class="positionRelative widthFifthFlex heightFullFlex floatLeft easing">
+
+                  <li ng-repeat="member in team | limitTo:1:0" class="positionRelative widthFullFlex heightFullFlex floatLeft easing">
+
+                  <span class="textOnHoverSwitch positionRelative widthFullFlex heightFullFlex floatLeft easing">
+
+                     
+
+                     <span
+                        ng:click="previewteam = true"
+                        ng:init="showonhover = true"
+                        ng:mouseenter="showonhover = false;"
+                        ng:mouseleave="showonhover = true;"
+                        class="zindexOne positionRelative widthFullFlex heightFullFlex floatLeft easing">
+                     <span id="beep" class="zindexOne border-radius1 box-shadowThreeStraight positionRelative widthFullFlex heightFullFlex floatLeft easing">
+                     <span class="zindexOne backgroundGridColorOneTwo border-radius1 box-shadowThreeStraight overflowhidden positionRelative spacedMid floatLeft easing">
+                     <span class="floatLeft animated enterUpObject delay025 zindexOne positionAbsolute positionTopRight widthTwoFive heightTwoFive"><img src="./svg/pageend.svg" class="positionAbsolute positionRight widthTwoFive"></span>
+                     </span>
+
+                     <span class="
+                        widthFullFlex
+                        heightFullFlex
+                        zindexFive
+                        positionAbsolute positionCenter" ng:show="showonhover
+                        ">
+                           <span class="widthFullFlex
+                           positionRelative marginauto easing floatLeft">
+                                 
+                              <b class=" widthFullFlex floatLeft positionRelative lineHeightFour fontSizeThree text-align-left fontColorFour text-shadow05One zindexOne">
+                              {{member.name}}</b>
+                           </span>
+
+                        </span>
+
+
+                     <span class="
+                        widthFullFlex
+                        heightFullFlex
+                        zindexFive
+                        positionAbsolute positionCenter" ng:show="!showonhover
+                        ">
+                           <span class="widthFullFlex
+                           positionRelative marginauto easing floatLeft">
+                                 
+                              <b class=" widthFullFlex floatLeft positionRelative lineHeightFour fontSizeThree text-align-left fontColorFour text-shadow05One zindexOne">
+                              {{member.name}}</b>
+                           </span>
+
+                           <span class="widthFullFlex
+                           positionRelative marginauto easing floatLeft">
+                                 
+                              <b class=" widthFullFlex floatLeft positionRelative lineHeightThree fontSizeTwoFive text-align-left fontColorThree text-shadow05One zindexOne">
+                              {{member.position}}</b>
+                           </span>
+
+                           <span class="widthFullFlex
+                           positionAbsolute positionBottomRight marginauto easing floatLeft">
+                              <b class="marginTwoFive backgroundColorFour floatRight positionRelative lineHeightThree fontSizeTwoFive text-align-right fontColorOffWhite text-shadow025Five zindexOne">
+                              @{{member.twitter}}</b>
+                           </span>
+
+                        </span>
+
+                     <span ng:show="showphoto0">
+                        <span class="
+                           zindexOne
+                           heightFullFlex
+                           widthFullFlex
+                           positionAbsolute positionBottom" ng-repeat="pics in member.photos | limitTo:1:9">
+                        <img class="
+                           widthThreeQuarterFlex
+                           positionAbsolute positionBottom" ng-src="./person/{{pics.link}}.png">
+                        </span>
+                     </span>
+
+                     <span ng:show="showphoto1">
+                        <span class="
+                           zindexOne
+                           heightFullFlex
+                           widthFullFlex
+                           positionAbsolute positionBottom" ng-repeat="pics in member.photos | limitTo:1:10">
+                        <img class="
+                           widthThreeQuarterFlex
+                           positionAbsolute positionBottom" ng-src="./person/{{pics.link}}.png">
+                        </span>
+                     </span>
+
+                     <span ng:show="showphoto2">
+                        <span class="
+                           zindexOne
+                           heightFullFlex
+                           widthFullFlex
+                           positionAbsolute positionBottom" ng-repeat="pics in member.photos | limitTo:1:10">
+                        <img class="
+                           widthThreeQuarterFlex
+                           positionAbsolute positionBottom" ng-src="./person/{{pics.link}}.png">
+                        </span>
+                     </span>
+
+                     <span ng:show="showphoto3">
+                        <span class="
+                           zindexOne
+                           heightFullFlex
+                           widthFullFlex
+                           positionAbsolute positionBottom" ng-repeat="pics in member.photos | limitTo:1:11">
+                        <img class="
+                           widthThreeQuarterFlex
+                           positionAbsolute positionBottom" ng-src="./person/{{pics.link}}.png">
+                        </span>
+                     </span>
+
+                     <span ng:show="showphoto4">
+                        <span class="
+                           zindexOne
+                           heightFullFlex
+                           widthFullFlex
+                           positionAbsolute positionBottom" ng-repeat="pics in member.photos | limitTo:1:11">
+                        <img class="
+                           widthThreeQuarterFlex
+                           positionAbsolute positionBottom" ng-src="./person/{{pics.link}}.png">
+                        </span>
+                     </span>
+
+                     <span ng:show="showphoto5">
+                        <span class="
+                           zindexOne
+                           heightFullFlex
+                           widthFullFlex
+                           positionAbsolute positionBottom" ng-repeat="pics in member.photos | limitTo:1:12">
+                        <img class="
+                           widthThreeQuarterFlex
+                           positionAbsolute positionBottom" ng-src="./person/{{pics.link}}.png">
+                        </span>
+                     </span>
+
+                     <span ng:show="showphoto6">
+                        <span class="
+                           zindexOne
+                           heightFullFlex
+                           widthFullFlex
+                           positionAbsolute positionBottom" ng-repeat="pics in member.photos | limitTo:1:0">
+                        <img class="
+                           widthThreeQuarterFlex
+                           positionAbsolute positionBottom" ng-src="./person/{{pics.link}}.png">
+                        </span>
+                     </span>
+
+                     <span ng:show="showphoto7">
+                        <span class="
+                           zindexOne
+                           heightFullFlex
+                           widthFullFlex
+                           positionAbsolute positionBottom" ng-repeat="pics in member.photos | limitTo:1:0">
+                        <img class="
+                           widthThreeQuarterFlex
+                           positionAbsolute positionBottom" ng-src="./person/{{pics.link}}.png">
+                        </span>
+                     </span>
+
+                     <span ng:show="showphoto8">
+                        <span class="
+                           zindexOne
+                           heightFullFlex
+                           widthFullFlex
+                           positionAbsolute positionBottom" ng-repeat="pics in member.photos | limitTo:1:3">
+                        <img class="
+                           widthThreeQuarterFlex
+                           positionAbsolute positionBottom" ng-src="./person/{{pics.link}}.png">
+                        </span>
+                     </span>
+
+                     <span ng:show="showphoto9">
+                        <span class="
+                           zindexOne
+                           heightFullFlex
+                           widthFullFlex
+                           positionAbsolute positionBottom" ng-repeat="pics in member.photos | limitTo:1:2">
+                        <img class="
+                           widthThreeQuarterFlex
+                           positionAbsolute positionBottom" ng-src="./person/{{pics.link}}.png">
+                        </span>
+                     </span>
+
+                     <span ng:show="showphoto10">
+                        <span class="
+                           zindexOne
+                           heightFullFlex
+                           widthFullFlex
+                           positionAbsolute positionBottom" ng-repeat="pics in member.photos | limitTo:1:2">
+                        <img class="
+                           widthThreeQuarterFlex
+                           positionAbsolute positionBottom" ng-src="./person/{{pics.link}}.png">
+                        </span>
+                     </span>
+
+                     <span ng:show="showphoto11">
+                        <span class="
+                           zindexOne
+                           heightFullFlex
+                           widthFullFlex
+                           positionAbsolute positionBottom" ng-repeat="pics in member.photos | limitTo:1:1">
+                        <img class="
+                           widthThreeQuarterFlex
+                           positionAbsolute positionBottom" ng-src="./person/{{pics.link}}.png">
+                        </span>
+                     </span>
+
+                     <span ng:show="showphoto12">
+                        <span class="
+                           zindexOne
+                           heightFullFlex
+                           widthFullFlex
+                           positionAbsolute positionBottom" ng-repeat="pics in member.photos | limitTo:1:1">
+                        <img class="
+                           widthThreeQuarterFlex
+                           positionAbsolute positionBottom" ng-src="./person/{{pics.link}}.png">
+                        </span>
+                     </span>
+
+
+                     </span>
+                     </span>
+
+                  </span>
+
+                  <previewteam></previewteam>
+
+                  </li>
+                  
+               </span>
+
+               <!-- first member -->
+               <span ng:mouseenter="showphoto6 = true" ng:mouseleave="showphoto6 = false" class="positionRelative widthSixZeroFlex heightFullFlex floatLeft easing">
+
+                  <span class="positionRelative heightFullFlex widthFullFlex floatLeft easing">
+
+                     <h3 class="positionAbsolute positionCenter heightQuarter widthFullFlex lineHeightTen fontSizeSevenFive text-align-center fontColorWhite zindexOne">
+
+                        <span ng:click="pophelp = !pophelp" class="floatLeft positionAbsolute positionLeft widthTenvh heightTen">
+                           <img src="./svg/three/close.svg"
+                              class="
+                              positionAbsolute positionCenter marginauto widthHalfFlex heightHalfFlex">
+                        </span>
+
+                        <p class="widthFullFlex positionRelative floatLeft">
+
+                           <!-- layer -->
+                           <span class="
+                              zindexFive positionRelative heightSevenFive widthFullFlex floatLeft">
+                           </span>
+                           
+                           <span class="positionRelative widthFullFlex floatRight text-shadow01Dark">
+
+                              <b class="floatRight widthFullFlex text-shadow025Dark zindexFive positionRelative">Our Team</b>
+                              <span class="positionAbsolute positionOverFiveTopRightOutro fontColorOffWhite widthFullFlex text-align-center fontSizeTwoFive lineHeightTwoFive floatLeft">
+                              <span class="floatRight widthFullFlex"> 
+                              <span class="font-family-snippet">Our Entire</span> Roster of<b class="fontColorTwo"> Creatives</b>
+                              </span>
+                              </span>
+
+                              <span class="positionAbsolute positionOverFiveBottomLeftOutro fontColorOffWhite fontSizeTwo lineHeightTwoFive text-align-center widthFullFlex floatLeft">
+
+                                 <span class="opacity075">
+
+                                 Including
+                                 <b class="bordered-bottomOne fontColorThree">Projects Managers</b>
+
+                                 <span class="font-family-snippet">&</span>
+
+                                 <b class="bordered-bottomOne fontColorThree">Products Designers</b>
+
+                                 </span></span>
+
+                           </span>
+                        </p>
+                     </h3>
+
+                  </span>
+                  
+               </span>
+
+               <!-- first member -->
+               <span ng:mouseenter="showphoto7 = true" ng:mouseleave="showphoto7 = false" class="positionRelative widthFifthFlex heightFullFlex floatLeft easing">
+
+                  <li ng-repeat="member in team | limitTo:1:0" class="positionRelative widthFullFlex heightFullFlex floatLeft easing">
+
+                  <span class="textOnHoverSwitch positionRelative widthFullFlex heightFullFlex floatLeft easing">
+
+                     
+
+                     <span
+                        ng:click="previewteam = true"
+                        ng:init="showonhover = true"
+                        ng:mouseenter="showonhover = false;"
+                        ng:mouseleave="showonhover = true;"
+                        class="zindexOne positionRelative widthFullFlex heightFullFlex floatLeft easing">
+                     <span id="beep" class="zindexOne border-radius1 box-shadowThreeStraight positionRelative widthFullFlex heightFullFlex floatLeft easing">
+                     <span class="zindexOne backgroundGridColorOneTwo border-radius1 box-shadowThreeStraight overflowhidden positionRelative spacedMid floatLeft easing">
+                     <span class="floatLeft animated enterUpObject delay025 zindexOne positionAbsolute positionTopRight widthTwoFive heightTwoFive"><img src="./svg/pageend.svg" class="positionAbsolute positionRight widthTwoFive"></span>
+                     </span>
+
+                     <span class="
+                        widthFullFlex
+                        heightFullFlex
+                        zindexFive
+                        positionAbsolute positionCenter" ng:show="showonhover
+                        ">
+                           <span class="widthFullFlex
+                           positionRelative marginauto easing floatLeft">
+                                 
+                              <b class=" widthFullFlex floatLeft positionRelative lineHeightFour fontSizeThree text-align-left fontColorFour text-shadow05One zindexOne">
+                              {{member.name}}</b>
+                           </span>
+
+                        </span>
+
+
+                     <span class="
+                        widthFullFlex
+                        heightFullFlex
+                        zindexFive
+                        positionAbsolute positionCenter" ng:show="!showonhover
+                        ">
+                           <span class="widthFullFlex
+                           positionRelative marginauto easing floatLeft">
+                                 
+                              <b class=" widthFullFlex floatLeft positionRelative lineHeightFour fontSizeThree text-align-left fontColorFour text-shadow05One zindexOne">
+                              {{member.name}}</b>
+                           </span>
+
+                           <span class="widthFullFlex
+                           positionRelative marginauto easing floatLeft">
+                                 
+                              <b class=" widthFullFlex floatLeft positionRelative lineHeightThree fontSizeTwoFive text-align-left fontColorThree text-shadow05One zindexOne">
+                              {{member.position}}</b>
+                           </span>
+
+                           <span class="widthFullFlex
+                           positionAbsolute positionBottomRight marginauto easing floatLeft">
+                              <b class="marginTwoFive backgroundColorFour floatRight positionRelative lineHeightThree fontSizeTwoFive text-align-right fontColorOffWhite text-shadow025Five zindexOne">
+                              @{{member.twitter}}</b>
+                           </span>
+
+                        </span>
+
+                     <span ng:show="showphoto0">
+                        <span class="
+                           zindexOne
+                           heightFullFlex
+                           widthFullFlex
+                           positionAbsolute positionBottom" ng-repeat="pics in member.photos | limitTo:1:7">
+                        <img class="
+                           widthThreeQuarterFlex
+                           positionAbsolute positionBottom" ng-src="./person/{{pics.link}}.png">
+                        </span>
+                     </span>
+
+                     <span ng:show="showphoto1">
+                        <span class="
+                           zindexOne
+                           heightFullFlex
+                           widthFullFlex
+                           positionAbsolute positionBottom" ng-repeat="pics in member.photos | limitTo:1:8">
+                        <img class="
+                           widthThreeQuarterFlex
+                           positionAbsolute positionBottom" ng-src="./person/{{pics.link}}.png">
+                        </span>
+                     </span>
+
+                     <span ng:show="showphoto2">
+                        <span class="
+                           zindexOne
+                           heightFullFlex
+                           widthFullFlex
+                           positionAbsolute positionBottom" ng-repeat="pics in member.photos | limitTo:1:8">
+                        <img class="
+                           widthThreeQuarterFlex
+                           positionAbsolute positionBottom" ng-src="./person/{{pics.link}}.png">
+                        </span>
+                     </span>
+
+                     <span ng:show="showphoto3">
+                        <span class="
+                           zindexOne
+                           heightFullFlex
+                           widthFullFlex
+                           positionAbsolute positionBottom" ng-repeat="pics in member.photos | limitTo:1:8">
+                        <img class="
+                           widthThreeQuarterFlex
+                           positionAbsolute positionBottom" ng-src="./person/{{pics.link}}.png">
+                        </span>
+                     </span>
+
+                     <span ng:show="showphoto4">
+                        <span class="
+                           zindexOne
+                           heightFullFlex
+                           widthFullFlex
+                           positionAbsolute positionBottom" ng-repeat="pics in member.photos | limitTo:1:9">
+                        <img class="
+                           widthThreeQuarterFlex
+                           positionAbsolute positionBottom" ng-src="./person/{{pics.link}}.png">
+                        </span>
+                     </span>
+
+                     <span ng:show="showphoto5">
+                        <span class="
+                           zindexOne
+                           heightFullFlex
+                           widthFullFlex
+                           positionAbsolute positionBottom" ng-repeat="pics in member.photos | limitTo:1:6">
+                        <img class="
+                           widthThreeQuarterFlex
+                           positionAbsolute positionBottom" ng-src="./person/{{pics.link}}.png">
+                        </span>
+                     </span>
+
+                     <span ng:show="showphoto6">
+                        <span class="
+                           zindexOne
+                           heightFullFlex
+                           widthFullFlex
+                           positionAbsolute positionBottom" ng-repeat="pics in member.photos | limitTo:1:6">
+                        <img class="
+                           widthThreeQuarterFlex
+                           positionAbsolute positionBottom" ng-src="./person/{{pics.link}}.png">
+                        </span>
+                     </span>
+
+                     <span ng:show="showphoto7">
+                        <span class="
+                           zindexOne
+                           heightFullFlex
+                           widthFullFlex
+                           positionAbsolute positionBottom" ng-repeat="pics in member.photos | limitTo:1:12">
+                        <img class="
+                           widthThreeQuarterFlex
+                           positionAbsolute positionBottom" ng-src="./person/{{pics.link}}.png">
+                        </span>
+                     </span>
+
+                     <span ng:show="showphoto8">
+                        <span class="
+                           zindexOne
+                           heightFullFlex
+                           widthFullFlex
+                           positionAbsolute positionBottom" ng-repeat="pics in member.photos | limitTo:1:5">
+                        <img class="
+                           widthThreeQuarterFlex
+                           positionAbsolute positionBottom" ng-src="./person/{{pics.link}}.png">
+                        </span>
+                     </span>
+
+                     <span ng:show="showphoto9">
+                        <span class="
+                           zindexOne
+                           heightFullFlex
+                           widthFullFlex
+                           positionAbsolute positionBottom" ng-repeat="pics in member.photos | limitTo:1:5">
+                        <img class="
+                           widthThreeQuarterFlex
+                           positionAbsolute positionBottom" ng-src="./person/{{pics.link}}.png">
+                        </span>
+                     </span>
+
+                     <span ng:show="showphoto10">
+                        <span class="
+                           zindexOne
+                           heightFullFlex
+                           widthFullFlex
+                           positionAbsolute positionBottom" ng-repeat="pics in member.photos | limitTo:1:4">
+                        <img class="
+                           widthThreeQuarterFlex
+                           positionAbsolute positionBottom" ng-src="./person/{{pics.link}}.png">
+                        </span>
+                     </span>
+
+                     <span ng:show="showphoto11">
+                        <span class="
+                           zindexOne
+                           heightFullFlex
+                           widthFullFlex
+                           positionAbsolute positionBottom" ng-repeat="pics in member.photos | limitTo:1:4">
+                        <img class="
+                           widthThreeQuarterFlex
+                           positionAbsolute positionBottom" ng-src="./person/{{pics.link}}.png">
+                        </span>
+                     </span>
+
+                     <span ng:show="showphoto12">
+                        <span class="
+                           zindexOne
+                           heightFullFlex
+                           widthFullFlex
+                           positionAbsolute positionBottom" ng-repeat="pics in member.photos | limitTo:1:3">
+                        <img class="
+                           widthThreeQuarterFlex
+                           positionAbsolute positionBottom" ng-src="./person/{{pics.link}}.png">
+                        </span>
+                     </span>
+
+
+                     </span>
+                     </span>
+
+                  </span>
+
+                  <previewteam></previewteam>
+
+                  </li>
+                  
+               </span>
+
+
+            </ul>
+
+            <!-- horizontal list components -->
+            <ul class="positionRelative widthFullFlex heightThirdFlex floatLeft easing">
+
+               <!-- first member -->
+               <span ng:mouseenter="showphoto8 = true" ng:mouseleave="showphoto8 = false" class="positionRelative widthFifthFlex heightFullFlex floatLeft easing">
+
+                  <li ng-repeat="member in team | limitTo:1:0" class="positionRelative widthFullFlex heightFullFlex floatLeft easing">
+
+                  <span class="textOnHoverSwitch positionRelative widthFullFlex heightFullFlex floatLeft easing">
+
+                     
+
+                     <span
+                        ng:click="previewteam = true"
+                        ng:init="showonhover = true"
+                        ng:mouseenter="showonhover = false;"
+                        ng:mouseleave="showonhover = true;"
+                        class="zindexOne positionRelative widthFullFlex heightFullFlex floatLeft easing">
+                     <span id="beep" class="zindexOne border-radius1 box-shadowThreeStraight positionRelative widthFullFlex heightFullFlex floatLeft easing">
+                     <span class="zindexOne backgroundGridColorOneTwo border-radius1 box-shadowThreeStraight overflowhidden positionRelative spacedMid floatLeft easing">
+                     <span class="floatLeft animated enterUpObject delay025 zindexOne positionAbsolute positionTopRight widthTwoFive heightTwoFive"><img src="./svg/pageend.svg" class="positionAbsolute positionRight widthTwoFive"></span>
+                     </span>
+
+                     <span class="
+                        widthFullFlex
+                        heightFullFlex
+                        zindexFive
+                        positionAbsolute positionCenter" ng:show="showonhover
+                        ">
+                           <span class="widthFullFlex
+                           positionRelative marginauto easing floatLeft">
+                                 
+                              <b class=" widthFullFlex floatLeft positionRelative lineHeightFour fontSizeThree text-align-left fontColorFour text-shadow05One zindexOne">
+                              {{member.name}}</b>
+                           </span>
+
+                        </span>
+
+
+                     <span class="
+                        widthFullFlex
+                        heightFullFlex
+                        zindexFive
+                        positionAbsolute positionCenter" ng:show="!showonhover
+                        ">
+                           <span class="widthFullFlex
+                           positionRelative marginauto easing floatLeft">
+                                 
+                              <b class=" widthFullFlex floatLeft positionRelative lineHeightFour fontSizeThree text-align-left fontColorFour text-shadow05One zindexOne">
+                              {{member.name}}</b>
+                           </span>
+
+                           <span class="widthFullFlex
+                           positionRelative marginauto easing floatLeft">
+                                 
+                              <b class=" widthFullFlex floatLeft positionRelative lineHeightThree fontSizeTwoFive text-align-left fontColorThree text-shadow05One zindexOne">
+                              {{member.position}}</b>
+                           </span>
+
+                           <span class="widthFullFlex
+                           positionAbsolute positionBottomRight marginauto easing floatLeft">
+                              <b class="marginTwoFive backgroundColorFour floatRight positionRelative lineHeightThree fontSizeTwoFive text-align-right fontColorOffWhite text-shadow025Five zindexOne">
+                              @{{member.twitter}}</b>
+                           </span>
+
+                        </span>
+
+                     <span ng:show="showphoto0">
+                        <span class="
+                           zindexOne
+                           heightFullFlex
+                           widthFullFlex
+                           positionAbsolute positionBottom" ng-repeat="pics in member.photos | limitTo:1:9">
+                        <img class="
+                           widthThreeQuarterFlex
+                           positionAbsolute positionBottom" ng-src="./person/{{pics.link}}.png">
+                        </span>
+                     </span>
+
+                     <span ng:show="showphoto1">
+                        <span class="
+                           zindexOne
+                           heightFullFlex
+                           widthFullFlex
+                           positionAbsolute positionBottom" ng-repeat="pics in member.photos | limitTo:1:10">
+                        <img class="
+                           widthThreeQuarterFlex
+                           positionAbsolute positionBottom" ng-src="./person/{{pics.link}}.png">
+                        </span>
+                     </span>
+
+                     <span ng:show="showphoto2">
+                        <span class="
+                           zindexOne
+                           heightFullFlex
+                           widthFullFlex
+                           positionAbsolute positionBottom" ng-repeat="pics in member.photos | limitTo:1:10">
+                        <img class="
+                           widthThreeQuarterFlex
+                           positionAbsolute positionBottom" ng-src="./person/{{pics.link}}.png">
+                        </span>
+                     </span>
+
+                     <span ng:show="showphoto3">
+                        <span class="
+                           zindexOne
+                           heightFullFlex
+                           widthFullFlex
+                           positionAbsolute positionBottom" ng-repeat="pics in member.photos | limitTo:1:11">
+                        <img class="
+                           widthThreeQuarterFlex
+                           positionAbsolute positionBottom" ng-src="./person/{{pics.link}}.png">
+                        </span>
+                     </span>
+
+                     <span ng:show="showphoto4">
+                        <span class="
+                           zindexOne
+                           heightFullFlex
+                           widthFullFlex
+                           positionAbsolute positionBottom" ng-repeat="pics in member.photos | limitTo:1:11">
+                        <img class="
+                           widthThreeQuarterFlex
+                           positionAbsolute positionBottom" ng-src="./person/{{pics.link}}.png">
+                        </span>
+                     </span>
+
+                     <span ng:show="showphoto5">
+                        <span class="
+                           zindexOne
+                           heightFullFlex
+                           widthFullFlex
+                           positionAbsolute positionBottom" ng-repeat="pics in member.photos | limitTo:1:9">
+                        <img class="
+                           widthThreeQuarterFlex
+                           positionAbsolute positionBottom" ng-src="./person/{{pics.link}}.png">
+                        </span>
+                     </span>
+
+                     <span ng:show="showphoto6">
+                        <span class="
+                           zindexOne
+                           heightFullFlex
+                           widthFullFlex
+                           positionAbsolute positionBottom" ng-repeat="pics in member.photos | limitTo:1:10">
+                        <img class="
+                           widthThreeQuarterFlex
+                           positionAbsolute positionBottom" ng-src="./person/{{pics.link}}.png">
+                        </span>
+                     </span>
+
+                     <span ng:show="showphoto7">
+                        <span class="
+                           zindexOne
+                           heightFullFlex
+                           widthFullFlex
+                           positionAbsolute positionBottom" ng-repeat="pics in member.photos | limitTo:1:11">
+                        <img class="
+                           widthThreeQuarterFlex
+                           positionAbsolute positionBottom" ng-src="./person/{{pics.link}}.png">
+                        </span>
+                     </span>
+
+                     <span ng:show="showphoto8">
+                        <span class="
+                           zindexOne
+                           heightFullFlex
+                           widthFullFlex
+                           positionAbsolute positionBottom" ng-repeat="pics in member.photos | limitTo:1:12">
+                        <img class="
+                           widthThreeQuarterFlex
+                           positionAbsolute positionBottom" ng-src="./person/{{pics.link}}.png">
+                        </span>
+                     </span>
+
+                     <span ng:show="showphoto9">
+                        <span class="
+                           zindexOne
+                           heightFullFlex
+                           widthFullFlex
+                           positionAbsolute positionBottom" ng-repeat="pics in member.photos | limitTo:1:11">
+                        <img class="
+                           widthThreeQuarterFlex
+                           positionAbsolute positionBottom" ng-src="./person/{{pics.link}}.png">
+                        </span>
+                     </span>
+
+                     <span ng:show="showphoto10">
+                        <span class="
+                           zindexOne
+                           heightFullFlex
+                           widthFullFlex
+                           positionAbsolute positionBottom" ng-repeat="pics in member.photos | limitTo:1:0">
+                        <img class="
+                           widthThreeQuarterFlex
+                           positionAbsolute positionBottom" ng-src="./person/{{pics.link}}.png">
+                        </span>
+                     </span>
+
+                     <span ng:show="showphoto11">
+                        <span class="
+                           zindexOne
+                           heightFullFlex
+                           widthFullFlex
+                           positionAbsolute positionBottom" ng-repeat="pics in member.photos | limitTo:1:0">
+                        <img class="
+                           widthThreeQuarterFlex
+                           positionAbsolute positionBottom" ng-src="./person/{{pics.link}}.png">
+                        </span>
+                     </span>
+
+                     <span ng:show="showphoto12">
+                        <span class="
+                           zindexOne
+                           heightFullFlex
+                           widthFullFlex
+                           positionAbsolute positionBottom" ng-repeat="pics in member.photos | limitTo:1:0">
+                        <img class="
+                           widthThreeQuarterFlex
+                           positionAbsolute positionBottom" ng-src="./person/{{pics.link}}.png">
+                        </span>
+                     </span>
+
+
+                     </span>
+                     </span>
+
+                  </span>
+
+                  <previewteam></previewteam>
+
+                  </li>
+                  
+               </span>
+
+               <!-- first member -->
+               <span ng:mouseenter="showphoto9 = true" ng:mouseleave="showphoto9 = false" class="positionRelative widthFifthFlex heightFullFlex floatLeft easing">
+
+                  <li ng-repeat="member in team | limitTo:1:0" class="positionRelative widthFullFlex heightFullFlex floatLeft easing">
+
+                  <span class="textOnHoverSwitch positionRelative widthFullFlex heightFullFlex floatLeft easing">
+
+                     
+
+                     <span
+                        ng:click="previewteam = true"
+                        ng:init="showonhover = true"
+                        ng:mouseenter="showonhover = false;"
+                        ng:mouseleave="showonhover = true;"
+                        class="zindexOne positionRelative widthFullFlex heightFullFlex floatLeft easing">
+                     <span id="beep" class="zindexOne border-radius1 box-shadowThreeStraight positionRelative widthFullFlex heightFullFlex floatLeft easing">
+                     <span class="zindexOne backgroundGridColorOneTwo border-radius1 box-shadowThreeStraight overflowhidden positionRelative spacedMid floatLeft easing">
+                     <span class="floatLeft animated enterUpObject delay025 zindexOne positionAbsolute positionTopRight widthTwoFive heightTwoFive"><img src="./svg/pageend.svg" class="positionAbsolute positionRight widthTwoFive"></span>
+                     </span>
+
+                     <span class="
+                        widthFullFlex
+                        heightFullFlex
+                        zindexFive
+                        positionAbsolute positionCenter" ng:show="showonhover
+                        ">
+                           <span class="widthFullFlex
+                           positionRelative marginauto easing floatLeft">
+                                 
+                              <b class=" widthFullFlex floatLeft positionRelative lineHeightFour fontSizeThree text-align-left fontColorFour text-shadow05One zindexOne">
+                              {{member.name}}</b>
+                           </span>
+
+                        </span>
+
+
+                     <span class="
+                        widthFullFlex
+                        heightFullFlex
+                        zindexFive
+                        positionAbsolute positionCenter" ng:show="!showonhover
+                        ">
+                           <span class="widthFullFlex
+                           positionRelative marginauto easing floatLeft">
+                                 
+                              <b class=" widthFullFlex floatLeft positionRelative lineHeightFour fontSizeThree text-align-left fontColorFour text-shadow05One zindexOne">
+                              {{member.name}}</b>
+                           </span>
+
+                           <span class="widthFullFlex
+                           positionRelative marginauto easing floatLeft">
+                                 
+                              <b class=" widthFullFlex floatLeft positionRelative lineHeightThree fontSizeTwoFive text-align-left fontColorThree text-shadow05One zindexOne">
+                              {{member.position}}</b>
+                           </span>
+
+                           <span class="widthFullFlex
+                           positionAbsolute positionBottomRight marginauto easing floatLeft">
+                              <b class="marginTwoFive backgroundColorFour floatRight positionRelative lineHeightThree fontSizeTwoFive text-align-right fontColorOffWhite text-shadow025Five zindexOne">
+                              @{{member.twitter}}</b>
+                           </span>
+
+                        </span>
+
+                     <span ng:show="showphoto0">
+                        <span class="
+                           zindexOne
+                           heightFullFlex
+                           widthFullFlex
+                           positionAbsolute positionBottom" ng-repeat="pics in member.photos | limitTo:1:8">
+                        <img class="
+                           widthThreeQuarterFlex
+                           positionAbsolute positionBottom" ng-src="./person/{{pics.link}}.png">
+                        </span>
+                     </span>
+
+                     <span ng:show="showphoto1">
+                        <span class="
+                           zindexOne
+                           heightFullFlex
+                           widthFullFlex
+                           positionAbsolute positionBottom" ng-repeat="pics in member.photos | limitTo:1:9">
+                        <img class="
+                           widthThreeQuarterFlex
+                           positionAbsolute positionBottom" ng-src="./person/{{pics.link}}.png">
+                        </span>
+                     </span>
+
+                     <span ng:show="showphoto2">
+                        <span class="
+                           zindexOne
+                           heightFullFlex
+                           widthFullFlex
+                           positionAbsolute positionBottom" ng-repeat="pics in member.photos | limitTo:1:10">
+                        <img class="
+                           widthThreeQuarterFlex
+                           positionAbsolute positionBottom" ng-src="./person/{{pics.link}}.png">
+                        </span>
+                     </span>
+
+                     <span ng:show="showphoto3">
+                        <span class="
+                           zindexOne
+                           heightFullFlex
+                           widthFullFlex
+                           positionAbsolute positionBottom" ng-repeat="pics in member.photos | limitTo:1:11">
+                        <img class="
+                           widthThreeQuarterFlex
+                           positionAbsolute positionBottom" ng-src="./person/{{pics.link}}.png">
+                        </span>
+                     </span>
+
+                     <span ng:show="showphoto4">
+                        <span class="
+                           zindexOne
+                           heightFullFlex
+                           widthFullFlex
+                           positionAbsolute positionBottom" ng-repeat="pics in member.photos | limitTo:1:11">
+                        <img class="
+                           widthThreeQuarterFlex
+                           positionAbsolute positionBottom" ng-src="./person/{{pics.link}}.png">
+                        </span>
+                     </span>
+
+                     <span ng:show="showphoto5">
+                        <span class="
+                           zindexOne
+                           heightFullFlex
+                           widthFullFlex
+                           positionAbsolute positionBottom" ng-repeat="pics in member.photos | limitTo:1:8">
+                        <img class="
+                           widthThreeQuarterFlex
+                           positionAbsolute positionBottom" ng-src="./person/{{pics.link}}.png">
+                        </span>
+                     </span>
+
+                     <span ng:show="showphoto6">
+                        <span class="
+                           zindexOne
+                           heightFullFlex
+                           widthFullFlex
+                           positionAbsolute positionBottom" ng-repeat="pics in member.photos | limitTo:1:9">
+                        <img class="
+                           widthThreeQuarterFlex
+                           positionAbsolute positionBottom" ng-src="./person/{{pics.link}}.png">
+                        </span>
+                     </span>
+
+                     <span ng:show="showphoto7">
+                        <span class="
+                           zindexOne
+                           heightFullFlex
+                           widthFullFlex
+                           positionAbsolute positionBottom" ng-repeat="pics in member.photos | limitTo:1:11">
+                        <img class="
+                           widthThreeQuarterFlex
+                           positionAbsolute positionBottom" ng-src="./person/{{pics.link}}.png">
+                        </span>
+                     </span>
+
+                     <span ng:show="showphoto8">
+                        <span class="
+                           zindexOne
+                           heightFullFlex
+                           widthFullFlex
+                           positionAbsolute positionBottom" ng-repeat="pics in member.photos | limitTo:1:6">
+                        <img class="
+                           widthThreeQuarterFlex
+                           positionAbsolute positionBottom" ng-src="./person/{{pics.link}}.png">
+                        </span>
+                     </span>
+
+                     <span ng:show="showphoto9">
+                        <span class="
+                           zindexOne
+                           heightFullFlex
+                           widthFullFlex
+                           positionAbsolute positionBottom" ng-repeat="pics in member.photos | limitTo:1:12">
+                        <img class="
+                           widthThreeQuarterFlex
+                           positionAbsolute positionBottom" ng-src="./person/{{pics.link}}.png">
+                        </span>
+                     </span>
+
+                     <span ng:show="showphoto10">
+                        <span class="
+                           zindexOne
+                           heightFullFlex
+                           widthFullFlex
+                           positionAbsolute positionBottom" ng-repeat="pics in member.photos | limitTo:1:0">
+                        <img class="
+                           widthThreeQuarterFlex
+                           positionAbsolute positionBottom" ng-src="./person/{{pics.link}}.png">
+                        </span>
+                     </span>
+
+                     <span ng:show="showphoto11">
+                        <span class="
+                           zindexOne
+                           heightFullFlex
+                           widthFullFlex
+                           positionAbsolute positionBottom" ng-repeat="pics in member.photos | limitTo:1:0">
+                        <img class="
+                           widthThreeQuarterFlex
+                           positionAbsolute positionBottom" ng-src="./person/{{pics.link}}.png">
+                        </span>
+                     </span>
+
+                     <span ng:show="showphoto12">
+                        <span class="
+                           zindexOne
+                           heightFullFlex
+                           widthFullFlex
+                           positionAbsolute positionBottom" ng-repeat="pics in member.photos | limitTo:1:0">
+                        <img class="
+                           widthThreeQuarterFlex
+                           positionAbsolute positionBottom" ng-src="./person/{{pics.link}}.png">
+                        </span>
+                     </span>
+
+
+                     </span>
+                     </span>
+
+                  </span>
+
+                  <previewteam></previewteam>
+
+                  </li>
+                  
+               </span>
+
+               <!-- first member -->
+               <span ng:mouseenter="showphoto10 = true" ng:mouseleave="showphoto10 = false" class="positionRelative widthFifthFlex heightFullFlex floatLeft easing">
+
+                  <li ng-repeat="member in team | limitTo:1:0" class="positionRelative widthFullFlex heightFullFlex floatLeft easing">
+
+                  <span class="textOnHoverSwitch positionRelative widthFullFlex heightFullFlex floatLeft easing">
+
+                     
+
+                     <span
+                        ng:click="previewteam = true"
+                        ng:init="showonhover = true"
+                        ng:mouseenter="showonhover = false;"
+                        ng:mouseleave="showonhover = true;"
+                        class="zindexOne positionRelative widthFullFlex heightFullFlex floatLeft easing">
+                     <span id="beep" class="zindexOne border-radius1 box-shadowThreeStraight positionRelative widthFullFlex heightFullFlex floatLeft easing">
+                     <span class="zindexOne backgroundGridColorOneTwo border-radius1 box-shadowThreeStraight overflowhidden positionRelative spacedMid floatLeft easing">
+                     <span class="floatLeft animated enterUpObject delay025 zindexOne positionAbsolute positionTopRight widthTwoFive heightTwoFive"><img src="./svg/pageend.svg" class="positionAbsolute positionRight widthTwoFive"></span>
+                     </span>
+
+                     <span class="
+                        widthFullFlex
+                        heightFullFlex
+                        zindexFive
+                        positionAbsolute positionCenter" ng:show="showonhover
+                        ">
+                           <span class="widthFullFlex
+                           positionRelative marginauto easing floatLeft">
+                                 
+                              <b class=" widthFullFlex floatLeft positionRelative lineHeightFour fontSizeThree text-align-left fontColorFour text-shadow05One zindexOne">
+                              {{member.name}}</b>
+                           </span>
+
+                        </span>
+
+
+                     <span class="
+                        widthFullFlex
+                        heightFullFlex
+                        zindexFive
+                        positionAbsolute positionCenter" ng:show="!showonhover
+                        ">
+                           <span class="widthFullFlex
+                           positionRelative marginauto easing floatLeft">
+                                 
+                              <b class=" widthFullFlex floatLeft positionRelative lineHeightFour fontSizeThree text-align-left fontColorFour text-shadow05One zindexOne">
+                              {{member.name}}</b>
+                           </span>
+
+                           <span class="widthFullFlex
+                           positionRelative marginauto easing floatLeft">
+                                 
+                              <b class=" widthFullFlex floatLeft positionRelative lineHeightThree fontSizeTwoFive text-align-left fontColorThree text-shadow05One zindexOne">
+                              {{member.position}}</b>
+                           </span>
+
+                           <span class="widthFullFlex
+                           positionAbsolute positionBottomRight marginauto easing floatLeft">
+                              <b class="marginTwoFive backgroundColorFour floatRight positionRelative lineHeightThree fontSizeTwoFive text-align-right fontColorOffWhite text-shadow025Five zindexOne">
+                              @{{member.twitter}}</b>
+                           </span>
+
+                        </span>
+
+                     <span ng:show="showphoto0">
+                        <span class="
+                           zindexOne
+                           heightFullFlex
+                           widthFullFlex
+                           positionAbsolute positionBottom" ng-repeat="pics in member.photos | limitTo:1:7">
+                        <img class="
+                           widthThreeQuarterFlex
+                           positionAbsolute positionBottom" ng-src="./person/{{pics.link}}.png">
+                        </span>
+                     </span>
+
+                     <span ng:show="showphoto1">
+                        <span class="
+                           zindexOne
+                           heightFullFlex
+                           widthFullFlex
+                           positionAbsolute positionBottom" ng-repeat="pics in member.photos | limitTo:1:8">
+                        <img class="
+                           widthThreeQuarterFlex
+                           positionAbsolute positionBottom" ng-src="./person/{{pics.link}}.png">
+                        </span>
+                     </span>
+
+                     <span ng:show="showphoto2">
+                        <span class="
+                           zindexOne
+                           heightFullFlex
+                           widthFullFlex
+                           positionAbsolute positionBottom" ng-repeat="pics in member.photos | limitTo:1:9">
+                        <img class="
+                           widthThreeQuarterFlex
+                           positionAbsolute positionBottom" ng-src="./person/{{pics.link}}.png">
+                        </span>
+                     </span>
+
+                     <span ng:show="showphoto3">
+                        <span class="
+                           zindexOne
+                           heightFullFlex
+                           widthFullFlex
+                           positionAbsolute positionBottom" ng-repeat="pics in member.photos | limitTo:1:10">
+                        <img class="
+                           widthThreeQuarterFlex
+                           positionAbsolute positionBottom" ng-src="./person/{{pics.link}}.png">
+                        </span>
+                     </span>
+
+                     <span ng:show="showphoto4">
+                        <span class="
+                           zindexOne
+                           heightFullFlex
+                           widthFullFlex
+                           positionAbsolute positionBottom" ng-repeat="pics in member.photos | limitTo:1:10">
+                        <img class="
+                           widthThreeQuarterFlex
+                           positionAbsolute positionBottom" ng-src="./person/{{pics.link}}.png">
+                        </span>
+                     </span>
+
+                     <span ng:show="showphoto5">
+                        <span class="
+                           zindexOne
+                           heightFullFlex
+                           widthFullFlex
+                           positionAbsolute positionBottom" ng-repeat="pics in member.photos | limitTo:1:7">
+                        <img class="
+                           widthThreeQuarterFlex
+                           positionAbsolute positionBottom" ng-src="./person/{{pics.link}}.png">
+                        </span>
+                     </span>
+
+                     <span ng:show="showphoto6">
+                        <span class="
+                           zindexOne
+                           heightFullFlex
+                           widthFullFlex
+                           positionAbsolute positionBottom" ng-repeat="pics in member.photos | limitTo:1:9">
+                        <img class="
+                           widthThreeQuarterFlex
+                           positionAbsolute positionBottom" ng-src="./person/{{pics.link}}.png">
+                        </span>
+                     </span>
+
+                     <span ng:show="showphoto7">
+                        <span class="
+                           zindexOne
+                           heightFullFlex
+                           widthFullFlex
+                           positionAbsolute positionBottom" ng-repeat="pics in member.photos | limitTo:1:11">
+                        <img class="
+                           widthThreeQuarterFlex
+                           positionAbsolute positionBottom" ng-src="./person/{{pics.link}}.png">
+                        </span>
+                     </span>
+
+                     <span ng:show="showphoto8">
+                        <span class="
+                           zindexOne
+                           heightFullFlex
+                           widthFullFlex
+                           positionAbsolute positionBottom" ng-repeat="pics in member.photos | limitTo:1:6">
+                        <img class="
+                           widthThreeQuarterFlex
+                           positionAbsolute positionBottom" ng-src="./person/{{pics.link}}.png">
+                        </span>
+                     </span>
+
+                     <span ng:show="showphoto9">
+                        <span class="
+                           zindexOne
+                           heightFullFlex
+                           widthFullFlex
+                           positionAbsolute positionBottom" ng-repeat="pics in member.photos | limitTo:1:6">
+                        <img class="
+                           widthThreeQuarterFlex
+                           positionAbsolute positionBottom" ng-src="./person/{{pics.link}}.png">
+                        </span>
+                     </span>
+
+                     <span ng:show="showphoto10">
+                        <span class="
+                           zindexOne
+                           heightFullFlex
+                           widthFullFlex
+                           positionAbsolute positionBottom" ng-repeat="pics in member.photos | limitTo:1:12">
+                        <img class="
+                           widthThreeQuarterFlex
+                           positionAbsolute positionBottom" ng-src="./person/{{pics.link}}.png">
+                        </span>
+                     </span>
+
+                     <span ng:show="showphoto11">
+                        <span class="
+                           zindexOne
+                           heightFullFlex
+                           widthFullFlex
+                           positionAbsolute positionBottom" ng-repeat="pics in member.photos | limitTo:1:0">
+                        <img class="
+                           widthThreeQuarterFlex
+                           positionAbsolute positionBottom" ng-src="./person/{{pics.link}}.png">
+                        </span>
+                     </span>
+
+                     <span ng:show="showphoto12">
+                        <span class="
+                           zindexOne
+                           heightFullFlex
+                           widthFullFlex
+                           positionAbsolute positionBottom" ng-repeat="pics in member.photos | limitTo:1:0">
+                        <img class="
+                           widthThreeQuarterFlex
+                           positionAbsolute positionBottom" ng-src="./person/{{pics.link}}.png">
+                        </span>
+                     </span>
+
+
+                     </span>
+                     </span>
+
+                  </span>
+
+                  <previewteam></previewteam>
+
+                  </li>
+                  
+               </span>
+
+               <!-- first member -->
+               <span ng:mouseenter="showphoto11 = true" ng:mouseleave="showphoto11 = false" class="positionRelative widthFifthFlex heightFullFlex floatLeft easing">
+
+                  <li ng-repeat="member in team | limitTo:1:0" class="positionRelative widthFullFlex heightFullFlex floatLeft easing">
+
+                  <span class="textOnHoverSwitch positionRelative widthFullFlex heightFullFlex floatLeft easing">
+
+                     
+
+                     <span
+                        ng:click="previewteam = true"
+                        ng:init="showonhover = true"
+                        ng:mouseenter="showonhover = false;"
+                        ng:mouseleave="showonhover = true;"
+                        class="zindexOne positionRelative widthFullFlex heightFullFlex floatLeft easing">
+                     <span id="beep" class="zindexOne border-radius1 box-shadowThreeStraight positionRelative widthFullFlex heightFullFlex floatLeft easing">
+                     <span class="zindexOne backgroundGridColorOneTwo border-radius1 box-shadowThreeStraight overflowhidden positionRelative spacedMid floatLeft easing">
+                     <span class="floatLeft animated enterUpObject delay025 zindexOne positionAbsolute positionTopRight widthTwoFive heightTwoFive"><img src="./svg/pageend.svg" class="positionAbsolute positionRight widthTwoFive"></span>
+                     </span>
+
+                     <span class="
+                        widthFullFlex
+                        heightFullFlex
+                        zindexFive
+                        positionAbsolute positionCenter" ng:show="showonhover
+                        ">
+                           <span class="widthFullFlex
+                           positionRelative marginauto easing floatLeft">
+                                 
+                              <b class=" widthFullFlex floatLeft positionRelative lineHeightFour fontSizeThree text-align-left fontColorFour text-shadow05One zindexOne">
+                              {{member.name}}</b>
+                           </span>
+
+                        </span>
+
+
+                     <span class="
+                        widthFullFlex
+                        heightFullFlex
+                        zindexFive
+                        positionAbsolute positionCenter" ng:show="!showonhover
+                        ">
+                           <span class="widthFullFlex
+                           positionRelative marginauto easing floatLeft">
+                                 
+                              <b class=" widthFullFlex floatLeft positionRelative lineHeightFour fontSizeThree text-align-left fontColorFour text-shadow05One zindexOne">
+                              {{member.name}}</b>
+                           </span>
+
+                           <span class="widthFullFlex
+                           positionRelative marginauto easing floatLeft">
+                                 
+                              <b class=" widthFullFlex floatLeft positionRelative lineHeightThree fontSizeTwoFive text-align-left fontColorThree text-shadow05One zindexOne">
+                              {{member.position}}</b>
+                           </span>
+
+                           <span class="widthFullFlex
+                           positionAbsolute positionBottomRight marginauto easing floatLeft">
+                              <b class="marginTwoFive backgroundColorFour floatRight positionRelative lineHeightThree fontSizeTwoFive text-align-right fontColorOffWhite text-shadow025Five zindexOne">
+                              @{{member.twitter}}</b>
+                           </span>
+
+                        </span>
+
+                     <span ng:show="showphoto0">
+                        <span class="
+                           zindexOne
+                           heightFullFlex
+                           widthFullFlex
+                           positionAbsolute positionBottom" ng-repeat="pics in member.photos | limitTo:1:7">
+                        <img class="
+                           widthThreeQuarterFlex
+                           positionAbsolute positionBottom" ng-src="./person/{{pics.link}}.png">
+                        </span>
+                     </span>
+
+                     <span ng:show="showphoto1">
+                        <span class="
+                           zindexOne
+                           heightFullFlex
+                           widthFullFlex
+                           positionAbsolute positionBottom" ng-repeat="pics in member.photos | limitTo:1:7">
+                        <img class="
+                           widthThreeQuarterFlex
+                           positionAbsolute positionBottom" ng-src="./person/{{pics.link}}.png">
+                        </span>
+                     </span>
+
+                     <span ng:show="showphoto2">
+                        <span class="
+                           zindexOne
+                           heightFullFlex
+                           widthFullFlex
+                           positionAbsolute positionBottom" ng-repeat="pics in member.photos | limitTo:1:8">
+                        <img class="
+                           widthThreeQuarterFlex
+                           positionAbsolute positionBottom" ng-src="./person/{{pics.link}}.png">
+                        </span>
+                     </span>
+
+                     <span ng:show="showphoto3">
+                        <span class="
+                           zindexOne
+                           heightFullFlex
+                           widthFullFlex
+                           positionAbsolute positionBottom" ng-repeat="pics in member.photos | limitTo:1:9">
+                        <img class="
+                           widthThreeQuarterFlex
+                           positionAbsolute positionBottom" ng-src="./person/{{pics.link}}.png">
+                        </span>
+                     </span>
+
+                     <span ng:show="showphoto4">
+                        <span class="
+                           zindexOne
+                           heightFullFlex
+                           widthFullFlex
+                           positionAbsolute positionBottom" ng-repeat="pics in member.photos | limitTo:1:10">
+                        <img class="
+                           widthThreeQuarterFlex
+                           positionAbsolute positionBottom" ng-src="./person/{{pics.link}}.png">
+                        </span>
+                     </span>
+
+                     <span ng:show="showphoto5">
+                        <span class="
+                           zindexOne
+                           heightFullFlex
+                           widthFullFlex
+                           positionAbsolute positionBottom" ng-repeat="pics in member.photos | limitTo:1:7">
+                        <img class="
+                           widthThreeQuarterFlex
+                           positionAbsolute positionBottom" ng-src="./person/{{pics.link}}.png">
+                        </span>
+                     </span>
+
+                     <span ng:show="showphoto6">
+                        <span class="
+                           zindexOne
+                           heightFullFlex
+                           widthFullFlex
+                           positionAbsolute positionBottom" ng-repeat="pics in member.photos | limitTo:1:9">
+                        <img class="
+                           widthThreeQuarterFlex
+                           positionAbsolute positionBottom" ng-src="./person/{{pics.link}}.png">
+                        </span>
+                     </span>
+
+                     <span ng:show="showphoto7">
+                        <span class="
+                           zindexOne
+                           heightFullFlex
+                           widthFullFlex
+                           positionAbsolute positionBottom" ng-repeat="pics in member.photos | limitTo:1:10">
+                        <img class="
+                           widthThreeQuarterFlex
+                           positionAbsolute positionBottom" ng-src="./person/{{pics.link}}.png">
+                        </span>
+                     </span>
+
+                     <span ng:show="showphoto8">
+                        <span class="
+                           zindexOne
+                           heightFullFlex
+                           widthFullFlex
+                           positionAbsolute positionBottom" ng-repeat="pics in member.photos | limitTo:1:6">
+                        <img class="
+                           widthThreeQuarterFlex
+                           positionAbsolute positionBottom" ng-src="./person/{{pics.link}}.png">
+                        </span>
+                     </span>
+
+                     <span ng:show="showphoto9">
+                        <span class="
+                           zindexOne
+                           heightFullFlex
+                           widthFullFlex
+                           positionAbsolute positionBottom" ng-repeat="pics in member.photos | limitTo:1:6">
+                        <img class="
+                           widthThreeQuarterFlex
+                           positionAbsolute positionBottom" ng-src="./person/{{pics.link}}.png">
+                        </span>
+                     </span>
+
+                     <span ng:show="showphoto10">
+                        <span class="
+                           zindexOne
+                           heightFullFlex
+                           widthFullFlex
+                           positionAbsolute positionBottom" ng-repeat="pics in member.photos | limitTo:1:6">
+                        <img class="
+                           widthThreeQuarterFlex
+                           positionAbsolute positionBottom" ng-src="./person/{{pics.link}}.png">
+                        </span>
+                     </span>
+
+                     <span ng:show="showphoto11">
+                        <span class="
+                           zindexOne
+                           heightFullFlex
+                           widthFullFlex
+                           positionAbsolute positionBottom" ng-repeat="pics in member.photos | limitTo:1:12">
+                        <img class="
+                           widthThreeQuarterFlex
+                           positionAbsolute positionBottom" ng-src="./person/{{pics.link}}.png">
+                        </span>
+                     </span>
+
+                     <span ng:show="showphoto12">
+                        <span class="
+                           zindexOne
+                           heightFullFlex
+                           widthFullFlex
+                           positionAbsolute positionBottom" ng-repeat="pics in member.photos | limitTo:1:0">
+                        <img class="
+                           widthThreeQuarterFlex
+                           positionAbsolute positionBottom" ng-src="./person/{{pics.link}}.png">
+                        </span>
+                     </span>
+
+
+                     </span>
+                     </span>
+
+                  </span>
+
+                  <previewteam></previewteam>
+
+                  </li>
+                  
+               </span>
+
+               <!-- first member -->
+               <span ng:mouseenter="showphoto12 = true" ng:mouseleave="showphoto12 = false" class="positionRelative widthFifthFlex heightFullFlex floatLeft easing">
+
+                  <li ng-repeat="member in team | limitTo:1:0" class="positionRelative widthFullFlex heightFullFlex floatLeft easing">
+
+                  <span class="textOnHoverSwitch positionRelative widthFullFlex heightFullFlex floatLeft easing">
+
+                     
+
+                     <span
+                        ng:click="previewteam = true"
+                        ng:init="showonhover = true"
+                        ng:mouseenter="showonhover = false;"
+                        ng:mouseleave="showonhover = true;"
+                        class="zindexOne positionRelative widthFullFlex heightFullFlex floatLeft easing">
+                     <span id="beep" class="zindexOne border-radius1 box-shadowThreeStraight positionRelative widthFullFlex heightFullFlex floatLeft easing">
+                     <span class="zindexOne backgroundGridColorOneTwo border-radius1 box-shadowThreeStraight overflowhidden positionRelative spacedMid floatLeft easing">
+                     <span class="floatLeft animated enterUpObject delay025 zindexOne positionAbsolute positionTopRight widthTwoFive heightTwoFive"><img src="./svg/pageend.svg" class="positionAbsolute positionRight widthTwoFive"></span>
+                     </span>
+
+                     <span class="
+                        widthFullFlex
+                        heightFullFlex
+                        zindexFive
+                        positionAbsolute positionCenter" ng:show="showonhover
+                        ">
+                           <span class="widthFullFlex
+                           positionRelative marginauto easing floatLeft">
+                                 
+                              <b class=" widthFullFlex floatLeft positionRelative lineHeightFour fontSizeThree text-align-left fontColorFour text-shadow05One zindexOne">
+                              {{member.name}}</b>
+                           </span>
+
+                        </span>
+
+
+                     <span class="
+                        widthFullFlex
+                        heightFullFlex
+                        zindexFive
+                        positionAbsolute positionCenter" ng:show="!showonhover
+                        ">
+                           <span class="widthFullFlex
+                           positionRelative marginauto easing floatLeft">
+                                 
+                              <b class=" widthFullFlex floatLeft positionRelative lineHeightFour fontSizeThree text-align-left fontColorFour text-shadow05One zindexOne">
+                              {{member.name}}</b>
+                           </span>
+
+                           <span class="widthFullFlex
+                           positionRelative marginauto easing floatLeft">
+                                 
+                              <b class=" widthFullFlex floatLeft positionRelative lineHeightThree fontSizeTwoFive text-align-left fontColorThree text-shadow05One zindexOne">
+                              {{member.position}}</b>
+                           </span>
+
+                           <span class="widthFullFlex
+                           positionAbsolute positionBottomRight marginauto easing floatLeft">
+                              <b class="marginTwoFive backgroundColorFour floatRight positionRelative lineHeightThree fontSizeTwoFive text-align-right fontColorOffWhite text-shadow025Five zindexOne">
+                              @{{member.twitter}}</b>
+                           </span>
+
+                        </span>
+
+                     <span ng:show="showphoto0">
+                        <span class="
+                           zindexOne
+                           heightFullFlex
+                           widthFullFlex
+                           positionAbsolute positionBottom" ng-repeat="pics in member.photos | limitTo:1:7">
+                        <img class="
+                           widthThreeQuarterFlex
+                           positionAbsolute positionBottom" ng-src="./person/{{pics.link}}.png">
+                        </span>
+                     </span>
+
+                     <span ng:show="showphoto1">
+                        <span class="
+                           zindexOne
+                           heightFullFlex
+                           widthFullFlex
+                           positionAbsolute positionBottom" ng-repeat="pics in member.photos | limitTo:1:7">
+                        <img class="
+                           widthThreeQuarterFlex
+                           positionAbsolute positionBottom" ng-src="./person/{{pics.link}}.png">
+                        </span>
+                     </span>
+
+                     <span ng:show="showphoto2">
+                        <span class="
+                           zindexOne
+                           heightFullFlex
+                           widthFullFlex
+                           positionAbsolute positionBottom" ng-repeat="pics in member.photos | limitTo:1:8">
+                        <img class="
+                           widthThreeQuarterFlex
+                           positionAbsolute positionBottom" ng-src="./person/{{pics.link}}.png">
+                        </span>
+                     </span>
+
+                     <span ng:show="showphoto3">
+                        <span class="
+                           zindexOne
+                           heightFullFlex
+                           widthFullFlex
+                           positionAbsolute positionBottom" ng-repeat="pics in member.photos | limitTo:1:8">
+                        <img class="
+                           widthThreeQuarterFlex
+                           positionAbsolute positionBottom" ng-src="./person/{{pics.link}}.png">
+                        </span>
+                     </span>
+
+                     <span ng:show="showphoto4">
+                        <span class="
+                           zindexOne
+                           heightFullFlex
+                           widthFullFlex
+                           positionAbsolute positionBottom" ng-repeat="pics in member.photos | limitTo:1:9">
+                        <img class="
+                           widthThreeQuarterFlex
+                           positionAbsolute positionBottom" ng-src="./person/{{pics.link}}.png">
+                        </span>
+                     </span>
+
+                     <span ng:show="showphoto5">
+                        <span class="
+                           zindexOne
+                           heightFullFlex
+                           widthFullFlex
+                           positionAbsolute positionBottom" ng-repeat="pics in member.photos | limitTo:1:7">
+                        <img class="
+                           widthThreeQuarterFlex
+                           positionAbsolute positionBottom" ng-src="./person/{{pics.link}}.png">
+                        </span>
+                     </span>
+
+                     <span ng:show="showphoto6">
+                        <span class="
+                           zindexOne
+                           heightFullFlex
+                           widthFullFlex
+                           positionAbsolute positionBottom" ng-repeat="pics in member.photos | limitTo:1:8">
+                        <img class="
+                           widthThreeQuarterFlex
+                           positionAbsolute positionBottom" ng-src="./person/{{pics.link}}.png">
+                        </span>
+                     </span>
+
+                     <span ng:show="showphoto7">
+                        <span class="
+                           zindexOne
+                           heightFullFlex
+                           widthFullFlex
+                           positionAbsolute positionBottom" ng-repeat="pics in member.photos | limitTo:1:9">
+                        <img class="
+                           widthThreeQuarterFlex
+                           positionAbsolute positionBottom" ng-src="./person/{{pics.link}}.png">
+                        </span>
+                     </span>
+
+                     <span ng:show="showphoto8">
+                        <span class="
+                           zindexOne
+                           heightFullFlex
+                           widthFullFlex
+                           positionAbsolute positionBottom" ng-repeat="pics in member.photos | limitTo:1:6">
+                        <img class="
+                           widthThreeQuarterFlex
+                           positionAbsolute positionBottom" ng-src="./person/{{pics.link}}.png">
+                        </span>
+                     </span>
+
+                     <span ng:show="showphoto9">
+                        <span class="
+                           zindexOne
+                           heightFullFlex
+                           widthFullFlex
+                           positionAbsolute positionBottom" ng-repeat="pics in member.photos | limitTo:1:6">
+                        <img class="
+                           widthThreeQuarterFlex
+                           positionAbsolute positionBottom" ng-src="./person/{{pics.link}}.png">
+                        </span>
+                     </span>
+
+                     <span ng:show="showphoto10">
+                        <span class="
+                           zindexOne
+                           heightFullFlex
+                           widthFullFlex
+                           positionAbsolute positionBottom" ng-repeat="pics in member.photos | limitTo:1:6">
+                        <img class="
+                           widthThreeQuarterFlex
+                           positionAbsolute positionBottom" ng-src="./person/{{pics.link}}.png">
+                        </span>
+                     </span>
+
+                     <span ng:show="showphoto11">
+                        <span class="
+                           zindexOne
+                           heightFullFlex
+                           widthFullFlex
+                           positionAbsolute positionBottom" ng-repeat="pics in member.photos | limitTo:1:6">
+                        <img class="
+                           widthThreeQuarterFlex
+                           positionAbsolute positionBottom" ng-src="./person/{{pics.link}}.png">
+                        </span>
+                     </span>
+
+                     <span ng:show="showphoto12">
+                        <span class="
+                           zindexOne
+                           heightFullFlex
+                           widthFullFlex
+                           positionAbsolute positionBottom" ng-repeat="pics in member.photos | limitTo:1:12">
+                        <img class="
+                           widthThreeQuarterFlex
+                           positionAbsolute positionBottom" ng-src="./person/{{pics.link}}.png">
+                        </span>
+                     </span>
+
+
+                     </span>
+                     </span>
+
+                  </span>
+
+                  <previewteam></previewteam>
+
+                  </li>
+                  
+               </span>
+
+
+            </ul>
+
+         </span>
+
+         </span>
+   
+   </span>
+
+
+   </ul>

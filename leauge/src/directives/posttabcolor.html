@@ -1,0 +1,210 @@
+<ul ng:init="tab1 = true;" class="positionRelative widthFullFlex heightFullFlex backgroundColorWhite floatLeft">
+         
+         <li ng:click="tab4 = false; tab2 = false; tab3 = false; tab1 = true;" class="
+         positionRelative heightTenFlex text-align-left widthQuarterFlex backgroundColorOne floatLeft fontSizeTwoFive fontColorWhite fontColorThreeOnHover lineHeightTen easing"> 
+            <span ng:click="postpreviewclose()" class=" positionAbsolute positionCenter marginauto">
+               <img ng:show="!tab1" src="./svg/arrow-left.svg" class="positionAbsolute positionCenter widthHalfFlex heightHalfFlex">
+                              <img ng:show="tab1" src="./svg/close.svg" class="positionAbsolute positionCenter widthHalfFlex heightHalfFlex">
+            </span>
+         </li>
+
+         <li ng:click="tab1 = false; tab4 = false; tab3 = false; tab2 = true;" class="
+         positionRelative heightTenFlex text-align-left widthQuarterFlex backgroundColorOneTwo floatLeft fontSizeTwoFive fontColorWhite fontColorThreeOnHover lineHeightTen easing"> 
+            <span ng:click="postpreviewclose()" class=" positionAbsolute positionCenter marginauto">
+               <imacone ng:show="!tab2" class="
+                  positionAbsolute positionCenter widthHalfFlex heightHalfFlex easing">
+               </imacone>
+
+                              <img ng:show="tab2" src="./svg/close.svg" class="positionAbsolute positionCenter widthHalfFlex heightHalfFlex">
+            </span>
+         </li>
+
+         <li ng:click="tab1 = false; tab2 = false; tab4 = false; tab3 = true;" class="
+         positionRelative heightTenFlex text-align-left widthQuarterFlex backgroundColorOneThree floatLeft fontSizeTwoFive fontColorWhite fontColorThreeOnHover lineHeightTen easing"> 
+            <span ng:click="postpreviewclose()" class=" positionAbsolute positionCenter marginauto">
+               <img ng:show="!tab3" src="./svg/arrow-left.svg" class="positionAbsolute positionCenter widthHalfFlex heightHalfFlex">
+                              <img ng:show="tab3" src="./svg/close.svg" class="positionAbsolute positionCenter widthHalfFlex heightHalfFlex">
+            </span>
+         </li>
+
+         <li ng:click="tab1 = false; tab2 = false; tab3 = false; tab4 = true;" class="
+         positionRelative heightTenFlex text-align-left widthQuarterFlex backgroundColorOneFour floatLeft fontSizeTwoFive fontColorWhite fontColorThreeOnHover lineHeightTen easing"> 
+            <span ng:click="postpreviewclose()" class=" positionAbsolute positionCenter marginauto">
+               <img ng:show="!tab4" src="./svg/arrow-left.svg" class="positionAbsolute positionCenter widthHalfFlex heightHalfFlex">
+                              <img ng:show="tab4" src="./svg/close.svg" class="positionAbsolute positionCenter widthHalfFlex heightHalfFlex">
+            </span>
+         </li>
+
+         <div ng:show="tab1" class="widthFullFlex positionRelative floatLeft overflowy">
+            <div class="spacedMid positionRelative">
+               <!-- layer -->
+               <div class="
+                  zindexOne positionRelative heightFullFlex widthFullFlex floatLeft">
+                  <b class="
+                     floatLeft
+                     text-align-left
+                     widthFullFlex positionRelative border-radius1
+                     fontSizeThree fontColorSix fontColorFourOnHover lineHeightFour easing">{{post.brand}}</b><br>
+               </div>
+               <hr>
+               <span class="
+                  floatLeft
+                  widthFullFlex positionRelative easing">
+
+                  <span class="
+                     floatLeft
+                     font-family-snippet
+                     text-align-left
+                     widthHalfFlex positionRelative border-radius1
+                     fontSizeThree fontColorSix fontColorFourOnHover lineHeightFive easing">
+                  Likes</span>
+                  <b class="
+                     floatRight
+                     text-align-right
+                     widthHalfFlex positionRelative border-radius1
+                     fontSizeThree fontColorThree fontColorFourOnHover lineHeightFive easing">
+                  <span class="
+                     backgroundColorOffWhite">{{post.meta.likes}}</span></b>
+               </span>
+
+               <hr>
+               <span class="
+                  floatLeft
+                  widthFullFlex positionRelative easing">
+
+                  <span class="
+                     floatLeft
+                     font-family-snippet
+                     text-align-left
+                     widthHalfFlex positionRelative border-radius1
+                     fontSizeThree fontColorSix fontColorFourOnHover lineHeightFive easing">
+                  Hates</span>
+                  <b class="
+                     floatRight
+                     text-align-right
+                     widthHalfFlex positionRelative border-radius1
+                     fontSizeThree fontColorThree fontColorFourOnHover lineHeightFive easing">
+                  <span class="
+                     backgroundColorOffWhite">{{post.meta.hates}}</span></b>
+               </span>
+
+               <hr>
+
+               <span class="
+                  floatLeft
+                  widthFullFlex positionRelative easing">
+
+                  <h3 class="widthFullFlex floatLeft positionRelative lineHeightFive fontSizeOneFive text-align-left fontColorFive zindexOne">
+                     <span class=""> <b>Tags : </b></span>
+                  </h3>
+
+                  <span ng:repeat="tag in post.meta.tags" class="
+                     marginTwoFiveBottomRight
+                     floatLeft
+                     font-family-snippet
+                     text-align-left
+                     paddingTwoFiveLeftRight positionRelative border-radius1
+                     fontSizeOneFive fontColorSeven backgroundColorOffWhite fontColorFourOnHover lineHeightFive easing">
+                  {{tag.name}}</span>
+
+                  <hr>
+
+                  <h3 class="widthFullFlex floatLeft positionRelative lineHeightFive fontSizeOneFive text-align-left fontColorFive zindexOne">
+                     <span class=""> <b>Colors : </b></span>
+                  </h3>
+
+                  <span class="
+                  floatLeft
+                  widthFullFlex heightOneFive positionRelative border-radius1 overflowhidden easing">
+
+                     <span ng:repeat="colorselector in post.meta.colors" style="background: #{{colorselector.name}}" class="widthTenFlex heightFullFlex floatLeft" ng:repeat="tag in post.meta.tags">
+                     </span>
+
+                  </span>
+
+                  <hr>
+
+                  <h3 class="widthFullFlex floatLeft positionRelative lineHeightFive fontSizeOneFive text-align-left fontColorFive zindexOne">
+                     <span class=""> <b>Share : </b></span>
+
+                     <span style="word-wrap: break-word;" class="fontColorSeven widthFullFlex border-radius1 backgroundColorOffWhite floatLeft">
+                     <p class="paddingTwoFive">{{post.dribbble}}</p> </span>
+
+                  </h3>
+
+                  <span class="floatRight text-align-center positionRelative heightFullFlex paddingTwoFive easing">
+                     <span class="textOnHoverSwitch paddingTwoFive positionRelative border-radius1 backgroundColorThree backgroundColorTwoOnHover centerdiv fontSizeTwo fontColorWhite fontColorOneOnHover lineHeightFive easing">
+                     View on Dribbble
+                     <span class="marginTwoFiveLeft floatRight animated enterUpObject delay025 zindexOne positionRelative widthTwoFivevh heightTwoFive"><img src="./svg/arrow-down.svg" class="widthFullFlex heightFullFlex"></span>
+                     </span>
+                  </span>
+
+               </span>
+
+            </div>
+         </div>
+
+         <div ng:show="tab2" class="widthFullFlex positionRelative floatLeft overflowy">
+            <div class="spacedMid border-radius1 overflowhidden positionRelative">
+               <!-- layer -->
+               <div class="
+                  zindexOne positionRelative heightFullFlex widthFullFlex floatLeft">
+                  <b class="
+                     floatLeft
+                     text-align-left
+                     widthFullFlex positionRelative border-radius1
+                     fontSizeFive fontColorSix fontColorFourOnHover lineHeightSix easing">{{post.brand}}</b><br>
+               </div>
+               <span class="
+                  floatLeft
+                  font-family-snippet
+                  text-align-left
+                  widthFullFlex paddingTwoFive positionRelative border-radius1
+                  fontSizeTwoFive fontColorSix fontColorFourOnHover lineHeightFive easing">
+               {{post.brandinfo}}</span><br>
+            </div>
+         </div>
+
+         <div ng:show="tab3" class="widthFullFlex positionRelative floatLeft overflowy">
+            <div class="spacedMid border-radius1 overflowhidden positionRelative">
+               <!-- layer -->
+               <div class="
+                  zindexOne positionRelative heightFullFlex widthFullFlex floatLeft">
+                  <b class="
+                     floatLeft
+                     text-align-left
+                     widthFullFlex positionRelative border-radius1
+                     fontSizeFive fontColorSix fontColorFourOnHover lineHeightSix easing">{{post.brand}}</b><br>
+               </div>
+               <span class="
+                  floatLeft
+                  font-family-snippet
+                  text-align-left
+                  widthFullFlex paddingTwoFive positionRelative border-radius1
+                  fontSizeTwoFive fontColorSix fontColorFourOnHover lineHeightFive easing">
+               {{post.description}}</span><br>
+            </div>
+         </div>
+
+         <div ng:show="tab4" class="widthFullFlex positionRelative floatLeft overflowy">
+            <div class="spacedMid border-radius1 overflowhidden positionRelative">
+               <!-- layer -->
+               <div class="
+                  zindexOne positionRelative heightFullFlex widthFullFlex floatLeft">
+                  <b class="
+                     floatLeft
+                     text-align-left
+                     widthFullFlex positionRelative border-radius1
+                     fontSizeFive fontColorSix fontColorFourOnHover lineHeightSix easing">{{post.brand}}</b><br>
+               </div>
+               <span class="
+                  floatLeft
+                  font-family-snippet
+                  text-align-left
+                  widthFullFlex paddingTwoFive positionRelative border-radius1
+                  fontSizeTwoFive fontColorSix fontColorFourOnHover lineHeightFive easing">
+               {{post.brandinfo}}</span><br>
+            </div>
+         </div>
+
+      </ul>

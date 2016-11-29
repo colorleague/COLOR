@@ -1,0 +1,496 @@
+<span class="positionRelative widthFullFlex heightFullFlex floatLeft easing">
+
+      <span class="
+         positionAbsolute
+         positionBottom
+         heightFullFlex
+         widthFullFlex
+         overflowhidden floatLeft" style="background-image: url('/thumbs/{{post.photo}}');
+         background-size: cover;">
+
+      </span>
+
+
+         <!-- washout background -->
+         <span class="positionAbsolute positionCenter opacity075
+            backgroundColorWhite opacity075 widthFullFlex heightFullFlex">
+         </span>
+
+         <span class="positionAbsolute positionCenter opacity075
+            backgroundColorFive opacity05 widthFullFlex heightFullFlex">
+         </span>
+
+         <span class="positionAbsolute positionBottom floatLeft widthHalfFlex heightFive zindexTen">
+
+            <span ng:init="tab1 = true" ng:click="tab1 = true; tab2 = false; tab3 = false; tab4 = false;"
+            class="positionRelative widthQuarterFlex heightFullFlex floatLeft easing zindexOne">
+               <hr class="horline marginauto positionAbsolute positionTop animated growhor" ng:class="{'backgroundColorOffWhite' : tab1,
+                  'backgroundColorOne' : !tab1}">
+            </span>
+
+            <span ng:click="tab1 = false; tab2 = true; tab3 = false; tab4 = false;"
+            class="positionRelative widthQuarterFlex heightFullFlex floatLeft easing zindexOne">
+               <hr class="horline marginauto positionAbsolute positionTop animated growhor " ng:class="{'backgroundColorOffWhite' : tab2,
+                  'backgroundColorOneTwo' : !tab2}">
+            </span>
+
+            <span ng:click="tab1 = false; tab2 = false; tab3 = true; tab4 = false;"
+            class="positionRelative widthQuarterFlex heightFullFlex floatLeft easing zindexOne">
+               <hr class="horline marginauto positionAbsolute positionTop animated growhor" 
+               ng:class="{'backgroundColorOffWhite' : tab3,
+                  'backgroundColorOneThree' : !tab3}">
+            </span>
+
+            <span ng:click="tab1 = false; tab2 = false; tab3 = false; tab4 = true;"
+            class="positionRelative widthQuarterFlex heightFullFlex floatLeft easing zindexOne">
+               <hr class="horline marginauto positionAbsolute positionTop animated growhor" ng:class="{'backgroundColorOffWhite' : tab4,
+                  'backgroundColorOneFour' : !tab4}">
+            </span>
+
+         </span>
+         
+         <span
+         class="positionRelative widthFullFlex heightFullFlex floatLeft easing zindexOne overflowy">
+
+            <span
+               class="positionRelative widthFullFlex marginauto easing zindexOne floatLeft">
+
+               <span
+               class="positionRelative widthStatic centerdiv marginauto easing zindexOne">
+
+                  <span ng:init="tab1 = true" ng:show="tab1" class="positionRelative floatLeft spacedLarge">
+
+                     <span
+                        class="positionRelative widthFullFlex floatLeft easing zindexOne">
+
+                        <span
+                        class="positionRelative widthFullFlex floatLeft easing zindexOne">
+
+                           <span class="positionRelative floatLeft spacedMid">
+
+                              <span class="positionRelative fontColorWhite fontSizeTwoFive lineHeightTwoFive text-align-left widthFullFlex floatLeft text-shadow025Eight"><b class="fontColorOffWhite">Notes</b> from our</span>
+
+                              <hr>
+                              
+                              <span class="widthThreeQuarterFlex lineHeightTwelveFive fontSizeSevenFive text-align-left floatLeft">
+
+                                 <h3 class="floatLeft centerdiv widthFullFlex positionRelative lineHeightTen fontSizeTen text-align-left fontColorTwo zindexOne">
+
+                                 <span class="positionRelative floatLeft text-shadow05Eight">
+                                 <b>Project Managers:</b>
+
+
+
+                                 
+
+                                 </span>
+                                 </h3>
+                              </span>
+
+                              <span class="widthQuarterFlex positionRelative text-shadow025Eight  fontSizeTwoFive lineHeightTwenty floatLeft text-align-left">
+
+                              <span ng:click="brandtab1 = !brandtab1" class="marginTwoFiveLeft floatRight 
+                              positionBeforeIcon
+                              positionAbsolute zindexOne widthTwoFivevh heightTwoFive"><img ng:show="!brandtab1" src="./svg/arrow-down.svg" class="positionCenter positionAbsolute widthHalfFlex heightHalfFlex">
+                              <img ng:show="brandtab1" src="./svg/one/close.svg" class="positionCenter positionAbsolute widthHalfFlex heightHalfFlex"></span>
+
+                              <span class="fontColorThree"> - <b class="fontColorOffWhite bordered-bottomFive">Objectives</b></span></span>
+
+                              
+
+                              <hr>
+                              <hr>
+
+                              
+
+                              <span ng:repeat="objective in post.objectives" class="widthHalfFlex floatLeft">
+
+                                 <span class="positionRelative floatLeft spacedSmall text-align-left  zindexOne">
+
+                                    <span class="positionRelative floatLeft widthFullFlex heightFullFlex">
+
+                                       <div class="
+                                          zindexOne positionAbsolute positionTopRight widthThirdFlex heightFullFlex floatLeft">
+
+                                          <img src="./svg/{{objective.icon}}" class="positionCenter positionAbsolute widthHalfFlex heightHalfFlex">
+
+                                       </div>
+
+                                       <div class="
+                                          zindexOne positionRelative widthTwoThirdFlex heightFullFlex floatLeft">
+
+                                          <span class="positionRelative floatLeft spacedSmall text-align-left  zindexOne">
+
+                                             <span class="fontColorFive lineHeightThree fontSizeTwoFive widthFullFlex floatLeft">
+                                             <span class="positionRelative zindexOne"><b>
+
+                                             <span ng:click="brandtab1 = !brandtab1" class="marginTwoFiveLeft floatRight 
+                                             positionBeforeIcon
+                                             positionAbsolute zindexOne widthTwoFivevh heightTwoFive"><img ng:show="!brandtab1" src="./svg/arrow-down.svg" class="positionCenter positionAbsolute widthHalfFlex heightHalfFlex">
+                                             <img ng:show="brandtab1" src="./svg/one/close.svg" class="positionCenter positionAbsolute widthHalfFlex heightHalfFlex"></span>
+
+                                             {{objective.title}}
+                                             </b></span>
+
+                                             </span>
+                                             <hr> 
+                                             <span class="fontSizeTwo fontColorThree positionRelative zindexOne">
+                                             {{objective.subtitle}}</span><br>
+                                          </span>
+
+                                       </div>
+
+                                    </span>
+
+                                    <span class="positionRelative floatLeft widthFullFlex heightFullFlex">
+
+                                       <span ng:show="brandtab1" class="positionRelative floatLeft spacedTiny text-align-left  zindexOne">
+
+                                          <!-- ng show -->
+                                          <span class="font-family-snippet widthFullFlex floatLeft lineHeightFour fontSizeTwoFive fontColorFive">
+                                          <span class="positionRelative zindexOne">
+                                          {{objective.description}}
+                                          </span>
+                                          </span>
+
+                                       </span>
+                                    </span>
+                                 </span>
+
+                              </span>
+                           </span>
+
+                        </span>
+
+                     </span>
+
+                  </span>
+
+                  <span ng:show="tab2" class="positionRelative floatLeft spacedLarge">
+
+                     <span
+                        class="positionRelative widthFullFlex text-align-center floatLeft easing zindexOne">
+
+                        <span
+                        class="positionRelative widthFullFlex text-align-center floatLeft easing zindexOne">
+
+                           <span class="positionRelative floatLeft spacedMid">
+                              
+                              <span class="positionRelative fontColorWhite fontSizeTwoFive lineHeightTwoFive text-align-left widthFullFlex floatLeft text-shadow025Eight"><b class="fontColorOffWhite">Notes</b> from our</span>
+
+                              <hr>
+                              
+                              <span class="widthThreeQuarterFlex lineHeightTwelveFive fontSizeSevenFive text-align-left floatLeft">
+
+                                 <h3 class="floatLeft centerdiv widthFullFlex positionRelative lineHeightTen fontSizeTen text-align-left fontColorTwo zindexOne">
+
+                                 <span class="positionRelative floatLeft text-shadow05Eight">
+                                 <b>Project Managers:</b>
+
+
+
+                                 
+
+                                 </span>
+                                 </h3>
+                              </span>
+
+                              <span class="widthQuarterFlex positionRelative text-shadow025Eight  fontSizeTwoFive lineHeightTwenty floatLeft text-align-left">
+
+                              <span ng:click="brandtab1 = !brandtab1" class="marginTwoFiveLeft floatRight 
+                              positionBeforeIcon
+                              positionAbsolute zindexOne widthTwoFivevh heightTwoFive"><img ng:show="!brandtab1" src="./svg/arrow-down.svg" class="positionCenter positionAbsolute widthHalfFlex heightHalfFlex">
+                              <img ng:show="brandtab1" src="./svg/one/close.svg" class="positionCenter positionAbsolute widthHalfFlex heightHalfFlex"></span>
+
+                              <span class="fontColorThree"> - <b class="fontColorOffWhite bordered-bottomFive">Concerns</b></span></span>
+
+                              
+
+                              <hr>
+                              <hr>
+
+                              
+
+                              <span ng:repeat="concern in post.concerns" class="widthFullFlex floatLeft">
+
+                                 <span class="positionRelative floatLeft widthFullFlex heightFullFlex">
+
+                                    <div class="
+                                       zindexOne positionRelative widthFullFlex heightFullFlex floatLeft">
+
+                                       <span class="positionRelative floatLeft spacedSmall text-align-left bordered-bottomOne zindexOne">
+
+                                          <span class="fontColorFive lineHeightThree fontSizeTwoFive widthFullFlex floatLeft">
+                                          <span class="positionRelative zindexOne">
+
+                                          <b>
+                                          {{concern.title}}
+                                          </b></span>
+
+
+                                          <span ng:click="brandtab1 = !brandtab1" class="marginTwoFiveRight floatRight animated enterUpObject delay025 zindexOne positionRelative floatLeft widthTwoFivevh heightTwoFive"><img ng:show="!brandtab1" src="./svg/arrow-down.svg" class="widthFullFlex heightFullFlex ng-hide">
+                                             <img ng:show="brandtab1" src="./svg/one/close.svg" class="widthFullFlex heightFullFlex"></span>
+                                       
+
+                                          
+
+                                          </span>
+                                          <hr> 
+                                          <span class="fontSizeTwo fontColorThree positionRelative zindexOne">
+                                          RELATED ARTICLES</span><br>
+                                          <hr>
+                                       </span>
+
+                                    </div>
+
+                                 </span>
+
+                                 <span class="positionRelative floatLeft widthFullFlex heightFullFlex">
+
+                                    <span ng:show="brandtab1" class="positionRelative floatLeft spacedSmall text-align-left  zindexOne">
+
+                                       <!-- ng show -->
+                                       <span class="font-family-snippet widthFullFlex floatLeft lineHeightFive fontSizeThree fontColorFive">
+                                       <span class="positionRelative zindexOne">
+                                       We believe in the power of design. We thrive on building relationships and helping good people and organizations succeed through a collaborative process.
+                                       </span>
+                                       </span>
+
+                                    </span>
+                                 </span>
+
+                              </span>
+
+
+                           </span>
+
+                        </span>
+
+                     </span>
+
+                  </span>
+
+                  <span ng:show="tab3" class="positionRelative floatLeft spacedLarge">
+
+                     <span
+                        class="positionRelative widthFullFlex text-align-center floatLeft easing zindexOne">
+
+                        <span
+                        class="positionRelative widthFullFlex text-align-center floatLeft easing zindexOne">
+
+                           <span class="positionRelative floatLeft spacedMid">
+                              <span class="positionRelative fontColorWhite fontSizeTwoFive lineHeightTwoFive text-align-left widthFullFlex floatLeft text-shadow025Eight"><b class="fontColorOffWhite">Notes</b> from our</span>
+
+                              <hr>
+                              
+                              <span class="widthThreeQuarterFlex lineHeightTwelveFive fontSizeSevenFive text-align-left floatLeft">
+
+                                 <h3 class="floatLeft centerdiv widthFullFlex positionRelative lineHeightTen fontSizeTen text-align-left fontColorTwo zindexOne">
+
+                                 <span class="positionRelative floatLeft text-shadow05Eight">
+                                 <b>Project Managers:</b>
+
+
+
+                                 
+
+                                 </span>
+                                 </h3>
+                              </span>
+
+                              <span class="widthQuarterFlex positionRelative text-shadow025Eight  fontSizeTwoFive lineHeightTwenty floatLeft text-align-left">
+
+                              <span ng:click="brandtab1 = !brandtab1" class="marginTwoFiveLeft floatRight 
+                              positionBeforeIcon
+                              positionAbsolute zindexOne widthTwoFivevh heightTwoFive"><img ng:show="!brandtab1" src="./svg/arrow-down.svg" class="positionCenter positionAbsolute widthHalfFlex heightHalfFlex">
+                              <img ng:show="brandtab1" src="./svg/one/close.svg" class="positionCenter positionAbsolute widthHalfFlex heightHalfFlex"></span>
+
+                              <span class="fontColorThree"> - <b class="fontColorOffWhite bordered-bottomFive">Deliverables</b></span></span>
+
+                              
+
+                              <hr>
+                              <hr>
+
+                              
+
+                              <span ng:repeat="deliverable in post.deliverables" class="widthFullFlex floatLeft">
+
+                                 <span class="positionRelative floatLeft widthThirdFlex heightFullFlex">
+
+                                    <div class="
+                                       zindexOne positionRelative widthFullFlex heightFullFlex floatLeft">
+
+                                       <span class="positionRelative floatLeft spacedMid text-align-left  zindexOne">
+
+                                          <span class="fontColorFive lineHeightThree fontSizeTwoFive widthFullFlex floatLeft">
+                                          <span class="positionRelative zindexOne">
+                                             
+                                             <span ng:click="brandtab1 = !brandtab1" class="marginTwoFiveRight floatLeft animated enterUpObject delay025 zindexOne positionAbsolute
+                                             positionBeforeIcon floatLeft widthTwoFivevh heightTwoFive"><img ng:show="!brandtab1" src="./svg/arrow-down.svg" class="positionAbsolute positionCenter widthHalfFlex heightHalfFlex">
+                                             <img ng:show="brandtab1" src="./svg/one/close.svg" class=" positionAbsolute positionCenter widthHalfFlex heightHalfFlex"></span>
+
+                                          <b>
+                                           {{deliverable.title}}
+                                          </b></span>
+
+                                       
+
+                                          
+
+                                          </span>
+                                          <hr> 
+                                          <span class="fontSizeTwo fontColorThree positionRelative zindexOne">
+                                          RELATED ARTICLES</span><br>
+                                          <hr>
+                                       </span>
+
+                                    </div>
+
+                                 </span>
+
+                                 <span class="positionRelative floatLeft widthTwoThirdFlex heightFullFlex">
+
+                                    <span ng:show="brandtab1" class="positionRelative floatLeft spacedSmall text-align-left  zindexOne">
+
+                                       <!-- ng show -->
+                                       <span class="font-family-snippet widthFullFlex floatLeft lineHeightFive fontSizeThree fontColorFive">
+                                       <span class="positionRelative zindexOne">
+                                       We believe in the power of design. We thrive on building relationships and helping good people and organizations succeed through a collaborative process.
+                                       </span>
+                                       </span>
+
+                                    </span>
+                                 </span>
+                              </span>
+
+                           </span>
+
+                        </span>
+
+                     </span>
+
+                  </span>
+
+                  <span ng:show="tab4" class="positionRelative floatLeft spacedLarge">
+
+                     <span
+                        class="positionRelative widthFullFlex text-align-center floatLeft easing zindexOne">
+
+                        <span
+                        class="positionRelative widthFullFlex text-align-center floatLeft easing zindexOne">
+
+                           <span class="positionRelative floatLeft spacedMid">
+                              
+                              <span class="positionRelative fontColorWhite fontSizeTwoFive lineHeightTwoFive text-align-left widthFullFlex floatLeft text-shadow025Eight"><b class="fontColorOffWhite">Notes</b> from our</span>
+
+                              <hr>
+                              
+                              <span class="widthThreeQuarterFlex lineHeightTwelveFive fontSizeSevenFive text-align-left floatLeft">
+
+                                 <h3 class="floatLeft centerdiv widthFullFlex positionRelative lineHeightTen fontSizeTen text-align-left fontColorTwo zindexOne">
+
+                                 <span class="positionRelative floatLeft text-shadow05Eight">
+                                 <b>Project Managers:</b>
+
+
+
+                                 
+
+                                 </span>
+                                 </h3>
+                              </span>
+
+                              <span class="widthQuarterFlex positionRelative text-shadow025Eight  fontSizeTwoFive lineHeightTwenty floatLeft text-align-left">
+
+                              <span ng:click="brandtab1 = !brandtab1" class="marginTwoFiveLeft floatRight 
+                              positionBeforeIcon
+                              positionAbsolute zindexOne widthTwoFivevh heightTwoFive"><img ng:show="!brandtab1" src="./svg/arrow-down.svg" class="positionCenter positionAbsolute widthHalfFlex heightHalfFlex">
+                              <img ng:show="brandtab1" src="./svg/one/close.svg" class="positionCenter positionAbsolute widthHalfFlex heightHalfFlex"></span>
+
+                              <span class="fontColorThree"> - <b class="fontColorOffWhite bordered-bottomFive">Outcome</b></span></span>
+
+                              
+
+                              <hr>
+                              <hr>
+
+                              <span ng:repeat="outcome in outcomes" class="widthFullFlex floatLeft">
+
+                                 <span class="positionRelative floatLeft widthThirdFlex heightFullFlex">
+
+                                    <div class="
+                                       zindexOne positionRelative widthFullFlex heightFullFlex floatLeft">
+
+                                       <span class="positionRelative floatLeft spacedMid text-align-left  zindexOne">
+
+                                          <b class="fontColorTwo lineHeightTen fontSizeTen text-align-center"><b class="fontSizeFive fontColorOne">{{outcome.beforesignal}}</b>{{outcome.title}}<b class="bordered-bottomOne fontSizeFive">{{outcome.aftersignal}}</b></b>
+                                          
+                                       </span>
+
+                                    </div>
+
+                                 </span>
+
+                                 <span class="positionRelative floatLeft widthTwoThirdFlex heightFullFlex">
+
+                                    <span class="positionRelative floatLeft spacedSmall text-align-left  zindexOne">
+
+                                       <!-- ng show -->
+                                       <span class="font-family-snippet widthFullFlex floatLeft lineHeightFive fontSizeThree fontColorFive">
+                                       <span class="positionRelative zindexOne">
+                                       {{outcome.description}}
+                                       </span>
+                                       </span>
+
+                                    </span>
+                                 </span>
+                              </span>
+
+                              <span class="widthFullFlex floatLeft">
+
+                                 <span class="positionRelative floatLeft widthThirdFlex heightFullFlex">
+
+                                    <div class="
+                                       zindexOne positionRelative widthFullFlex heightFullFlex floatLeft">
+
+                                       <span class="positionRelative floatLeft spacedMid text-align-left  zindexOne">
+
+                                          <b class="fontColorTwo lineHeightTen fontSizeTen text-align-center"><b class="fontSizeFive fontColorOne">$</b>99<b class="bordered-bottomOne fontSizeFive">/hr</b></b>
+                                          
+                                       </span>
+
+                                    </div>
+
+                                 </span>
+
+                                 <span class="positionRelative floatLeft widthTwoThirdFlex heightFullFlex">
+
+                                    <span class="positionRelative floatLeft spacedSmall text-align-left  zindexOne">
+
+                                       <!-- ng show -->
+                                       <span class="font-family-snippet widthFullFlex floatLeft lineHeightThree fontSizeTwoFive fontColorFive">
+                                       <span class="positionRelative zindexOne">
+                                       We believe in the power of design. We thrive on building relationships and helping good people and organizations succeed through a collaborative process.
+                                       </span>
+                                       </span>
+
+                                    </span>
+                                 </span>
+                              </span>
+
+                           </span>
+
+                        </span>
+
+                     </span>
+
+                  </span>
+
+               </span>
+
+            </span>
+
+         </span>
+
+      </span>

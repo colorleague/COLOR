@@ -1,0 +1,632 @@
+<!-- Development Tools -->
+      <!-- Strategy Tools -->
+      <span class="showOnHoverSwitch positionRelative
+         backgroundGridColorOne fontColorWhite widthHalfFlex heightHalfFlex text-align-left floatLeft ">
+
+         <span class="positionAbsolute positionCenter floatLeft backgroundGridColorFour widthFullFlex heightFullFlex">
+
+            <div class="
+               zindexOne positionAbsolute positionLeft widthHalfFlex heightHalfFlex floatLeft">
+
+               <img src="./svg/imacone.svg" class="positionAbsolute positionLeft widthHalfFlex heightHalfFlex">
+
+            </div>
+
+            <span
+            class="positionRelative widthFullFlex heightFullFlex   floatLeft easing  zindexOne">
+               
+               <!-- bg filler -->  
+               <span class="positionAbsolute positionLeft spacedSmall overflowhidden floatLeft opacity025">
+
+                  <span class="positionAbsolute positionCenter spacedTiny overflowhidden floatLeft">
+
+                     <span class="positionAbsolute positionTop widthThreeQuarterFlex heightThreeQuarterFlex backgroundColorOffWhite border-radius1 overflowhidden floatLeft">
+                     </span>
+
+                  </span>
+
+               </span>
+
+               <span class="positionRelative floatLeft spacedMid ">
+
+                  <span class="positionRelative floatLeft spacedSmall backgroundColorOffWhite box-shadowSixStraight border-radius1 overflowhidden">
+
+                     <span class="hideOnHover positionAbsolute positionCenter widthFullFlex heightFullFlex backgroundColorWhite"></span>
+
+                     <span class="hideOnHover positionAbsolute positionTop widthFullFlex heightHalfFlex backgroundColorOffWhite"></span>
+
+                     <span class="hideOnHover animated enterUpObject delay025 zindexFive positionAbsolute positionTopRight widthTenvh heightTen">
+                        <img src="./svg/three/close.svg" class="
+                        positionAbsolute positionCenter marginauto widthHalfFlex heightHalfFlex">
+                     </span>
+
+
+                     <span class="showOnHover positionAbsolute backgroundColorOffWhite border-radius1 spacedSmall floatLeft zindexOne overflowy">
+
+                     <span class="opacity025 floatLeft animated enterUpObject delay025 positionAbsolute positionTopRight widthTenvh heightTen zindexOne">
+                        <img src="./svg/pageend.svg" class="positionAbsolute positionTopRight widthThreeQuarterFlex">
+                     </span>
+
+                        <span class="backgroundColorWhite positionRelative floatLeft widthFullFlex box-shadowSixStraight">
+                           <span class="positionRelative floatLeft spacedTiny text-align-center zindexOne">
+
+
+                              <!-- desk Holder center -->
+                              <imaclinedone class="positionAbsolute positionCenter widthThreeQuarterFlex heightHalfFlex floatLeft">
+                              </imaclinedone>
+
+                              <span class="fontColorFive lineHeightTen fontSizeTwoFive widthFullFlex floatLeft">
+                                 
+                                 <p class="positionRelative zindexOne">
+
+                                    <b>Development </b>
+
+                                    <span class="font-family-snippet"> Tools</span> 
+
+                                 </p>
+
+                                 <span class="floatRight zindexOne positionAbsolute positionLeft widthFivevh heightFive">
+                                    <img src="./svg/three/close.svg" class="
+                                    positionAbsolute positionCenter marginauto widthHalfFlex heightHalfFlex">
+                                 </span>
+
+                              </span>
+                           </span>
+                        </span>
+
+                        <span ng-repeat="tool in member.tools | filter: tool.type = 'development'" class="positionRelative widthFullFlex floatLeft">
+                           <span class="positionRelative spacedTiny border-radius1 floatLeft">
+
+                              <span class="positionAbsolute positionCenter widthFullFlex heightFulFlex backgroundColorWhite border-radius1 opacity025 floatLeft">
+                              </span>
+
+                              <span class="positionRelative spacedSmall border-radius1 floatLeft">
+                                 
+                                 <p class=" fontSizeTwo lineHeightFour floatLeft">
+
+                                    <b class="opacity095 floatLeft positionRelative lineHeightFive text-align-left fontColorThree text-shadow025Dark marginTwoFiveRight zindexOne">
+                                       {{tool.name}}
+                                    </b>
+
+                                    <span ng:repeat="grades in tool.grade" class="floatLeft zindexOne positionRelative widthOneFivevh heightFive marginSevenFiveRight"><img ng:show="grades.active == true" src="./svg/three/close.svg" class="widthFullFlex heightFullFlex"></span>
+
+                                 </p>
+                                 <span class="
+                                    positionAbsolute positionRight
+                                    heightFive widthFive border-radius
+                                    floatRight" style="background-image: url('/tools/{{tool.name}}.svg');
+                                    background-size: 100% 100%;">
+                                 </span>
+                              </span>
+                           </span>
+                        </span>
+
+                     </span>
+
+                     <!-- desk Holder center -->
+                     <span class="positionAbsolute positionBottomRight widthHalfFlex heightThreeQuarterFlex floatLeft">
+
+                        <imaclinedone class="positionAbsolute positionCenter widthThreeQuarterFlex heightThreeQuarterFlex floatLeft">
+                        </imaclinedone>
+
+                     </span>
+
+                     <span class="widthFullFlex floatLeft backgroundColorOffWhite hideOnHover">
+
+                        <span class="positionRelative floatLeft spacedMid">
+
+                           <h3 class="font-family-snippet widthFullFlex floatLeft positionRelative lineHeightThree fontSizeThree text-align-left fontColorTwo text-shadow05OffWhite zindexOne">
+                           <span class="backgroundColorWhite">1/4</span>
+                           </h3>
+                           <hr>
+                           <span class="widthFullFlex positionRelative marginauto easing">
+               
+                              <p class="widthFullFlex floatLeft positionRelative lineHeightFive fontSizeFour text-align-left fontColorFour text-shadow025Dark zindexOne">
+                                 
+                                 <b class="fontColorOne">Develope </b>, <b class="fontColorThree">Testing </b> <br>
+
+                                 <b class="fontColorTwo floatLeft">
+
+                                 <span class="font-family-snippet fontColorFour"> & </span>
+
+                                 Migration
+                                 <span class="floatRight zindexOne positionRelative widthTwoFivevh heightFive">
+                                    <img src="./svg/three/close.svg" class="
+                                    positionAbsolute positionCenter marginauto widthHalfFlex heightHalfFlex">
+                                 </span>
+                                 </b>
+
+                              </p>
+
+                           </span>
+                        </span>
+                     </span>
+
+                     <span class="widthFullFlex floatLeft hideOnHover">
+                        <span class="positionRelative floatLeft spacedSmall">
+                           
+                           <span class="fontSizeTwo lineHeightFour fontColorFour font-family-snippet positionRelative zindexOne">
+                           Front-End to Back-End<span class="fontColorThree">:</span></span><br>
+
+                           <span class="fontColorFive font-family-snippet positionRelative zindexOne fontSizeTwo lineHeightTwoFive">
+                              <span class="backgroundColorOffWhite">
+                              Engineering full-featured applications in Agile, Scrum or Kanban environments
+                              </span>
+                           </span>
+
+                        </span>
+
+                     </span>
+
+                  </span>
+
+               </span>
+            </span>
+
+         </span>
+
+         
+      </span>
+
+      <!-- Design Tools -->
+      <span class="showOnHoverSwitch positionRelative
+         backgroundGridColorOne fontColorWhite widthHalfFlex heightHalfFlex text-align-left floatLeft ">
+
+         <span class="positionAbsolute positionCenter floatLeft backgroundGridColorFour widthFullFlex heightFullFlex">
+
+            <div class="
+               zindexOne positionAbsolute positionBottomLeft widthHalfFlex heightHalfFlex floatLeft">
+
+               <img src="./svg/imacone.svg" class="positionAbsolute positionBottomLeft widthHalfFlex heightHalfFlex">
+
+            </div>
+
+            <span
+            class="positionRelative widthFullFlex heightFullFlex   floatLeft easing  zindexOne">
+               
+               <!-- bg filler -->  
+               <span class="positionAbsolute positionLeft spacedSmall overflowhidden floatLeft opacity025">
+
+                  <span class="positionAbsolute positionCenter spacedTiny overflowhidden floatLeft">
+
+                     <span class="positionAbsolute positionLeft widthHalfFlex heightThreeQuarterFlex backgroundColorOffWhite border-radius1 overflowhidden floatLeft">
+                     </span>
+
+                  </span>
+
+               </span>
+
+               <span class="positionRelative floatLeft spacedMid">
+
+               <span class="positionRelative floatLeft spacedSmall backgroundColorWhite box-shadowSixStraight border-radius1 overflowhidden">
+
+               <span class="hideOnHover positionAbsolute positionCenter widthFullFlex heightFullFlex backgroundColorWhite"></span>
+
+               <span class="hideOnHover animated enterUpObject delay025 zindexOne positionAbsolute positionTopRight widthTenvh heightTen">
+                  <img src="./svg/three/close.svg" class="
+                  positionAbsolute positionCenter marginauto widthHalfFlex heightHalfFlex">
+               </span>
+
+               <span class="showOnHover positionAbsolute backgroundColorOffWhite border-radius1 spacedSmall floatLeft zindexOne overflowy">
+
+                     <span class="opacity025 floatLeft animated enterUpObject delay025 positionAbsolute positionTopRight widthTenvh heightTen zindexOne">
+                        <img src="./svg/pageend.svg" class="positionAbsolute positionTopRight widthThreeQuarterFlex">
+                     </span>
+
+                     <span class="backgroundColorWhite positionRelative floatLeft widthFullFlex box-shadowSixStraight">
+                        <span class="positionRelative floatLeft spacedTiny text-align-center zindexOne">
+
+
+                           <!-- desk Holder center -->
+                           <imaclinedone class="positionAbsolute positionCenter widthThreeQuarterFlex heightHalfFlex floatLeft">
+                           </imaclinedone>
+
+                           <span class="fontColorFive lineHeightTen fontSizeTwoFive widthFullFlex floatLeft">
+                           <span class="positionRelative zindexOne"><b>
+                           Design</b><span class="font-family-snippet"> Tools</span>
+                           </span></span>
+
+                           <span class="floatRight zindexOne positionAbsolute positionLeft widthFivevh heightFive">
+                              <img src="./svg/three/close.svg" class="
+                              positionAbsolute positionCenter marginauto widthHalfFlex heightHalfFlex">
+                           </span>
+
+                        </span>
+                     </span>
+
+                     <span ng-repeat="tool in member.tools | filter: tool.type = 'design'" class="positionRelative widthFullFlex floatLeft">
+                        <span class="positionRelative spacedTiny border-radius1 floatLeft">
+
+                           <span class="positionAbsolute positionCenter widthFullFlex heightFulFlex backgroundColorWhite border-radius1 opacity025 floatLeft">
+                           </span>
+
+                           <span class="positionRelative spacedSmall border-radius1 floatLeft">
+                              
+                              <p class=" fontSizeTwo lineHeightFour floatLeft">
+
+                                 <b class="opacity095 floatLeft positionRelative lineHeightFive text-align-left fontColorThree text-shadow025Dark marginTwoFiveRight zindexOne">
+                                    {{tool.name}}
+                                 </b>
+
+                                 <span ng:repeat="grades in tool.grade" class="floatLeft zindexOne positionRelative widthOneFivevh heightFive marginSevenFiveRight"><img ng:show="grades.active == true" src="./svg/three/close.svg" class="widthFullFlex heightFullFlex"></span>
+
+                              </p>
+                              <span class="
+                                 positionAbsolute positionRight
+                                 heightFive widthFive border-radius
+                                 floatRight" style="background-image: url('/tools/{{tool.name}}.svg');
+                                 background-size: 100% 100%;">
+                              </span>
+                           </span>
+                        </span>
+                     </span>
+
+                  </span>
+
+
+               <span class="hideOnHover positionRelative floatLeft spacedMid backgroundColorWhite">
+
+               <!-- desk Holder center -->
+               <imaclinedone class="positionAbsolute positionCenter widthThreeQuarterFlex heightHalfFlex floatLeft">
+               </imaclinedone>
+
+               <h3 class="font-family-snippet widthFullFlex floatLeft positionRelative lineHeightThree fontSizeThree text-align-left fontColorTwo text-shadow05OffWhite zindexOne">
+                  <span class="backgroundColorWhite">2/4</span>
+               </h3>
+               <hr>
+               <span class="widthHalfFlex heightFullFlex positionRelative marginauto floatLeft">
+               
+                  <p class="widthFullFlex floatLeft positionRelative lineHeightFive fontSizeFour text-align-left fontColorFour text-shadow025Dark zindexOne">
+                     
+                     <b class="fontColorOne">Design </b>,<br> <b class="fontColorThree">Inter -</b>
+                     <br>
+                     <b class="fontColorThree">action 
+                     <span class="font-family-snippet fontColorFour"> & </span></b>
+                     <br>
+                     <b class="fontColorTwo floatLeft">
+                     User Ex
+                     <span class="floatRight zindexOne positionRelative widthTwoFivevh heightFive">
+                        <img src="./svg/three/close.svg" class="
+                        positionAbsolute positionCenter marginauto widthHalfFlex heightHalfFlex">
+                     </span>
+                     </b>
+
+                  </p>
+
+               </span> 
+               
+               <span class="widthHalfFlex heightFullFlex floatLeft hideOnHover">
+                  <span class="positionRelative floatLeft spacedSmall">
+                     
+                     <span class="fontSizeTwo lineHeightThree fontColorFour font-family-snippet positionRelative zindexOne">
+                     Styling Mobile & Big Web<span class="fontColorThree">:</span></span>
+                     <span class="fontColorFive font-family-snippet positionRelative zindexOne fontSizeTwo lineHeightTwoFive">
+                        <span class="backgroundColorOffWhite">
+                        Software designed from Minimal to 3D and Trendy to Proven.
+                        </span>
+                     </span>
+
+                  </span>
+
+               </span>
+
+               </span>
+
+               </span>
+
+               </span>
+
+            </span>
+         </span>
+
+      </span>
+      <!-- Content -->
+      <span class="showOnHoverSwitch positionRelative
+         backgroundGridColorOne fontColorWhite widthHalfFlex heightHalfFlex text-align-left floatLeft ">
+
+         <span class="positionAbsolute positionCenter floatLeft backgroundGridColorFour widthFullFlex heightFullFlex">
+
+            <div class="
+               zindexOne positionAbsolute positionTopLeft widthHalfFlex heightHalfFlex floatLeft">
+
+               <img src="./svg/imacone.svg" class="positionAbsolute positionTopLeft widthHalfFlex heightHalfFlex">
+
+            </div>
+
+            <span
+            class="positionRelative widthFullFlex heightFullFlex floatLeft easing  zindexOne">
+               
+               <span class="positionAbsolute positionLeft spacedTiny overflowhidden floatLeft opacity025">
+
+                  <span class="positionAbsolute positionCenter spacedTiny overflowhidden floatLeft">
+
+                     <span class="positionAbsolute positionTopRight widthHalfFlex heightHalfFlex backgroundColorOffWhite border-radius1 overflowhidden floatLeft">
+                     </span>
+
+                  </span>
+
+               </span>
+
+               <span class="positionRelative floatLeft spacedMid ">
+
+               <span class="positionRelative floatLeft spacedSmall backgroundColorWhite box-shadowSixStraight border-radius1 overflowhidden">
+
+                  <span class="hideOnHover animated enterUpObject delay025 zindexOne positionAbsolute positionTopRight widthTenvh heightTen">
+                     <img src="./svg/three/close.svg" class="
+                     positionAbsolute positionCenter marginauto widthHalfFlex heightHalfFlex">
+                  </span>
+
+               <span class="showOnHover positionAbsolute backgroundColorOffWhite border-radius1 spacedSmall floatLeft zindexOne overflowy">
+
+                     <span class="opacity025 floatLeft animated enterUpObject delay025 positionAbsolute positionTopRight widthTenvh heightTen zindexOne">
+                        <img src="./svg/pageend.svg" class="positionAbsolute positionTopRight widthThreeQuarterFlex">
+                     </span>
+
+                     <span class="backgroundColorWhite positionRelative floatLeft widthFullFlex box-shadowSixStraight">
+                        <span class="positionRelative floatLeft spacedTiny text-align-center zindexOne">
+
+
+                           <!-- desk Holder center -->
+                           <imaclinedone class="positionAbsolute positionCenter widthThreeQuarterFlex heightHalfFlex floatLeft">
+                           </imaclinedone>
+
+                           <span class="fontColorFive lineHeightTen fontSizeTwoFive widthFullFlex floatLeft">
+                           <span class="positionRelative zindexOne"><b>
+                           Content</b><span class="font-family-snippet"> Tools</span>
+                           </span></span>
+
+                           <span class="floatRight zindexOne positionAbsolute positionLeft widthFivevh heightFive">
+                              <img src="./svg/three/close.svg" class="
+                              positionAbsolute positionCenter marginauto widthHalfFlex heightHalfFlex">
+                           </span>
+
+                        </span>
+                     </span>
+
+                     <span ng-repeat="tool in member.tools | filter: tool.type = 'content'" class="positionRelative widthFullFlex floatLeft">
+                        <span class="positionRelative spacedTiny border-radius1 floatLeft">
+
+                           <span class="positionAbsolute positionCenter widthFullFlex heightFulFlex backgroundColorWhite border-radius1 opacity025 floatLeft">
+                           </span>
+
+                           <span class="positionRelative spacedSmall border-radius1 floatLeft">
+                              
+                              <p class=" fontSizeTwo lineHeightFour floatLeft">
+
+                                 <b class="opacity095 floatLeft positionRelative lineHeightFive text-align-left fontColorThree text-shadow025Dark marginTwoFiveRight zindexOne">
+                                    {{tool.name}}
+                                 </b>
+
+                                 <span ng:repeat="grades in tool.grade" class="floatLeft zindexOne positionRelative widthOneFivevh heightFive marginSevenFiveRight"><img ng:show="grades.active == true" src="./svg/three/close.svg" class="widthFullFlex heightFullFlex"></span>
+
+                              </p>
+                              <span class="
+                                 positionAbsolute positionRight
+                                 heightFive widthFive border-radius
+                                 floatRight" style="background-image: url('/tools/{{tool.name}}.svg');
+                                 background-size: 100% 100%;">
+                              </span>
+                           </span>
+                        </span>
+                     </span>
+
+                  </span>
+
+
+               <span class="hideOnHover positionRelative floatLeft spacedMid backgroundColorWhite">
+
+               <!-- desk Holder center -->
+               <imaclinedone class="positionAbsolute positionCenter widthThreeQuarterFlex heightHalfFlex floatLeft">
+               </imaclinedone>
+
+               <span class="positionAbsolute positionCenter backgroundColorOffWhite spacedSmall border-radius1 overflowhidden floatLeft">
+               </span>
+
+               <h3 class="font-family-snippet widthFullFlex floatLeft positionRelative lineHeightThree fontSizeThree text-align-left fontColorTwo text-shadow05OffWhite zindexOne">
+                  <span class="backgroundColorWhite">3/4</span>
+               </h3>
+               <hr>
+               
+               <span class="widthHalfFlex heightFullFlex positionRelative marginauto floatRight">
+               
+                  <p class="widthFullFlex floatLeft positionRelative lineHeightFive fontSizeFour text-align-left fontColorFour text-shadow025Dark zindexOne">
+                     
+                     <b class="fontColorOne">Graphics</b>,<br> <b class="fontColorThree">Illustr -</b>
+                     <br>
+                     <b class="fontColorThree">ations 
+                     <span class="font-family-snippet fontColorFour"> & </span></b>
+                     <br>
+                     <b class="fontColorTwo floatLeft">
+                     Content
+                     <span class="floatRight zindexOne positionRelative widthTwoFivevh heightFive">
+                        <img src="./svg/three/close.svg" class="
+                        positionAbsolute positionCenter marginauto widthHalfFlex heightHalfFlex">
+                     </span>
+                     </b>
+
+                  </p>
+
+               </span> 
+               
+               <span class="widthHalfFlex heightFullFlex floatLeft hideOnHover">
+                  <span class="positionRelative floatLeft spacedSmall">
+                     
+                     <span class="fontSizeTwo lineHeightThree fontColorFour font-family-snippet positionRelative zindexOne">
+                     Providing Assets<span class="fontColorThree">:</span></span>
+
+                     <span class="fontColorFive font-family-snippet positionRelative zindexOne fontSizeTwo lineHeightTwoFive">
+                        <span class="backgroundColorWhite">
+                        Materials for product branding, promotion cycles & brand standards.
+                        </span>
+                     </span>
+
+                  </span>
+
+               </span>
+
+               </span>
+
+               </span>
+
+               </span>
+
+            </span>
+         </span>
+
+      </span>
+      <!-- Strategy Tools -->
+      <span class="showOnHoverSwitch positionRelative
+         backgroundGridColorOne fontColorWhite widthHalfFlex heightHalfFlex text-align-left floatLeft ">
+
+         <span class="positionAbsolute positionCenter floatLeft backgroundGridColorFour widthFullFlex heightFullFlex">
+
+            <div class="
+               zindexOne positionAbsolute positionRight widthHalfFlex heightHalfFlex floatLeft">
+
+               <img src="./svg/imacone.svg" class="positionAbsolute positionRight widthHalfFlex heightHalfFlex">
+
+            </div>
+
+            <span
+            class="positionRelative widthFullFlex heightFullFlex  floatLeft easing  zindexOne">
+               
+               <span class="positionAbsolute positionLeft spacedSmall overflowhidden floatLeft opacity025">
+
+                  <span class="positionAbsolute positionCenter spacedTiny overflowhidden floatLeft">
+
+                     <span class="positionAbsolute positionLeft widthHalfFlex heightFullFlex backgroundColorOffWhite border-radius1 overflowhidden floatLeft">
+                     </span>
+
+                  </span>
+
+               </span>
+
+               <span class="positionRelative floatLeft spacedMid ">
+
+               <span class="positionRelative floatLeft spacedSmall backgroundColorWhite box-shadowSixStraight border-radius1 overflowhidden">
+
+               <span class="positionAbsolute positionRight widthHalfFlex heightFullFlex backgroundColorOffWhite border-radius1 overflowhidden floatLeft">
+               </span>
+
+                  <span class="hideOnHover animated enterUpObject delay025 zindexOne positionAbsolute positionTopRight widthTenvh heightTen">
+                     <img src="./svg/three/close.svg" class="
+                     positionAbsolute positionCenter marginauto widthHalfFlex heightHalfFlex">
+                  </span>
+
+               <span class="showOnHover positionAbsolute backgroundColorOffWhite border-radius1 spacedSmall floatLeft zindexOne overflowy">
+
+                     <span class="opacity025 floatLeft animated enterUpObject delay025 positionAbsolute positionTopRight widthTenvh heightTen zindexOne">
+                     <img src="./svg/pageend.svg" class="positionAbsolute positionTopRight widthThreeQuarterFlex">
+                  </span>
+
+                     <span class="backgroundColorWhite positionRelative floatLeft widthFullFlex box-shadowSixStraight">
+                        <span class="positionRelative floatLeft spacedTiny text-align-center zindexOne">
+
+
+                           <!-- desk Holder center -->
+                           <imaclinedone class="positionAbsolute positionCenter widthThreeQuarterFlex heightHalfFlex floatLeft">
+                           </imaclinedone>
+
+                           <span class="fontColorFive lineHeightTen fontSizeTwoFive widthFullFlex floatLeft">
+                              <span class="positionRelative zindexOne">
+                              <b>
+                                 Analytics</b> <span class="font-family-snippet"> Tools</span>
+                              </span>
+                           </span>
+
+                           <span class="floatRight zindexOne positionAbsolute positionLeft widthFivevh heightFive">
+                              <img src="./svg/three/close.svg" class="
+                                 positionAbsolute positionCenter marginauto widthHalfFlex heightHalfFlex">
+                           </span>
+
+                        </span>
+                     </span>
+
+                     <span ng-repeat="tool in member.tools | filter: tool.type = 'strategy'" class="positionRelative widthFullFlex floatLeft">
+                        <span class="positionRelative spacedTiny border-radius1 floatLeft">
+
+                           <span class="positionAbsolute positionCenter widthFullFlex heightFulFlex backgroundColorWhite border-radius1 opacity025 floatLeft">
+                           </span>
+
+                           <span class="positionRelative spacedSmall border-radius1 floatLeft">
+                              
+                              <p class=" fontSizeTwo lineHeightFour floatLeft">
+
+                                 <b class="opacity095 floatLeft positionRelative lineHeightFive text-align-left fontColorThree text-shadow025Dark marginTwoFiveRight zindexOne">
+                                    {{tool.name}}
+                                 </b>
+
+                                 <span ng:repeat="grades in tool.grade" class="floatLeft zindexOne positionRelative widthOneFivevh heightFive marginSevenFiveRight"><img ng:show="grades.active == true" src="./svg/three/close.svg" class="widthFullFlex heightFullFlex"></span>
+
+                              </p>
+                              <span class="
+                                 positionAbsolute positionRight
+                                 heightFive widthFive border-radius
+                                 floatRight" style="background-image: url('/tools/{{tool.name}}.svg');
+                                 background-size: 100% 100%;">
+                              </span>
+                           </span>
+                        </span>
+                     </span>
+
+                  </span>
+
+               <span class="hideOnHover positionRelative floatLeft spacedMid backgroundColorWhite">
+
+               <!-- desk Holder center -->
+               <imaclinedone class="positionAbsolute positionCenter widthThreeQuarterFlex heightHalfFlex floatLeft">
+               </imaclinedone>
+
+               <h3 class="font-family-snippet widthFullFlex floatLeft positionRelative lineHeightThree fontSizeThree text-align-left fontColorTwo text-shadow05OffWhite zindexOne">
+                  <span class="backgroundColorWhite">4/4</span>
+               </h3>
+               <hr>
+               <span class="widthFullFlex positionRelative marginauto easing">
+               
+               <p class="widthFullFlex floatLeft positionRelative lineHeightFive fontSizeFour text-align-left fontColorFour text-shadow025Dark zindexOne">
+                  
+                  <b class="fontColorOne">Strategy </b>, <b class="fontColorThree">Analyics </b> <br>
+
+                  <b class="fontColorTwo floatLeft">
+
+                  <span class="font-family-snippet fontColorFour"> & </span>
+
+                  Optimization
+                  <span class="floatRight zindexOne positionRelative widthTwoFivevh heightFive">
+                     <img src="./svg/three/close.svg" class="
+                     positionAbsolute positionCenter marginauto widthHalfFlex heightHalfFlex">
+                  </span>
+                  </b>
+
+               </p>
+
+               </span>
+
+               <hr>
+               
+               <span class="widthFullFlex floatLeft hideOnHover">
+                  <span class="positionRelative floatLeft spacedSmall">
+                     
+                     <span class="fontSizeTwo lineHeightFour fontColorFour font-family-snippet positionRelative zindexOne">
+                     Mazimizing Opportunies<span class="fontColorThree">:</span></span><br>
+
+                     <span class="fontColorFive font-family-snippet positionRelative zindexOne fontSizeTwo lineHeightTwoFive">
+                        <span class="backgroundColorOffWhite">
+                        Understanding your audience & utilizing tools to record & improve upon User Growth & Retention
+                        </span>
+                     </span>
+
+                  </span>
+
+               </span>
+
+               </span>
+
+               </span>
+
+               </span>
+
+            </span>
+         </span>
+         
+      </span>

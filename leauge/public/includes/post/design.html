@@ -1,0 +1,507 @@
+<span ng:if="postpreview == true" class="positionFixed positionCenter widthFull heightFull zindexTen">
+
+   <!-- fixed background -->
+   <span class="
+      positionFixed
+      positionCenter
+      heightFullFlex
+      widthFullFlex
+      overflowhidden zindexOne floatLeft" style="background-image: url('/thumbs/{{post.photo}}');
+      background-size: cover;">
+
+      <!-- washout background -->
+      <span class="positionAbsolute positionCenter opacity095
+         backgroundGridColorWhite widthFullFlex heightFullFlex">
+      </span>
+
+      <span class="positionAbsolute positionCenter opacity025
+         ColorFourToClearGradient widthFullFlex heightFullFlex">
+      </span>
+
+   </span>
+
+<span class="positionAbsolute positionCenter widthFullFlex heightFullFlex zindexTen overflowy">
+
+
+
+   <postoveralldesign></postoveralldesign>
+
+   <!-- background -->
+   <postproducttop></postproducttop>
+
+   <!-- Tab -->
+   <span class="positionRelative widthFullFlex backgroundColorWhite floatLeft">
+      <div class="spacedSmall border-radius1 overflowhidden positionRelative">
+         <postabouttabs></postabouttabs>
+      </div>
+   </span>
+
+   <span class="positionRelative spacedMidBorderColorWhite floatLeft">
+
+
+                           <span class="
+                           widthHalfFlex heightHalfFlex overflowhidden box-shadowSixStraight  
+                           positionAbsolute positionCenter floatLeft easing">
+
+                           <codetab></codetab>
+
+                        </span>
+
+   </span>
+
+   <postinfoslider></postinfoslider>
+
+   <!-- Tab -->
+   <span class="positionRelative widthQuarterFlex heightFullFlex backgroundColorWhite floatLeft">
+      <postbrandinfo></postbrandinfo>
+   </span>
+
+   <span class="positionRelative widthThreeQuarterFlex heightFullFlex floatLeft">
+      <postfeatureslider></postfeatureslider>
+   </span>
+
+   <span class="positionRelative heightQuarterFlex widthFullFlex floatLeft">
+      <posttestimonalleft></posttestimonalleft>
+   </span>
+
+   <!-- Dev. Tools -->
+   <span class="
+      positionRelative
+      heightFullFlex
+      widthHalfFlex
+      backgroundGridColorOne
+      floatLeft">
+
+      <span class="
+      positionRelative
+      heightFullFlex
+      widthFullFlex
+      floatLeft">
+
+         <!-- fluid list (no scroll) -->
+         <ul class="backgroundColorOne positionRelative widthFullFlex heightFullFlex floatLeft easing">
+            <span class="
+               spacedMid overflowhidden
+               positionRelative floatLeft easing">
+
+               <span class="positionRelative fontColorWhite fontSizeTwoFive lineHeightTwoFive text-align-left widthFullFlex floatLeft text-shadow025Three"><b class="fontColorOffWhite">Notes</b> from our</span>
+
+               <hr>
+               
+               <span class="widthThreeQuarterFlex lineHeightTwelveFive fontSizeSevenFive text-align-left floatLeft">
+
+                  <h3 class="floatLeft widthFullFlex positionRelative lineHeightThree fontSizeThree text-align-left fontColorTwo zindexOne">
+
+                     <span class="positionRelative floatLeft text-shadow025Three">
+                     <b>Project Managers:</b></span>
+
+                  </h3>
+               </span>
+
+               <hr>
+
+               <span class="
+                  overflowhidden heightTwoThirdFlex widthStatic
+                  positionRelative easing floatLeft">
+                  <span class="widthFullFlex heightFullFlex
+                     positionRelative floatLeft easing">
+                     <!-- video component 1 -->
+                     <ul ng-repeat="allparts in post.apps" class="positionRelative widthHalfFlex heightHalfFlex floatLeft easing">
+                        <span class="showOnHoverSwitch
+                           widthFullFlex heightFullFlex
+                           positionRelative floatLeft easing">
+                           <span class="
+                              spacedSmall overflowhidden border-radius1 buttonbox-shadowDark
+                              positionRelative floatLeft easing">
+                              <span class="
+                                 spacedTiny
+                                 centerdiv
+                                 backgroundColorTwo
+                                 border-radius1
+                                 overflowhidden
+                                 positionAbsolute
+                                 positionCenter floatLeft easing">
+                                 <!-- showOnHover // background -->
+                                 <span class="showOnHover positionAbsolute positionCenter
+                                    border-radius1 overflowhidden
+                                    backgroundColorWhite widthFullFlex heightFullFlex">
+                                    <!-- left -->
+                                    <span class="animated enterUpObject delay025 zindexOne positionAbsolute positionLeft widthFive heightFive"><img src="./svg/arrow-left.svg" class="widthFullFlex heightFullFlex"></span>
+                                    <!-- right -->
+                                    <span class="animated enterUpObject delay025 zindexOne positionAbsolute positionRight widthFive heightFive"><img src="./svg/arrow-right.svg" class="widthFullFlex heightFullFlex"></span>
+                                    <!-- Filler -->
+                                    <span class="positionRelative widthFullFlex floatLeft widthFullFlex heightTenFlex">
+                                    </span><br>
+                                    <ul class="positionRelative widthFullFlex floatLeft easing">
+                                       <span class="
+                                          spacedSmall overflowhidden
+                                          positionRelative floatLeft easing">
+                                       <span class="
+                                          centerdiv
+                                          widthFullFlex positionRelative border-radius1 centerdiv opacity075 fontSizeThree fontColorFourOnHover lineHeightFive easing">Episode 1: {{allparts.name}}</span>
+                                       </span>
+                                    </ul>
+                                 </span>
+                                 <!-- hideOnHover // background -->
+                                 <span class="hideOnHover positionAbsolute positionCenter
+                                    border-radius1 overflowhidden
+                                    backgroundColorWhite widthFullFlex heightFullFlex">
+                                    <ul class="positionRelative widthFullFlex heightFullFlex floatLeft zindexOne easing">
+                                       <h4 class="font-family-snippet positionAbsolute
+                                          positionTopRight heightTenFlex lineHeightTen fontSizeTen text-align-right fontColorFive">
+                                          <span class="divcenter positionRelative opacity025">
+                                          <b>{{$index}}</b>
+                                          </span>
+                                       </h4>
+                                       <span class="animated enterUpObject delay025 zindexOne positionAbsolute positionCenter widthThreeQuarterFlex heightThreeQuarterFlex"><img src="./apps/{{allparts.name}}.svg" class="widthFullFlex heightFullFlex"></span>
+                                       <!-- Filler -->
+                                       <span class="positionRelative widthFullFlex floatLeft widthFullFlex heightTenFlex">
+                                       </span><br>
+                                       <!-- text here-->
+                                       <span class="positionAbsolute positionBottom widthFullFlex floatLeft
+                                          ">
+                                          <span class="
+                                             spacedSmall overflowhidden
+                                             positionRelative floatLeft easing">
+                                             <h3 class="widthFullFlex floatLeft positionRelative lineHeighFive fontSizeThree text-align-left fontColorFour text-shadow05OffWhite zindexOne"><b>Introducing: {{allparts.name}}</b></h3>
+                                          </span>
+                                       </span>
+                                    </ul>
+                                    <span class="
+                                       opacity025
+                                       border-radius1 overflowhidden
+                                       positionAbsolute positionCenter
+                                       backgroundteam widthFullFlex heightFullFlex">
+                                    </span>
+                                    <span class="
+                                       whiteToClearGradient
+                                       border-radius1 overflowhidden
+                                       positionAbsolute positionCenter widthFullFlex heightFullFlex">
+                                    </span>
+                                    <imaclinedone class="
+                                       opacity05
+                                       positionAbsolute positionCenter widthHalfFlex heightHalfFlex">
+                                    </imaclinedone>
+                                 </span>
+                              </span>
+                           </span>
+                        </span>
+                     </ul>
+                  </span>
+               </span>
+            </span>
+         </ul>
+
+      </span>
+      
+      <ul class="positionAbsolute positionBottom widthFullFlex heightQuarterFlex floatLeft zindexOne easing">
+         <span class="widthStatic positionRelative centerdiv marginauto">
+            <li ng:click="$parent.postpreview = false" class="centerdiv text-align-center positionRelative heightFullFlex marginTwoFive paddingTwoFive easing">
+               <span class="textOnHoverSwitch paddingTwoFive positionRelative buttonbox-shadowDark border-radius1 backgroundColorFour backgroundColorTwoOnHover centerdiv fontSizeTwoFive fontColorWhite fontColorOneOnHover lineHeightFive easing">
+               View on Github
+               <span class="bordered-Six box-shadowSix beforeArrow margintwofive beforetext backgroundColorOne fontSizeTwoFive fontColorFive fontColorFiveOnHover lineHeightFive easing">before</span>
+               <span class="marginTwoFiveLeft floatRight animated enterUpObject delay025 zindexOne positionRelative widthTwoFivevh heightTwoFive"><img src="./svg/arrow-down.svg" class="widthFullFlex heightFullFlex"></span>
+               </span>
+            </li>
+         </span>
+      </ul>
+
+      <span class="floatLeft animated enterUpObject delay025 positionAbsolute positionTopRight widthTenvh heightTen">
+      <img src="./svg/pageend.svg" class="positionAbsolute positionTopRight widthThreeQuarterFlex">
+      </span>
+
+      <span ng:click="$parent.postpreview = false" class="animated enterUpObject delay025 zindexFive positionAbsolute positionRight widthTenvh heightTen">
+      <img ng:click="$parent.postpreview = false" src="./svg/one/close.svg" class="
+         positionAbsolute positionCenter marginauto widthHalfFlex heightHalfFlex">
+      </span>
+      <imacone class="opacity025
+         positionAbsolute positionOverBottomHover widthThreeQuarterFlex heightThreeQuarterFlex easing">
+      </imacone>
+   </span>
+
+   <!-- Design Tools -->
+   <span class="positionRelative
+      widthHalfFlex heightFullFlex box-shadowSixStraight floatLeft">
+
+      <!-- background -->
+      <span class="positionAbsolute positionCenter backgroundteam
+         backgroundColorWhite widthFullFlex heightFullFlex">
+      </span>
+
+      <!-- washout background -->
+      <span class="positionAbsolute positionCenter opacity075
+         backgroundColorWhite widthFullFlex heightFullFlex">
+      </span>
+
+      <span class="positionRelative
+      widthFullFlex heightFullFlex floatLeft">
+
+         <designtools></designtools>
+
+      </span>
+   </span>
+
+   <span class="positionRelative heightQuarterFlex widthFullFlex floatLeft">
+      <posttestimonalright></posttestimonalright>
+   </span>
+
+   <!-- Timeline -->
+   <span class="positionRelative widthThreeQuarterFlex heightFullFlex backgroundGridColorOffWhite floatLeft">
+      <posttimeline></posttimeline>
+   </span>
+
+   <!-- Tab -->
+   <span class="positionRelative widthQuarterFlex heightFullFlex backgroundGridColorOffWhite floatLeft">
+      <posttimelineinfoslider></posttimelineinfoslider>
+   </span>
+
+      <!-- Top Dev -->
+   <span class="
+      showOnHoverSwitch
+      positionRelative
+      heightFullFlex
+      widthFullFlex
+      backgroundGridColorOne
+      floatLeft">
+
+      <!-- washout background -->
+      <span class="positionAbsolute positionCenter spacedLarge border-radius1 box-shadowFiveStraight overflowhidden backgroundGridColorFour widthFullFlex heightFullFlex">
+         <span class="
+            ColorOneToClearGradient overflowhidden
+            positionAbsolute positionCenter widthFullFlex heightFullFlex">
+
+            <!-- Tab -->
+            <div class="spacedSmall border-radius1 overflowhidden positionAbsolute positionCenter">
+               <postproductpartners></postproductpartners>
+            </div>
+
+         </span>
+
+      </span>
+
+      <span class="
+      showOnHoverSwitch
+      positionRelative
+      heightFullFlex
+      widthFullFlex
+      floatLeft zindexOne">
+
+         <imacone class="
+            positionAbsolute positionBottom widthHalfFlex heightHalfFlex easing">
+         </imacone>
+
+         <imacone class="
+            positionAbsolute positionBottomLeft widthHalfFlex heightThirdFlex easing">
+         </imacone>
+
+         <imacone class="
+            positionAbsolute positionBottomRight widthHalfFlex heightThirdFlex easing">
+         </imacone>
+
+      </span>
+
+   </span>
+
+
+   <span
+      class="positionRelative widthFullFlex backgroundColorWhite floatLeft easing zindexOne">
+
+         <span
+         class="positionAbsolute positionTop widthFullFlex heightThreeQuarterFlex backgroundColorOne floatLeft easing zindexOne">
+         </span>
+
+         <span class="positionRelative floatLeft widthFullFlex heightFullFlex">
+
+            <span
+            class="positionRelative widthFullFlex text-align-center floatLeft easing zindexOne">
+               
+               <span class="positionRelative floatLeft spacedHuge">
+
+               <h4 class="positionAbsolute
+                  positionLeft widthQuarterFlex centerdiv lineHeightFifteen fontSizeFifteen text-align-left fontColorWhite text-shadow05Three">
+                  <span class="floatLeft positionRelative opacity01">
+                  <b>.01</b>
+                  </span>
+               </h4>
+
+                  <h3 class="floatLeft centerdiv widthFullFlex positionRelative heightTen lineHeightTen fontSizeTen text-align-center fontColorTwo zindexOne">
+                  <p>
+                     
+                     <span class="positionRelative floatLeft text-shadow025Three">
+                        <b>Resume</b>
+
+                        <span class="positionAbsolute positionOverFiveTopRightOutro fontColorWhite fontSizeTwoFive lineHeightTwoFive floatLeft"><b>Interested</b> in Even</span>
+
+                        <span class="positionAbsolute positionOverFiveBottomLeftOutro fontColorFive fontSizeTwoFive lineHeightTwoFive floatLeft">
+
+                        <span ng:click="brandtab1 = !brandtab1" class="marginTwoFiveLeft floatRight 
+                           positionBeforeIcon
+                           positionAbsolute zindexOne widthTwoFivevh heightTwoFive"><img ng:show="!brandtab1" src="./svg/arrow-down.svg" class="positionCenter positionAbsolute widthHalfFlex heightHalfFlex">
+                           <img ng:show="brandtab1" src="./svg/one/close.svg" class="positionCenter positionAbsolute widthHalfFlex heightHalfFlex"></span>
+
+                           <span class="opacity025">
+                           Latest <b class="bordered-bottomOne">Projects</b></span></span>
+
+                     </span>
+                     </p>
+                  </h3>
+               
+               </span>
+
+               <span
+               class="positionAbsolute positionBottom widthFullFlex heightTenFlex floatLeft easing zindexOne">
+                  <hr class="vertline marginauto positionAbsolute positionBottom animated growvert backgroundColorTwo">
+               </span>
+            </span>
+
+            <span
+            class="positionRelative widthStatic centerdiv marginauto box-shadowSixStraight easing zindexOne backgroundColorWhite">
+
+               <span
+               class="positionAbsolute positionTop widthFullFlex heightFullFlex whiteToClearGradient floatLeft easing zindexFive">
+               </span>
+
+               <span
+                  class="positionRelative widthFullFlex text-align-center floatLeft easing zindexOne">
+
+                  <span
+                  class="positionRelative widthFullFlex text-align-center floatLeft easing zindexOne">
+
+                     <span class="positionRelative floatLeft spacedLarge">
+                        <span class="text-align-left floatLeft"><b class="lineHeightTwentyFive fontSizeTwelveFive">{{member.name}}</b><b class="lineHeightTwentyFive fontSizeTwelveFive">{{member.lastname}}</b> <b class="lineHeightTwentyFive fontSizeTen">{{member.position}}</b></span>
+                        <hr>
+                        <span class="widthHalfFlex lineHeightFour fontSizeTwoFive text-align-left floatLeft">
+
+                           
+
+                           <p><b class="fontColorOne lineHeightFour fontSizeTen">"</b>{{member.tagline}}<b class="fontColorOne lineHeightFour fontSizeTen">"</b></p>
+
+                        </span>
+
+                        <span class="widthHalfFlex lineHeightFour fontSizeTwoFive text-align-left floatLeft">
+
+                           
+
+                           <p><b class="fontColorOne lineHeightFour fontSizeTen">"</b>{{member.tagline}}<b class="fontColorOne lineHeightFour fontSizeTen">"</b></p>
+
+                        </span>
+
+                     </span>
+
+                  </span>
+
+               </span>
+
+            </span>
+
+         </span>
+
+      </span>
+
+   <span class="positionRelative widthHalfFlex floatLeft easing">
+      <postprocon></postprocon>
+   </span>
+
+   <span class="positionRelative widthHalfFlex heightTwoThirdFlex floatLeft easing">
+      <postproductcontractors></postproductcontractors>
+   </span>
+
+   <postproductsteps></postproductsteps>
+
+   <!-- plan -->
+   <span class="positionRelative widthFullFlex heightHalfFlex backgroundColorWhite floatLeft easing zindexOne">
+
+      <span class="zindexFive positionRelative floatLeft spacedMid">
+         <!-- perform -->
+         <span class="positionRelative widthHalfFlex backgroundColorWhite floatLeft easing zindexOne">
+            <!-- plan -->
+            <postproductplan></postproductplan>
+         </span>
+
+         <span class="positionRelative widthHalfFlex heightFullFlex backgroundColorWhite floatLeft easing zindexOne">
+            <!-- plan -->
+            <postproductplanphoto></postproductplanphoto>
+         </span>
+      </span>
+   </span>
+
+   <!-- prep -->
+
+   <span class="positionRelative widthFullFlex heightHalfFlex backgroundColorWhite floatLeft easing zindexOne">
+
+      <span class="zindexFive positionRelative floatLeft spacedMid">
+         <!-- perform -->
+         <span class="positionRelative widthHalfFlex heightFullFlex backgroundColorWhite floatLeft easing zindexOne">
+            <!-- prep -->
+            <postproductprepphoto></postproductprepphoto>
+         </span>
+         <!-- prep -->
+         <span class="positionRelative widthHalfFlex backgroundColorWhite floatLeft easing zindexOne">
+            <!-- prep -->
+            <postproductprep></postproductprep>
+         </span>
+      </span>
+   </span>
+
+   <!-- perform -->
+   <span class="positionRelative widthFullFlex heightHalfFlex backgroundColorWhite floatLeft easing zindexOne">
+      <span class="zindexFive positionRelative floatLeft spacedMid">
+         <!-- perform -->
+         <span class="positionRelative widthHalfFlex backgroundColorWhite floatLeft easing zindexOne">
+            <!-- perform -->
+            <postproductperform></postproductperform>
+         </span>
+
+         <span class="positionRelative widthHalfFlex heightFullFlex backgroundColorWhite floatLeft easing zindexOne">
+            <!-- perform -->
+            <postproductperformphoto></postproductperformphoto>
+         </span>
+      </span>
+   </span>
+   
+   <!-- perfect -->
+   <span class="positionRelative widthFullFlex heightHalfFlex backgroundColorWhite floatLeft easing zindexOne">
+      <span class="zindexFive positionRelative floatLeft spacedMid">
+         
+         <!-- perfect -->
+         <span class="positionRelative widthHalfFlex heightFullFlex backgroundColorWhite floatLeft easing zindexOne">
+            <!-- perfect -->
+            <postproductperfectphoto></postproductperfectphoto>
+         </span>
+
+         <!-- perform -->
+         <span class="positionRelative widthHalfFlex backgroundColorWhite floatLeft easing zindexOne">
+            <!-- perfect -->
+            <postproductperfect></postproductperfect>
+         </span>
+
+      </span>
+
+   </span>
+
+   <postscopeofwork></postscopeofwork>
+
+   <!-- feature videos stat list components -->
+   <ul class="positionRelative backgroundGridColorWhite widthFullFlex heightFullFlex floatLeft">
+
+         <span class="backgroundColorWhite positionAbsolute positionTopLeft floatLeft widthThirdFlex zindexTen box-shadowSixStraight">
+            <span class="positionRelative floatLeft spacedMid text-align-left zindexOne">
+               <span class="fontColorFive lineHeightThree fontSizeTwoFive widthFullFlex floatLeft">
+               <span class="positionRelative zindexOne"><b>
+               Showcase & Tools used
+               </b></span></span>
+            </span>
+         </span>
+
+      <postvideo></postvideo>
+
+   </ul>
+
+   <postmorefromauthor></postmorefromauthor>
+   <noborderedfooter></noborderedfooter>
+   <whitefooter></whitefooter>
+
+
+   <!-- tags -->
+   </span>
+</span>

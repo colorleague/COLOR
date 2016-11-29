@@ -1,0 +1,409 @@
+<span
+      class="positionRelative widthFullFlex backgroundColorWhite floatLeft easing zindexOne">
+
+         <span
+         class="positionAbsolute positionTop widthFullFlex heightThreeQuarterFlex backgroundGridColorOne floatLeft easing zindexOne">
+         </span>
+
+         <span class="positionRelative floatLeft widthFullFlex heightFullFlex">
+
+            <span
+            class="positionRelative widthFullFlex text-align-center floatLeft easing zindexOne">
+               
+               <span class="positionRelative floatLeft spacedHuge">
+
+               <h4 class="positionAbsolute
+                  positionLeft widthQuarterFlex centerdiv lineHeightFifteen fontSizeFifteen text-align-left fontColorWhite text-shadow05Three">
+                  <span class="floatLeft positionRelative opacity01">
+                  <b>.01</b>
+                  </span>
+               </h4>
+
+                  <span class="widthFullFlex positionRelative marginauto floatLeft text-align-left">
+
+               <imacone class="positionAbsolute positionBottomLeft
+               overflowhidden widthHalfFlex heightHalfFlex"></imacone>
+
+               <span class="spacedSmall positionRelative floatLeft easing">
+
+                  <h3 class="floatLeft centerdiv widthFullFlex positionRelative lineHeightTen fontSizeSevenFive text-align-left fontColorTwo zindexOne">
+
+                     <span class="floatLeft positionAbsolute positionTopRight widthTenvh heightTen">
+                        <img src="./svg/three/close.svg" class="
+                                 positionAbsolute positionCenter marginauto widthHalfFlex heightHalfFlex">
+                     </span>
+
+                                 <p>
+
+                                    <!-- layer -->
+                                    <span class="
+                                       zindexFive positionRelative heightFive widthFullFlex floatLeft">
+                                    </span>
+                                    
+                                    <span class="positionRelative floatLeft text-shadow01Dark">
+
+                                       <b class="floatLeft text-shadow025Dark zindexFive positionRelative">Current Resume</b>
+                                       <span class="positionAbsolute positionOverFiveTopRightOutro fontColorWhite fontSizeTwoFive lineHeightTwoFive floatLeft">
+                                       <b class="fontColorOffWhite">Abilities</b> & <span class="font-family-snippet"> Services of</span> </span>
+
+                                       <span class="positionAbsolute positionOverFiveBottomLeftOutro fontColorFive fontSizeTwo lineHeightTwoFive floatLeft">
+
+                                       <span ng:click="brandtab1 = !brandtab1" class="marginTwoFiveLeft floatRight 
+                                          positionBeforeIcon
+                                          positionAbsolute zindexOne widthTwoFivevh heightTwoFive"><img ng:show="!brandtab1" src="./svg/arrow-down.svg" class="positionCenter positionAbsolute widthHalfFlex heightHalfFlex">
+                                          <img ng:show="brandtab1" src="./svg/one/close.svg" class="positionCenter positionAbsolute widthHalfFlex heightHalfFlex"></span>
+
+                                          <span class="opacity025">
+
+                                          Availabe for Hire
+                                          <b class="bordered-bottomOne fontColorSeven">Download</b>
+
+                                          <span class="font-family-snippet">&</span>
+
+                                          <b class="bordered-bottomOne fontColorSeven">Contact</b>
+
+                                          </span></span>
+
+                                    </span>
+                                 </p>
+                              </h3>
+
+               </span>
+
+            </span>
+               
+               </span>
+
+               <span
+               class="positionAbsolute positionBottom widthFullFlex heightTenFlex floatLeft easing zindexOne">
+                  <hr class="vertline marginauto positionAbsolute positionBottom animated growvert backgroundColorTwo">
+               </span>
+            </span>
+
+            <span
+            class="positionRelative widthStatic centerdiv marginauto box-shadowSixStraight easing zindexOne backgroundColorWhite">
+
+               <span
+               class="positionAbsolute positionTop widthFullFlex heightFullFlex whiteToClearGradient floatLeft easing zindexFive">
+               </span>
+
+               <span
+                  class="positionRelative widthFullFlex text-align-center floatLeft easing zindexOne">
+
+                  <span
+                  class="positionRelative widthFullFlex text-align-center floatLeft easing zindexOne">
+
+                     <span class="positionRelative floatLeft spacedLarge">
+
+                        <span
+                        class="positionRelative widthThreeQuarterFlex heightTen floatLeft easing zindexOne">
+                        </span>
+
+                        <span class="text-align-left floatLeft"><b class="lineHeightSevenFive fontSizeFive">{{member.name}} </b><b class="lineHeightSevenFive fontSizeFive ">{{member.lastname}}</b>
+
+                        <b class="lineHeightTen fontSizeTwoFive paddingTwoFive marginTwoFiveLeft backgroundColorOffWhite">{{member.position}}</b></span>
+
+                        <span class="positionAbsolute positionTopRight widthQuarterFlex fontSizeTwoFive text-align-right floatLeft">
+
+                           <p class="lineHeightTwo fontSizeTwoFive fontColorSeven font-family-snippet opacity075"><b>{{member.phone}}</b> </p><br>
+                           <p class="lineHeightTwo fontSizeTwo fontColorSeven font-family-snippet opacity05">{{member.email}}</p>
+
+                        </span>
+
+                        <span class="widthThreeQuarterFlex lineHeightFour fontSizeTwoFive text-align-left floatLeft">
+                        
+                           <p class="widthThreeQuarterFlex floatLeft"><b class="fontColorOne lineHeightTwoFive fontSizeTwoFive">" </b> <span class="fontSizeTwo font-family-snippet">{{member.tagline}}</span> <b class="fontColorOne lineHeightTwoFive fontSizeTwoFive"> "</b></p>
+
+                        </span>
+
+                        <hr>
+
+                        <!-- timeline -->
+                        <span class="widthThreeQuarterFlex lineHeightFour fontSizeTwoFive text-align-left floatLeft">
+
+                           <span class="widthFullFlex lineHeightFour fontSizeTwoFive text-align-left floatLeft">
+                           
+                              <p><b class="fontColorTwo lineHeightTwoFive fontSizeTwoFive">Work Experience </b></p>
+
+                           </span>
+
+                           <!-- job -->
+                           <span ng:repeat="work in member.experience" class="widthFullFlex floatLeft">
+
+                              <!-- job company name -->
+                              <span class="widthQuarterFlex lineHeightFour fontSizeTwoFive text-align-right floatLeft">
+                              
+                                 <p>
+
+                                    <b class="fontColorOne lineHeightTwoFive fontSizeTwoFive">{{work.title}}</b>
+
+                                    <span class="positionRelative lineHeightThree fontSizeTwo text-align-left fontColorWhite
+                                    zindexOne"> - 
+                                    </span>
+
+                                    </p>
+
+                              </span>
+
+                              <!-- job description -->
+                              <span class="widthThreeQuarterFlex lineHeightFour fontSizeTwoFive text-align-left floatLeft">
+
+                                 <p class="widthFullFlex positionRelative marginauto easing">
+                                    
+                                    <span>
+                                       
+                                       <b class="positionRelative lineHeightTwoFive fontSizeTwoFive text-align-left fontColorFour text-shadow05OffWhite zindexOne">{{work.location}} </b>
+
+                                       <span class="
+                                       font-family-snippet
+                                       positionRelative lineHeightThree fontSizeTwoFive text-align-left fontColorEight text-shadow05OffWhite zindexOne">({{work.position}})</span>
+
+                                       <br>
+
+                                       <span class="positionRelative lineHeightThree fontSizeTwo text-align-left fontColorFour text-shadow05OffWhite zindexOne">{{work.startdate}}
+                                       </span>
+
+                                       <span class="positionRelative lineHeightThree fontSizeTwo text-align-left fontColorEight text-shadow05OffWhite zindexOne"> - 
+                                       </span>
+
+                                       <span class="positionRelative lineHeightThree fontSizeTwo text-align-left fontColorFour text-shadow05OffWhite zindexOne"> {{work.enddate}}</span>
+
+                                       <span class="
+                                       opacity075
+                                       font-family-snippet
+                                       positionRelative lineHeightFive fontSizeTwoFive text-align-left fontColorEight text-shadow05OffWhite zindexOne">({{work.term}})
+                                       </span>
+
+                                    </span>
+                                 </p>
+
+                                 <hr class="horline marginauto positionRelative animated growhor backgroundColorOffWhite">
+
+                                 <span ng:repeat="talent in work.descriptions" class="widthFullFlex lineHeightFour fontSizeTwoFive text-align-left floatLeft">
+                                 
+                                    <p>
+                                       <b class="fontColorOne lineHeightTwoFive fontSizeTwoFive"> - </b>
+                                       <b class="fontColorEight fontSizeTwo opacity025"> {{talent.content}}</b>
+                                    </p>
+
+                                 </span>
+
+                                 <hr>
+
+                                 <span class="widthFullFlex lineHeightThree fontSizeTwoFive text-align-left floatLeft">
+
+                                    <p  class="floatLeft">
+
+                                    <b class="fontColorOne lineHeightTwo fontSizeTwo">
+                                    Technologies: 
+                                    </b>
+
+                                    
+                                    <b class="fontColorOne lineHeightTwoFive fontSizeTwoFive">  
+
+                                       <span ng:repeat="skill in work.skills" class="fontSizeTwo fontColorFive">{{skill.name}}  </span>
+
+                                    </b>
+
+                                    </p>
+
+                                 </span>
+
+                              </span>
+
+                              <hr>
+
+                              <hr class="opacity025 horline marginauto positionRelative animated growhor backgroundColorOffWhite">
+
+                              <hr>
+
+                           </span>
+
+                        </span>
+
+                        <!-- skills -->
+
+                        <span class="widthQuarterFlex lineHeightFour fontSizeTwoFive text-align-left floatLeft">
+
+                           <p><b class="fontColorTwo lineHeightTwoFive fontSizeTwoFive">Languages </b></p>
+
+                           <span ng-repeat="tool in member.tools | limitTo:10:0" class="positionRelative widthFullFlex floatLeft">
+                              <span class="positionRelative spacedTiny border-radius1 floatLeft">
+
+                                 <span class="positionAbsolute positionCenter widthFullFlex heightFulFlex border-radius1 backgroundColorOffWhite overflowhidden opacity025 floatLeft">
+                                    </span>
+
+                                 <span class="positionRelative spacedTiny floatLeft">
+                                    
+
+                                    <p class=" fontSizeOneFive lineHeightTwoFive floatLeft">
+
+                                       <b class="opacity095 floatLeft positionRelative lineHeightFive text-align-left fontColorThree text-shadow01One marginTwoFiveRight zindexOne">
+                                          {{tool.name}}
+                                       </b>
+
+                                       <span ng:repeat="grades in tool.grade" class="floatLeft zindexOne positionRelative widthOneFivevh heightFive"><img ng:show="grades.active == true" src="./svg/three/close.svg" class="widthFullFlex heightFullFlex"></span>
+
+                                    </p>
+                                    <span class="
+                                       positionAbsolute positionRight opacity05
+                                       heightFive widthFive border-radius
+                                       floatRight">
+
+                                       <img src="./tools/{{tool.name}}.svg" class="positionAbsolute positionCenter widthHalfFlex heightHalfFlex">
+
+                                    </span>
+                                 </span>
+                              </span>
+                           </span>
+
+                        </span>
+
+                        <!-- timeline -->
+                        <span class="widthFullFlex lineHeightFour fontSizeTwoFive text-align-left floatLeft">
+
+                           <span class="widthFullFlex lineHeightFour fontSizeTwoFive text-align-left floatLeft">
+                           
+                              <p><b class="fontColorTwo lineHeightTwoFive fontSizeTwoFive">Techniques </b></p>
+
+                           </span>
+
+                        </span>
+
+                        <!-- timeline -->
+                        <span class="widthFullFlex lineHeightFour fontSizeTwoFive text-align-left floatLeft">
+
+                           <span class="widthHalfFlex lineHeightFour fontSizeTwoFive text-align-left floatLeft">
+                           
+                              <p><b class="fontColorOne lineHeightTwoFive fontSizeTwoFive">Abilities </b></p>
+
+                           </span>
+
+                           <span class="widthHalfFlex lineHeightFour fontSizeTwoFive text-align-left floatLeft">
+                           
+                              <p><b class="fontColorOne lineHeightTwoFive fontSizeTwoFive">Libraries & Tools </b></p>
+
+                           </span>
+
+                        </span>
+
+                        <!-- abilities -->
+                        <span class="widthQuarterFlex text-align-left floatLeft">
+
+                           <!-- job -->
+                           <span class="widthFullFlex floatLeft">
+
+                              <!-- job company name -->
+                              <span class="widthFullFlex lineHeightFour fontSizeTwoFive text-align-left floatLeft">
+                              
+                                 <b class="widthFullFlex text-align-left floatLeft" ng:repeat="ability in member.abilities | limitTo:5:0"><span class="widthFullFlex font-family-snippet fontColorFive lineHeightTwo fontSizeTwo">{{ability.title}}</span></b>
+
+                              </span>
+
+                           </span>
+
+                        </span>
+                        <!-- abilities -->
+                        <span class="widthQuarterFlex text-align-left floatLeft">
+
+                           <!-- job -->
+                           <span class="widthFullFlex floatLeft">
+
+                              <!-- job company name -->
+                              <span class="widthFullFlex lineHeightFour fontSizeTwoFive text-align-left floatLeft">
+                              
+                                 <b class="widthFullFlex text-align-left floatLeft" ng:repeat="ability in member.abilities | limitTo:5:0"><span class="widthFullFlex font-family-snippet fontColorFive lineHeightTwo fontSizeTwo opacity05">{{ability.title}}</span></b>
+
+                              </span>
+
+                           </span>
+
+                        </span>
+
+                        <!-- timeline -->
+                        <span class="widthQuarterFlex text-align-left floatLeft">
+
+                           <!-- job -->
+                           <span class="widthFullFlex floatLeft">
+
+                              <!-- job company name -->
+                              <span class="widthFullFlex lineHeightFour fontSizeTwoFive text-align-left floatLeft">
+                              
+                                 <b class="widthFullFlex text-align-left floatLeft" ng:repeat="library in member.libraries | limitTo:5:0"><span class="widthFullFlex font-family-snippet fontColorFive lineHeightTwo fontSizeTwo opacity05">{{library.title}}</span></b>
+
+                              </span>
+
+                           </span>
+
+                        </span>
+
+                        <!-- timeline -->
+                        <span class="widthQuarterFlex text-align-left floatLeft">
+
+                           <!-- job -->
+                           <span class="widthFullFlex floatLeft">
+
+                              <!-- job company name -->
+                              <span class="widthFullFlex lineHeightFour fontSizeTwoFive text-align-left floatLeft">
+                              
+                                 <b class="widthFullFlex text-align-left floatLeft" ng:repeat="library in member.libraries | limitTo:5:5"><span class="widthFullFlex font-family-snippet fontColorFive lineHeightTwo fontSizeTwo opacity05">{{library.title}}</span></b>
+
+                              </span>
+
+                           </span>
+
+                        </span>
+
+                        <span
+                        class="positionRelative widthFullFlex heightQuarter floatLeft easing">
+                        </span>
+
+
+                        <!-- timeline -->
+                        <span class="positionAbsolute positionBottom widthFullFlex lineHeightFifteen fontSizeTwoFive text-align-center floatLeft">
+
+                           <span class="widthFullFlex floatLeft">
+                           
+                              <p class="fontColorTwo">Visit Portfolio at 
+                              
+                                 <b class="fontColorOne">
+                                 <a href="http:://{{member.portfolio}}"></a>{{member.portfolio}} </b>
+
+                              </p>
+
+                           </span>
+
+                        </span>
+
+                        <span class="positionAbsolute positionBottomLeft heightTenFlex widthQuarterFlex floatLeft easing">
+                           <authorsquare></authorsquare>
+                        </span>
+
+                        <!-- timeline -->
+                        <span class="heightEightteen positionAbsolute positionBottomRight">
+
+                           <span class="widthFullFlex heightTen backgroundColorOffWhite text-align-center floatLeft">
+                           
+                              <span ng:click="brandtab1 = !brandtab1" class="
+                              positionRelative zindexOne widthFullFlex heightTen floatLeft"><img src="./svg/social/linkedin.svg" class="positionCenter positionAbsolute widthHalfFlex heightHalfFlex">
+                              </span>
+
+                           <hr>
+                              <b class="fontColorTwo lineHeightTwoFive fontSizeTwoFive">
+                              <a href="http://www.linkedin.com/in/{{member.linkedin}}"></a>@{{member.linkedin}} </b>
+
+                           </span>
+
+                        </span>
+
+                     </span>
+
+                  </span>
+
+               </span>
+
+            </span>
+
+         </span>
+
+      </span>

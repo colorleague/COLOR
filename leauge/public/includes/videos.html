@@ -1,0 +1,628 @@
+<ul ng:init="fixedbackgroundone = true; listholdergrid = true;" class="positionRelative floatLeft widthFull heightFull easing text-align-center zindexFive overflowy">
+   
+   <!-- fixed background -->
+   <span ng:show="fixedbackgroundone" class="
+      positionFixed
+      positionCenter
+      heightFullFlex
+      widthFullFlex
+      overflowhidden floatLeft" style="background-image: url('/photos/team.jpg');
+      background-size: cover;">
+      <!-- layer -->
+      <div class="
+         zindexOne positionAbsolute positionCenter heightFullFlex widthFullFlex">
+      </div>
+      <!-- washout background -->
+      <span class="positionAbsolute positionCenter opacity095
+         backgroundColorFour widthFullFlex heightFullFlex">
+      </span>
+   </span>
+   <span
+      ng:class="{
+      'widthFullFlex' : !componentMenu,
+      'widthThreeQuarterFlex' : componentMenu
+      }"
+      class="positionRelative heightThreeQuarterFlex floatRight zindexFive">
+
+      <span class="
+         backgroundColorOne
+         overflowhidden
+         positionAbsolute positionBottom widthFullFlex heightFullFlex">
+      </span>
+      <span class="
+         ColorTwoToClearGradient
+         overflowhidden
+         positionAbsolute positionBottom widthFullFlex heightFullFlex">
+      </span>
+      <span
+         class="positionRelative widthFullFlex heightFullFlex floatLeft easing zindexFive">
+         <span class="
+            WhiteToClearGradient
+            overflowhidden
+            positionAbsolute positionBottom widthFullFlex heightFullFlex">
+         </span>
+         <!-- washout background -->
+         <span class="positionAbsolute positionCenter
+            ColorOneRightClearGradient widthFullFlex heightFullFlex">
+         </span>
+         <span 
+            class="opacity01 spacedHuge backgroundGridColorWhite border-radius1 positionAbsolute positionCenter easing">
+         </span>
+         <span class="floatLeft animated enterUpObject delay025 positionAbsolute positionTopRight widthTenvh heightTen">
+         <img src="./svg/pageend.svg" class="positionAbsolute positionTopRight widthThreeQuarterFlex">
+         </span>
+         <span class="animated enterUpObject delay025 zindexOne positionAbsolute positionTopRight widthTenvh heightTen">
+         <img src="./svg/four/close.svg" class="
+            positionAbsolute positionCenter marginauto widthHalfFlex heightHalfFlex">
+         </span>
+         <!-- desk Holder center -->
+         <imaclinedone class="opacity025 positionAbsolute positionCenter widthThreeQuarterFlex heightHalfFlex floatLeft">
+         </imaclinedone>
+         <span class="heightQuarterFlex widthFullFlex positionRelative marginauto easing floatLeft">
+         </span>
+         <span class="widthThreeQuarterFlex positionRelative marginauto easing">
+            <h3 class="opacity095 font-family-snippet widthFullFlex floatLeft positionRelative lineHeightTen fontSizeFive text-align-center fontColorOne text-shadow025Four zindexOne"> <span class="bordered-bottomTwo">Established in</span> 2017</h3>
+         </span>
+         <span class="widthThreeQuarterFlex positionRelative marginauto easing">
+         <b class=" widthFullFlex floatLeft positionRelative lineHeightFifteen fontSizeTen text-align-center fontColorThree text-shadow05Four zindexOne"><span class="">All Videos</span></b>
+         </span>
+         <span class="widthThreeQuarterFlex positionRelative marginauto easing">
+            <h3 class="widthFullFlex floatLeft positionRelative lineHeightFive fontSizeThree text-align-center fontColorOne text-shadow025Four zindexOne">
+               <span class="bordered-bottomTwo"> Products</span> / <span class="bordered-bottomTwo">Apps</span> / <span class="bordered-bottomTwo">Pieces</span> 
+            </h3>
+         </span>
+         <h4 class="positionAbsolute
+            positionLeft widthQuarterFlex centerdiv lineHeightFifteen fontSizeFifteen text-align-left fontColorOne">
+            <span class="floatLeft positionRelative opacity025">
+            <b>.01</b>
+            </span>
+         </h4>
+         <span class="animated enterUp positionBottomRight positionAbsolute widthHalfFlex heightThreeQuarterFlex">
+            <manatdesk ng:show="startAnimation" class="animated enterUpBounce delay05 positionAbsolute positionBottom heightFullFlex "></manatdesk>
+         </span>
+         <span class="positionAbsolute positionBottomLeft widthHalfFlex heightTenFlex">
+            <hr class="vertline marginauto positionAbsolute positionBottom animated growvert backgroundColorWhite">
+         </span>
+      </span>
+   </span>
+
+   <span
+      ng:class="{
+      'widthFullFlex' : !componentMenu,
+      'widthThreeQuarterFlex' : componentMenu
+      }"
+      class="positionRelative heightThreeQuarterFlex floatRight zindexFive">
+      
+
+      <hr class="horline marginauto positionAbsolute positionBottomLeft animated growhor ColorOneLeftClearGradient">
+      <!-- video component 1 -->
+      <ul ng-repeat="post in data | filter:filters | limitTo:1:0" class="positionRelative widthHalfFlex heightFullFlex backgroundteam floatLeft easing">
+         <span class="
+            positionAbsolute positionCenter opacity095
+            backgroundColorWhite widthFullFlex heightFullFlex">
+         </span>
+         <span ng:click="postpreview = !postpreview; postinationToggle(post.type)" class="showOnHoverSwitch
+            widthFullFlex heightFullFlex
+            positionRelative floatLeft easing">
+            <span class="
+               spacedLarge overflowhidden box-shadowFiveStraight
+               positionRelative floatLeft easing">
+               <span class="
+                  bordered-TwoSmall
+                  spacedBorderSmall
+                  centerdiv
+                  backgroundColorTwo
+                  border-radius1
+                  overflowhidden
+                  positionAbsolute
+                  positionCenter floatLeft easing">
+                  <!-- showOnHover // background -->
+                  <span class="showOnHover positionAbsolute positionCenter
+                     backgroundColorWhite widthFullFlex heightFullFlex">
+                     
+                     <!-- Filler -->
+                     <span class="positionRelative widthFullFlex floatLeft widthFullFlex heightTenFlex">
+                     </span><br>
+                     <ul class="positionRelative widthFullFlex floatLeft easing">
+                        <span class="
+                           spacedSmall overflowhidden
+                           positionRelative floatLeft easing">
+                        <span class="
+                           centerdiv
+                           widthFullFlex positionRelative border-radius1 centerdiv opacity075 fontSizeThree fontColorFourOnHover lineHeightFour easing">
+                           {{post.description}}</span>
+                        </span>
+                     </ul>
+                  </span>
+                  <!-- hideOnHover // background -->
+                  <span class="hideOnHover positionAbsolute positionCenter
+                     backgroundColorWhite widthFullFlex heightFullFlex">
+                     <ul class="positionRelative widthFullFlex heightFullFlex floatLeft zindexOne easing">
+                        <h4 class="font-family-snippet positionAbsolute
+                           positionTopRight heightTenFlex lineHeightTen fontSizeTen text-align-right fontColorFive">
+                           <span class="divcenter positionRelative opacity01">
+                           <b>Latest</b>
+                           </span>
+                        </h4>
+                        <span class="animated enterUpObject delay025 zindexOne positionAbsolute positionTopRight widthFullFlex heightFive">
+                        <img src="./svg/close.svg" class="widthTwoFivevh heightFullFlex marginTwoFiveRight floatRight">
+                        <img src="./svg/close.svg" class="widthTwoFivevh heightFullFlex marginTwoFiveRight floatRight">
+                        <img src="./svg/close.svg" class="widthTwoFivevh heightFullFlex marginTwoFiveRight floatRight">
+                        <img src="./svg/close.svg" class="widthTwoFivevh heightFullFlex marginTwoFiveRight floatRight">
+                        </span>
+                        <span class="animated enterUpObject delay025 zindexOne positionAbsolute positionCenter widthFive heightFive"><img src="./svg/play.svg" class="widthFullFlex heightFullFlex"></span>
+                        <!-- Filler -->
+                        <span class="positionRelative widthFullFlex floatLeft widthFullFlex heightTenFlex">
+                        </span><br>
+                        <!-- text here-->
+                        <span class="positionAbsolute positionBottom widthFullFlex floatLeft
+                           ">
+                           <span class="
+                              spacedSmall overflowhidden
+                              positionRelative floatLeft easing">
+                              <span class="animated enterUpObject delay025 zindexOne positionRelative widthFullFlex heightFive">
+                              <img src="./svg/close.svg" class="widthTwoFivevh heightFullFlex marginTwoFiveRight floatLeft">
+                              <img src="./svg/close.svg" class="widthTwoFivevh heightFullFlex marginTwoFiveRight floatLeft">
+                              <img src="./svg/close.svg" class="widthTwoFivevh heightFullFlex marginTwoFiveRight floatLeft">
+                              <img src="./svg/close.svg" class="widthTwoFivevh heightFullFlex marginTwoFiveRight floatLeft">
+                              </span>
+                              <hr>
+                              <h3 class="widthFullFlex floatLeft positionRelative lineHeighFive fontSizeThree text-align-left fontColorOne text-shadow05OffWhite zindexOne"><b>{{post.authorfull}}</b></h3>
+                              <span class="
+                                 font-family-snippet
+                                 widthFullFlex positionRelative
+                                 floatLeft lineHeightFive fontSizeTwoFive text-align-left fontColorThree text-shadow05OffWhite easing">
+                              <b>
+                              <span class="animated enterUpObject">{{post.meta.views}} </span>
+
+                                    <span class="animated enterUpObject fontColorSix"> | </span>
+
+                                    <span class="animated enterUpObject fontColorSix">
+
+                                    <img src="./svg/arrow-up.svg" class="widthTwoFivevh heightTwoFiveFlex">
+
+                                    {{post.meta.likes}}</span>
+
+                                    <span class="animated enterUpObject fontColorSeven">
+
+                                    <img src="./svg/arrow-down.svg" class="widthTwoFivevh heightTwoFiveFlex">
+
+                                    {{post.meta.hates}}</span>
+
+                              </b>
+                              </span>
+                              <h3 class="widthFullFlex floatLeft positionRelative lineHeightSevenFive fontSizeFive text-align-left fontColorFour text-shadow05OffWhite zindexOne"><b>{{post.title}}</b></h3>
+                           </span>
+                        </span>
+                     </ul>
+                     <span style="
+                              background-image: url('/thumbs/{{post.photo}}');
+                              background-size: cover;
+                              background-repeat: no-repeat;"
+                              class="
+                        opacity05
+                        positionAbsolute positionCenter widthFullFlex heightFullFlex">
+                     </span>
+                     <span class="
+                        whiteToClearGradient
+                        positionAbsolute positionCenter widthFullFlex heightFullFlex">
+                     </span>
+                     <imaclinedone class="
+                        opacity025
+                        positionAbsolute positionCenter widthHalfFlex heightHalfFlex">
+                     </imaclinedone>
+                  </span>
+               </span>
+            </span>
+
+            <ul>
+               <li ng-repeat="posterinfo in posttype | limitTo:1:postination.count">
+                  <ng-include src="posterinfo.directive"></ng-include>
+               </li>
+            </ul>
+      
+         </span>
+
+
+      </ul>
+      <!-- horizontal list components -->
+      <ul class="backgroundColorOne positionRelative widthHalfFlex heightFullFlex floatLeft easing">
+         <span class="
+            spacedMid
+            positionRelative floatLeft easing">
+            <!-- video component 2 -->
+            <ul  ng-repeat="post in data | filter:filters | limitTo:4:1" class="positionRelative widthHalfFlex heightHalfFlex floatLeft easing">
+               <span ng:click="postpreview = !postpreview; postinationToggle(post.type)" class="showOnHoverSwitch
+                  widthFullFlex heightFullFlex
+                  positionRelative floatLeft easing">
+                  <span class="
+                     spacedSmall border-radius1 buttonbox-shadowDark backgroundColorTwo
+                     positionRelative floatLeft easing">
+
+                        <h4 class="font-family-snippet positionAbsolute
+                        positionOverFiveTopLeftIndex
+                        zindexOne
+                        border-radius-circle
+                        heightFive
+                        widthFivevh
+                        backgroundColorOneThree lineHeightFive fontSizeTwoFive 
+                        text-align-center fontColorWhite">
+                           <span class="centerdiv positionRelative text-align-center">
+                              <b class="ng-binding">{{$index}}</b>
+                           </span>
+                        </h4>
+
+                     <span class="
+                        spacedTiny
+                        centerdiv
+                        backgroundColorTwo
+                        border-radius1
+                        overflowhidden
+                        positionAbsolute
+                        positionCenter floatLeft easing">
+                        <!-- showOnHover // background -->
+                        <span class="showOnHover positionAbsolute positionCenter
+                           border-radius1 overflowhidden
+                           backgroundColorWhite widthFullFlex heightFullFlex">
+                           
+                           <!-- Filler -->
+                           <span class="positionRelative widthFullFlex floatLeft widthFullFlex heightTenFlex">
+                           </span><br>
+                           <ul class="positionRelative widthFullFlex floatLeft easing">
+                              <span class="
+                                 spacedSmall overflowhidden
+                                 positionRelative floatLeft easing">
+                              <span class="
+                                 centerdiv
+                                 widthFullFlex positionRelative border-radius1 centerdiv opacity075 fontSizeTwo fontColorFourOnHover lineHeightThree easing">{{post.description}}</span>
+                              </span>
+                           </ul>
+                        </span>
+                        <!-- hideOnHover // background -->
+                        <span class="hideOnHover positionAbsolute positionCenter
+                           border-radius1 overflowhidden
+                           backgroundColorWhite widthFullFlex heightFullFlex">
+                           <ul class="positionRelative widthFullFlex heightFullFlex floatLeft zindexOne easing">
+                              <h4 class="font-family-snippet positionAbsolute
+                                 positionTopRight heightTenFlex lineHeightTen fontSizeTen text-align-right fontColorFive">
+                                 <span class="divcenter positionRelative opacity01">
+                                 <b>{{$index}}</b>
+                                 </span>
+                              </h4>
+
+                              <span class="animated enterUpObject delay025 zindexOne positionAbsolute positionTopRight widthFullFlex heightFive">
+                              <img src="./svg/close.svg" class="widthTwoFivevh heightFullFlex marginTwoFiveRight floatRight">
+                              <img src="./svg/close.svg" class="widthTwoFivevh heightFullFlex marginTwoFiveRight floatRight">
+                              <img src="./svg/close.svg" class="widthTwoFivevh heightFullFlex marginTwoFiveRight floatRight">
+                              <img src="./svg/close.svg" class="widthTwoFivevh heightFullFlex marginTwoFiveRight floatRight">
+                              </span>
+                              <span class="animated enterUpObject delay025 zindexOne positionAbsolute positionCenter widthFive heightFive"><img src="./svg/play.svg" class="widthFullFlex heightFullFlex"></span>
+                              <!-- Filler -->
+                              <span class="positionRelative widthFullFlex floatLeft widthFullFlex heightTenFlex">
+                              </span><br>
+                              <!-- text here-->
+                              <span class="positionAbsolute positionBottom widthFullFlex floatLeft
+                                 ">
+                                 <span class="
+                                    spacedSmall overflowhidden
+                                    positionRelative floatLeft easing">
+                                    <span class="animated enterUpObject delay025 zindexOne positionRelative widthFullFlex heightFive">
+                                    <img src="./svg/close.svg" class="widthTwoFivevh heightFullFlex marginTwoFiveRight floatLeft">
+                                    <img src="./svg/close.svg" class="widthTwoFivevh heightFullFlex marginTwoFiveRight floatLeft">
+                                    <img src="./svg/close.svg" class="widthTwoFivevh heightFullFlex marginTwoFiveRight floatLeft">
+                                    <img src="./svg/close.svg" class="widthTwoFivevh heightFullFlex marginTwoFiveRight floatLeft">
+                                    </span>
+                                    <hr>
+                                    <h3 class="widthFullFlex floatLeft positionRelative lineHeighFive fontSizeTwo text-align-left fontColorOne text-shadow05OffWhite zindexOne"><b>{{post.authorfull}}</b></h3>
+                                    <span class="
+                                       font-family-snippet
+                                       widthFullFlex positionRelative
+                                       floatLeft lineHeightFive fontSizeTwoFive text-align-left fontColorThree text-shadow05OffWhite easing">
+                                    <b>
+                                    <span class="animated enterUpObject">{{post.meta.views}}</span>
+
+                                    <span class="animated enterUpObject fontColorSix"> | </span>
+
+                                    <span class="animated enterUpObject fontColorSix">
+
+                                    <img src="./svg/arrow-up.svg" class="widthTwoFivevh heightTwoFiveFlex">
+
+                                    {{post.meta.likes}}</span>
+
+                                    <span class="animated enterUpObject fontColorSeven">
+
+                                    <img src="./svg/arrow-down.svg" class="widthTwoFivevh heightTwoFiveFlex">
+
+                                    {{post.meta.hates}}</span>
+
+                                    </b>
+                                    </span>
+                                    <h3 class="widthFullFlex floatLeft positionRelative lineHeighFive fontSizeTwoFive text-align-left fontColorFour text-shadow05OffWhite zindexOne"><b>{{post.title}}</b></h3>
+                                 </span>
+                              </span>
+                           </ul>
+                           <span style="
+                              background-image: url('/thumbs/{{post.photo}}');
+                              background-size: cover;
+                              background-repeat: no-repeat;"
+
+                             class="
+                              opacity05
+                              border-radius1 overflowhidden
+                              positionAbsolute positionCenter
+                               widthFullFlex heightFullFlex">
+                           </span>
+                           <span class="
+                              whiteToClearGradient
+                              border-radius1 overflowhidden
+                              positionAbsolute positionCenter widthFullFlex heightFullFlex">
+                           </span>
+                           <imaclinedone class="
+                              opacity05
+                              positionAbsolute positionCenter widthHalfFlex heightHalfFlex">
+                           </imaclinedone>
+                        </span>
+                     </span>
+                  </span>
+
+                  <ul>
+                     <li ng-repeat="posterinfo in posttype | limitTo:1:postination.count">
+                        <ng-include src="posterinfo.directive"></ng-include>
+                     </li>
+                  </ul>
+
+               </span>
+            </ul>
+         </span>
+      </ul>
+
+      </span>
+
+      
+   </span>
+   
+   <span
+      ng:mouseenter="componentMenu = true"
+      ng:mouseleave="componentMenu = false"
+      ng:show="componentMenu == true"
+      ng:class="{
+      'widthQuarter' : componentMenu
+      }"
+      class="positionFixed positionLeft heightFull floatLeft zindexTen backgroundGridColorWhite box-shadowSixStraight">
+      <filtermenu></filtermenu>
+   </span>
+            
+   <span
+      ng:class="{
+      'widthFullFlex' : !componentMenu,
+      'widthThreeQuarterFlex' : componentMenu
+      }"
+      class="backgroundGridColorWhite positionRelative floatRight">
+      <span class="backgroundColorWhite positionRelative widthFullFlex floatLeft">
+      
+         <ul class="floatLeft heightTen widthFullFlex backgroundGridColorOne positionRelative">
+               
+               <span class="textOnHoverSwitch  animated enterUpObject delay025 zindexTen positionRelative floatLeft
+                  widthFive heightTen" ng:click="componentMenu = !componentMenu">
+               <img src="./svg/arrow-left.svg" class="positionAbsolute positionCenter widthQuarterFlex heightQuarterFlex"></span>
+               
+               <span class=" animated enterUpObject delay025 zindexTen positionRelative floatRight
+                  widthFive heightTen" ng:click="navMenu = !navMenu"><img src="./svg/four/close.svg" class="positionAbsolute positionCenter widthQuarterFlex heightQuarterFlex"></span>
+
+                  <span class=" animated enterUpObject delay025 zindexTen positionRelative floatRight
+                  widthFive heightTen" ng:click="categoryMenu = !categoryMenu"><img src="./svg/arrow-down.svg" class="positionAbsolute positionCenter widthQuarterFlex heightQuarterFlex"></span>
+
+                  <!-- dark show -->
+                  <ul class="positionRelative widthStatic marginauto text-align-center">
+
+                     <span class="text-align-center zindexTen positionRelative heightFullFlex floatRight easing">
+
+                        <span ng-repeat="cats in meta" class="centerdiv text-align-center zindexTen positionRelative heightTen marginTwoFiveLeft floatLeft easing">
+
+                           <span ng:click="filters.category = cats.category;
+                                 filters.subcategory = '';
+                                 filters.tag = '';"
+
+                                 ng:class="{
+                              'backgroundColorTwo box-shadowSixStraight border-radius' : filters.category == cats.category
+                              }"
+
+                               class="centerdiv textOnHoverSwitch paddingTwoFive positionRelative border-radius1 backgroundColorWhite backgroundColorTwoOnHover centerdiv fontSizeTwoFive fontColorOne fontColorFiveOnHover lineHeightTwoFive easing">
+                              {{cats.category}}
+                              <span class="floatLeft animated enterUpObject delay025 zindexOne positionRelative widthTwoFive heightTwoFive marginSevenFiveRight"><img src="./svg/close.svg" class="widthFullFlex heightFullFlex"></span>
+                           </span>
+                        </span>
+
+                     </span>
+
+                  </ul>
+
+               <!-- dark show -->
+               <span class="centerdiv text-align-center positionRelative heightFullFlex marginTwoFiveLeft floatLeft zindexFive easing">
+                  <span class="centerdiv textOnHoverSwitch paddingTwoFive positionRelative buttonbox-shadowSix border-radius1 backgroundColorFive backgroundColorTwoOnHover centerdiv fontSizeTwoFive fontColorOne fontColorFiveOnHover lineHeightTwoFive easing">
+                  all
+                  <span class="floatLeft animated enterUpObject delay025 zindexOne positionRelative widthTwoFive heightTwoFive marginSevenFiveRight"><img src="./svg/close.svg" class="widthFullFlex heightFullFlex"></span>
+                  </span>
+               </span>
+
+               <span ng:show="navMenu" class="animated enterUpObject zindexTen positionAbsolute positionTopRight floatRight
+                  widthFive backgroundGridColorOne">
+                     
+                     <span class=" animated enterUpObject delay025 zindexTen positionRelative floatRight
+                     widthFive heightTen" ng:click="navMenu = !navMenu"><img src="./svg/four/close.svg" class="positionAbsolute positionCenter widthQuarterFlex heightQuarterFlex"></span>
+
+                     <span class="textOnHoverSwitch  animated enterUpObject delay025 zindexTen positionRelative floatRight
+                           widthFullFlex heightTen" ng:click="listholderresetproduct();">
+                        <img src="./svg/five/close.svg" class="positionAbsolute positionCenter widthQuarterFlex heightQuarterFlex"></span>
+                     
+                     
+                        <span class=" animated enterUpObject delay025 zindexTen positionRelative floatRight
+                           widthFullFlex heightTen" ng:click="listholderresetnumber();"><img src="./svg/close.svg" class="positionAbsolute positionCenter widthQuarterFlex heightQuarterFlex"></span>
+                     
+                     
+                        <span class=" animated enterUpObject delay025 zindexTen positionRelative floatRight
+                           widthFullFlex heightTen" ng:click="listholderresetgrid();"><img src="./svg/arrow-up.svg" class="positionAbsolute positionCenter widthQuarterFlex heightQuarterFlex"></span>
+                     
+                     
+                        <span class=" animated enterUpObject delay025 zindexTen positionRelative floatRight
+                           widthFullFlex heightTen" ng:click="listholderresetlist();"><img src="./svg/arrow-down.svg" class="positionAbsolute positionCenter widthQuarterFlex heightQuarterFlex"></span>
+                     
+                     
+                        <span class=" animated enterUpObject delay025 zindexTen positionRelative floatRight
+                           widthFullFlex heightTen" ng:click="listholderresetcard();"><img src="./svg/arrow-down.svg" class="positionAbsolute positionCenter widthQuarterFlex heightQuarterFlex"></span>
+                     
+                     
+                        <span class=" animated enterUpObject delay025 zindexTen positionRelative floatRight
+                           widthFullFlex heightTen" ng:click="listholderresetfull();"><img src="./svg/arrow-down.svg" class="positionAbsolute positionCenter widthQuarterFlex heightQuarterFlex"></span>
+
+                        <span class=" animated enterUpObject delay025 zindexTen positionRelative floatRight
+                           widthFullFlex heightTen" ng:click="navMenu = !navMenu"><img src="./svg/four/close.svg" class="positionAbsolute positionCenter widthQuarterFlex heightQuarterFlex"></span>
+
+                  </span>
+            
+         </ul>
+
+         <!-- search input -->
+         <span ng:show="categoryMenu" class="positionRelative widthFullFlex centerdiv easing zindexOne backgroundGridColorOffWhite overflowhidden">
+
+            <!-- dark show -->
+               <li ng:click="tagMenu = !tagMenu" class="centerdiv text-align-center positionAbsolute positionLeft heightFullFlex marginTwoFiveLeft floatLeft easing">
+                  <span class="floatLeft animated enterUpObject delay025 zindexOne positionRelative widthTwoFive heightTwoFive marginSevenFiveRight"><img src="./svg/arrow-left.svg" class="widthFullFlex heightFullFlex"></span>
+               </li>
+
+
+            <span class="positionRelative heightFullFlex widthStatic centerdiv easing zindexOne">
+
+
+               <span ng-repeat="cats in meta | filter:cats.category = filters.category" class="text-align-center zindexTen positionRelative overflowhidden floatLeft easing">
+               
+
+                  <span ng-repeat="subs in cats.subcategories" class="centerdiv text-align-center zindexTen positionRelative marginTwoFiveTopBottomLeft paddingTwoFive floatLeft easing">
+                     <span ng:click="filters.category = cats.category;
+                           filters.subcategory = subs.name;
+                           filters.tag = '';"
+
+                           ng:class="{
+                        'backgroundColorTwo box-shadowSixStraight border-radius' : filters.subcategory == subs.name
+                        }"
+
+                         class="centerdiv textOnHoverSwitch paddingTwoFive positionRelative border-radius1 backgroundColorWhite backgroundColorTwoOnHover centerdiv fontSizeTwoFive fontColorOne fontColorFiveOnHover lineHeightTwoFive easing">
+                     {{subs.name}}
+                     <span class="floatLeft animated enterUpObject delay025 zindexOne positionRelative widthTwoFive heightTwoFive marginSevenFiveRight"><img src="./svg/close.svg" class="widthFullFlex heightFullFlex"></span>
+                     </span>
+                  </span>
+
+               </span>
+
+               
+            </span>
+
+         </span>
+
+         <!-- search input -->
+         <span ng:show="tagMenu" class="positionRelative heightTen widthFullFlex centerdiv easing zindexOne backgroundGridColorWhite">
+
+            <!-- dark show -->
+               <li class="centerdiv text-align-center positionAbsolute positionLeft heightFullFlex marginTwoFiveLeft floatLeft easing">
+                  <span class="floatLeft animated enterUpObject delay025 zindexOne positionRelative widthTwoFive heightTwoFive marginSevenFiveRight"><img src="./svg/arrow-left.svg" class="widthFullFlex heightFullFlex"></span>
+               </li>
+
+
+            <span class="positionRelative heightFullFlex widthStatic overflowhidden centerdiv easing zindexOne">
+
+               <span ng-repeat="cats in meta | filter:cats.category = filters.category | limitTo:1:0" class="text-align-center zindexTen positionRelative heightFullFlex marginTwoFiveBottomLeft floatLeft easing">
+               
+                  <span ng-repeat="subs in cats.subcategories | filter:subs.name = filters.subcategory | limitTo:1:0" class="text-align-center zindexTen positionRelative heightFullFlex floatLeft easing">
+
+                     <span ng-repeat="tag in subs.tags" class="centerdiv text-align-center zindexTen positionRelative heightFullFlex marginTwoFiveTopBottomLeft floatLeft easing">
+                        <span ng:click="filters.category = cats.category;
+                           filters.subcategory = subs.name;
+                           filters.tag = tag.name;"
+
+                           ng:class="{
+                           'backgroundColorTwo box-shadowSixStraight border-radius' : filters.tag == tag.name
+                           }"
+
+                            class="centerdiv textOnHoverSwitch paddingTwoFive positionRelative border-radius1 backgroundColorWhite backgroundColorTwoOnHover centerdiv fontSizeTwoFive fontColorOne fontColorFiveOnHover lineHeightTwoFive easing">
+                     {{tag.name}}
+                     <span class="floatLeft animated enterUpObject delay025 zindexOne positionRelative widthTwoFive heightTwoFive marginSevenFiveRight"><img src="./svg/close.svg" class="widthFullFlex heightFullFlex"></span>
+                     </span>
+
+                     </span>
+
+                  </span>
+
+               </span>
+
+            </span>
+
+         </span>
+
+         <!-- search input -->
+         <span class="positionRelative heightTen widthFullFlex centerdiv easing zindexOne">
+
+            <span ng:click="refineMenu = !refineMenu" class="centerdiv text-align-center positionAbsolute positionLeft heightFullFlex marginTwoFiveLeft floatLeft easing">
+               <span class="floatLeft animated enterUpObject delay025 zindexOne positionRelative widthTwoFive heightTwoFive marginSevenFiveRight"><img src="./svg/arrow-down.svg" class="widthFullFlex heightFullFlex"></span>
+            </span>
+
+         <span class="positionRelative heightFullFlex widthStatic centerdiv easing zindexOne">
+         <span class="positionRelative heightFullFlex widthHalfFlex floatLeft easing">
+         <span class="spacedSmall floatLeft">
+         <input placeholder="By Name" class="placeholderOne no-padding fontSizeThree lineHeightFive fontColorThree no-border widthFullFlex heightFullFlex floatLeft" type="text" ng:model="filters.$" name="">
+         <span class="animated enterUpObject delay025 zindexOne positionAbsolute positionRight widthFive heightFive"><img src="./svg/arrow-left.svg" class="widthFullFlex heightFullFlex"></span>
+         </span>
+         </span>
+         <span class="positionRelative heightFullFlex widthHalfFlex floatLeft easing">
+         <span class="spacedSmall floatLeft">
+         <input placeholder="Search By Title" class="placeholderThree no-padding fontSizeThree lineHeightFive fontColorTwo no-border widthFullFlex heightFullFlex floatLeft" type="text" ng:model="filters.title" name="">
+         <span class="animated enterUpObject delay025 zindexOne positionAbsolute positionRight widthFive heightFive"><img src="./svg/arrow-left.svg" class="widthFullFlex heightFullFlex"></span>
+         </span>
+         </span>
+
+         </span>
+         </span>
+
+         <!-- search input -->
+         <span ng:show="refineMenu" class="positionRelative heightTen widthFullFlex centerdiv easing zindexOne backgroundGridColorWhite">
+
+            <!-- dark show -->
+               <li class="centerdiv text-align-center positionAbsolute positionLeft heightFullFlex marginTwoFiveLeft floatLeft easing">
+                  <span class="floatLeft animated enterUpObject delay025 zindexOne positionRelative widthTwoFive heightTwoFive marginSevenFiveRight"><img src="./svg/arrow-left.svg" class="widthFullFlex heightFullFlex"></span>
+               </li>
+
+
+            <span class="positionRelative heightFullFlex widthStatic centerdiv easing zindexOne">
+
+               <span ng-repeat="cats in meta | filter:cats.category = filters.category | limitTo:1:0" class="text-align-center zindexTen positionRelative heightFullFlex marginTwoFiveBottomLeft floatLeft easing">
+               
+                  <span ng-repeat="subs in cats.subcategories | filter:subs.name = filters.subcategory | limitTo:1:0" class="text-align-center zindexTen positionRelative heightFullFlex floatLeft easing">
+
+                     <span ng-repeat="tag in subs.tags" class="centerdiv text-align-center zindexTen positionRelative heightFullFlex marginTwoFiveTopBottomLeft floatLeft easing">
+                        <span ng:click="filters.category = cats.category;
+                           filters.subcategory = subs.name;
+                           filters.tag = tag.name;"
+
+                           ng:class="{
+                           'backgroundColorTwo box-shadowSixStraight border-radius' : filters.tag == tag.name
+                           }"
+
+                            class="centerdiv textOnHoverSwitch paddingTwoFive positionRelative border-radius1 backgroundColorWhite backgroundColorTwoOnHover centerdiv fontSizeTwoFive fontColorOne fontColorFiveOnHover lineHeightTwoFive easing">
+                     {{tag.name}}
+                     <span class="floatLeft animated enterUpObject delay025 zindexOne positionRelative widthTwoFive heightTwoFive marginSevenFiveRight"><img src="./svg/close.svg" class="widthFullFlex heightFullFlex"></span>
+                     </span>
+
+                     </span>
+
+                  </span>
+
+               </span>
+
+            </span>
+
+         </span>
+
+            <listproject></listproject>
+      </span>
+   </span>
+   </span>
+</ul>

@@ -1,0 +1,995 @@
+// Positions
+@mixin positionAbsolute {
+  position: absolute;
+}
+
+.positionAbsolute {
+  @include positionAbsolute;
+}
+
+@mixin positionFixed {
+  position: fixed;
+}
+
+.positionFixed {
+  @include positionFixed;
+}
+
+@mixin positionRelative {
+  position: relative;
+}
+
+.positionRelative {
+  @include positionRelative;
+}
+
+@mixin positionCenter {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.positionCenter {
+  @include positionCenter;
+}
+
+@mixin positionTopLogo {
+  top: 0;
+  bottom: auto;
+  left: 2.5vh;
+  right: auto;
+  margin: auto;
+}
+
+.positionTopLogo {
+  @include positionTopLogo;
+}
+
+@mixin positionLight1 {
+  top: 0;
+  bottom: auto;
+  left: 50%;
+  right: 0;
+  margin: auto;
+}
+
+.positionLight1 {
+  @include positionLight1;
+}
+
+@mixin positionLight2 {
+  top: -12.5%;
+  bottom: auto;
+  left: 25%;
+  right: 0;
+  margin: auto;
+}
+
+.positionLight2 {
+  @include positionLight2;
+}
+
+@mixin positionLight3 {
+  top: -12.5%;
+  bottom: auto;
+  left: -50%;
+  right: 0;
+  margin: auto;
+}
+
+.positionLight3 {
+  @include positionLight3;
+}
+
+@mixin positionLight4 {
+  top: 0;
+  bottom: auto;
+  left: -25%;
+  right: 0;
+  margin: auto;
+}
+
+.positionLight4 {
+  @include positionLight4;
+}
+@mixin positionTop {
+  top: 0;
+  bottom: auto;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.positionTop {
+  @include positionTop;
+}
+
+@mixin positionTopRight {
+  top: 0;
+  bottom: auto;
+  left: auto;
+  right: 0;
+  margin: auto;
+}
+
+.positionTopRight {
+  @include positionTopRight;
+}
+
+@mixin positionTopLeft {
+  top: 0;
+  bottom: auto;
+  left: 0;
+  right: auto;
+  margin: auto;
+}
+
+.positionTopLeft {
+  @include positionTopLeft;
+}
+
+@mixin positionBreadTop {
+  top: 10vh;
+  bottom: auto;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.positionBreadTop {
+  @include positionBreadTop;
+}
+
+@mixin positionBreadTopLeft {
+  top: 10vh;
+  bottom: auto;
+  left: 0;
+  margin: auto;
+}
+
+.positionBreadTopLeft {
+  @include positionBreadTopLeft;
+}
+
+@mixin positionBreadTopRight {
+  top: 10vh;
+  bottom: auto;
+  right: 0;
+  margin: auto;
+}
+
+.positionBreadTopRight {
+  @include positionBreadTopRight;
+}
+
+@mixin positionBottom {
+  top: auto;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.positionBottom {
+  @include positionBottom;
+}
+
+@mixin positionBreadBottom {
+  top: auto;
+  bottom: 10vh;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.positionBreadBottom {
+  @include positionBreadBottom;
+}
+
+@mixin positionBreadBottomLeft {
+  top: auto;
+  bottom: 10vh;
+  left: 0;
+  margin: auto;
+}
+
+.positionBreadBottomLeft {
+  @include positionBreadBottomLeft;
+}
+
+@mixin positionBreadBottomRight {
+  top: auto;
+  bottom: 10vh;
+  right: 0;
+  margin: auto;
+}
+
+.positionBreadBottomRight {
+  @include positionBreadBottomRight;
+}
+
+@mixin positionOverTwoFiveTopRight {
+  top: 0vh;
+  bottom: auto;
+  left: auto;
+  right: 2.5vh;
+  margin: auto;
+}
+
+.positionOverTwoFiveTopRight {
+  @include positionOverTwoFiveTopRight;
+}
+
+@mixin positionBetweenLeft {
+    top: 0;
+    bottom: 0;
+    left: -5vh;
+    right: auto;
+    margin: auto;
+}
+
+.positionBetweenLeft {
+  @include positionBetweenLeft ;
+}
+
+@mixin positionBetweenRight {
+    top: 0;
+    bottom: 0;
+    left: auto;
+    right: -5vh;
+    margin: auto;
+}
+
+.positionBetweenRight {
+  @include positionBetweenRight ;
+}
+
+@mixin positionBetweenBottom {
+    top: auto;
+    bottom: -5vh;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.positionBetweenBottom {
+  @include positionBetweenBottom ;
+}
+
+@mixin positionBetweenTop {
+    top: -5vh;
+    bottom: auto;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.positionBetweenTop {
+  @include positionBetweenTop ;
+}
+
+@mixin positionBeforeBubbleNotice {
+    top: -0.5vh;
+    right: -0.5vh;
+    margin: auto;
+}
+
+.positionBeforeBubbleNotice {
+  @include positionBeforeBubbleNotice ;
+}
+
+@mixin positionBeforeIconNotice {
+    top: -0.5vh;
+    right: -0.5vh;
+    margin: auto;
+}
+
+.positionBeforeIconNotice {
+  @include positionBeforeIconNotice ;
+}
+
+@mixin positionBeforeIcon {
+    top: 0;
+    bottom: 0;
+    left: -2.5vh;
+    right: auto;
+    margin: auto;
+}
+
+.positionBeforeIcon {
+  @include positionBeforeIcon ;
+}
+
+@mixin positionOverCenterRightOutro {
+    top: 3vh;
+    bottom: auto;
+    /* left: -9.5vw; */
+    right: -12.5vw;
+    margin: auto;
+}
+
+.positionOverCenterRightOutro {
+  @include positionOverCenterRightOutro ;
+}
+
+@mixin positionOverCenterLeftOutro {
+    top: 2vh;
+    bottom: auto;
+    left: -10vw;
+    right: auto;
+    margin: auto;
+}
+
+.positionOverCenterLeftOutro {
+  @include positionOverCenterLeftOutro ;
+}
+
+@mixin positionOverFiveTopLeftOutro {
+top: 1.5vh;
+    bottom: auto;
+    left: -9.5vw;
+    right: auto;
+    margin: auto;
+}
+
+.positionOverFiveTopLeftOutro {
+  @include positionOverFiveTopLeftOutro ;
+}
+
+@mixin positionOverFiveBottomRightOutro {
+    top: auto;
+    bottom: -2.5vh;
+    left: 0vh;
+    right: auto;
+    margin: auto;
+}
+
+.positionOverFiveBottomRightOutro {
+  @include positionOverFiveBottomRightOutro ;
+}
+
+@mixin positionOverTenBottomLeftOutro {
+    top: auto;
+    bottom: -5vh;
+    left: auto;
+    right: 0vh;
+    margin: auto;
+}
+
+.positionOverTenBottomLeftOutro {
+  @include positionOverTenBottomLeftOutro ;
+}
+
+@mixin positionOverFiveBottomLeftOutro {
+    top: auto;
+    bottom: -2.5vh;
+    left: auto;
+    right: 0vh;
+    margin: auto;
+}
+
+.positionOverFiveBottomLeftOutro {
+  @include positionOverFiveBottomLeftOutro ;
+}
+
+@mixin positionOverTenTopRightOutro {
+    top: -5vh;
+    bottom: auto;
+    right: auto;
+    left: 0vh;
+    margin: auto;
+}
+
+.positionOverTenTopRightOutro {
+  @include positionOverTenTopRightOutro ;
+}
+
+@mixin positionOverFiveTopRightOutro {
+    top: -2.5vh;
+    bottom: auto;
+    right: auto;
+    left: 0vh;
+    margin: auto;
+}
+
+.positionOverFiveTopRightOutro {
+  @include positionOverFiveTopRightOutro ;
+}
+
+@mixin positionOverFiveTopLeftIndex {
+    top: -2.5vh;
+    bottom: auto;
+    left: auto;
+    right: -2.5vh;
+    margin: auto;
+}
+
+.positionOverFiveTopLeftIndex {
+  @include positionOverFiveTopLeftIndex ;
+}
+
+@mixin positionOverTenTopLeftIndex {
+    top: -10vh;
+    bottom: auto;
+    left: auto;
+    right: -10vh;
+    margin: auto;
+}
+
+.positionOverTenTopLeftIndex {
+  @include positionOverTenTopLeftIndex ;
+}
+
+@mixin positionOverFiveTopLeft {
+  top: 0vh;
+  bottom: auto;
+  left: 2.5vh;
+  right: auto;
+  margin: auto;
+}
+
+.positionOverFiveTopLeft {
+  @include positionOverFiveTopLeft ;
+}
+
+@mixin positionOverFiveBottom {
+  top: auto;
+  bottom: -5vh;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.positionOverFiveBottom {
+  @include positionOverFiveBottom;
+}
+
+@mixin positionUnderTwoFiveBottom {
+  top: auto;
+  bottom: 2.5%;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.positionUnderTwoFiveBottom {
+  @include positionUnderTwoFiveBottom;
+}
+
+@mixin positionUnderFiveBottom {
+  top: auto;
+  bottom: 5%;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.positionUnderFiveBottom {
+  @include positionUnderFiveBottom;
+}
+
+@mixin positionBottomLeftQuarter {
+  bottom: 0;
+  left: -12.5%;
+  margin: auto;
+}
+
+.positionBottomLeftQuarter  {
+  @include positionBottomLeftQuarter ;
+}
+
+@mixin positionBottomRightQuarter {
+  bottom: 0;
+  left: 87.5%;
+  margin: auto;
+}
+
+.positionBottomRightQuarter  {
+  @include positionBottomRightQuarter ;
+}
+
+@mixin positionBottomLeftInsideQuarter {
+  bottom: 0;
+  left: 12.5%;
+  margin: auto;
+}
+
+.positionBottomLeftInsideQuarter  {
+  @include positionBottomLeftInsideQuarter ;
+}
+
+@mixin positionBottomRightInsideQuarter {
+  bottom: 0;
+  right: 12.5%;
+  margin: auto;
+}
+
+.positionBottomRightInsideQuarter  {
+  @include positionBottomRightInsideQuarter ;
+}
+
+
+@mixin positionOverTenBottom {
+  top: auto;
+  bottom: -10%;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.positionOverTenBottom {
+  @include positionOverTenBottom;
+}
+
+@mixin positionOverFifteenBottom {
+  top: auto;
+  bottom: -15%;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.positionOverFifteenBottom {
+  @include positionOverFifteenBottom;
+}
+
+
+@mixin positionOverQuarterBottom {
+  top: auto;
+  bottom: -18.75%;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.positionOverQuarterBottom {
+  @include positionOverQuarterBottom;
+}
+
+@mixin positionOverBottomLeft {
+  top: auto;
+  bottom: -9.5%;
+  left: 0;
+  right: auto;
+  margin: auto;
+}
+
+.positionOverBottomLeft {
+  @include positionOverBottomLeft;
+}
+
+
+@mixin positionOverBottomLeftNav {
+  top: auto;
+  bottom: -6.25%;
+  left: 0;
+  right: auto;
+  margin: auto;
+}
+
+.positionOverBottomLeftNav {
+  @include positionOverBottomLeftNav;
+}
+
+@mixin positionOverBottomRight {
+  top: auto;
+  bottom: -9.5%;
+  left: auto;
+  right: 0;
+  margin: auto;
+}
+
+.positionOverBottomRight {
+  @include positionOverBottomRight;
+}
+
+@mixin positionOverBottom {
+  top: auto;
+  bottom: -25%;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.positionOverBottom {
+  @include positionOverBottom;
+}
+
+@mixin positionOverLeftHover {
+  top: 0;
+  bottom: 0;
+  left: -100%;
+  right: 0;
+  margin: auto;
+}
+
+.positionOverLeftHover {
+  @include positionOverLeftHover;
+}
+
+
+@mixin positionOverRightHover {
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  right: 0%;
+  margin: auto;
+}
+
+.positionOverRightHover {
+  @include positionOverRightHover;
+}
+
+@mixin positionOverBottomRightHover {
+  top: 100%;
+  bottom: 0;
+  left: 50%;
+  right: 0%;
+  margin: auto;
+}
+
+.positionOverBottomRightHover {
+  @include positionOverBottomRightHover;
+}
+
+@mixin positionOverBottomLeftHover {
+  top: 100%;
+  bottom: 0;
+  left: -100%;
+  right: 0%;
+  margin: auto;
+}
+
+.positionOverBottomLeftHover {
+  @include positionOverBottomLeftHover;
+}
+
+@mixin positionOverBottomQuarter {
+  top: auto;
+  bottom: -25%;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.positionOverBottomQuarter {
+  @include positionOverBottomQuarter;
+}
+
+@mixin positionOverBottomHalf {
+  top: auto;
+  bottom: -50%;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.positionOverBottomHalf {
+  @include positionOverBottomHalf;
+}
+
+@mixin positionOverBottomTwoThird {
+  top: auto;
+  bottom: -67%;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.positionOverBottomTwoThird {
+  @include positionOverBottomTwoThird;
+}
+
+@mixin positionOverBottomThreeQuarter {
+  top: auto;
+  bottom: -75%;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.positionOverBottomThreeQuarter {
+  @include positionOverBottomThreeQuarter;
+}
+
+@mixin positionOverBottomHover {
+  top: 50%;
+  bottom: -50%;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.positionOverBottomHover {
+  @include positionOverBottomHover;
+}
+
+.showOnHoverSwitch:hover .positionOverBottomHover {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+@mixin positionOverHalfBottom {
+  top: auto;
+  bottom: -37.5%;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.positionOverHalfBottom {
+  @include positionOverHalfBottom;
+}
+
+@mixin positionLeft {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+}
+
+.positionLeft  {
+  @include positionLeft ;
+}
+
+@mixin positionBottomLeft {
+  bottom: 0;
+  left: 0;
+  margin: auto;
+}
+
+.positionBottomLeft  {
+  @include positionBottomLeft ;
+}
+
+@mixin positionBottomCenterLeftQuarter {
+  bottom: 0%;
+  left: 0;
+  right: 25%;
+  margin: auto;
+}
+
+.positionBottomCenterLeftQuarter  {
+  @include positionBottomCenterLeftQuarter ;
+}
+
+@mixin positionBottomCenterLeftHalf {
+  bottom: 0%;
+  left: 0;
+  right: 50%;
+  margin: auto;
+}
+
+.positionBottomCenterLeftHalf  {
+  @include positionBottomCenterLeftHalf ;
+}
+
+@mixin positionBottomCenterLeftTwoThird {
+  bottom: 0%;
+  left: 67%;
+  right: 0;
+  margin: auto;
+}
+
+.positionBottomCenterLeftTwoThird  {
+  @include positionBottomCenterLeftTwoThird ;
+}
+
+@mixin positionBottomCenterLeftThreeQuarter {
+  bottom: 0%;
+  left: 0;
+  right: 75%;
+  margin: auto;
+}
+
+.positionBottomCenterLeftThreeQuarter  {
+  @include positionBottomCenterLeftThreeQuarter ;
+}
+
+@mixin positionBottomCenterRightQuarter {
+  bottom: 0%;
+  left: 25%;
+  right: 0;
+  margin: auto;
+}
+
+.positionBottomCenterRightQuarter  {
+  @include positionBottomCenterRightQuarter ;
+}
+
+@mixin positionBottomCenterRightHalf {
+  bottom: 0%;
+  left: 50%;
+  right: 0;
+  margin: auto;
+}
+
+.positionBottomCenterRightHalf  {
+  @include positionBottomCenterRightHalf ;
+}
+
+@mixin positionBottomCenterRightTwoThird {
+  bottom: 0%;
+  left: 0;
+  right: 67%;
+  margin: auto;
+}
+
+.positionBottomCenterRightTwoThird  {
+  @include positionBottomCenterRightTwoThird ;
+}
+
+@mixin positionBottomCenterRightThreeQuarter {
+  bottom: 0%;
+  left: 75%;
+  right: 0;
+  margin: auto;
+}
+
+.positionBottomCenterRightThreeQuarter  {
+  @include positionBottomCenterRightThreeQuarter ;
+}
+
+@mixin positionBottomLeftOffQuarter {
+  bottom: -18.75%;
+  left: 0;
+  margin: auto;
+}
+
+.positionBottomLeftOffQuarter  {
+  @include positionBottomLeftOffQuarter ;
+}
+
+@mixin positionBottomLeftOff {
+  bottom: -25%;
+  left: 0;
+  margin: auto;
+}
+
+.positionBottomLeftOff  {
+  @include positionBottomLeftOff ;
+}
+
+@mixin positionLeftOff {
+  top: 0;
+  bottom: 0;
+  left: -100%;
+  margin: auto;
+}
+
+.positionLeftOff  {
+  @include positionLeftOff ;
+}
+
+@mixin positionBottomOff {
+  top: 10vh;
+  bottom: auto;
+  left: 0;
+  margin: auto;
+}
+
+.positionBottomOff  {
+  @include positionBottomOff ;
+}
+
+
+@mixin positionTopOff {
+  top: auto;
+  bottom: 10vh;
+  left: auto;
+  margin: auto;
+}
+
+.positionTopOff  {
+  @include positionTopOff ;
+}
+
+@mixin positionRight {
+  top: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+}
+
+.positionRight  {
+  @include positionRight ;
+}
+
+@mixin positionBottomRight {
+  bottom: 0;
+  right: 0;
+  margin: auto;
+}
+
+.positionBottomRight  {
+  @include positionBottomRight ;
+}
+
+@mixin positionBottomOffTopRight {
+  top: -2.5vh;
+  right: -2.5vh;
+  margin: auto;
+}
+
+.positionBottomOffTopRight  {
+  @include positionBottomOffTopRight ;
+}
+
+@mixin positionBottomOffQuarterRight {
+  bottom: 0;
+  right: -18.75%;
+  margin: auto;
+}
+
+.positionBottomOffQuarterRight  {
+  @include positionBottomOffQuarterRight ;
+}
+
+@mixin positionBottomOffHalfRight {
+  bottom: 0;
+  right: -25%;
+  margin: auto;
+}
+
+.positionBottomOffHalfRight  {
+  @include positionBottomOffHalfRight ;
+}
+
+@mixin positionBottomRightOffQuarter {
+  bottom: -18.75%;
+  right: 0;
+  margin: auto;
+}
+
+.positionBottomRightOffQuarter  {
+  @include positionBottomRightOffQuarter ;
+}
+
+@mixin positionBottomRightOff {
+  bottom: -25%;
+  right: 0;
+  margin: auto;
+}
+
+.positionBottomRightOff  {
+  @include positionBottomRightOff ;
+}
+
+@mixin positionRightOff {
+  top: 0;
+  bottom: 0;
+  left: 100%;
+  margin: auto;
+}
+
+.positionRightOff  {
+  @include positionRightOff ;
+}
+
+@mixin positionUnderOff {
+  top: 0;
+  bottom: 200%;
+  left: 0;
+  margin: auto;
+}
+
+.positionUnderOff  {
+  @include positionUnderOff ;
+}
+
+@mixin positionOverOff {
+  top: 0;
+  bottom: -200%;
+  left: 0;
+  margin: auto;
+}
+
+.positionOverOff  {
+  @include positionOverOff ;
+}
+

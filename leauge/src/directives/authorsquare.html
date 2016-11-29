@@ -1,0 +1,26 @@
+<li class="widthFullFlex heightFullFlex floatLeft" >
+
+   <span class="positionAbsolute positionBottom widthFullFlex heightFullFlex floatLeft easing zindexOne">
+
+      <div class="spacedMid positionRelative">
+         <span class="positionAbsolute positionBottom floatLeft
+            widthFullFlex heightTen backgroundColorOne border-radius1" ng-repeat="member in team | filter: member.firstname = post.author | limitTo:1:0">
+
+            <span class="widthFullFlex positionAbsolute positionBottom marginauto floatLeft">
+
+               <img ng-repeat="pics in member.photos | limitTo:1:0" class="
+               animated
+               delay025
+               enterDown
+               widthThreeQuarterFlex
+               positionAbsolute positionBottom" ng-src="./person/{{pics.link}}.png">
+
+            </span>
+
+         </span>
+      </div>
+
+
+   </span>
+   
+</li>

@@ -1,0 +1,89 @@
+{
+	"records":[
+		{
+		"quote":"Getting Started",
+		"title":"Established ColorLeague",
+		"site":"Contract or Full-Time",
+		"year":"Nov' 16",
+		"icon":"imacone.svg"
+		},
+		{
+		"quote":"Front/Back-End & Full-Stack",
+		"title":"Hired Developers",
+		"site":"Samuel & Joseph",
+		"year":"Nov' 16",
+		"icon":"imacone.svg"
+		},
+		{
+		"quote":"Completed First Out-Of-State",
+		"title":"Contract Oppurtunity",
+		"site":"LiveLovely & Trulia/Zillow",
+		"year":"Nov' 16",
+		"icon":"imacone.svg"
+		},
+		{
+		"quote":"Contracted Developers to",
+		"title":"Outside Enterprises",
+		"site":"Walgreens/Duane Reade",
+		"year":"Nov' 16",
+		"icon":"imacone.svg"
+		},
+		{
+		"quote":"Lauching Our First",
+		"title":"Series of In-House Apps",
+		"site":"Yolk & DriedYolk",
+		"year":"Dec' 16",
+		"icon":"imacone.svg"
+		},
+		{
+		"quote":"UI Frameworks & Standards",
+		"title":"Hired UI/UX Engineers",
+		"site":"Maisie & Ginger",
+		"year":"Nov' 16",
+		"icon":"imacone.svg"
+		},
+		{
+		"quote":"Agile/Scrum Envirnment",
+		"title":"Hired Project Managers",
+		"site":"Desmond & Maisie",
+		"year":"Nov' 16",
+		"icon":"imacone.svg"
+		},
+		{
+		"quote":"Audiences by Analitics",
+		"title":"Hired Content Creatives",
+		"site":"Nigel & Desmond",
+		"year":"Nov' 16",
+		"icon":"imacone.svg"
+		},
+		{
+		"quote":"Promotional & Branding",
+		"title":"Hired Designers",
+		"site":"Nigel, Ginger & Maisie",
+		"year":"Nov' 16",
+		"icon":"imacone.svg"
+		},
+		{
+		"quote":"Contracted Designers to",
+		"title":"Local Buinesses",
+		"site":"Shoot-Proof",
+		"year":"Nov' 16",
+		"icon":"imacone.svg"
+		},
+		{
+		"quote":"Begun Production of",
+		"title":"In-House Content",
+		"site":"Tutorials & Challeneges ",
+		"year":"Nov' 16",
+		"icon":"imacone.svg"
+		},
+		{
+		"quote":"Migrated Assets from",
+		"title":"Angular to React",
+		"site":"For All Products",
+		"year":"Nov' 16",
+		"icon":"imacone.svg"
+		}
+		
+	]
+}

@@ -1,0 +1,598 @@
+<!-- job steps -->
+   <span ng:repeat="steps in member.stepsinfos| limitTo:1:0" class="
+      showOnHoverSwitch
+      positionRelative
+      widthHalfFlex
+      heightHalf
+      backgroundColorWhite
+      floatLeft">
+
+
+      <span class="
+         spacedLarge overflowhidden
+         positionRelative floatLeft easing">
+         <!-- hide on hover -->
+         <span class="positionAbsolute positionRight widthQuarterFlex heightHalfFlex marginauto easing">
+            <imaclinedone class="positionAbsolute positionLeft widthThreeQuarterFlex heightFullFlex floatLeft"></imaclinedone>
+         </span>
+
+         <h3 class="font-family-snippet widthFullFlex floatLeft positionRelative lineHeightFive fontSizeFive text-align-left fontColorTwo text-shadow05OffWhite zindexOne"> <span class="backgroundColorOffWhite floatRight">1/4</span></h3>
+
+         <hr>
+
+         <span class="widthFullFlex positionRelative marginauto easing">
+
+         <h3 class="floatLeft widthFullFlex positionRelative zindexOne">
+            <p class="widthFullFlex">
+               
+               <span class="widthFullFlex positionRelative floatLeft text-shadow025Dark">
+                  
+                  <span class="text-align-center widthFullFlex positionRelative fontColorFour fontSizeTwoFive lineHeightTwoFive">{{member.name}}'s <b>Position</b> <span class="font-family-snippet"> As</span> </span>
+
+                  <hr>
+
+                  <b class="widthFullFlex lineHeightFive fontSizeFour fontColorTwo floatRight">{{steps.title}}</b>
+
+                  <hr>
+                  
+                  <span class="positionRelative widthFullFlex fontColorFive fontSizeTwoFive lineHeightTwoFive floatRight">
+
+                     <span ng:click="brandtab1 = !brandtab1" class="marginTwoFiveLeft floatRight 
+                     positionBeforeIcon
+                     positionAbsolute zindexOne widthTwoFivevh heightTwoFive"><img ng:show="!brandtab1" src="./svg/arrow-down.svg" class="positionCenter positionAbsolute widthHalfFlex heightHalfFlex">
+                     <img ng:show="brandtab1" src="./svg/one/close.svg" class="positionCenter positionAbsolute widthHalfFlex heightHalfFlex"></span>
+
+                     <span class="opacity025">
+                     <span class="font-family-snippet">Since</span> <b class="bordered-bottomOne fontColorSeven">Initial</b> Launch</span>
+
+                  </span>
+
+               </span>
+
+            </p>
+         </h3>
+         </span>
+
+         <hr>
+
+         <span class="floatLeft
+                     font-family-snippet
+                     text-align-left
+                     widthFullFlex positionRelative border-radius1
+                     fontSizeTwo fontColorSix lineHeightThree easing">
+               {{steps.description}}
+         </span>
+
+         <!-- show on hover -->
+         <span class="
+            backgroundColorWhite zindexOne
+            showOnHover positionAbsolute positionTop widthFullFlex heightFullFlex easing">
+            <span class="positionAbsolute positionRight widthQuarterFlex heightHalfFlex marginauto easing">
+               <imaclinedone class="positionAbsolute positionLeft widthThreeQuarterFlex heightFullFlex floatLeft"></imaclinedone>
+            </span>
+            <h3 class="font-family-snippet widthFullFlex floatLeft positionRelative lineHeightFive fontSizeFive text-align-left fontColorTwo text-shadow05OffWhite zindexOne"><span class="backgroundColorWhite">{{steps.titlehover}}:</span> </h3>
+            <span class="widthFullFlex positionRelative marginauto floatLeft easing">
+
+            <hr>
+
+            <p class="
+               font-family-snippet
+               floatLeft
+               text-align-left
+               widthFullFlex positionRelative
+               fontSizeTwo fontColorFive lineHeightTwoFive easing">
+               <span class=""> {{steps.descriptionhover}}</span>
+            </p>
+            </span>
+            <hr>
+
+            <span class="opacity025 lineHeightTwoFive fontSizeTwo text-align-left text-shadow05OffWhite floatLeft">
+               <span class="font-family-snippet">Responsibilties </span><b class="bordered-bottomOne">(Include)</b>
+            </span>
+
+            <hr>
+
+            <span ng:repeat="task in steps.responsibilities" class="paddingTwoFive marginOne border-radius1 backgroundColorOffWhite floatLeft">{{task.name}}</span>
+
+
+         </span>
+      </span>
+   </span>
+
+   <span ng:repeat="steps in member.stepsinfos| limitTo:1:0" class="showOnHoverSwitch text-align-center positionRelative widthHalfFlex heightHalf backgroundColorWhite floatLeft easing">
+      <span ng:click="popstart();" class="animated enterUpObject delay025 zindexFive positionAbsolute positionTopRight widthFivevh heightFive"><img src="./svg/close.svg" ng:click="
+         popclear = false;" class="zindexOne positionAbsolute positionCenter floatLeft widthHalfFlex heightHalfFlex"></span>
+      <!-- showOnHover // background -->
+      <span class="showOnHover positionAbsolute positionCenter 
+         backgroundColorWhite widthFullFlex heightFullFlex">
+         <span style="background-image: url('/photos/{{steps.backgroundone}}');
+         background-size: cover;" class="spacedLarge floatLeft box-shadowThreeStraight border-radius1 positionRelative overflowhidden">
+
+            <!-- washout background -->
+            <span class="positionAbsolute positionCenter opacity075
+               backgroundColorWhite widthFullFlex heightFullFlex">
+            </span>
+
+            <span class="floatLeft positionAbsolute positionTopRight widthTenvh heightTen zindexFive">
+               <img src="./svg/pageend.svg" class="positionAbsolute positionTopRight widthThreeQuarterFlex">
+            </span>
+
+         </span>
+      </span>
+      <!-- hideOnHover // background -->
+      <span class="hideOnHover positionAbsolute positionCenter 
+         backgroundColorWhite widthFullFlex heightFullFlex">
+         <span style="background-image: url('/photos/{{steps.backgroundtwo}}');
+         background-size: cover;" class="spacedLarge floatLeft box-shadowThreeStraight backgroundteamcolor border-radius1 positionRelative">
+            
+            <!-- washout background -->
+            <span class="positionAbsolute positionCenter opacity075
+               backgroundColorWhite widthFullFlex heightFullFlex">
+            </span>
+
+            <span class="floatLeft positionAbsolute positionTopRight widthTenvh heightTen zindexFive">
+               <img src="./svg/pageend.svg" class="positionAbsolute positionTopRight widthThreeQuarterFlex">
+            </span>
+
+         </span>
+      </span>
+      <span class="
+         positionAbsolute positionCenter
+         heightHalfFlex widthHalfFlex border-radius
+         floatRight zindexTen" style="background-image: url('/partners/{{post.brandicon}}.svg');
+         background-size: 100% 100%;">
+      </span>
+   </span>
+
+
+   <span ng:repeat="steps in member.stepsinfos| limitTo:1:1" class="showOnHoverSwitch text-align-center positionRelative widthHalfFlex heightHalf backgroundColorWhite floatLeft easing">
+      <span ng:click="popstart();" class="animated enterUpObject delay025 zindexFive positionAbsolute positionTopRight widthFivevh heightFive"><img src="./svg/close.svg" ng:click="
+         popclear = false;" class="zindexOne positionAbsolute positionCenter floatLeft widthHalfFlex heightHalfFlex"></span>
+      <!-- showOnHover // background -->
+      <span class="showOnHover positionAbsolute positionCenter 
+         backgroundColorWhite widthFullFlex heightFullFlex">
+         <span style="background-image: url('/photos/{{steps.backgroundone}}');
+         background-size: cover;" class="spacedLarge floatLeft box-shadowThreeStraight border-radius1 positionRelative">
+            <!-- washout background -->
+            <span class="positionAbsolute positionCenter opacity075
+               backgroundColorWhite widthFullFlex heightFullFlex">
+            </span>
+
+            <span class="floatLeft positionAbsolute positionTopRight widthTenvh heightTen zindexFive">
+               <img src="./svg/pageend.svg" class="positionAbsolute positionTopRight widthThreeQuarterFlex">
+            </span>
+         </span>
+      </span>
+      <!-- hideOnHover // background -->
+      <span class="hideOnHover positionAbsolute positionCenter 
+         backgroundColorWhite widthFullFlex heightFullFlex">
+         <span style="background-image: url('/photos/{{steps.backgroundtwo}}');
+         background-size: cover;" class="spacedLarge floatLeft box-shadowThreeStraight backgroundteamcolor border-radius1 positionRelative">
+            <!-- washout background -->
+            <span class="positionAbsolute positionCenter opacity075
+               backgroundColorWhite widthFullFlex heightFullFlex">
+            </span>
+
+            <span class="floatLeft positionAbsolute positionTopRight widthTenvh heightTen zindexFive">
+               <img src="./svg/pageend.svg" class="positionAbsolute positionTopRight widthThreeQuarterFlex">
+            </span>
+         </span>
+      </span>
+      <span class="
+         positionAbsolute positionCenter
+         heightHalfFlex widthHalfFlex border-radius
+         floatRight zindexTen" style="background-image: url('/partners/{{post.brandicon}}.svg');
+         background-size: 100% 100%;">
+      </span>
+   </span>
+
+   <!-- job steps -->
+   <span ng:repeat="steps in member.stepsinfos| limitTo:1:1" class="
+      showOnHoverSwitch
+      positionRelative
+      widthHalfFlex
+      heightHalf
+      backgroundColorWhite
+      floatLeft">
+      <span class="
+         spacedLarge overflowhidden
+         positionRelative floatLeft easing">
+         <!-- hide on hover -->
+         <span class="positionAbsolute positionRight widthQuarterFlex heightHalfFlex marginauto easing">
+            <imaclinedone class="positionAbsolute positionLeft widthThreeQuarterFlex heightFullFlex floatLeft"></imaclinedone>
+         </span>
+         <h3 class="font-family-snippet widthFullFlex floatLeft positionRelative lineHeightFive fontSizeFive text-align-left fontColorTwo text-shadow05OffWhite zindexOne"> <span class="backgroundColorOffWhite floatRight">2/4</span> </h3>
+         
+         <hr>
+
+         <span class="widthFullFlex positionRelative marginauto easing">
+
+         <h3 class="floatLeft widthFullFlex positionRelative zindexOne">
+            <p class="widthFullFlex">
+               
+               <span class="widthFullFlex positionRelative floatLeft text-shadow025Dark">
+                  
+                  <span class="text-align-center widthFullFlex positionRelative fontColorFour fontSizeTwoFive lineHeightTwoFive">{{member.name}}'s <b>Experience</b> <span class="font-family-snippet"> Of Over</span> </span>
+
+                  <hr>
+
+                  <b class="widthFullFlex lineHeightFive fontSizeFour fontColorTwo floatRight">{{steps.title}}</b>
+
+                  <hr>
+                  
+                  <span class="positionRelative widthFullFlex fontColorFive fontSizeTwoFive lineHeightTwoFive floatRight">
+
+                     <span ng:click="brandtab1 = !brandtab1" class="marginTwoFiveLeft floatRight 
+                     positionBeforeIcon
+                     positionAbsolute zindexOne widthTwoFivevh heightTwoFive"><img ng:show="!brandtab1" src="./svg/arrow-down.svg" class="positionCenter positionAbsolute widthHalfFlex heightHalfFlex">
+                     <img ng:show="brandtab1" src="./svg/one/close.svg" class="positionCenter positionAbsolute widthHalfFlex heightHalfFlex"></span>
+
+                     <span class="opacity025">
+                     <span class="font-family-snippet">Developing </span> <b class="bordered-bottomOne fontColorSeven">Environment</b></span>
+
+                  </span>
+
+               </span>
+
+            </p>
+         </h3>
+
+         </span>
+
+         <hr>
+         
+         <span class="floatLeft
+                     font-family-snippet
+                     text-align-left
+                     widthFullFlex positionRelative border-radius1
+                     fontSizeTwo fontColorSix lineHeightThree easing">
+               
+               {{steps.description}}
+         </span>
+
+         <!-- show on hover -->
+         <span class="
+            backgroundColorWhite zindexOne
+            showOnHover positionAbsolute positionTop widthFullFlex heightFullFlex easing">
+            <span class="positionAbsolute positionRight widthQuarterFlex heightHalfFlex marginauto easing">
+               <imaclinedone class="positionAbsolute positionLeft widthThreeQuarterFlex heightFullFlex floatLeft"></imaclinedone>
+            </span>
+
+            <!-- show on hover -->
+         <span class="
+            backgroundColorWhite zindexOne
+            showOnHover positionAbsolute positionTop widthFullFlex heightFullFlex easing">
+            <span class="positionAbsolute positionRight widthQuarterFlex heightHalfFlex marginauto easing">
+               <imaclinedone class="positionAbsolute positionLeft widthThreeQuarterFlex heightFullFlex floatLeft"></imaclinedone>
+            </span>
+            <h3 class="font-family-snippet widthFullFlex floatLeft positionRelative lineHeightFive fontSizeFive text-align-left fontColorTwo text-shadow05OffWhite zindexOne"><span class="backgroundColorWhite">{{steps.titlehover}}:</span> </h3>
+            <span class="widthFullFlex positionRelative marginauto floatLeft easing">
+
+            <hr>
+
+            <p class="
+               font-family-snippet
+               floatLeft
+               text-align-left
+               widthFullFlex positionRelative
+               fontSizeTwo fontColorFive lineHeightTwoFive easing">
+               <span class=""> {{steps.descriptionhover}}</span>
+            </p>
+            </span>
+            <hr>
+
+            <span class="opacity025 lineHeightTwoFive fontSizeTwo text-align-left text-shadow05OffWhite floatLeft">
+               <span class="font-family-snippet">Responsibilties </span><b class="bordered-bottomOne">(Include)</b>
+            </span>
+
+            <hr>
+
+            <span ng:repeat="task in steps.responsibilities" class="paddingTwoFive marginOne border-radius1 backgroundColorOffWhite floatLeft">{{task.name}}</span>
+
+            
+         </span>
+
+         </span>
+      </span>
+   </span>
+
+   <!-- job steps -->
+   <span ng:repeat="steps in member.stepsinfos| limitTo:1:2" class="
+      showOnHoverSwitch
+      positionRelative
+      widthHalfFlex
+      heightHalf
+      backgroundColorWhite
+      floatLeft">
+      <span class="
+         spacedLarge overflowhidden
+         positionRelative floatLeft easing">
+         <!-- hide on hover -->
+         <span class="positionAbsolute positionRight widthQuarterFlex heightHalfFlex marginauto easing">
+            <imaclinedone class="positionAbsolute positionLeft widthThreeQuarterFlex heightFullFlex floatLeft"></imaclinedone>
+         </span>
+         <h3 class="font-family-snippet widthFullFlex floatLeft positionRelative lineHeightFive fontSizeFive text-align-left fontColorTwo text-shadow05OffWhite zindexOne">
+         <span class="backgroundColorOffWhite floatRight">3/4</span> </h3>
+         
+         <hr>
+
+         <span class="widthFullFlex positionRelative marginauto easing">
+
+         <h3 class="floatLeft widthFullFlex positionRelative zindexOne">
+            <p class="widthFullFlex">
+               
+               <span class="widthFullFlex positionRelative floatLeft text-shadow025Dark">
+                  
+                  <span class="text-align-center widthFullFlex positionRelative fontColorFour fontSizeTwoFive lineHeightTwoFive">{{member.name}}'s <b>Process</b> <span class="font-family-snippet"> As a</span> </span>
+
+                  <hr>
+
+                  <b class="widthFullFlex lineHeightFive fontSizeFour fontColorTwo floatRight">{{steps.title}}</b>
+
+                  <hr>
+                  
+                  <span class="positionRelative widthFullFlex fontColorFive fontSizeTwoFive lineHeightTwoFive floatRight">
+
+                     <span ng:click="brandtab1 = !brandtab1" class="marginTwoFiveLeft floatRight 
+                     positionBeforeIcon
+                     positionAbsolute zindexOne widthTwoFivevh heightTwoFive"><img ng:show="!brandtab1" src="./svg/arrow-down.svg" class="positionCenter positionAbsolute widthHalfFlex heightHalfFlex">
+                     <img ng:show="brandtab1" src="./svg/one/close.svg" class="positionCenter positionAbsolute widthHalfFlex heightHalfFlex"></span>
+
+                     <span class="opacity025">
+                     <span class="font-family-snippet">Fourtune</span> <b class="bordered-bottomOne fontColorSeven">500</b> Companies & Brands</span>
+
+                  </span>
+
+               </span>
+
+            </p>
+         </h3>
+
+         </span>
+
+         <hr>
+         
+         <span class="floatLeft
+                     font-family-snippet
+                     text-align-left
+                     widthFullFlex positionRelative border-radius1
+                     fontSizeTwo fontColorSix lineHeightThree easing">
+               
+               {{steps.description}}
+         </span>
+
+         <!-- show on hover -->
+         <span class="
+            backgroundColorWhite zindexOne
+            showOnHover positionAbsolute positionTop widthFullFlex heightFullFlex easing">
+            <span class="positionAbsolute positionRight widthQuarterFlex heightHalfFlex marginauto easing">
+               <imaclinedone class="positionAbsolute positionLeft widthThreeQuarterFlex heightFullFlex floatLeft"></imaclinedone>
+            </span>
+            
+            <!-- show on hover -->
+         <span class="
+            backgroundColorWhite zindexOne
+            showOnHover positionAbsolute positionTop widthFullFlex heightFullFlex easing">
+            <span class="positionAbsolute positionRight widthQuarterFlex heightHalfFlex marginauto easing">
+               <imaclinedone class="positionAbsolute positionLeft widthThreeQuarterFlex heightFullFlex floatLeft"></imaclinedone>
+            </span>
+            <h3 class="font-family-snippet widthFullFlex floatLeft positionRelative lineHeightFive fontSizeFive text-align-left fontColorTwo text-shadow05OffWhite zindexOne"><span class="backgroundColorWhite">{{steps.titlehover}}:</span> </h3>
+            <span class="widthFullFlex positionRelative marginauto floatLeft easing">
+
+            <hr>
+
+            <p class="
+               font-family-snippet
+               floatLeft
+               text-align-left
+               widthFullFlex positionRelative
+               fontSizeTwo fontColorFive lineHeightTwoFive easing">
+               <span class=""> {{steps.descriptionhover}}</span>
+            </p>
+            </span>
+            <hr>
+
+            <span class="opacity025 lineHeightTwoFive fontSizeTwo text-align-left text-shadow05OffWhite floatLeft">
+               <span class="font-family-snippet">Responsibilties </span><b class="bordered-bottomOne">(Include)</b>
+            </span>
+
+            <hr>
+
+            <span ng:repeat="task in steps.responsibilities" class="paddingTwoFive marginOne border-radius1 backgroundColorOffWhite floatLeft">{{task.name}}</span>
+
+            
+         </span>
+
+         </span>
+      </span>
+   </span>
+
+   <span ng:repeat="steps in member.stepsinfos| limitTo:1:2" class="showOnHoverSwitch text-align-center positionRelative widthHalfFlex heightHalf backgroundColorWhite floatLeft easing">
+      <span ng:click="popstart();" class="animated enterUpObject delay025 zindexFive positionAbsolute positionTopRight widthFivevh heightFive"><img src="./svg/close.svg" ng:click="
+         popclear = false;" class="zindexOne positionAbsolute positionCenter floatLeft widthHalfFlex heightHalfFlex"></span>
+      <!-- showOnHover // background -->
+      <span class="showOnHover positionAbsolute positionCenter 
+         backgroundColorWhite widthFullFlex heightFullFlex">
+         <span style="background-image: url('/photos/{{steps.backgroundone}}');
+         background-size: cover;" class="spacedLarge floatLeft box-shadowThreeStraight border-radius1 positionRelative">
+            <!-- washout background -->
+            <span class="positionAbsolute positionCenter opacity075
+               backgroundColorWhite widthFullFlex heightFullFlex">
+            </span>
+
+            <span class="floatLeft positionAbsolute positionTopRight widthTenvh heightTen zindexFive">
+               <img src="./svg/pageend.svg" class="positionAbsolute positionTopRight widthThreeQuarterFlex">
+            </span>
+         </span>
+      </span>
+      <!-- hideOnHover // background -->
+      <span class="hideOnHover positionAbsolute positionCenter 
+         backgroundColorWhite widthFullFlex heightFullFlex">
+         <span style="background-image: url('/photos/{{steps.backgroundtwo}}');
+         background-size: cover;" class="spacedLarge floatLeft box-shadowThreeStraight backgroundteamcolor border-radius1 positionRelative">
+            <!-- washout background -->
+            <span class="positionAbsolute positionCenter opacity075
+               backgroundColorWhite widthFullFlex heightFullFlex">
+            </span>
+
+            <span class="floatLeft positionAbsolute positionTopRight widthTenvh heightTen zindexFive">
+               <img src="./svg/pageend.svg" class="positionAbsolute positionTopRight widthThreeQuarterFlex">
+            </span>
+         </span>
+      </span>
+      <span class="
+         positionAbsolute positionCenter
+         heightHalfFlex widthHalfFlex border-radius
+         floatRight zindexTen" style="background-image: url('/partners/{{post.brandicon}}.svg');
+         background-size: 100% 100%;">
+      </span>
+   </span>
+
+
+   <span ng:repeat="steps in member.stepsinfos| limitTo:1:3" class="showOnHoverSwitch text-align-center positionRelative widthHalfFlex heightHalf backgroundColorWhite floatLeft easing">
+      <span ng:click="popstart();" class="animated enterUpObject delay025 zindexFive positionAbsolute positionTopRight widthFivevh heightFive"><img src="./svg/close.svg" ng:click="
+         popclear = false;" class="zindexOne positionAbsolute positionCenter floatLeft widthHalfFlex heightHalfFlex"></span>
+      <!-- showOnHover // background -->
+      <span class="showOnHover positionAbsolute positionCenter 
+         backgroundColorWhite widthFullFlex heightFullFlex">
+         <span style="background-image: url('/photos/{{steps.backgroundone}}');
+         background-size: cover;" class="spacedLarge floatLeft box-shadowThreeStraight border-radius1 positionRelative">
+            <!-- washout background -->
+            <span class="positionAbsolute positionCenter opacity075
+               backgroundColorWhite widthFullFlex heightFullFlex">
+            </span>
+
+            <span class="floatLeft positionAbsolute positionTopRight widthTenvh heightTen zindexFive">
+               <img src="./svg/pageend.svg" class="positionAbsolute positionTopRight widthThreeQuarterFlex">
+            </span>
+         </span>
+      </span>
+      <!-- hideOnHover // background -->
+      <span class="hideOnHover positionAbsolute positionCenter 
+         backgroundColorWhite widthFullFlex heightFullFlex">
+         <span style="background-image: url('/photos/{{steps.backgroundtwo}}');
+         background-size: cover;" class="spacedLarge floatLeft box-shadowThreeStraight backgroundteamcolor border-radius1 positionRelative">
+            <!-- washout background -->
+            <span class="positionAbsolute positionCenter opacity075
+               backgroundColorWhite widthFullFlex heightFullFlex">
+            </span>
+
+            <span class="floatLeft positionAbsolute positionTopRight widthTenvh heightTen zindexFive">
+               <img src="./svg/pageend.svg" class="positionAbsolute positionTopRight widthThreeQuarterFlex">
+            </span>
+         </span>
+      </span>
+      <span class="
+         positionAbsolute positionCenter
+         heightHalfFlex widthHalfFlex border-radius
+         floatRight zindexTen" style="background-image: url('/partners/{{post.brandicon}}.svg');
+         background-size: 100% 100%;">
+      </span>
+   </span>
+
+   <!-- job steps -->
+   <span ng:repeat="steps in member.stepsinfos| limitTo:1:3" class="
+      showOnHoverSwitch
+      positionRelative
+      widthHalfFlex
+      heightHalf
+      backgroundColorWhite
+      floatLeft">
+      <span class="
+         spacedLarge
+         positionRelative floatLeft easing">
+         <!-- hide on hover -->
+         <span class="positionAbsolute positionRight widthQuarterFlex heightHalfFlex marginauto easing">
+            <imaclinedone class="positionAbsolute positionLeft widthThreeQuarterFlex heightFullFlex floatLeft"></imaclinedone>
+         </span>
+         <h3 class="font-family-snippet widthFullFlex floatLeft positionRelative lineHeightFive fontSizeFive text-align-left fontColorTwo text-shadow05OffWhite zindexOne"> <span class="backgroundColorOffWhite floatRight">4/4</span> </h3>
+         
+         <hr>
+
+         <span class="widthFullFlex positionRelative marginauto easing">
+
+         <h3 class="floatLeft widthFullFlex positionRelative zindexOne">
+            <p class="widthFullFlex">
+               
+               <span class="widthFullFlex positionRelative floatLeft text-shadow025Dark">
+                  
+                  <span class="text-align-center widthFullFlex positionRelative fontColorFour fontSizeTwoFive lineHeightTwoFive">{{member.name}}'s <b>Available</b> <span class="font-family-snippet"> for</span> </span>
+
+                  <hr>
+
+                  <b class="widthFullFlex lineHeightFive fontSizeFour fontColorTwo floatRight">{{steps.title}}</b>
+
+                  <hr>
+                  
+                  <span class="positionRelative widthFullFlex fontColorFive fontSizeTwoFive lineHeightTwoFive floatRight">
+
+                     <span ng:click="brandtab1 = !brandtab1" class="marginTwoFiveLeft floatRight 
+                     positionBeforeIcon
+                     positionAbsolute zindexOne widthTwoFivevh heightTwoFive"><img ng:show="!brandtab1" src="./svg/arrow-down.svg" class="positionCenter positionAbsolute widthHalfFlex heightHalfFlex">
+                     <img ng:show="brandtab1" src="./svg/one/close.svg" class="positionCenter positionAbsolute widthHalfFlex heightHalfFlex"></span>
+
+                     <span class="opacity025">
+                     <span class="font-family-snippet">Interested? </span> <b class="bordered-bottomOne fontColorSeven">Hire</b> Immediatly</span>
+
+                  </span>
+
+               </span>
+
+            </p>
+         </h3>
+
+         </span>
+         <span class="floatLeft
+                     font-family-snippet
+                     text-align-left
+                     widthFullFlex positionRelative border-radius1
+                     fontSizeTwo fontColorSix lineHeightThree easing">
+               <hr>
+               {{steps.description}}
+         </span>
+
+         <!-- show on hover -->
+         <span class="
+            backgroundColorWhite zindexOne
+            showOnHover positionAbsolute positionTop widthFullFlex heightFullFlex easing">
+            <span class="positionAbsolute positionRight widthQuarterFlex heightHalfFlex marginauto easing">
+               <imaclinedone class="positionAbsolute positionLeft widthThreeQuarterFlex heightFullFlex floatLeft"></imaclinedone>
+            </span>
+            
+            <!-- show on hover -->
+         <span class="
+            backgroundColorWhite zindexOne
+            showOnHover positionAbsolute positionTop widthFullFlex heightFullFlex easing">
+            <span class="positionAbsolute positionRight widthQuarterFlex heightHalfFlex marginauto easing">
+               <imaclinedone class="positionAbsolute positionLeft widthThreeQuarterFlex heightFullFlex floatLeft"></imaclinedone>
+            </span>
+            <h3 class="font-family-snippet widthFullFlex floatLeft positionRelative lineHeightFive fontSizeFive text-align-left fontColorTwo text-shadow05OffWhite zindexOne"><span class="backgroundColorWhite">{{steps.titlehover}}:</span> </h3>
+            <span class="widthFullFlex positionRelative marginauto floatLeft easing">
+
+            <hr>
+
+            <p class="
+               font-family-snippet
+               floatLeft
+               text-align-left
+               widthFullFlex positionRelative
+               fontSizeTwo fontColorFive lineHeightTwoFive easing">
+               <span class=""> {{steps.descriptionhover}}</span>
+            </p>
+            </span>
+            <hr>
+
+            <span class="opacity025 lineHeightTwoFive fontSizeTwo text-align-left text-shadow05OffWhite floatLeft">
+               <span class="font-family-snippet">Responsibilties </span><b class="bordered-bottomOne">(Include)</b>
+            </span>
+
+            <hr>
+
+            <span ng:repeat="task in steps.responsibilities" class="paddingTwoFive marginOne border-radius1 backgroundColorOffWhite floatLeft">{{task.name}}</span>
+
+            
+         </span>
+
+         </span>
+      </span>
+   </span>

@@ -1,0 +1,163 @@
+<span class="
+      showOnHoverSwitch
+      positionRelative
+      heightFullFlex
+      widthTwoThirdFlex
+      box-shadowSixStraight floatLeft">
+
+      <!-- washout background -->
+      <span class="positionAbsolute positionCenter opacity095
+         backgroundGridColorWhite widthFullFlex heightFullFlex">
+      </span>
+
+      
+      <!-- photo background -->
+      <ul class="widthFullFlex heightFullFlex floatLeft positionAbsolute positionCenter">
+
+         <li class="widthFullFlex heightThreeQuarterFlex floatLeft positionRelative">
+
+            <span class="positionAbsolute positionBottom spacedLarge floatLeft border-radius1 overflowhidden easing">
+
+               <span class="
+                  opacity01
+                  positionRelative
+                  heightFullFlex
+                  widthFullFlex
+                  overflowhidden floatLeft" style="background-image: url('/thumbs/{{post.photo}}');
+                  background-size: cover;">
+               </span>
+
+            </span>
+
+         </li>
+
+      </ul>
+
+      <ul class="widthFullFlex heightHalfFlex floatLeft positionRelative zindexFive ">
+         <li class="widthFullFlex heightFullFlex floatLeft" >
+
+            <span class="positionAbsolute positionBottom widthFullFlex heightFullFlex floatLeft easing zindexOne">
+
+               <div class="spacedMid positionRelative">
+                  
+                  <span class="widthFullFlex positionRelative marginauto floatLeft">
+                     <h3 class="opacity095 font-family-snippet widthFullFlex floatLeft positionRelative lineHeightTen fontSizeTwoFive text-align-right fontColorTwo zindexOne"> <span class="fontColorSix opacity05">(about project lead) Comepleted</span> <span class="text-shadow025White bordered-bottomFour fontSizeThree">{{post.date}}</span></h3>
+                  </span>
+                  <br>
+                  <hr>
+
+                  <span class="widthFullFlex positionRelative marginauto floatLeft">
+                  <b class=" widthFullFlex floatLeft positionRelative lineHeightTen fontSizeTen text-align-right fontColorThree text-shadow05White zindexOne">
+                  <span class="">{{post.title}}</span></b>
+                  </span>
+                  <br>
+
+                  <span class="widthFullFlex positionRelative marginauto floatLeft">
+                  <p class="widthFullFlex floatLeft positionRelative lineHeightFive fontSizeTwo text-align-right  zindexOne"><span class="opacity05 fontColorFive">{{post.tagline}}</span><span class="fontColorFour"><b> :</b></span></p>
+                  </span>
+                  <br>
+                  <hr>
+
+                  <span class="widthFullFlex positionRelative marginauto floatLeft">
+                     <h3 class="widthFullFlex floatLeft positionRelative lineHeightThree fontSizeTwo text-align-right fontColorWhite zindexOne">
+                        <span class="paddingTwoFive marginOne border-radius1 backgroundColorOneTwo backgroundColorFourOnHover"> {{post.category}}</span> 
+
+                        <span class="paddingTwoFive marginOne border-radius1 backgroundColorOneThree backgroundColorFourOnHover"> {{post.subcategory}}</span> 
+
+                        <span ng-repeat="posttag in post.tags" class="paddingTwoFive marginOne border-radius1 backgroundColorOneFour backgroundColorFourOnHover"> {{posttag.name}}</span> 
+
+                     </h3>
+
+                  </span>
+
+               </div>
+
+
+            </span>
+            
+         </li>
+      </ul>
+
+      <ul class="widthHalfFlex heightHalfFlex floatLeft positionRelative zindexFive ">
+         <authorsquare></authorsquare>
+      </ul>
+
+      <ul class="widthHalfFlex heightHalfFlex floatLeft positionRelative zindexFive backgroundColorWhite overflowhidden">
+         <iconslider></iconslider>
+      </ul>
+
+   </span>
+   <span class="
+      showOnHoverSwitch
+      positionRelative
+      heightFullFlex
+      widthThirdFlex
+      backgroundGridColorOffWhite floatLeft">
+
+
+      <!-- page close -->
+      <postclose></postclose>
+
+      <span class="
+         opacity05
+         positionAbsolute
+         positionBottom
+         heightHalfFlex
+         widthFullFlex
+         backgroundGridColorThree
+         overflowhidden floatLeft">
+
+      </span>
+
+      <span class="positionRelative floatLeft spacedMid text-align-left">
+
+         <span class="positionRelative floatLeft spacedSmall text-align-left backgroundColorWhite border-radius1 overflowhidden">
+
+            <span class="positionRelative floatLeft spacedMid text-align-left">
+
+               <!-- layer -->
+                  <div class="
+                     zindexOne positionRelative widthFullFlex floatLeft">
+                     <b class="
+                        font-family-snippet
+                        floatLeft
+                        text-align-left
+                        widthFullFlex positionRelative border-radius1
+                        fontSizeTwoFive fontColorSeven fontColorFourOnHover lineHeightFour easing">
+                        <span class="">SERVICES PROVIDED</span> </b>
+
+                        <hr>
+
+                     <b ng:repeat="servicesprovided in post.services | limitTo:4:0" class="
+                        floatLeft
+                        text-align-left
+                        widthFullFlex positionRelative
+                        fontSizeTwoFive 
+                        fontColorFive
+                        fontColorFourOnHover lineHeightFive
+                        easing">
+                        <span style="color: #{{servicesprovided.colors}}" class="backgroundColorOneFour">
+                        {{servicesprovided.name}}
+                        </span>
+                        <br></b>
+                  </div>
+
+               <span class="positionAbsolute positionBottom marginauto floatLeft">
+                  <span ng:click="$parent.postpreview = false" class="text-align-center positionRelative heightFullFlex marginTwoFive paddingTwoFive easing">
+                     <span class="paddingTwoFive positionRelative buttonbox-shadowDark border-radius1 backgroundGridColorThree backgroundColorTwoOnHover centerdiv fontSizeTwoFive fontColorWhite fontColorOneOnHover lineHeightFive easing">
+                     Github
+                     <span class="marginTwoFiveLeft floatRight animated enterUpObject delay025 zindexOne positionAbsolute positionRight widthFivevh heightFull"><img src="./svg/arrow-down.svg" class="positionAbsolute positionCenter widthHalfFlex heightHalfFlex"></span>
+                     </span>
+                     <hr>
+                     <span class="paddingTwoFive positionRelative buttonbox-shadowDark border-radius1 backgroundGridColorFour backgroundColorTwoOnHover centerdiv fontSizeTwoFive fontColorWhite fontColorOneOnHover lineHeightFive easing">
+                     Download
+                     <span class="marginTwoFiveLeft floatRight animated enterUpObject delay025 zindexOne positionAbsolute positionRight widthFivevh heightFull"><img src="./svg/arrow-down.svg" class="positionAbsolute positionCenter widthHalfFlex heightHalfFlex"></span>
+                     </span>
+                  </span>
+               </span>
+            </span>
+
+         </span>
+
+      </span>
+   </span>

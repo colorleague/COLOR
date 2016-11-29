@@ -1,0 +1,82 @@
+   <!-- fluid list (no scroll) -->
+   <span
+      class="positionRelative widthFullFlex floatLeft easing zindexOne ">
+      <span class="positionRelative widthFullFlex floatLeft backgroundColorOne heightFullFlex overflowy">
+         <ul class="backgroundColorOne positionRelative widthFullFlex floatLeft easing">
+            <span class="
+               spacedMid overflowhidden
+               positionRelative centerdiv floatLeft easing">
+               <span class="
+                  overflowhidden centerdiv heightFullFlex widthStatic
+                  positionRelative overflowy easing">
+                  <span class="widthFullFlex overflowy
+                     positionRelative floatLeft easing">
+                     <!-- video component 1 -->
+                     <ul ng-repeat="allparts in partners" class="positionRelative widthQuarterFlex heightQuarter floatLeft easing">
+                        <a target="_blank" href="{{allparts.url}}" class="showOnHoverSwitch
+                           widthFullFlex heightFullFlex
+                           positionRelative floatLeft easing">
+                           <span class="
+                              spacedSmall overflowhidden border-radius1 buttonbox-shadowDark
+                              positionRelative floatLeft easing">
+                              <span class="
+                                 spacedTiny
+                                 centerdiv
+                                 border-radius1
+                                 positionAbsolute
+                                 positionCenter floatLeft easing">
+                                 <!-- showOnHover // background -->
+                                 <span class="showOnHover positionAbsolute positionCenter
+                                    border-radius1
+                                     widthFullFlex heightFullFlex">
+
+                                     <span class="opacity025 animated enterUpObject delay025 zindexOne positionAbsolute positionCenter widthThreeQuarterFlex heightThreeQuarterFlex"><img src="./partners/{{allparts.name}}.svg" class="widthFullFlex heightFullFlex"></span>
+
+                                    <span class="positionAbsolute positionBottom widthFullFlex floatLeft
+                                          ">
+                                          <span class="
+                                             spacedSmall overflowhidden
+                                             positionRelative floatLeft easing">
+                                             <h3 class="widthFullFlex floatLeft positionRelative lineHeighFive fontSizeThree text-align-left fontColorFour zindexOne"><b> visit</b></h3>
+                                          </span>
+                                       </span>
+                                 </span>
+                                 <!-- hideOnHover // background -->
+                                 <span class="hideOnHover positionAbsolute positionCenter
+                                    border-radius1 overflowhidden
+                                     widthFullFlex heightFullFlex">
+                                    <ul class="positionRelative widthFullFlex heightFullFlex floatLeft zindexOne easing">
+                                       <span class="animated enterUpObject delay025 zindexOne positionAbsolute positionCenter widthThreeQuarterFlex heightThreeQuarterFlex"><img src="./partners/{{allparts.name}}.svg" class="widthFullFlex heightFullFlex"></span>
+                                       <!-- Filler -->
+                                       <span class="positionRelative widthFullFlex floatLeft widthFullFlex heightTenFlex">
+                                       </span><br>
+                                       <!-- text here-->
+                                       <span class="positionAbsolute positionBottom widthFullFlex floatLeft
+                                          ">
+                                          <span class="
+                                             spacedSmall overflowhidden
+                                             positionRelative floatLeft easing">
+                                             <h3 class="widthFullFlex floatLeft positionRelative lineHeighFive fontSizeThree text-align-left fontColorFour zindexOne"><b> {{allparts.name}}</b></h3>
+                                          </span>
+                                       </span>
+                                    </ul>
+                                    <span class="
+                                       opacity025
+                                       border-radius1 overflowhidden
+                                       positionAbsolute positionCenter
+                                        widthFullFlex heightFullFlex">
+                                    </span>
+                                    
+                                 </span>
+                              </span>
+                           </span>
+                        </a>
+                     </ul>
+                  </span>
+               </span>
+            </span>
+         </ul>
+
+
+      </span>
+   </span>

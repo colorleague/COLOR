@@ -1,0 +1,59 @@
+<span class="positionFixed positionCenter widthFull heightFull easing">
+
+      <span ng:hide="startAnimationUnder == true" ng:class="{'ColorOneFromClearGradient' : startAnimation,
+         'ColorFiveFromClearGradient' : !startAnimation}" class=" positionTop positionFixed widthFull heightTen easing"></span>
+      <span ng:hide="startAnimationUnder == true" ng:class="{'ColorOneRightClearGradient' : startAnimation,
+         'ColorFiveRightClearGradient' : !startAnimation}" class=" positionRight positionFixed widthTen heightFull easing"></span>
+      <span ng:hide="startAnimationUnder == true" ng:class="{'ColorOneLeftClearGradient' : startAnimation,
+         'ColorFiveLeftClearGradient' : !startAnimation}" class=" positionLeft positionFixed widthTen heightFull easing"></span>
+      <span ng:hide="startAnimationUnder == true" ng:class="{'ColorOneToClearGradient' : startAnimation,
+         'ColorFiveToClearGradient' : !startAnimation}" class=" positionBottom positionFixed widthFull heightTen easing"></span>
+
+      <span 
+         ng:class="{
+         'backgroundGridColorFive' : !startAnimation,
+         'backgroundGridColorOneTwo' : (startAnimation == true && positionLight1lighton == false),
+         'spacedLarge' : !startAnimation,
+         'spacedMid' : startAnimation,
+         'backgroundGridColorOne' : startAnimationOver,
+         'backgroundGridColorTwo' : startAnimationUnder,
+         'backgroundGridColorThree' : startAnimationLeft,
+         'backgroundGridColorFour' : startAnimationRight,
+         'backgroundGridColorWhite' : positionLight1lighton
+         }" 
+         class="border-radius1 positionAbsolute positionCenter easing">
+      </span>
+
+      <!-- background icons  -->
+      <!-- logo Holder -->
+      <span ng:show="startAnimation" class="lightshow animated enterUp positionFixed positionCenter heightHalfFlex widthHalfFlex">
+         <span ng:show="startAnimation" class="animated enterUp positionAbsolute positionCenter widthFullFlex heightFullFlex">
+            <brandonestack ng:show="startAnimation" class="opacity05 positionAbsolute positionCenter widthFullFlex heightFullFlex"></brandonestack>
+         </span>
+      </span>
+
+      <!-- logo Holder
+      <span ng:show="startAnimation" class="lightshow opacity05 animated enterUp positionFixed positionCenter heightHalfFlex widthHalfFlex">
+         <span ng:show="startAnimation" class="animated enterUp positionAbsolute positionCenter widthFullFlex heightFullFlex">
+            <letterc1 ng:show="startAnimation" class="animated animeframeFour infinite positionAbsolute positionCenter widthFullFlex heightFullFlex"></letterc1>
+            <letterc2 ng:show="startAnimation" class="animated animeframeFour infinite delay025 positionAbsolute positionCenter widthFullFlex heightFullFlex"></letterc2>
+            <letterc3 ng:show="startAnimation" class="animated animeframeFour infinite delay05 positionAbsolute positionCenter widthFullFlex heightFullFlex"></letterc3>
+            <letterc4 ng:show="startAnimation" class="animated animeframeFour infinite delay075 positionAbsolute positionCenter widthFullFlex heightFullFlex"></letterc4>
+         </span>
+         <span ng:show="startAnimation" class="animated animedripfall infinite positionFixed positionCenter widthFullFlex heightFullFlex">
+            <lettercdrip1 ng:show="startAnimation" class="animated animeframeFive infinite delay1 positionAbsolute positionCenter widthFullFlex heightFullFlex"></lettercdrip1>
+            <lettercdrip2 ng:show="startAnimation" class="animated animeframeFive infinite delay12 positionAbsolute positionCenter widthFullFlex heightFullFlex"></lettercdrip2>
+            <lettercdrip3 ng:show="startAnimation" class="animated animeframeFive infinite delay14 positionAbsolute positionCenter widthFullFlex heightFullFlex"></lettercdrip3>
+            <lettercdrip4 ng:show="startAnimation" class="animated animeframeFive infinite delay16 positionAbsolute positionCenter widthFullFlex heightFullFlex"></lettercdrip4>
+            <lettercdrip5 ng:show="startAnimation" class="animated animeframeFive infinite delay18 positionAbsolute positionCenter widthFullFlex heightFullFlex"></lettercdrip5>
+         </span>
+      </span>
+      -->
+
+      <!-- gradient -->
+      <span ng:hide="startAnimationUnder == true" ng:class="{'ColorOneRightClearGradient' : startAnimation,
+         'ColorFiveRightClearGradient' : !startAnimation}" class=" positionRight positionFixed widthTen heightFull easing"></span>
+      <span ng:hide="startAnimationUnder == true" ng:class="{'ColorOneLeftClearGradient' : startAnimation,
+         'ColorFiveLeftClearGradient' : !startAnimation}" class=" positionLeft positionFixed widthTen heightFull easing"></span>
+      
+   </span>

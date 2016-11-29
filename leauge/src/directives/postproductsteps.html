@@ -1,0 +1,413 @@
+<!-- job steps -->
+   <span ng:repeat="steps in post.stepsinfos| limitTo:1:0" class="
+      showOnHoverSwitch
+      positionRelative
+      widthHalfFlex
+      heightHalf
+      backgroundColorWhite
+      floatLeft">
+      <span class="
+         spacedLarge overflowhidden
+         positionRelative floatLeft easing">
+         <!-- hide on hover -->
+         <span class="positionAbsolute positionRight widthQuarterFlex heightHalfFlex marginauto easing">
+            <imaclinedone class="positionAbsolute positionLeft widthThreeQuarterFlex heightFullFlex floatLeft"></imaclinedone>
+         </span>
+         <h3 class="font-family-snippet widthFullFlex floatLeft positionRelative lineHeightFive fontSizeFive text-align-left fontColorTwo text-shadow05OffWhite zindexOne"><span class="backgroundColorOffWhite">Steps:</span> <span class="backgroundColorOffWhite floatRight">1/4</span> </h3>
+         <hr>
+         <span class="widthFullFlex positionRelative marginauto easing">
+         <b class="opacity095 widthFullFlex floatLeft positionRelative lineHeightSevenFive fontSizeFive text-align-left fontColorFour text-shadow05OffWhite zindexOne">{{steps.title}}</b>
+         </span>
+         <hr>
+         <hr class="horline marginauto positionRelative animated growhor ColorOneLeftClearGradient">
+         <span class="floatLeft
+                     font-family-snippet
+                     text-align-left
+                     widthFullFlex positionRelative border-radius1
+                     fontSizeTwoFive fontColorSix lineHeightFive easing">
+               <hr>
+               {{steps.description}}
+         </span>
+
+         <!-- show on hover -->
+         <span class="
+            backgroundColorWhite zindexOne
+            showOnHover positionAbsolute positionTop widthFullFlex heightFullFlex easing">
+            <span class="positionAbsolute positionRight widthQuarterFlex heightHalfFlex marginauto easing">
+               <imaclinedone class="positionAbsolute positionLeft widthThreeQuarterFlex heightFullFlex floatLeft"></imaclinedone>
+            </span>
+            <h3 class="font-family-snippet widthFullFlex floatLeft positionRelative lineHeightFive fontSizeFive text-align-left fontColorTwo text-shadow05OffWhite zindexOne"><span class="backgroundColorWhite">{{steps.titlehover}}:</span> </h3>
+            <span class="widthFullFlex positionRelative marginauto floatLeft easing">
+            <span class="widthFullFlex floatLeft positionRelative lineHeightTen fontSizeSevenFive text-align-left fontColorFour text-shadow05OffWhite zindexOne">
+            <span class="
+               spacedSmall overflowhidden
+               positionRelative floatLeft easing">
+            <p class="
+               floatLeft
+               text-align-left
+               widthFullFlex positionRelative border-radius1
+               fontSizeTwoFive fontColorFive fontColorFourOnHover lineHeightFive easing">
+               <span class="backgroundColorOffWhite"> {{steps.descriptionhover}}</span>
+            </p>
+            </span>
+            </span>
+            </span>
+            <hr>
+            <hr class="horline marginauto positionRelative animated growhor ColorOneLeftClearGradient">
+
+            <span class="
+               spacedSmall overflowhidden
+               positionRelative floatLeft easing">
+
+               <span class="paddingTwoFive marginOne border-radius1 backgroundColorOffWhite floatLeft">html</span>
+               <span class="paddingTwoFive marginOne border-radius1 backgroundColorOffWhite floatLeft">css</span>
+               <span class="paddingTwoFive marginOne border-radius1 backgroundColorOffWhite floatLeft">javascript</span>
+
+            </span>
+         </span>
+      </span>
+   </span>
+
+   <span ng:repeat="steps in post.stepsinfos| limitTo:1:0" class="showOnHoverSwitch text-align-center positionRelative widthHalfFlex heightHalf backgroundColorWhite floatLeft easing">
+      <span ng:click="popstart();" class="animated enterUpObject delay025 zindexFive positionAbsolute positionTopRight widthFivevh heightFive"><img src="./svg/close.svg" ng:click="
+         popclear = false;" class="zindexOne positionAbsolute positionCenter floatLeft widthHalfFlex heightHalfFlex"></span>
+      <!-- showOnHover // background -->
+      <span class="showOnHover positionAbsolute positionCenter 
+         backgroundColorWhite widthFullFlex heightFullFlex">
+         <span style="background-image: url('/photos/{{steps.backgroundone}}');
+         background-size: cover;" class="spacedLarge floatLeft box-shadowThreeStraight border-radius1 positionRelative">
+            <!-- washout background -->
+            <span class="positionAbsolute positionCenter opacity075
+               backgroundColorWhite widthFullFlex heightFullFlex">
+            </span>
+         </span>
+      </span>
+      <!-- hideOnHover // background -->
+      <span class="hideOnHover positionAbsolute positionCenter 
+         backgroundColorWhite widthFullFlex heightFullFlex">
+         <span style="background-image: url('/photos/{{steps.backgroundtwo}}');
+         background-size: cover;" class="spacedLarge floatLeft box-shadowThreeStraight backgroundteamcolor border-radius1 positionRelative">
+            <!-- washout background -->
+            <span class="positionAbsolute positionCenter opacity075
+               backgroundColorWhite widthFullFlex heightFullFlex">
+            </span>
+         </span>
+      </span>
+      <span class="
+         positionAbsolute positionCenter
+         heightHalfFlex widthHalfFlex border-radius
+         floatRight zindexTen" style="background-image: url('/partners/{{post.brandicon}}.svg');
+         background-size: 100% 100%;">
+      </span>
+   </span>
+
+
+   <span ng:repeat="steps in post.stepsinfos| limitTo:1:1" class="showOnHoverSwitch text-align-center positionRelative widthHalfFlex heightHalf backgroundColorWhite floatLeft easing">
+      <span ng:click="popstart();" class="animated enterUpObject delay025 zindexFive positionAbsolute positionTopRight widthFivevh heightFive"><img src="./svg/close.svg" ng:click="
+         popclear = false;" class="zindexOne positionAbsolute positionCenter floatLeft widthHalfFlex heightHalfFlex"></span>
+      <!-- showOnHover // background -->
+      <span class="showOnHover positionAbsolute positionCenter 
+         backgroundColorWhite widthFullFlex heightFullFlex">
+         <span style="background-image: url('/photos/{{steps.backgroundone}}');
+         background-size: cover;" class="spacedLarge floatLeft box-shadowThreeStraight border-radius1 positionRelative">
+            <!-- washout background -->
+            <span class="positionAbsolute positionCenter opacity075
+               backgroundColorWhite widthFullFlex heightFullFlex">
+            </span>
+         </span>
+      </span>
+      <!-- hideOnHover // background -->
+      <span class="hideOnHover positionAbsolute positionCenter 
+         backgroundColorWhite widthFullFlex heightFullFlex">
+         <span style="background-image: url('/photos/{{steps.backgroundtwo}}');
+         background-size: cover;" class="spacedLarge floatLeft box-shadowThreeStraight backgroundteamcolor border-radius1 positionRelative">
+            <!-- washout background -->
+            <span class="positionAbsolute positionCenter opacity075
+               backgroundColorWhite widthFullFlex heightFullFlex">
+            </span>
+         </span>
+      </span>
+      <span class="
+         positionAbsolute positionCenter
+         heightHalfFlex widthHalfFlex border-radius
+         floatRight zindexTen" style="background-image: url('/partners/{{post.brandicon}}.svg');
+         background-size: 100% 100%;">
+      </span>
+   </span>
+
+   <!-- job steps -->
+   <span ng:repeat="steps in post.stepsinfos| limitTo:1:1" class="
+      showOnHoverSwitch
+      positionRelative
+      widthHalfFlex
+      heightHalf
+      backgroundColorWhite
+      floatLeft">
+      <span class="
+         spacedLarge overflowhidden
+         positionRelative floatLeft easing">
+         <!-- hide on hover -->
+         <span class="positionAbsolute positionRight widthQuarterFlex heightHalfFlex marginauto easing">
+            <imaclinedone class="positionAbsolute positionLeft widthThreeQuarterFlex heightFullFlex floatLeft"></imaclinedone>
+         </span>
+         <h3 class="font-family-snippet widthFullFlex floatLeft positionRelative lineHeightFive fontSizeFive text-align-left fontColorTwo text-shadow05OffWhite zindexOne"> <span class="backgroundColorOffWhite floatRight">2/4</span> </h3>
+         <hr>
+         <span class="widthFullFlex positionRelative marginauto easing">
+         <b class="opacity095 widthFullFlex floatLeft positionRelative lineHeightSevenFive fontSizeFive text-align-left fontColorFour text-shadow05OffWhite zindexOne">{{steps.title}}</b>
+         </span>
+         <hr>
+         <hr class="horline marginauto positionRelative animated growhor ColorOneLeftClearGradient">
+         <span class="floatLeft
+                     font-family-snippet
+                     text-align-left
+                     widthFullFlex positionRelative border-radius1
+                     fontSizeTwoFive fontColorSix lineHeightFive easing">
+               <hr>
+               {{steps.description}}
+         </span>
+
+         <!-- show on hover -->
+         <span class="
+            backgroundColorWhite zindexOne
+            showOnHover positionAbsolute positionTop widthFullFlex heightFullFlex easing">
+            <span class="positionAbsolute positionRight widthQuarterFlex heightHalfFlex marginauto easing">
+               <imaclinedone class="positionAbsolute positionLeft widthThreeQuarterFlex heightFullFlex floatLeft"></imaclinedone>
+            </span>
+            <h3 class="font-family-snippet widthFullFlex floatLeft positionRelative lineHeightFive fontSizeFive text-align-left fontColorTwo text-shadow05OffWhite zindexOne"><span class="backgroundColorWhite">{{steps.titlehover}}:</span> </h3>
+            <span class="widthFullFlex positionRelative marginauto floatLeft easing">
+            <span class="widthFullFlex floatLeft positionRelative lineHeightTen fontSizeSevenFive text-align-left fontColorFour text-shadow05OffWhite zindexOne">
+            <span class="
+               spacedSmall overflowhidden
+               positionRelative floatLeft easing">
+            <p class="
+               floatLeft
+               text-align-left
+               widthFullFlex positionRelative border-radius1
+               fontSizeTwoFive fontColorFive fontColorFourOnHover lineHeightFive easing">
+               <span class="backgroundColorOffWhite"> {{steps.descriptionhover}}</span>
+            </p>
+            </span>
+            </span>
+            </span>
+            <hr>
+            <hr class="horline marginauto positionRelative animated growhor ColorOneLeftClearGradient">
+
+            <span class="
+               spacedSmall overflowhidden
+               positionRelative floatLeft easing">
+
+               <span class="paddingTwoFive marginOne border-radius1 backgroundColorOffWhite floatLeft">html</span>
+               <span class="paddingTwoFive marginOne border-radius1 backgroundColorOffWhite floatLeft">css</span>
+               <span class="paddingTwoFive marginOne border-radius1 backgroundColorOffWhite floatLeft">javascript</span>
+
+            </span>
+         </span>
+      </span>
+   </span>
+
+   <!-- job steps -->
+   <span ng:repeat="steps in post.stepsinfos| limitTo:1:2" class="
+      showOnHoverSwitch
+      positionRelative
+      widthHalfFlex
+      heightHalf
+      backgroundColorWhite
+      floatLeft">
+      <span class="
+         spacedLarge overflowhidden
+         positionRelative floatLeft easing">
+         <!-- hide on hover -->
+         <span class="positionAbsolute positionRight widthQuarterFlex heightHalfFlex marginauto easing">
+            <imaclinedone class="positionAbsolute positionLeft widthThreeQuarterFlex heightFullFlex floatLeft"></imaclinedone>
+         </span>
+         <h3 class="font-family-snippet widthFullFlex floatLeft positionRelative lineHeightFive fontSizeFive text-align-left fontColorTwo text-shadow05OffWhite zindexOne"><span class="backgroundColorOffWhite">Steps:</span> <span class="backgroundColorOffWhite floatRight">3/4</span> </h3>
+         <hr>
+         <span class="widthFullFlex positionRelative marginauto easing">
+         <b class="opacity095 widthFullFlex floatLeft positionRelative lineHeightSevenFive fontSizeFive text-align-left fontColorFour text-shadow05OffWhite zindexOne">{{steps.title}}</b>
+         </span>
+         <hr>
+         <hr class="horline marginauto positionRelative animated growhor ColorOneLeftClearGradient">
+         <span class="floatLeft
+                     font-family-snippet
+                     text-align-left
+                     widthFullFlex positionRelative border-radius1
+                     fontSizeTwoFive fontColorSix lineHeightFive easing">
+               <hr>
+               {{steps.description}}
+         </span>
+
+         <!-- show on hover -->
+         <span class="
+            backgroundColorWhite zindexOne
+            showOnHover positionAbsolute positionTop widthFullFlex heightFullFlex easing">
+            <span class="positionAbsolute positionRight widthQuarterFlex heightHalfFlex marginauto easing">
+               <imaclinedone class="positionAbsolute positionLeft widthThreeQuarterFlex heightFullFlex floatLeft"></imaclinedone>
+            </span>
+            <h3 class="font-family-snippet widthFullFlex floatLeft positionRelative lineHeightFive fontSizeFive text-align-left fontColorTwo text-shadow05OffWhite zindexOne"><span class="backgroundColorWhite">{{steps.titlehover}}:</span> </h3>
+            <span class="widthFullFlex positionRelative marginauto floatLeft easing">
+            <span class="widthFullFlex floatLeft positionRelative lineHeightTen fontSizeSevenFive text-align-left fontColorFour text-shadow05OffWhite zindexOne">
+            <span class="
+               spacedSmall overflowhidden
+               positionRelative floatLeft easing">
+            <p class="
+               floatLeft
+               text-align-left
+               widthFullFlex positionRelative border-radius1
+               fontSizeTwoFive fontColorFive fontColorFourOnHover lineHeightFive easing">
+               <span class="backgroundColorOffWhite"> {{steps.descriptionhover}}</span>
+            </p>
+            </span>
+            </span>
+            </span>
+            <hr>
+            <hr class="horline marginauto positionRelative animated growhor ColorOneLeftClearGradient">
+
+            <span class="
+               spacedSmall overflowhidden
+               positionRelative floatLeft easing">
+
+               <span class="paddingTwoFive marginOne border-radius1 backgroundColorOffWhite floatLeft">html</span>
+               <span class="paddingTwoFive marginOne border-radius1 backgroundColorOffWhite floatLeft">css</span>
+               <span class="paddingTwoFive marginOne border-radius1 backgroundColorOffWhite floatLeft">javascript</span>
+
+            </span>
+         </span>
+      </span>
+   </span>
+
+   <span ng:repeat="steps in post.stepsinfos| limitTo:1:2" class="showOnHoverSwitch text-align-center positionRelative widthHalfFlex heightHalf backgroundColorWhite floatLeft easing">
+      <span ng:click="popstart();" class="animated enterUpObject delay025 zindexFive positionAbsolute positionTopRight widthFivevh heightFive"><img src="./svg/close.svg" ng:click="
+         popclear = false;" class="zindexOne positionAbsolute positionCenter floatLeft widthHalfFlex heightHalfFlex"></span>
+      <!-- showOnHover // background -->
+      <span class="showOnHover positionAbsolute positionCenter 
+         backgroundColorWhite widthFullFlex heightFullFlex">
+         <span style="background-image: url('/photos/{{steps.backgroundone}}');
+         background-size: cover;" class="spacedLarge floatLeft box-shadowThreeStraight border-radius1 positionRelative">
+            <!-- washout background -->
+            <span class="positionAbsolute positionCenter opacity075
+               backgroundColorWhite widthFullFlex heightFullFlex">
+            </span>
+         </span>
+      </span>
+      <!-- hideOnHover // background -->
+      <span class="hideOnHover positionAbsolute positionCenter 
+         backgroundColorWhite widthFullFlex heightFullFlex">
+         <span style="background-image: url('/photos/{{steps.backgroundtwo}}');
+         background-size: cover;" class="spacedLarge floatLeft box-shadowThreeStraight backgroundteamcolor border-radius1 positionRelative">
+            <!-- washout background -->
+            <span class="positionAbsolute positionCenter opacity075
+               backgroundColorWhite widthFullFlex heightFullFlex">
+            </span>
+         </span>
+      </span>
+      <span class="
+         positionAbsolute positionCenter
+         heightHalfFlex widthHalfFlex border-radius
+         floatRight zindexTen" style="background-image: url('/partners/{{post.brandicon}}.svg');
+         background-size: 100% 100%;">
+      </span>
+   </span>
+
+
+   <span ng:repeat="steps in post.stepsinfos| limitTo:1:3" class="showOnHoverSwitch text-align-center positionRelative widthHalfFlex heightHalf backgroundColorWhite floatLeft easing">
+      <span ng:click="popstart();" class="animated enterUpObject delay025 zindexFive positionAbsolute positionTopRight widthFivevh heightFive"><img src="./svg/close.svg" ng:click="
+         popclear = false;" class="zindexOne positionAbsolute positionCenter floatLeft widthHalfFlex heightHalfFlex"></span>
+      <!-- showOnHover // background -->
+      <span class="showOnHover positionAbsolute positionCenter 
+         backgroundColorWhite widthFullFlex heightFullFlex">
+         <span style="background-image: url('/photos/{{steps.backgroundone}}');
+         background-size: cover;" class="spacedLarge floatLeft box-shadowThreeStraight border-radius1 positionRelative">
+            <!-- washout background -->
+            <span class="positionAbsolute positionCenter opacity075
+               backgroundColorWhite widthFullFlex heightFullFlex">
+            </span>
+         </span>
+      </span>
+      <!-- hideOnHover // background -->
+      <span class="hideOnHover positionAbsolute positionCenter 
+         backgroundColorWhite widthFullFlex heightFullFlex">
+         <span style="background-image: url('/photos/{{steps.backgroundtwo}}');
+         background-size: cover;" class="spacedLarge floatLeft box-shadowThreeStraight backgroundteamcolor border-radius1 positionRelative">
+            <!-- washout background -->
+            <span class="positionAbsolute positionCenter opacity075
+               backgroundColorWhite widthFullFlex heightFullFlex">
+            </span>
+         </span>
+      </span>
+      <span class="
+         positionAbsolute positionCenter
+         heightHalfFlex widthHalfFlex border-radius
+         floatRight zindexTen" style="background-image: url('/partners/{{post.brandicon}}.svg');
+         background-size: 100% 100%;">
+      </span>
+   </span>
+
+   <!-- job steps -->
+   <span ng:repeat="steps in post.stepsinfos| limitTo:1:3" class="
+      showOnHoverSwitch
+      positionRelative
+      widthHalfFlex
+      heightHalf
+      backgroundColorWhite
+      floatLeft">
+      <span class="
+         spacedLarge overflowhidden
+         positionRelative floatLeft easing">
+         <!-- hide on hover -->
+         <span class="positionAbsolute positionRight widthQuarterFlex heightHalfFlex marginauto easing">
+            <imaclinedone class="positionAbsolute positionLeft widthThreeQuarterFlex heightFullFlex floatLeft"></imaclinedone>
+         </span>
+         <h3 class="font-family-snippet widthFullFlex floatLeft positionRelative lineHeightFive fontSizeFive text-align-left fontColorTwo text-shadow05OffWhite zindexOne"> <span class="backgroundColorOffWhite floatRight">4/4</span> </h3>
+         <hr>
+         <span class="widthFullFlex positionRelative marginauto easing">
+         <b class="opacity095 widthFullFlex floatLeft positionRelative lineHeightSevenFive fontSizeFive text-align-left fontColorFour text-shadow05OffWhite zindexOne">{{steps.title}}</b>
+         </span>
+         <hr>
+         <hr class="horline marginauto positionRelative animated growhor ColorOneLeftClearGradient">
+         <span class="floatLeft
+                     font-family-snippet
+                     text-align-left
+                     widthFullFlex positionRelative border-radius1
+                     fontSizeTwoFive fontColorSix lineHeightFive easing">
+               <hr>
+               {{steps.description}}
+         </span>
+
+         <!-- show on hover -->
+         <span class="
+            backgroundColorWhite zindexOne
+            showOnHover positionAbsolute positionTop widthFullFlex heightFullFlex easing">
+            <span class="positionAbsolute positionRight widthQuarterFlex heightHalfFlex marginauto easing">
+               <imaclinedone class="positionAbsolute positionLeft widthThreeQuarterFlex heightFullFlex floatLeft"></imaclinedone>
+            </span>
+            <h3 class="font-family-snippet widthFullFlex floatLeft positionRelative lineHeightFive fontSizeFive text-align-left fontColorTwo text-shadow05OffWhite zindexOne"><span class="backgroundColorWhite">{{steps.titlehover}}:</span> </h3>
+            <span class="widthFullFlex positionRelative marginauto floatLeft easing">
+            <span class="widthFullFlex floatLeft positionRelative lineHeightTen fontSizeSevenFive text-align-left fontColorFour text-shadow05OffWhite zindexOne">
+            <span class="
+               spacedSmall overflowhidden
+               positionRelative floatLeft easing">
+            <p class="
+               floatLeft
+               text-align-left
+               widthFullFlex positionRelative border-radius1
+               fontSizeTwoFive fontColorFive fontColorFourOnHover lineHeightFive easing">
+               <span class="backgroundColorOffWhite"> {{steps.descriptionhover}}</span>
+            </p>
+            </span>
+            </span>
+            </span>
+            <hr>
+            <hr class="horline marginauto positionRelative animated growhor ColorOneLeftClearGradient">
+
+            <span class="
+               spacedSmall overflowhidden
+               positionRelative floatLeft easing">
+
+               <span class="paddingTwoFive marginOne border-radius1 backgroundColorOffWhite floatLeft">html</span>
+               <span class="paddingTwoFive marginOne border-radius1 backgroundColorOffWhite floatLeft">css</span>
+               <span class="paddingTwoFive marginOne border-radius1 backgroundColorOffWhite floatLeft">javascript</span>
+
+            </span>
+         </span>
+      </span>
+   </span>

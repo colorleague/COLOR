@@ -1,0 +1,61 @@
+<span class="
+      backgroundColorWhite widthStatic positionRelative marginauto">
+      
+      <span class="backgroundColorWhite widthFullFlex floatLeft">
+
+         <!-- slider count -->
+         <span class="positionRelative widthFullFlex backgroundColorWhite floatRight">
+
+         <!-- slider count -->
+            <span ng:hide="slider.count == post.brandinfos.length - 1" class="zindexOne positionRelative widthFivevh heightFive backgroundColorFour floatRight"
+               ng:click="
+               sliderToggle(1);">
+            <img src="./svg/white/close.svg" class="positionAbsolute positionCenter marginauto floatLeft widthHalfFlex heightHalfFlex">
+            </span>
+
+            <span ng:hide="slider.count == 0" class="zindexOne positionRelative widthFivevh heightFive backgroundColorThree floatRight"
+               ng:click="
+               sliderToggle(-1);">
+            <img src="./svg/white/close.svg" class="positionAbsolute positionCenter marginauto floatLeft widthHalfFlex heightHalfFlex">
+            </span>
+            
+         </span>
+
+         <span
+         class="positionRelative widthFullFlex heightTenFlex floatLeft easing zindexOne">
+      </span>
+
+         <div ng:repeat="brand in post.brandinfos | limitTo:1:slider.count" class="spacedMid border-radius1 overflowhidden positionRelative">
+            <!-- layer -->
+            <div class="
+               zindexOne positionRelative heightFullFlex widthFullFlex floatLeft">
+               <b class="
+                  floatLeft
+                  text-align-left
+                  widthFullFlex positionRelative border-radius1
+                  fontSizeSevenFive fontColorSix fontColorFourOnHover lineHeightTen easing">{{brand.title}}</b><br>
+            </div>
+            <span class="
+               floatLeft
+               font-family-snippet
+               text-align-left
+               widthFullFlex paddingTwoFive positionRelative border-radius1
+               fontSizeTwoFive fontColorSix fontColorFourOnHover lineHeightFive easing">
+
+
+                  {{brand.description}}
+
+            </span><br>
+
+
+            <h4 class="positionAbsolute
+            positionRight widthQuarterFlex heightQuarterFlex lineHeightTen fontSizeSevenFive text-align-center fontColorFive">
+               <span class="divcenter positionRelative opacity025">
+                  <b>{{slider.count}}</b>
+               </span>
+            </h4>
+
+         </div>
+         </div>
+      </span>
+   </span>

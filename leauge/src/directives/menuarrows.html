@@ -1,0 +1,28 @@
+<!-- left -->
+   <span ng:show="homepage == true">
+   <span ng:hide="startAnimationLeft == true || !startAnimation" class="animated enterUpObject delay025 zindexOne positionAbsolute positionLeft widthFive heightFive"
+      ng:mouseenter="
+      startAnimationLeftPreview = true;"
+      ng:mouseleave="
+      startAnimationLeftPreview = false;"
+      ng:click="
+      startAnimationLeft = !startAnimationLeft;"><img src="./svg/arrow-left.svg" class="widthFullFlex heightFullFlex"></span>
+   <span ng:show="startAnimationLeft == true" class="zindexOne positionAbsolute positionLeft widthFive heightFive"
+      ng:click="
+      startAnimationLeft = false"><img src="./svg/close.svg" class="widthFullFlex heightFullFlex">
+   </span>
+   </span>
+   <!-- right -->
+   <span ng:show="homepage == true">
+   <span ng:hide="startAnimationRight == true || !startAnimation" class="animated enterUpObject delay025 zindexOne positionAbsolute positionRight widthFive heightFive"
+      ng:mouseenter="
+      startAnimationRightPreview = true;"
+      ng:mouseleave="
+      startAnimationRightPreview = false;"
+      ng:click="
+      startAnimationRight = !startAnimationRight;"><img src="./svg/arrow-right.svg" class="widthFullFlex heightFullFlex"></span>
+   <span ng:show="startAnimationRight == true" class="zindexOne positionAbsolute positionRight widthFive heightFive"
+      ng:click="
+      startAnimationRight = false"><img src="./svg/close.svg" class="widthFullFlex heightFullFlex">
+   </span>
+   </span>

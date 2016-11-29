@@ -1,0 +1,90 @@
+<!-- contractors -->
+   <span class="
+      backgroundColorWhite
+      positionRelative
+      heightFullFlex
+      widthFullFlex
+      overflowhidden floatLeft">
+      <!-- washout background -->
+      <span class="zindexFive positionAbsolute positionCenter spacedLarge">
+         <span class="
+            positionAbsolute
+            positionCenter border-radius1
+            overflowhidden floatLeft"></span>
+         <ul class="positionRelative widthFullFlex heightFullFlex">
+
+            <span class="showOnHoverSwitch positionRelative widthHalfFlex heightHalfFlex floatLeft"
+               ng-repeat="member in team | filter: member.position = post.job | limitTo:4:0">
+               
+               <span class="hideOnHover  positionAbsolute positionCenter widthFullFlex heightFullFlex">
+
+                  <p class="
+                        floatLeft
+                        positionRelative 
+                        zindexOne
+                        backgroundColorOneTwo
+                        border-radius1
+                        paddingTwoFive
+                        marginTwoFive
+                        fontSizeThree
+                        lineHeightThree fontColorWhite fontColorFourOnHover easing">
+                        <span class="zindexFive positionRelative floatLeft spacedTiny">
+                        {{member.name}}
+                        </span>
+                  </p>
+
+               </span>
+
+               <span class="showOnHover positionAbsolute positionCenter widthFullFlex heightFullFlex">
+
+                  <p class="
+                     floatLeft
+                     positionRelative 
+                     zindexOne
+                     border-radius1
+                     paddingTwoFive
+                     marginTwoFive
+                     backgroundColorOne
+                     fontSizeTwo
+                     lineHeightThree fontColorWhite fontColorFourOnHover easing">
+                     <span class="zindexFive positionRelative floatLeft spacedTiny">
+                     {{member.jobs}}
+                     </span>
+                  </p>
+
+                  <br>
+
+                  <p class="
+                     floatLeft
+                     positionRelative 
+                     zindexOne
+                     border-radius1
+                     paddingTwoFive
+                     marginTwoFive
+                     backgroundColorOne
+                     fontSizeTwo
+                     lineHeightThree fontColorWhite fontColorFourOnHover easing">
+                     <span class="zindexFive positionRelative floatLeft spacedTiny">
+                     {{member.position}}
+                     </span>
+                  </p>
+
+               </span>
+
+               
+
+               <span class="positionAbsolute positionBottom floatLeft
+               widthThreeQuarterFlex heightTen backgroundColorOne border-radius1">
+               </span>
+
+               <span ng-repeat="pics in member.photos | limitTo:1:0" class="widthThreeQuarterFlex heightThreeQuarterFlex positionAbsolute positionBottom marginauto" style="background-image: url('/person/{{pics.link}}.png');
+                  background-size: contain;
+                  background-position: 50%;
+                  background-repeat: no-repeat;">
+               </span>
+
+            </span>
+               
+         </ul>
+      </span>
+   </span>

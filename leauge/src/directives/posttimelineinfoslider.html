@@ -1,0 +1,46 @@
+<span class="
+      backgroundColorWhite widthStatic positionAbsolute positionCenter marginauto">
+      <span
+         class="positionRelative widthFullFlex heightTenFlex floatLeft easing zindexOne">
+      </span>
+      <span class="backgroundColorWhite widthFullFlex floatLeft">
+
+      <!-- slider count -->
+      <span class="positionAbsolute positionTop backgroundColorWhite floatRight">
+
+         <!-- slider count -->
+         <span ng:hide="slider.count == post.slidephotos.length - 1" class="zindexOne positionRelative widthFivevh heightFive backgroundColorFour floatRight"
+            ng:click="
+            sliderToggle(1);">
+         <img src="./svg/white/close.svg" class="positionAbsolute positionCenter marginauto floatRight widthHalfFlex heightHalfFlex">
+         </span>
+
+         <span ng:hide="slider.count == 0" class="zindexOne positionRelative widthFivevh heightFive backgroundColorThree floatRight"
+            ng:click="
+            sliderToggle(-1);">
+         <img src="./svg/white/close.svg" class="positionAbsolute positionCenter marginauto floatRight widthHalfFlex heightHalfFlex">
+         </span>
+         
+      </span>
+
+         <div ng:repeat="info in post.timelineinfos | limitTo:1:slider.count" class="spacedMid border-radius1 overflowhidden positionRelative">
+            <!-- layer -->
+            <div class="
+               zindexOne positionRelative heightFullFlex widthFullFlex floatLeft">
+               <b class="
+                  floatLeft
+                  text-align-left
+                  widthFullFlex positionRelative border-radius1
+                  fontSizeFive fontColorSix fontColorFourOnHover lineHeightFive easing">{{info.title}}</b><br>
+            </div>
+            <span class="
+               floatLeft
+               font-family-snippet
+               text-align-left
+               widthFullFlex paddingTwoFive positionRelative border-radius1
+               fontSizeTwo fontColorSix fontColorFourOnHover lineHeightThree easing">
+            {{info.description}}</span><br>
+         </div>
+
+      </span>
+   </span>

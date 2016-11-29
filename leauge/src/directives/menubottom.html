@@ -1,0 +1,232 @@
+   <!-- Bread Bottom Menu -->
+   <span ng:show="homepage == true" class="animated enterUpObject delay025 positionAbsolute positionBreadBottomLeft heightTen zindexOne">
+      <ul class="floatLeft heightTen">
+                  <!-- dark show -->
+         <li ng:show="!startAnimation" ng:click="startAnimation = !startAnimation" class="centerdiv text-align-center positionRelative heightFullFlex marginTwoFiveLeft floatLeft easing">
+            <span class="centerdiv textOnHoverSwitch paddingTwoFive positionRelative buttonbox-shadowDark border-radius1 backgroundColorFive backgroundColorTwoOnHover centerdiv fontSizeTwoFive fontColorOne fontColorFiveOnHover lineHeightTwoFive easing">
+            esc
+            <span class="floatLeft animated enterUpObject delay025 zindexOne positionRelative widthTwoFive heightTwoFive marginSevenFiveRight"><img src="./svg/close.svg" class="widthFullFlex heightFullFlex"></span>
+            </span>
+         </li>
+         <!-- light show -->
+         <li ng:show="startAnimation" ng:click="startAnimation = !startAnimation" class="centerdiv text-align-center positionRelative heightFullFlex marginTwoFiveLeft floatLeft easing">
+            <span class="centerdiv textOnHoverSwitch paddingTwoFive positionRelative buttonbox-shadowDark border-radius1 backgroundColorTwo backgroundColorTwoOnHover centerdiv fontSizeTwoFive fontColorWhite fontColorFiveOnHover lineHeightTwoFive easing">
+            esc
+            <span class="floatLeft animated enterUpObject delay025 zindexOne positionRelative widthTwoFive heightTwoFive marginSevenFiveRight"><img src="./svg/close.svg" class="widthFullFlex heightFullFlex"></span>
+            </span>
+         </li>
+
+      </ul>
+   </span>
+
+   <!-- Bread Bottom Menu -->
+   <span ng:show="homepage == true" class="animated enterUpObject delay025 positionAbsolute positionBreadBottomRight heightTen zindexOne">
+      <ul class="floatLeft heightTen">
+
+         <!-- light show -->
+         <li ng:show="startAnimation" ng:click="pophelp = true;" class="centerdiv text-align-center positionRelative heightFullFlex marginTwoFiveRight floatLeft easing">
+            <span class="centerdiv textOnHoverSwitch widthTwoFivevh heightTwoFive paddingTwoFive positionRelative buttonbox-shadowDark border-radius-circle backgroundColorOneTwo backgroundColorTwoOnHover centerdiv fontSizeTwoFive fontColorWhite fontColorFiveOnHover lineHeightTwoFive easing">
+            ?
+            </span>
+         </li>
+
+         <!-- light show -->
+         <li ng:show="startAnimation" ng:click="popup = !popup" ng:click="paginationToggle(18); popclear = true;" class="centerdiv text-align-center positionRelative heightFullFlex marginTwoFiveRight floatLeft easing">
+            <span class="centerdiv textOnHoverSwitch paddingTwoFive positionRelative buttonbox-shadowDark border-radius1 backgroundColorTwo backgroundColorTwoOnHover centerdiv fontSizeTwoFive fontColorWhite fontColorFiveOnHover lineHeightTwoFive easing">
+            i
+            </span>
+         </li>
+         
+      </ul>
+   </span>
+
+   <!-- Bottom Menu -->
+   <span ng:show="homepage == true" class="animated enterUpObject delay025 zindexOne positionAbsolute positionBottom widthFull heightTen zindexOne">
+      <ul class="floatLeft widthFullFlex heightTen">
+
+         <!-- GO HOME -->
+         <li ng:class="{
+         'backgroundColorOneFour' : startAnimation,
+         'backgroundColorSix' : !startAnimation}" ng:click="resetstart(); homepage =  true; startAnimationLeft = false; aboutpage = false; paginationToggle(0);" class="
+            positionRelative border-radius1TopRight buttonbox-shadowDarkBottom overflowhidden floatLeft zindexTen easing">
+            <span class="
+               positionRelative widthTenvh heightTen floatLeft zindexTen">
+               <markwhite ng:show="startAnimation" class="
+                  positionAbsolute positionCenter widthFullFlex heightHalfFlex">
+               </markwhite>
+
+               <markdark ng:show="!startAnimation" class="
+                  positionAbsolute positionCenter widthFullFlex heightHalfFlex">
+               </markdark>
+            </span>
+         </li>
+
+         <li ng:click="videopopup = !videopopup" class="centerdiv text-align-center positionRelative heightFullFlex easing floatLeft">
+            <span class="
+               positionRelative widthTenvh heightTen floatLeft zindexTen">
+               <playbutton ng:show="startAnimation" class="
+                  positionAbsolute positionCenter widthFullFlex heightHalfFlex">
+               </playbutton>
+
+               <playbutton ng:show="!startAnimation" class="
+                  positionAbsolute positionCenter widthFullFlex heightHalfFlex">
+               </playbutton>
+            </span>
+         </li>
+
+
+         <span ng:click="startAnimationPopWhite = !startAnimationPopWhite"
+         class="text-align-center heightFive positionAbsolute positionBottom">
+
+            <li class="positionAbsolute positionCenter centerdiv marginTwoFiveRight easing floatRight">
+               <span class="centerdiv textOnHoverSwitch widthFivevh heightFive positionRelative centerdiv fontSizeTwoFive fontColorFive fontColorFiveOnHover lineHeightFive easing">
+               <span class="floatLeft animated enterUpObject delay025 zindexOne positionAbsolute positionCenter widthTwoFivevh heightTwoFive"><img src="./svg/arrow-down.svg" class="floatLeft widthFullFlex heightFullFlex"></span>
+               </span>
+            </li>
+
+            <span
+            class="positionAbsolute positionBottom widthFullFlex heightQuarterFlex easing zindexOne">
+               <hr class="vertline marginauto positionAbsolute positionBottom animated growvert backgroundColorOffWhite">
+
+            </span>
+
+         </span>
+
+         <!-- GO HOME -->
+         <li ng:class="{
+         'backgroundColorOneFour' : startAnimation,
+         'backgroundColorSix' : !startAnimation}" ng:click="resetstart(); homepage =  true; startAnimationLeft = false; aboutpage = false; paginationToggle(0);" class="
+            positionRelative border-radius1Top buttonbox-shadowDarkBottom overflowhidden floatRight zindexTen easing marginTwoFiveRight">
+            <span class="
+               positionRelative widthTenvh heightTen floatLeft zindexTen">
+               <markwhite ng:show="startAnimation" class="
+                  positionAbsolute positionCenter widthFullFlex heightHalfFlex">
+               </markwhite>
+
+               <markdark ng:show="!startAnimation" class="
+                  positionAbsolute positionCenter widthFullFlex heightHalfFlex">
+               </markdark>
+            </span>
+         </li>
+
+         <li ng:mouseenter="socialMenu = true" class="centerdiv text-align-center positionRelative heightFullFlex marginTwoFiveRight easing floatRight">
+
+            <span ng:mouseleave="socialMenu = false" ng:show="socialMenu" class="zindexTen positionAbsolute positionTopOff floatRight widthFullFlex">
+                     
+               <span class="centerdiv textOnHoverSwitch positionRelative centerdiv fontSizeTwoFive fontColorWhite fontColorFourOnHover lineHeightTwoFive box-shadowFiveStraight">
+                  
+                  <span class="centerdiv textOnHoverSwitch positionRelative border-radius1 backgroundColorOne centerdiv fontSizeTwoFive fontColorFive fontColorFiveOnHover lineHeightFive easing">
+                     <span class="floatLeft zindexOne positionRelative paddingTwoFive widthTwoFive heightTwoFive"><img src="./svg/social/instagram.svg" class="positionCenter positionAbsolute floatLeft widthHalfFlex heightHalfFlex"></span>
+                  </span>
+
+               </span>
+
+               <hr>
+
+               <span class="centerdiv textOnHoverSwitch positionRelative centerdiv fontSizeTwoFive fontColorWhite fontColorFourOnHover lineHeightTwoFive box-shadowFiveStraight">
+                  
+                  <span class="centerdiv textOnHoverSwitch positionRelative border-radius1 backgroundColorOneTwo centerdiv fontSizeTwoFive fontColorFive fontColorFiveOnHover lineHeightFive easing">
+                     <span class="floatLeft zindexOne positionRelative paddingTwoFive widthTwoFive heightTwoFive"><img src="./svg/social/facebook.svg" class="positionCenter positionAbsolute floatLeft widthHalfFlex heightHalfFlex"></span>
+                  </span>
+
+               </span>
+
+               <hr>
+
+               <span class="centerdiv textOnHoverSwitch positionRelative centerdiv fontSizeTwoFive fontColorWhite fontColorFourOnHover lineHeightTwoFive box-shadowFiveStraight">
+                  
+                  <span class="centerdiv textOnHoverSwitch positionRelative border-radius1 backgroundColorOneThree centerdiv fontSizeTwoFive fontColorFive fontColorFiveOnHover lineHeightFive easing">
+                     <span class="floatLeft zindexOne positionRelative paddingTwoFive widthTwoFive heightTwoFive"><img src="./svg/social/snapchat.svg" class="positionCenter positionAbsolute floatLeft widthHalfFlex heightHalfFlex"></span>
+                  </span>
+
+               </span>
+
+               <hr>
+
+               <span class="centerdiv textOnHoverSwitch positionRelative centerdiv fontSizeTwoFive fontColorWhite fontColorFourOnHover lineHeightTwoFive box-shadowFiveStraight">
+                  
+                  <span class="centerdiv textOnHoverSwitch positionRelative border-radius1 backgroundColorOneTwo centerdiv fontSizeTwoFive fontColorFive fontColorFiveOnHover lineHeightFive easing">
+                     <span class="floatLeft zindexOne positionRelative paddingTwoFive widthTwoFive heightTwoFive"><img src="./svg/social/reddit.svg" class="positionCenter positionAbsolute floatLeft widthHalfFlex heightHalfFlex"></span>
+                  </span>
+
+               </span>
+
+               <hr>
+
+               <span class="centerdiv textOnHoverSwitch positionRelative centerdiv fontSizeTwoFive fontColorWhite fontColorFourOnHover lineHeightTwoFive box-shadowFiveStraight">
+                  
+                  <span class="centerdiv textOnHoverSwitch positionRelative border-radius1 backgroundColorOneTwo centerdiv fontSizeTwoFive fontColorFive fontColorFiveOnHover lineHeightFive easing">
+                     <span class="floatLeft zindexOne positionRelative paddingTwoFive widthTwoFive heightTwoFive"><img src="./svg/social/github.svg" class="positionCenter positionAbsolute floatLeft widthHalfFlex heightHalfFlex"></span>
+                  </span>
+
+               </span>
+
+               <hr>
+
+               <span class="centerdiv textOnHoverSwitch positionRelative centerdiv fontSizeTwoFive fontColorWhite fontColorFourOnHover lineHeightTwoFive box-shadowFiveStraight">
+                  
+                  <span class="centerdiv textOnHoverSwitch positionRelative border-radius1 backgroundColorOneTwo centerdiv fontSizeTwoFive fontColorFive fontColorFiveOnHover lineHeightFive easing">
+                     <span class="floatLeft zindexOne positionRelative paddingTwoFive widthTwoFive heightTwoFive"><img src="./svg/social/dribbble.svg" class="positionCenter positionAbsolute floatLeft widthHalfFlex heightHalfFlex"></span>
+                  </span>
+
+               </span>
+
+               <hr>
+
+               <span class="centerdiv textOnHoverSwitch positionRelative centerdiv fontSizeTwoFive fontColorWhite fontColorFourOnHover lineHeightTwoFive box-shadowFiveStraight">
+                  
+                  <span class="centerdiv textOnHoverSwitch positionRelative border-radius1 backgroundColorOneTwo centerdiv fontSizeTwoFive fontColorFive fontColorFiveOnHover lineHeightFive easing">
+                     <span class="floatLeft zindexOne positionRelative paddingTwoFive widthTwoFive heightTwoFive"><img src="./svg/social/google.svg" class="positionCenter positionAbsolute floatLeft widthHalfFlex heightHalfFlex"></span>
+                  </span>
+
+               </span>
+
+               <hr>
+
+               <span class="centerdiv textOnHoverSwitch positionRelative centerdiv fontSizeTwoFive fontColorWhite fontColorFourOnHover lineHeightTwoFive box-shadowFiveStraight">
+                  
+                  <span class="centerdiv textOnHoverSwitch positionRelative border-radius1 backgroundColorOneTwo centerdiv fontSizeTwoFive fontColorFive fontColorFiveOnHover lineHeightFive easing">
+                     <span class="floatLeft zindexOne positionRelative paddingTwoFive widthTwoFive heightTwoFive"><img src="./svg/social/linkedin.svg" class="positionCenter positionAbsolute floatLeft widthHalfFlex heightHalfFlex"></span>
+                  </span>
+
+               </span>
+
+               <hr>
+
+               <span class="centerdiv textOnHoverSwitch positionRelative centerdiv fontSizeTwoFive fontColorWhite fontColorFourOnHover lineHeightTwoFive box-shadowFiveStraight">
+                  
+                  <span class="centerdiv textOnHoverSwitch positionRelative border-radius1 backgroundColorOneTwo centerdiv fontSizeTwoFive fontColorFive fontColorFiveOnHover lineHeightFive easing">
+                     <span class="floatLeft zindexOne positionRelative paddingTwoFive widthTwoFive heightTwoFive"><img src="./svg/social/tumblr.svg" class="positionCenter positionAbsolute floatLeft widthHalfFlex heightHalfFlex"></span>
+                  </span>
+
+               </span>
+
+               <hr>
+
+               <span class="centerdiv textOnHoverSwitch positionRelative centerdiv fontSizeTwoFive fontColorWhite fontColorFourOnHover lineHeightTwoFive box-shadowFiveStraight">
+                  
+                  <span class="centerdiv textOnHoverSwitch positionRelative border-radius1 backgroundColorOneTwo centerdiv fontSizeTwoFive fontColorFive fontColorFiveOnHover lineHeightFive easing">
+                     <span class="floatLeft zindexOne positionRelative paddingTwoFive widthTwoFive heightTwoFive"><img src="./svg/social/vimeo.svg" class="positionCenter positionAbsolute floatLeft widthHalfFlex heightHalfFlex"></span>
+                  </span>
+
+               </span>
+
+               <hr>
+
+               <span class="centerdiv textOnHoverSwitch positionRelative centerdiv fontSizeTwoFive fontColorWhite fontColorFourOnHover lineHeightTwoFive box-shadowFiveStraight">
+                  
+                  <span class="centerdiv textOnHoverSwitch positionRelative border-radius1 backgroundColorOneTwo centerdiv fontSizeTwoFive fontColorFive fontColorFiveOnHover lineHeightFive easing">
+                     <span class="floatLeft zindexOne positionRelative paddingTwoFive widthTwoFive heightTwoFive"><img src="./svg/social/youtube.svg" class="positionCenter positionAbsolute floatLeft widthHalfFlex heightHalfFlex"></span>
+                  </span>
+
+               </span>
+
+            </span>
+
+            <span class="centerdiv textOnHoverSwitch paddingTwoFive positionRelative border-radius1 backgroundColorOffWhite backgroundColorWhiteOnHover centerdiv fontSizeTwoFive fontColorFive fontColorFiveOnHover lineHeightFive easing">
+            <span class="floatLeft animated enterUpObject delay025 zindexOne positionRelative widthTwoFive heightTwoFive"><img src="./svg/plus.svg" class="positionCenter positionAbsolute floatLeft widthHalfFlex heightHalfFlex"></span>
+            </span>
+         </li>
+
+      </ul>
+   </span>

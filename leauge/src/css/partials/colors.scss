@@ -1,0 +1,1304 @@
+// Colors - Color Selection
+// primary
+// secondary
+// tertiary 
+// quaternary
+// quinary
+// senary
+// septenary
+// octonary
+// nonary
+// denary
+
+// Whites
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #ffffff;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: #ffffff;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: #ffffff;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: #ffffff;
+}
+
+.backgroundGrid {
+    background: url("/svg/grid.svg");
+    background-repeat: repeat;
+    background-position: 50% 0;
+}
+
+$ColorWhite: #ffffff;
+
+.text-shadow01White {
+    text-shadow: .1vh .1vh $ColorWhite;
+}
+
+.text-shadow025White {
+    text-shadow: .25vh .25vh $ColorWhite;
+}
+
+.text-shadow05White {
+    text-shadow: .5vh .5vh $ColorWhite;
+}
+.fontColorWhite, .fontWhiteOnHover:hover {
+    color: $ColorWhite;
+}
+
+.backgroundColorWhite, .backgroundColorWhiteOnHover:hover {
+    background: $ColorWhite;
+    background-repeat: repeat;
+    background-position: 50% 0;
+}
+
+.backgroundGridColorWhite {
+    background: $ColorWhite url("/svg/grid.svg");
+    background-repeat: repeat;
+    background-position: 50% 0;
+}
+
+.bordered-bottomWhite, .bordered-bottomWhiteOnHover:hover {
+    border-bottom: 1vh solid $ColorWhite;
+}
+
+.bordered-leftWhite, .bordered-leftWhiteOnHover:hover  {
+    border-left: 1vh solid $ColorWhite;
+}
+
+.bordered-leftWhite:nth-child(4) {
+    border-left: 0vh solid $ColorWhite;
+}
+
+$ColorOffWhite: #fefbdf;
+
+.text-shadow01OffWhite {
+    text-shadow: .1vh .1vh $ColorOffWhite;
+}
+
+.text-shadow025OffWhite {
+    text-shadow: .25vh .25vh $ColorOffWhite;
+}
+
+.text-shadow05OffWhite {
+    text-shadow: .5vh .5vh $ColorOffWhite;
+}
+
+.fontColorOffWhite {
+    color: $ColorOffWhite;
+}
+
+.backgroundColorOffWhite {
+    background: $ColorOffWhite;
+    background-repeat: repeat;
+    background-position: 50% 0;
+}
+
+.backgroundGridColorOffWhite {
+    background: $ColorOffWhite url("/svg/grid.svg");
+    background-repeat: repeat;
+    background-position: 50% 0;
+}
+
+// Colors
+// Orange
+$ColorOne: #ffca50;
+$ColorOneTwo: #ffd370;
+$ColorOneThree: #ffdb8b;
+$ColorOneFour: #ffe5a6;
+$ColorOneFive: #feeec2;
+
+.placeholderOne::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: $ColorOne;
+}
+.placeholderOne::-moz-placeholder { /* Firefox 19+ */
+  color: $ColorOne;
+}
+.placeholderOne:-ms-input-placeholder { /* IE 10+ */
+  color: $ColorOne;
+}
+.placeholderOne:-moz-placeholder { /* Firefox 18- */
+  color: $ColorOne;
+}
+
+.backgroundGlyphOne {
+    background: url("/svg/glyphone.svg");
+    background-repeat: repeat;
+    background-position: 50% 0;
+    background-size: 20%;
+}
+
+.backgroundGlyphTwo {
+    background: url("/svg/glyphone.svg");
+    background-repeat: repeat;
+    background-position: 50% 0;
+    background-size: 18.75%;
+}
+
+.backgroundColorOne, .backgroundColorOneOnHover:hover {
+    background: $ColorOne;
+}
+
+.backgroundGridColorOne {
+    background: $ColorOne url("/svg/grid.svg");
+    background-repeat: repeat;
+    background-position: 50% 0;
+}
+
+.backgroundGridColorOneTwo {
+    background: $ColorOneTwo url("/svg/grid.svg");
+    background-repeat: repeat;
+    background-position: 50% 0;    
+}
+
+.backgroundColorOneTwo, .backgroundColorOneTwoOnHover:hover {
+    background: $ColorOneTwo;
+}
+
+.backgroundGridColorOneThree {
+    background: $ColorOneThree url("/svg/grid.svg");
+    background-repeat: repeat;
+    background-position: 50% 0;    
+}
+
+.backgroundColorOneThree, .backgroundColorOneThreeOnHover:hover {
+    background: $ColorOneThree;
+}
+
+.backgroundGridColorOneFour {
+    background: $ColorOneFour url("/svg/grid.svg");
+    background-repeat: repeat;
+    background-position: 50% 0;    
+}
+
+.backgroundColorOneFour, .backgroundColorOneFourOnHover:hover {
+    background: $ColorOneFour;
+}
+
+.backgroundGridColorOneFive {
+    background: $ColorOneFive url("/svg/grid.svg");
+    background-repeat: repeat;
+    background-position: 50% 0;    
+}
+
+.backgroundColorOneFive, .backgroundColorOneFiveOnHover:hover {
+    background: $ColorOneFive;
+}
+
+.ColorOneToClearGradient {
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffca50+0,ffca50+100&0+0,1+100 */
+background: -moz-linear-gradient(top,  rgba(255,202,80,0) 0%, rgba(255,202,80,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(255,202,80,0) 0%,rgba(255,202,80,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(255,202,80,0) 0%,rgba(255,202,80,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffca50', endColorstr='#ffca50',GradientType=0 ); /* IE6-9 */
+}
+
+.ColorOneFromClearGradient {
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffca50+0,ffca50+100&1+0,0+100 */
+background: -moz-linear-gradient(top,  rgba(255,202,80,1) 0%, rgba(255,202,80,0) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(255,202,80,1) 0%,rgba(255,202,80,0) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(255,202,80,1) 0%,rgba(255,202,80,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffca50', endColorstr='#00ffca50',GradientType=0 ); /* IE6-9 */
+}
+
+.ColorOneLeftClearGradient {
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffca50+0,ffca50+100&1+0,0+100 */
+background: -moz-linear-gradient(left,  rgba(255,202,80,1) 0%, rgba(255,202,80,0) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left,  rgba(255,202,80,1) 0%,rgba(255,202,80,0) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right,  rgba(255,202,80,1) 0%,rgba(255,202,80,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffca50', endColorstr='#00ffca50',GradientType=1 ); /* IE6-9 */
+}
+
+.ColorOneRightClearGradient {
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffca50+0,ffca50+100&0+0,1+100 */
+background: -moz-linear-gradient(left,  rgba(255,202,80,0) 0%, rgba(255,202,80,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left,  rgba(255,202,80,0) 0%,rgba(255,202,80,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right,  rgba(255,202,80,0) 0%,rgba(255,202,80,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffca50', endColorstr='#ffca50',GradientType=1 ); /* IE6-9 */
+}
+
+.fontColorOne {
+    color: $ColorOne;
+}
+
+.bordered-One, .bordered-OneOnHover:hover  {
+    border: 1vh solid $ColorOne;
+}
+
+.bordered-OneSmall, .bordered-OneSmallOnHover:hover  {
+    border: .25vh solid $ColorOne;
+}
+
+
+.bordered-bottomOneSmall, .bordered-bottomOneSmallOnHover:hover  {
+    border-bottom: .25vh solid $ColorOne;
+}
+
+.bordered-leftOne, .bordered-leftOneOnHover:hover  {
+    border-left: 1vh solid $ColorOne;
+}
+
+.bordered-rightOne, .bordered-rightOneOnHover:hover  {
+    border-right: 1vh solid $ColorOne;
+}
+
+.bordered-bottomOne, .bordered-bottomOneOnHover:hover  {
+    border-bottom: 1vh solid $ColorOne;
+}
+
+.bordered-topOne, .bordered-topOneOnHover:hover  {
+    border-top: 1vh solid $ColorOne;
+}
+
+.box-shadowOneStraight  {
+  box-shadow: 0vh 0vh 5vh -2.75vh $ColorOne;
+}
+
+.box-shadowGoogleOne{
+    -webkit-box-shadow: 0 1vh 2vh $ColorOne;
+    box-shadow: 0 1vh 2vh $ColorOne;
+}
+
+.buttonbox-shadowOne {
+    top: -1vh;
+    -webkit-box-shadow: 0 1vh 0vh $ColorOne;
+    box-shadow: 0 1vh 0vh $ColorOne;
+}
+
+.buttonbox-shadowOne:hover {
+    top: 0vh;
+    -webkit-box-shadow: 0 0vh 0vh rgba(0,0,0,.0);
+    box-shadow: 0 0vh 0vh rgba(0,0,0,.0);
+}
+
+.buttonbox-shadowColorOneDark {
+    top: -1vh;
+    -webkit-box-shadow: 0 1vh 0vh rgba(255, 202, 80, 0.21);
+    box-shadow: 0 1vh 0vh rgba(255, 202, 80, 0.21);
+}
+
+.buttonbox-shadowColorOneDark:hover {
+    top: 0vh;
+    -webkit-box-shadow: 0 0vh 0vh rgba(255, 202, 80, 0.21);
+    box-shadow: 0 0vh 0vh rgba(255, 202, 80, 0.21);
+}
+
+.text-shadow01One {
+    text-shadow: .1vh .1vh $ColorOne;
+}
+
+.text-shadow025One {
+    text-shadow: .25vh .25vh $ColorOne;
+}
+
+.text-shadow05One {
+    text-shadow: .5vh .5vh $ColorOne;
+}
+
+.text-shadow1One {
+    text-shadow: 1vh 1vh $ColorOne;
+}
+
+// Yellow
+$ColorTwo: #fcd829;
+
+.backgroundColorTwo, .backgroundColorTwoOnHover:hover {
+    background: $ColorTwo;
+}
+
+.backgroundGridColorTwo {
+    background: $ColorTwo url("/svg/gridwhite.svg");
+    background-repeat: repeat;
+    background-position: 50% 0;
+}
+
+.fontColorTwo, .fontColorTwoOnHover:hover {
+    color: $ColorTwo;
+}
+
+.bordered-Two, .bordered-TwoOnHover:hover  {
+    border: 1vh solid $ColorTwo;
+}
+
+.bordered-TwoSmall, .bordered-TwoSmallOnHover:hover  {
+    border: .25vh solid $ColorTwo;
+}
+
+.bordered-bottomTwoSmall, .bordered-bottomTwoSmallOnHover:hover  {
+    border-bottom: .25vh solid $ColorTwo;
+}
+
+.bordered-leftTwo, .bordered-leftTwoOnHover:hover  {
+    border-left: 1vh solid $ColorTwo;
+}
+
+.bordered-rightTwo, .bordered-rightTwoOnHover:hover  {
+    border-right: 1vh solid $ColorTwo;
+}
+
+.bordered-bottomTwo, .bordered-bottomTwoOnHover:hover  {
+    border-bottom: 1vh solid $ColorTwo;
+}
+
+.bordered-topTwo, .bordered-topTwoOnHover:hover  {
+    border-top: 1vh solid $ColorTwo;
+}
+
+.box-shadowTwoStraight  {
+  box-shadow: 0vh 0vh 5vh -2.75vh $ColorTwo;
+}
+
+.box-shadowGoogleTwo{
+    -webkit-box-shadow: 0 1vh 2vh $ColorTwo;
+    box-shadow: 0 1vh 2vh $ColorTwo;
+}
+
+.buttonbox-shadowTwo {
+    top: -1vh;
+    -webkit-box-shadow: 0 1vh 0vh $ColorTwo;
+    box-shadow: 0 1vh 0vh $ColorTwo;
+}
+
+.text-shadow025Two {
+    text-shadow: .25vh .25vh $ColorTwo;
+}
+
+.text-shadow05Two {
+    text-shadow: .5vh .5vh $ColorTwo;
+}
+
+.text-shadow1Two {
+    text-shadow: 1vh 1vh $ColorTwo;
+}
+
+
+.buttonbox-shadowTwo:hover {
+    top: 0vh;
+    -webkit-box-shadow: 0 0vh 0vh rgba(0,0,0,.0);
+    box-shadow: 0 0vh 0vh rgba(0,0,0,.0);
+}
+
+.buttonbox-shadowColorTwoDark {
+    top: -1vh;
+    -webkit-box-shadow: 0 1vh 0vh rgba(252, 216, 41, 0.25);
+    box-shadow: 0 1vh 0vh rgba(252, 216, 41, 0.25);
+}
+
+.buttonbox-shadowColorTwoDark:hover {
+    top: 0vh;
+    -webkit-box-shadow: 0 0vh 0vh rgba(252, 216, 41, 0.25);
+    box-shadow: 0 0vh 0vh rgba(252, 216, 41, 0.25);
+}
+
+.ColorTwoToClearGradient {
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#fcd829+0,fcd829+100&0+0,1+100 */
+background: -moz-linear-gradient(top,  rgba(252,216,41,0) 0%, rgba(252,216,41,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(252,216,41,0) 0%,rgba(252,216,41,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(252,216,41,0) 0%,rgba(252,216,41,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00fcd829', endColorstr='#fcd829',GradientType=0 ); /* IE6-9 */
+}
+
+.ColorTwoFromClearGradient {
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#fcd829+0,fcd829+100&1+0,0+100 */
+background: -moz-linear-gradient(top,  rgba(252,216,41,1) 0%, rgba(252,216,41,0) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(252,216,41,1) 0%,rgba(252,216,41,0) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(252,216,41,1) 0%,rgba(252,216,41,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcd829', endColorstr='#00fcd829',GradientType=0 ); /* IE6-9 */
+}
+
+.ColorTwoRightClearGradient {
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#fcd829+0,fcd829+100&0+0,1+100 */
+background: -moz-linear-gradient(left,  rgba(252,216,41,0) 0%, rgba(252,216,41,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left,  rgba(252,216,41,0) 0%,rgba(252,216,41,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right,  rgba(252,216,41,0) 0%,rgba(252,216,41,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00fcd829', endColorstr='#fcd829',GradientType=1 ); /* IE6-9 */
+}
+
+.ColorTwoLeftClearGradient {
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#fcd829+0,fcd829+100&1+0,0+100 */
+background: -moz-linear-gradient(left,  rgba(252,216,41,1) 0%, rgba(252,216,41,0) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left,  rgba(252,216,41,1) 0%,rgba(252,216,41,0) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right,  rgba(252,216,41,1) 0%,rgba(252,216,41,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcd829', endColorstr='#00fcd829',GradientType=1 ); /* IE6-9 */
+}
+
+// Pink
+$ColorThree: #f6937e;
+
+.placeholderThree::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: $ColorThree;
+}
+.placeholderThree::-moz-placeholder { /* Firefox 19+ */
+  color: $ColorThree;
+}
+.placeholderThree:-ms-input-placeholder { /* IE 10+ */
+  color: $ColorThree;
+}
+.placeholderThree:-moz-placeholder { /* Firefox 18- */
+  color: $ColorThree;
+}
+
+.buttonbox-shadowColorThreeDark {
+    top: -1vh;
+    -webkit-box-shadow: 0 1vh 0vh rgba(246, 147, 126, 0.23);
+    box-shadow: 0 1vh 0vh rgba(246, 147, 126, 0.23);
+}
+
+.buttonbox-shadowColorThreeDark:hover {
+    top: 0vh;
+    -webkit-box-shadow: 0 0vh 0vh rgba(246, 147, 126, 0.23);
+    box-shadow: 0 0vh 0vh rgba(246, 147, 126, 0.23);
+}
+
+.backgroundColorThree, .backgroundColorThreeOnHover:hover {
+    background: $ColorThree;
+}
+
+.backgroundGridColorThree {
+    background: $ColorThree url("/svg/grid.svg");
+    background-repeat: repeat;
+    background-position: 50% 0;
+}
+
+.fontColorThree {
+    color: $ColorThree;
+}
+
+.fontColorThreeOnHover:hover {
+    color: $ColorThree;
+}
+
+.bordered-Three, .bordered-ThreeOnHover:hover  {
+    border: 1vh solid $ColorThree;
+}
+
+.bordered-bottomThree, .bordered-bottomThreeOnHover:hover {
+    border-bottom: 1vh solid $ColorThree;
+}
+
+.box-shadowThreeStraight  {
+  box-shadow: 0vh 0vh 5vh -2.75vh $ColorThree;
+}
+
+.box-shadowGoogleThree{
+    -webkit-box-shadow: 0 1vh 2vh $ColorThree;
+    box-shadow: 0 1vh 2vh $ColorThree;
+}
+
+.buttonbox-shadowThree {
+    top: -1vh;
+    -webkit-box-shadow: 0 1vh 0vh $ColorThree;
+    box-shadow: 0 1vh 0vh $ColorThree;
+}
+
+.buttonbox-shadowThree:hover {
+    top: 0vh;
+    -webkit-box-shadow: 0 0vh 0vh rgba(0,0,0,.0);
+    box-shadow: 0 0vh 0vh rgba(0,0,0,.0);
+}
+
+.text-shadow01Three {
+    text-shadow: .1vh .1vh $ColorThree;
+}
+
+.text-shadow025Three {
+    text-shadow: .25vh .25vh $ColorThree;
+}
+
+.text-shadow05Three {
+    text-shadow: .5vh .5vh $ColorThree;
+}
+
+.ColorThreeToClearGradient {
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f6937e+0,f6937e+100&0+0,1+100 */
+background: -moz-linear-gradient(top,  rgba(246,147,126,0) 0%, rgba(246,147,126,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(246,147,126,0) 0%,rgba(246,147,126,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(246,147,126,0) 0%,rgba(246,147,126,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00f6937e', endColorstr='#f6937e',GradientType=0 ); /* IE6-9 */
+}
+
+.ColorThreeFromClearGradient {
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f6937e+0,f6937e+100&1+0,0+100 */
+background: -moz-linear-gradient(top,  rgba(246,147,126,1) 0%, rgba(246,147,126,0) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(246,147,126,1) 0%,rgba(246,147,126,0) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(246,147,126,1) 0%,rgba(246,147,126,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6937e', endColorstr='#00f6937e',GradientType=0 ); /* IE6-9 */
+}
+
+.ColorThreeLeftClearGradient {
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f6937e+0,f6937e+100&1+0,0+100 */
+background: -moz-linear-gradient(left,  rgba(246,147,126,1) 0%, rgba(246,147,126,0) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left,  rgba(246,147,126,1) 0%,rgba(246,147,126,0) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right,  rgba(246,147,126,1) 0%,rgba(246,147,126,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6937e', endColorstr='#00f6937e',GradientType=1 ); /* IE6-9 */
+}
+
+.ColorThreeRightClearGradient {
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f6937e+0,f6937e+100&0+0,1+100 */
+background: -moz-linear-gradient(left,  rgba(246,147,126,0) 0%, rgba(246,147,126,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left,  rgba(246,147,126,0) 0%,rgba(246,147,126,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right,  rgba(246,147,126,0) 0%,rgba(246,147,126,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00f6937e', endColorstr='#f6937e',GradientType=1 ); /* IE6-9 */
+}
+
+// Green
+$ColorFour: #72c6a7;
+
+.placeholderFour::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: $ColorFour;
+}
+.placeholderFour::-moz-placeholder { /* Firefox 19+ */
+  color: $ColorFour;
+}
+.placeholderFour:-ms-input-placeholder { /* IE 10+ */
+  color: $ColorFour;
+}
+.placeholderFour:-moz-placeholder { /* Firefox 18- */
+  color: $ColorFour;
+}
+
+
+.buttonbox-shadowColorFourDark {
+    top: -1vh;
+    -webkit-box-shadow: 0 1vh 0vh rgba(159, 174, 162, 0.5);
+    box-shadow: 0 1vh 0vh rgba(159, 174, 162, 0.5);
+}
+
+.buttonbox-shadowColorFourDark:hover {
+    top: 0vh;
+    -webkit-box-shadow: 0 0vh 0vh rgba(159, 174, 162, 0.5);
+    box-shadow: 0 0vh 0vh rgba(159, 174, 162, 0.5);
+}
+
+.backgroundColorFour, .backgroundColorFourOnHover:hover {
+    background: $ColorFour;
+}
+
+.backgroundGridColorFour {
+    background: $ColorFour url("/svg/grid.svg");
+    background-repeat: repeat;
+    background-position: 50% 0;
+}
+
+.fontColorFour {
+    color: $ColorFour;
+}
+
+.bordered-Four, .bordered-FourOnHover:hover  {
+    border: 1vh solid $ColorFour;
+}
+
+.bordered-bottomFour, .bordered-bottomFourOnHover:hover {
+    border-bottom: 1vh solid $ColorFour;
+}
+
+.box-shadowFourStraight  {
+  box-shadow: 0vh 0vh 5vh -2.75vh $ColorFour;
+}
+
+.box-shadowGoogleFour{
+    -webkit-box-shadow: 0 1vh 2vh $ColorFour;
+    box-shadow: 0 1vh 2vh $ColorFour;
+}
+
+.buttonbox-shadowFour {
+    top: -1vh;
+    -webkit-box-shadow: 0 1vh 0vh $ColorFour;
+    box-shadow: 0 1vh 0vh $ColorFour;
+}
+
+.buttonbox-shadowFour:hover {
+    top: 0vh;
+    -webkit-box-shadow: 0 0vh 0vh rgba(0,0,0,.0);
+    box-shadow: 0 0vh 0vh rgba(0,0,0,.0);
+}
+
+.text-shadow01Four {
+    text-shadow: .1vh .1vh $ColorFour;
+}
+
+.text-shadow025Four {
+    text-shadow: .25vh .25vh $ColorFour;
+}
+
+.text-shadow05Four {
+    text-shadow: .5vh .5vh $ColorFour;
+}
+
+.text-shadow1Four {
+    text-shadow: 1vh 1vh $ColorFour;
+}
+
+.ColorFourToClearGradient {
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#9faea2+0,9faea2+100&0+0,1+100 */
+background: -moz-linear-gradient(top,  rgba(159,174,162,0) 0%, rgba(159,174,162,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(159,174,162,0) 0%,rgba(159,174,162,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(159,174,162,0) 0%,rgba(159,174,162,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#009faea2', endColorstr='#9faea2',GradientType=0 ); /* IE6-9 */
+}
+
+.ColorFourFromClearGradient {
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#9faea2+0,9faea2+100&1+0,0+100 */
+background: -moz-linear-gradient(top,  rgba(159,174,162,1) 0%, rgba(159,174,162,0) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(159,174,162,1) 0%,rgba(159,174,162,0) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(159,174,162,1) 0%,rgba(159,174,162,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9faea2', endColorstr='#009faea2',GradientType=0 ); /* IE6-9 */
+}
+
+.ColorFourRightClearGradient {
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#9faea2+0,9faea2+100&0+0,1+100 */
+background: -moz-linear-gradient(left,  rgba(159,174,162,0) 0%, rgba(159,174,162,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left,  rgba(159,174,162,0) 0%,rgba(159,174,162,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right,  rgba(159,174,162,0) 0%,rgba(159,174,162,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#009faea2', endColorstr='#9faea2',GradientType=1 ); /* IE6-9 */
+}
+
+.ColorFourLeftClearGradient {
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#9faea2+0,9faea2+100&1+0,0+100 */
+background: -moz-linear-gradient(left,  rgba(159,174,162,1) 0%, rgba(159,174,162,0) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left,  rgba(159,174,162,1) 0%,rgba(159,174,162,0) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right,  rgba(159,174,162,1) 0%,rgba(159,174,162,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9faea2', endColorstr='#009faea2',GradientType=1 ); /* IE6-9 */
+}
+
+// Dark
+$ColorFive: #1f3449;
+
+.placeholderFive::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: $ColorFive;
+}
+.placeholderFive::-moz-placeholder { /* Firefox 19+ */
+  color: $ColorFive;
+}
+.placeholderFive:-ms-input-placeholder { /* IE 10+ */
+  color: $ColorFive;
+}
+.placeholderFive:-moz-placeholder { /* Firefox 18- */
+  color: $ColorFive;
+}
+
+
+.backgroundColorFive, .backgroundColorFiveOnHover {
+    background: $ColorFive;
+}
+
+.backgroundGridColorFive {
+    background: $ColorFive url("/svg/grid.svg");
+    background-repeat: repeat;
+    background-position: 50% 0;
+}
+
+.bordered-FiveSmall, .bordered-FiveSmallOnHover:hover  {
+    border: .25vh solid $ColorFive;
+}
+
+.bordered-Five, .bordered-FiveOnHover:hover  {
+    border: 1vh solid $ColorFive;
+}
+
+.bordered-bottomFive, .bordered-bottomFiveOnHover:hover {
+    border-bottom: 1vh solid $ColorFive;
+}
+
+.bordered-bottomFiveSmall, .bordered-bottomFiveSmallOnHover:hover  {
+    border-bottom: .25vh solid $ColorFive;
+}
+
+.box-shadowFiveOnHover {
+    box-shadow: 0vh 0vh 0 0 rgba(31, 52, 73, 0);
+}
+
+.box-shadowFive, .box-shadowFiveOnHover:hover  {
+  box-shadow: 1vh 1vh 0 0 $ColorFive;
+}
+
+.box-shadowFiveStraight  {
+  box-shadow: 0vh 0vh 5vh -2.75vh $ColorFive;
+}
+
+.box-shadowGoogleFive{
+    -webkit-box-shadow: 0 1vh 2vh $ColorFive;
+    box-shadow: 0 1vh 2vh $ColorFive;
+}
+
+.buttonbox-shadowFive {
+    top: -1vh;
+    -webkit-box-shadow: 0 1vh 0vh $ColorFive;
+    box-shadow: 0 1vh 0vh $ColorFive;
+}
+
+.buttonbox-shadowFive:hover {
+    top: 0vh;
+    -webkit-box-shadow: 0 0vh 0vh rgba(0,0,0,.0);
+    box-shadow: 0 0vh 0vh rgba(0,0,0,.0);
+}
+
+.fontColorFive {
+    color: $ColorFive;
+}
+
+.text-shadow01Five {
+    text-shadow: .1vh .1vh $ColorFive;
+}
+
+.text-shadow025Five {
+    text-shadow: .25vh .25vh $ColorFive;
+}
+
+.text-shadow05Five {
+    text-shadow: .5vh .5vh $ColorFive;
+}
+
+.text-shadow1Five {
+    text-shadow: 1vh 1vh $ColorFive;
+}
+
+.ColorFiveToClearGradient {
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1f3449+0,1f3449+100&0+0,1+100 */
+background: -moz-linear-gradient(top,  rgba(31,52,73,0) 0%, rgba(31,52,73,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(31,52,73,0) 0%,rgba(31,52,73,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(31,52,73,0) 0%,rgba(31,52,73,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#001f3449', endColorstr='#1f3449',GradientType=0 ); /* IE6-9 */
+}
+
+.ColorFiveFromClearGradient {
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1f3449+0,1f3449+100&1+0,0+100 */
+background: -moz-linear-gradient(top,  rgba(31,52,73,1) 0%, rgba(31,52,73,0) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(31,52,73,1) 0%,rgba(31,52,73,0) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(31,52,73,1) 0%,rgba(31,52,73,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1f3449', endColorstr='#001f3449',GradientType=0 ); /* IE6-9 */
+}
+
+.ColorFiveRightClearGradient {
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1f3449+0,1f3449+100&0+0,1+100 */
+background: -moz-linear-gradient(left,  rgba(31,52,73,0) 0%, rgba(31,52,73,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left,  rgba(31,52,73,0) 0%,rgba(31,52,73,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right,  rgba(31,52,73,0) 0%,rgba(31,52,73,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#001f3449', endColorstr='#1f3449',GradientType=1 ); /* IE6-9 */
+}
+
+.ColorFiveLeftClearGradient {
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1f3449+0,1f3449+100&1+0,0+100 */
+background: -moz-linear-gradient(left,  rgba(31,52,73,1) 0%, rgba(31,52,73,0) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left,  rgba(31,52,73,1) 0%,rgba(31,52,73,0) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right,  rgba(31,52,73,1) 0%,rgba(31,52,73,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1f3449', endColorstr='#001f3449',GradientType=1 ); /* IE6-9 */
+}
+
+.whiteToClearGradient {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&0+0,1+100 */
+    background: -moz-linear-gradient(top,  rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+}
+
+.whiteFromClearGradient {
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&1+0,0+100 */
+background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=0 ); /* IE6-9 */
+}
+
+.whiteRightClearGradient {
+
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&0+0,1+100 */
+background: -moz-linear-gradient(left,  rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=1 ); /* IE6-9 */
+}
+
+.whiteLeftClearGradient {
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&1+0,0+100 */
+background: -moz-linear-gradient(left,  rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=1 ); /* IE6-9 */
+}
+
+.gradientText {
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+// Dark
+$ColorSix: #1a2d3d;
+
+.bordered-leftSix, .bordered-leftSixOnHover:hover  {
+    border-left: 1vh solid $ColorSix;
+}
+
+.bordered-rightSix, .bordered-rightSixOnHover:hover  {
+    border-right: 1vh solid $ColorSix;
+}
+
+.lightoffice {
+    background: $ColorOneTwo;
+}
+
+.darkoffice {
+    background: $ColorSix;
+}
+
+.beforeArrow:before {
+    top: calc(100% + 1.5vh);
+    border: solid transparent;
+    content: '';
+    height: 0;
+    left: calc(50% + 1vh);
+    position: absolute;
+    pointer-events: none;
+    width: 0;
+    border-color: rgba(170,170,170,0);
+    border-top-color: $ColorSix;
+    border-width: 1.5vh;
+    margin-left: 1.5vh;
+}
+
+.beforeArrow:after {
+    top: 100%;
+    border: solid transparent;
+    content: '';
+    height: 0;
+    left: 50%;
+    position: absolute;
+    pointer-events: none;
+    width: 0;
+    border-color: rgba(170,170,170,0);
+    border-top-color: $ColorOne;
+    border-width: 1.5vh;
+    margin-left: 1.5vh;
+}
+
+.backgroundColorSix, .backgroundColorSixOnHover {
+    background: $ColorSix;
+}
+
+.backgroundGridColorSix {
+    background: $ColorSix url("/svg/grid.svg");
+    background-repeat: repeat;
+    background-position: 50% 0;
+}
+
+.bordered-SixSmall, .bordered-SixSmallOnHover:hover  {
+    border: .25vh solid $ColorSix;
+}
+
+.bordered-Six, .bordered-SixOnHover:hover  {
+    border: 1vh solid $ColorSix;
+}
+
+.bordered-bottomSix, .bordered-bottomSixOnHover:hover {
+    border-bottom: 1vh solid $ColorSix;
+}
+
+.box-shadowSixOnHover {
+    box-shadow: 0vh 0vh 0 0 $ColorSix;
+}
+
+.box-shadowSix, .box-shadowSixOnHover:hover  {
+  box-shadow: 1vh 1vh 0 0 $ColorSix;
+}
+
+.box-shadowSixLeaveOnHover:hover {
+  box-shadow: 0vh 0vh 0 0 $ColorSix;
+}
+
+.box-shadowSixStraight  {
+  box-shadow: 0vh 0vh 5vh -2.75vh $ColorSix;
+}
+
+.box-shadowGoogleSix{
+    -webkit-box-shadow: 0 1vh 2vh $ColorSix;
+    box-shadow: 0 1vh 2vh $ColorSix;
+}
+
+.buttonbox-shadowSix {
+    top: -1vh;
+    -webkit-box-shadow: 0 1vh 0vh $ColorSix;
+    box-shadow: 0 1vh 0vh $ColorSix;
+}
+
+.buttonbox-shadowSix:hover {
+    top: 0vh;
+    -webkit-box-shadow: 0 0vh 0vh rgba(0,0,0,.0);
+    box-shadow: 0 0vh 0vh rgba(0,0,0,.0);
+}
+
+.fontColorSix {
+    color: $ColorSix;
+}
+
+.text-shadow01Six {
+    text-shadow: .1vh .1vh $ColorSix;
+}
+
+.text-shadow025Six {
+    text-shadow: .25vh .25vh $ColorSix;
+}
+
+.text-shadow05Six {
+    text-shadow: .5vh .5vh $ColorSix;
+}
+
+.bordered-bottomDark, .bordered-bottomDarkOnHover:hover {
+    border-bottom: 1vh solid rgba(26, 45, 61, 0.1);
+}
+
+.bordered-bottomDarkSmall, .bordered-bottomDarkSmallOnHover:hover  {
+    border-bottom: .25vh solid rgba(26, 45, 61, 0.1);
+}
+
+.text-shadow01Dark {
+    text-shadow: .1vh .1vh rgba(26, 45, 61, 0.1);
+}
+
+.text-shadow025Dark {
+    text-shadow: .25vh .25vh rgba(26, 45, 61, 0.1);
+}
+
+.text-shadow05Dark {
+    text-shadow: .5vh .5vh rgba(26, 45, 61, 0.1);
+}
+
+.no-text-shadow {
+    text-shadow: 0vh 0vh rgba(0, 0, 0, 0);
+}
+
+.buttonbox-shadowDark {
+    top: -1vh;
+    box-shadow: 0 1vh 0vh rgba(0, 45, 61, 0.1);
+    -webkit-box-shadow: 0 1vh 0vh rgba(0, 45, 61, 0.1);
+}
+
+.buttonbox-shadowDark:hover {
+    top: 0vh;
+    box-shadow: 0 0vh 0vh rgba(26, 45, 61, 0.0);
+    -webkit-box-shadow: 0 0vh 0vh rgba(26, 45, 61, 0.0);
+}
+
+
+.buttonbox-shadowDarkBottom {
+    top: 1vh;
+    box-shadow: 0 1vh 0vh rgba(0, 45, 61, 0.1);
+    -webkit-box-shadow: 0 1vh 0vh rgba(0, 45, 61, 0.1);
+}
+
+.buttonbox-shadowDarkBottom:hover {
+    top: 0vh;
+    box-shadow: 0 0vh 0vh rgba(26, 45, 61, 0.0);
+    -webkit-box-shadow: 0 0vh 0vh rgba(26, 45, 61, 0.0);
+}
+
+
+.box-shadowDarkOnHover {
+    box-shadow: 0vh 0vh 0 0 rgba(0, 45, 61, 0.1);
+}
+
+.box-shadowDark, .box-shadowDarkOnHover:hover  {
+  box-shadow: 1vh 1vh 0 0 rgba(0, 45, 61, 0.1);
+}
+
+.box-shadowDarkLeaveOnHover:hover {
+  box-shadow: 0vh 0vh 0 0 rgba(0, 45, 61, 0.1);
+}
+
+// light blud
+$ColorSeven: #237da0;
+
+.fontColorSeven, .fontColorSevenOnHover:hover {
+    color: $ColorSeven;
+}
+
+.bordered-leftSeven, .bordered-leftSevenOnHover:hover  {
+    border-left: 1vh solid $ColorSeven;
+}
+
+.placeholderSeven::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: $ColorSeven;
+}
+.placeholderSeven::-moz-placeholder { /* Firefox 19+ */
+  color: $ColorSeven;
+}
+.placeholderSeven:-ms-input-placeholder { /* IE 10+ */
+  color: $ColorSeven;
+}
+.placeholderSeven:-moz-placeholder { /* Firefox 18- */
+  color: $ColorSeven;
+}
+
+.backgroundColorSeven, .backgroundColorSevenOnHover {
+    background: $ColorSeven;
+}
+
+.backgroundGridColorSeven {
+    background: $ColorSeven url("/svg/grid.svg");
+    background-repeat: repeat;
+    background-position: 50% 0;
+}
+
+.bordered-SevenSmall, .bordered-SevenSmallOnHover:hover  {
+    border: .25vh solid $ColorSeven;
+}
+
+.bordered-Seven, .bordered-SevenOnHover:hover  {
+    border: 1vh solid $ColorSeven;
+}
+
+.bordered-bottomSeven, .bordered-bottomSevenOnHover:hover {
+    border-bottom: 1vh solid $ColorSeven;
+}
+
+.bordered-bottomSevenSmall, .bordered-bottomSevenSmallOnHover:hover  {
+    border-bottom: .25vh solid $ColorSeven;
+}
+
+.box-shadowSevenOnHover {
+    box-shadow: 0vh 0vh 0 0 rgba(31, 52, 73, 0);
+}
+
+.box-shadowSeven, .box-shadowSevenOnHover:hover  {
+  box-shadow: 1vh 1vh 0 0 $ColorSeven;
+}
+
+.box-shadowSevenStraight  {
+  box-shadow: 0vh 0vh 5vh -2.75vh $ColorSeven;
+}
+
+.box-shadowGoogleSeven{
+    -webkit-box-shadow: 0 1vh 2vh $ColorSeven;
+    box-shadow: 0 1vh 2vh $ColorSeven;
+}
+
+.buttonbox-shadowSeven {
+    top: -1vh;
+    -webkit-box-shadow: 0 1vh 0vh $ColorSeven;
+    box-shadow: 0 1vh 0vh $ColorSeven;
+}
+
+.buttonbox-shadowSeven:hover {
+    top: 0vh;
+    -webkit-box-shadow: 0 0vh 0vh rgba(0,0,0,.0);
+    box-shadow: 0 0vh 0vh rgba(0,0,0,.0);
+}
+
+.fontColorSeven {
+    color: $ColorSeven;
+}
+
+.text-shadow01Seven {
+    text-shadow: .1vh .1vh $ColorSeven;
+}
+
+.text-shadow025Seven {
+    text-shadow: .25vh .25vh $ColorSeven;
+}
+
+.text-shadow05Seven {
+    text-shadow: .5vh .5vh $ColorSeven;
+}
+
+.text-shadow1Seven {
+    text-shadow: 1vh 1vh $ColorSeven;
+}
+
+// dark blue
+$ColorEight: #1E3745;
+
+.bordered-leftEight, .bordered-leftEightOnHover:hover  {
+    border-left: 1vh solid $ColorEight;
+}
+
+.backgroundColorEight, .backgroundColorEightOnHover {
+    background: $ColorEight;
+}
+
+.backgroundGridColorEight {
+    background: $ColorEight url("/svg/grid.svg");
+    background-repeat: repeat;
+    background-position: 50% 0;
+}
+
+.bordered-EightSmall, .bordered-EightSmallOnHover:hover  {
+    border: .25vh solid $ColorEight;
+}
+
+.bordered-Eight, .bordered-EightOnHover:hover  {
+    border: 1vh solid $ColorEight;
+}
+
+.bordered-bottomEight, .bordered-bottomEightOnHover:hover {
+    border-bottom: 1vh solid $ColorEight;
+}
+
+.bordered-bottomEightSmall, .bordered-bottomEightSmallOnHover:hover  {
+    border-bottom: .25vh solid $ColorEight;
+}
+
+.box-shadowEightOnHover {
+    box-shadow: 0vh 0vh 0 0 rgba(31, 52, 73, 0);
+}
+
+.box-shadowEight, .box-shadowEightOnHover:hover  {
+  box-shadow: 1vh 1vh 0 0 $ColorEight;
+}
+
+.box-shadowEightStraight  {
+  box-shadow: 0vh 0vh 5vh -2.75vh $ColorEight;
+}
+
+.box-shadowGoogleEight{
+    -webkit-box-shadow: 0 1vh 2vh $ColorEight;
+    box-shadow: 0 1vh 2vh $ColorEight;
+}
+
+.buttonbox-shadowEight {
+    top: -1vh;
+    -webkit-box-shadow: 0 1vh 0vh $ColorEight;
+    box-shadow: 0 1vh 0vh $ColorEight;
+}
+
+.buttonbox-shadowEight:hover {
+    top: 0vh;
+    -webkit-box-shadow: 0 0vh 0vh rgba(0,0,0,.0);
+    box-shadow: 0 0vh 0vh rgba(0,0,0,.0);
+}
+
+.fontColorEight {
+    color: $ColorEight;
+}
+
+.text-shadow01Eight {
+    text-shadow: .1vh .1vh $ColorEight;
+}
+
+.text-shadow025Eight {
+    text-shadow: .25vh .25vh $ColorEight;
+}
+
+.text-shadow05Eight {
+    text-shadow: .5vh .5vh $ColorEight;
+}
+
+.text-shadow1Eight {
+    text-shadow: 1vh 1vh $ColorEight;
+}
+
+body {
+}
+
+input:focus, div:focus { outline: none; }
+
+.backgroundteam {
+    background-image: url('/photos/team.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.backgroundteamOnHover {
+    background-image: url('/photos/team.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.backgroundteamcolor {
+    background-image: url('/photos/teamcolor.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.backgroundgrain {
+    background-image: url('/photos/grain.gif');
+    background-repeat: repeat;
+}
+
+  thead {
+
+
+    td, th {
+        border-left: .25vh solid $ColorOffWhite;
+        border-bottom: .25vh solid $ColorOffWhite;
+        font-weight: bold;
+        font-size: 2.5vh;
+        line-height: 3vh;
+        color: $ColorSeven;
+        font-family: arvo;
+      }
+
+
+    td:first-child, th:first-child {
+        border-left: none;
+    }
+
+  }
+
+  tbody {
+
+    td, th {
+        border-left: .25vh solid $ColorOffWhite;
+        border-bottom: .25vh solid $ColorOffWhite;
+        font-size: 2vh;
+        line-height: 2.5vh;
+        color: $ColorEight;
+        font-family: 'Snippet', sans-serif;
+    }
+
+    td:first-child, th:first-child {
+        opacity: .25;
+        background-color: $ColorWhite;
+        color: $ColorThree;
+        font-family: arvo;
+    }
+
+    td:hover, th:hover {
+        background-color: $ColorOffWhite;
+        color: $ColorSeven;
+    }
+
+    td:nth-child(2), th:nth-child(2) {
+        background-color: #fffefb;
+        color: $ColorSeven;
+        font-family: arvo;
+    }
+
+    tr:nth-child(odd) {
+        background-color: $ColorWhite;
+        padding: 2.5vh;
+    }
+
+    tr:nth-child(even) {
+        background-color: $ColorOffWhite;
+        padding: 2.5vh;
+    }
+
+    td:first-child, th:first-child {
+        border-left: none;
+    }
+
+    tr:last-child {
+        td, th {
+        border-bottom: none;
+        }
+    }
+
+    
+
+  }
+
+
+.darkform ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #ffca50;
+}
+.darkform ::-moz-placeholder { /* Firefox 19+ */
+  color: #ffca50;
+}
+.darkform :-ms-input-placeholder { /* IE 10+ */
+  color: #ffca50;
+}
+.darkform :-moz-placeholder { /* Firefox 18- */
+  color: #ffca50;
+}

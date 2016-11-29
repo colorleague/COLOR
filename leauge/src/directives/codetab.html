@@ -1,0 +1,37 @@
+<!-- tabs nav -->
+                           <span ng:init="codescount = 0" class="showOnHoverSwitch
+                           widthFullFlex heightTenFlex backgroundColorEight
+                           positionRelative floatLeft easing">
+
+                              <p ng:repeat="code in post.directive" ng:click="$parent.codescount = code.position" ng:class="{'bordered-bottomOne' : $parent.codescount == code.position}" class="backgroundColorSix lineHeightFive fontSizeTwo font-family-snippet fontColorOne floatLeft text-align-center widthQuarterFlex"><span class="">{{code.title}}</span></p>
+
+                           </span>
+
+                           <!-- tabs content -->
+                           <span class="showOnHoverSwitch
+                           widthFullFlex heightNineFlex backgroundColorEight
+                           positionRelative floatLeft easing">
+
+                              <span class="
+                              spacedSmall overflowhidden border-radius1  
+                              positionRelative floatLeft easing">
+
+
+                                 
+                                 <span class="widthFullFlex heightFullFlex fontSizeOneFive fontColorSeven positionRelative floatLeft text-align-left">
+
+                                    <pre ng:repeat="code in post.directive | limitTo:1:codescount">
+                                    <code>
+
+                                    <ng-include src="code.slide"></ng-include>
+
+                                    </code>
+                                    </pre>
+
+                                 </span>
+
+                                 
+
+                              </span>
+
+                           </span>

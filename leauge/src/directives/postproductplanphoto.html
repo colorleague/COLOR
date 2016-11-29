@@ -1,0 +1,63 @@
+     <span ng-repeat="planphoto in post.planphotos | limitTo:1:0" class="
+      positionRelative
+      heightFullFlex
+      widthFullFlex
+      overflowhidden floatLeft"
+      style="background-image: url('/thumbs/{{planphoto.photoplan}}');
+      background-size: cover;">
+         
+         <span class="
+               showOnHoverSwitch
+               spacedMid overflowhidden
+               positionRelative centerdiv floatLeft easing">
+               <div class="
+                  showOnHover
+                  zindexOne 
+                  positionAbsolute positionBottom text-align-center widthFullFlex 
+                  backgroundColorOne">
+                  <p class="
+                     floatLeft
+                     positionRelative
+                     backgroundColorOne
+                     
+                     fontSizeFive
+                     lineHeightTen fontColorWhite fontColorFourOnHover easing">
+                     <span class="zindexFive positionRelative floatLeft spacedSmall backgroundColorOne">
+                     <!-- layer -->
+                     <span class="
+                        floatLeft
+                        font-family-snippet
+                        text-align-left
+                        widthFullFlex  positionRelative border-radius1
+                        fontSizeTwoFive fontColorSix fontColorFourOnHover lineHeightFive easing">
+                     (drawing)
+                     {{post.plan}}</span><br>
+                     </span>
+                  </p>
+               </div>
+
+               <div class="
+                  hideOnHover
+                  zindexOne 
+                  positionAbsolute positionLeftBottom text-align-center 
+                  backgroundGridColorWhite">
+                  <span class="spacedSmall backgroundGridColorOne positionRelative floatLeft">
+                  <p class="
+                     widthFullFlex
+                     floatLeft
+                     positionRelative
+                     
+                     fontSizeFive
+                     lineHeightTen fontColorWhite fontColorFourOnHover easing">
+
+                     <span class="zindexFive positionRelative floatLeft spacedSmall">
+
+                     <span class="bordered-bottomTwo"><span class="font-family-snippet">plan</span><b>ing</b></span>.
+
+                     </span>
+                  </p>
+                  </span>
+               </div>
+            </span>
+
+      </span>

@@ -1,0 +1,55 @@
+<!-- contractors -->
+<span class="positionRelative widthFullFlex backgroundColorWhite floatLeft">
+
+   <!-- row -->
+   <span ng:mouseenter="fixedbackgroundone = false; fixedbackgroundtwo = true;"
+      class="positionRelative widthFullFlex floatLeft easing overflowy zindexOne">
+
+      <!-- STRATEGY Services -->
+      <span ng:repeat="servs in post.services | limitTo:8:0"
+         class="positionRelative widthQuarterFlex floatLeft easing overflowy zindexOne">
+         <span class="
+            backgroundColorWhite widthStatic marginauto">
+            <span
+               class="positionRelative widthFullFlex heightTenFlex floatLeft easing zindexOne">
+            </span>
+            <span class="backgroundColorWhite widthFullFlex floatLeft">
+               <div class="spacedMid border-radius1 overflowhidden positionRelative">
+
+                  <div class="
+                        zindexOne positionRelative widthFullFlex heightTwelveFive floatLeft">
+
+                        <img src="./svg/{{servs.icon}}.svg" class="
+                           positionAbsolute positionCenter widthHalfFlex heightHalfFlex easing">
+
+                     </div>
+
+                  <!-- layer -->
+                  <div class="
+                     zindexOne positionRelative widthFullFlex floatLeft">
+                     <b class="
+                        floatLeft
+                        text-align-center
+                        widthFullFlex positionRelative
+                        fontSizeTwoFive fontColorSix fontColorFourOnHover lineHeightThree easing">{{servs.name}}</b><br>
+
+                        <hr>
+
+                        <p ng:repeat="servicestask in servs.task" class="
+                        floatLeft
+                        text-align-center
+                        widthFullFlex positionRelative
+                        fontSizeOneFive lineHeightThree fontColorFive opacity075 fontColorFourOnHover lineHeightFour easing">
+                        <span ng:class="{'backgroundColorOffWhite' : servicestask.active == true}" >{{servicestask.name}}<br></span></p>
+
+                        
+                  </div>
+               </div>
+               </div>
+            </span>
+         </span>
+      </span>
+
+   </span>
+
+</span>

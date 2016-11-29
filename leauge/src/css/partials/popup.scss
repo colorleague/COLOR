@@ -1,0 +1,275 @@
+
+// init position
+
+.pop {
+  position: fixed;
+  overflow:hidden;
+}
+
+.pop.popup {
+  top: 0;
+  bottom: -200%;
+}
+
+.pop.popdown {
+  top: 0;
+  bottom: 200%;
+}
+
+.pop.popup.active, .pop.popdown.active {
+  top: 0vh;
+  bottom: 0vh;
+}
+
+.pop.popleft.active, .pop.popright.active {
+  right: 0vh;
+  left: 0vh;
+}
+
+.popleft {
+  right: 0;
+  left: 200%;
+}
+
+.popright {
+  right: 0;
+  left: -200%;
+}
+
+.pop.popclear {
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: -25%;
+  opacity: 0;
+  z-index: 0;
+}
+
+.pop.popclear.active {
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: -0%;
+  opacity: 1;
+  z-index: 1;
+}
+
+.startAnimationOffice {
+    top: 0;
+    right: auto;
+    left: 0;
+    bottom: 0;
+}
+
+.startAnimationPopWhite {
+  .startAnimationOffice {
+    top: -200vh;
+    right: auto;
+    left: 0;
+    bottom: 0;
+  }
+
+  .startAnimationOffice {
+    bottom: 0vh;
+  }
+}
+
+.startAnimationLeft {
+  .startAnimationOffice, .startAnimationOfficeAnimation {
+    top: 0;
+    right: auto;
+    left: 100%;
+    bottom: 0vh;
+  }
+
+  .startAnimationOfficeLeft {
+    left: 0%;
+  }
+}
+
+.startAnimationLeftPreview {
+  .startAnimationOffice, .startAnimationOfficeAnimation {
+    top: 0;
+    right: auto;
+    left: 50%;
+    bottom: 0vh;
+  }
+
+  .startAnimationOfficeLeft {
+    left: -50%;
+  }
+}
+
+.startAnimationRight {
+  .startAnimationOffice, .startAnimationOfficeAnimation {
+    top: 0;
+    right: auto;
+    left: -100%;
+    bottom: 0vh;
+  }
+
+  .startAnimationOfficeRight {
+    left: 0%;
+  }
+}
+
+.startAnimationRightPreview {
+  .startAnimationOffice, .startAnimationOfficeAnimation {
+    top: 0;
+    right: auto;
+    left: -50%;
+    bottom: 0vh;
+  }
+
+  .startAnimationOfficeRight {
+    left: 50%;
+  }
+}
+
+.startAnimationUnder {
+  .startAnimationOffice {
+    top: 100vh;
+    right: auto;
+    left: 0;
+    bottom: 0;
+  }
+
+  .startAnimationOfficeUnder {
+    bottom: 0vh;
+  }
+}
+
+.startAnimationUnderPreview {
+  .startAnimationOffice {
+    top: 50vh;
+    right: auto;
+    left: 0;
+    bottom: 0;
+  }
+
+  .startAnimationOfficeUnder {
+    bottom: 100vh;
+  }
+}
+
+  .startAnimationOfficeAnimation {
+    top: auto;
+    right: auto;
+    left: 0;
+    bottom: 0vh;
+  }
+
+.startAnimationPopWhite {
+  .startAnimationOfficeAnimation {
+    top: auto;
+    right: auto;
+    left: 0;
+    bottom: 200vh;
+  }
+}
+
+// down
+.startAnimationOfficeOver {
+  top: 200vh;
+  right: auto;
+  left: 0;
+  bottom: 0;
+}
+
+  .leaveLeftOnstartAnimationOver {
+    top: auto;
+    right: 0vw;
+    left: 0vw;
+    bottom: 0;
+  }
+
+  .leaveRightOnstartAnimationOver {
+    top: auto;
+    right: 0vw;
+    left: 0vw;
+    bottom: 0;
+  }
+
+  .leaveBottomOnstartAnimationOver {
+    top: auto;
+    right: 0vw;
+    left: 0vw;
+    bottom: 0;
+  }
+
+  .leaveTopOnstartAnimationOver {
+    top: auto;
+    right: 0vw;
+    left: 0vw;
+    bottom: 0;
+  }
+
+.startAnimationOver {
+
+  // down
+  .startAnimationOfficeOver {
+    top: 0vh;
+    right: auto;
+    left: 0;
+    bottom: 0;
+  }
+
+  .leaveTopOnstartAnimationOver {
+    top: auto;
+    right: 0vw;
+    left: 0vw;
+    bottom: 200vh;
+  }
+
+  .leaveBottomOnstartAnimationOver {
+    top: auto;
+    right: 0vw;
+    left: 0vw;
+    bottom: -200vh;
+  }
+
+  .leaveLeftOnstartAnimationOver {
+    top: auto;
+    right: 0vw;
+    left: -200vw;
+    bottom: 0;
+  }
+
+  .leaveRightOnstartAnimationOver {
+    top: auto;
+    right: 0vw;
+    left: 200vw;
+    bottom: 0;
+  }
+
+  .startAnimationOfficeAnimation {
+    top: auto;
+    right: auto;
+    left: 0;
+    bottom: 25vh;
+  }
+
+  .startAnimationOffice {
+    top: -100vh;
+    right: auto;
+    left: 0;
+    bottom: 0;
+  }
+
+  .startAnimationOfficeOver {
+    bottom: 0vh;
+  }
+}
+
+.startAnimationOverPreview {
+  .startAnimationOffice {
+    top: -50vh;
+    right: auto;
+    left: 0;
+    bottom: 0;
+  }
+
+  .startAnimationOfficeOver {
+    bottom: -100vh;
+  }
+}

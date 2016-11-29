@@ -1,0 +1,138 @@
+<span class="
+         showOnHoverSwitch
+         positionRelative
+         heightFullFlex
+         widthFullFlex
+         overflowhidden floatLeft">
+
+
+         <!-- washout background -->
+         <span class="positionAbsolute positionCenter opacity075 widthFullFlex heightFullFlex">
+
+            <span ng:repeat="slides in post.slidephotos | limitTo:8:0" class="widthQuarterFlex heightHalfFlex positionRelative floatLeft" 
+            style="background-image: url('/thumbs/{{slides.slide}}');
+            background-size: cover;">
+            </span>
+
+         </span>
+
+         <!-- washout background -->
+         <span class="positionAbsolute positionCenter
+            ColorOneRightClearGradient widthFullFlex heightFullFlex">
+         </span>
+
+         <span class="positionRelative widthFullFlex heightHalfFlex floatLeft">
+         </span>
+         <!-- background -->
+         <span class="
+            showOnHoverSwitch
+            positionRelative
+            heightHalfFlex
+            widthQuarterFlex
+            overflowhidden floatLeft">
+            <!-- author background -->
+            <li class="positionRelative heightFullFlex widthFullFlex floatLeft easing zindexOne" ng-repeat="member in team | filter: member.firstname = post.author | limitTo:1:0">
+               <span
+                  ng:init="showonhover = true"
+                  ng:mouseenter="showonhover = false;"
+                  ng:mouseleave="showonhover = true;"
+                  class="zindexOne positionRelative heightFullFlex widthFullFlex floatLeft">
+               <span id="beep" class="zindexOne positionRelative heightFullFlex widthFullFlex floatLeft easing">
+               <span class="zindexOne positionRelative heightFullFlex widthFullFlex floatLeft easing">
+               <span ng:show="showonhover">
+               <span class="
+                  heightFullFlex
+                  widthFullFlex
+                  positionAbsolute positionBottomRight" ng-repeat="pics in member.photos | limitTo:1:1">
+               <img class="
+                  widthFullFlex
+                  positionAbsolute positionBottomRight" ng-src="./person/{{pics.link}}.png">
+               </span>
+               </span>
+               <span ng:show="!showonhover">
+               <span class="
+                  heightFullFlex
+                  widthFullFlex
+                  positionAbsolute positionBottomRight" ng-repeat="pics in member.photos | limitTo:1:0">
+               <img class="
+                  widthFullFlex
+                  positionAbsolute positionBottomRight" ng-src="./person/{{pics.link}}.png">
+               </span>
+               </span>
+               </span>
+               </span>
+               </span>
+            </li>
+            <span class="centerdiv widthHalfFlex positionAbsolute positionCenter lineHeightFive fontSizeFive text-align-left fontColorWhite text-shadow05One zindexOne">
+
+            </span>
+            <!-- close -->
+            <span class="animated enterUpObject delay025 zindexOne positionAbsolute positionLeft widthFive heightFive"
+               ng:click="
+               postpreview = false;postinationToggle(0);"><img src="./svg/close.svg" class="floatLeft widthFullFlex heightFullFlex"></span>
+         </span>
+         <!-- title -->
+         <span ng-repeat="member in team | filter: member.firstname = post.author | limitTo:1:0" class="positionRelative widthHalfFlex heightHalfFlex backgroundColorWhite box-shadowSixStraight text-align-left floatLeft">
+            <span class="positionRelative spacedLarge floatLeft">
+               <span class="positionRelative spacedMid border-radius1 box-shadowSixStraightfloatLeft">
+                  <span class="positionRelative spacedMid border-radius1 floatLeft">
+                     <p class="widthFullFlex lineHeightFive fontSizeFour floatLeft">
+                        <span class="opacity95">
+                        <b>{{member.name}} {{member.lastname}}</b></span>
+                     </p>
+                     <p class="widthFullFlex lineHeightThree fontSizeTwoFive floatLeft">
+                        <span class="opacity75">{{member.description}}</span>
+                     </p>
+                     <p class="widthFullFlex lineHeightTwoFive fontSizeTwoFive fontColorSeven floatLeft">
+                        <span class="opacity05">{{member.twitter}}</span>
+                     </p>
+
+                     <span class=" textOnHoverSwitch positionRelative widthFullFlex floatLeft fontSizeTwoFive fontColorWhite fontColorFourOnHover lineHeightTwoFive">
+                  
+                        <span class="marginTwoFiveRight textOnHoverSwitch positionRelative border-radius1 backgroundColorOneTwo paddingTwoFive widthTwoFive heightTwoFive floatLeft fontSizeTwoFive fontColorFive fontColorFiveOnHover lineHeightFive easing">
+                           <span class="floatLeft zindexOne positionRelative widthTwoFive heightTwoFive"><img src="./svg/social/facebook.svg" class="positionCenter positionAbsolute floatLeft widthThreeQuarterFlex heightThreeQuarterFlex"></span>
+                        </span>
+
+                        <span class="marginTwoFiveRight textOnHoverSwitch positionRelative border-radius1 backgroundColorOneTwo paddingTwoFive widthTwoFive heightTwoFive floatLeft fontSizeTwoFive fontColorFive fontColorFiveOnHover lineHeightFive easing">
+                           <span class="floatLeft zindexOne positionRelative widthTwoFive heightTwoFive"><img src="./svg/social/facebook.svg" class="positionCenter positionAbsolute floatLeft widthThreeQuarterFlex heightThreeQuarterFlex"></span>
+                        </span>
+
+                        <span class="marginTwoFiveRight textOnHoverSwitch positionRelative border-radius1 backgroundColorOneTwo paddingTwoFive widthTwoFive heightTwoFive floatLeft fontSizeTwoFive fontColorFive fontColorFiveOnHover lineHeightFive easing">
+                           <span class="floatLeft zindexOne positionRelative widthTwoFive heightTwoFive"><img src="./svg/social/facebook.svg" class="positionCenter positionAbsolute floatLeft widthThreeQuarterFlex heightThreeQuarterFlex"></span>
+                        </span>
+
+                        <span class="marginTwoFiveRight textOnHoverSwitch positionRelative border-radius1 backgroundColorOneTwo paddingTwoFive widthTwoFive heightTwoFive floatLeft fontSizeTwoFive fontColorFive fontColorFiveOnHover lineHeightFive easing">
+                           <span class="floatLeft zindexOne positionRelative widthTwoFive heightTwoFive"><img src="./svg/social/facebook.svg" class="positionCenter positionAbsolute floatLeft widthThreeQuarterFlex heightThreeQuarterFlex"></span>
+                        </span>
+                        
+                     </span>
+
+                  </span>
+               </span>
+            </span>
+         </span>
+
+         <span ng-repeat="member in team | filter: member.firstname = post.author | limitTo:1:0" class="positionRelative widthQuarterFlex heightHalfFlex backgroundColorOne box-shadowSixStraight text-align-left floatLeft">
+
+            <span class="positionRelative spacedSmall marginauto floatLeft">
+
+               <span class="positionAbsolute positionCenter heightHalfFlex widthFullFlex marginauto floatLeft">
+                  <span class="text-align-center positionRelative heightFullFlex marginTwoFive paddingTwoFive easing">
+                     <span class="paddingTwoFive positionRelative buttonbox-shadowDark border-radius1 backgroundGridColorThree backgroundColorTwoOnHover centerdiv fontSizeTwoFive fontColorWhite fontColorOneOnHover lineHeightFive easing">
+                     Resume
+                     <span class="marginTwoFiveLeft floatRight animated enterUpObject delay025 zindexOne positionAbsolute positionRight widthFivevh heightFull"><img src="./svg/arrow-down.svg" class="positionAbsolute positionCenter widthHalfFlex heightHalfFlex"></span>
+                     </span>
+                     <hr>
+                     <span class="paddingTwoFive positionRelative buttonbox-shadowDark border-radius1 backgroundGridColorFour backgroundColorTwoOnHover centerdiv fontSizeTwoFive fontColorWhite fontColorOneOnHover lineHeightFive easing">
+                     Contact
+                     <span class="marginTwoFiveLeft floatRight animated enterUpObject delay025 zindexOne positionAbsolute positionRight widthFivevh heightFull"><img src="./svg/arrow-down.svg" class="positionAbsolute positionCenter widthHalfFlex heightHalfFlex"></span>
+                     </span>
+
+                  </span>
+               </span>
+
+            </span>
+
+         </span>
+
+      </span>

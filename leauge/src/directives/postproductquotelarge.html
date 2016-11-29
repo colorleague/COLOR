@@ -1,0 +1,52 @@
+<!-- author quote background -->
+<span class="
+   showOnHoverSwitch
+   positionRelative
+   widthFullFlex
+   heightFullFlex
+   backgroundColorWhite floatLeft">
+
+   <span
+   class="spacedMid 
+   backgroundColorFour positionRelative floatLeft">
+
+   <span class="positionAbsolute positionBottomLeft widthHalfFlex  heightFullFlex backgroundColorWhite floatLeft easing zindexOne" ng-repeat="member in team | filter: member.firstname = post.author | limitTo:1:0">
+      
+      <!-- layer -->
+         <span class="
+            floatLeft
+            widthFullFlex positionAbsolute positionBottom
+            easing">
+
+            <div class="spacedMid positionRelative">
+
+               <span class="positionRelative floatLeft
+                  widthFullFlex heightTen backgroundColorOne" ng-repeat="member in team | filter: member.firstname = post.author | limitTo:1:0">
+                  <span ng-repeat="pics in member.photos | limitTo:1:0" class="widthFullFlex heightHalf positionAbsolute positionBottom marginauto floatLeft" style="background-image: url('/person/{{pics.link}}.png');
+                     background-size: cover;">
+                  </span>
+               </span>
+
+            </div>
+
+         </span>
+
+      </span>
+
+   <span class="
+      spacedMid
+      positionRelative floatLeft easing ">
+
+   <span class="floatRight
+      font-family-snippet marginauto widthFullFlex positionRelative lineHeightFive fontSizeFive text-align-left fontColorWhite text-shadow05One zindexOne">
+      <span class="backgroundColorTwo">
+      <span class="positionRelative zindexOne">
+      {{post.authorquote}}</span>
+      </span> 
+   </span>
+   <b class="floatRight lineHeightFive fontSizeFour text-align-left fontColorWhite"><br>-{{post.authorfull}}</b>
+   </span>
+
+</span>
+
+</span>

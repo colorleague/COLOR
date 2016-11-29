@@ -1,0 +1,253 @@
+{
+	"records":[
+		{
+			"category":"Development",
+			"icon":"imacone.svg",
+			"meta": {
+				"likes": 0,
+				"hates": 1
+			},
+			"subcategories":[
+				{
+				"name":"tutorial",
+				"icon":"imacone.svg",
+					"tags":[
+					{
+					"name":"Angular"
+					},
+					{
+					"name":"React"
+					}
+				]
+				},
+				{
+				"name":"Front-End",
+					"tags":[
+					{
+					"name":"Angular"
+					},
+					{
+					"name":"React"
+					}
+				]
+				},
+				{
+				"name":"Back-End",
+					"tags":[
+					{
+					"name":"Python"
+					},
+					{
+					"name":"React"
+					}
+				]
+				},
+
+				{
+				"name":"Mobile Apps",
+					"tags":[
+					{
+					"name":"Python"
+					},
+					{
+					"name":"React"
+					}
+				]
+				},
+
+				{
+				"name":"Databases",
+					"tags":[
+					{
+					"name":"Python"
+					},
+					{
+					"name":"React"
+					}
+				]
+				},
+
+				{
+				"name":"E-commerce",
+					"tags":[
+					{
+					"name":"Python"
+					},
+					{
+					"name":"React"
+					}
+				]
+				},
+
+				{
+				"name":"Full-Stack"
+				}
+			],
+			"description":"There is no perfect answer but I am going to do my best to give you my thoughts on this and hopefully help you draw your own conclusions."
+		},
+		{
+			"category":"Design",
+			"icon":"imacone.svg",
+			"meta": {
+				"likes": 0,
+				"hates": 1
+			},
+
+			"subcategories":[
+				{
+				"name":"Web Design",
+					"tags":[
+					{
+					"name":"Angular"
+					},
+					{
+					"name":"React"
+					}
+				]
+				},
+				{
+				"name":"Graphic Design",
+					"tags":[
+					{
+					"name":"Angular"
+					},
+					{
+					"name":"React"
+					}
+				]
+				},
+				{
+				"name":"Design Tools",
+					"tags":[
+					{
+					"name":"Angular"
+					},
+					{
+					"name":"React"
+					}
+				]
+				},
+				{
+				"name":"User Experience",
+					"tags":[
+					{
+					"name":"Angular"
+					},
+					{
+					"name":"React"
+					}
+				]
+				},
+				{
+				"name":"Game Design",
+					"tags":[
+					{
+					"name":"Angular"
+					},
+					{
+					"name":"React"
+					}
+				]
+				},
+				{
+				"name":"Design Thinking",
+					"tags":[
+					{
+					"name":"Angular"
+					},
+					{
+					"name":"React"
+					}
+				]
+				},
+
+				{
+				"name":"3D & 2D",
+					"tags":[
+					{
+					"name":"Angular"
+					},
+					{
+					"name":"React"
+					}
+				]
+				},
+				{
+				"name":"Animation",
+					"tags":[
+					{
+					"name":"Angular"
+					},
+					{
+					"name":"React"
+					}
+				]
+				}
+			],
+			"tags":[
+				{
+				"name":"Angular"
+				}
+			],
+			"description":"There is no perfect answer but I am going to do my best to give you my thoughts on this and hopefully help you draw your own conclusions."
+		},
+		{
+			"category":"Content",
+			"icon":"imacone.svg",
+			"meta": {
+				"likes": 0,
+				"hates": 1
+			},
+
+			"subcategories":[
+					{
+					"name":"interviews",
+					"tags":[
+						{
+						"name":"greet"
+						}
+					]
+					},
+
+					{
+					"name":"tutorials",
+					"tags":[
+						{
+						"name":"greet"
+						}
+					]
+					}
+				
+			],
+			"description":"There is no perfect answer but I am going to do my best to give you my thoughts on this and hopefully help you draw your own conclusions."
+		},
+		{
+			"category":"Strategy",
+			"icon":"imacone.svg",
+			"meta": {
+				"likes": 0,
+				"hates": 1
+			},
+			"subcategories":[
+				{
+				"name":"angular",
+					"tags":[
+					{
+					"name":"seo"
+					}
+				]
+				},
+				{
+				"name":"react",
+					"tags":[
+					{
+					"name":"tutorial"
+					}
+				]
+				}
+				
+			],
+			"description":"There is no perfect answer but I am going to do my best to give you my thoughts on this and hopefully help you draw your own conclusions."
+		}
+	]
+}

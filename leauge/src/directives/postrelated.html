@@ -1,0 +1,135 @@
+<!-- relatedpost -->
+      <span class="
+         showOnHoverSwitch
+         positionRelative
+         overflowhidden
+         heightHalfFlex
+         widthFullFlex
+         backgroundGridColorWhite
+         box-shadowSixStraight floatLeft  bordered-bottomWhite">
+
+         <span class="centerdiv widthHalfFlex positionAbsolute positionCenter lineHeightFive fontSizeFive text-align-left fontColorWhite text-shadow05One zindexOne">
+         <span class="backgroundColorOne">
+         <span class="positionRelative zindexOne">
+         Related Post</span>
+         </span> 
+         </span>
+         <!-- washout background -->
+         <span class="positionAbsolute positionCenter
+            backgroundColorWhite opacity05 widthFullFlex heightFullFlex">
+         </span>
+
+         <imacone class="opacity05
+            positionAbsolute positionOverBottomHover widthThreeQuarterFlex heightThreeQuarterFlex easing">
+         </imacone>
+      </span>
+
+      
+      <li ng-repeat="relatedpost in data | limitTo:1:1" class="showOnHoverSwitch centerdiv text-align-right positionRelative widthHalfFlex heightHalfFlex floatLeft easing">
+         <span class="
+            centerdiv
+            backgroundColorWhite
+            overflowhidden
+            positionAbsolute
+            positionCenter floatLeft easing">
+            <span class="positionRelative
+               spacedMid overflowhidden border-radius1 floatLeft easing">
+               <!-- showOnHover // background -->
+               <span class="showOnHover positionAbsolute positionCenter widthFullFlex heightFullFlex" style="background-image: url('/thumbs/{{relatedpost.photo}}');
+         background-size: cover;">
+         <!-- washout background -->
+                     <span class="positionAbsolute positionCenter opacity075
+                        backgroundColorWhite widthFullFlex heightFullFlex">
+                     </span>
+               </span>
+               <!-- showOnHover // background -->
+               <span class="hideOnHover positionAbsolute positionCenter
+                  backgroundColorOne widthFullFlex heightFullFlex">
+
+                  <!-- washout background -->
+                     <span class="positionAbsolute positionCenter opacity075
+                        backgroundColorWhite widthFullFlex heightFullFlex">
+                     </span>
+
+               </span>
+               <span class="positionRelative
+                  spacedSmall overflowhidden border-radius1 floatLeft easing">
+                  <!-- showOnHoverSwitch -->
+                  <span ng-repeat="posttag in relatedpost.tags" class="showOnHoverSwitch text-align-center positionRelative easing">
+                  <span class="positionRelative floatRight fontSizeThree fontColorOne fontWhiteOnHover lineHeightThree bordered-One bordered-TwoOnHover border-radius025 box-shadowFiveOnHover easing paddingTwoFive">{{posttag.name}}</span>
+                  </span>
+                  <hr>
+                  <h4 class="positionAbsolute
+                     positionCenter widthQuarterFlex centerdiv lineHeightFifteen fontSizeFifteen text-align-center fontColorWhite">
+                     <span class="floatLeft positionRelative">
+                     <b>.01</b>
+                     </span>
+                  </h4>
+                  <span class="fontColorOne widthFullFlex floatRight fontSizeTwoFive opacity075 lineHeightFive positionRelative zindexOne">
+                  {{relatedpost.date}}</span>
+                  <b class="widthFullFlex floatRight fontSizeFour opacity095 lineHeightSevenFive positionRelative zindexOne">
+                  {{relatedpost.title}}</b>
+                  <p class="widthFullFlex floatRight fontSizeTwoFive opacity075 lineHeightFive positionRelative zindexOne">
+                     by <i class="fontColorOne bordered-bottomOne">{{relatedpost.author}}</i> in <b class="fontColorOne bordered-bottomOne">{{relatedpost.category}}</b> : <b class="fontColorOne bordered-bottomOne">{{relatedpost.subcategory}}</b>
+                  </p>
+               </span>
+            </span>
+         </span>
+      </li>
+      <li ng-repeat="relatedpost in data | limitTo:1:1" class="showOnHoverSwitch centerdiv text-align-left positionRelative widthHalfFlex heightHalfFlex floatLeft easing">
+         <span class="
+            centerdiv
+            backgroundColorWhite
+            overflowhidden
+            positionAbsolute
+            positionCenter floatLeft easing">
+            <span class="
+               bordered-leftWhite
+               spacedBorderLeft
+               centerdiv
+               overflowhidden
+               positionAbsolute
+               positionCenter floatLeft easing">
+               <span class="positionRelative
+                  spacedMid overflowhidden border-radius1 floatLeft easing">
+                  <!-- showOnHover // background -->
+                  <span class="showOnHover positionAbsolute positionCenter backgroundteam widthFullFlex heightFullFlex" style="background-image: url('/thumbs/{{relatedpost.photo}}');
+         background-size: cover;">
+                     <!-- washout background -->
+                     <span class="positionAbsolute positionCenter opacity075
+                        backgroundColorWhite widthFullFlex heightFullFlex">
+                     </span>
+                  </span>
+                  <!-- showOnHover // background -->
+                  <span class="hideOnHover positionAbsolute positionCenter
+                     backgroundColorOne widthFullFlex heightFullFlex">
+                     <!-- washout background -->
+                     <span class="positionAbsolute positionCenter opacity075
+                        backgroundColorWhite widthFullFlex heightFullFlex">
+                     </span>
+                  </span>
+                  <span class="positionRelative
+                     spacedSmall overflowhidden border-radius1 floatLeft easing">
+                     <!-- showOnHoverSwitch -->
+                     <span ng-repeat="posttag in relatedpost.tags" class="showOnHoverSwitch text-align-center positionRelative easing">
+                     <span class="positionRelative floatLeft fontSizeThree fontColorOne fontWhiteOnHover lineHeightThree bordered-One bordered-TwoOnHover border-radius025 box-shadowFiveOnHover easing paddingTwoFive">{{posttag.name}}</span>
+                     </span>
+                     <hr>
+                     <h4 class="positionAbsolute
+                     positionCenter widthQuarterFlex centerdiv lineHeightFifteen fontSizeFifteen text-align-center fontColorWhite">
+                        <span class="floatLeft positionRelative">
+                        <b>.02</b>
+                        </span>
+                     </h4>
+                     <span class="fontColorOne widthFullFlex floatLeft fontSizeTwoFive opacity075 lineHeightFive positionRelative zindexOne">
+                        {{relatedpost.date}}</span>
+                        <b class="widthFullFlex floatLeft fontSizeFour opacity095 lineHeightSevenFive positionRelative zindexOne">
+                        {{relatedpost.title}}</b>
+                        <p class="widthFullFlex floatLeft fontSizeTwoFive opacity075 lineHeightFive positionRelative zindexOne">
+                        by <i class="fontColorOne bordered-bottomOne">{{relatedpost.author}}</i> in <b class="fontColorOne bordered-bottomOne">{{relatedpost.category}}</b> : <b class="fontColorOne bordered-bottomOne">{{relatedpost.subcategory}}</b>
+                     </p>
+                  </span>
+               </span>
+            </span>
+         </span>
+      </li>

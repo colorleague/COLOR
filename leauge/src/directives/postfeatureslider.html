@@ -1,0 +1,106 @@
+<!-- feature videos stat list components -->
+   <ul class="positionRelative widthFullFlex heightFullFlex floatLeft">
+
+      <span class="
+      spacedMid overflowy
+      positionRelative floatLeft easing ">
+
+         <!-- feature videos stat list components -->
+         <ul class="positionRelative widthFullFlex heightFullFlex floatLeft easing overflowy">
+
+            <span class="
+            spacedLarge overflowy
+            positionRelative floatLeft easing ">
+
+               <!-- video component 1 -->
+               <ul class="positionRelative widthFullFlex heightFullFlex floatLeft easing">
+
+                  <span class="showOnHoverSwitch
+                  widthFullFlex heightFullFlex
+                  positionRelative floatLeft easing">
+
+                     <span class="
+                     spacedSmall overflowhidden border-radius1 box-shadowSixStraight backgroundColorWhite
+                     positionRelative floatLeft easing">
+
+
+                        
+                        <span ng:repeat="slides in post.slidephotos | limitTo:1:slider.count" class="spacedMid positionRelative floatLeft" 
+   style="background-image: url('/thumbs/{{slides.slide}}');
+   background-size: 100% 100%;">
+
+      <span class="
+      showOnHoverSwitch
+      spacedMid overflowhidden
+      positionRelative centerdiv floatLeft easing">
+
+         <div class="
+            showOnHover
+            zindexOne 
+            positionAbsolute positionBottom text-align-left">
+            <p class="
+               floatLeft
+               positionRelative
+               fontSizeTwoFive
+               lineHeightThree fontColorWhite fontColorFourOnHover easing">
+               <span class="spacedMid backgroundGridColorWhite positionRelative floatLeft">
+                  <span class="spacedSmall backgroundGridColorThree positionRelative floatLeft">
+                     <span class="spacedSmall positionRelative floatLeft">
+                        <span class=""><span class="font-family-snippet">{{slides.description}}</span> <b>{{slides.date}}</b></span>.
+                     </span>
+                  </span>
+               </span>
+            </p>
+         </div>
+
+         <div class="
+            hideOnHover
+            zindexOne 
+            positionAbsolute positionBottom text-align-center">
+            
+            <p class="
+               floatLeft
+               positionRelative
+               fontSizeFive
+               lineHeightTen fontColorWhite fontColorFourOnHover easing">
+               <span class="spacedMid backgroundGridColorWhite positionRelative floatLeft">
+                  <span class="spacedSmall backgroundGridColorThree positionRelative floatLeft">
+                     <span class="spacedSmall positionRelative floatLeft">
+                        <span class=""><span class="font-family-snippet bordered-bottomTwo marginTwoFiveRight">{{slides.title}}</span><b>{{slider.count}}/{{post.slidephotos.length}}</b></span>.
+                     </span>
+                  </span>
+               </span>
+            </p>
+            
+         </div>
+      </span>
+   </span>
+
+   <span class="floatLeft zindexOne positionAbsolute positionTopRight widthTenvh heightTen backgroundColorWhite"><img src="./svg/four/close.svg" class="positionAbsolute positionCenter widthQuarterFlex"></span>
+   <!-- slider count -->
+   <span ng:hide="slider.count == 0" class="zindexOne positionAbsolute positionLeft widthTenvh heightTen backgroundColorThree"
+      ng:click="
+      sliderToggle(-1);">
+   <img src="./svg/white/close.svg" class="positionAbsolute positionCenter marginauto floatLeft widthHalfFlex heightHalfFlex">
+   </span>
+   <!-- slider count -->
+   <span ng:hide="slider.count == post.slidephotos.length - 1" class="zindexOne positionAbsolute positionRight  widthTenvh heightTen backgroundColorThree"
+      ng:click="
+      sliderToggle(1);">
+   <img src="./svg/white/close.svg" class="positionAbsolute positionCenter marginauto floatLeft widthHalfFlex heightHalfFlex">
+   </span>
+
+                     </span>
+
+                  </span>
+
+               </ul>
+
+            </span>
+
+         </ul>
+
+      </span>
+
+
+   </ul>

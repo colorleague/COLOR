@@ -1,0 +1,38 @@
+<span ng:repeat="slides in post.brandicons | limitTo:1:slider.count" class="
+   positionRelative
+   heightFullFlex
+   widthFullFlex
+   overflowhidden floatLeft backgroundGridColorWhite">
+
+   <span class="spacedMid positionRelative floatLeft">
+
+      <span class="
+      showOnHoverSwitch
+      spacedMid overflowhidden
+      positionRelative centerdiv floatLeft easing">
+
+         <div class="spacedMid positionAbsolute positionCenter border-radius1 overflowhidden">
+            <span class="
+               widthFullFlex floatLeft positionAbsolute positionCenter marginauto easing
+               heightTen border-radius zindexTen" style="background-image: url('/partners/{{slides.svg}}.svg');
+               background-size: 100% 100%;">
+            </span>
+         </div>
+
+      </span>
+   </span>
+
+   <!-- slider count -->
+   <span ng:hide="slider.count == 0" class="zindexOne positionAbsolute positionLeft widthFivevh heightFive backgroundColorThree"
+      ng:click="
+      sliderToggle(-1);">
+   <img src="./svg/white/close.svg" class="positionAbsolute positionCenter marginauto floatLeft widthHalfFlex heightHalfFlex">
+   </span>
+   <!-- slider count -->
+   <span ng:hide="slider.count == post.slidephotos.length - 1" class="zindexOne positionAbsolute positionRight  widthFivevh heightFive backgroundColorThree"
+      ng:click="
+      sliderToggle(1);">
+   <img src="./svg/white/close.svg" class="positionAbsolute positionCenter marginauto floatLeft widthHalfFlex heightHalfFlex">
+   </span>
+</span>
+

@@ -1,0 +1,78 @@
+   <span class="positionRelative widthFullFlex heightFullFlex floatLeft easing">
+      <!-- washout background -->
+      <span class="positionAbsolute positionCenter
+         backgroundColorWhite widthFullFlex heightFullFlex">
+      </span>
+      <li class="showOnHoverSwitch text-align-center positionRelative widthFullFlex heightFullFlex floatLeft easing">
+         
+         <!-- showOnHover // background -->
+         <span class="positionRelative floatLeft widthFullFlex heightFullFlex">
+         <span class="positionRelative floatLeft spacedLarge text-align-left  zindexOne">
+         <span class="fontColorFive lineHeightFive fontSizeFour widthFullFlex floatLeft">
+         <span class="positionRelative zindexOne"><b>
+         Our {{post.job}}s<br>& Product Outcome
+         </b></span></span>
+         <hr>
+
+         <span class=" widthHalfFlex floatLeft lineHeightFive fontSizeThree positionRelative">
+
+         <span class="
+               spacedTiny
+               border-radius1
+               backgroundColorOffWhite
+               overflowhidden
+               positionRelative floatLeft easing">
+
+         
+               <span class="
+               spacedSmall
+               overflowhidden
+               positionRelative floatLeft easing">
+         <span class="fontSizeTwo fontColorFour positionRelative zindexOne floatLeft">
+         AVALIABLE</span><br>
+
+           <span ng:repeat="pros in post.goods" class="fontColorFive font-family-snippet positionRelative zindexOne fontSizeTwoFive">
+               <span ng:class="{'backgroundColorOffWhite' : servicestask.active == true}" class="floatLeft">{{pros.name}}</span><span ng:click="brandtab1 = !brandtab1" class="marginTwoFiveLeft floatLeft animated enterUpObject delay025 zindexOne positionRelative widthTwoFivevh heightTwoFive"><img ng:show="!brandtab1" src="./svg/arrow-down.svg" class="widthFullFlex heightFullFlex">
+                     <img ng:show="brandtab1" src="./svg/one/close.svg" class="widthFullFlex heightFullFlex"></span><br>
+
+               </span>
+
+         </span>
+         </span>
+
+         </span>
+
+         <span class=" widthHalfFlex floatLeft lineHeightFive fontSizeThree positionRelative">
+
+         <span class="
+               spacedTiny
+               border-radius1
+               backgroundColorOffWhite
+               overflowhidden
+               positionRelative floatLeft easing">
+
+         
+               <span class="
+               spacedSmall
+               overflowhidden
+               positionRelative floatLeft easing">
+         <span class="fontSizeTwo fontColorThree positionRelative zindexOne floatLeft">
+         UNAVALIABLE</span><br>
+
+           <span ng:repeat="pros in post.bads" class="fontColorFive font-family-snippet positionRelative zindexOne fontSizeTwoFive">
+               <span ng:class="{'backgroundColorOffWhite' : servicestask.active == true}" class="floatLeft">{{pros.name}}</span><span ng:click="brandtab1 = !brandtab1" class="marginTwoFiveLeft floatLeft animated enterUpObject delay025 zindexOne positionRelative widthTwoFivevh heightTwoFive"><img ng:show="!brandtab1" src="./svg/arrow-down.svg" class="widthFullFlex heightFullFlex">
+                     <img ng:show="brandtab1" src="./svg/one/close.svg" class="widthFullFlex heightFullFlex"></span><br>
+
+               </span>
+
+         </span>
+         </span>
+
+         </span>
+
+         </span>
+         </span>
+         </span>
+      </li>
+
+      </span>

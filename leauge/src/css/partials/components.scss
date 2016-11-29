@@ -1,0 +1,2217 @@
+.centerdiv {
+    -webkit-box-align:center;
+    -webkit-box-pack:center;
+    display:-webkit-box;
+}
+a {
+	text-decoration: none;
+}
+
+ul.horizontal-list li {
+    display: inline-block;
+    /* You can also add some margins here to make it look prettier */
+    zoom:1;
+    *display:inline;
+}
+
+.zindexOne {
+  z-index: 1;
+}
+
+.zindexFive {
+  z-index: 5;
+}
+
+.zindexTen {
+  z-index: 10;
+}
+
+.opacity01 {
+	opacity: .1;
+}
+
+.opacity02 {
+	opacity: .2;
+}
+
+.opacity025 {
+	opacity: .25;
+}
+
+.opacity03 {
+	opacity: .3;
+}
+
+.opacity04 {
+	opacity: .4;
+}
+
+.opacity05 {
+	opacity: .5;
+}
+
+.opacity06 {
+	opacity: .6;
+}
+
+.opacity07 {
+	opacity: .7;
+}
+
+.opacity075 {
+	opacity: .75;
+}
+
+.opacity08 {
+	opacity: .8;
+}
+
+.opacity09 {
+	opacity: .9;
+}
+
+.opacity095 {
+	opacity: .95;
+}
+
+.showOnHoverSwitch {
+	.showOnHover {
+		opacity: 0;
+	}
+
+	.hideOnHover {
+		opacity: 1;
+	}
+}
+
+.showOnHoverSwitch:hover {
+	.showOnHover {
+		opacity: 1;
+	}
+
+	.hideOnHover {
+		opacity: 0;
+	}
+}
+
+.beforeMenu {
+	position: relative;
+	span.beforeContent {
+	    opacity: 0;
+	    position: absolute;
+	    top: -175%;
+	    /* left: -100%; */
+	    margin: auto;
+	    background: #ccc;
+	    border-radius: 1vh;
+	    width: 100%;
+	    font-size: 2vh;
+
+		p {
+			padding: 0 5vh;
+		}
+	}
+}
+
+.beforeMenu:hover {
+	span.beforeContent {
+		opacity: 1;
+	}
+}
+
+.textOnHoverSwitch {
+	.beforetext {
+		opacity: 0;
+		position: absolute;
+		top: -10vh;
+	    margin: auto;
+	    left: 0;
+	    right: 0;
+	}
+
+	.aftertext {
+		opacity: 1;
+		position: absolute;
+		bottom: -6vh;
+	    margin: auto;
+	    left: 0;
+	    right: 0;
+	}
+}
+
+.textOnHoverSwitch:hover {
+	.beforetext {
+		opacity: 1;
+	}
+
+	.aftertext {
+		opacity: 0;
+	}
+}
+
+#listholder.listholdergrid {
+	width: 100%;
+	height: 50vh;
+	position: relative;
+
+	#listitem {
+	    width: 22.5%;
+	    height: 97.5%;
+	    padding: 1.25%;
+
+		#thumbnail:hover {
+
+			#info {
+				background: rgba(255, 255, 255, 0.75);
+
+				#category, #subcategory, #tags {
+					display: none;
+				}
+
+				#title, #date {
+					display: block;
+				}
+			}
+		}
+
+		#thumbnail {
+			width: 100%;
+			height: 50%;
+			float: left;
+
+			#info {
+
+				#meta {
+					width: 100%;
+					display: none;
+				}
+
+				width: 100%;
+				height: 100%;
+				float: left;
+
+				#title {
+					display: none;
+				}
+
+				#category, #subcategory, #tags {
+					display: block;
+				}
+
+				#date {
+					display: none;
+				}
+
+				#index {
+					display: none;
+				}
+
+				#author {
+					display: none;
+				}
+
+				#commentsstamp {
+					display: none;
+				}
+
+				#price {
+					display: none;
+				}
+
+			}
+			
+			
+
+			#meta {
+				width: 100%;
+				display: block;
+			}
+
+		}
+
+		#meta {
+			display: none;
+		}
+
+		#info {
+			width: 100%;
+			height: 50%;
+			float: left;
+
+			#title {
+				display: none;
+				color: $ColorFour;
+				font-weight: 800;
+				font-size: 2.5vh;
+				line-height: 5vh;
+				text-shadow: 0.25vh 0.25vh $ColorOffWhite;
+			}
+
+			#subtitle {
+				display: none;
+			}
+
+			#tagline {
+				display: none;
+			}
+
+			#category {
+				display: none;
+				font-size: 2vh;
+				line-height: 3vh;
+				font-style: italic;
+				color: $ColorWhite;
+				background: $ColorThree;
+				padding: 1vh;
+				margin: 1vh;
+				float: left;
+			}
+
+			#subcategory {
+				display: none;
+				font-size: 2vh;
+				line-height: 3vh;
+				font-style: italic;
+				color: $ColorFive;
+				background: $ColorTwo;
+				padding: 1vh;
+				margin: 1vh;
+				float: left;
+			}
+
+			#tags {
+				display: none;
+				font-size: 2vh;
+				line-height: 3vh;
+				font-style: italic;
+				color: $ColorFive;
+				background: $ColorOffWhite;
+				padding: 1vh;
+				margin: 1vh;
+				float: left;
+			}
+
+			#date {
+				float: right;
+				display: none;
+				font-style: italic;
+				background: #f9f9f9;
+				padding: 1vh;
+				margin: 1vh;
+				font-size: 2.5vh;
+				font-style: italic;
+				color: $ColorFive;
+				background: $ColorOffWhite;
+				float: left;
+				clear: both;
+			}
+
+			#meta {
+				float: left;
+				display: block;
+				font-style: italic;
+				background: #f9f9f9;
+				padding: 1vh;
+
+				#likes {
+					float: right;
+					display: block;
+					font-size: 2.5vh;
+					line-height: 5vh;
+					font-style: italic;
+					background: #f9f9f9;
+					color: $ColorFour;
+
+					img {
+						position: absolute;
+						left: 0;
+						right: 0;
+						top: 0;
+						bottom: 0;
+						margin: auto;
+					}
+				}
+
+				#hates {
+					float: right;
+					display: block;
+					font-size: 2.5vh;
+					line-height: 5vh;
+					font-style: italic;
+					background: #f9f9f9;
+					color: $ColorFour;
+				
+					img {
+						position: absolute;
+						left: 0;
+						right: 0;
+						top: 0;
+						bottom: 0;
+						margin: auto;
+					}
+				}
+
+				#comments {
+					float: right;
+					display: block;
+					font-size: 2.5vh;
+					line-height: 5vh;
+					font-style: italic;
+					background: #f9f9f9;
+					color: $ColorFour;
+				
+					img {
+						position: absolute;
+						left: 0;
+						right: 0;
+						top: 0;
+						bottom: 0;
+						margin: auto;
+					}
+				}
+			}
+
+			#commentsstamp {
+				display: none;
+				position: absolute;
+				top: 0;
+				right: 0;
+				float: right;
+				display: block;
+				font-size: 2.5vh;
+				line-height: 5vh;
+				font-style: italic;
+				color: $ColorFour;
+			
+				img {
+					position: absolute;
+					left: 0;
+					right: 0;
+					top: 0;
+					bottom: 0;
+					margin: auto;
+				}
+			}
+
+			#author {
+				display: block;
+				font-size: 2.5vh;
+				line-height: 5vh;
+				font-style: italic;
+				background: #f9f9f9;
+			}
+
+			#authorpic {
+				height: 5vh;
+				width: 5vh;
+				border-radius: 1vh;
+				margin: 1vh;
+				overflow: hidden;
+				float: left;
+				display: block;
+				font-size: 2vh;
+				line-height: 2vh;
+				font-style: italic;
+				background: #f9f9f9;
+			}
+
+			#authorblurb {
+				width: 100%;
+				font-size: 2vh;
+				line-height: 7.5vh;
+
+				#authorname {
+					color: $ColorFour;
+					border-bottom: .5vh solid $ColorTwo;
+				}
+
+				#authorcategory {
+					display: none;
+					color: $ColorFour;
+					border-bottom: .5vh solid $ColorTwo;
+				}
+
+				#authordate {
+					display: none;
+					color: $ColorFour;
+					border-bottom: .5vh solid $ColorTwo;
+				}
+			}
+
+			#price {
+				line-height: 5vh;
+				width: 5vh;
+				font-size: 2.5vh;
+				float: right;
+				display: block;
+				font-style: italic;
+				background: #f9f9f9;
+				padding: 1vh;
+
+			}
+		}
+
+		#svg {
+			display: none;
+			width: 12.5%;
+			height: 100%;
+			float: left;
+			position: relative;
+		}
+
+		#index {
+			display: none;
+		}
+	}
+}
+
+
+#listholder.listholderlist {
+	width: 100%;
+	height: 25vh;
+	position: relative;
+
+	#listitem {
+	    width: 47.5%;
+	    height: 97.5%;
+	    padding: 1.25%;
+
+	    #thumbnail:hover {
+
+			#info {
+
+				#category, #subcategory, #tags {
+					display: block;
+				}
+
+				#date {
+					display: none;
+				}
+			}
+		}
+
+		#thumbnail:hover {
+
+			#info {
+
+				#category, #subcategory, #tags {
+					display: none;
+				}
+
+				#date {
+					display: block;
+				}
+			}
+		}
+
+		#thumbnail {
+			width: 50%;
+			height: 100%;
+			position: relative;
+		
+			#info {
+				width: 100%;
+				height: 100%;
+				float: left;
+
+				#title {
+					display: none;
+				}
+
+				#subtitle {
+					display: none;
+				}
+
+				#tagline {
+					display: none;
+				}
+
+				#category {
+					display: block;
+					font-size: 2vh;
+					line-height: 3vh;
+					font-style: italic;
+					color: $ColorWhite;
+					background: $ColorThree;
+					padding: 1vh;
+					margin: 1vh;
+					float: left;
+				}
+
+				#subcategory {
+					display: block;
+					font-size: 2vh;
+					line-height: 3vh;
+					font-style: italic;
+					color: $ColorFive;
+					background: $ColorTwo;
+					padding: 1vh;
+					margin: 1vh;
+					float: left;
+				}
+
+				#tags {
+					display: block;
+					font-size: 2vh;
+					line-height: 3vh;
+					font-style: italic;
+					color: $ColorFive;
+					background: $ColorOffWhite;
+					padding: 1vh;
+					margin: 1vh;
+					float: left;
+				}
+
+				#date {
+					display: none;
+					font-size: 2vh;
+					line-height: 3vh;
+					font-style: italic;
+					color: $ColorWhite;
+					background: $ColorThree;
+					padding: 1vh;
+					margin: 1vh;
+					float: left;
+				}
+
+				#meta {
+					display: none;
+
+					#likes {
+						float: right;
+						display: block;
+						font-size: 2.5vh;
+						line-height: 5vh;
+						font-style: italic;
+						background: #f9f9f9;
+						color: $ColorFour;
+
+						img {
+							position: absolute;
+							left: 0;
+							right: 0;
+							top: 0;
+							bottom: 0;
+							margin: auto;
+						}
+					}
+
+					#hates {
+						float: right;
+						display: block;
+						font-size: 2.5vh;
+						line-height: 5vh;
+						font-style: italic;
+						background: #f9f9f9;
+						color: $ColorFour;
+					
+						img {
+							position: absolute;
+							left: 0;
+							right: 0;
+							top: 0;
+							bottom: 0;
+							margin: auto;
+						}
+					}
+
+					#comments {
+						float: right;
+						display: block;
+						font-size: 2.5vh;
+						line-height: 5vh;
+						font-style: italic;
+						background: #f9f9f9;
+						color: $ColorFour;
+					
+						img {
+							position: absolute;
+							left: 0;
+							right: 0;
+							top: 0;
+							bottom: 0;
+							margin: auto;
+						}
+					}
+				}
+
+				#commentsstamp {
+					display: none;
+				
+					img {
+						position: absolute;
+						left: 0;
+						right: 0;
+						top: 0;
+						bottom: 0;
+						margin: auto;
+					}
+				}
+
+				#author {
+					display: none;
+					font-size: 2.5vh;
+					line-height: 5vh;
+					font-style: italic;
+					width: 100%;
+				}
+
+				#authorpic {
+					display: none;
+				}
+
+				#authorblurb {
+					display: none;
+
+					#authorname {
+						color: $ColorFour;
+						border-bottom: .5vh solid $ColorTwo;
+					}
+
+					#authorcategory {
+						color: $ColorFour;
+						border-bottom: .5vh solid $ColorTwo;
+					}
+
+					#authordate {
+						color: $ColorFour;
+						border-bottom: .5vh solid $ColorTwo;
+					}
+				}
+
+				#price {
+					display: none;
+
+				}
+			}
+
+			#meta {
+				width: 100%;
+				display: block;
+			}
+
+		}
+
+		#info {
+			width: 50%;
+			height: 100%;
+			float: left;
+
+			#title {
+				display: block;
+				color: $ColorFour;
+				font-weight: 800;
+				font-size: 2.5vh;
+				line-height: 5vh;
+				text-shadow: 0.25vh 0.25vh $ColorOffWhite;
+			}
+
+			#subtitle {
+				display: none;
+			}
+
+			#tagline {
+				display: none;
+			}
+
+			#category {
+				display: none;
+			}
+
+			#subcategory {
+				display: none;
+			}
+
+			#tags {
+				display: none;
+			}
+
+			#date {
+				display: none;
+			}
+
+			#meta {
+				float: right;
+				display: block;
+				font-style: italic;
+				background: #f9f9f9;
+				padding: 1vh;
+
+				#likes {
+					float: right;
+					display: block;
+					font-size: 2.5vh;
+					line-height: 5vh;
+					font-style: italic;
+					background: #f9f9f9;
+					color: $ColorFour;
+
+					img {
+						position: absolute;
+						left: 0;
+						right: 0;
+						top: 0;
+						bottom: 0;
+						margin: auto;
+					}
+				}
+
+				#hates {
+					float: right;
+					display: block;
+					font-size: 2.5vh;
+					line-height: 5vh;
+					font-style: italic;
+					background: #f9f9f9;
+					color: $ColorFour;
+				
+					img {
+						position: absolute;
+						left: 0;
+						right: 0;
+						top: 0;
+						bottom: 0;
+						margin: auto;
+					}
+				}
+
+				#comments {
+					float: right;
+					display: block;
+					font-size: 2.5vh;
+					line-height: 5vh;
+					font-style: italic;
+					background: #f9f9f9;
+					color: $ColorFour;
+				
+					img {
+						position: absolute;
+						left: 0;
+						right: 0;
+						top: 0;
+						bottom: 0;
+						margin: auto;
+					}
+				}
+			}
+
+			#commentsstamp {
+				position: absolute;
+				top: 0;
+				right: 0;
+				float: right;
+				display: block;
+				font-size: 2.5vh;
+				line-height: 5vh;
+				font-style: italic;
+				color: $ColorFour;
+			
+				img {
+					position: absolute;
+					left: 0;
+					right: 0;
+					top: 0;
+					bottom: 0;
+					margin: auto;
+				}
+			}
+
+			#author {
+				display: block;
+				font-size: 2.5vh;
+				line-height: 3.5vh;
+				margin-bottom: 1.5vh;
+				font-style: italic;
+			}
+
+			#authorpic {
+				height: 5vh;
+				width: 5vh;
+				border-radius: 1vh;
+				margin: 1vh;
+				overflow: hidden;
+				float: left;
+				display: block;
+				font-size: 2vh;
+				line-height: 2vh;
+				font-style: italic;
+				background: #f9f9f9;
+			}
+
+			#authorblurb {
+				width: 100%;
+				font-size: 2vh;
+				line-height: 2.5vh;
+
+				#authorname {
+					color: $ColorFour;
+					border-bottom: .5vh solid $ColorTwo;
+				}
+
+				#authorcategory {
+					color: $ColorFour;
+					border-bottom: .5vh solid $ColorTwo;
+				}
+
+				#authordate {
+					color: $ColorFour;
+					border-bottom: .5vh solid $ColorTwo;
+				}
+			}
+
+			#price {
+				line-height: 5vh;
+				width: 5vh;
+				font-size: 2.5vh;
+				float: left;
+				display: block;
+				font-style: italic;
+				background: #f9f9f9;
+				padding: 1vh;
+				margin: 0 1vh;
+				border-radius: 1vh;
+
+			}
+		}
+
+		#svg {
+			width: 25%;
+			height: 100%;
+		}
+
+		#index {
+			width: 25%;
+			height: 100%;
+		}
+	}
+}
+
+#listholder.listholderfull {
+	width: 100%;
+	height: 50vh;
+	position: relative;
+
+	#listitem {
+	    width: 47.5%;
+	    height: 97.5%;
+	    padding: 1.25%;
+
+		#thumbnail:hover {
+
+			#info {
+				background: rgba(255, 255, 255, 0.25);
+
+				#category, #subcategory, #tags {
+					display: block;
+				}
+
+				#title, #date {
+					display: block;
+				}
+
+				#subtitle, #tagline {
+					display: block;
+				}
+			}
+		}
+
+		#thumbnail {
+			width: 100%;
+			height: 75%;
+			float: left;
+
+			#info {
+
+			    background: rgba(255, 255, 255, 0.25);
+
+				#meta {
+					width: 100%;
+					display: none;
+				}
+
+				width: 100%;
+				height: 100%;
+				float: left;
+
+				#title {
+					display: block;
+					margin: 2.5vh 1vh;
+				}
+
+				#category, #subcategory, #tags {
+					display: block;
+				}
+
+				#date {
+					display: block;
+					position: absolute;
+					top: 0;
+					right: 0;
+				}
+
+				#index {
+					display: none;
+				}
+
+				#author {
+					display: none;
+				}
+
+				#commentsstamp {
+					display: none;
+				}
+
+				#price {
+					display: none;
+				}
+
+			}
+			
+			
+
+			#meta {
+				width: 100%;
+				display: block;
+			}
+
+		}
+
+		#meta {
+			display: none;
+		}
+
+		#info {
+			width: 100%;
+			height: 50%;
+			float: left;
+
+			#title {
+				display: none;
+				color: $ColorFour;
+				font-weight: 800;
+				font-size: 5vh;
+				line-height: 5vh;
+				text-shadow: 0.25vh 0.25vh $ColorOffWhite;
+			}
+
+			#subtitle {
+				display: none;
+			}
+
+			#tagline {
+				display: none;
+			}
+
+			#category {
+				display: none;
+				font-size: 2vh;
+				line-height: 3vh;
+				font-style: italic;
+				color: $ColorWhite;
+				background: $ColorThree;
+				padding: 1vh;
+				margin: 1vh;
+				float: left;
+			}
+
+			#subcategory {
+				display: none;
+				font-size: 2vh;
+				line-height: 3vh;
+				font-style: italic;
+				color: $ColorFive;
+				background: $ColorTwo;
+				padding: 1vh;
+				margin: 1vh;
+				float: left;
+			}
+
+			#tags {
+				display: none;
+				font-size: 2vh;
+				line-height: 3vh;
+				font-style: italic;
+				color: $ColorFive;
+				background: $ColorOffWhite;
+				padding: 1vh;
+				margin: 1vh;
+				float: left;
+			}
+
+			#date {
+				float: right;
+				display: none;
+				font-style: italic;
+				background: #f9f9f9;
+				padding: 1vh;
+				margin: 1vh;
+				font-size: 2.5vh;
+				font-style: italic;
+				color: $ColorFive;
+				background: $ColorOffWhite;
+				float: left;
+				clear: both;
+			}
+
+			#meta {
+				float: left;
+				display: block;
+				font-style: italic;
+				background: #f9f9f9;
+				padding: 1vh;
+
+				#likes {
+					float: right;
+					display: block;
+					font-size: 2.5vh;
+					line-height: 5vh;
+					font-style: italic;
+					background: #f9f9f9;
+					color: $ColorFour;
+
+					img {
+						position: absolute;
+						left: 0;
+						right: 0;
+						top: 0;
+						bottom: 0;
+						margin: auto;
+					}
+				}
+
+				#hates {
+					float: right;
+					display: block;
+					font-size: 2.5vh;
+					line-height: 5vh;
+					font-style: italic;
+					background: #f9f9f9;
+					color: $ColorFour;
+				
+					img {
+						position: absolute;
+						left: 0;
+						right: 0;
+						top: 0;
+						bottom: 0;
+						margin: auto;
+					}
+				}
+
+				#comments {
+					float: right;
+					display: block;
+					font-size: 2.5vh;
+					line-height: 5vh;
+					font-style: italic;
+					background: #f9f9f9;
+					color: $ColorFour;
+				
+					img {
+						position: absolute;
+						left: 0;
+						right: 0;
+						top: 0;
+						bottom: 0;
+						margin: auto;
+					}
+				}
+			}
+
+			#commentsstamp {
+				display: none;
+				position: absolute;
+				top: 0;
+				right: 0;
+				float: right;
+				display: block;
+				font-size: 2.5vh;
+				line-height: 5vh;
+				font-style: italic;
+				color: $ColorFour;
+			
+				img {
+					position: absolute;
+					left: 0;
+					right: 0;
+					top: 0;
+					bottom: 0;
+					margin: auto;
+				}
+			}
+
+			#author {
+				display: block;
+				font-size: 2.5vh;
+				line-height: 5vh;
+				font-style: italic;
+				background: #f9f9f9;
+			}
+
+			#authorpic {
+				height: 5vh;
+				width: 5vh;
+				border-radius: 1vh;
+				margin: 1vh;
+				overflow: hidden;
+				float: left;
+				display: block;
+				font-size: 2vh;
+				line-height: 2vh;
+				font-style: italic;
+				background: #f9f9f9;
+			}
+
+			#authorblurb {
+				width: 100%;
+				font-size: 2vh;
+				line-height: 7.5vh;
+
+				#authorname {
+					color: $ColorFour;
+					border-bottom: .5vh solid $ColorTwo;
+				}
+
+				#authorcategory {
+					display: none;
+					color: $ColorFour;
+					border-bottom: .5vh solid $ColorTwo;
+				}
+
+				#authordate {
+					display: none;
+					color: $ColorFour;
+					border-bottom: .5vh solid $ColorTwo;
+				}
+			}
+
+			#price {
+				line-height: 5vh;
+				width: 5vh;
+				font-size: 2.5vh;
+				float: right;
+				display: block;
+				font-style: italic;
+				background: #f9f9f9;
+				padding: 1vh;
+
+			}
+		}
+
+		#svg {
+			display: none;
+			width: 12.5%;
+			height: 100%;
+			float: left;
+			position: relative;
+		}
+
+		#index {
+			display: none;
+		}
+	}
+}
+
+
+#listholder.listholdercard {
+	width: 100%;
+	height: 50vh;
+	position: relative;
+
+	#listitem {
+	    width: 30.5%;
+	    height: 97.5%;
+	    padding: 1.25%;
+
+		#thumbnail:hover {
+
+			#info {
+				background: rgba(255, 255, 255, 0.25);
+
+				#category, #subcategory, #tags {
+					display: block;
+				}
+
+				#title, #date {
+					display: block;
+				}
+
+				#subtitle, #tagline {
+					display: block;
+				}
+			}
+		}
+
+		#thumbnail {
+			width: 100%;
+			height: 100%;
+			float: left;
+
+			#info {
+				display: block;
+				width: 100%;
+				height: 37.5%;
+				position: absolute;
+				top: 0;
+				left: 0;
+				box-shadow: none;
+
+				#meta {
+					width: 100%;
+					display: none;
+				}
+
+				#title {
+					width: 100%;
+					display: none;
+					margin: 2.5vh 1vh;
+				}
+
+				#category, #subcategory, #tags {
+					display: block;
+				}
+
+				#date {
+					z-index: 1;
+					display: block;
+					position: relative;
+					right: 0;
+				}
+
+				#index {
+					display: none;
+				}
+
+				#author {
+					display: none;
+				}
+
+				#commentsstamp {
+					display: none;
+				}
+
+				#price {
+					display: none;
+				}
+
+			}
+			
+			
+
+			#meta {
+				width: 100%;
+				display: block;
+			}
+
+		}
+
+		#meta {
+			display: none;
+		}
+
+		#info {
+			width: 97.5%;
+			height: auto;
+			margin: 0 1.25%;
+			display: block;
+			box-shadow: 0vh 0vh 5vh -2.25vh $ColorSix;
+
+			#title {
+				width: 100%;
+				display: block;
+				color: $ColorFour;
+				font-weight: 800;
+				font-size: 5vh;
+				line-height: 5vh;
+				text-shadow: 0.25vh 0.25vh $ColorOffWhite;
+			}
+
+			#subtitle {
+				display: none;
+			}
+
+			#tagline {
+				display: none;
+			}
+
+			#category {
+				display: none;
+				font-size: 2vh;
+				line-height: 3vh;
+				font-style: italic;
+				color: $ColorWhite;
+				background: $ColorThree;
+				padding: 1vh;
+				margin: 1vh;
+				float: left;
+			}
+
+			#subcategory {
+				display: none;
+				font-size: 2vh;
+				line-height: 3vh;
+				font-style: italic;
+				color: $ColorFive;
+				background: $ColorTwo;
+				padding: 1vh;
+				margin: 1vh;
+				float: left;
+			}
+
+			#tags {
+				display: none;
+				font-size: 2vh;
+				line-height: 3vh;
+				font-style: italic;
+				color: $ColorFive;
+				background: $ColorOffWhite;
+				padding: 1vh;
+				margin: 1vh;
+				float: left;
+			}
+
+			#date {
+				float: right;
+				display: none;
+				font-style: italic;
+				background: #f9f9f9;
+				padding: 1vh;
+				margin: 1vh;
+				font-size: 2.5vh;
+				font-style: italic;
+				color: $ColorFive;
+				background: $ColorOffWhite;
+				float: left;
+				clear: both;
+			}
+
+			#meta {
+				float: left;
+				display: none;
+				font-style: italic;
+				background: #f9f9f9;
+				padding: 1vh;
+
+				#likes {
+					float: right;
+					display: block;
+					font-size: 2.5vh;
+					line-height: 5vh;
+					font-style: italic;
+					background: #f9f9f9;
+					color: $ColorFour;
+
+					img {
+						position: absolute;
+						left: 0;
+						right: 0;
+						top: 0;
+						bottom: 0;
+						margin: auto;
+					}
+				}
+
+				#hates {
+					float: right;
+					display: block;
+					font-size: 2.5vh;
+					line-height: 5vh;
+					font-style: italic;
+					background: #f9f9f9;
+					color: $ColorFour;
+				
+					img {
+						position: absolute;
+						left: 0;
+						right: 0;
+						top: 0;
+						bottom: 0;
+						margin: auto;
+					}
+				}
+
+				#comments {
+					float: right;
+					display: block;
+					font-size: 2.5vh;
+					line-height: 5vh;
+					font-style: italic;
+					background: #f9f9f9;
+					color: $ColorFour;
+				
+					img {
+						position: absolute;
+						left: 0;
+						right: 0;
+						top: 0;
+						bottom: 0;
+						margin: auto;
+					}
+				}
+			}
+
+			#commentsstamp {
+				display: none;
+				position: absolute;
+				top: 0;
+				right: 0;
+				float: right;
+				display: block;
+				font-size: 2.5vh;
+				line-height: 5vh;
+				font-style: italic;
+				color: $ColorFour;
+			
+				img {
+					position: absolute;
+					left: 0;
+					right: 0;
+					top: 0;
+					bottom: 0;
+					margin: auto;
+				}
+			}
+
+			#author {
+				display: none;
+				font-size: 2.5vh;
+				line-height: 5vh;
+				font-style: italic;
+				background: #f9f9f9;
+			}
+
+			#authorpic {
+				height: 5vh;
+				width: 5vh;
+				border-radius: 1vh;
+				margin: 1vh;
+				overflow: hidden;
+				float: left;
+				display: block;
+				font-size: 2vh;
+				line-height: 2vh;
+				font-style: italic;
+				background: #f9f9f9;
+			}
+
+			#authorblurb {
+				width: 100%;
+				font-size: 2vh;
+				line-height: 7.5vh;
+
+				#authorname {
+					color: $ColorFour;
+					border-bottom: .5vh solid $ColorTwo;
+				}
+
+				#authorcategory {
+					display: none;
+					color: $ColorFour;
+					border-bottom: .5vh solid $ColorTwo;
+				}
+
+				#authordate {
+					display: none;
+					color: $ColorFour;
+					border-bottom: .5vh solid $ColorTwo;
+				}
+			}
+
+			#price {
+				line-height: 5vh;
+				width: 5vh;
+				font-size: 2.5vh;
+				float: right;
+				display: none;
+				font-style: italic;
+				background: #f9f9f9;
+				padding: 1vh;
+
+			}
+		}
+
+		#svg {
+			display: none;
+			width: 12.5%;
+			height: 100%;
+			float: left;
+			position: relative;
+		}
+
+		#index {
+			display: none;
+		}
+	}
+}
+
+
+#listholder.listholderproduct {
+	width: 100%;
+	height: 50vh;
+	position: relative;
+
+	#listitem {
+	    width: 97.5%;
+	    height: 97.5%;
+	    padding: 1.25%;
+
+	    #thumbnail:hover {
+
+			#info {
+
+				#subtitle {
+					display: block;
+				}
+			}
+		}
+
+		#thumbnail {
+			width: 25%;
+			height: 100%;
+			float: left;
+
+			#index {
+				display: none;
+			}
+
+			#info {
+				width: 100%;
+
+				#title {
+					display: none;
+				}
+
+				#author {
+					display: none;
+				}
+
+				#subtitle {
+					position: absolute;
+					width: 80%;
+					height: 90%;
+					display: none;
+					padding: 10%;
+					font-size: 3vh;
+					line-height: 5vh;
+					color: $ColorFour;
+					text-shadow: 0.25vh 0.25vh $ColorOffWhite;
+					background: rgba(255, 255, 255, 0.75);
+				}
+
+				#tagline {
+					display: none;
+				}
+
+				#category {
+					display: none;
+				}
+
+				#subcategory {
+					display: none;
+				}
+
+				#tags {
+					display: none;
+				}
+
+				#date {
+					display: none;
+				}
+
+				#commentsstamp {
+					display: none;
+				}
+
+				#price {
+					display: none;
+				}
+
+				#meta {
+					display: none;
+				}
+
+			}
+
+			#meta {
+				width: 100%;
+				display: block;
+			}
+
+		}
+
+		#meta {
+			display: none;
+		}
+
+		#info {
+			width: 37.5%;
+			height: 100%;
+			float: left;
+
+			#title {
+				display: block;
+				color: $ColorFour;
+				font-weight: 800;
+				font-size: 5vh;
+				line-height: 7.5vh;
+				text-shadow: 0.25vh 0.25vh $ColorOffWhite;
+			}
+
+			#subtitle {
+				display: none;
+			}
+
+			#tagline {
+				display: block;
+			}
+
+			#category {
+				display: block;
+				font-size: 2vh;
+				line-height: 3vh;
+				font-style: italic;
+				color: $ColorWhite;
+				background: $ColorThree;
+				padding: 1vh;
+				margin: 1vh;
+				float: left;
+			}
+
+			#subcategory {
+				display: block;
+				font-size: 2vh;
+				line-height: 3vh;
+				font-style: italic;
+				color: $ColorFive;
+				background: $ColorTwo;
+				padding: 1vh;
+				margin: 1vh;
+				float: left;
+			}
+
+			#tags {
+				display: block;
+				font-size: 2vh;
+				line-height: 3vh;
+				font-style: italic;
+				color: $ColorFive;
+				background: $ColorOffWhite;
+				padding: 1vh;
+				margin: 1vh;
+				float: left;
+			}
+
+			#date {
+				float: right;
+				display: block;
+				font-style: italic;
+				background: #f9f9f9;
+				padding: 1vh;
+				margin: 1vh;
+				display: block;
+				font-size: 2.5vh;
+				font-style: italic;
+				color: $ColorFive;
+				background: $ColorOffWhite;
+				float: left;
+				clear: both;
+			}
+
+			#meta {
+				float: right;
+				display: block;
+				font-style: italic;
+				background: #f9f9f9;
+				padding: 1vh;
+
+				#likes {
+					float: right;
+					display: block;
+					font-size: 2.5vh;
+					line-height: 5vh;
+					font-style: italic;
+					background: #f9f9f9;
+					color: $ColorFour;
+
+					img {
+						position: absolute;
+						left: 0;
+						right: 0;
+						top: 0;
+						bottom: 0;
+						margin: auto;
+					}
+				}
+
+				#hates {
+					float: right;
+					display: block;
+					font-size: 2.5vh;
+					line-height: 5vh;
+					font-style: italic;
+					background: #f9f9f9;
+					color: $ColorFour;
+				
+					img {
+						position: absolute;
+						left: 0;
+						right: 0;
+						top: 0;
+						bottom: 0;
+						margin: auto;
+					}
+				}
+
+				#comments {
+					float: right;
+					display: block;
+					font-size: 2.5vh;
+					line-height: 5vh;
+					font-style: italic;
+					background: #f9f9f9;
+					color: $ColorFour;
+				
+					img {
+						position: absolute;
+						left: 0;
+						right: 0;
+						top: 0;
+						bottom: 0;
+						margin: auto;
+					}
+				}
+			}
+
+			#commentsstamp {
+				position: absolute;
+				top: 0;
+				right: 0;
+				float: right;
+				display: block;
+				font-size: 2.5vh;
+				line-height: 5vh;
+				font-style: italic;
+				color: $ColorFour;
+			
+				img {
+					position: absolute;
+					left: 0;
+					right: 0;
+					top: 0;
+					bottom: 0;
+					margin: auto;
+				}
+			}
+
+			#author {
+				display: block;
+				font-size: 2.5vh;
+				line-height: 5vh;
+				font-style: italic;
+				background: #f9f9f9;
+			}
+
+			#authorpic {
+				height: 5vh;
+				width: 5vh;
+				border-radius: 1vh;
+				margin: 1vh;
+				overflow: hidden;
+				float: left;
+				display: block;
+				font-size: 2vh;
+				line-height: 2vh;
+				font-style: italic;
+				background: #f9f9f9;
+			}
+
+			#authorblurb {
+				width: 100%;
+				font-size: 2vh;
+				line-height: 7.5vh;
+
+				#authorname {
+					color: $ColorFour;
+					border-bottom: .5vh solid $ColorTwo;
+				}
+
+				#authorcategory {
+					color: $ColorFour;
+					border-bottom: .5vh solid $ColorTwo;
+				}
+
+				#authordate {
+					color: $ColorFour;
+					border-bottom: .5vh solid $ColorTwo;
+				}
+			}
+
+			#price {
+				line-height: 5vh;
+				width: 5vh;
+				font-size: 2.5vh;
+				float: right;
+				display: block;
+				font-style: italic;
+				background: #f9f9f9;
+				padding: 1vh;
+
+			}
+		}
+
+		#svg {
+			display: block;
+			width: 37.5%;
+			height: 100%;
+			float: right;
+			position: relative;
+		}
+
+		#index {
+			display: none;
+		}
+	}
+
+}
+
+#listholder.listholdernumber {
+	width: 100%;
+	height: 50vh;
+	position: relative;
+
+	#listitem {
+	    width: 97.5%;
+	    height: 97.5%;
+	    padding: 1.25%;
+
+		#thumbnail {
+			width: 25%;
+			height: 100%;
+			float: left;
+
+			#index {
+				display: none;
+			}
+
+			#info {
+				display: none;
+			}
+			
+			#title {
+				display: none;
+			}
+
+			#meta {
+				width: 100%;
+				display: block;
+			}
+
+		}
+
+		#meta {
+			display: none;
+		}
+
+		#info {
+			width: 50%;
+			height: 100%;
+			float: left;
+
+			#title {
+				display: block;
+				color: $ColorFour;
+				font-weight: 800;
+				font-size: 5vh;
+				line-height: 7.5vh;
+				text-shadow: 0.25vh 0.25vh $ColorOffWhite;
+			}
+
+			#subtitle {
+				display: block;
+				color: $ColorFive;
+				font-size: 2.5vh;
+				line-height: 5vh;
+				opacity: .5;
+			}
+
+			#tagline {
+				display: block;
+				color: $ColorFive;
+				background: $ColorOffWhite;
+				font-size: 2.5vh;
+				line-height: 3vh;
+				opacity: .5;
+				font-style: italic;
+			}
+
+			#category {
+				display: block;
+				font-size: 2vh;
+				line-height: 3vh;
+				font-style: italic;
+				color: $ColorWhite;
+				background: $ColorThree;
+				padding: 1vh;
+				margin: 1vh;
+				float: left;
+			}
+
+			#subcategory {
+				display: block;
+				font-size: 2vh;
+				line-height: 3vh;
+				font-style: italic;
+				color: $ColorFive;
+				background: $ColorTwo;
+				padding: 1vh;
+				margin: 1vh;
+				float: left;
+			}
+
+			#tags {
+				display: block;
+				font-size: 2vh;
+				line-height: 3vh;
+				font-style: italic;
+				color: $ColorFive;
+				background: $ColorOffWhite;
+				padding: 1vh;
+				margin: 1vh;
+				float: left;
+			}
+
+			#date {
+				float: right;
+				display: block;
+				font-style: italic;
+				background: #f9f9f9;
+				padding: 1vh;
+				margin: 1vh;
+				display: block;
+				font-size: 2.5vh;
+				font-style: italic;
+				color: $ColorFive;
+				background: $ColorOffWhite;
+				float: left;
+				clear: both;
+			}
+
+			#meta {
+				float: right;
+				display: block;
+				font-style: italic;
+				background: #f9f9f9;
+				padding: 1vh;
+
+				#likes {
+					float: right;
+					display: block;
+					font-size: 2.5vh;
+					line-height: 5vh;
+					font-style: italic;
+					background: #f9f9f9;
+					color: $ColorFour;
+
+					img {
+						position: absolute;
+						left: 0;
+						right: 0;
+						top: 0;
+						bottom: 0;
+						margin: auto;
+					}
+				}
+
+				#hates {
+					float: right;
+					display: block;
+					font-size: 2.5vh;
+					line-height: 5vh;
+					font-style: italic;
+					background: #f9f9f9;
+					color: $ColorFour;
+				
+					img {
+						position: absolute;
+						left: 0;
+						right: 0;
+						top: 0;
+						bottom: 0;
+						margin: auto;
+					}
+				}
+
+				#comments {
+					float: right;
+					display: block;
+					font-size: 2.5vh;
+					line-height: 5vh;
+					font-style: italic;
+					background: #f9f9f9;
+					color: $ColorFour;
+				
+					img {
+						position: absolute;
+						left: 0;
+						right: 0;
+						top: 0;
+						bottom: 0;
+						margin: auto;
+					}
+				}
+			}
+
+			#commentsstamp {
+				position: absolute;
+				top: 0;
+				right: 0;
+				float: right;
+				display: block;
+				font-size: 2.5vh;
+				line-height: 5vh;
+				font-style: italic;
+				color: $ColorFour;
+			
+				img {
+					position: absolute;
+					left: 0;
+					right: 0;
+					top: 0;
+					bottom: 0;
+					margin: auto;
+				}
+			}
+
+			#author {
+				display: block;
+				font-size: 2.5vh;
+				line-height: 5vh;
+				font-style: italic;
+				background: #f9f9f9;
+			}
+
+			#authorpic {
+				height: 5vh;
+				width: 5vh;
+				border-radius: 1vh;
+				margin: 1vh;
+				overflow: hidden;
+				float: left;
+				display: block;
+				font-size: 2vh;
+				line-height: 2vh;
+				font-style: italic;
+				background: #f9f9f9;
+			}
+
+			#authorblurb {
+				width: 100%;
+				font-size: 2vh;
+				line-height: 7.5vh;
+
+				#authorname {
+					color: $ColorFour;
+					border-bottom: .5vh solid $ColorTwo;
+				}
+
+				#authorcategory {
+					color: $ColorFour;
+					border-bottom: .5vh solid $ColorTwo;
+				}
+
+				#authordate {
+					color: $ColorFour;
+					border-bottom: .5vh solid $ColorTwo;
+				}
+			}
+
+			#price {
+				line-height: 5vh;
+				width: 5vh;
+				font-size: 2.5vh;
+				float: right;
+				display: block;
+				font-style: italic;
+				background: #f9f9f9;
+				padding: 1vh;
+
+			}
+		}
+
+		#svg {
+			display: none;
+			width: 12.5%;
+			height: 100%;
+			float: left;
+			position: relative;
+		}
+
+		#index {
+			width: 12.5%;
+			height: 100%;
+			float: left;
+			font-size: 10vh;
+			line-height:10vh;
+			text-align: center;
+			position: relative;
+			top: 0;
+			right: 0;
+			zindex: 1;
+			display: block;
+			-webkit-box-align:center;
+			-webkit-box-pack:center;
+			display:-webkit-box;
+
+			display: block;
+			color: $ColorFour;
+			font-weight: 800;
+			line-height: 50vh;
+			text-shadow: 0.25vh 0.25vh $ColorOffWhite;
+		}
+	}
+}
+
+.lightoffice {
+
+	.darkleave {
+			opacity: 0;
+		}
+
+	.lightshow {
+			opacity: 1;
+		}
+}
+
+.darkoffice {
+	
+	.darkleave {
+			opacity: 1;
+		}
+
+	.lightshow {
+			opacity: 0;
+		}
+}
+
+.positionLight1, .positionLight2, .positionLight3, .positionLight4 {
+
+	.lighton {
+		
+		.lightone {
+			opacity: 0;
+		}
+		.lighttwo {
+			opacity: 1;
+		}
+	}
+
+	.lightoff {
+		
+		.lightone {
+			opacity: 1;
+		}
+		.lighttwo {
+			opacity: 0;
+		}
+	}
+}

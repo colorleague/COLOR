@@ -1,0 +1,14 @@
+<span ng-repeat="tool in post.tools" class="positionRelative widthFullFlex floatLeft">
+            <span class="positionRelative spacedMid box-shadowSixStraight border-radius floatLeft backgroundColorWhite">
+               <span class="positionRelative spacedSmall border-radius  floatLeft">
+                  <p class=" fontSizeTwoFive lineHeightFive floatLeft">{{tool.name}}
+                  </p>
+                  <span class="
+                     positionAbsolute positionRight
+                     heightFive widthFive border-radius
+                     floatRight" style="background-image: url('/tools/{{tool.name}}.svg');
+                     background-size: 100% 100%;">
+                  </span>
+               </span>
+            </span>
+         </span>

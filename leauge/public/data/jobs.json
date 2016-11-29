@@ -1,0 +1,51 @@
+{
+	"records":[
+		{
+		"name":"Development",
+		"position":"Developer",
+		"background":"teamcolor.jpg",
+		"icon":"imacone.svg",
+		"positions": [
+
+			{
+				"name":"Angular Development",
+				"icon1":"imacone.svg",
+				"icon2":"imacone.svg",
+				"abilities": [
+					{
+						"name":"Build Angular App"
+					},
+					{
+						"name":"Build Angular App"
+					}
+				]
+			},
+			{
+				"name":"Python Development"
+			},
+			{
+				"name":"Ruby Development"
+			},
+			{
+				"name":"Ruby on Rails Development"
+			},
+			{
+				"name":"Mobile Development"
+			}
+
+		]
+		},
+		{
+		"name":"Design",
+		"position":"Designer"
+		},
+		{
+		"name":"Strategy",
+		"position":"Strategist"
+		},
+		{
+		"name":"Content",
+		"position":"Content Creator"
+		}
+	]
+}

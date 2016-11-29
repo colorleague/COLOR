@@ -1,0 +1,1419 @@
+<!-- list -->
+<ul class="positionAbsolute positionCenter backgroundGridColorWhite widthFull heightFull easing text-align-center zindexFive overflowy">
+
+	<span
+	class="zindexOne backgroundGridColorOne positionRelative widthFull heightHalf floatLeft easing overflowx">
+
+		<span
+		class="zindexOne backgroundGridColorOne positionRelative heightFullFlex floatLeft easing overflowhidden widthFullFlex">
+
+			<!-- desk Holder center -->
+			<span class="positionRelative widthFullFlex heightFullFlex floatLeft">
+				<!-- desk Holder center -->
+				<imaclinedone class="positionAbsolute positionCenter widthThreeQuarterFlex heightHalfFlex floatLeft">
+
+				</imaclinedone>
+
+				<span class="centerdiv positionAbsolute positionCenter lineHeightTen fontSizeFive text-align-left fontColorWhite text-shadow05One zindexOne">
+					<span class="backgroundColorTwo">
+					<span class="positionRelative zindexOne">
+					Our Servcies</span> </span> 
+				</span>
+
+				<h2 class="positionRelative lineHeightTen fontSizeTen text-align-center fontColorThree text-shadow05Five zindexOne">Videos</h2>
+
+				<h3 class="positionRelative lineHeightTen fontSizeSevenFive text-align-center fontColorFour text-shadow025Five zindexOne">tagline</h3>
+
+				<h4 class="positionAbsolute
+				positionRight widthQuarterFlex heightQuarterFlex lineHeightTen fontSizeSevenFive text-align-center fontColorFive">
+					<span class="divcenter positionRelative opacity025">
+						<b>.00</b>
+					</span>
+				</h4>
+
+				<!-- members -->
+				<div class="positionAbsolute positionBottomLeft floatLeft heightFullFlex widthQuarterFlex ">
+
+							<li class="positionAbsolute positionBottomLeft heightFifthFlex widthFullFlex floatLeft easing zindexOne" ng-repeat="member in team | limitTo:1:1">
+
+							<span
+							ng:init="showonhover = true"
+							ng:mouseenter="showonhover = false;"
+							ng:mouseleave="showonhover = true;"
+							 class="zindexOne positionRelative heightFullFlex widthFullFlex floatLeft">
+
+								<span id="beep" class="zindexOne positionRelative heightFullFlex widthFullFlex floatLeft easing">
+
+									<span class="zindexOne positionRelative heightFullFlex widthFullFlex floatLeft easing">
+
+										<span ng:show="showonhover">
+
+											<span class="
+											heightFullFlex
+											widthFullFlex
+											positionAbsolute positionBottomRight" ng-repeat="pics in member.photos | limitTo:1:1">
+
+												<img class="
+												widthFullFlex
+												positionAbsolute positionBottomRight" ng-src="./person/{{pics.link}}.png">
+
+											</span>
+
+										</span>
+
+										<span ng:show="!showonhover">
+
+											<span class="
+											heightFullFlex
+											widthFullFlex
+											positionAbsolute positionBottomRight" ng-repeat="pics in member.photos | limitTo:1:0">
+
+												<img class="
+												widthFullFlex
+												positionAbsolute positionBottomRight" ng-src="./person/{{pics.link}}.png">
+
+											</span>
+
+										</span>
+
+									</span>
+
+								</span>
+
+							</span>
+
+							</li>
+
+				</div>
+
+			</span>
+
+		</span>
+
+	</span>
+
+   <!-- info half -->
+   <span class="positionRelative
+      backgroundGridColorOffWhite widthHalfFlex heightFullFlex box-shadowSixStraight floatLeft overflowy">
+      <span ng-repeat="tool in member.tools" class="positionRelative widthHalfFlex floatLeft">
+         <span class="positionRelative spacedMid box-shadowSixStraight border-radius floatLeft backgroundColorWhite">
+            <span class="positionRelative spacedSmall border-radius  floatLeft">
+               <p class=" fontSizeTwoFive lineHeightFive floatLeft">{{tool.name}}
+               </p>
+               <span class="
+                  positionAbsolute positionRight
+                  heightFive widthFive border-radius
+                  floatRight" style="background-image: url('/tools/{{tool.name}}.svg');
+                  background-size: 100% 100%;">
+               </span>
+            </span>
+         </span>
+      </span>
+   </span>
+
+
+	<!-- horizontal list components -->
+	<ul class="positionRelative widthFull heightFull floatLeft easing">
+
+		<li class="showOnHoverSwitch centerdiv text-align-center positionRelative widthFullFlex heightFullFlex backgroundColorOneOnHover floatLeft easing">
+
+			<!-- showOnHover // background -->
+			<span class="showOnHover positionAbsolute positionCenter backgroundColorSix widthFullFlex heightFullFlex">
+
+				<!-- washout background -->
+				<span class="positionAbsolute positionCenter
+				backgroundColorSix widthFullFlex heightFullFlex">
+
+					<cartoonlights class="positionAbsolute positionCenter widthHalfFlex heightHalfFlex"></cartoonlights>
+
+					<span class="positionRelative widthFullFlex heightFourZeroFlex floatLeft easing">
+					</span>
+
+					<ul ng:click="popstart();" class="positionRelative widthFullFlex floatLeft easing">
+
+						<span class="widthFullFlex positionRelative  centerdiv fontSizeTen text-align-center gradientText ColorOneLeftClearGradient text-shadow01Five easing">
+						<b>
+							<span class="animated enterUpObject floatLeft">O</span>
+
+							<span class="animated enterUpObject delay025 floatLeft">u</span>
+
+							<span class="animated enterUpObject delay05 floatLeft">r </span>
+
+							</b>
+						</span>
+						
+					</ul>
+
+					<ul ng:click="popstart();" class="positionRelative widthFullFlex floatLeft easing">
+
+						<span class="widthFullFlex positionRelative  centerdiv fontSizeTen text-align-center gradientText ColorOneLeftClearGradient text-shadow01Five easing">
+						<b>
+							<span class="animated enterUpObject delay075 floatLeft"> t</span>
+
+							<span class="animated enterUpObject delay075 floatLeft">e</span>
+
+							<span class="animated enterUpObject delay075 floatLeft">a</span>
+
+							<span class="animated enterUpObject delay075 floatLeft">m</span>
+							</b>
+						</span>
+						
+					</ul>
+
+					<hr class="horline infinite marginauto positionAbsolute positionTopLeft animated growhor ColorOneLeftClearGradient">
+
+					<ul ng:click="popstart();" class="positionRelative widthFullFlex floatLeft easing">
+
+						<span class="widthFullFlex positionRelative  centerdiv fontSizeFive text-align-center fontColorWhite text-shadow01Five easing">
+
+							<span class="animated enterUpObject floatLeft">S</span>
+
+							<span class="animated enterUpObject delay025 floatLeft">u</span>
+
+							<span class="animated enterUpObject delay05 floatLeft">b</span>
+
+							<span class="animated enterUpObject delay075 floatLeft">t</span>
+
+							<span class="animated enterUpObject floatLeft">i</span>
+
+							<span class="animated enterUpObject delay025 floatLeft">t</span>
+
+							<span class="animated enterUpObject delay05 floatLeft">l</span>
+
+							<span class="animated enterUpObject delay075 floatLeft">e</span>
+
+						</span>
+						
+					</ul>
+		
+				</span>
+
+			</span>
+
+			<!-- showOnHover // background -->
+			<span class="hideOnHover positionAbsolute positionCenter backgroundColorFive widthFullFlex heightFullFlex">
+
+				<!-- washout background -->
+				<span class="positionAbsolute positionCenter
+				backgroundColorFive widthFullFlex heightFullFlex">
+
+					<cartoonlights class="positionAbsolute positionCenter widthHalfFlex heightHalfFlex"></cartoonlights>
+
+					<span class="positionRelative widthFullFlex heightFourZeroFlex floatLeft easing">
+					</span>
+
+					<ul ng:click="popstart();" class="positionRelative widthFullFlex floatLeft easing">
+
+						<span class="widthFullFlex positionRelative  centerdiv fontSizeTen text-align-center gradientText ColorOneLeftClearGradient text-shadow01Five easing">
+						<b>
+							<span class="animated enterUpObject floatLeft">O</span>
+
+							<span class="animated enterUpObject delay025 floatLeft">u</span>
+
+							<span class="animated enterUpObject delay05 floatLeft">r </span>
+
+							</b>
+						</span>
+						
+					</ul>
+
+					<ul ng:click="popstart();" class="positionRelative widthFullFlex floatLeft easing">
+
+						<span class="widthFullFlex positionRelative  centerdiv fontSizeTen text-align-center gradientText ColorOneLeftClearGradient text-shadow01Five easing">
+						<b>
+							<span class="animated enterUpObject delay075 floatLeft"> t</span>
+
+							<span class="animated enterUpObject delay075 floatLeft">e</span>
+
+							<span class="animated enterUpObject delay075 floatLeft">a</span>
+
+							<span class="animated enterUpObject delay075 floatLeft">m</span>
+							</b>
+						</span>
+						
+					</ul>
+
+					<hr class="horline infinite marginauto positionAbsolute positionTopLeft animated growhor ColorOneLeftClearGradient">
+
+					<ul ng:click="popstart();" class="positionRelative widthFullFlex floatLeft easing">
+
+						<span class="widthFullFlex positionRelative  centerdiv fontSizeFive text-align-center fontColorWhite text-shadow01Five easing">
+
+							<span class="animated enterUpObject floatLeft">S</span>
+
+							<span class="animated enterUpObject delay025 floatLeft">u</span>
+
+							<span class="animated enterUpObject delay05 floatLeft">b</span>
+
+							<span class="animated enterUpObject delay075 floatLeft">t</span>
+
+							<span class="animated enterUpObject floatLeft">i</span>
+
+							<span class="animated enterUpObject delay025 floatLeft">t</span>
+
+							<span class="animated enterUpObject delay05 floatLeft">l</span>
+
+							<span class="animated enterUpObject delay075 floatLeft">e</span>
+
+						</span>
+						
+					</ul>
+		
+				</span>
+
+			</span>
+
+		</li>
+
+	</ul>
+
+	<!-- horizontal list components -->
+	<ul class="positionRelative widthFull heightFull floatLeft easing">
+
+		<li class="showOnHoverSwitch centerdiv text-align-center positionRelative widthFullFlex heightFullFlex backgroundColorOneOnHover floatLeft easing">
+
+			<!-- showOnHover // background -->
+			<span class="showOnHover positionAbsolute positionCenter backgroundColorTwo widthFullFlex heightFullFlex">
+
+				<!-- washout background -->
+				<span class="positionAbsolute positionCenter
+				ColorOneFromClearGradient widthFullFlex heightFullFlex">
+
+					<cartoonlightson class="positionAbsolute positionCenter widthHalfFlex heightHalfFlex"></cartoonlightson>
+
+					<span class="positionRelative widthFullFlex heightFourZeroFlex floatLeft easing">
+					</span>
+
+					<ul ng:click="popstart();" class="positionRelative widthFullFlex floatLeft easing">
+
+						<span class="widthFullFlex positionRelative  centerdiv fontSizeTen text-align-center gradientText ColorOneLeftClearGradient text-shadow01Five easing">
+						<b>
+							<span class="animated enterUpObject floatLeft">O</span>
+
+							<span class="animated enterUpObject delay025 floatLeft">u</span>
+
+							<span class="animated enterUpObject delay05 floatLeft">r </span>
+
+							</b>
+						</span>
+						
+					</ul>
+
+					<ul ng:click="popstart();" class="positionRelative widthFullFlex floatLeft easing">
+
+						<span class="widthFullFlex positionRelative  centerdiv fontSizeTen text-align-center gradientText ColorOneLeftClearGradient text-shadow01Five easing">
+						<b>
+							<span class="animated enterUpObject delay075 floatLeft"> t</span>
+
+							<span class="animated enterUpObject delay075 floatLeft">e</span>
+
+							<span class="animated enterUpObject delay075 floatLeft">a</span>
+
+							<span class="animated enterUpObject delay075 floatLeft">m</span>
+							</b>
+						</span>
+						
+					</ul>
+
+					<hr class="horline infinite marginauto positionAbsolute positionTopLeft animated growhor ColorOneLeftClearGradient">
+
+					<hr class="vertline infinite  marginauto positionAbsolute positionTopLeft animated growvert ColorOneFromClearGradient">
+
+					<hr class="horline infinite  marginauto positionAbsolute positionBottomRight animated growhor ColorOneRightClearGradient">
+
+					<hr class="vertline infinite  marginauto positionAbsolute positionBottomRight animated growvert ColorOneToClearGradient">
+
+
+					<ul ng:click="popstart();" class="positionRelative widthFullFlex floatLeft easing">
+
+						<span class="widthFullFlex positionRelative  centerdiv fontSizeFive text-align-center fontColorWhite text-shadow01Five easing">
+
+							<span class="animated enterUpObject floatLeft">S</span>
+
+							<span class="animated enterUpObject delay025 floatLeft">u</span>
+
+							<span class="animated enterUpObject delay05 floatLeft">b</span>
+
+							<span class="animated enterUpObject delay075 floatLeft">t</span>
+
+							<span class="animated enterUpObject floatLeft">i</span>
+
+							<span class="animated enterUpObject delay025 floatLeft">t</span>
+
+							<span class="animated enterUpObject delay05 floatLeft">l</span>
+
+							<span class="animated enterUpObject delay075 floatLeft">e</span>
+
+						</span>
+						
+					</ul>
+		
+				</span>
+
+			</span>
+
+			<!-- showOnHover // background -->
+			<span class="hideOnHover positionAbsolute positionCenter backgroundColorTwo widthFullFlex heightFullFlex">
+
+				<!-- washout background -->
+				<span class="positionAbsolute positionCenter
+				ColorOneFromClearGradient widthFullFlex heightFullFlex">
+
+					<cartoonlightson class="positionAbsolute positionCenter widthHalfFlex heightHalfFlex"></cartoonlightson>
+
+					<span class="positionRelative widthFullFlex heightFourZeroFlex floatLeft easing">
+					</span>
+
+					<ul ng:click="popstart();" class="positionRelative widthFullFlex floatLeft easing">
+
+						<span class="widthFullFlex positionRelative  centerdiv fontSizeTen text-align-center gradientText ColorOneLeftClearGradient text-shadow01Five easing">
+						<b>
+							<span class="animated enterUpObject floatLeft">O</span>
+
+							<span class="animated enterUpObject delay025 floatLeft">u</span>
+
+							<span class="animated enterUpObject delay05 floatLeft">r </span>
+
+							</b>
+						</span>
+						
+					</ul>
+
+					<ul ng:click="popstart();" class="positionRelative widthFullFlex floatLeft easing">
+
+						<span class="widthFullFlex positionRelative  centerdiv fontSizeTen text-align-center gradientText ColorOneLeftClearGradient text-shadow01Five easing">
+						<b>
+							<span class="animated enterUpObject delay075 floatLeft"> t</span>
+
+							<span class="animated enterUpObject delay075 floatLeft">e</span>
+
+							<span class="animated enterUpObject delay075 floatLeft">a</span>
+
+							<span class="animated enterUpObject delay075 floatLeft">m</span>
+							</b>
+						</span>
+						
+					</ul>
+
+					<hr class="horline infinite marginauto positionAbsolute positionTopLeft animated growhor ColorOneLeftClearGradient">
+
+					<hr class="vertline infinite  marginauto positionAbsolute positionTopLeft animated growvert ColorOneFromClearGradient">
+
+					<hr class="horline infinite  marginauto positionAbsolute positionBottomRight animated growhor ColorOneRightClearGradient">
+
+					<hr class="vertline infinite  marginauto positionAbsolute positionBottomRight animated growvert ColorOneToClearGradient">
+
+
+					<ul ng:click="popstart();" class="positionRelative widthFullFlex floatLeft easing">
+
+						<span class="widthFullFlex positionRelative  centerdiv fontSizeFive text-align-center fontColorWhite text-shadow01Five easing">
+
+							<span class="animated enterUpObject floatLeft">S</span>
+
+							<span class="animated enterUpObject delay025 floatLeft">u</span>
+
+							<span class="animated enterUpObject delay05 floatLeft">b</span>
+
+							<span class="animated enterUpObject delay075 floatLeft">t</span>
+
+							<span class="animated enterUpObject floatLeft">i</span>
+
+							<span class="animated enterUpObject delay025 floatLeft">t</span>
+
+							<span class="animated enterUpObject delay05 floatLeft">l</span>
+
+							<span class="animated enterUpObject delay075 floatLeft">e</span>
+
+						</span>
+						
+					</ul>
+		
+				</span>
+
+			</span>
+
+		</li>
+
+		<!-- light Holder -->
+		<span class="animated enterUp positionFixed positionLight1 widthHalf heightHalf">
+
+			<span
+			ng:class="{
+			'lighton' : positionLight1lighton,
+			'lightoff' : positionLight1lightoff
+			}"
+			class="animated enterUp positionAbsolute positionCenter widthFullFlex heightFullFlex">
+
+				<light1darkoff class="easing lightone positionAbsolute positionCenter widthFullFlex heightFullFlex"></light1darkoff>
+
+				<light1darkon class="easing lighttwo positionAbsolute positionCenter widthFullFlex heightFullFlex"></light1darkon>
+
+			</span>
+
+		</span>
+
+		<!-- light Holder -->
+		<span class="animated enterUp positionFixed positionLight2 widthHalf heightHalf">
+
+			<span
+			ng:class="{
+			'lighton' : positionLight2lighton,
+			'lightoff' : positionLight2lightoff
+			}"
+			class="animated enterUp positionAbsolute positionCenter widthFullFlex heightFullFlex">
+
+				<light2darkoff class="easing lightone positionAbsolute positionCenter widthFullFlex heightFullFlex"></light2darkoff>
+
+				<light2darkon class="easing lighttwo positionAbsolute positionCenter widthFullFlex heightFullFlex"></light2darkon>
+
+			</span>
+
+		</span>
+
+		<!-- light Holder -->
+		<span class="animated enterUp positionFixed positionLight3 widthHalf heightHalf">
+
+			<span
+			ng:class="{
+			'lighton' : positionLight3lighton,
+			'lightoff' : positionLight3lightoff
+			}"
+			class="animated enterUp positionAbsolute positionCenter widthFullFlex heightFullFlex">
+
+				<light3darkoff class="easing lightone positionAbsolute positionCenter widthFullFlex heightFullFlex"></light3darkoff>
+
+				<light3darkon class="easing lighttwo positionAbsolute positionCenter widthFullFlex heightFullFlex"></light3darkon>
+
+			</span>
+
+		</span>
+
+		<!-- light Holder -->
+		<span class="animated enterUp positionFixed positionLight4 widthHalf heightHalf">
+
+			<span
+			ng:class="{
+			'lighton' : positionLight4lighton,
+			'lightoff' : positionLight4lightoff
+			}"
+			class="animated enterUp positionAbsolute positionCenter widthFullFlex heightFullFlex">
+
+				<light4darkoff class="easing lightone positionAbsolute positionCenter widthFullFlex heightFullFlex"></light4darkoff>
+
+				<light4darkon class="easing lighttwo positionAbsolute positionCenter widthFullFlex heightFullFlex"></light4darkon>
+
+			</span>
+
+		</span>
+
+		<span class="showOnHover positionAbsolute positionBottom backgroundColorWhite box-shadowFiveStraight widthFullFlex heightTenFlex">
+		</span>
+
+	</ul>
+
+	<!-- horizontal list components -->
+	<ul class="positionRelative widthFull heightFull floatLeft easing">
+
+		<li class="showOnHoverSwitch centerdiv text-align-center positionRelative widthFullFlex heightFullFlex backgroundColorOneOnHover floatLeft easing">
+
+			<!-- showOnHover // background -->
+			<span class="showOnHover positionAbsolute positionCenter backgroundColorOne widthFullFlex heightFullFlex">
+
+				<!-- washout background -->
+				<span class="positionAbsolute positionCenter
+				ColorOneFromClearGradient widthFullFlex heightFullFlex">
+
+					<!-- glyph background -->
+					<span class="animeframeOne animated infinite overflowhidden positionAbsolute positionCenter
+					backgroundGlyphOne opacity075 widthFullFlex heightFullFlex">
+					</span>
+
+					<!-- glyph background -->
+					<span class="animeframeOne delay05 animated infinite overflowhidden positionAbsolute positionCenter
+					backgroundGlyphTwo opacity075 widthFullFlex heightFullFlex">
+					</span>
+
+					<!-- washout background -->
+					<span class="positionAbsolute positionCenter
+					backgroundColorWhite opacity075 widthFullFlex heightFullFlex">
+					</span>
+
+					<span class="positionRelative widthFullFlex heightFourZeroFlex floatLeft easing">
+					</span>
+
+					<ul ng:click="popstart();" class="positionRelative widthFullFlex floatLeft easing">
+
+						<span class="widthFullFlex positionRelative  centerdiv fontSizeTen text-align-center gradientText ColorOneLeftClearGradient text-shadow01Five easing">
+						<b>
+							<span class="animated enterUpObject floatLeft">O</span>
+
+							<span class="animated enterUpObject delay025 floatLeft">u</span>
+
+							<span class="animated enterUpObject delay05 floatLeft">r </span>
+
+							</b>
+						</span>
+						
+					</ul>
+
+					<ul ng:click="popstart();" class="positionRelative widthFullFlex floatLeft easing">
+
+						<span class="widthFullFlex positionRelative  centerdiv fontSizeTen text-align-center gradientText ColorOneLeftClearGradient text-shadow01Five easing">
+						<b>
+							<span class="animated enterUpObject delay075 floatLeft"> t</span>
+
+							<span class="animated enterUpObject delay075 floatLeft">e</span>
+
+							<span class="animated enterUpObject delay075 floatLeft">a</span>
+
+							<span class="animated enterUpObject delay075 floatLeft">m</span>
+							</b>
+						</span>
+						
+					</ul>
+
+					<ul ng:click="popstart();" class="positionRelative widthFullFlex floatLeft easing">
+
+						<span class="widthFullFlex positionRelative  centerdiv fontSizeFive text-align-center fontColorWhite text-shadow01Five easing">
+
+							<span class="animated enterUpObject floatLeft">S</span>
+
+							<span class="animated enterUpObject delay025 floatLeft">u</span>
+
+							<span class="animated enterUpObject delay05 floatLeft">b</span>
+
+							<span class="animated enterUpObject delay075 floatLeft">t</span>
+
+							<span class="animated enterUpObject floatLeft">i</span>
+
+							<span class="animated enterUpObject delay025 floatLeft">t</span>
+
+							<span class="animated enterUpObject delay05 floatLeft">l</span>
+
+							<span class="animated enterUpObject delay075 floatLeft">e</span>
+
+						</span>
+						
+					</ul>
+		
+				</span>
+
+			</span>
+
+			<!-- showOnHover // background -->
+			<span class="hideOnHover positionAbsolute positionCenter backgroundColorWhite widthFullFlex heightFullFlex">
+
+				<!-- washout background -->
+				<span class="positionAbsolute positionCenter
+				ColorWhiteFromClearGradient widthFullFlex heightFullFlex">
+
+					<!-- glyph background -->
+					<span class="animeframeOne animated infinite overflowhidden positionAbsolute positionCenter
+					backgroundGlyphOne opacity075 widthFullFlex heightFullFlex">
+					</span>
+
+					<!-- glyph background -->
+					<span class="animeframeOne delay05 animated infinite overflowhidden positionAbsolute positionCenter
+					backgroundGlyphTwo opacity075 widthFullFlex heightFullFlex">
+					</span>
+
+					<!-- washout background -->
+					<span class="positionAbsolute positionCenter
+					backgroundColorWhite opacity075 widthFullFlex heightFullFlex">
+					</span>
+
+					<span class="positionRelative widthFullFlex heightFourZeroFlex floatLeft easing">
+					</span>
+
+					<ul ng:click="popstart();" class="positionRelative widthFullFlex floatLeft easing">
+
+						<span class="widthFullFlex positionRelative  centerdiv fontSizeTen text-align-center gradientText ColorOneLeftClearGradient text-shadow01Five easing">
+						<b>
+							<span class="animated enterUpObject floatLeft">O</span>
+
+							<span class="animated enterUpObject delay025 floatLeft">u</span>
+
+							<span class="animated enterUpObject delay05 floatLeft">r </span>
+
+							</b>
+						</span>
+						
+					</ul>
+
+					<ul ng:click="popstart();" class="positionRelative widthFullFlex floatLeft easing">
+
+						<span class="widthFullFlex positionRelative  centerdiv fontSizeTen text-align-center gradientText ColorOneLeftClearGradient text-shadow01Five easing">
+						<b>
+							<span class="animated enterUpObject delay075 floatLeft"> t</span>
+
+							<span class="animated enterUpObject delay075 floatLeft">e</span>
+
+							<span class="animated enterUpObject delay075 floatLeft">a</span>
+
+							<span class="animated enterUpObject delay075 floatLeft">m</span>
+							</b>
+						</span>
+						
+					</ul>
+
+					<hr class="vertline infinite  marginauto positionAbsolute positionBottomRight animated growvert ColorOneToClearGradient">
+
+
+					<ul ng:click="popstart();" class="positionRelative widthFullFlex floatLeft easing">
+
+						<span class="widthFullFlex positionRelative  centerdiv fontSizeFive text-align-center fontColorWhite text-shadow01Five easing">
+
+							<span class="animated enterUpObject floatLeft">S</span>
+
+							<span class="animated enterUpObject delay025 floatLeft">u</span>
+
+							<span class="animated enterUpObject delay05 floatLeft">b</span>
+
+							<span class="animated enterUpObject delay075 floatLeft">t</span>
+
+							<span class="animated enterUpObject floatLeft">i</span>
+
+							<span class="animated enterUpObject delay025 floatLeft">t</span>
+
+							<span class="animated enterUpObject delay05 floatLeft">l</span>
+
+							<span class="animated enterUpObject delay075 floatLeft">e</span>
+
+						</span>
+						
+					</ul>
+		
+				</span>
+
+			</span>
+
+		</li>
+
+	</ul>
+
+	<!-- horizontal list components -->
+	<ul class="positionRelative widthFull heightFull floatLeft easing">
+
+		<li class="showOnHoverSwitch centerdiv text-align-center positionRelative widthFullFlex heightFullFlex backgroundColorOneOnHover floatLeft easing">
+
+			<!-- showOnHover // background -->
+			<span class="showOnHover positionAbsolute positionCenter backgroundteamcolor widthFullFlex heightFullFlex">
+
+				<!-- washout background -->
+				<span class="positionAbsolute positionCenter
+				ColorTwoFromClearGradient widthFullFlex heightFullFlex">
+
+				<!-- washout background -->
+				<span class="positionAbsolute positionCenter
+				backgroundColorWhite opacity075 widthFullFlex heightFullFlex">
+				</span>
+
+					<span class="
+					spacedHuge overflowhidden
+					positionRelative floatLeft easing">
+
+						<!-- washout background -->
+						<span class="overflowhidden positionAbsolute positionCenter
+						backgroundColorWhite opacity075 widthFullFlex heightFullFlex">
+						</span>
+
+						<span class="positionRelative widthFullFlex heightQuarterFlex floatLeft easing">
+						</span>
+
+						<hr class="horline infinite marginauto positionAbsolute positionTopLeft animated growhor ColorOneLeftClearGradient">
+
+						<hr class="vertline infinite  marginauto positionAbsolute positionTopLeft animated growvert ColorOneFromClearGradient">
+
+						<hr class="horline infinite  marginauto positionAbsolute positionBottomRight animated growhor ColorOneRightClearGradient">
+
+						<hr class="vertline infinite  marginauto positionAbsolute positionBottomRight animated growvert ColorOneToClearGradient">
+
+						<ul ng:click="popstart();" class="positionRelative widthFullFlex floatLeft easing">
+
+							<span class="widthFullFlex positionRelative  centerdiv fontSizeTen text-align-center gradientText ColorOneLeftClearGradient text-shadow01Five easing">
+							<b>
+								<span class="animated enterUpObject floatLeft">O</span>
+
+								<span class="animated enterUpObject delay025 floatLeft">u</span>
+
+								<span class="animated enterUpObject delay05 floatLeft">r </span>
+
+								</b>
+							</span>
+							
+						</ul>
+
+						<ul ng:click="popstart();" class="positionRelative widthFullFlex floatLeft easing">
+
+							<span class="widthFullFlex positionRelative  centerdiv fontSizeTen text-align-center gradientText ColorOneLeftClearGradient text-shadow01Five easing">
+							<b>
+								<span class="animated enterUpObject delay075 floatLeft">T</span>
+
+								<span class="animated enterUpObject delay075 floatLeft">e</span>
+
+								<span class="animated enterUpObject delay075 floatLeft">a</span>
+
+								<span class="animated enterUpObject delay075 floatLeft">m</span>
+								</b>
+							</span>
+							
+						</ul>
+
+						<!-- filler -->
+						<span class="positionRelative widthFullFlex heightFive floatLeft easing">
+						</span>
+
+						<hr class="horline widthStatic marginauto positionRelative animated growhor ColorOneRightClearGradient">
+
+						<!-- filler -->
+						<span class="positionRelative widthFullFlex heightFive floatLeft easing">
+						</span>
+
+						<ul ng:click="popstart();" class="positionRelative widthFullFlex floatLeft easing">
+
+							<span class="widthFullFlex positionRelative  centerdiv fontSizeFive text-align-center fontColorWhite text-shadow01Five easing">
+
+								<span class="animated enterUpObject floatLeft">S</span>
+
+								<span class="animated enterUpObject delay025 floatLeft">u</span>
+
+								<span class="animated enterUpObject delay05 floatLeft">b</span>
+
+								<span class="animated enterUpObject delay075 floatLeft">t</span>
+
+								<span class="animated enterUpObject floatLeft">i</span>
+
+								<span class="animated enterUpObject delay025 floatLeft">t</span>
+
+								<span class="animated enterUpObject delay05 floatLeft">l</span>
+
+								<span class="animated enterUpObject delay075 floatLeft">e</span>
+
+							</span>
+							
+						</ul>
+
+					</span>
+		
+				</span>
+
+			</span>
+
+			<!-- showOnHover // background -->
+			<span class="hideOnHover positionAbsolute positionCenter backgroundteamcolor widthFullFlex heightFullFlex">
+
+				<!-- washout background -->
+				<span class="positionAbsolute positionCenter
+				ColorTwoFromClearGradient widthFullFlex heightFullFlex">
+
+				<!-- washout background -->
+				<span class="positionAbsolute positionCenter
+				backgroundColorWhite opacity075 widthFullFlex heightFullFlex">
+				</span>
+
+					<span class="
+					spacedHuge overflowhidden
+					positionRelative floatLeft easing">
+
+						<!-- washout background -->
+						<span class="overflowhidden positionAbsolute positionCenter
+						backgroundColorWhite opacity075 widthFullFlex heightFullFlex">
+						</span>
+
+						<!-- washout background -->
+						<span class="overflowhidden positionAbsolute positionCenter
+						backgroundGlyphOne opacity025 widthFullFlex heightFullFlex">
+						</span>
+
+						<span class="positionRelative widthFullFlex heightQuarterFlex floatLeft easing">
+						</span>
+
+						<hr class="horline infinite marginauto positionAbsolute positionTopLeft animated growhor ColorOneLeftClearGradient">
+
+						<hr class="vertline infinite  marginauto positionAbsolute positionTopLeft animated growvert ColorOneFromClearGradient">
+
+						<hr class="horline infinite  marginauto positionAbsolute positionBottomRight animated growhor ColorOneRightClearGradient">
+
+						<hr class="vertline infinite  marginauto positionAbsolute positionBottomRight animated growvert ColorOneToClearGradient">
+
+						<ul ng:click="popstart();" class="positionRelative widthFullFlex floatLeft easing">
+
+							<span class="widthFullFlex positionRelative  centerdiv fontSizeTen text-align-center gradientText ColorOneLeftClearGradient text-shadow01Five easing">
+							<b>
+								<span class="animated enterUpObject floatLeft">O</span>
+
+								<span class="animated enterUpObject delay025 floatLeft">u</span>
+
+								<span class="animated enterUpObject delay05 floatLeft">r </span>
+
+								</b>
+							</span>
+							
+						</ul>
+
+						<ul ng:click="popstart();" class="positionRelative widthFullFlex floatLeft easing">
+
+							<span class="widthFullFlex positionRelative  centerdiv fontSizeTen text-align-center gradientText ColorOneLeftClearGradient text-shadow01Five easing">
+							<b>
+								<span class="animated enterUpObject delay075 floatLeft">T</span>
+
+								<span class="animated enterUpObject delay075 floatLeft">e</span>
+
+								<span class="animated enterUpObject delay075 floatLeft">a</span>
+
+								<span class="animated enterUpObject delay075 floatLeft">m</span>
+								</b>
+							</span>
+							
+						</ul>
+
+						<!-- filler -->
+						<span class="positionRelative widthFullFlex heightFive floatLeft easing">
+						</span>
+
+						<hr class="horline widthStatic marginauto positionRelative animated growhor ColorOneRightClearGradient">
+
+						<!-- filler -->
+						<span class="positionRelative widthFullFlex heightFive floatLeft easing">
+						</span>
+
+						<ul ng:click="popstart();" class="positionRelative widthFullFlex floatLeft easing">
+
+							<span class="widthFullFlex positionRelative  centerdiv fontSizeFive text-align-center fontColorWhite text-shadow01Five easing">
+
+								<span class="animated enterUpObject floatLeft">S</span>
+
+								<span class="animated enterUpObject delay025 floatLeft">u</span>
+
+								<span class="animated enterUpObject delay05 floatLeft">b</span>
+
+								<span class="animated enterUpObject delay075 floatLeft">t</span>
+
+								<span class="animated enterUpObject floatLeft">i</span>
+
+								<span class="animated enterUpObject delay025 floatLeft">t</span>
+
+								<span class="animated enterUpObject delay05 floatLeft">l</span>
+
+								<span class="animated enterUpObject delay075 floatLeft">e</span>
+
+							</span>
+							
+						</ul>
+
+					</span>
+		
+				</span>
+
+			</span>
+
+		</li>
+
+	</ul>
+
+	<!-- horizontal list components -->
+	<ul class="positionRelative widthFull heightFull floatLeft easing">
+
+		<li class="showOnHoverSwitch centerdiv text-align-center positionRelative widthFullFlex heightFullFlex backgroundColorOneOnHover floatLeft easing">
+
+			<!-- showOnHover // background -->
+			<span class="showOnHover positionAbsolute positionCenter backgroundteamcolor widthFullFlex heightFullFlex">
+
+				<!-- washout background -->
+				<span class="positionAbsolute positionCenter
+				ColorOneFromClearGradient widthFullFlex heightFullFlex">
+
+					<!-- washout background -->
+					<span class="positionAbsolute positionCenter
+					backgroundColorWhite opacity075 widthFullFlex heightFullFlex">
+					</span>
+
+					<span class="positionRelative widthFullFlex heightFourZeroFlex floatLeft easing">
+					</span>
+
+					<ul ng:click="popstart();" class="positionRelative widthFullFlex floatLeft easing">
+
+						<span class="widthFullFlex positionRelative  centerdiv fontSizeTen text-align-center gradientText ColorOneLeftClearGradient text-shadow01Five easing">
+						<b>
+							<span class="animated enterUpObject floatLeft">O</span>
+
+							<span class="animated enterUpObject delay025 floatLeft">u</span>
+
+							<span class="animated enterUpObject delay05 floatLeft">r </span>
+
+							</b>
+						</span>
+						
+					</ul>
+
+					<ul ng:click="popstart();" class="positionRelative widthFullFlex floatLeft easing">
+
+						<span class="widthFullFlex positionRelative  centerdiv fontSizeTen text-align-center gradientText ColorOneLeftClearGradient text-shadow01Five easing">
+						<b>
+							<span class="animated enterUpObject delay075 floatLeft"> t</span>
+
+							<span class="animated enterUpObject delay075 floatLeft">e</span>
+
+							<span class="animated enterUpObject delay075 floatLeft">a</span>
+
+							<span class="animated enterUpObject delay075 floatLeft">m</span>
+							</b>
+						</span>
+						
+					</ul>
+
+					<hr class="horline infinite marginauto positionAbsolute positionTopLeft animated growhor ColorOneLeftClearGradient">
+
+					<hr class="vertline infinite  marginauto positionAbsolute positionTopLeft animated growvert ColorOneFromClearGradient">
+
+					<hr class="horline infinite  marginauto positionAbsolute positionBottomRight animated growhor ColorOneRightClearGradient">
+
+					<hr class="vertline infinite  marginauto positionAbsolute positionBottomRight animated growvert ColorOneToClearGradient">
+
+
+					<ul ng:click="popstart();" class="positionRelative widthFullFlex floatLeft easing">
+
+						<span class="widthFullFlex positionRelative  centerdiv fontSizeFive text-align-center fontColorWhite text-shadow01Five easing">
+
+							<span class="animated enterUpObject floatLeft">S</span>
+
+							<span class="animated enterUpObject delay025 floatLeft">u</span>
+
+							<span class="animated enterUpObject delay05 floatLeft">b</span>
+
+							<span class="animated enterUpObject delay075 floatLeft">t</span>
+
+							<span class="animated enterUpObject floatLeft">i</span>
+
+							<span class="animated enterUpObject delay025 floatLeft">t</span>
+
+							<span class="animated enterUpObject delay05 floatLeft">l</span>
+
+							<span class="animated enterUpObject delay075 floatLeft">e</span>
+
+						</span>
+						
+					</ul>
+		
+				</span>
+
+			</span>
+
+			<!-- showOnHover // background -->
+			<span class="hideOnHover positionAbsolute positionCenter backgroundteamcolor widthFullFlex heightFullFlex">
+
+				<!-- washout background -->
+				<span class="positionAbsolute positionCenter
+				ColorOneFromClearGradient widthFullFlex heightFullFlex">
+
+					<!-- washout background -->
+					<span class="positionAbsolute positionCenter
+					backgroundColorWhite opacity075 widthFullFlex heightFullFlex">
+					</span>
+
+					<span class="positionRelative widthFullFlex heightFourZeroFlex floatLeft easing">
+					</span>
+
+					<ul ng:click="popstart();" class="positionRelative widthFullFlex floatLeft easing">
+
+						<span class="widthFullFlex positionRelative  centerdiv fontSizeTen text-align-center gradientText ColorOneLeftClearGradient text-shadow01Five easing">
+						<b>
+							<span class="animated enterUpObject floatLeft">O</span>
+
+							<span class="animated enterUpObject delay025 floatLeft">u</span>
+
+							<span class="animated enterUpObject delay05 floatLeft">r </span>
+
+							</b>
+						</span>
+						
+					</ul>
+
+					<ul ng:click="popstart();" class="positionRelative widthFullFlex floatLeft easing">
+
+						<span class="widthFullFlex positionRelative  centerdiv fontSizeTen text-align-center gradientText ColorOneLeftClearGradient text-shadow01Five easing">
+						<b>
+							<span class="animated enterUpObject delay075 floatLeft"> t</span>
+
+							<span class="animated enterUpObject delay075 floatLeft">e</span>
+
+							<span class="animated enterUpObject delay075 floatLeft">a</span>
+
+							<span class="animated enterUpObject delay075 floatLeft">m</span>
+							</b>
+						</span>
+						
+					</ul>
+
+					<hr class="horline infinite marginauto positionAbsolute positionTopLeft animated growhor ColorOneLeftClearGradient">
+
+					<hr class="vertline infinite  marginauto positionAbsolute positionTopLeft animated growvert ColorOneFromClearGradient">
+
+					<hr class="horline infinite  marginauto positionAbsolute positionBottomRight animated growhor ColorOneRightClearGradient">
+
+					<hr class="vertline infinite  marginauto positionAbsolute positionBottomRight animated growvert ColorOneToClearGradient">
+
+
+					<ul ng:click="popstart();" class="positionRelative widthFullFlex floatLeft easing">
+
+						<span class="widthFullFlex positionRelative  centerdiv fontSizeFive text-align-center fontColorWhite text-shadow01Five easing">
+
+							<span class="animated enterUpObject floatLeft">S</span>
+
+							<span class="animated enterUpObject delay025 floatLeft">u</span>
+
+							<span class="animated enterUpObject delay05 floatLeft">b</span>
+
+							<span class="animated enterUpObject delay075 floatLeft">t</span>
+
+							<span class="animated enterUpObject floatLeft">i</span>
+
+							<span class="animated enterUpObject delay025 floatLeft">t</span>
+
+							<span class="animated enterUpObject delay05 floatLeft">l</span>
+
+							<span class="animated enterUpObject delay075 floatLeft">e</span>
+
+						</span>
+						
+					</ul>
+		
+				</span>
+
+			</span>
+
+		</li>
+
+	</ul>
+
+	<!-- title over photo component -->
+	<ul class="positionRelative widthFull heightFull floatLeft easing">
+
+		<li class="showOnHoverSwitch centerdiv text-align-center positionRelative widthFullFlex heightFullFlex backgroundColorOneOnHover floatLeft easing">
+
+			<!-- showOnHover // background -->
+			<span class="showOnHover positionAbsolute positionCenter backgroundteam
+			backgroundColorWhite widthFullFlex heightFullFlex">
+
+				<!-- washout background -->
+				<span class="positionAbsolute positionCenter opacity075
+				backgroundColorWhite widthFullFlex heightFullFlex">
+				</span>
+
+			</span>
+
+			<!-- hideOnHover // background -->
+			<span class="hideOnHover positionAbsolute positionCenter backgroundteamcolor
+			backgroundColorWhite widthFullFlex heightFullFlex">
+
+				<!-- washout background -->
+				<span class="positionAbsolute positionCenter opacity075
+				backgroundColorWhite widthFullFlex heightFullFlex">
+
+				</span>
+
+			</span>
+
+			<span class="positionRelative centerdiv fontSizeFive fontColorOne fontColorTwoOnHover lineHeightSevenFive bordered-bottomTwo bordered-bottomThreeOnHover easing">option 1</span>
+		</li>
+
+	</ul>
+
+	<span class="positionRelative widthFull heightFull overflowy">
+
+		<span
+		class="zindexOne backgroundGridColorTwo positionRelative widthFull heightThreeQuarter floatLeft easing">
+
+			<!-- desk Holder center -->
+			<desk class="positionFixed positionOverQuarterBottom widthHalf heightHalf">
+
+			</desk>
+
+			<span class="heightQuarterFlex widthFullFlex floatLeft"></span>
+
+			<h1 class="positionRelative lineHeightTen fontSizeFive text-align-center fontColorWhite text-shadow01Five zindexOne">Subtitle</h1>
+
+			<h2 class="positionRelative lineHeightTen fontSizeTen text-align-center fontColorThree text-shadow05Five zindexOne">Team</h2>
+
+			<h3 class="positionRelative lineHeightTen fontSizeSevenFive text-align-center fontColorFour text-shadow025Five zindexOne">tagline</h3>
+
+			<h4 class="positionAbsolute
+			positionRight widthQuarterFlex heightQuarterFlex lineHeightTen fontSizeSevenFive text-align-center fontColorFive">
+				<span class="divcenter positionRelative opacity025">
+					<b>.01</b>
+				</span>
+			</h4>
+
+			<hr>
+
+			<!-- horizontal list components -->
+			<ul class="positionRelative widthFull heightQuarter floatLeft easing">
+
+				<span class="widthStatic positionRelative centerdiv marginauto">
+
+					<li class="centerdiv text-align-center positionRelative heightFullFlex backgroundColorOneOnHover marginTwoFive paddingTwoFive easing">
+						<span class="centerdiv fontSizeTwoFive fontColorOne fontColorTwoOnHover lineHeightTen bordered-bottomTwo bordered-bottomThreeOnHover easing">option 5</span>
+					</li>
+					
+					<li class="centerdiv text-align-center positionRelative heightFullFlex backgroundColorOneOnHover marginTwoFive paddingTwoFive easing">
+						<span class="centerdiv fontSizeTwoFive fontColorOne fontWhiteOnHover lineHeightTen bordered-bottomTwo bordered-bottomWhiteOnHover easing">option 6</span>
+					</li>
+
+					<li class="centerdiv text-align-center positionRelative heightFullFlex backgroundColorOneOnHover marginTwoFive paddingTwoFive easing">
+						<span class="centerdiv fontSizeTwoFive fontColorOne fontColorTwoOnHover lineHeightTen bordered-bottomTwo bordered-bottomThreeOnHover easing">option 7</span>
+					</li>
+					
+					<li class="centerdiv text-align-center positionRelative heightFullFlex backgroundColorOneOnHover marginTwoFive paddingTwoFive easing">
+
+						<span class="centerdiv fontSizeTwoFive fontColorOne fontWhiteOnHover lineHeightTen bordered-bottomTwo bordered-bottomWhiteOnHover easing beforeMenu">
+							<span class="beforeContent text-align-center">
+								<p class="positionRelative centerdiv">content</p>
+							</span>
+							option 8
+						</span>
+					</li>
+
+				</span>
+
+			</ul>
+
+			<span ng:show="startAnimation" class="animated enterDown positionLeft positionAbsolute widthQuarter heightHalf zindexOne">
+				<manface4 class="infinite animated pulse positionCenter positionAbsolute widthFullFlex heightFullFlex"></manface4>
+			</span>
+
+		</span>
+
+		<!-- horizontal list components -->
+		<span
+		class="zindexOne backgroundGridColorWhite positionRelative widthFull heightQuarter floatLeft easing zindexOne">
+			<ul class="positionRelative widthFull heightQuarter floatLeft easing">
+
+				<li class="showOnHoverSwitch centerdiv text-align-center positionRelative widthSixthFlex heightFullFlex backgroundColorOneOnHover floatLeft easing">
+
+					<!-- showOnHover // background -->
+					<span class="showOnHover positionAbsolute positionCenter backgroundteam
+					backgroundColorWhite widthFullFlex heightFullFlex">
+
+						<!-- washout background -->
+						<span class="positionAbsolute positionCenter opacity075
+						backgroundColorWhite widthFullFlex heightFullFlex">
+						</span>
+
+					</span>
+
+					<!-- showOnHover // background -->
+					<span class="hideOnHover positionAbsolute positionCenter backgroundteamcolor
+					backgroundColorWhite widthFullFlex heightFullFlex">
+
+						<!-- washout background -->
+						<span class="positionAbsolute positionCenter opacity075
+						backgroundColorWhite widthFullFlex heightFullFlex">
+						</span>
+
+					</span>
+
+					<span class="positionRelative centerdiv fontSizeFive fontColorOne fontColorTwoOnHover lineHeightSevenFive bordered-bottomTwo bordered-bottomThreeOnHover easing">option 1</span>
+				</li>
+				
+				<li class="showOnHoverSwitch centerdiv text-align-center positionRelative widthSixthFlex heightFullFlex backgroundColorOneOnHover floatLeft easing">
+
+					<!-- showOnHover // background -->
+					<span class="showOnHover positionAbsolute positionCenter backgroundteam
+					backgroundColorWhite widthFullFlex heightFullFlex">
+
+						<!-- washout background -->
+						<span class="positionAbsolute positionCenter opacity075
+						backgroundColorWhite widthFullFlex heightFullFlex">
+						</span>
+
+					</span>
+
+					<!-- showOnHover // background -->
+					<span class="hideOnHover positionAbsolute positionCenter backgroundteamcolor
+					backgroundColorWhite widthFullFlex heightFullFlex">
+
+						<!-- washout background -->
+						<span class="positionAbsolute positionCenter opacity075
+						backgroundColorWhite widthFullFlex heightFullFlex">
+						</span>
+
+					</span>
+
+					<span class="positionRelative centerdiv fontSizeFive fontColorOne fontWhiteOnHover lineHeightSevenFive bordered-bottomTwo bordered-bottomWhiteOnHover easing">option 2</span>
+				</li>
+
+				<li class="centerdiv text-align-center positionRelative widthSixthFlex heightFullFlex backgroundColorOneOnHover floatLeft easing">
+					<span class="centerdiv fontSizeFive fontColorOne fontColorTwoOnHover lineHeightSevenFive bordered-bottomTwo bordered-bottomThreeOnHover easing">option 3</span>
+				</li>
+				
+				<li class="centerdiv text-align-center positionRelative widthSixthFlex heightFullFlex backgroundColorOneOnHover floatLeft easing">
+					<span class="centerdiv fontSizeFive fontColorOne fontWhiteOnHover lineHeightSevenFive bordered-bottomTwo bordered-bottomWhiteOnHover easing">option 4</span>
+				</li>
+
+				<li class="centerdiv text-align-center positionRelative widthSixthFlex heightFullFlex backgroundColorOneOnHover floatLeft easing">
+					<span class="centerdiv fontSizeFive fontColorOne fontColorTwoOnHover lineHeightSevenFive bordered-bottomTwo bordered-bottomThreeOnHover easing">option 5</span>
+				</li>
+				
+				<li class="centerdiv text-align-center positionRelative widthSixthFlex heightFullFlex backgroundColorOneOnHover floatLeft easing">
+					<span class="centerdiv fontSizeFive fontColorOne fontWhiteOnHover lineHeightSevenFive bordered-bottomTwo bordered-bottomWhiteOnHover easing">option 6</span>
+				</li>
+
+				<li class="centerdiv text-align-center positionRelative widthSixthFlex heightFullFlex backgroundColorOneOnHover floatLeft easing">
+					<span class="centerdiv fontSizeFive fontColorOne fontColorTwoOnHover lineHeightSevenFive bordered-bottomTwo bordered-bottomThreeOnHover easing">option 7</span>
+				</li>
+				
+				<li class="centerdiv text-align-center positionRelative widthSixthFlex heightFullFlex backgroundColorOneOnHover floatLeft easing">
+
+					<span class="centerdiv fontSizeFive fontColorOne fontWhiteOnHover lineHeightSevenFive bordered-bottomTwo bordered-bottomWhiteOnHover easing beforeMenu">
+						<span class="beforeContent text-align-center">
+							<p class="positionRelative centerdiv">content</p>
+						</span>
+						option 8
+					</span>
+				</li>
+
+			</ul>
+		</span>
+
+		<!-- horizontal list components -->
+		<ul class="positionRelative widthFull heightFull floatLeft easing">
+
+			<li class="showOnHoverSwitch centerdiv text-align-center positionRelative widthFifthFlex heightFifthFlex backgroundColorOneOnHover floatLeft easing">
+
+				<!-- showOnHover // background -->
+				<span class="showOnHover positionAbsolute positionCenter backgroundteam
+				backgroundColorWhite widthFullFlex heightFullFlex">
+
+					<!-- washout background -->
+					<span class="positionAbsolute positionCenter opacity075
+					backgroundColorWhite widthFullFlex heightFullFlex">
+					</span>
+
+				</span>
+
+				<!-- showOnHover // background -->
+				<span class="hideOnHover positionAbsolute positionCenter backgroundteamcolor
+				backgroundColorWhite widthFullFlex heightFullFlex">
+
+					<!-- washout background -->
+					<span class="positionAbsolute positionCenter opacity075
+					backgroundColorWhite widthFullFlex heightFullFlex">
+					</span>
+
+				</span>
+
+				<span class="positionRelative centerdiv fontSizeFive fontColorOne fontColorTwoOnHover lineHeightSevenFive bordered-bottomTwo bordered-bottomThreeOnHover easing">option 1</span>
+			</li>
+
+			<li class="showOnHoverSwitch centerdiv text-align-center positionRelative widthFifthFlex heightFifthFlex backgroundColorOneOnHover floatLeft easing">
+
+				<!-- showOnHover // background -->
+				<span class="showOnHover positionAbsolute positionCenter backgroundteam
+				backgroundColorWhite widthFullFlex heightFullFlex">
+
+					<!-- washout background -->
+					<span class="positionAbsolute positionCenter opacity075
+					backgroundColorWhite widthFullFlex heightFullFlex">
+					</span>
+
+				</span>
+
+				<!-- showOnHover // background -->
+				<span class="hideOnHover positionAbsolute positionCenter backgroundteamcolor
+				backgroundColorWhite widthFullFlex heightFullFlex">
+
+					<!-- washout background -->
+					<span class="positionAbsolute positionCenter opacity075
+					backgroundColorWhite widthFullFlex heightFullFlex">
+					</span>
+
+				</span>
+
+				<span class="positionRelative centerdiv fontSizeFive fontColorOne fontColorTwoOnHover lineHeightSevenFive bordered-bottomTwo bordered-bottomThreeOnHover easing">option 1</span>
+			</li>
+
+			<li class="showOnHoverSwitch centerdiv text-align-center positionRelative widthFifthFlex heightFifthFlex backgroundColorOneOnHover floatLeft easing">
+
+				<!-- showOnHover // background -->
+				<span class="showOnHover positionAbsolute positionCenter backgroundteam
+				backgroundColorWhite widthFullFlex heightFullFlex">
+
+					<!-- washout background -->
+					<span class="positionAbsolute positionCenter opacity075
+					backgroundColorWhite widthFullFlex heightFullFlex">
+					</span>
+
+				</span>
+
+				<!-- showOnHover // background -->
+				<span class="hideOnHover positionAbsolute positionCenter backgroundteamcolor
+				backgroundColorWhite widthFullFlex heightFullFlex">
+
+					<!-- washout background -->
+					<span class="positionAbsolute positionCenter opacity075
+					backgroundColorWhite widthFullFlex heightFullFlex">
+					</span>
+
+				</span>
+
+				<span class="positionRelative centerdiv fontSizeFive fontColorOne fontColorTwoOnHover lineHeightSevenFive bordered-bottomTwo bordered-bottomThreeOnHover easing">option 1</span>
+			</li>
+
+			<li class="showOnHoverSwitch centerdiv text-align-center positionRelative widthFifthFlex heightFifthFlex backgroundColorOneOnHover floatLeft easing">
+
+				<!-- showOnHover // background -->
+				<span class="showOnHover positionAbsolute positionCenter backgroundteam
+				backgroundColorWhite widthFullFlex heightFullFlex">
+
+					<!-- washout background -->
+					<span class="positionAbsolute positionCenter opacity075
+					backgroundColorWhite widthFullFlex heightFullFlex">
+					</span>
+
+				</span>
+
+				<!-- showOnHover // background -->
+				<span class="hideOnHover positionAbsolute positionCenter backgroundteamcolor
+				backgroundColorWhite widthFullFlex heightFullFlex">
+
+					<!-- washout background -->
+					<span class="positionAbsolute positionCenter opacity075
+					backgroundColorWhite widthFullFlex heightFullFlex">
+					</span>
+
+				</span>
+
+				<span class="positionRelative centerdiv fontSizeFive fontColorOne fontColorTwoOnHover lineHeightSevenFive bordered-bottomTwo bordered-bottomThreeOnHover easing">option 1</span>
+			</li>
+
+			<li class="showOnHoverSwitch centerdiv text-align-center positionRelative widthFifthFlex heightFifthFlex backgroundColorOneOnHover floatLeft easing">
+
+				<!-- showOnHover // background -->
+				<span class="showOnHover positionAbsolute positionCenter backgroundteam
+				backgroundColorWhite widthFullFlex heightFullFlex">
+
+					<!-- washout background -->
+					<span class="positionAbsolute positionCenter opacity075
+					backgroundColorWhite widthFullFlex heightFullFlex">
+					</span>
+
+				</span>
+
+				<!-- showOnHover // background -->
+				<span class="hideOnHover positionAbsolute positionCenter backgroundteamcolor
+				backgroundColorWhite widthFullFlex heightFullFlex">
+
+					<!-- washout background -->
+					<span class="positionAbsolute positionCenter opacity075
+					backgroundColorWhite widthFullFlex heightFullFlex">
+					</span>
+
+				</span>
+
+				<span class="positionRelative centerdiv fontSizeFive fontColorOne fontColorTwoOnHover lineHeightSevenFive bordered-bottomTwo bordered-bottomThreeOnHover easing">option 1</span>
+			</li>
+		</ul>
+
+	</span>
+
+</ul>

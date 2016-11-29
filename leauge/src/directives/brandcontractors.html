@@ -1,0 +1,61 @@
+<!-- contractors -->
+   <span class="
+      backgroundColorWhite
+      showOnHoverSwitch
+      positionRelative
+      heightTwoThirdFlex
+      widthFullFlex
+      overflowhidden floatLeft">
+      <!-- washout background -->
+      <span class="zindexFive positionAbsolute positionCenter widthFullFlex heightFullFlex">
+         <span class="
+            positionAbsolute
+            positionCenter border-radius1
+            overflowhidden floatLeft"></span>
+         <ul class="positionRelative widthFullFlex heightFullFlex">
+            <div class="
+               zindexOne 
+               positionAbsolute positionTop text-align-center widthFullFlex floatLeft">
+               <span class="zindexFive positionRelative floatLeft spacedMid">
+                  <p class="
+                     floatLeft
+                     positionRelative
+                     backgroundColorOne
+                     paddingTwoFive
+                     fontSizeFive
+                     lineHeightTen fontColorWhite fontColorFourOnHover easing">
+                     <span class="zindexFive positionRelative floatLeft spacedSmall backgroundColorOne">
+                     <span class="font-family-snippet">our</span>
+                     <span class="bordered-bottomTwo"><b>Brand</b></span> Designer
+                     </span>
+                  </p>
+               </span>
+            </div>
+            <li class="positionRelative widthQuarterFlex heightFullFlex floatLeft" ng-repeat="arts in team | limitTo:4:0">
+               <!-- washout background -->
+               <span class="positionAbsolute positionCenter backgroundColorWhite  widthFullFlex heightFullFlex">
+               </span>
+               <span class="marginauto
+                  positionAbsolute positionBottom
+                  widthFullFlex heightHalfFlex marginauto" ng-repeat="member in team | filter: member.firstname = arts.name | limitTo:1:0">
+               <span ng-repeat="pics in member.photos | limitTo:1:0" class="widthFullFlex heightFullFlex positionAbsolute positionCenter marginauto" style="background-image: url('/person/{{pics.link}}.png');
+                  background-size: cover;">
+               </span>
+               </span>
+               <!-- washout background -->
+               <span class="positionAbsolute positionCenter backgroundColorWhite widthFullFlex heightFullFlex opacity075">
+               </span>
+               <!-- washout background -->
+               <span class="zindexFive positionAbsolute positionCenter spacedMid">
+                  <span class="widthFullFlex heightThirdFlex positionRelative marginauto easing floatLeft"></span>
+                  <span class="widthThreeQuarterFlex positionRelative marginauto easing">
+                     <h3 class="opacity095 font-family-snippet widthFullFlex floatLeft positionRelative lineHeightFour fontSizeThree text-align-center fontColorOne text-shadow025OffWhite zindexOne"> <span class="bordered-bottomTwo"></span>{{arts.position}}</h3>
+                  </span>
+                  <span class="widthThreeQuarterFlex positionRelative marginauto easing">
+                  <b class=" widthFullFlex floatLeft positionRelative lineHeightFive fontSizeFour text-align-center fontColorThree text-shadow05OffWhite zindexOne"><span class="">{{arts.name}}</span></b>
+                  </span>
+               </span>
+            </li>
+         </ul>
+      </span>
+   </span>

@@ -1,0 +1,56 @@
+<span class="
+      showOnHoverSwitch
+      positionRelative
+      widthFullFlex
+      backgroundGridColorWhite floatLeft">
+
+      <span class="
+      positionAbsolute positionBottomRight
+      heightFullFlex
+      widthThirdFlex
+      overflowhidden opacity01 floatLeft">
+
+         <span ng:repeat="slides in post.slidephotos | limitTo:1:slider.count" class="
+         positionAbsolute positionCenter
+         spacedMid border-radius1
+         overflowhidden floatLeft"
+         style="background-image: url('/thumbs/{{slides.slide}}');
+         background-size: cover;">
+         </span>
+
+      </span>
+
+      <span class="widthFullFlex floatLeft">
+         <div class="spacedMid border-radius1 overflowhidden positionRelative">
+            <!-- layer -->
+            <span class="
+               floatLeft
+               text-align-left
+               widthFullFlex paddingTwoFive positionRelative border-radius1
+               fontSizeTwoFive fontColorSix fontColorFourOnHover lineHeightFive easing">
+               
+               <span class="backgroundColorOffWhite  floatLeft positionRelative marginauto easing">
+                  <h3 class="opacity095 font-family-snippet widthFullFlex floatLeft positionRelative lineHeightFive fontSizeFour text-align-center fontColorOne text-shadow025Dark zindexOne"> <span class="bordered-bottomFour fontColorThree">Uploaded </span>{{post.date}}</h3>
+               </span>
+
+               <hr>
+
+               <span class="widthFullFlex positionRelative marginauto floatLeft">
+                  <b class="lineHeightFifteen fontSizeFifteen text-align-left fontColorThree text-shadow05OffWhite zindexOne"><span class="">{{post.title}}</span></b>
+               </span>
+
+               <hr>
+
+
+               <p class="paddingTwoFive marginOne border-radius1 backgroundColorOffWhite floatLeft"> {{post.category}}</p> 
+
+               <p class="paddingTwoFive marginOne border-radius1 backgroundColorOffWhite floatLeft"> {{post.subcategory}}</p> 
+
+               <p ng-repeat="posttag in post.tags" class="paddingTwoFive marginOne border-radius1 backgroundColorOffWhite floatLeft"> {{posttag.name}}</p> 
+
+
+            </span>
+         </div>
+      </span>
+
+   </span>

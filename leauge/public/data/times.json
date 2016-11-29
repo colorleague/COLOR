@@ -1,0 +1,40 @@
+{
+	"records":[
+		{
+		"lengths":"ASAP"
+		},
+
+		{
+		"lengths":"Within 1 Week"
+		},
+
+		{
+		"lengths":"Within 2 Weeks"
+		},
+
+		{
+		"lengths":"Within 1 Month"
+		},
+
+		{
+		"lengths":"Within 3 Months"
+		},
+
+		{
+		"lengths":"Within 6 Months"
+		},
+
+		{
+		"lengths":"Within 1 Year"
+		},
+
+		{
+		"lengths":"Over 1 Year"
+		},
+
+		{
+		"lengths":"undetermined"
+		}
+		
+	]
+}

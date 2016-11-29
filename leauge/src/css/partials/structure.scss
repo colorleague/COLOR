@@ -1,0 +1,552 @@
+// Body
+body, .container {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+pre, code {
+ box-sizing:border-box;
+ -moz-box-sizing:border-box;
+ webkit-box-sizing:border-box;
+ display:block; 
+ white-space: pre-wrap;  
+ white-space: -moz-pre-wrap; 
+ white-space: -pre-wrap; 
+ white-space: -o-pre-wrap; 
+ word-wrap: break-word; 
+ width:100%; overflow-x:auto;
+}
+
+textarea {
+    border: none;
+    overflow: auto;
+    outline: none;
+
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    text-align: left;
+    padding: 2.5vh 5vh;
+}
+
+hr {
+  width: 100%;
+  height: 1vh;
+  border: none;
+}
+
+hr.horline {
+  width: 100%;
+  height: 1vh;
+  border: none;
+}
+
+hr.vertline {
+  width: 1vh;
+  height: 100%;
+  border: none;
+}
+
+svg {
+  min-width: 100%;
+  max-height: 100%;
+}
+
+.no-border {
+  border: none;
+}
+
+.border-radius05 {
+  border-radius: .5vh;
+}
+
+.border-radius1TopRight {
+  border-radius: 0 1vh 0 0;
+}
+
+.border-radius1Top {
+  border-radius: 1vh 1vh 0 0;
+}
+
+.border-radius1Bottom {
+  border-radius: 0 0 1vh 1vh;
+}
+
+.border-radius1BottomLeft {
+  border-radius: 0 0 0 1vh;
+}
+
+.border-radius1BottomRight {
+  border-radius: 0 0 1vh 0;
+}
+
+.border-radius1 {
+  border-radius: 1vh;
+}
+
+.border-radius025 {
+  border-radius: 2.5vh;
+}
+
+.border-radius25 {
+  border-radius: 25vh;
+}
+
+.border-radius50 {
+  border-radius: 50vh;
+}
+
+.border-radius-circle {
+  border-radius: 50%;
+}
+
+.marginauto {
+  margin:auto;
+}
+
+.marginOne {
+  margin: .5vh .5vw;
+}
+
+.marginHeaderOverButton {
+  margin: 1.25vh 5vw;
+}
+
+.marginZeroTwoFiveRight {
+  margin: 0 .25vw 0 0;
+}
+
+.marginTwoFive {
+  margin: 1.25vh 1.25vw;
+}
+
+.marginTwoFiveBottomRight {
+  margin: 0 1.25vw 1.25vh 0;
+}
+
+.marginTwoFiveTopRight {
+  margin: 1.25vh 1.25vw 0 0;
+}
+
+.marginTwoFiveTopLeft {
+  margin: 1.25vh 0 0 1.25vw;
+}
+
+.marginTwoFiveTopBottom {
+  margin: 1.25vh 0 1.25vh 0;
+}
+
+.marginTwoFiveTopBottomLeft {
+  margin: 1.25vh 0 1.25vh 1.25vw;
+}
+
+.marginTwoFiveTopBottomRight {
+  margin: 1.25vh 1.25vw 1.25vh 0;
+}
+
+.marginTwoFiveBottomLeft {
+  margin: 0 0 1.25vh 1.25vw;
+}
+
+.marginTwoFiveRightLeft {
+  margin: 0 1.25vw 0 1.25vw;
+}
+
+.marginTwoFiveRight {
+  margin: 0 1.25vw 0 0;
+}
+
+.marginSevenFiveRight {
+  margin: 0 .75vw 0 0;
+}
+
+.marginTwoFiveLeft {
+  margin: 0 0 0 1.25vw;
+}
+
+.no-padding {
+  padding: 0;
+}
+
+.no-margin {
+  margin: 0;
+}
+
+.paddingZeroTwoFive {
+  padding: 0.25vh 0.25vh;
+}
+
+.paddingTwoFive {
+  padding: 1.25vh 1.25vh;
+}
+
+.paddingTwoFiveLeftRight {
+  padding: 0vh 1.25vh;
+}
+
+.widthFull {
+  width: 100vw;
+}
+
+.widthStatic {
+  width: 100%;
+  max-width: 1000px;
+}
+
+.widthDoubleFull {
+  width: 200vw;
+}
+
+.widthFullFlex {
+  width: 100%;
+}
+
+.widthNine {
+  width: 90vw;
+}
+
+.widthNineFlex {
+  width: 90%;
+}
+
+.widthEightyFlex {
+  width: 80vw;
+}
+
+.widthEightZeroFlex {
+  width: 80%;
+}
+
+.widthThreeQuarterFlex {
+  width: 75%;
+}
+
+.widthThreeQuarter {
+  width: 75vw;
+}
+
+.widthTwoThirdFlex {
+  width: 67%;
+}
+
+.widthSixZeroFlex {
+  width: 60%;
+}
+
+.widthHalf {
+  width: 50vw;
+}
+
+.widthHalfFlex {
+  width: 50%;
+}
+
+.widthFourZeroFlex {
+  width: 40%;
+}
+
+.widthThird {
+  width: 33vw;
+}
+
+.widthThirdFlex {
+  width: 33%;
+}
+
+.widthThirdMidFlex {
+  width: 34%;
+}
+
+.widthQuarter {
+  width: 25vw;
+}
+
+.widthQuarterFlex {
+  width: 25%;
+}
+
+.widthFifthFlex {
+  width: 20%;
+}
+
+.widthFifteenFlex {
+  width: 15%;
+}
+
+.widthSixthFlex {
+  width: 12.5%;
+}
+
+.widthTenFlex {
+  width: 10%;
+}
+
+.widthTen {
+  width: 10vw;
+}
+
+.widthTenvh {
+  width: 10vh;
+}
+
+.widthFive {
+  width: 5vw;
+}
+
+.widthFivevh {
+  width: 5vh;
+}
+
+.widthTwoFivevh {
+  width: 2.5vh;
+}
+
+.widthTwoFive {
+  width: 2.5vw;
+}
+
+.widthOneFivevh {
+  width: 1.5vh;
+}
+
+.heightFull {
+  height: 100vh;
+}
+
+.heightFullFlex {
+  height: 100%;
+}
+
+.heightNineFlex {
+  height: 90%;
+}
+
+.heightEightFiveFlex {
+  height: 85%;
+}
+
+.heightEightZeroFlex {
+  height: 80%;
+}
+
+.heightThreeQuarter {
+  height: 75vh;
+}
+
+.heightThreeQuarterFlex {
+  height: 75%;
+}
+
+.heightSevenZeroFlex {
+  height: 70%;
+}
+
+.heightTwoThirdFlex {
+  height: 67%;
+}
+
+.heightSixFive {
+  height: 65vh;
+}
+
+.heightSix {
+  height: 60vh;
+}
+
+.heightSixZero {
+  height: 60%;
+}
+
+.heightFiftyFive {
+  height: 55vh;
+}
+
+.heightHalf {
+  height: 50vh;
+}
+
+.heightHalfFlex {
+  height: 50%;
+}
+
+.heightFourZero {
+  height: 40vh;
+}
+
+.heightFourZeroFlex {
+  height: 40%;
+}
+
+.heightThird {
+  height: 33vh;
+}
+
+.heightThirdFlex {
+  height: 33%;
+}
+
+.heightQuarter {
+  height: 25vh;
+}
+
+.heightQuarterFlex {
+  height: 25%;
+}
+
+.heightFifthFlex {
+  height: 20%;
+}
+
+.heightFifth {
+  height: 20vh;
+}
+
+.heightEightteen {
+  height: 18vh;
+}
+
+.heightFifteen {
+  height: 15vh;
+}
+
+.heightThirteen {
+  height: 13vh;
+}
+
+
+.heightTwelveFive {
+  height: 12.5vh;
+}
+
+.heightTwelve {
+  height: 12vh;
+}
+
+.heightTen {
+  height: 10vh;
+}
+
+.heightTenFlex {
+  height: 10%;
+}
+
+.heightSevenFive {
+  height: 7.5vh;
+}
+
+.heightSeven {
+  height: 7vh;
+}
+
+.heightFive {
+  height: 5vh;
+}
+
+.heightFiveFlex {
+  height: 5%;
+}
+
+.heightTwoFive {
+  height: 2.5vh;
+}
+
+.heightOneFive {
+  height: 1.5vh;
+}
+
+.floatLeft {
+  float: left;
+}
+
+.floatRight {
+  float: right;
+}
+
+.spacedBorderSmall {
+  width: calc(100% - .5vh;                                                                                                  vh);
+  height: calc(100% - .5vh;                                                                                                 vh);
+  border: .25vh;
+}
+
+.spacedBorder {
+  width: calc(100% - 2vh);
+  height: calc(100% - 2vh);
+  border: 1vh;
+}
+
+.spacedBorderBottomLeft {
+  width: calc(100% - 1vh);
+  height: calc(100% - 1vh);
+}
+
+.spacedBorderLeft {
+  width: calc(100% - 1vh);
+  height: calc(100% - 0vh);
+  border-left: 1vh;
+}
+
+.spacedBorderBottom {
+  width: calc(100% - 0vh);
+  height: calc(100% - 1vh);
+  border-bottom: 1vh;
+}
+
+.spacedHuge {
+  width: calc(100% - 25vw);
+  height: calc(100% - 25vh);
+  margin: 12.5vh 12.5vw;
+}
+
+.spacedLarge {
+  width: calc(100% - 12.5vh);
+  height: calc(100% - 12.5vh);
+  margin: 6.25vh 6.25vh;
+}
+
+.spacedMid {
+  width: calc(100% - 6.25vh);
+  height: calc(100% - 6.25vh);
+  margin: 3.125vh 3.125vh;
+}
+
+.spacedMidBorderColorWhite {
+  width: calc(100% - 6.25vh);
+  height: calc(100% - 6.25vh);
+  border: 3.125vh solid #fff;
+}
+
+.spacedSmall {
+  width: calc(100% - 3.125vh);
+  height: calc(100% - 3.125vh);
+  margin: 1.5625vh 1.5625vh;
+}
+
+.spacedTiny {
+  width: calc(100% - 1.5625vh);
+  height: calc(100% - 1.5625vh);
+  margin: 0.78125vh 0.78125vh;
+}
+
+// On Wrapper
+.overflowy {
+  overflow-y: scroll !important;
+}
+
+.overflowx {
+  overflow-x: scroll !important;
+  overflow-y: hidden;
+}
+
+.overflowhidden {
+  overflow: hidden !important;
+}

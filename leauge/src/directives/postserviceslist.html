@@ -1,0 +1,23 @@
+<!-- layer -->
+                  <div class="
+                     zindexOne positionRelative widthFullFlex floatLeft">
+                     <b class="
+                        font-family-snippet
+                        floatLeft
+                        text-align-left
+                        widthFullFlex positionRelative border-radius1
+                        fontSizeTwo fontColorSix fontColorFourOnHover lineHeightFour easing">
+                        <span class="backgroundColorOffWhite">SERVICES PROVIDED</span> </b><br>
+                     <b ng:repeat="servicesprovided in post.services | limitTo:4:0" class="
+                        floatLeft
+                        text-align-left
+                        widthFullFlex positionRelative
+                        fontSizeTwo 
+                        fontColorFive
+                        fontColorFourOnHover lineHeightThree
+                        easing">
+                        <span class="backgroundColorWhite">
+                        {{servicesprovided.name}}
+                        </span>
+                        <br></b>
+                  </div>

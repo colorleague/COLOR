@@ -1,0 +1,424 @@
+<span ng:if="postpreview == true" class="positionFixed positionCenter backgroundColorWhite widthFull heightFull zindexTen">
+
+   <!-- fixed background -->
+   <span class="
+      positionFixed
+      positionCenter
+      heightFullFlex
+      widthFullFlex
+      overflowhidden floatLeft" style="background-image: url('/thumbs/{{post.photo}}');
+      background-size: cover;">
+
+      <span class="
+      positionFixed
+      positionCenter
+      spacedMid
+      overflowhidden floatLeft" style="background-image: url('./gif/{{post.previewgif}}');
+      background-size: cover;">
+
+     </span>
+      
+      <!-- washout background -->
+      <span class="positionAbsolute positionCenter opacity075
+         backgroundGridColorOne widthFullFlex heightFullFlex">
+      </span>
+
+      <span class="positionAbsolute positionCenter opacity05
+         ColorThreeToClearGradient widthFullFlex heightFullFlex">
+      </span>
+      <!-- washout background -->
+
+   </span>
+
+
+<span class="positionAbsolute positionCenter heightFullFlex widthFullFlex zindexTen overflowy">
+   
+   <postoverallvideo></postoverallvideo>
+
+   <span class="positionRelative heightFullFlex widthFullFlex floatLeft">
+   </span>
+
+   <!-- feature videos stat list components -->
+   <ul class="positionRelative widthTwoThirdFlex heightFullFlex floatRight">
+
+      <span class="positionRelative spacedMidBorderColorWhite floatLeft">
+
+         <!-- washout background -->
+         <span class="positionAbsolute positionCenter opacity075
+            backgroundGridColorWhite widthFullFlex heightFullFlex">
+         </span>
+
+         <span class="positionAbsolute positionCenter opacity05
+            ColorFourToClearGradient widthFullFlex heightFullFlex">
+         </span>
+
+         <span class="floatLeft animated enterUpObject delay025 positionAbsolute positionTopRight widthFullFlex heightTen">
+
+            <span class="floatLeft animated enterUpObject delay025 positionRelative floatRight widthTenvh heightTen">
+
+               <span ng:click="$parent.postpreview = false" class="animated enterUpObject delay025 zindexFive positionAbsolute positionCenter widthTenvh heightTen">
+                  <img ng:click="$parent.postpreview = false" src="./svg/four/close.svg" class="
+                     positionAbsolute positionCenter marginauto widthHalfFlex heightHalfFlex">
+               </span>
+
+            </span>
+
+            <span class="floatLeft animated enterUpObject delay025 positionRelative floatRight widthTenvh heightTen">
+
+               <span class="floatLeft animated enterUpObject delay025 positionAbsolute positionTopRight widthTenvh heightTen">
+                  <img src="./svg/pageend.svg" class="positionAbsolute positionTopRight widthThreeQuarterFlex">
+               </span>
+
+               <span ng:click="$parent.postpreview = false" class="animated enterUpObject delay025 zindexFive positionAbsolute positionCenter widthTenvh heightTen">
+                  <img ng:click="$parent.postpreview = false" src="./svg/four/close.svg" class="
+                     positionAbsolute positionCenter marginauto widthHalfFlex heightHalfFlex">
+               </span>
+
+            </span>
+
+         </span>
+
+         <span class="
+         spacedMid overflowy
+         positionRelative floatLeft easing ">
+
+            <!-- feature videos stat list components -->
+            <postvideo></postvideo>
+
+         </span>
+
+      </span>
+   </ul>
+
+   <!-- background -->
+   <ul class="
+   showOnHoverSwitch
+   positionRelative
+   widthThirdFlex heightFullFlex
+   backgroundGridColorOffWhite floatRight">
+
+      <span class="
+      showOnHoverSwitch
+      positionRelative
+      spacedMid
+      floatLeft">
+
+         <li class="
+         positionRelative text-align-left widthFullFlex backgroundColorFour 
+         box-shadowSixStraight floatLeft fontSizeTwoFive fontColorWhite fontColorThreeOnHover lineHeightTen easing"> 
+            <span class="backgroundColorThree marginauto widthFullFlex">
+               <img src="./svg/arrow-left.svg" class="marginTwoFive widthTwoFive heightSevenFive floatLeft">{{post.title}}<img src="./svg/close.svg" class="marginTwoFive widthTwoFive heightSevenFive floatRight">
+            </span>
+
+            <!-- layer -->
+            <span class="
+               floatLeft
+               text-align-left
+               widthFullFlex positionRelative backgroundColorThree
+               fontSizeTwoFive fontColorSix fontColorFourOnHover lineHeightFive easing">
+
+               <span ng-repeat="member in team | filter: member.firstname = post.author | limitTo:1:0" class="positionRelative floatRight spacedSmall">
+
+                  <span class="positionRelative floatLeft
+                     widthTenvh heightTen marginTwoFive backgroundColorOne border-radius1">
+                     <span ng-repeat="pics in member.photos | limitTo:1:0" class="widthFullFlex heightFullFlex positionRelative marginauto floatLeft" style="background-image: url('/person/{{pics.link}}.png');
+                        background-size: cover;">
+                     </span>
+                  </span>
+                  
+                  <b class="bordered-bottomOneSmall">By {{post.authorfull}}</b> <br>
+
+                  <span class="backgroundColorOne fontSizeTwoFive lineHeightSevenFive widthFullFlex floatLeft">
+
+                  <span class="marginTwoFiveLeft floatLeft">Subscribe</span>
+
+                  <span class="backgroundColorTwo fontSizeTwoFive lineHeightTwoFive marginTwoFive paddingTwoFive floatRight">{{member.subscribers}}</span>
+                  </span>
+
+                  <hr>
+
+                  <span class="positionRelative text-align-center floatRight widthFullFlex">
+
+                     <b class="positionRelative floatRight fontSizeFour lineHeightFive">
+
+                        <span class="positionRelative widthFivevh heightFive floatLeft">
+                           <img src="./svg/close.svg" class="positionAbsolute positionCenter widthHalfFlex heightHalfFlex">
+                        </span>
+
+                        <span class="floatRight fontColorSeven">
+                        {{post.meta.views}}
+                        </span>
+
+                     </b>
+
+                     <b class="positionRelative floatRight fontSizeFour lineHeightFive">
+
+                        <span class="positionRelative widthFivevh heightFive floatLeft">
+                           <img src="./svg/close.svg" class="positionAbsolute positionCenter widthHalfFlex heightHalfFlex">
+                        </span>
+
+                        <span class="floatRight fontColorSeven">
+                        {{post.meta.hates}}
+                        </span>
+
+                     </b>
+
+                     <b class="positionRelative floatRight fontSizeFour lineHeightFive">
+
+                        <span class="positionRelative widthFivevh heightFive floatLeft">
+                           <img src="./svg/close.svg" class="positionAbsolute positionCenter widthHalfFlex heightHalfFlex">
+                        </span>
+
+                        <span class="floatRight fontColorSeven">
+                        {{post.meta.likes}}
+                        </span>
+
+                     </b>
+
+                  </span>
+
+               </span>
+
+               <hr class="horline marginauto positionRelative floatLeft backgroundColorOffWhite">
+
+         </li>
+
+         
+
+         <span ng:show="videoinfo" class="
+            showOnHoverSwitch
+            positionRelative
+            widthFullFlex
+            box-shadowSixStraight floatLeft">
+
+            <span class="positionRelative floatRight spacedSmall">
+               <p class="text-align-left floatLeft">Published on <b>{{post.date}}</b> </p>
+               <hr>
+               <p class="text-align-left floatLeft">{{post.videodescription}}</p>
+               <hr>
+               <p class="text-align-left floatLeft">category: <b>{{post.category}}</b></p>
+            </span>
+
+         </span>
+         <hr>
+         <span ng:click="videoinfo = !videoinfo" class="text-align-center zindexTen positionRelative heightFive widthFullFlex floatRight easing">
+            <span ng:show="videoinfo" class="textOnHoverSwitch heightFive positionRelative border-radius1 backgroundColorWhite backgroundColorTwoOnHoverfontSizeTwo fontColorOne fontColorFiveOnHover lineHeightFive easing">
+            Show Less
+            </span>
+
+            <span ng:show="!videoinfo" class="textOnHoverSwitch heightFive positionRelative border-radius1 backgroundColorWhite backgroundColorTwoOnHoverfontSizeTwo fontColorOne fontColorFiveOnHover lineHeightFive easing">
+            Show More
+            </span>
+
+
+            <span class="zindexOne positionAbsolute positionLeft widthTwoFive heightTwoFive marginSevenFiveRight">
+
+            <img ng:show="videoinfo" src="./svg/close.svg" class="positionCenter positionAbsolute widthHalfFlex heightHalfFlex">
+
+            <img ng:show="!videoinfo" src="./svg/arrow-down.svg" class="positionCenter positionAbsolute widthHalfFlex heightHalfFlex">
+
+            </span>
+
+         </span>
+
+      </span>
+
+   </ul>
+
+   <span class="widthFullFlex heightFullFlex floatLeft">
+      <span class="positionRelative spacedMidBorderColorWhite floatLeft easing zindexOne">
+         <span class="positionRelative spacedMid floatLeft easing zindexOne overflowy">
+            <span class="widthStatic centerdiv marginauto">
+
+               <!-- comment area -->
+               <span class="widthFullFlex floatLeft">
+
+
+                  <span class="positionRelative widthFullFlex floatLeft easing">
+                     <span class="spacedSmall floatLeft">
+
+                           <span class="backgroundColorOneFour positionRelative floatLeft
+                              widthTenFlex heightTen marginTwoFive border-radius1" ng-repeat="member in team | filter: member.firstname = post.author | limitTo:1:0">
+                              <span ng-repeat="pics in member.photos | limitTo:1:0" class="widthFullFlex heightFullFlex positionRelative marginauto floatLeft" style="background-image: url('/person/{{pics.link}}.png');
+                                 background-size: cover;">
+                              </span>
+                           </span>
+
+                           <input placeholder="Add a public comment" class="widthThreeQuarterFlex paddingTwoFive fontSizeTwo placeholderSeven lineHeightTen fontColorThree no-border border-radius1 floatLeft backgroundColorWhite" type="text" name="">
+
+                           <span class="animated enterUpObject delay025 zindexOne positionAbsolute positionRight widthFivevh heightFive"><img src="./svg/arrow-left.svg" class="positionAbsolute positionCenter widthHalfFlex heightHalfFlex"></span>
+
+                     </span>
+                  </span>
+
+
+                  <span class="widthFullFlex floatLeft">
+                     <span class="positionRelative zindexOne text-align-left fontColorFive fontSizeTwoFive lineHeightFive  floatLeft">
+
+                        <b class="fontColorSeven marginTwoFiveLeft">
+                        {{post.postcomments.length}}</b> <span class="fontSizeOneFive">Responses</span>
+                        
+                     </span>
+
+                     <span class="positionRelative zindexOne text-align-left bordered-bottomOne fontSizeOneFive lineHeightFive floatRight marginTwoFiveLeft">
+                        <b class="fontColorSeven">
+                        liked</b>
+                     </span>
+
+                     <span class="positionRelative zindexOne text-align-left bordered-bottomOne fontColorFive fontSizeOneFive lineHeightFive floatRight marginTwoFiveLeft">
+                        <b class="fontColorSeven">
+                        newest</b>
+                     </span>
+
+                     <span class="positionRelative zindexOne text-align-left bordered-bottomOne fontColorFive fontSizeOneFive lineHeightFive floatRight">
+                        <b class="fontColorSeven">
+                        oldest</b>
+                     </span>
+                  </span>
+
+                  <span ng:repeat="comment in post.postcomments" class="widthFullFlex floatLeft">
+
+                     <span class="positionRelative floatLeft widthTenFlex heightTen backgroundColorOne border-radius1" ng-repeat="member in team | filter: member.firstname = comment.author | limitTo:1:0">
+                        <span ng-repeat="pics in member.photos | limitTo:1:0" class="widthFullFlex heightFullFlex positionRelative marginauto floatLeft" style="background-image: url('/person/{{pics.link}}.png');
+                           background-size: cover;">
+                        </span>
+                     </span>
+
+                     <span class="positionRelative floatLeft widthNineFlex heightFullFlex">
+
+                        <span class="positionRelative floatLeft widthFullFlex heightFullFlex">
+
+                           <div class="
+                              zindexOne positionRelative widthFullFlex heightFullFlex floatLeft">
+
+                              <span class="positionRelative floatLeft spacedSmall text-align-left bordered-bottomOne zindexOne">
+
+                                 <span class="lineHeightThree fontSizeTwoFive widthFullFlex floatLeft">
+
+                                 <span ng-repeat="member in team | filter: member.firstname = comment.author | limitTo:1:0" class="positionRelative zindexOne ">
+                                    <p>
+                                    <b class="positionRelative floatLeft fontColorWhite text-shadow025Eight marginZeroTwoFiveRight">
+                                       {{member.name}}
+                                    </b> 
+
+                                    <span class="positionRelative floatLeft fontColorOffWhite text-shadow025Eight">{{member.lastname}} 
+                                    </span>
+                                    </p>
+
+                                    <span class="lineHeightThree fontSizeOneFive fontColorSeven border-radius1 opacity075 floatLeft marginTwoFiveRightLeft">
+                                       {{comment.date}}
+                                    </span>
+
+                                    
+
+                                 </span>
+
+
+                                 <span ng:click="brandtab1 = !brandtab1" class="marginTwoFiveRight floatRight animated enterUpObject delay025 zindexOne positionAbsolute positionTopRight floatLeft widthTwoFivevh heightTwoFive"><img ng:show="!brandtab1" src="./svg/arrow-down.svg" class="widthFullFlex heightFullFlex ">
+                                    <img ng:show="brandtab1" src="./svg/one/close.svg" class="widthFullFlex heightFullFlex"></span>
+                              
+
+                                 
+
+                                 </span>
+
+                                 <hr>
+                                 <span class="font-family-snippet fontSizeOneFive lineHeightTwo fontColorFive positionRelative zindexOne">
+                                 {{comment.content}}</span><br>
+
+                                 <b class="positionRelative floatRight">
+
+                                    <span class="positionRelative widthFivevh heightTwoFive floatLeft">
+                                       <img src="./svg/arrow-down.svg" class="positionAbsolute positionCenter widthHalfFlex heightHalfFlex">
+                                    </span>
+
+                                    <span class="floatRight fontColorSeven">
+                                    {{comment.likes}}
+
+                                    </span>
+
+                                 </b>
+
+                              </span>
+
+                           </div>
+                        </span>
+
+                        <span class="positionRelative floatLeft widthFullFlex heightFullFlex">
+
+                           <span ng:show="brandtab1" class="positionRelative floatLeft spacedSmall text-align-left  zindexOne">
+
+                               <span ng:repeat="replycomment in comment.postcommentsreplies" class="widthFullFlex floatLeft">
+
+                                 <span class="positionRelative floatLeft widthTenFlex heightTen backgroundColorOne border-radius1" ng-repeat="member in team | filter: member.firstname = replycomment.author | limitTo:1:0">
+                                    <span ng-repeat="pics in member.photos | limitTo:1:0" class="widthFullFlex heightFullFlex positionRelative marginauto floatLeft" style="background-image: url('/person/{{pics.link}}.png');
+                                       background-size: cover;">
+                                    </span>
+                                 </span>
+
+                                 <span class="positionRelative floatLeft widthNineFlex heightFullFlex">
+
+                                    <span class="positionRelative floatLeft widthFullFlex heightFullFlex">
+
+                                       <div class="
+                                          zindexOne positionRelative widthFullFlex heightFullFlex floatLeft">
+
+                                          <span class="positionRelative floatLeft spacedSmall text-align-left bordered-bottomOne zindexOne">
+
+                                             <span class="fontColorFive lineHeightThree fontSizeTwoFive widthFullFlex floatLeft">
+
+                                             <span class="positionRelative zindexOne">
+
+                                                <b>
+                                                {{replycomment.author}}
+                                                </b>
+
+                                             </span>
+
+
+                                             <span ng:click="brandtab1 = !brandtab1" class="marginTwoFiveRight floatRight animated enterUpObject delay025 zindexOne positionRelative floatLeft widthTwoFivevh heightTwoFive"><img ng:show="!brandtab1" src="./svg/arrow-down.svg" class="widthFullFlex heightFullFlex ">
+                                                <img ng:show="brandtab1" src="./svg/one/close.svg" class="widthFullFlex heightFullFlex"></span>
+                                          
+
+                                             
+
+                                             </span>
+                                             <hr> 
+                                             <span class="fontSizeTwo fontColorThree positionRelative zindexOne">
+                                             {{replycomment.content}}</span><br>
+                                             <hr>
+                                          </span>
+
+                                       </div>
+                                    </span>
+                                 </span>
+
+                              </span>
+
+                           </span>
+                        </span>
+
+                     </span>
+
+                     <hr>
+                  </span>
+               </span>
+
+            </span>
+
+         </span>
+      </span>
+   </span>
+         
+      <!-- contractors -->
+      <span class="positionRelative widthFullFlex heightFullFlex backgroundColorWhite floatLeft">
+         <postscopeofwork></postscopeofwork>
+      </span>
+
+      <postmorefromauthor></postmorefromauthor>
+
+      <noborderedfooter></noborderedfooter>
+      <whitefooter></whitefooter>
+
+   </span>
+</span>

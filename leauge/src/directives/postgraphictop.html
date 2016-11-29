@@ -1,0 +1,133 @@
+<span class="
+   showOnHoverSwitch
+   positionRelative
+   widthFullFlex
+   backgroundGridColorWhite floatLeft">
+
+   <span class="positionRelative floatLeft spacedMid zindexTen">
+
+      <span class="
+      positionAbsolute positionBottomRight
+      heightFullFlex
+      widthThirdFlex
+      overflowhidden opacity01 floatLeft">
+
+         <span ng:repeat="slides in post.slidephotos | limitTo:1:slider.count" class="
+         positionAbsolute positionCenter
+         spacedMid border-radius1
+         overflowhidden floatLeft"
+         style="background-image: url('/thumbs/{{slides.slide}}');
+         background-size: cover;">
+         </span>
+
+      </span>
+
+      <span class="widthFifthFlex floatLeft">
+         
+         <!-- layer -->
+         <span class="
+            floatLeft
+            widthFullFlex positionRelative border-radius1
+            easing">
+
+            <span class="
+            backgroundGridColorOffWhite
+            showOnHoverSwitch
+            positionRelative
+            heightQuarter
+            widthFullFlex
+            floatLeft">
+            </span>
+
+            <span class="positionRelative floatLeft
+               widthFullFlex heightTen backgroundColorOne border-radius1" ng-repeat="member in team | filter: member.firstname = post.author | limitTo:1:0">
+               <span ng-repeat="pics in member.photos | limitTo:1:0" class="widthFullFlex heightQuarter positionAbsolute positionBottom marginauto floatLeft" style="background-image: url('/person/{{pics.link}}.png');
+                  background-size: cover;">
+               </span>
+            </span>
+
+         </span>
+
+      <hr>
+
+      <ul class="positionRelative widthFullFlex floatLeft zindexOne easing">
+         <span class="widthStatic positionRelative marginauto">
+            <li ng:click="$parent.postpreview = false" class="centerdiv text-align-center positionRelative heightFullFlex paddingTwoFive easing">
+               <span class="textOnHoverSwitch paddingTwoFive positionRelative buttonbox-shadowDark border-radius1 backgroundColorFour backgroundColorTwoOnHover centerdiv fontSizeTwoFive fontColorWhite fontColorOneOnHover lineHeightFive easing">
+               On Github
+               <span class="bordered-Six box-shadowSix beforeArrow margintwofive beforetext backgroundColorOne fontSizeTwoFive fontColorFive fontColorFiveOnHover lineHeightFive easing">before</span>
+               <span class="marginTwoFiveLeft floatRight animated enterUpObject delay025 zindexOne positionRelative widthTwoFivevh heightTwoFive"><img src="./svg/arrow-down.svg" class="widthFullFlex heightFullFlex"></span>
+               </span>
+            </li>
+         </span>
+      </ul>
+
+      <span class="backgroundGridColorWhite fontSizeTwoFive widthFullFlex text-align-left positionRelative marginauto floatLeft lineHeightFive">
+
+            <span class="font-family-snippet">By</span> 
+            <b class="bordered-bottomOneSmall fontColorFour">{{post.authorfull}}</b><br>
+
+            <h3 class="widthFullFlex floatLeft positionRelative lineHeightFive fontSizeTwo text-align-left fontColorFive zindexOne">
+               <span class=""> <b>likes : </b></span>
+
+               <span class="floatRight"><b class="fontColorFour">{{post.meta.likes}}</b></span>
+
+            </h3>
+
+            <h3 class="widthFullFlex floatLeft positionRelative lineHeightFive fontSizeTwo text-align-left fontColorFive zindexOne">
+               <span class=""> <b>hates : </b></span>
+
+               <span class="floatRight"><b class="fontColorThree">{{post.meta.hates}}</b> </span>
+
+            </h3>
+
+            
+
+      </span><br>
+
+      </span>
+
+      <span class="widthEightZeroFlex floatLeft">
+         <div class="spacedMid border-radius1 overflowhidden positionRelative">
+            <!-- layer -->
+            <span class="
+               floatLeft
+               text-align-left
+               widthFullFlex paddingTwoFive positionRelative border-radius1
+               fontSizeTwoFive fontColorSix fontColorFourOnHover lineHeightFive easing">
+               
+               <span class="backgroundColorOffWhite  floatLeft positionRelative marginauto easing">
+                  <h3 class="opacity095 font-family-snippet widthFullFlex floatLeft positionRelative lineHeightFive fontSizeFour text-align-center fontColorOne text-shadow025Dark zindexOne"> <span class="bordered-bottomFour fontColorThree">Uploaded </span>{{post.date}}</h3>
+               </span>
+
+               <hr>
+
+               <span class="widthFullFlex positionRelative marginauto floatLeft">
+                  <b class="lineHeightFifteen fontSizeFifteen text-align-left fontColorThree text-shadow05OffWhite zindexOne"><span class="">{{post.title}}</span></b>
+               </span>
+
+               <hr>
+
+
+               <p class="paddingTwoFive marginOne border-radius1 backgroundColorOneTwo fontColorEight floatLeft"> {{post.category}}</p> 
+
+               <p class="paddingTwoFive marginOne border-radius1 backgroundColorOneThree fontColorEight floatLeft"> {{post.subcategory}}</p> 
+
+               <p ng-repeat="posttag in post.tags" class="paddingTwoFive marginOne border-radius1 backgroundColorOneFour fontColorEight floatLeft"> {{posttag.name}}</p> 
+
+               <span class="floatRight text-align-center positionRelative heightFullFlex paddingTwoFive easing">
+                  <span class="textOnHoverSwitch paddingTwoFive positionRelative border-radius1 backgroundColorThree backgroundColorTwoOnHover centerdiv fontSizeTwoFive fontColorWhite fontColorOneOnHover lineHeightFive easing">
+                  View on Dribbble
+                  <span class="marginTwoFiveLeft floatRight animated enterUpObject delay025 zindexOne positionRelative widthTwoFivevh heightTwoFive"><img src="./svg/arrow-down.svg" class="widthFullFlex heightFullFlex"></span>
+                  </span>
+               </span>
+
+
+
+            </span>
+         </div>
+      </span>
+
+   </span>
+
+</span>

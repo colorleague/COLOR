@@ -1,0 +1,139 @@
+
+
+      <!-- opening -->
+      <span
+         class="positionRelative widthQuarterFlex floatLeft easing overflowy zindexOne">
+         <span class="
+            backgroundColorWhite widthStatic marginauto">
+            <span
+               class="positionRelative widthFullFlex heightTenFlex floatLeft easing zindexOne">
+            </span>
+            <span class="backgroundColorWhite widthFullFlex floatLeft">
+               <div class="spacedMid floatLeft border-radius1 positionRelative">
+                  <!-- layer -->
+                  <div ng:click="tabexpectation = true; tabchallenge = false; tabapproach = false; tabsolution = false;" class="
+                     zindexOne positionRelative widthFullFlex floatLeft">
+
+                     <h3 class="widthFullFlex floatLeft positionRelative lineHeightThree fontSizeTwo text-align-left fontColorFive zindexOne">
+                        <span class=""> <b>Summary : </b></span>
+                     </h3>
+
+                     <b class="
+                        floatLeft
+                        text-align-left
+                        widthFullFlex positionRelative border-radius1
+                        fontSizeThree fontColorSix fontColorFourOnHover lineHeightFive easing">EXPECTATION
+
+                        <span  class="marginTwoFiveLeft floatLeft animated enterUpObject delay025 zindexOne positionAbsolute positionBeforeIcon widthTwoFivevh heightFive">
+                           <img ng:show="tabexpectation" src="./svg/arrow-left.svg" class="positionAbsolute positionCenter marginauto widthHalfFlex hpositionAbsolute positionCenter marginauto eightHalfFlex">
+                           <img ng:show="!tabexpectation" src="./svg/one/close.svg" class="positionAbsolute positionCenter marginauto widthHalfFlex hpositionAbsolute positionCenter marginauto eightHalfFlex">
+
+                        </span>
+                        </b>
+                        
+                        <br>
+                  </div>
+
+                  <!-- layer -->
+                  <div ng:click="tabchallenge = true; tabexpectation = false; tabapproach = false; tabsolution = false;" class="
+                     zindexOne positionRelative widthFullFlex floatLeft">
+                     <b class="
+                        opacity075
+                        floatLeft
+                        text-align-left
+                        widthFullFlex positionRelative border-radius1
+                        fontSizeThree fontColorSix fontColorFourOnHover lineHeightFive easing">CHALLENGE
+
+                        <span  class="marginTwoFiveLeft floatLeft animated enterUpObject delay025 zindexOne positionAbsolute positionBeforeIcon widthTwoFivevh heightFive">
+                           <img ng:show="tabchallenge" src="./svg/arrow-left.svg" class="positionAbsolute positionCenter marginauto widthHalfFlex hpositionAbsolute positionCenter marginauto eightHalfFlex">
+                           <img ng:show="!tabchallenge" src="./svg/one/close.svg" class="positionAbsolute positionCenter marginauto widthHalfFlex hpositionAbsolute positionCenter marginauto eightHalfFlex">
+
+                        </span>
+                        </b><br>
+                  </div>
+
+                  <!-- layer -->
+                  <div ng:click="tabchallenge = false; tabexpectation = false; tabapproach = true; tabsolution = false;" class="
+                     zindexOne positionRelative widthFullFlex floatLeft">
+                     <b class="
+                     opacity05
+                        floatLeft
+                        text-align-left
+                        widthFullFlex positionRelative border-radius1
+                        fontSizeThree fontColorSix fontColorFourOnHover lineHeightFive easing">APPROACH<span  class="marginTwoFiveLeft floatLeft animated enterUpObject delay025 zindexOne positionAbsolute positionBeforeIcon widthTwoFivevh heightFive">
+                           <img ng:show="tabapproach" src="./svg/arrow-left.svg" class="positionAbsolute positionCenter marginauto widthHalfFlex hpositionAbsolute positionCenter marginauto eightHalfFlex">
+                           <img ng:show="!tabapproach" src="./svg/one/close.svg" class="positionAbsolute positionCenter marginauto widthHalfFlex hpositionAbsolute positionCenter marginauto eightHalfFlex">
+
+                        </span>
+                        </b><br>
+                  </div>
+
+                  <!-- layer -->
+                  <div ng:click="tabchallenge = false; tabexpectation = false; tabapproach = false; tabsolution = true;" class="
+                     zindexOne positionRelative widthFullFlex floatLeft">
+                     <b class="
+                     opacity025
+                        floatLeft
+                        text-align-left
+                        widthFullFlex positionRelative border-radius1
+                        fontSizeThree fontColorSix fontColorFourOnHover lineHeightFive easing">SOLUTION<span  class="marginTwoFiveLeft floatLeft animated enterUpObject delay025 zindexOne positionAbsolute positionBeforeIcon widthTwoFivevh heightFive">
+                           <img ng:show="tabsolution" src="./svg/arrow-left.svg" class="positionAbsolute positionCenter marginauto widthHalfFlex hpositionAbsolute positionCenter marginauto eightHalfFlex">
+                           <img ng:show="!tabsolution" src="./svg/one/close.svg" class="positionAbsolute positionCenter marginauto widthHalfFlex hpositionAbsolute positionCenter marginauto eightHalfFlex">
+
+                        </span>
+                        </b><br>
+                  </div>
+
+               </div>
+               </div>
+            </span>
+         </span>
+      </span>
+      <span ng:init="tabexpectation = true;"
+         class="positionRelative widthThreeQuarterFlex floatLeft easing overflowy zindexTen">
+         <span class="
+            widthStatic marginauto">
+            <span
+               class="positionRelative widthFullFlex heightTenFlex floatLeft easing zindexOne">
+            </span>
+            <span class="widthFullFlex floatLeft">
+               <div class="spacedMid border-radius1 overflowhidden positionRelative backgroundGridColorOffWhite">
+               <div class="spacedSmall border-radius1 overflowhidden positionRelative">
+                  <!-- layer -->
+                  <span ng:show="tabexpectation" class="
+                     floatLeft
+                     font-family-snippet
+                     text-align-left
+                     widthFullFlex positionRelative border-radius1
+                     fontSizeTwoFive fontColorSix fontColorFourOnHover lineHeightFive easing">
+                  {{post.expectation}}</span>
+
+                  <span ng:show="tabchallenge" class="
+                     floatLeft
+                     font-family-snippet
+                     text-align-left
+                     widthFullFlex positionRelative border-radius1
+                     fontSizeTwoFive fontColorSix fontColorFourOnHover lineHeightFive easing">
+                  {{post.challenge}}</span>
+
+                  <span ng:show="tabapproach" class="
+                     floatLeft
+                     font-family-snippet
+                     text-align-left
+                     widthFullFlex positionRelative border-radius1
+                     fontSizeTwoFive fontColorSix fontColorFourOnHover lineHeightFive easing">
+                  {{post.approach}}</span>
+
+                  <span ng:show="tabsolution" class="
+                     floatLeft
+                     font-family-snippet
+                     text-align-left
+                     widthFullFlex positionRelative border-radius1
+                     fontSizeTwoFive fontColorSix fontColorFourOnHover lineHeightFive easing">
+                  {{post.solution}}</span>
+                  </div>
+               </div>
+               </div>
+            </span>
+         </span>
+</span>

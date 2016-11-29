@@ -1,0 +1,310 @@
+<ul ng:class="{
+   'listholdergrid' : listholdergrid,
+   'listholderlist' : listholderlist,
+   'listholderfull' : listholderfull,
+   'listholdernumber' : listholdernumber,
+   'listholdercard' : listholdercard,
+   'listholderproduct' : listholderproduct
+   }" id="listholder" class="positionRelative widthStatic heightFull marginauto">
+
+   <span class="positionRelative widthStatic heightFull marginauto">
+
+   <!-- post type decided by postination.count -->
+   <li ng:if="!postpreview" id="listitem" class="positionRelative floatLeft" ng-repeat="post in data | filter:filters | limitTo:projectination.count">
+      
+      <!-- index -->
+      <span class="positionRelative 
+         border-radius floatLeft" id="index">
+
+         <span class="positionAbsolute positionCenter
+            spacedSmall floatLeft easing">
+            {{$index}}
+            </span>
+
+      </span>
+
+      <span ng:click="postpreview = !postpreview; postinationToggle(post.type)" id="thumbnail" class="positionRelative 
+         border-radius floatLeft">
+
+         <span class="positionAbsolute positionCenter
+            spacedSmall floatLeft easing" style="background-image: url('/thumbs/{{post.photo}}');
+             background-size: 100% 100%;">
+
+
+            <span id="info" class="positionRelative border-radius floatLeft">
+
+               <!-- text meta -->
+               <span id="title" class="fontSizeTwoFive lineHeightFive text-align-left" ng-click="preview = !preview">{{post.title}}</span>
+
+               <span id="commentsstamp" class="">
+
+                  <span class="animated enterUpObject delay025 zindexOne positionRelative floatLeft
+                  widthTwoFive heightFive"
+                  ng:mouseenter="
+                  startAnimationOverPreview = true;"
+                  ng:mouseleave="
+                  startAnimationOverPreview = false;"
+                  ng:click="
+                  startAnimationOver = !startAnimationOver;"><img src="./svg/plus.svg" class="heightTwoFive widthTwoFivevh"></span>
+
+                  {{post.comments.length}}
+               </span>
+
+               <!-- text meta -->
+               <span id="author" class="widthFullFlex fontSizeTwoFive lineHeightFive floatLeft text-align-left">
+
+                  <span id="authorpic" class="" ng-repeat="member in team | filter: member.firstname = post.author | limitTo:1:0">
+                     <span ng-repeat="pics in member.photos | limitTo:1:0" class="widthFullFlex heightFullFlex positionRelative marginauto floatLeft" style="background-image: url('/person/{{pics.link}}.png');
+                        background-size: cover;">
+                     </span>
+                  </span>
+
+                  <span id="authorblurb" class="lineHeightFive">  <span id="authorname">by <b>{{post.author}}</b></span> <span id="authorcategory"> <p>in</p> <b>{{post.category}}</b></span> <span id="authordate">on <b > {{post.date}}</b></span>
+                  </span>
+               </span>
+               <!-- text meta -->
+               <p id="subtitle" class="fontSizeTwoFive lineHeightFive text-align-left" ng-click="preview = !preview">{{post.subtitle}}</p>
+               <!-- text meta -->
+               <p id="tagline" class="fontSizeTwoFive lineHeightFive text-align-left" ng-click="preview = !preview">{{post.tagline}}</p>
+               <!-- text meta -->
+               <p id="category" class="fontSizeTwoFive lineHeightFive text-align-left" ng-click="preview = !preview">{{post.category}}</p>
+               <!-- text meta -->
+               <p id="subcategory" class="fontSizeTwoFive lineHeightFive text-align-left" ng-click="preview = !preview">{{post.subcategory}}</p>
+               <!-- text meta -->
+               <p id="tags" ng:repeat="taggers in post.tags" class="fontSizeTwoFive lineHeightFive text-align-left" ng-click="preview = !preview">{{taggers.name}}</p>
+               <!-- text meta -->
+               <p id="date" class="fontSizeTwoFive lineHeightFive text-align-left" ng-click="preview = !preview">{{post.date}}</p>
+               <!-- text meta -->
+               <!-- photo meta -->
+               <span id="meta" class="fontSizeTwoFive lineHeightFive floatRight" ng-click="preview = !preview">
+
+
+
+               <span id="likes" class="">
+                  
+                  <span class="animated enterUpObject delay025 zindexOne positionRelative floatLeft
+                  widthTwoFive heightFive"
+                  ng:mouseenter="
+                  startAnimationOverPreview = true;"
+                  ng:mouseleave="
+                  startAnimationOverPreview = false;"
+                  ng:click="
+                  startAnimationOver = !startAnimationOver;"><img src="./svg/arrow-up.svg" class="heightTwoFive widthTwoFivevh"></span>
+
+                  {{post.meta.likes}}
+               </span>
+               
+               <!-- photo meta -->
+               <span class="fontSizeTwoFive lineHeightFive floatRight" ng-click="preview = !preview">
+
+               <span id="hates" class="">
+
+                  <span class="animated enterUpObject delay025 zindexOne positionRelative floatLeft
+                  widthTwoFive heightFive"
+                  ng:mouseenter="
+                  startAnimationOverPreview = true;"
+                  ng:mouseleave="
+                  startAnimationOverPreview = false;"
+                  ng:click="
+                  startAnimationOver = !startAnimationOver;"><img src="./svg/arrow-down.svg" class="heightTwoFive widthTwoFivevh"></span>
+
+
+                  {{post.meta.hates}}
+               </span>
+               </span>
+               <!-- photo meta -->
+               <span class="fontSizeTwoFive lineHeightFive floatRight" ng-click="preview = !preview">
+               
+
+               <span id="comments" class="">
+
+                  <span class="animated enterUpObject delay025 zindexOne positionRelative floatLeft
+                  widthTwoFive heightFive"
+                  ng:mouseenter="
+                  startAnimationOverPreview = true;"
+                  ng:mouseleave="
+                  startAnimationOverPreview = false;"
+                  ng:click="
+                  startAnimationOver = !startAnimationOver;"><img src="./svg/plus.svg" class="heightTwoFive widthTwoFivevh"></span>
+
+                  {{post.comments.length}}
+               </span>
+
+               </span>
+
+               </span>
+               <!-- text meta -->
+               <span id="price" class="">${{post.price}}
+               </span>
+
+            </span>
+
+         </span>
+      </span>
+
+      <span id="info" class="positionRelative border-radius floatLeft">
+
+         <!-- text meta -->
+         <span id="title" class="fontSizeTwoFive lineHeightFive text-align-left" ng-click="preview = !preview">{{post.title}}</span>
+
+         <span id="commentsstamp" class="">
+
+            <span class="animated enterUpObject delay025 zindexOne positionRelative floatLeft
+            widthTwoFive heightFive"
+            ng:mouseenter="
+            startAnimationOverPreview = true;"
+            ng:mouseleave="
+            startAnimationOverPreview = false;"
+            ng:click="
+            startAnimationOver = !startAnimationOver;"><img src="./svg/plus.svg" class="heightTwoFive widthTwoFivevh"></span>
+
+            {{post.comments.length}}
+         </span>
+
+         <!-- text meta -->
+         <span id="author" class="widthFullFlex fontSizeTwoFive lineHeightFive floatLeft text-align-left">
+            
+            <span id="authorpic" class="" ng-repeat="member in team | filter: member.firstname = post.author | limitTo:1:0">
+                     <span ng-repeat="pics in member.photos | limitTo:1:0" class="widthFullFlex heightFullFlex positionRelative marginauto floatLeft" style="background-image: url('/person/{{pics.link}}.png');
+                        background-size: cover;">
+                     </span>
+                  </span>
+
+
+            <span id="authorblurb" class="lineHeightFive">  <span id="authorname">by <b>{{post.author}}</b></span> <span id="authorcategory"> <p>in</p> <b>{{post.category}}</b></span> <span id="authordate">on <b > {{post.date}}</b></span>
+                  </span>
+         </span>
+         <!-- text meta -->
+         <p id="subtitle" class="fontSizeTwoFive lineHeightFive text-align-left" ng-click="preview = !preview">{{post.subtitle}}</p>
+         <!-- text meta -->
+         <p id="tagline" class="fontSizeTwoFive lineHeightFive text-align-left" ng-click="preview = !preview">{{post.tagline}}</p>
+         <!-- text meta -->
+         <p id="category" class="fontSizeTwoFive lineHeightFive text-align-left" ng-click="preview = !preview">{{post.category}}</p>
+         <!-- text meta -->
+         <p id="subcategory" class="fontSizeTwoFive lineHeightFive text-align-left" ng-click="preview = !preview">{{post.subcategory}}</p>
+         <!-- text meta -->
+         <p id="tags" ng:repeat="taggers in post.tags" class="fontSizeTwoFive lineHeightFive text-align-left" ng-click="preview = !preview">{{taggers.name}}</p>
+         <!-- text meta -->
+         <p id="date" class="fontSizeTwoFive lineHeightFive text-align-left" ng-click="preview = !preview">{{post.date}}</p>
+         <!-- text meta -->
+         <!-- photo meta -->
+         <span id="meta" class="fontSizeTwoFive lineHeightFive floatRight" ng-click="preview = !preview">
+
+
+
+         <span id="likes" class="">
+            
+            <span class="animated enterUpObject delay025 zindexOne positionRelative floatLeft
+            widthTwoFive heightFive"
+            ng:mouseenter="
+            startAnimationOverPreview = true;"
+            ng:mouseleave="
+            startAnimationOverPreview = false;"
+            ng:click="
+            startAnimationOver = !startAnimationOver;"><img src="./svg/arrow-up.svg" class="heightTwoFive widthTwoFivevh"></span>
+
+            {{post.meta.likes}}
+         </span>
+         
+         <!-- photo meta -->
+         <span class="fontSizeTwoFive lineHeightFive floatRight" ng-click="preview = !preview">
+
+         <span id="hates" class="">
+
+            <span class="animated enterUpObject delay025 zindexOne positionRelative floatLeft
+            widthTwoFive heightFive"
+            ng:mouseenter="
+            startAnimationOverPreview = true;"
+            ng:mouseleave="
+            startAnimationOverPreview = false;"
+            ng:click="
+            startAnimationOver = !startAnimationOver;"><img src="./svg/arrow-down.svg" class="heightTwoFive widthTwoFivevh"></span>
+
+
+            {{post.meta.hates}}
+         </span>
+         </span>
+         <!-- photo meta -->
+         <span class="fontSizeTwoFive lineHeightFive floatRight" ng-click="preview = !preview">
+         
+
+         <span id="comments" class="">
+
+            <span class="animated enterUpObject delay025 zindexOne positionRelative floatLeft
+            widthTwoFive heightFive"
+            ng:mouseenter="
+            startAnimationOverPreview = true;"
+            ng:mouseleave="
+            startAnimationOverPreview = false;"
+            ng:click="
+            startAnimationOver = !startAnimationOver;"><img src="./svg/plus.svg" class="heightTwoFive widthTwoFivevh"></span>
+
+            {{post.comments.length}}
+         </span>
+
+         </span>
+
+         </span>
+         <!-- text meta -->
+         <span id="price" class="">${{post.price}}
+         </span>
+
+      </span>
+
+      <!-- svg -->
+      <span id="svg" class="
+         showOnHoverSwitch
+         positionRelative
+         heightQuarterFlex
+         widthQuarterFlex
+         overflowhidden floatLeft">
+
+         <span class="positionAbsolute positionCenter
+            spacedSmall overflowhidden floatLeft easing">
+            <imacone class="
+               positionAbsolute positionCenter heightHalfFlex easing">
+            </imacone>
+         </span>
+
+      </span>
+
+      <!-- post type decided by postination.count -->
+      <ul>
+         <li ng-repeat="posterinfo in posttype | limitTo:1:postination.count">
+            <ng-include src="posterinfo.directive"></ng-include>
+         </li>
+      </ul>
+   </li>
+
+   <li ng:click="projectinationToggle()" ng:if="!postpreview" id="listitem" class="positionRelative floatLeft">
+
+   <span class="showOnHoverSwitch text-align-center positionRelative widthFullFlex heightFullFlex backgroundColorOneOnHover floatLeft easing">
+         <!-- showOnHover // background -->
+         <span class="showOnHover positionAbsolute positionCenter 
+            backgroundColorWhite widthFullFlex heightFullFlex">
+            <span class="spacedSmall floatLeft box-shadowThreeStraight backgroundteam border-radius1 positionRelative">
+               <!-- washout background -->
+               <span class="positionAbsolute positionCenter opacity075
+                  backgroundColorWhite widthFullFlex heightFullFlex">
+               </span>
+            </span>
+         </span>
+         <!-- hideOnHover // background -->
+         <span class="hideOnHover positionAbsolute positionCenter 
+            backgroundColorWhite widthFullFlex heightFullFlex">
+            <span class="spacedSmall floatLeft box-shadowThreeStraight backgroundteamcolor border-radius1 positionRelative">
+               <!-- washout background -->
+               <span class="positionAbsolute positionCenter opacity075
+                  backgroundColorWhite widthFullFlex heightFullFlex">
+               </span>
+            </span>
+         </span>
+         <span class="positionAbsolute positionCenter
+         widthThreeQuarterFlex heightTen fontSizeFive fontColorWhite fontColorTwoOnHover lineHeightSevenFive bordered-bottomWhite bordered-bottomThreeOnHover easing">more</span>
+      </span>
+
+   </li>
+
+   </span>
+
+</ul>

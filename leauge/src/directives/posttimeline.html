@@ -1,0 +1,776 @@
+
+   <!-- 50/50 words components -->
+   <span class="positionRelative widthFullFlex heightFullFlex floatLeft easing">
+      <!-- title & words components -->
+      <ul class="positionRelative widthFullFlex heightFullFlex backgroundColorWhite floatLeft easing">
+         <!-- left -->
+         <span ng:hide="startAnimationLeft == true || !startAnimation" class="animated enterUpObject delay025 zindexOne positionAbsolute positionLeft widthFive heightFive"
+            ng:mouseenter="
+            startAnimationLeftPreview = true;"
+            ng:mouseleave="
+            startAnimationLeftPreview = false;"
+            ng:click="
+            startAnimationLeft = !startAnimationLeft;"><img src="./svg/arrow-left.svg" class="widthFullFlex heightFullFlex"></span>
+         <span ng:show="startAnimationLeft == true" class="zindexOne positionAbsolute positionLeft widthFive heightFive"
+            ng:click="
+            startAnimationLeft = false"><img src="./svg/close.svg" class="widthFullFlex heightFullFlex"></span>
+         <!-- right -->
+         <span ng:hide="startAnimationRight == true || !startAnimation" class="animated enterUpObject delay025 zindexOne positionAbsolute positionRight widthFive heightFive"
+            ng:mouseenter="
+            startAnimationRightPreview = true;"
+            ng:mouseleave="
+            startAnimationRightPreview = false;"
+            ng:click="
+            startAnimationRight = !startAnimationRight;"><img src="./svg/arrow-right.svg" class="widthFullFlex heightFullFlex"></span>
+         <!-- close -->
+         <span ng:click="popstart();" class="animated enterUpObject delay025 zindexFive positionAbsolute positionTopRight widthFivevh heightFive"
+            ng:click="
+            popclear = false;"><img src="./svg/close.svg" ng:click="
+            popclear = false;" class="zindexOne positionAbsolute positionCenter floatLeft widthHalfFlex heightHalfFlex"></span>
+         <span class="positionAbsolute positionCenter
+            spacedSmall overflowhidden floatLeft easing">
+            <!-- Timeline bg -->
+            <span class="positionAbsolute positionCenter
+               widthFullFlex heightFullFlex floatLeft easing">
+               <span class="positionRelative
+                  widthFullFlex heightFullFlex floatLeft easing">
+                  <span class="
+                     spacedLarge overflowhidden
+                     positionAbsolute positionCenter floatLeft easing">
+                     <hr class="horline marginauto positionAbsolute positionCenter animated growhor ColorOneLeftClearGradient">
+                  </span>
+               </span>
+            </span>
+            <!-- Timeline -->
+            <li class="text-align-center positionRelative widthQuarterFlex heightFullFlex floatLeft easing">
+               <span class="showOnHover positionAbsolute positionCenter widthFullFlex heightFullFlex">
+               </span>
+               <!-- Timeline bg -->
+               <span class="positionAbsolute positionCenter
+                  widthFullFlex heightFullFlex floatLeft easing">
+                  <span class="positionRelative
+                     widthFullFlex heightFullFlex floatLeft easing">
+                     <!-- Timeline Index -->
+                     <h4 class="font-family-snippet positionAbsolute
+                        positionCenter
+                        zindexOne
+                        border-radius-circle
+                        heightFive
+                        widthFivevh
+                        backgroundColorOne lineHeightFive fontSizeTwoFive 
+                        text-align-center fontColorWhite">
+                        <span class="centerdiv positionRelative text-align-center">
+                        <b>1</b>
+                        </span>
+                     </h4>
+                  </span>
+               </span>
+               <span class="
+                  widthFullFlex heightHalfFlex
+                  positionRelative floatLeft easing">
+                  <span class="
+                     widthFullFlex heightFullFlex
+                     positionRelative floatLeft easing">
+                     <span class="
+                        spacedSmall overflowhidden
+                        positionRelative floatLeft easing">
+
+                        <span class="
+                           widthFullFlex heightFullFlex
+                           centerdiv
+                           border-radius1
+                           overflowhidden
+                           positionAbsolute
+                           positionCenter floatLeft easing">
+                           
+                           <span class="positionAbsolute positionCenter
+                              backgroundColorWhite widthFullFlex heightFullFlex">
+                              <!-- time // background -->
+                              <span class="positionAbsolute positionCenter opacity075 widthFullFlex heightFullFlex">
+                              </span>
+                              <markyellow class="
+                                 positionAbsolute positionCenter widthHalfFlex heightQuarterFlex">
+                              </markyellow>
+                              <span class="overflowhidden
+                                 positionAbsolute positionCenter widthFullFlex heightFullFlex">
+                              </span>
+                              <ul class="positionRelative widthFullFlex heightFullFlex floatLeft zindexOne easing">
+                                 <!-- text starts-->
+                              </ul>
+                           </span>
+                           <h4 class="font-family-snippet positionAbsolute
+                              positionRight widthHalfFlex heightHalfFlex lineHeightTen fontSizeSevenFive text-align-center fontColorFive">
+                           </h4>
+                        </span>
+                     </span>
+                  </span>
+               </span>
+               <span ng-repeat="times in post.timeline | limitTo:1:0" class="
+                  widthFullFlex heightHalfFlex
+                  positionRelative floatLeft easing">
+
+                  <timelineinfo></timelineinfo>
+
+                  <span ng:click="timelineinfo = true" class="showOnHoverSwitch
+                     widthFullFlex heightFullFlex
+                     positionRelative floatLeft easing">
+
+                     <span class="
+                        spacedMid overflowhidden
+                        positionRelative floatLeft easing">
+                        <span class="
+                           widthFullFlex heightFullFlex
+                           centerdiv
+                           border-radius1
+                           overflowhidden
+                           positionAbsolute
+                           positionCenter floatLeft easing">
+                           <!-- showOnHover // background -->
+                           <span class="showOnHover positionAbsolute positionCenter widthFullFlex heightFullFlex">
+
+                              <!-- washout background -->
+                              <span class="positionAbsolute positionCenter
+                              widthFullFlex heightFullFlex">
+                              </span>
+
+                              <span
+                                 class="positionRelative widthFullFlex heightQuarterFlex floatLeft easing zindexOne">
+                              </span>
+
+                              <span ng:click="timelineinfo = !timelineinfo"
+                                 class="positionRelative widthFullFlex heightThreeQuarterFlex floatLeft easing zindexOne">
+
+                                 <h3 class="font-family-snippet widthFullFlex floatLeft positionRelative lineHeightThree fontSizeTwo text-align-left fontColorOne text-shadow05OffWhite zindexOne">{{times.excerpt}}</h3>
+                              </span>
+
+                              <imaclinedone class="
+                                 opacity025
+                                 positionAbsolute positionCenter widthHalfFlex heightHalfFlex">
+                              </imaclinedone>
+
+                           </span>
+
+                           <!-- hideOnHover // background -->
+                           <span class="hideOnHover positionAbsolute positionCenter
+                              backgroundColorWhite widthFullFlex heightFullFlex">
+                              <ul class="positionRelative widthFullFlex heightFullFlex floatLeft zindexOne easing">
+                                 
+                                 <hr>
+
+                                 <h3 class="widthFullFlex floatLeft positionRelative lineHeightFour fontSizeTwo text-align-center fontColorOne text-shadow05OffWhite backgroundColorOffWhite zindexOne">{{times.name}}</h3>
+
+                                 <hr>
+                                 
+                                 <b class=" widthFullFlex floatLeft positionRelative lineHeightFive fontSizeThree text-align-center fontColorFour text-shadow05OffWhite zindexOne">{{times.title}}</b>
+
+                                 <hr>
+
+                                 <h3 class="font-family-snippet widthFullFlex floatLeft positionRelative lineHeightFour fontSizeTwoFive text-align-center fontColorOne text-shadow05OffWhite zindexOne">{{times.status}}</h3>
+                              
+
+                                 <span class=" opacity025
+                                 widthFullFlex positionRelative lineHeightFive fontSizeTwo text-align-center fontColorThree text-shadow05OffWhite easing">
+                                    <span class="animated enterUpObject">{{times.time}}</span>
+                                    </span>
+                                 </span>
+
+                              <imaclinedone class="
+                                 opacity025
+                                 positionAbsolute positionCenter widthHalfFlex heightHalfFlex">
+                              </imaclinedone>
+
+                              </ul>
+
+
+                           </span>
+                        </span>
+                     </span>
+                  </span>
+               </span>
+            </li>
+            <!-- Timeline -->
+            <li class="text-align-center positionRelative widthQuarterFlex heightFullFlex floatLeft easing">
+               <span class="showOnHover positionAbsolute positionCenter widthFullFlex heightFullFlex">
+               </span>
+               <!-- Timeline bg -->
+               <span class="positionAbsolute positionCenter
+                  widthFullFlex heightFullFlex floatLeft easing">
+                  <span class="positionRelative
+                     widthFullFlex heightFullFlex floatLeft easing">
+                     <!-- Timeline Index -->
+                     <h4 class="font-family-snippet positionAbsolute
+                        positionCenter
+                        zindexOne
+                        border-radius-circle
+                        heightFive
+                        widthFivevh
+                        backgroundColorOne lineHeightFive fontSizeTwoFive 
+                        text-align-center fontColorWhite">
+                        <span class="centerdiv positionRelative text-align-center">
+                        <b>2</b>
+                        </span>
+                     </h4>
+                  </span>
+               </span>
+               <span ng-repeat="times in post.timeline | limitTo:1:1" class="
+                  widthFullFlex heightHalfFlex
+                  positionRelative floatLeft easing">
+
+
+                  <timelineinfo></timelineinfo>
+
+                  <span ng:click="timelineinfo = true" class="showOnHoverSwitch
+                     widthFullFlex heightFullFlex
+                     positionRelative floatLeft easing">
+
+                     <span class="
+                        spacedMid overflowhidden
+                        positionRelative floatLeft easing">
+                        <span class="
+                           widthFullFlex heightFullFlex
+                           centerdiv
+                           border-radius1
+                           overflowhidden
+                           positionAbsolute
+                           positionCenter floatLeft easing">
+                           <!-- showOnHover // background -->
+                           <span class="showOnHover positionAbsolute positionCenter widthFullFlex heightFullFlex">
+
+                              <!-- washout background -->
+                              <span class="positionAbsolute positionCenter
+                              widthFullFlex heightFullFlex">
+                              </span>
+
+                              <span
+                                 class="positionRelative widthFullFlex heightQuarterFlex floatLeft easing zindexOne">
+                              </span>
+
+                              <span
+                                 class="positionRelative widthFullFlex heightThreeQuarterFlex floatLeft easing zindexOne">
+
+                                 <h3 class="font-family-snippet widthFullFlex floatLeft positionRelative lineHeightThree fontSizeTwo text-align-left fontColorOne text-shadow05OffWhite zindexOne">{{times.excerpt}}</h3>
+                              </span>
+
+                              <imaclinedone class="
+                                 opacity025
+                                 positionAbsolute positionCenter widthHalfFlex heightHalfFlex">
+                              </imaclinedone>
+
+                           </span>
+
+                           <!-- hideOnHover // background -->
+                           <span class="hideOnHover positionAbsolute positionCenter
+                              backgroundColorWhite widthFullFlex heightFullFlex">
+                              <ul class="positionRelative widthFullFlex heightFullFlex floatLeft zindexOne easing">
+                                 
+                                 <hr>
+
+                                 <h3 class="widthFullFlex floatLeft positionRelative lineHeightFour fontSizeTwo text-align-center fontColorOne text-shadow05OffWhite backgroundColorOffWhite zindexOne">{{times.name}}</h3>
+
+                                 <hr>
+                                 
+                                 <b class=" widthFullFlex floatLeft positionRelative lineHeightFive fontSizeThree text-align-center fontColorFour text-shadow05OffWhite zindexOne">{{times.title}}</b>
+
+                                 <hr>
+
+                                 <h3 class="font-family-snippet widthFullFlex floatLeft positionRelative lineHeightFour fontSizeTwoFive text-align-center fontColorOne text-shadow05OffWhite zindexOne">{{times.status}}</h3>
+                              
+                                 
+                                 <span class=" opacity025
+                                 widthFullFlex positionRelative lineHeightFive fontSizeTwo text-align-center fontColorThree text-shadow05OffWhite easing">
+                                    <span class="animated enterUpObject">{{times.time}}</span>
+                                    </span>
+                                 </span>
+
+                              <imaclinedone class="
+                                 opacity025
+                                 positionAbsolute positionCenter widthHalfFlex heightHalfFlex">
+                              </imaclinedone>
+
+                              </ul>
+
+
+                           </span>
+                        </span>
+                     </span>
+                  </span>
+               </span>
+               <span class="showOnHoverSwitch
+                  widthFullFlex heightHalfFlex
+                  positionRelative floatLeft easing">
+                  <span class="
+                     centerdiv
+                     widthFullFlex heightThreeQuarterFlex
+                     positionAbsolute positionCenter floatLeft easing">
+
+                     <span class="
+                        spacedMid overflowhidden
+                        positionRelative floatLeft easing">
+
+                        <span class="
+                           widthFullFlex
+                           heightFullFlex
+                           border-radius1
+                           overflowhidden
+                           positionAbsolute
+                           positionCenter floatLeft easing">
+                           <!-- showOnHover // background -->
+                           <span class="showOnHover positionAbsolute positionCenter
+                              backgroundColorWhite widthFullFlex heightFullFlex">
+
+                              <!-- washout background -->
+                              <span class="positionAbsolute positionCenter opacity05
+                              backgroundteamcolor
+                              widthFullFlex heightFullFlex">
+                              </span>
+
+                              <ul class="positionRelative widthFullFlex heightFullFlex floatLeft zindexOne easing">
+
+
+                                 <span class="positionAbsolute positionCenter opacity025
+                                 backgroundteam
+                                 widthFullFlex heightFullFlex">
+                                 </span>
+
+                                 <b class="
+                                 positionAbsolute
+                                 positionCenter
+                                 widthFullFlex
+                                 heightFive
+                                 lineHeightThree fontSizeTwoFive
+                                 text-align-center
+                                 fontColorFive
+                                 text-shadow025OffWhite
+                                 zindexOne">Recruited<br>Team</b>
+
+                              </ul>
+
+                           </span>
+                           <!-- hideOnHover // background -->
+                           <span class="hideOnHover positionAbsolute positionCenter widthFullFlex heightFullFlex">
+
+                              <!-- washout background -->
+                              <span class="positionAbsolute positionCenter opacity05
+                              backgroundteam
+                              widthFullFlex heightFullFlex">
+                              </span>
+
+                              <ul class="positionRelative widthFullFlex heightFullFlex floatLeft zindexOne easing">
+
+
+                                 <span class="positionAbsolute positionCenter opacity025
+                                 backgroundteam
+                                 widthFullFlex heightFullFlex">
+                                 </span>
+
+                                 <b class="
+                                 positionAbsolute
+                                 positionCenter
+                                 widthFullFlex
+                                 heightFive
+                                 lineHeightThree fontSizeTwoFive
+                                 text-align-center
+                                 fontColorWhite
+                                 zindexOne">Recruited<br>Team</b>
+
+                              </ul>
+
+                           </span>
+
+                        </span>
+                     </span>
+                  </span>
+               </span>
+            </li>
+            <!-- Timeline -->
+            <li class="text-align-center positionRelative widthQuarterFlex heightFullFlex floatLeft easing">
+               <span class="showOnHover positionAbsolute positionCenter widthFullFlex heightFullFlex">
+               </span>
+               <!-- Timeline bg -->
+               <span class="positionAbsolute positionCenter
+                  widthFullFlex heightFullFlex floatLeft easing">
+                  <span class="positionRelative
+                     widthFullFlex heightFullFlex floatLeft easing">
+                     <!-- Timeline Index -->
+                     <h4 class="font-family-snippet positionAbsolute
+                        positionCenter
+                        zindexOne
+                        border-radius-circle
+                        heightFive
+                        widthFivevh
+                        backgroundColorOne lineHeightFive fontSizeTwoFive 
+                        text-align-center fontColorWhite">
+                        <span class="centerdiv positionRelative text-align-center">
+                        <b>3</b>
+                        </span>
+                     </h4>
+                  </span>
+               </span>
+               <span class="showOnHoverSwitch
+                  widthFullFlex heightHalfFlex
+                  positionRelative floatLeft easing">
+                  <span class="
+                     centerdiv
+                     widthFullFlex heightThreeQuarterFlex
+                     positionAbsolute positionCenter floatLeft easing">
+
+                     <span class="
+                        spacedMid overflowhidden
+                        positionRelative floatLeft easing">
+
+                        <span class="
+                           widthFullFlex
+                           heightFullFlex
+                           border-radius1
+                           overflowhidden
+                           positionAbsolute
+                           positionCenter floatLeft easing">
+                           <!-- showOnHover // background -->
+                           <span class="showOnHover positionAbsolute positionCenter
+                              backgroundColorWhite widthFullFlex heightFullFlex">
+
+                              <!-- washout background -->
+                              <span class="positionAbsolute positionCenter opacity05
+                              backgroundteamcolor
+                              widthFullFlex heightFullFlex">
+                              </span>
+
+                              <ul class="positionRelative widthFullFlex heightFullFlex floatLeft zindexOne easing">
+
+
+                                 <span class="positionAbsolute positionCenter opacity025
+                                 backgroundteam
+                                 widthFullFlex heightFullFlex">
+                                 </span>
+
+                                 <b class="
+                                 positionAbsolute
+                                 positionCenter
+                                 widthFullFlex
+                                 heightFive
+                                 lineHeightThree fontSizeTwoFive
+                                 text-align-center
+                                 fontColorFive
+                                 text-shadow025OffWhite
+                                 zindexOne">Recruited<br>Team</b>
+
+                              </ul>
+
+                           </span>
+                           <!-- hideOnHover // background -->
+                           <span class="hideOnHover positionAbsolute positionCenter widthFullFlex heightFullFlex">
+
+                              <!-- washout background -->
+                              <span class="positionAbsolute positionCenter opacity05
+                              backgroundteam
+                              widthFullFlex heightFullFlex">
+                              </span>
+
+                              <ul class="positionRelative widthFullFlex heightFullFlex floatLeft zindexOne easing">
+
+
+                                 <span class="positionAbsolute positionCenter opacity025
+                                 backgroundteam
+                                 widthFullFlex heightFullFlex">
+                                 </span>
+
+                                 <b class="
+                                 positionAbsolute
+                                 positionCenter
+                                 widthFullFlex
+                                 heightFive
+                                 lineHeightThree fontSizeTwoFive
+                                 text-align-center
+                                 fontColorWhite
+                                 zindexOne">Recruited<br>Team</b>
+
+                              </ul>
+
+                           </span>
+
+                        </span>
+                     </span>
+                  </span>
+               </span>
+
+               <span ng-repeat="times in post.timeline | limitTo:1:2" class="
+                  widthFullFlex heightHalfFlex
+                  positionRelative floatLeft easing">
+
+                  <timelineinfo></timelineinfo>
+
+                  <span class="showOnHoverSwitch
+                     widthFullFlex heightFullFlex
+                     positionRelative floatLeft easing">
+                        
+                        
+
+                        <span ng:click="timelineinfo = true" class="
+                        spacedMid overflowhidden
+                        positionRelative floatLeft easing">
+                        <span class="
+                           widthFullFlex heightFullFlex
+                           centerdiv
+                           border-radius1
+                           overflowhidden
+                           positionAbsolute
+                           positionCenter floatLeft easing">
+                           <!-- showOnHover // background -->
+                           <span class="showOnHover positionAbsolute positionCenter widthFullFlex heightFullFlex">
+
+                              <!-- washout background -->
+                              <span class="positionAbsolute positionCenter
+                              widthFullFlex heightFullFlex">
+                              </span>
+
+                              <span
+                                 class="positionRelative widthFullFlex heightQuarterFlex floatLeft easing zindexOne">
+                              </span>
+
+                              <span
+                                 class="positionRelative widthFullFlex heightThreeQuarterFlex floatLeft easing zindexOne">
+
+                                 <h3 class="font-family-snippet widthFullFlex floatLeft positionRelative lineHeightThree fontSizeTwo text-align-left fontColorOne text-shadow05OffWhite zindexOne">{{times.excerpt}}</h3>
+                              </span>
+
+                              <imaclinedone class="
+                                 opacity025
+                                 positionAbsolute positionCenter widthHalfFlex heightHalfFlex">
+                              </imaclinedone>
+
+                           </span>
+
+                           <!-- hideOnHover // background -->
+                           <span class="hideOnHover positionAbsolute positionCenter
+                              backgroundColorWhite widthFullFlex heightFullFlex">
+                              <ul class="positionRelative widthFullFlex heightFullFlex floatLeft zindexOne easing">
+                                 
+                                 <hr>
+
+                                 <h3 class="widthFullFlex floatLeft positionRelative lineHeightFour fontSizeTwo text-align-center fontColorOne text-shadow05OffWhite backgroundColorOffWhite zindexOne">{{times.name}}</h3>
+
+                                 <hr>
+                                 
+                                 <b class=" widthFullFlex floatLeft positionRelative lineHeightFive fontSizeThree text-align-center fontColorFour text-shadow05OffWhite zindexOne">{{times.title}}</b>
+
+                                 <hr>
+
+                                 <h3 class="font-family-snippet widthFullFlex floatLeft positionRelative lineHeightFour fontSizeTwoFive text-align-center fontColorOne text-shadow05OffWhite zindexOne">{{times.status}}</h3>
+                              
+                                 
+                                 <span class=" opacity025
+                                 widthFullFlex positionRelative lineHeightFive fontSizeTwo text-align-center fontColorThree text-shadow05OffWhite easing">
+                                    <span class="animated enterUpObject">{{times.time}}</span>
+                                    </span>
+                                 </span>
+
+                              <imaclinedone class="
+                                 opacity025
+                                 positionAbsolute positionCenter widthHalfFlex heightHalfFlex">
+                              </imaclinedone>
+
+                              </ul>
+
+
+                           </span>
+                        </span>
+                     </span>
+                  </span>
+               </span>
+               
+            </li>
+            <!-- Timeline -->
+            <li class="text-align-center positionRelative widthQuarterFlex heightFullFlex floatLeft easing">
+               <span class="showOnHover positionAbsolute positionCenter widthFullFlex heightFullFlex">
+               </span>
+               <!-- Timeline bg -->
+               <span class="positionAbsolute positionCenter
+                  widthFullFlex heightFullFlex floatLeft easing">
+                  <span class="positionRelative
+                     widthFullFlex heightFullFlex floatLeft easing">
+                     <!-- Timeline Index -->
+                     <h4 class="font-family-snippet positionAbsolute
+                        positionCenter
+                        zindexOne
+                        border-radius-circle
+                        heightFive
+                        widthFivevh
+                        backgroundColorOne lineHeightFive fontSizeTwoFive 
+                        text-align-center fontColorWhite">
+                        <span class="centerdiv positionRelative text-align-center">
+                        <b>4</b>
+                        </span>
+                     </h4>
+                  </span>
+               </span>
+               <span ng-repeat="times in post.timeline | limitTo:1:3" class="
+                  widthFullFlex heightHalfFlex
+                  positionRelative floatLeft easing">
+                  <timelineinfo></timelineinfo>
+
+                  <span ng:click="timelineinfo = true" class="showOnHoverSwitch
+                     widthFullFlex heightFullFlex
+                     positionRelative floatLeft easing">
+
+                     <span class="
+                        spacedMid overflowhidden
+                        positionRelative floatLeft easing">
+                        <span class="
+                           widthFullFlex heightFullFlex
+                           centerdiv
+                           border-radius1
+                           overflowhidden
+                           positionAbsolute
+                           positionCenter floatLeft easing">
+                           <!-- showOnHover // background -->
+                           <span class="showOnHover positionAbsolute positionCenter widthFullFlex heightFullFlex">
+
+                              <!-- washout background -->
+                              <span class="positionAbsolute positionCenter
+                              widthFullFlex heightFullFlex">
+                              </span>
+
+                              <span
+                                 class="positionRelative widthFullFlex heightQuarterFlex floatLeft easing zindexOne">
+                              </span>
+
+                              <span
+                                 class="positionRelative widthFullFlex heightThreeQuarterFlex floatLeft easing zindexOne">
+
+                                 <h3 class="font-family-snippet widthFullFlex floatLeft positionRelative lineHeightThree fontSizeTwo text-align-left fontColorOne text-shadow05OffWhite zindexOne">{{times.excerpt}}</h3>
+                              </span>
+
+                              <imaclinedone class="
+                                 opacity025
+                                 positionAbsolute positionCenter widthHalfFlex heightHalfFlex">
+                              </imaclinedone>
+
+                           </span>
+
+                           <!-- hideOnHover // background -->
+                           <span class="hideOnHover positionAbsolute positionCenter
+                              backgroundColorWhite widthFullFlex heightFullFlex">
+                              <ul class="positionRelative widthFullFlex heightFullFlex floatLeft zindexOne easing">
+                                 
+                                 <hr>
+
+                                 <h3 class="widthFullFlex floatLeft positionRelative lineHeightFour fontSizeTwo text-align-center fontColorOne text-shadow05OffWhite backgroundColorOffWhite zindexOne">{{times.name}}</h3>
+
+                                 <hr>
+                                 
+                                 <b class=" widthFullFlex floatLeft positionRelative lineHeightFive fontSizeThree text-align-center fontColorFour text-shadow05OffWhite zindexOne">{{times.title}}</b>
+
+                                 <hr>
+
+                                 <h3 class="font-family-snippet widthFullFlex floatLeft positionRelative lineHeightFour fontSizeTwoFive text-align-center fontColorOne text-shadow05OffWhite zindexOne">{{times.status}}</h3>
+                              
+                                 
+                                 <span class=" opacity025
+                                 widthFullFlex positionRelative lineHeightFive fontSizeTwo text-align-center fontColorThree text-shadow05OffWhite easing">
+                                    <span class="animated enterUpObject">{{times.time}}</span>
+                                    </span>
+                                 </span>
+
+                              <imaclinedone class="
+                                 opacity025
+                                 positionAbsolute positionCenter widthHalfFlex heightHalfFlex">
+                              </imaclinedone>
+
+                              </ul>
+
+
+                           </span>
+                        </span>
+                     </span>
+                  </span>
+               </span>
+               <span class="showOnHoverSwitch
+                  widthFullFlex heightHalfFlex
+                  positionRelative floatLeft easing">
+                  <span class="
+                     centerdiv
+                     widthFullFlex heightThreeQuarterFlex
+                     positionAbsolute positionCenter floatLeft easing">
+
+                     <span class="
+                        spacedMid overflowhidden
+                        positionRelative floatLeft easing">
+
+                        <span class="
+                           widthFullFlex
+                           heightFullFlex
+                           border-radius1
+                           overflowhidden
+                           positionAbsolute
+                           positionCenter floatLeft easing">
+                           <!-- showOnHover // background -->
+                           <span class="showOnHover positionAbsolute positionCenter
+                              backgroundColorWhite widthFullFlex heightFullFlex">
+
+                              <!-- washout background -->
+                              <span class="positionAbsolute positionCenter opacity05
+                              backgroundteamcolor
+                              widthFullFlex heightFullFlex">
+                              </span>
+
+                              <ul class="positionRelative widthFullFlex heightFullFlex floatLeft zindexOne easing">
+
+
+                                 <span class="positionAbsolute positionCenter opacity025
+                                 backgroundteam
+                                 widthFullFlex heightFullFlex">
+                                 </span>
+
+                                 <b class="
+                                 positionAbsolute
+                                 positionCenter
+                                 widthFullFlex
+                                 heightFive
+                                 lineHeightThree fontSizeTwoFive
+                                 text-align-center
+                                 fontColorFive
+                                 text-shadow025OffWhite
+                                 zindexOne">Recruited<br>Team</b>
+
+                              </ul>
+
+                           </span>
+                           <!-- hideOnHover // background -->
+                           <span class="hideOnHover positionAbsolute positionCenter widthFullFlex heightFullFlex">
+
+                              <!-- washout background -->
+                              <span class="positionAbsolute positionCenter opacity05
+                              backgroundteam
+                              widthFullFlex heightFullFlex">
+                              </span>
+
+                              <ul class="positionRelative widthFullFlex heightFullFlex floatLeft zindexOne easing">
+
+
+                                 <span class="positionAbsolute positionCenter opacity025
+                                 backgroundteam
+                                 widthFullFlex heightFullFlex">
+                                 </span>
+
+                                 <b class="
+                                 positionAbsolute
+                                 positionCenter
+                                 widthFullFlex
+                                 heightFive
+                                 lineHeightThree fontSizeTwoFive
+                                 text-align-center
+                                 fontColorWhite
+                                 zindexOne">Recruited<br>Team</b>
+
+                              </ul>
+
+                           </span>
+
+                        </span>
+                     </span>
+                  </span>
+               </span>
+            </li>
+         </span>
+      </ul>
+   </span>

@@ -1,0 +1,134 @@
+<div
+   ng-keydown="keypress($event)"
+   tabindex="0"
+   class="container overflowy easing"
+   ng:init="
+   startAnimationOver = false;
+   startAnimationPopWhite = false;
+   menuOne = false; lightone = false;
+   positionLight1lighton = false; positionLight1lightoff = true; positionLight2lighton = false; positionLight2lightoff = true; positionLight3lighton = false; positionLight3lightoff = true; positionLight4lighton = false; positionLight4lightoff = true; homepage = true"
+   ng:class="{
+   'lightoffice' : startAnimation,
+   'darkoffice' : !startAnimation,
+   }">
+
+   <pophelp></pophelp>
+   <popsearch></popsearch>
+
+   <popin></popin>
+   <popup></popup>
+   <videopopup></videopopup>
+
+   <learnmore></learnmore>
+   <getstarted></getstarted>
+
+   <menutop></menutop>
+   <menubottom></menubottom>
+
+   <menuarrows></menuarrows>
+   
+   <menuthree></menuthree>
+   <menuone></menuone>
+   <menufour></menufour>
+   <!-- clear -->
+   <popcontent></popcontent>
+   <!-- animation layer -->
+   <popanimation></popanimation>
+
+   <!-- scene holder -->
+   <div
+      ng-keydown="keypress($event)"
+      tabindex="0"
+      ng:class="{
+      'active' : startAnimation,
+      'startAnimationPopWhite' : startAnimationPopWhite,
+      'startAnimationOver' : startAnimationOver,
+      'startAnimationUnder' : startAnimationUnder,
+      'startAnimationOverPreview' : startAnimationOverPreview,
+      'startAnimationUnderPreview' : startAnimationUnderPreview,
+      'startAnimationLeft' : startAnimationLeft,
+      'startAnimationRight' : startAnimationRight,
+      'startAnimationLeftPreview' : startAnimationLeftPreview,
+      'startAnimationRightPreview' : startAnimationRightPreview
+      }"
+      class="startAnimationOffice animated widthFull heightFull positionAbsolute easing">
+
+      <!-- floor -->
+      <popupsvgfloor></popupsvgfloor>
+      <svgfloor></svgfloor>
+
+      <span class="startAnimationOfficeAnimation positionAbsolute positionCenter widthFull heightFull easing">
+         
+         <darkofficespieces></darkofficespieces>
+         <lightofficespieces></lightofficespieces>
+
+      </span>
+
+      <!-- left -->
+      <span class="overflowhidden startAnimationOfficeLeft positionAbsolute positionLeftOff widthFull heightFull easing">
+         <sceneofficeleft></sceneofficeleft>
+      </span>
+
+      <!-- right -->
+      <span class="startAnimationOfficeRight positionAbsolute positionRightOff widthFull heightFull easing">
+         <sceneofficeright></sceneofficeright>
+      </span>
+
+   </div>
+   
+   <div
+      ng-keydown="keypress($event)"
+      tabindex="0"
+      ng:class="{
+      'leaveUp' : startAnimation,
+      'enterUp' : !startAnimation}" class="animated widthFull heightFull positionAbsolute positionCenter easing">
+      
+      <sceneofficedark></sceneofficedark>
+   </div>
+
+   <!-- scene holder -->
+   <div
+      ng-keydown="keypress($event)"
+      tabindex="0"
+      ng:class="{
+      'active' : startAnimation,
+      'startAnimationPopWhite' : startAnimationPopWhite,
+      'startAnimationOver' : startAnimationOver,
+      'startAnimationUnder' : startAnimationUnder,
+      'startAnimationOverPreview' : startAnimationOverPreview,
+      'startAnimationUnderPreview' : startAnimationUnderPreview,
+      'startAnimationLeft' : startAnimationLeft,
+      'startAnimationRight' : startAnimationRight,
+      'startAnimationLeftPreview' : startAnimationLeftPreview,
+      'startAnimationRightPreview' : startAnimationRightPreview
+      }"
+      class="pop popup animated widthFull heightFull positionAbsolute positionCenter easing">
+         <sceneoffice></sceneoffice>
+         <sceneover></sceneover>
+
+      <!-- under -->
+      <span class="overflowhidden startAnimationOfficeUnder positionAbsolute positionUnderOff widthFull heightFull easing">
+            <span ng-repeat="page in pages | limitTo:1:pagination.count">
+            
+               <ng-include src="page.directive"></ng-include>
+            </span>
+      </span>
+
+      <!-- over -->
+      <span class="overflowhidden startAnimationOfficeOver positionAbsolute positionOverOff widthFull heightFull easing">
+         
+      </span>
+
+   </div>
+
+
+
+</div>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+<script>
+   var beepOne = $("#beep-one")[0];
+      $("#nav-one a")
+         .mouseenter(function() {
+            beepOne.play();
+         });
+</script>

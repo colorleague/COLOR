@@ -1,0 +1,72 @@
+<span ng:repeat="slides in post.slidephotos | limitTo:1:slider.count" class="
+   positionRelative
+   heightFullFlex
+   widthFullFlex
+   overflowhidden floatLeft backgroundGridColorWhite">
+
+   <span class="spacedMid positionRelative floatLeft" 
+   style="background-image: url('/thumbs/{{slides.slide}}');
+   background-size: cover;">
+
+      <span class="
+      showOnHoverSwitch
+      spacedMid overflowhidden
+      positionRelative centerdiv floatLeft easing">
+
+         <div class="
+            showOnHover
+            zindexOne 
+            positionAbsolute positionBottom text-align-center">
+            <p class="
+               floatLeft
+               positionRelative
+               fontSizeFive
+               lineHeightTen fontColorWhite fontColorFourOnHover easing">
+               <span class="spacedMid backgroundGridColorWhite positionRelative floatLeft">
+                  <span class="spacedSmall backgroundGridColorThree positionRelative floatLeft">
+                     <span class="spacedSmall positionRelative floatLeft">
+                        <span class="bordered-bottomTwo"><span class="font-family-snippet">{{slides.description}}</span> <b>{{slides.date}}</b></span>.
+                     </span>
+                  </span>
+               </span>
+            </p>
+         </div>
+
+         <div class="
+            hideOnHover
+            zindexOne 
+            positionAbsolute positionBottom text-align-center">
+            
+            <p class="
+               floatLeft
+               positionRelative
+               fontSizeFive
+               lineHeightTen fontColorWhite fontColorFourOnHover easing">
+               <span class="spacedMid backgroundGridColorWhite positionRelative floatLeft">
+                  <span class="spacedSmall backgroundGridColorThree positionRelative floatLeft">
+                     <span class="spacedSmall positionRelative floatLeft">
+                        <span class="bordered-bottomTwo"><span class="font-family-snippet">{{slides.title}}</span><b>{{$index}}/{{post.slidephotos.length}}</b></span>.
+                     </span>
+                  </span>
+               </span>
+            </p>
+            
+         </div>
+      </span>
+   </span>
+
+   <span class="floatLeft zindexOne positionAbsolute positionTopRight widthTenvh heightTen backgroundColorWhite"><img src="./svg/four/close.svg" class="positionAbsolute positionTopRight widthFullFlex"></span>
+   <!-- slider count -->
+   <span ng:hide="slider.count == 0" class="zindexOne positionAbsolute positionLeft widthTenvh heightTen backgroundColorThree"
+      ng:click="
+      sliderToggle(-1);">
+   <img src="./svg/white/close.svg" class="positionAbsolute positionCenter marginauto floatLeft widthHalfFlex heightHalfFlex">
+   </span>
+   <!-- slider count -->
+   <span ng:hide="slider.count == post.slidephotos.length - 1" class="zindexOne positionAbsolute positionRight  widthTenvh heightTen backgroundColorThree"
+      ng:click="
+      sliderToggle(1);">
+   <img src="./svg/white/close.svg" class="positionAbsolute positionCenter marginauto floatLeft widthHalfFlex heightHalfFlex">
+   </span>
+</span>
+

@@ -1,0 +1,141 @@
+      <!-- job, partners -->
+   <span
+      class="positionRelative heightHalfFlex widthFullFlex floatLeft easing">
+
+      <span class="backgroundColorWhite positionAbsolute positionTopLeft floatLeft zindexTen box-shadowSixStraight">
+         <span class="positionRelative floatLeft spacedMid text-align-left zindexOne">
+
+            <h3 class="floatLeft widthFullFlex positionRelative lineHeightTen fontSizeTen text-align-left zindexOne">
+               <p>
+                  
+                  <span class="positionRelative floatLeft fontColorWhite lineHeightFive fontSizeFour">
+                     
+                     <span class="positionRelative fontSizeTwoFive lineHeightTwoFive floatLeft">
+
+                     <span ng:click="brandtab1 = !brandtab1" class="marginTwoFiveLeft floatLeft 
+                        positionBeforeIcon
+                        positionAbsolute zindexOne widthTwoFivevh heightTwoFive"><img ng:show="!brandtab1" src="./svg/arrow-down.svg" class="positionCenter positionAbsolute widthHalfFlex heightHalfFlex">
+                        <img ng:show="brandtab1" src="./svg/one/close.svg" class="positionCenter positionAbsolute widthHalfFlex heightHalfFlex"></span>
+
+                        <span class="opacity025">
+                        <span class="font-family-snippet fontColorEight">Latest </span> <b class="bordered-bottomOne fontColorSeven">Projects</b></span>
+
+                     </span>
+
+                  </span>
+                  </p>
+               </h3>
+
+         </span>
+      </span>
+
+      <div class="spacedMid positionRelative border-radius1 overflowhidden">
+         
+            <!-- brand i've worked with -->
+
+               <!-- brands -->
+               <!-- fluid list (no scroll) -->
+               <ul class="backgroundGridColorOne positionRelative widthFullFlex heightFullFlex floatLeft easing">
+                  <span
+                  class="positionAbsolute positionCenter widthFullFlex heightFullFlex floatLeft easing">
+
+                     <span
+                     class="positionRelative widthQuarterFlex heightFullFlex floatLeft easing backgroundColorOne">
+                        <span class="floatLeft zindexOne positionAbsolute positionBetweenRight widthTenvh heightTen zindexFive">
+                           
+                           <span class="floatLeft zindexOne positionAbsolute positionCenter widthFivevh heightFive border-radius1 backgroundColorWhite zindexFive"><img src="./svg/four/close.svg" class="positionAbsolute positionCenter widthQuarterFlex"></span>
+
+                        </span>
+
+                     </span>
+
+                     <span
+                     class="positionRelative widthQuarterFlex heightFullFlex floatLeft easing backgroundColorOneTwo">
+                        <span class="floatLeft zindexOne positionAbsolute positionBetweenRight widthTenvh heightTen zindexFive">
+                           
+                           <span class="floatLeft zindexOne positionAbsolute positionCenter widthFivevh heightFive border-radius1 backgroundColorWhite zindexFive"><img src="./svg/four/close.svg" class="positionAbsolute positionCenter widthQuarterFlex"></span>
+
+                        </span>
+
+
+                     </span>
+                     <span
+                     class="positionRelative widthQuarterFlex heightFullFlex floatLeft easing backgroundColorOneThree">
+                        <span class="floatLeft zindexOne positionAbsolute positionBetweenRight widthTenvh heightTen zindexFive">
+                           
+                           <span class="floatLeft zindexOne positionAbsolute positionCenter widthFivevh heightFive border-radius1 backgroundColorWhite zindexFive"><img src="./svg/four/close.svg" class="positionAbsolute positionCenter widthQuarterFlex"></span>
+
+                        </span>
+
+
+                     </span>
+                     <span
+                     class="positionRelative widthQuarterFlex heightFullFlex floatLeft easing backgroundColorOneFour"></span>
+                  </span>
+                     <span class="
+                        overflowhidden centerdiv heightFullFlex widthFullFlex
+                        positionRelative easing">
+                        <span class="widthFullFlex heightFullFlex
+                           positionRelative floatLeft easing">
+                           <!-- video component 1 -->
+                           <ul ng-repeat="allparts in member.partners | limitTo:4:0" class="positionRelative widthQuarterFlex heightFullFlex floatLeft easing">
+                              <span class="showOnHoverSwitch
+                                 widthFullFlex heightFullFlex
+                                 positionRelative floatLeft easing">
+                                 <span class="
+                                    overflowhidden spacedSmall
+                                    positionRelative floatLeft easing">
+                                    <span class="
+                                       spacedTiny
+                                       border-radius1
+                                       overflowhidden
+                                       positionAbsolute
+                                       positionCenter floatLeft easing">
+                                       <!-- showOnHover // background -->
+                                       <span class="showOnHover positionAbsolute positionCenter
+                                       border-radius1 overflowhidden widthFullFlex heightFullFlex">
+                                          
+                                          <ul class="positionRelative widthFullFlex 
+                                          heightFullFlex floatLeft easing">
+                                             <span class="
+                                                spacedSmall overflowhidden
+                                                positionRelative floatLeft easing">
+                                             <span class="
+                                                centerdiv
+                                                widthFullFlex positionRelative border-radius1 centerdiv opacity075 fontSizeThree fontColorFourOnHover lineHeightFive easing">Episode 1: {{allparts.name}}</span>
+                                             </span>
+                                          </ul>
+                                       </span>
+                                       <!-- hideOnHover // background -->
+                                       <span class="hideOnHover positionAbsolute positionCenter
+                                          border-radius1 overflowhidden widthFullFlex heightFullFlex">
+                                          <ul class="positionRelative widthFullFlex heightFullFlex floatLeft zindexOne easing">
+                                             <h4 class="font-family-snippet positionAbsolute
+                                                positionTopRight heightTenFlex lineHeightTen fontSizeTen text-align-right fontColorFive">
+                                                <span class="divcenter positionRelative opacity025">
+                                                <b>{{$index}}</b>
+                                                </span>
+                                             </h4>
+                                             <span class="animated enterUpObject delay025 zindexOne positionAbsolute positionCenter widthFullFlex heightFullFlex"><img src="./partners/{{allparts.name}}.svg" class="positionCenter positionAbsolute widthThreeQuarterFlex heightThreeQuarterFlex"></span>
+                                             <!-- Filler -->
+                                             <span class="positionRelative widthFullFlex floatLeft widthFullFlex heightTenFlex">
+                                             </span><br>
+                                             <!-- text here-->
+                                             <span class="positionAbsolute positionBottom widthFullFlex floatLeft
+                                                ">
+                                             </span>
+                                          </ul>
+
+                                       </span>
+                                    </span>
+                                 </span>
+                              </span>
+                           </ul>
+                        </span>
+                     </span>
+                  
+               </ul>
+
+      </div>
+
+   </span>

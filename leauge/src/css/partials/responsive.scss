@@ -1,0 +1,115 @@
+$breakpoint-desktop: 1500px;
+$breakpoint-tablet: 1000px;
+$breakpoint-phone: 500px;
+
+@media (max-width: $breakpoint-desktop) {
+
+  .widthFixed {
+    max-width: 1000px;
+    margin: auto;
+  }
+
+}
+
+@media (max-width: $breakpoint-tablet) {
+
+  .widthFixed {
+    max-width: 750px;
+    margin: auto;
+  }
+
+  .fontSizeHuge {
+    font-size: 12.5vh;
+    line-height: 12.5vh;
+    height: 25vh;
+    text-align: center;
+
+    .pretitle {
+      }
+
+      .title {
+        margin: 12.5vh 0 0;
+      }
+  }
+
+
+}
+
+@media (max-width: $breakpoint-phone) {
+
+  .menu {
+      .topMenu {
+          
+          ul {
+              li {
+              }
+          }
+
+          ul.tabs {
+                background: -webkit-linear-gradient(-45deg, #f6d228, #f57e30) !important;
+              
+              li {
+                color: #fff;
+                background: none;
+              }
+          }
+      }
+
+      .underMenu ul li {
+        width: 25%;
+
+          .breadButton {
+            float: left;
+            width: 100%;
+            background-size: 25%;
+          }
+      }
+
+    .backgroundLogo {
+      p {
+        left: 50px;
+        position: absolute;
+      }
+    }
+
+    .backgroundClose, .backgroundSearch {
+      .widthHalf, .widthQuarter {
+        width: 100%;
+      }
+    }
+
+    .clickButton {
+      background-repeat: no-repeat;
+      background-position: 50%;
+      background-size: contain;
+      background-size: 50%;
+      background: url("/svg/icons/menu.svg");
+      min-width: auto;
+      height: 50px;
+      margin: 0;
+      min-width: 50px;
+      float: left;
+      padding: 0;
+    }
+
+  }
+
+  .widthFixed {
+    max-width: 100%;
+    margin: auto;
+  }
+
+  .fluid.widthHalf.heightHalf {
+      width: 100%;
+      height: 25%;
+
+    .paddingAfterMenu.widthFull {
+        display: none;
+      }
+  }
+
+  .hideOnPhone {
+      display: none;
+  }
+
+}

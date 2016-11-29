@@ -1,0 +1,62 @@
+<ul class="widthFullFlex heightFullFlex floatLeft positionRelative zindexFive backgroundColorWhite">
+         <li class="widthFullFlex heightFullFlex floatLeft" ng:repeat="tests in post.testimonal | limitTo:1:testimonalindex.count">
+            <span class="widthQuarterFlex heightFullFlex positionRelative floatLeft">
+
+               <span class="spacedMid backgroundGridColorFour positionRelative border-radius1 floatLeft">
+
+                  <ul class="positionAbsolute positionBottom heightFullFlex overflowhidden floatRight zindexOne easing">
+                     <a href="{{tests.linkedin}}" class="no-border centerdiv text-align-center positionRelative heightFullFlex paddingTwoFive backgroundGridColorOffWhite easing">
+                     <span class="textOnHoverSwitch paddingTwoFive positionRelative buttonbox-shadowDark border-radius1 backgroundColorThree backgroundColorTwoOnHover centerdiv fontSizeTwoFive fontColorWhite fontColorOneOnHover lineHeightFive text-shadow025Dark easing">
+                     linkedin
+                     <span class="marginTwoFiveLeft floatRight animated enterUpObject delay025 zindexOne positionRelative widthTwoFivevh heightTwoFive"><img src="./svg/arrow-down.svg" class="widthFullFlex heightFullFlex"></span>
+                     </span>
+                     </a>
+                  </ul>
+               </span>
+            </span>
+
+            <span class="widthHalfFlex heightFullFlex backgroundGridColorWhite positionRelative floatLeft">
+               <span class="spacedMid backgroundColorTwo positionRelative floatLeft border-radius1">
+                  <span class="positionAbsolute positionCenter centerdiv">
+
+                  <span class="font-family-snippet fontSizeTwoFive fontColorFour lineHeightFive">
+                  {{tests.quote}}
+                  </span>
+
+                  <span class="fontSizeFive lineHeightSevenFive fontColorThree positionRelative floatLeft widthFullFlex">- <b>{{tests.rep}}</b> </span>
+
+                  </span>
+               </span>
+               <!-- testimonalindex -->
+               <span ng:hide="testimonalindex.count == 0" class="zindexOne positionAbsolute positionLeft widthFive heightFive"
+                  ng:click="
+                  testimonalindexToggle(-1);">
+               <img src="./svg/three/close.svg" class="floatLeft widthFullFlex heightFullFlex">
+               </span>
+               <!-- close -->
+               <span ng:hide="testimonalindex.count == post.testimonal.length - 1" class="zindexOne positionAbsolute positionRight widthFive heightFive"
+                  ng:click="
+                  testimonalindexToggle(1);">
+               <img src="./svg/three/close.svg" class="floatLeft widthFullFlex heightFullFlex">
+               </span>
+            </span>
+            
+            <span class="widthQuarterFlex heightFullFlex floatLeft positionRelative">
+
+               <span class="positionAbsolute positionBottom widthFullFlex heightFullFlex floatLeft easing zindexOne">
+
+               <div class="spacedMid positionRelative">
+                  <span class="positionAbsolute positionBottom floatLeft
+                     widthFullFlex heightTen backgroundColorOne border-radius1" ng-repeat="member in team | filter: member.firstname = post.author | limitTo:1:0">
+                     <span ng-repeat="pics in member.photos | limitTo:1:0" class="widthFullFlex heightQuarter positionAbsolute positionBottom marginauto floatLeft" style="background-image: url('./person/{{tests.authorphoto}}');
+                        background-size: cover;">
+                     </span>
+                  </span>
+               </div>
+
+
+               </span>
+            </span>
+            
+         </li>
+      </ul>

@@ -1,0 +1,167 @@
+`<span ng:if="postpreview == true" class="positionFixed positionCenter backgroundColorWhite widthFull heightFull zindexTen">
+<span class="positionAbsolute positionCenter backgroundColorWhite spacedMid zindexTen overflowy">
+   
+   <!-- fixed background -->
+   <span class="
+      positionFixed
+      positionCenter
+      heightFullFlex
+      widthFullFlex
+      overflowhidden floatLeft" style="background-image: url('/thumbs/{{post.photo}}');
+      background-size: cover;">
+
+      <!-- washout background -->
+      <span class="positionAbsolute positionCenter opacity095
+         backgroundGridColorWhite widthFullFlex heightFullFlex">
+      </span>
+
+      <span class="positionAbsolute positionCenter opacity025
+         ColorFourToClearGradient widthFullFlex heightFullFlex">
+      </span>
+
+   </span>
+
+   <postoverall></postoverall>
+
+   <!-- page close -->
+   <postclose></postclose>
+
+   <!-- top -->
+   <posttop></posttop>
+
+   <!-- follow -->
+   <span class="
+      showOnHoverSwitch
+      positionRelative
+      widthFullFlex
+      heightQuarterFlex 
+      backgroundColorOffWhite floatLeft">
+      <postfollow></postfollow>
+   </span>
+
+   <span class="positionRelative widthTwoThirdFlex heightFullFlex floatLeft">
+      <postfeatureslider></postfeatureslider>
+   </span>
+
+   <span class="positionRelative widthThirdFlex floatRight easing overflowy zindexOne">
+      <postbrandinfo></postbrandinfo>
+   </span>
+
+   <span ng:repeat="justcontent in post.content" class="positionRelative widthFullFlex floatLeft easing">
+
+      <b class="
+         floatLeft
+         text-align-left
+         widthThirdFlex positionRelative border-radius1
+         fontSizeFour fontColorSix fontColorFourOnHover lineHeightFive easing">{{justcontent.title}}
+      </b>
+
+      <p class="
+         floatLeft
+         font-family-snippet
+         text-align-left
+         widthTwoThirdFlex positionRelative border-radius1
+         fontSizeTwoFive fontColorSix fontColorFourOnHover lineHeightFive easing">
+         
+         {{justcontent.line}}
+      </p>
+
+   </span>
+
+   <!-- plan -->
+   <span class="positionRelative widthFullFlex heightHalfFlex backgroundColorWhite floatLeft easing zindexOne">
+
+      <span class="zindexFive positionRelative floatLeft spacedMid">
+         <!-- perform -->
+         <span class="positionRelative widthHalfFlex backgroundColorWhite floatLeft easing zindexOne">
+            <!-- plan -->
+            <postproductplan></postproductplan>
+         </span>
+
+         <span class="positionRelative widthHalfFlex heightFullFlex backgroundColorWhite floatLeft easing zindexOne">
+            <!-- plan -->
+            <postproductplanphoto></postproductplanphoto>
+         </span>
+      </span>
+   </span>
+
+   <!-- prep -->
+
+   <span class="positionRelative widthFullFlex heightHalfFlex backgroundColorWhite floatLeft easing zindexOne">
+
+      <span class="zindexFive positionRelative floatLeft spacedMid">
+         <!-- perform -->
+         <span class="positionRelative widthHalfFlex heightFullFlex backgroundColorWhite floatLeft easing zindexOne">
+            <!-- prep -->
+            <postproductprepphoto></postproductprepphoto>
+         </span>
+         <!-- prep -->
+         <span class="positionRelative widthHalfFlex backgroundColorWhite floatLeft easing zindexOne">
+            <!-- prep -->
+            <postproductprep></postproductprep>
+         </span>
+      </span>
+   </span>
+
+   <!-- perform -->
+   <span class="positionRelative widthFullFlex heightHalfFlex backgroundColorWhite floatLeft easing zindexOne">
+      <span class="zindexFive positionRelative floatLeft spacedMid">
+         <!-- perform -->
+         <span class="positionRelative widthHalfFlex backgroundColorWhite floatLeft easing zindexOne">
+            <!-- perform -->
+            <postproductperform></postproductperform>
+         </span>
+
+         <span class="positionRelative widthHalfFlex heightFullFlex backgroundColorWhite floatLeft easing zindexOne">
+            <!-- perform -->
+            <postproductperformphoto></postproductperformphoto>
+         </span>
+      </span>
+   </span>
+   
+   <!-- perfect -->
+   <span class="positionRelative widthFullFlex heightHalfFlex backgroundColorWhite floatLeft easing zindexOne">
+      <span class="zindexFive positionRelative floatLeft spacedMid">
+         
+         <!-- perfect -->
+         <span class="positionRelative widthHalfFlex heightFullFlex backgroundColorWhite floatLeft easing zindexOne">
+            <!-- perfect -->
+            <postproductperfectphoto></postproductperfectphoto>
+         </span>
+
+         <!-- perform -->
+         <span class="positionRelative widthHalfFlex backgroundColorWhite floatLeft easing zindexOne">
+            <!-- perfect -->
+            <postproductperfect></postproductperfect>
+         </span>
+
+      </span>
+
+   </span>
+
+
+      <!-- testimonals -->
+      <span class="positionRelative widthFullFlex heightQuarterFlex backgroundColorWhite floatLeft easing zindexOne">
+         <!-- perfect -->
+         <posttestimonalright></posttestimonalright>
+      </span>
+      <span class="positionRelative widthFullFlex heightQuarterFlex backgroundColorWhite floatLeft easing zindexOne">
+         <!-- perfect -->
+         <posttestimonalleft></posttestimonalleft>
+      </span>
+
+
+      <!-- contractors -->
+      <span class="positionRelative widthFullFlex backgroundColorWhite floatLeft">
+         <postscopeofwork></postscopeofwork>
+      </span>
+
+      <postmorefromauthor></postmorefromauthor>
+
+      <noborderedfooter></noborderedfooter>
+      <whitefooter></whitefooter>
+
+   </span>
+
+   
+</span>

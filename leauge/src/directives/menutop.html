@@ -1,0 +1,164 @@
+   <!-- Top Menu -->
+   <span class="animated enterUpObject delay025 zindexOne positionAbsolute positionTop widthFull heightTen zindexOne">
+      <ul class="floatLeft widthFullFlex heightTen">
+         
+         <!-- GO HOME -->
+         <li ng:class="{
+         'backgroundColorOneFour' : startAnimation,
+         'backgroundColorEight' : !startAnimation}" ng:click="resetstart(); homepage =  true; startAnimationLeft = false; aboutpage = false; paginationToggle(0);" class="
+            positionRelative border-radius1Bottom buttonbox-shadowDark overflowhidden floatLeft zindexTen easing marginTwoFiveLeft">
+            <span class="
+               positionRelative widthTenvh heightTen floatLeft zindexTen">
+               <markone ng:show="startAnimation" class="
+                  positionAbsolute positionCenter widthFullFlex heightHalfFlex">
+               </markone>
+
+               <markdark ng:show="!startAnimation" class="
+                  positionAbsolute positionCenter widthFullFlex heightHalfFlex">
+               </markdark>
+            </span>
+         </li>
+
+         <!-- ng:show="homepage == true" -->
+         <li ng:show="homepage == true" ng:show="startAnimation" ng:click="menuFour = true" class="centerdiv text-align-center positionRelative heightFullFlex marginTwoFiveLeft floatLeft">
+            <span
+            ng:class="{'fontColorSix' : !startAnimation, 'fontColorWhite' : startAnimation}"
+            class="centerdiv textOnHoverSwitch paddingTwoFive positionRelative border-radius1 centerdiv fontSizeTwo fontColorFourOnHover lineHeightTwoFive easing">
+            categories
+
+            <span class="positionAbsolute
+               positionBeforeIconNotice
+               zindexOne
+               font-family-snippet
+               border-radius-circle
+               heightTwoFive
+               widthTwoFivevh
+               backgroundColorOneThree
+               box-shadowFiveStraight lineHeightTwoFive fontSizeOneFive 
+               text-align-center fontColorWhite">
+               <span class="centerdiv positionRelative text-align-center">
+               <b>4</b>
+               </span>
+            </span>
+
+            <span class="floatLeft animated enterUpObject delay025 zindexOne positionRelative widthTwoFive heightTwoFive marginauto"><img src="./svg/arrow-down.svg" class="positionAbsolute positionCenter widthHalfFlex heightHalfFlex"></span>
+            </span>
+            
+         </li>
+
+         <!-- GO HOME -->
+         <li ng:class="{
+         'backgroundColorOne' : startAnimation,
+         'backgroundColorEight' : !startAnimation}" ng:click="resetstart(); homepage =  true; startAnimationLeft = false; aboutpage = false; paginationToggle(0);" class="
+            positionRelative border-radius1BottomLeft overflowhidden floatRight zindexTen easing">
+            <span class="
+               positionRelative widthTenvh heightTen floatLeft zindexTen">
+               <markwhite ng:show="startAnimation" class="
+                  positionAbsolute positionCenter widthFullFlex heightHalfFlex">
+               </markwhite>
+
+               <markdark ng:show="!startAnimation" class="
+                  positionAbsolute positionCenter widthFullFlex heightHalfFlex">
+               </markdark>
+            </span>
+         </li>
+
+         <!-- ng:show="homepage == true" -->
+         <li ng:click="menustart();" class="centerdiv text-align-center positionRelative heightFullFlex marginTwoFiveRight easing floatRight">
+            <span class="centerdiv textOnHoverSwitch widthFivevh heightFive positionRelative buttonbox-shadowDark border-radius1 backgroundColorThree centerdiv fontSizeTwoFive fontColorFive fontColorFiveOnHover lineHeightFive easing">
+            <span class="floatLeft animated enterUpObject delay025 zindexOne positionAbsolute positionCenter widthTwoFivevh heightTwoFive"><img src="./svg/close.svg" class="floatLeft widthFullFlex heightFullFlex"></span>
+            </span>
+         </li>
+
+         <li ng:show="homepage == true" ng:click="popsearch = true" class="centerdiv text-align-center positionRelative heightFullFlex marginTwoFiveRight easing floatRight">
+            <span class="centerdiv textOnHoverSwitch paddingTwoFive positionRelative border-radius1 backgroundColorTwoOnHover centerdiv fontSizeTwoFive fontColorWhite fontColorFourOnHover lineHeightTwoFive easing">
+               <span class="floatLeft animated enterUpObject delay025 zindexOne positionRelative widthTwoFivevh heightTwoFive"><img src="./svg/white/close.svg" class="widthFullFlex heightFullFlex"></span>
+            </span>
+         </li>
+
+         <!-- menuThree -->
+         <!-- ng:show="homepage == true" -->
+         <li ng:show="homepage == true" ng:click="menuThree = true" class="centerdiv text-align-center positionRelative heightFullFlex marginTwoFiveRight easing floatRight">
+            <span
+            ng:class="{'fontColorSix' : !startAnimation, 'fontColorWhite' : startAnimation}"
+
+            class="centerdiv textOnHoverSwitch paddingTwoFive positionRelative border-radius1 backgroundColorTwoOnHover centerdiv fontSizeTwo fontColorFourOnHover lineHeightTwoFive easing">
+
+               <span class="font-family-snippet positionAbsolute
+               positionBeforeBubbleNotice
+               zindexOne
+               border-radius-circle
+               heightOneFive
+               widthOneFivevh
+               backgroundColorOffWhite
+               box-shadowFiveStraight lineHeightTwoFive fontSizeOneFive 
+               text-align-center fontColorWhite">
+                  <span class="centerdiv positionRelative text-align-center">
+                  </span>
+               </span>
+
+               about
+               <span class="floatLeft animated enterUpObject delay025 zindexOne positionRelative widthTwoFive heightTwoFive marginauto"><img src="./svg/arrow-left.svg" class="positionAbsolute positionCenter widthHalfFlex heightHalfFlex"></span>
+            </span>
+         </li>
+
+      </ul>
+   </span>
+   <!-- Bread Top Menu -->
+   <span ng:show="homepage == true" class="animated enterUpObject delay025 zindexOne positionAbsolute positionBreadTopLeft heightTen zindexOne">
+      <!-- Bread Top Menu ng:show="homepage" -->
+      <ul class="floatLeft heightTen">
+
+         <!-- ng:show="homepage == true" -->
+         <li ng:show="homepage == true" ng:mouseenter="extraMenu = true" ng:class="{'backgroundColorOne' : extraMenu}" ng:show="startAnimation" class="centerdiv text-align-center positionRelative heightFullFlex marginTwoFiveLeft floatLeft">
+            <span ng:click="popin = !popin;" class="centerdiv textOnHoverSwitch paddingTwoFive positionRelative border-radius1 centerdiv fontSizeTwo backgroundColorOffWhite backgroundColorTwoOnHover fontColorOne fontColorFourOnHover lineHeightTwoFive">
+            <span class="floatLeft animated enterUpObject delay025 zindexOne positionRelative widthTwoFivevh heightTwoFive marginSevenFiveRight"><img src="./svg/close.svg" class="positionAbsolute positionCenter widthHalfFlex heightHalfFlex"></span>
+            </span>
+
+            <span ng:mouseleave="extraMenu = false" ng:show="extraMenu" class="zindexTen positionAbsolute positionBottomOff floatRight widthFullFlex backgroundColorOne box-shadowFiveStraight">
+                     
+               <span ng:click="filters.category = 'development'; resetstart(); paginationToggle(15); startAnimationUnder = true;" class="centerdiv textOnHoverSwitch paddingTwoFive positionRelative backgroundColorTwoOnHover centerdiv fontSizeTwoFive fontColorWhite fontColorFourOnHover lineHeightTwoFive">
+                  Develope
+                  
+               </span>
+
+               <span ng:click="resetstart(); paginationToggle(14); startAnimationUnder = true; homepage =  false; startAnimationUnder = true; aboutpage = true;" class="centerdiv textOnHoverSwitch paddingTwoFive positionRelative backgroundColorTwoOnHover centerdiv fontSizeTwoFive fontColorWhite fontColorFourOnHover lineHeightTwoFive">
+                  Design
+                  
+               </span>
+
+               <span ng:click="resetstart(); paginationToggle(14); startAnimationUnder = true; homepage =  false; startAnimationUnder = true; aboutpage = true;" class="centerdiv textOnHoverSwitch paddingTwoFive positionRelative backgroundColorTwoOnHover centerdiv fontSizeTwoFive fontColorWhite fontColorFourOnHover lineHeightTwoFive">
+                  Graphics
+                  
+               </span>
+
+               <span ng:click="resetstart(); paginationToggle(14); startAnimationUnder = true; homepage =  false; startAnimationUnder = true; aboutpage = true;" class="centerdiv textOnHoverSwitch paddingTwoFive positionRelative backgroundColorTwoOnHover centerdiv fontSizeTwoFive fontColorWhite fontColorFourOnHover lineHeightTwoFive">
+                  Icons
+                  
+               </span>
+
+
+               
+
+            </span>
+            
+         </li>
+         
+      </ul>
+   </span>
+
+   <!-- Bread Top Menu -->
+   <span ng:show="homepage == true" class="animated enterUpObject delay025 zindexOne positionAbsolute positionBreadTopRight heightTen zindexOne">
+      <!-- Bread Top Menu ng:show="homepage" -->
+      <ul class="floatLeft heightTen">
+         
+         <!-- light show -->
+         <li ng:show="startAnimation" ng:click="popup = !popup" class="centerdiv text-align-center positionRelative heightFullFlex marginTwoFiveRight floatLeft easing">
+            <span class="centerdiv textOnHoverSwitch paddingTwoFive positionRelative border-radius1 backgroundColorTwoOnHover centerdiv fontSizeTwo fontColorWhite fontColorFiveOnHover lineHeightTwoFive easing">
+            login
+            <span class="floatLeft animated enterUpObject delay025 zindexOne positionRelative widthTwoFivevh heightTwoFive marginSevenFiveRight"><img src="./svg/close.svg" class="positionAbsolute positionCenter widthHalfFlex heightHalfFlex"></span>
+            </span>
+         </li>
+
+      </ul>
+   </span>

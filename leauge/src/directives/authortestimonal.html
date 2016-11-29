@@ -1,0 +1,73 @@
+<ul class="widthFullFlex heightHalfFlex floatLeft positionAbsolute positionBottom zindexFive backgroundColorWhite">
+               <li class="widthFullFlex heightFullFlex floatLeft" ng:repeat="tests in member.testimonal | limitTo:1:testimonalindex.count">
+                  <span class="widthHalfFlex heightFullFlex floatLeft positionRelative">
+
+                     <span class="positionAbsolute positionBottom widthFullFlex heightFullFlex floatLeft easing zindexOne">
+
+                     <div class="spacedMid positionRelative">
+                        <span class="positionAbsolute positionBottom floatLeft
+                           widthFullFlex heightTen backgroundColorOne border-radius1" ng-repeat="member in team | filter: member.firstname = member.author | limitTo:1:0">
+                           <span ng-repeat="pics in member.photos | limitTo:1:0" class="widthFullFlex heightHalf positionAbsolute positionBottom marginauto floatLeft" style="background-image: url('./person/{{tests.authorphoto}}');
+                              background-size: cover;">
+                           </span>
+                        </span>
+                     </div>
+
+
+                     </span>
+                  </span>
+                  <span class="widthHalfFlex heightFullFlex backgroundGridColorWhite positionRelative floatLeft">
+                     <span class="widthFullFlex heightHalfFlex backgroundGridColorWhite positionRelative floatLeft">
+                        <span class="spacedMid backgroundColorTwo positionRelative floatLeft border-radius1">
+                           <span class="positionAbsolute positionCenter centerdiv">
+
+                           <span class="font-family-snippet fontSizeTwoFive fontColorFour lineHeightFive">
+                           {{member.position}}{{member.name}}{{member.quote}}
+                           </span>
+
+                           <span class="fontSizeFive lineHeightSevenFive fontColorThree positionRelative floatLeft widthFullFlex">- <b>{{tests.rep}}</b> </span>
+
+                           </span>
+                        </span>
+                        <!-- testimonalindex -->
+                        <span ng:hide="testimonalindex.count == 0" class="zindexOne positionAbsolute positionLeft widthFive heightFive"
+                           ng:click="
+                           testimonalindexToggle(-1);">
+                        <img src="./svg/three/close.svg" class="floatLeft widthFullFlex heightFullFlex">
+                        </span>
+                        <!-- close -->
+                        <span ng:hide="testimonalindex.count == member.testimonal.length - 1" class="zindexOne positionAbsolute positionRight widthFive heightFive"
+                           ng:click="
+                           testimonalindexToggle(1);">
+                        <img src="./svg/three/close.svg" class="floatLeft widthFullFlex heightFullFlex">
+                        </span>
+                     </span>
+
+                     <span class="widthFullFlex heightHalfFlex backgroundGridColorWhite positionRelative floatLeft">
+                        <span class="spacedMid backgroundColorTwo positionRelative floatLeft border-radius1">
+                           <span class="positionAbsolute positionCenter centerdiv">
+
+                           <span class="font-family-snippet fontSizeTwoFive fontColorFour lineHeightFive">
+                           {{tests.quote}}
+                           </span>
+
+                           <span class="fontSizeFive lineHeightSevenFive fontColorThree positionRelative floatLeft widthFullFlex">- <b>{{tests.rep}}</b> </span>
+
+                           </span>
+                        </span>
+                        <!-- testimonalindex -->
+                        <span ng:hide="testimonalindex.count == 0" class="zindexOne positionAbsolute positionLeft widthFive heightFive"
+                           ng:click="
+                           testimonalindexToggle(-1);">
+                        <img src="./svg/three/close.svg" class="floatLeft widthFullFlex heightFullFlex">
+                        </span>
+                        <!-- close -->
+                        <span ng:hide="testimonalindex.count == member.testimonal.length - 1" class="zindexOne positionAbsolute positionRight widthFive heightFive"
+                           ng:click="
+                           testimonalindexToggle(1);">
+                        <img src="./svg/three/close.svg" class="floatLeft widthFullFlex heightFullFlex">
+                        </span>
+                     </span>
+                  </span>
+               </li>
+            </ul>

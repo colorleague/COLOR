@@ -1,0 +1,966 @@
+<!-- team member preview -->
+<span ng:if="previewteam" ng:init="listholdergrid = true" class="positionFixed positionCenter backgroundGridColorWhite widthFullFlex heightFullFlex overflowhidden easing no-text-shadow text-align-center zindexTen">
+
+   <span class="positionAbsolute positionCenter backgroundColorWhite spacedMid overflowy">
+
+
+      <span ng-repeat="background in member.backgrounds | limitTo:1:0" 
+         class="
+            positionFixed
+            positionCenter
+            spacedMid
+            overflowhidden floatLeft" style="background-image: url('./gif/{{member.previewgif}}');
+            background-size: cover;">
+
+            <!--
+            <span class="overflowhidden positionAbsolute positionCenter widthFullFlex heightFullFlex easing">
+               <video id="bg-video" class="positionAbsolute positionCenter widthFullFlex heightFullFlex" autoplay="" loop="">
+                  <source src="{{trustSrc(member.previewmovie)}}">
+               </video>
+            </span>
+            -->
+
+      </span>      
+
+      <!-- bg filler -->
+      <span class="
+      positionRelative
+      heightFullFlex
+      widthFullFlex
+      overflowhidden floatLeft">
+
+
+<span
+   class="positionRelative widthFullFlex heightNineFlex floatRight zindexFive">
+
+      <span class="
+         backgroundGridColorOffWhite
+         opacity05
+         overflowhidden
+         positionAbsolute positionBottom widthFullFlex heightFullFlex">
+      </span>
+      <span
+         class="positionRelative widthFullFlex heightFullFlex floatLeft easing zindexFive">
+         <span class="
+            WhiteToClearGradient
+            overflowhidden
+            positionAbsolute positionBottom widthFullFlex heightFullFlex">
+         </span>
+         
+         <!-- page close -->
+         <pageclose></pageclose>
+
+        
+         <span class="heightFullFlex widthFullFlex positionRelative marginauto easing floatLeft">
+            <span class="spacedLarge positionRelative marginauto easing floatLeft">
+
+                  <ul class="positionRelative widthFullFlex floatLeft easing">
+                     <li class="showOnHoverSwitch text-align-center positionRelative widthFullFlex heightFullFlex floatLeft easing">
+                        <span class="floatLeft animated enterUpObject delay025 zindexOne positionAbsolute positionTopRight widthTwoFive heightTwoFive"><img src="./svg/pageend.svg" class="positionAbsolute positionRight heightFullFlex"></span>
+                        <!-- hideOnHover // background -->
+                        <span class="positionRelative floatLeft widthFullFlex heightFullFlex text-shadow05White">
+
+                           <!-- desk Holder center -->
+                           <span class="positionRelative floatLeft spacedLarge text-align-left  zindexOne">
+                           <span class="fontColorFive lineHeightFive fontSizeTwoFive widthFullFlex floatLeft">
+                           <span class="font-family-snippet positionRelative zindexOne opacity025"><b>
+                           HELPING OUR PARTNERS MOVE FORWARD THROUGH
+                           </b></span></span> 
+                           <span class="widthFullFlex floatLeft lineHeightTen fontSizeSevenFive">
+                           <b class="fontColorOne marginTwoFiveRight positionRelative zindexOne floatLeft bordered-bottomDarkSmall">
+                           Discovery & Strategy
+                           </b>
+                           <b class="fontColorThree marginTwoFiveRight positionRelative zindexOne floatLeft bordered-bottomDarkSmall">
+                           Branding
+                           </b> 
+                           <b class="fontColorTwo marginTwoFiveRight positionRelative zindexOne floatLeft bordered-bottomDarkSmall">
+                           Interface Design
+                           </b> 
+                           <b class="fontColorFour marginTwoFiveRight positionRelative zindexOne floatLeft bordered-bottomDarkSmall">
+                           Communications
+                           </b> 
+                           <b class="fontColorFive marginTwoFiveRight positionRelative zindexOne floatLeft bordered-bottomDarkSmall">
+                           Multimedia Production
+                           </b> 
+                           <b class="fontColorOne marginTwoFiveRight positionRelative zindexOne floatLeft bordered-bottomDarkSmall">
+                           Development Solutions
+                           </b> 
+                           </span>
+                           </span>
+                        </span>
+                     </li>
+                  </ul>
+
+            </span>
+         </span>
+
+         <span
+            class="positionAbsolute positionBottomRight heightHalfFlex widthThirdFlex floatLeft easing">
+               <authorsquare></authorsquare>
+            </span>
+
+         <span class="positionAbsolute positionBottomLeft widthHalfFlex heightTenFlex">
+            <hr class="vertline marginauto positionAbsolute positionBottom animated growvert backgroundColorWhite">
+         </span>
+      </span>
+
+         <ul class="zindexOne positionAbsolute positionOverBottomLeft widthFullFlex floatLeft easing zindexTen">
+
+         <li ng:click="learnmore = !learnmore" class="floatLeft text-align-center positionRelative heightFullFlex marginTwoFive paddingTwoFive easing">
+            <span class="textOnHoverSwitch paddingTwoFive positionRelative bordered-Six box-shadowSix box-shadowSixLeaveOnHover backgroundColorFive floatLeft fontSizeTwoFive fontColorWhite fontColorOneOnHover lineHeightFive easing">
+            Contact
+            <span class="bordered-Six box-shadowSix beforeArrow margintwofive beforetext backgroundColorOne fontSizeTwoFive fontColorFive fontColorFiveOnHover lineHeightFive easing">before</span>
+            
+            <span class="marginTwoFiveLeft floatRight animated enterUpObject delay025 zindexOne positionRelative widthTwoFive heightFive"><img src="./svg/arrow-right.svg" class="positionAbsolute positionCenter widthFullFlex heightFullFlex"></span>
+            </span>
+         </li>
+      </ul>
+   </span>
+
+   <span
+      class="widthFullFlex backgroundGridColorWhite positionRelative floatRight">
+      <span class="backgroundColorWhite positionRelative widthFullFlex floatLeft">
+         <ul class="floatLeft heightTen widthFullFlex positionRelative">
+               
+               <span class=" animated enterUpObject delay025 zindexTen positionRelative floatRight
+                  widthFive heightTen" ng:click="categoryMenu = !categoryMenu"><img src="./svg/arrow-down.svg" class="positionAbsolute positionCenter widthQuarterFlex heightQuarterFlex"></span>
+
+               <!-- dark show -->
+               <li ng:click="section1 = !section1" class="centerdiv text-align-center zindexTen positionRelative heightFullFlex marginTwoFiveLeft floatRight easing">
+                  <span  class="centerdiv textOnHoverSwitch paddingTwoFive positionRelative border-radius1 backgroundColorWhite backgroundColorTwoOnHover centerdiv fontSizeTwo fontColorOne fontColorFiveOnHover lineHeightTwoFive easing">
+                  Author
+                  <span ng:show="section1 == true" class="floatLeft zindexOne positionRelative widthTwoFive heightTwoFive marginSevenFiveRight"><img src="./svg/close.svg" class="widthFullFlex heightFullFlex"></span>
+
+                  <span ng:show="section1 == false" class="floatLeft zindexOne positionRelative widthTwoFive heightTwoFive marginSevenFiveRight"><img src="./svg/arrow-down.svg" class="widthFullFlex heightFullFlex"></span>
+                  </span>
+               </li>
+
+               <li ng:click="section2 = !section2"  class="centerdiv text-align-center zindexTen positionRelative heightFullFlex marginTwoFiveLeft floatRight easing">
+                  <span class="centerdiv textOnHoverSwitch paddingTwoFive positionRelative border-radius1 backgroundColorWhite backgroundColorTwoOnHover centerdiv fontSizeTwo fontColorOne fontColorFiveOnHover lineHeightTwoFive easing">
+                  About
+                  <span ng:show="section2 == true" class="floatLeft zindexOne positionRelative widthTwoFive heightTwoFive marginSevenFiveRight"><img src="./svg/close.svg" class="widthFullFlex heightFullFlex"></span>
+
+                  <span ng:show="section2 == false" class="floatLeft zindexOne positionRelative widthTwoFive heightTwoFive marginSevenFiveRight"><img src="./svg/arrow-down.svg" class="widthFullFlex heightFullFlex"></span>
+                  </span>
+               </li>
+
+               <li ng:click="section3 = !section3"  class="centerdiv text-align-center zindexTen positionRelative heightFullFlex marginTwoFiveLeft floatRight easing">
+                  <span class="centerdiv textOnHoverSwitch paddingTwoFive positionRelative border-radius1 backgroundColorWhite backgroundColorTwoOnHover centerdiv fontSizeTwo fontColorOne fontColorFiveOnHover lineHeightTwoFive easing">
+                  Timeline
+                  <span class="floatLeft animated enterUpObject delay025 zindexOne positionRelative widthTwoFive heightTwoFive marginSevenFiveRight"><img src="./svg/close.svg" class="widthFullFlex heightFullFlex"></span>
+                  </span>
+               </li>
+
+               <li ng:click="section4 = !section4"  class="centerdiv text-align-center zindexTen positionRelative heightFullFlex marginTwoFiveLeft floatRight easing">
+                  <span class="centerdiv textOnHoverSwitch paddingTwoFive positionRelative border-radius1 backgroundColorWhite backgroundColorTwoOnHover centerdiv fontSizeTwo fontColorOne fontColorFiveOnHover lineHeightTwoFive easing">
+                  Preview
+                  <span class="floatLeft animated enterUpObject delay025 zindexOne positionRelative widthTwoFive heightTwoFive marginSevenFiveRight"><img src="./svg/close.svg" class="widthFullFlex heightFullFlex"></span>
+                  </span>
+               </li>
+
+               <li ng:click="section4 = !section4"  class="centerdiv text-align-center zindexTen positionRelative heightFullFlex marginTwoFiveLeft floatRight easing">
+                  <span class="centerdiv textOnHoverSwitch paddingTwoFive positionRelative border-radius1 backgroundColorWhite backgroundColorTwoOnHover centerdiv fontSizeTwo fontColorOne fontColorFiveOnHover lineHeightTwoFive easing">
+                  Video
+                  <span class="floatLeft animated enterUpObject delay025 zindexOne positionRelative widthTwoFive heightTwoFive marginSevenFiveRight"><img src="./svg/close.svg" class="widthFullFlex heightFullFlex"></span>
+                  </span>
+               </li>
+
+               <li ng:click="section6 = !section6"  class="centerdiv text-align-center zindexTen positionRelative heightFullFlex marginTwoFiveLeft floatRight easing">
+                  <span class="centerdiv textOnHoverSwitch paddingTwoFive positionRelative border-radius1 backgroundColorWhite backgroundColorTwoOnHover centerdiv fontSizeTwo fontColorOne fontColorFiveOnHover lineHeightTwoFive easing">
+                  Process
+                  <span class="floatLeft animated enterUpObject delay025 zindexOne positionRelative widthTwoFive heightTwoFive marginSevenFiveRight"><img src="./svg/close.svg" class="widthFullFlex heightFullFlex"></span>
+                  </span>
+               </li>
+
+         </ul>
+      </span>
+
+   </span>
+
+
+      </span>
+      
+      <!-- background -->
+      <span class="
+      positionRelative
+      heightFullFlex
+      widthFullFlex
+      overflowhidden floatLeft">
+
+      <teamtop></teamtop>
+            
+      </span>
+
+
+      <span class="positionRelative widthFullFlex heightFullFlex floatLeft easing">
+
+      <teaminfoslider></teaminfoslider>
+
+      </span>
+
+      <teamtestimonalleft></teamtestimonalleft>
+
+      <span ng:init="timeline1 = true" ng:show="timeline1 == true" class="
+         positionRelative
+         heightFullFlex
+         widthQuarterFlex
+         floatLeft">
+         <teambrands></teambrands>
+      </span>
+
+      <teamtimeline></teamtimeline>
+
+      <teamrecents></teamrecents>
+
+      <teamtestimonalright></teamtestimonalright>
+
+      <teamapps></teamapps>
+
+      <teamwhy></teamwhy>
+
+      <!-- job, partners -->
+      <teamproducts></teamproducts>
+
+      <teamjobs></teamjobs>
+
+      <!-- resume -->
+      <teamresume></teamresume>
+
+      <!-- new video -->
+      <span class="widthFullFlex heightFullFlex positionRelative floatLeft">
+         <teamvideo></teamvideo>
+      </span>
+
+      <noborderedfooter></noborderedfooter>
+
+      <whitefooter></whitefooter>
+
+       <!-- about more -->
+      <span
+         class="positionRelative widthFullFlex heightFullFlex overflowhidden floatLeft easing zindexOne">
+         <span
+            class="positionRelative widthThirdFlex heightFullFlex overflowhidden floatLeft easing zindexOne">
+            <span
+            class="positionRelative widthFullFlex heightQuarterFlex overflowhidden floatLeft easing zindexOne">
+               <span class="
+                  positionAbsolute
+                  positionCenter
+                  heightFullFlex
+                  widthFullFlex
+                  overflowhidden floatLeft" style="background-image: url('/photos/team.jpg');
+                  background-size: cover;">
+                  <!-- washout background -->
+                  <span class="positionAbsolute positionCenter opacity05
+                     backgroundColorWhite widthFullFlex heightFullFlex">
+                  </span>
+                  <span class="positionAbsolute positionCenter opacity075
+                     backgroundColorFour widthFullFlex heightFullFlex">
+                  </span>
+                  <ul class="positionRelative widthFullFlex heightFullFlex floatLeft easing">
+                     <span class="centerdiv widthHalfFlex positionAbsolute positionCenter lineHeightTen fontSizeTen text-align-left fontColorWhite text-shadow05Five zindexOne">
+                     <span class="backgroundColorFour">
+                     <span class="positionRelative zindexOne">
+                     Office</span> </span> 
+                     </span>
+                  </ul>
+               </span>
+            </span>
+
+            <span
+            class="positionRelative widthFullFlex heightThreeQuarterFlex overflowhidden floatLeft easing zindexOne">
+               <span class="
+                  positionAbsolute
+                  positionCenter
+                  heightFullFlex
+                  widthFullFlex
+                  overflowhidden floatLeft" style="background-image: url('/photos/team.jpg');
+                  background-size: cover;">
+                  <!-- washout background -->
+                  <span class="positionAbsolute positionCenter opacity05
+                     backgroundColorWhite widthFullFlex heightFullFlex">
+                  </span>
+                  <span class="positionAbsolute positionCenter opacity075
+                     backgroundColorFour widthFullFlex heightFullFlex">
+                  </span>
+                  <ul class="positionRelative widthFullFlex heightFullFlex floatLeft easing">
+                     <span class="centerdiv widthHalfFlex positionAbsolute positionCenter lineHeightTen fontSizeTen text-align-left fontColorWhite text-shadow05Five zindexOne">
+                     <span class="backgroundColorFour">
+                     <span class="positionRelative zindexOne">
+                     Office</span> </span> 
+                     </span>
+                  </ul>
+               </span>
+            </span>
+
+         </span>
+         <span
+            class="positionRelative widthTwoThirdFlex heightHalfFlex overflowhidden floatLeft easing zindexOne">
+            
+            <span
+            class="positionRelative widthHalfFlex heightFullFlex overflowhidden floatLeft easing zindexOne">
+               <span class="
+               positionAbsolute
+               positionCenter
+               heightFullFlex
+               widthFullFlex
+               overflowhidden floatLeft" style="background-image: url('/photos/team.jpg');
+               background-size: cover;">
+               <!-- washout background -->
+               <span class="positionAbsolute positionCenter opacity05
+                  backgroundColorWhite widthFullFlex heightFullFlex">
+               </span>
+               <span class="positionAbsolute positionCenter opacity075
+                  backgroundColorFive widthFullFlex heightFullFlex">
+               </span>
+               <ul class="positionRelative widthFullFlex heightFullFlex floatLeft easing">
+                  <span class="centerdiv widthHalfFlex positionAbsolute positionCenter lineHeightTen fontSizeTen text-align-left fontColorWhite text-shadow05Three zindexOne">
+                  <span class="backgroundColorFive">
+                  <span class="positionRelative zindexOne">
+                  Team</span> </span> 
+                  </span>
+               </ul>
+               </span>
+            </span>
+            <span
+            class="positionRelative widthHalfFlex heightFullFlex overflowhidden floatLeft easing zindexOne">
+               <span class="
+               positionAbsolute
+               positionCenter
+               heightFullFlex
+               widthFullFlex
+               overflowhidden floatLeft" style="background-image: url('/photos/team.jpg');
+               background-size: cover;">
+               <!-- washout background -->
+               <span class="positionAbsolute positionCenter opacity05
+                  backgroundColorWhite widthFullFlex heightFullFlex">
+               </span>
+               <span class="positionAbsolute positionCenter opacity075
+                  backgroundColorFive widthFullFlex heightFullFlex">
+               </span>
+               <ul class="positionRelative widthFullFlex heightFullFlex floatLeft easing">
+                  <span class="centerdiv widthHalfFlex positionAbsolute positionCenter lineHeightTen fontSizeTen text-align-left fontColorWhite text-shadow05Three zindexOne">
+                  <span class="backgroundColorFive">
+                  <span class="positionRelative zindexOne">
+                  Team</span> </span> 
+                  </span>
+               </ul>
+               </span>
+            </span>
+         </span>
+         <span
+            class="positionRelative widthTwoThirdFlex heightHalfFlex overflowhidden floatLeft easing zindexOne">
+            <span
+            class="positionRelative widthFullFlex heightHalfFlex overflowhidden floatLeft easing zindexOne">
+               <span class="
+               positionAbsolute
+               positionCenter
+               heightFullFlex
+               widthFullFlex
+               overflowhidden floatLeft" style="background-image: url('/photos/team.jpg');
+               background-size: cover;">
+               <!-- washout background -->
+               <span class="positionAbsolute positionCenter opacity05
+                  backgroundColorWhite widthFullFlex heightFullFlex">
+               </span>
+               <span class="positionAbsolute positionCenter opacity075
+                  backgroundColorFive widthFullFlex heightFullFlex">
+               </span>
+               <ul class="positionRelative widthFullFlex heightFullFlex floatLeft easing">
+                  <span class="centerdiv widthHalfFlex positionAbsolute positionCenter lineHeightTen fontSizeTen text-align-left fontColorWhite text-shadow05Three zindexOne">
+                  <span class="backgroundColorFive">
+                  <span class="positionRelative zindexOne">
+                  Team</span> </span> 
+                  </span>
+               </ul>
+               </span>
+            </span>
+
+            <span
+            class="positionRelative widthFullFlex heightHalfFlex overflowhidden floatLeft easing zindexOne">
+               <span class="
+               positionAbsolute
+               positionCenter
+               heightFullFlex
+               widthFullFlex
+               overflowhidden floatLeft" style="background-image: url('/photos/team.jpg');
+               background-size: cover;">
+               <!-- washout background -->
+               <span class="positionAbsolute positionCenter opacity05
+                  backgroundColorWhite widthFullFlex heightFullFlex">
+               </span>
+               <span class="positionAbsolute positionCenter opacity075
+                  backgroundColorFive widthFullFlex heightFullFlex">
+               </span>
+               <ul class="positionRelative widthFullFlex heightFullFlex floatLeft easing">
+                  <span class="centerdiv widthHalfFlex positionAbsolute positionCenter lineHeightTen fontSizeTen text-align-left fontColorWhite text-shadow05Three zindexOne">
+                  <span class="backgroundColorFive">
+                  <span class="positionRelative zindexOne">
+                  Team</span> </span> 
+                  </span>
+               </ul>
+               </span>
+            </span>
+         </span>
+      </span>
+
+      <span class="widthFullFlex heightFifthFlex floatLeft positionRelative backgroundColorWhite">
+         
+         <!-- github row -->
+            <span 
+               class="backgroundColorThreeOnHover positionRelative heightFullFlex widthFifthFlex floatLeft easing zindexFive">
+
+               <!-- washout background -->
+               <span class="positionAbsolute positionCenter
+               widthFullFlex heightFullFlex
+               backgroundColorWhite opacity04">
+               </span>
+
+               <a href="http://github.com/{{member.github}}" class="spacedSmall border-radius1 overflowhidden positionAbsolute positionCenter marginauto floatLeft">
+
+                     <!-- washout background -->
+                     <span class="positionAbsolute positionCenter
+                     widthFullFlex heightFullFlex
+                     backgroundGridColorThree backgroundColorTwoOnHover">
+                     </span>
+
+                     <!-- washout background -->
+                     <span class="positionAbsolute positionCenter
+                     widthFullFlex heightFullFlex
+                     backgroundColorWhite opacity01">
+                     </span>
+
+                     <span class="marginTwoFiveLeft floatRight animated enterUpObject delay025 positionAbsolute positionRight widthFullFlex heightFullFlex"><img src="./svg/social/github.svg" class="positionAbsolute positionCenter widthThreeQuarterFlex heightThreeQuarterFlex"></span>
+
+                     <span class="widthFullFlex heightFullFlex positionAbsolute positionCenter  centerdiv fontSizeTwoFive fontColorWhite fontColorOneOnHover lineHeightFive easing">
+                        github
+                        <span class="marginTwoFiveLeft floatRight animated enterUpObject delay025 zindexOne positionAbsolute positionRight widthFivevh heightFull"><img src="./svg/arrow-down.svg" class="positionAbsolute positionCenter widthHalfFlex heightHalfFlex"></span>
+                     </span>
+
+               </a>
+            </span>
+
+            <!-- twitter row -->
+            <span 
+               class="backgroundColorThreeOnHover positionRelative heightFullFlex widthFifthFlex floatLeft easing zindexFive">
+
+               <!-- washout background -->
+               <span class="positionAbsolute positionCenter
+               widthFullFlex heightFullFlex
+               backgroundColorWhite opacity04">
+               </span>
+
+               <a href="http://github.com/{{member.github}}" class="spacedSmall border-radius1 overflowhidden positionAbsolute positionCenter marginauto floatLeft">
+
+                     <!-- washout background -->
+                     <span class="positionAbsolute positionCenter
+                     widthFullFlex heightFullFlex
+                     backgroundGridColorThree backgroundColorTwoOnHover">
+                     </span>
+
+                     <!-- washout background -->
+                     <span class="positionAbsolute positionCenter
+                     widthFullFlex heightFullFlex
+                     backgroundColorWhite opacity01">
+                     </span>
+
+                     <span class="marginTwoFiveLeft floatRight animated enterUpObject delay025 positionAbsolute positionRight widthFullFlex heightFullFlex"><img src="./svg/social/github.svg" class="positionAbsolute positionCenter widthThreeQuarterFlex heightThreeQuarterFlex"></span>
+
+                     <span class="widthFullFlex heightFullFlex positionAbsolute positionCenter  centerdiv fontSizeTwoFive fontColorWhite fontColorOneOnHover lineHeightFive easing">
+                        github
+                        <span class="marginTwoFiveLeft floatRight animated enterUpObject delay025 zindexOne positionAbsolute positionRight widthFivevh heightFull"><img src="./svg/arrow-down.svg" class="positionAbsolute positionCenter widthHalfFlex heightHalfFlex"></span>
+                     </span>
+
+               </a>
+            </span>
+
+            <!-- github row -->
+            <span 
+               class="backgroundColorThreeOnHover positionRelative heightFullFlex widthFifthFlex floatLeft easing zindexFive">
+
+               <!-- washout background -->
+               <span class="positionAbsolute positionCenter
+               widthFullFlex heightFullFlex
+               backgroundColorWhite opacity04">
+               </span>
+
+               <a href="http://github.com/{{member.github}}" class="spacedSmall border-radius1 overflowhidden positionAbsolute positionCenter marginauto floatLeft">
+
+                     <!-- washout background -->
+                     <span class="positionAbsolute positionCenter
+                     widthFullFlex heightFullFlex
+                     backgroundGridColorThree backgroundColorTwoOnHover">
+                     </span>
+
+                     <!-- washout background -->
+                     <span class="positionAbsolute positionCenter
+                     widthFullFlex heightFullFlex
+                     backgroundColorWhite opacity01">
+                     </span>
+
+                     <span class="marginTwoFiveLeft floatRight animated enterUpObject delay025 positionAbsolute positionRight widthFullFlex heightFullFlex"><img src="./svg/social/github.svg" class="positionAbsolute positionCenter widthThreeQuarterFlex heightThreeQuarterFlex"></span>
+
+                     <span class="widthFullFlex heightFullFlex positionAbsolute positionCenter  centerdiv fontSizeTwoFive fontColorWhite fontColorOneOnHover lineHeightFive easing">
+                        github
+                        <span class="marginTwoFiveLeft floatRight animated enterUpObject delay025 zindexOne positionAbsolute positionRight widthFivevh heightFull"><img src="./svg/arrow-down.svg" class="positionAbsolute positionCenter widthHalfFlex heightHalfFlex"></span>
+                     </span>
+
+               </a>
+            </span>
+
+            <!-- github row -->
+            <span 
+               class="backgroundColorThreeOnHover positionRelative heightFullFlex widthFifthFlex floatLeft easing zindexFive">
+
+               <!-- washout background -->
+               <span class="positionAbsolute positionCenter
+               widthFullFlex heightFullFlex
+               backgroundColorWhite opacity04">
+               </span>
+
+               <a href="http://github.com/{{member.github}}" class="spacedSmall border-radius1 overflowhidden positionAbsolute positionCenter marginauto floatLeft">
+
+                     <!-- washout background -->
+                     <span class="positionAbsolute positionCenter
+                     widthFullFlex heightFullFlex
+                     backgroundGridColorThree backgroundColorTwoOnHover">
+                     </span>
+
+                     <!-- washout background -->
+                     <span class="positionAbsolute positionCenter
+                     widthFullFlex heightFullFlex
+                     backgroundColorWhite opacity01">
+                     </span>
+
+                     <span class="marginTwoFiveLeft floatRight animated enterUpObject delay025 positionAbsolute positionRight widthFullFlex heightFullFlex"><img src="./svg/social/github.svg" class="positionAbsolute positionCenter widthThreeQuarterFlex heightThreeQuarterFlex"></span>
+
+                     <span class="widthFullFlex heightFullFlex positionAbsolute positionCenter  centerdiv fontSizeTwoFive fontColorWhite fontColorOneOnHover lineHeightFive easing">
+                        github
+                        <span class="marginTwoFiveLeft floatRight animated enterUpObject delay025 zindexOne positionAbsolute positionRight widthFivevh heightFull"><img src="./svg/arrow-down.svg" class="positionAbsolute positionCenter widthHalfFlex heightHalfFlex"></span>
+                     </span>
+
+               </a>
+            </span>
+
+            <!-- twitter row -->
+            <span 
+               class="backgroundColorThreeOnHover positionRelative heightFullFlex widthFifthFlex floatLeft easing zindexFive">
+
+               <!-- washout background -->
+               <span class="positionAbsolute positionCenter
+               widthFullFlex heightFullFlex
+               backgroundColorWhite opacity04">
+               </span>
+
+               <a href="http://github.com/{{member.github}}" class="spacedSmall border-radius1 overflowhidden positionAbsolute positionCenter marginauto floatLeft">
+
+                     <!-- washout background -->
+                     <span class="positionAbsolute positionCenter
+                     widthFullFlex heightFullFlex
+                     backgroundGridColorThree backgroundColorTwoOnHover">
+                     </span>
+
+                     <!-- washout background -->
+                     <span class="positionAbsolute positionCenter
+                     widthFullFlex heightFullFlex
+                     backgroundColorWhite opacity01">
+                     </span>
+
+                     <span class="marginTwoFiveLeft floatRight animated enterUpObject delay025 positionAbsolute positionRight widthFullFlex heightFullFlex"><img src="./svg/social/github.svg" class="positionAbsolute positionCenter widthThreeQuarterFlex heightThreeQuarterFlex"></span>
+
+                     <span class="widthFullFlex heightFullFlex positionAbsolute positionCenter  centerdiv fontSizeTwoFive fontColorWhite fontColorOneOnHover lineHeightFive easing">
+                        github
+                        <span class="marginTwoFiveLeft floatRight animated enterUpObject delay025 zindexOne positionAbsolute positionRight widthFivevh heightFull"><img src="./svg/arrow-down.svg" class="positionAbsolute positionCenter widthHalfFlex heightHalfFlex"></span>
+                     </span>
+
+               </a>
+            </span>
+
+      </span>
+
+      <!-- Grid -->
+      <span class="backgroundColorWhite positionRelative heightFullFlex widthFullFlex floatLeft easing zindexFive">
+
+            <span 
+               class="backgroundColorThreeOnHover positionRelative heightHalfFlex widthHalfFlex floatLeft easing zindexFive">
+
+               <!-- washout background -->
+               <span class="positionAbsolute positionCenter
+               widthFullFlex heightFullFlex
+               backgroundColorWhite opacity04">
+               </span>
+
+               <a href="http://github.com/{{member.github}}" class="spacedSmall border-radius1 overflowhidden positionAbsolute positionCenter marginauto floatLeft">
+
+                     <!-- washout background -->
+                     <span class="positionAbsolute positionCenter
+                     widthFullFlex heightFullFlex
+                     backgroundGridColorThree backgroundColorTwoOnHover">
+                     </span>
+
+                     <!-- washout background -->
+                     <span class="positionAbsolute positionCenter
+                     widthFullFlex heightFullFlex
+                     backgroundColorWhite opacity01">
+                     </span>
+
+                     <span class="marginTwoFiveLeft floatRight animated enterUpObject delay025 positionAbsolute positionRight widthFullFlex heightFullFlex"><img src="./svg/social/github.svg" class="positionAbsolute positionCenter widthThreeQuarterFlex heightThreeQuarterFlex"></span>
+
+                     <span class="positionRelative floatLeft spacedSmall border-radius1 ">
+
+                           <span class="floatLeft positionAbsolute positionTopRight widthTenvh heightTen zindexFive">
+                              <img src="./svg/pageend.svg" class="positionAbsolute positionTopRight widthThreeQuarterFlex">
+                           </span>
+
+                           <span class="text-align-left widthFullFlex floatLeft fontSizeTwoFive lineHeightTen easing">
+
+                              <!-- menu title -->
+                              <span class="marginTwoFiveLeft fontColorWhite text-shadow025Dark positionRelative zindexOne"><b class="bordered-bottomOne">ABOUT</b></span>
+
+                              <span class="marginTwoFiveRight floatLeft animated enterUpObject delay025 zindexOne positionRelative widthTwoFive heightTen"><img ng:show="!aboutmenu" class="positionAbsolute positionCenter" src="./svg/arrow-left.svg" class="widthHalfFlex heightHalfFlex">
+                              <img ng:show="aboutmenu" class="positionAbsolute positionCenter" src="./svg/close.svg" class="widthHalfFlex heightHalfFlex">
+                              </span>
+
+                           </span>
+
+                        </span>
+
+               </a>
+            </span>
+
+            <span 
+               class="positionRelative heightHalfFlex widthHalfFlex floatLeft easing zindexFive">
+
+               <span 
+                  class="backgroundteamOnHover positionRelative heightHalfFlex widthHalfFlex floatLeft easing zindexFive">
+
+                  <!-- washout background -->
+                  <span class="positionAbsolute positionCenter
+                  widthFullFlex heightFullFlex
+                  backgroundColorWhite opacity04">
+                  </span>
+
+                  <a href="http://github.com/{{member.github}}" class="spacedSmall border-radius1 overflowhidden positionAbsolute positionCenter marginauto floatLeft">
+
+                        <!-- washout background -->
+                        <span class="positionAbsolute positionCenter
+                        widthFullFlex heightFullFlex
+                        backgroundGridColorThree backgroundColorTwoOnHover">
+                        </span>
+
+                        <!-- washout background -->
+                        <span class="positionAbsolute positionCenter
+                        widthFullFlex heightFullFlex
+                        backgroundColorWhite opacity01">
+                        </span>
+
+                        <span class="marginTwoFiveLeft floatRight animated enterUpObject delay025 positionAbsolute positionRight widthFullFlex heightFullFlex"><img src="./svg/social/github.svg" class="positionAbsolute positionCenter widthThreeQuarterFlex heightThreeQuarterFlex"></span>
+
+                        <span class="positionRelative floatLeft spacedSmall border-radius1 ">
+
+                              <span class="text-align-left widthFullFlex floatLeft fontSizeTwoFive lineHeightTen easing">
+
+                                 <!-- menu title -->
+                                 <span class="marginTwoFiveLeft fontColorWhite text-shadow025Dark positionRelative zindexOne"><b class="bordered-bottomOne">ABOUT</b></span>
+
+                                 <span class="marginTwoFiveRight floatLeft animated enterUpObject delay025 zindexOne positionRelative widthTwoFive heightTen"><img ng:show="!aboutmenu" class="positionAbsolute positionCenter" src="./svg/arrow-left.svg" class="widthHalfFlex heightHalfFlex">
+                                 <img ng:show="aboutmenu" class="positionAbsolute positionCenter" src="./svg/close.svg" class="widthHalfFlex heightHalfFlex">
+                                 </span>
+
+                              </span>
+
+                           </span>
+
+                  </a>
+               </span>
+
+               <span 
+                  class="backgroundColorThreeOnHover positionRelative heightHalfFlex widthHalfFlex floatLeft easing zindexFive">
+
+                  <!-- washout background -->
+                  <span class="positionAbsolute positionCenter
+                  widthFullFlex heightFullFlex
+                  backgroundColorWhite opacity04">
+                  </span>
+
+                  <a href="http://github.com/{{member.github}}" class="spacedSmall border-radius1 overflowhidden positionAbsolute positionCenter marginauto floatLeft">
+
+                        <!-- washout background -->
+                        <span class="positionAbsolute positionCenter
+                        widthFullFlex heightFullFlex
+                        backgroundGridColorThree backgroundColorTwoOnHover">
+                        </span>
+
+                        <!-- washout background -->
+                        <span class="positionAbsolute positionCenter
+                        widthFullFlex heightFullFlex
+                        backgroundColorWhite opacity01">
+                        </span>
+
+                        <span class="marginTwoFiveLeft floatRight animated enterUpObject delay025 positionAbsolute positionRight widthFullFlex heightFullFlex"><img src="./svg/social/github.svg" class="positionAbsolute positionCenter widthThreeQuarterFlex heightThreeQuarterFlex"></span>
+
+                        <span class="positionRelative floatLeft spacedSmall border-radius1 ">
+
+                              <span class="floatLeft positionAbsolute positionTopRight widthTenvh heightTen zindexFive">
+                                 <img src="./svg/pageend.svg" class="positionAbsolute positionTopRight widthThreeQuarterFlex">
+                              </span>
+
+                              <span class="text-align-left widthFullFlex floatLeft fontSizeTwoFive lineHeightTen easing">
+
+                                 <!-- menu title -->
+                                 <span class="marginTwoFiveLeft fontColorWhite text-shadow025Dark positionRelative zindexOne"><b class="bordered-bottomOne">ABOUT</b></span>
+
+                                 <span class="marginTwoFiveRight floatLeft animated enterUpObject delay025 zindexOne positionRelative widthTwoFive heightTen"><img ng:show="!aboutmenu" class="positionAbsolute positionCenter" src="./svg/arrow-left.svg" class="widthHalfFlex heightHalfFlex">
+                                 <img ng:show="aboutmenu" class="positionAbsolute positionCenter" src="./svg/close.svg" class="widthHalfFlex heightHalfFlex">
+                                 </span>
+
+                              </span>
+
+                           </span>
+
+                  </a>
+               </span>
+
+               <span 
+                  class="backgroundColorThreeOnHover positionRelative heightHalfFlex widthHalfFlex floatLeft easing zindexFive">
+
+                  <!-- washout background -->
+                  <span class="positionAbsolute positionCenter
+                  widthFullFlex heightFullFlex
+                  backgroundColorWhite opacity04">
+                  </span>
+
+                  <a href="http://github.com/{{member.github}}" class="spacedSmall border-radius1 overflowhidden positionAbsolute positionCenter marginauto floatLeft">
+
+                        <!-- washout background -->
+                        <span class="positionAbsolute positionCenter
+                        widthFullFlex heightFullFlex
+                        backgroundGridColorThree backgroundColorTwoOnHover">
+                        </span>
+
+                        <!-- washout background -->
+                        <span class="positionAbsolute positionCenter
+                        widthFullFlex heightFullFlex
+                        backgroundColorWhite opacity01">
+                        </span>
+
+                        <span class="marginTwoFiveLeft floatRight animated enterUpObject delay025 positionAbsolute positionRight widthFullFlex heightFullFlex"><img src="./svg/social/github.svg" class="positionAbsolute positionCenter widthThreeQuarterFlex heightThreeQuarterFlex"></span>
+
+                        <span class="positionRelative floatLeft spacedSmall border-radius1 ">
+
+                              <span class="floatLeft positionAbsolute positionTopRight widthTenvh heightTen zindexFive">
+                                 <img src="./svg/pageend.svg" class="positionAbsolute positionTopRight widthThreeQuarterFlex">
+                              </span>
+
+                              <span class="text-align-left widthFullFlex floatLeft fontSizeTwoFive lineHeightTen easing">
+
+                                 <!-- menu title -->
+                                 <span class="marginTwoFiveLeft fontColorWhite text-shadow025Dark positionRelative zindexOne"><b class="bordered-bottomOne">ABOUT</b></span>
+
+                                 <span class="marginTwoFiveRight floatLeft animated enterUpObject delay025 zindexOne positionRelative widthTwoFive heightTen"><img ng:show="!aboutmenu" class="positionAbsolute positionCenter" src="./svg/arrow-left.svg" class="widthHalfFlex heightHalfFlex">
+                                 <img ng:show="aboutmenu" class="positionAbsolute positionCenter" src="./svg/close.svg" class="widthHalfFlex heightHalfFlex">
+                                 </span>
+
+                              </span>
+
+                           </span>
+
+                  </a>
+               </span>
+
+               <span 
+                  class="backgroundColorThreeOnHover positionRelative heightHalfFlex widthHalfFlex floatLeft easing zindexFive">
+
+                  <!-- washout background -->
+                  <span class="positionAbsolute positionCenter
+                  widthFullFlex heightFullFlex
+                  backgroundColorWhite opacity04">
+                  </span>
+
+                  <a href="http://github.com/{{member.github}}" class="spacedSmall border-radius1 overflowhidden positionAbsolute positionCenter marginauto floatLeft">
+
+                        <!-- washout background -->
+                        <span class="positionAbsolute positionCenter
+                        widthFullFlex heightFullFlex
+                        backgroundGridColorThree backgroundColorTwoOnHover">
+                        </span>
+
+                        <!-- washout background -->
+                        <span class="positionAbsolute positionCenter
+                        widthFullFlex heightFullFlex
+                        backgroundColorWhite opacity01">
+                        </span>
+
+                        <span class="marginTwoFiveLeft floatRight animated enterUpObject delay025 positionAbsolute positionRight widthFullFlex heightFullFlex"><img src="./svg/social/github.svg" class="positionAbsolute positionCenter widthThreeQuarterFlex heightThreeQuarterFlex"></span>
+
+                        <span class="positionRelative floatLeft spacedSmall border-radius1 ">
+
+                              <span class="floatLeft positionAbsolute positionTopRight widthTenvh heightTen zindexFive">
+                                 <img src="./svg/pageend.svg" class="positionAbsolute positionTopRight widthThreeQuarterFlex">
+                              </span>
+
+                              <span class="text-align-left widthFullFlex floatLeft fontSizeTwoFive lineHeightTen easing">
+
+                                 <!-- menu title -->
+                                 <span class="marginTwoFiveLeft fontColorWhite text-shadow025Dark positionRelative zindexOne"><b class="bordered-bottomOne">ABOUT</b></span>
+
+                                 <span class="marginTwoFiveRight floatLeft animated enterUpObject delay025 zindexOne positionRelative widthTwoFive heightTen"><img ng:show="!aboutmenu" class="positionAbsolute positionCenter" src="./svg/arrow-left.svg" class="widthHalfFlex heightHalfFlex">
+                                 <img ng:show="aboutmenu" class="positionAbsolute positionCenter" src="./svg/close.svg" class="widthHalfFlex heightHalfFlex">
+                                 </span>
+
+                              </span>
+
+                           </span>
+
+                  </a>
+               </span>
+
+            </span>
+
+            <span
+      class="positionRelative widthFullFlex heightQuarterFlex backgroundColorWhite floatLeft easing zindexOne">
+     
+     <span
+      class="positionRelative widthQuarterFlex heightFullFlex backgroundColorWhite floatLeft easing zindexOne">
+
+         <span class="font-family-snippet widthFullFlex fontSizeTwo floatLeft fontColorThree">So What's Next</span>
+
+                        <h3 class="widthFullFlex floatLeft positionRelative lineHeightSix fontSizeFive text-align-left fontColorFour zindexOne"><b>
+                           <span class="font-family-snippet fontColorThree fontSizeThree text-shadow025Dark
+                              lineHeightSix
+                              floatLeft
+                              widthFullFlex">
+                           You are located
+                           <span class=""><img src="./svg/plus.svg" class="widthTwoFivevh heightTwoFive"></span><br></span></b>
+                        </h3>
+                        <h3 class="widthFullFlex floatLeft positionRelative lineHeightFour fontSizeThree text-align-left fontColorTwo zindexOne"><b>
+                           <span class=" text-shadow025Three">
+                           Home</span>
+                           <span class=""><img src="./svg/arrow-left.svg" class="widthTwoFivevh heightTwoFive"></span></b>
+                        </h3>
+
+      </span>
+
+      <span
+      class="positionRelative widthThreeQuarterFlex heightFullFlex backgroundColorWhite floatLeft easing zindexOne">
+
+         <span
+            class="positionRelative widthHalfFlex heightFullFlex  floatLeft easing zindexOne">
+
+            <span class="backgroundColorOffWhite text-align-left positionRelative widthFullFlex floatLeft fontSizeTwoFive lineHeightTen easing">
+
+               <span class="floatLeft positionAbsolute positionTopRight widthTenvh heightTen zindexFive">
+                  <img src="./svg/pageend.svg" class="positionAbsolute positionTopRight widthThreeQuarterFlex">
+               </span>
+
+               <!-- menu title -->
+               <span class="marginTwoFiveLeft fontColorWhite text-shadow025Dark positionRelative zindexOne"><b class="bordered-bottomOne">ABOUT</b></span>
+
+               <span class="marginTwoFiveRight floatLeft animated enterUpObject delay025 zindexOne positionRelative widthTwoFive heightTen"><img ng:show="!aboutmenu" class="positionAbsolute positionCenter" src="./svg/arrow-left.svg" class="widthHalfFlex heightHalfFlex">
+               <img ng:show="aboutmenu" class="positionAbsolute positionCenter" src="./svg/close.svg" class="widthHalfFlex heightHalfFlex">
+               </span>
+
+            </span>
+            
+         </span>
+
+         <span
+            class="positionRelative widthHalfFlex heightFullFlex  floatLeft easing zindexOne">
+
+            <span
+            class="positionRelative widthFullFlex floatLeft easing zindexOne">
+
+               <span class="backgroundColorOneOnHover text-align-left positionRelative widthFullFlex floatLeft fontSizeTwoFive lineHeightTen easing">
+
+                  <span class="floatLeft positionAbsolute positionTopRight widthTenvh heightTen zindexFive">
+                     <img src="./svg/pageend.svg" class="positionAbsolute positionTopRight widthThreeQuarterFlex">
+                  </span>
+
+                  <!-- menu title -->
+                  <span class="marginTwoFiveLeft fontColorThree text-shadow025Dark positionRelative zindexOne"><b class="bordered-bottomOne">ABOUT</b></span>
+
+                  <span class="marginTwoFiveRight floatLeft animated enterUpObject delay025 zindexOne positionRelative widthTwoFive heightTen"><img ng:show="!aboutmenu" class="positionAbsolute positionCenter" src="./svg/arrow-left.svg" class="widthHalfFlex heightHalfFlex">
+                  <img ng:show="aboutmenu" class="positionAbsolute positionCenter" src="./svg/close.svg" class="widthHalfFlex heightHalfFlex">
+                  </span>
+
+               </span>
+               
+            </span>
+
+            <span
+            class="positionRelative bordered-bottomOne widthFullFlex floatLeft easing zindexOne">
+
+               <span class="backgroundColorOneOnHover text-align-left positionRelative widthFullFlex floatLeft fontSizeTwoFive lineHeightTen easing">
+
+                  <span class="floatLeft positionAbsolute positionTopRight widthTenvh heightTen zindexFive">
+                     <img src="./svg/pageend.svg" class="positionAbsolute positionTopRight widthThreeQuarterFlex">
+                  </span>
+
+                  <!-- menu title -->
+                  <span class="marginTwoFiveLeft fontColorThree text-shadow025Dark positionRelative zindexOne floatLeft"><p class="floatLeft">ABOUT</p></span>
+
+                  <span class="marginTwoFiveRight floatLeft animated enterUpObject delay025 zindexOne positionRelative widthTwoFive heightTen"><img ng:show="!aboutmenu" class="positionAbsolute positionCenter" src="./svg/arrow-left.svg" class="widthHalfFlex heightHalfFlex">
+                  <img ng:show="aboutmenu" class="positionAbsolute positionCenter" src="./svg/close.svg" class="widthHalfFlex heightHalfFlex">
+                  </span>
+
+               </span>
+               
+            </span>
+
+            <span
+            class="positionRelative bordered-bottomOne widthFullFlex floatLeft easing zindexOne">
+
+               <span class="backgroundColorOneOnHover text-align-left positionRelative widthFullFlex floatLeft fontSizeTwoFive lineHeightTen easing">
+
+                  <span class="marginTwoFiveRight floatLeft animated enterUpObject delay025 zindexOne positionRelative widthTwoFive heightTen"><img ng:show="!aboutmenu" class="positionAbsolute positionCenter" src="./svg/arrow-left.svg" class="widthHalfFlex heightHalfFlex">
+                  <img ng:show="aboutmenu" class="positionAbsolute positionCenter" src="./svg/close.svg" class="widthHalfFlex heightHalfFlex">
+                  </span>
+
+                  <!-- menu title -->
+                  <span class="marginTwoFiveLeft fontColorThree text-shadow025Dark positionRelative zindexOne floatLeft"><p class="floatLeft">ABOUT</p></span>
+
+               </span>
+               
+            </span>
+
+            <span
+            class="positionRelative bordered-bottomOne widthFullFlex floatLeft easing zindexOne">
+
+               <span class="backgroundColorOneOnHover text-align-left positionRelative widthFullFlex floatLeft fontSizeTwoFive lineHeightTen easing">
+
+                  <span class="marginTwoFiveRight floatLeft animated enterUpObject delay025 zindexOne positionRelative widthTwoFive heightTen"><img ng:show="!aboutmenu" class="positionAbsolute positionCenter" src="./svg/arrow-left.svg" class="widthHalfFlex heightHalfFlex">
+                  <img ng:show="aboutmenu" class="positionAbsolute positionCenter" src="./svg/close.svg" class="widthHalfFlex heightHalfFlex">
+                  </span>
+
+                  <!-- menu title -->
+                  <span class="marginTwoFiveLeft fontColorThree text-shadow025Dark positionRelative zindexOne floatLeft"><p class="floatLeft">ABOUT</p></span>
+
+               </span>
+               
+            </span>
+
+            <span
+            class="positionRelative bordered-bottomOne widthFullFlex floatLeft easing zindexOne">
+
+               <span class="backgroundColorOneOnHover text-align-left positionRelative widthFullFlex floatLeft fontSizeTwoFive lineHeightTen easing">
+
+                  <span class="marginTwoFiveRight floatLeft animated enterUpObject delay025 zindexOne positionRelative widthTwoFive heightTen"><img ng:show="!aboutmenu" class="positionAbsolute positionCenter" src="./svg/arrow-left.svg" class="widthHalfFlex heightHalfFlex">
+                  <img ng:show="aboutmenu" class="positionAbsolute positionCenter" src="./svg/close.svg" class="widthHalfFlex heightHalfFlex">
+                  </span>
+
+                  <!-- menu title -->
+                  <span class="marginTwoFiveLeft fontColorThree text-shadow025Dark positionRelative zindexOne floatLeft"><p class="floatLeft">ABOUT</p></span>
+
+               </span>
+               
+            </span>
+            
+         </span>
+
+      </span>
+
+   </span>
+
+      </span>
+
+</span>
+</span>

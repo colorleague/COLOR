@@ -1,0 +1,203 @@
+<!-- team member preview -->
+<span ng:init="listholdergrid = true;" class="positionFixed positionRight backgroundGridColorFour widthHalfFlex heightFullFlex overflowy easing text-align-center zindexFive">
+
+
+   <span class="
+      heightFullFlex widthFullFlex
+      positionRelative floatLeft overflowy easing">
+
+      <span class="spacedMid positionRelative floatLeft easing">
+
+         <!-- Service center -->
+         <span ng:repeat="tasks in task.positions | filter:filters" ng:click="previewtaskcontrol = !previewtaskcontrol" class="showOnHoverSwitch positionRelative widthHalfFlex heightHalfFlex floatLeft">
+
+            <!-- imaclinedone center -->
+            <span class="
+               textOnHoverSwitch positionAbsolute positionBottomRight widthFullFlex heightHalfFlex floatLeft easing zindexFive">
+
+               <img src="./svg/{{tasks.icon1}}" class="positionAbsolute positionBottomRight marginauto widthHalfFlex heightHalfFlex">
+
+            </span>
+
+            <span class="
+            spacedMid overflowhidden border-radius1
+            backgroundColorTwo
+            buttonbox-shadowDark
+            positionRelative floatLeft easing">
+
+               <span class="hideOnHover spacedMid backgroundColorWhite overflowhidden border-radius1 box-shadowFiveStraight floatLeft">
+
+                  <!-- imaclinedone center -->
+                  <span class="
+                     textOnHoverSwitch positionAbsolute positionCenter widthFullFlex heightFullFlex floatLeft easing">
+
+                     <img src="./svg/{{tasks.icon2}}" class="positionAbsolute positionCenter marginauto widthHalfFlex heightHalfFlex">
+
+                  </span>
+
+                  <!-- Filler -->
+                  <span class="positionRelative widthFullFlex floatLeft heightFifthFlex">
+                  </span>
+
+                  <span class="widthFullFlex positionRelative marginauto easing floatLeft">
+                        
+                  <h3 class="font-family-snippet widthFullFlex positionRelative lineHeightFive fontSizeTwo text-align-center fontColorTwo text-shadow05OffWhite zindexOne">{{tasks.name}}</h3>
+                  
+                  </span>
+
+                  <span class="widthFullFlex positionRelative marginauto easing floatLeft">
+                        
+                           <b class=" widthFullFlex floatLeft positionRelative lineHeightFive fontSizeFour text-align-center fontColorFour text-shadow05OffWhite zindexOne">{{tasks.name}}</b>
+                  </span>
+
+                  <span class="widthFullFlex positionRelative marginauto easing floatLeft">
+                           <h3 class="font-family-snippet widthFullFlex floatLeft positionRelative lineHeightFive fontSizeTwoFive text-align-center fontColorOne text-shadow05OffWhite zindexOne">Apartment Guide</h3>
+                  </span>
+
+               </span>
+
+               <span class="showOnHover positionAbsolute positionCenter spacedMid backgroundColorOne overflowhidden border-radius1 box-shadowFiveStraight floatLeft">
+
+
+                  <span class="centerdiv positionAbsolute positionCenter lineHeightTen fontSizeFive text-align-left fontColorWhite text-shadow05One zindexOne">
+
+                     <span class="lineHeightFive fontSizeFive backgroundColorTwo">
+                        <span class="positionRelative zindexOne">
+                        Learn More</span>
+
+                     </span>
+
+                  </span>
+
+               </span>
+
+               <!-- preview service -->
+
+               <span
+                  ng:class="{'active' : previewtaskcontrol}"
+                  class="
+                  easing
+                  pop
+                  popup
+                  positionFixed
+                  positionCenter
+                  heightFullFlex
+                  widthFullFlex
+                  overflowhidden floatLeft zindexFive">
+                  
+                  <span class="
+                     opacity05
+                     backgroundColorFour
+                     overflowhidden
+                     positionAbsolute positionBottom widthFullFlex heightFullFlex">
+                  </span>
+                  <span class="
+                     opacity025
+                     ColorTwoToClearGradient
+                     overflowhidden
+                     positionAbsolute positionBottom widthFullFlex heightFullFlex">
+                  </span>
+
+                  <!-- video component 1 -->
+                  <ul class="positionAbsolute positionCenter widthThreeQuarterFlex heightThreeQuarterFlex floatLeft easing">
+
+                     <span class="showOnHoverSwitch
+                        widthFullFlex heightFullFlex
+                        positionRelative floatLeft easing">
+                        <span class="
+                           spacedSmall border-radius1
+                           backgroundColorOne
+                           positionRelative floatLeft easing">
+                              <!-- hideOnHover // background -->
+                              <span class="positionAbsolute positionCenter
+                                 bordered-Two  overflowhidden
+                                 backgroundColorOne widthFullFlex heightFullFlex">
+
+                                 <span class="widthNineFlex heightTen positionRelative marginauto floatLeft text-align-left">
+
+                                    <span class="widthFullFlex heightFullFlex bordered-bottomTwo positionRelative marginauto floatLeft">
+
+                                    <h3 class="floatLeft widthFullFlex positionRelative lineHeightTen fontSizeTwoFive text-align-left fontColorThree  zindexOne">
+                                       <p class="font-family-snippet">
+                                          <span class="positionRelative floatLeft marginTwoFiveLeft">
+                                             <b class="floatLeft zindexFive positionRelative">What's this all about?</b>
+                                          </span>
+                                       </p>
+                                    </h3>
+                                       
+
+                                    </span>
+
+                                 </span>
+
+                                 <span class="widthTenFlex heightTen
+                                 backgroundColorOne positionRelative marginauto floatLeft text-align-left">
+
+                                    <span class="widthFullFlex heightFullFlex bordered-bottomTwo positionRelative marginauto floatLeft">
+
+                                       <span class="spacedBorderLeft bordered-leftTwo positionRelative marginauto floatLeft">
+                                       
+                                       <!-- close -->
+                                       <span class="animated enterUpObject delay025 zindexOne positionAbsolute positionCenter widthFive heightFive"
+                                          ng:click="
+                                          popup = false;">
+                                          <img src="./svg/white/close.svg" class="floatLeft positionAbsolute positionCenter widthHalfFlex heightHalfFlex">
+                                       </span>
+
+                                       </span>
+
+                                    </span>
+
+                                 </span>
+
+                                 <span class="widthFullFlex positionRelative marginauto floatLeft text-align-center">
+
+                                    <span class="widthFullFlex bordered-topTwo positionRelative marginauto floatLeft">
+                                       
+                                       <span class="spacedSmall positionRelative marginauto floatLeft lineHeightFour fontSizeTwoFive fontColorThree  font-family-snippet">
+                                          <p class="font-family-snippet fontColorThree ">
+                                             
+                                             <hr> 
+                                             <hr> 
+
+                                             Welcome to BIGSOUND Buzz!
+
+                                             <hr>
+
+                                             We’re using real-time data powered by<br>
+                                             social media to reveal the most hyped<br>
+                                             artists of BIGSOUND 2016.
+
+                                             <hr>
+
+                                             Check back to see how attention shifts<br>
+                                             throughout the week.
+
+                                             <hr>
+
+                                             We will post regular updates on our<br>
+                                             <span class="bordered-bottomTwo">Instagram</span>, <span class="bordered-bottomTwo">Facebook</span> & <span class="bordered-bottomTwo">Twitter</span>.
+
+
+                                          </p>
+                                       </span>
+
+                                    </span>
+
+                                 </span>
+
+
+                              </span>
+                        </span>
+                     </span>
+                  </ul>
+               </span>
+
+            </span>
+         </span>
+
+      </span>
+
+   </span>
+
+</span>

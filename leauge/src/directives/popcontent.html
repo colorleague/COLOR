@@ -1,0 +1,5 @@
+<span ng-class="{'active' : popclear}" class="pop popclear positionFixed positionCenter backgroundGridColorOne widthFull heightFull easing">
+      <span ng-repeat="page in pages | limitTo:1:pagination.count">
+         <ng-include src="page.directive"></ng-include>
+      </span>
+   </span>

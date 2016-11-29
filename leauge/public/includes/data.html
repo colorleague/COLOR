@@ -1,0 +1,25 @@
+<!-- list -->
+<span class="positionAbsolute positionCenter backgroundGridColorWhite widthFull heightFull easing text-align-center zindexFive">
+
+	<span ng-repeat="data in data">
+		<p ng-click="preview = !preview">{{data.title}}</p><br>
+
+		<!-- preview -->
+		<span ng:show="preview" class="positionFixed positionCenter backgroundGridColorWhite widthFull heightFull overflowy easing text-align-center zindexOne">
+
+			<!-- content row -->
+			<span class="positionRelative backgroundGridColorWhite widthFull heightFull easing text-align-center zindexOne">
+				<p class="fontSizeTen lineHeightTen" ng-click="preview = !preview">{{data.title}}</p><br>
+				<img src="./person/1.png" class="widthFullFlex heightFullFlex">
+			</span>
+
+			<!-- content row -->
+			<span class="positionRelative backgroundGridColorWhite widthFull heightFull easing text-align-center zindexOne">
+				<p class="fontSizeTen lineHeightTen" ng-click="preview = !preview">{{data.title}}</p><br>
+				<img src="./person/1.png" class="widthFullFlex heightFullFlex">
+			</span>
+
+		</span>
+
+	</span>
+</span>
