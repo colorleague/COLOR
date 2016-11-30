@@ -1,4 +1,4 @@
-<ul ng:init="fixedbackgroundone = true; listholdergrid = true;" class="positionRelative floatLeft widthFull heightFull easing text-align-center zindexFive overflowy">
+<ul ng:init="fixedbackgroundone = true; listholderlist = true;" class="positionRelative floatLeft widthFull heightFull easing text-align-center zindexFive overflowy">
    
    <!-- fixed background -->
    <span ng:show="fixedbackgroundone" class="
@@ -51,60 +51,63 @@
 
             <span class="widthFullFlex positionRelative marginauto floatLeft text-align-left">
 
-                  <imacone class="positionAbsolute positionBottomLeft
-                  overflowhidden widthHalfFlex heightHalfFlex"></imacone>
+                  <span class="spacedSmall positionRelative floatLeft easing">
 
-                  <span class="spacedLarge positionRelative floatLeft easing">
+                     <h3 class="floatLeft centerdiv widthFullFlex positionRelative lineHeightTwentyFive fontSizeTwentyFive text-align-left zindexOne">
 
-                     <span class="widthFullFlex heightFifth positionRelative marginauto floatLeft text-align-left">
+                                    <p>
 
-                     </span>
+                                       <!-- layer -->
+                                       <span class="
+                                          zindexFive positionRelative heightFifth widthFullFlex floatLeft">
+                                       </span>
+                                       
+                                       <span class="positionRelative floatLeft">             
+                                          <b ng-repeat="cats in meta | filter:cats.category = filters.category" class="floatLeft fontColorThree text-shadow1Two zindexFive positionRelative">All Videos</b>
 
-                     <h3 class="floatLeft centerdiv widthFullFlex positionRelative lineHeightTwenty fontSizeTwenty text-align-left fontColorTwo zindexOne">
+                                          <span class="positionAbsolute positionOverFiveTopRightOutro fontColorOffWhite fontSizeTwoFive lineHeightTwoFive floatLeft">
+                                          <b class="opacity05">Our Availability</b> & <span class="font-family-snippet opacity075"> Talent Breakdowns of</span> </span>
 
-                        <p>
-                           
-                           <span class="positionRelative floatLeft text-shadow01Dark">
+                                          
 
-                              <b class="floatLeft fontColorThree text-shadow1Two zindexFive positionRelative">All <span class="">Videos</span> 
-
-                              <span class="marginTwoFiveLeft floatRight
-                                 positionRelative zindexOne widthTenvh heightQuarter"><img src="./svg/arrow-down.svg" class="positionCenter positionAbsolute widthHalfFlex heightHalfFlex">
-                                 <img src="./svg/one/close.svg" class="positionCenter positionAbsolute widthHalfFlex heightHalfFlex"></span>
-
-                                 </b>
-
-                              <span class="positionAbsolute positionOverFiveTopRightOutro fontColorWhite fontSizeTwoFive lineHeightTwoFive floatLeft">
-                              <b class="fontColorOffWhite">Our Recorded</b>
-
-                              <span class="floatLeft zindexOne positionRelative widthTwoFive heightTwoFive marginSevenFiveRight">
-                                 <img src="./svg/close.svg" class="widthFullFlex heightFullFlex">
-                              </span>
-                              History &
-                               <span class="font-family-snippet"> Talent</span> </span>
-
-                              <span class="positionAbsolute positionOverTenBottomLeftOutro fontColorWhite fontSizeTwoFive lineHeightFour floatLeft">
-
-                                 <span ng:click="brandtab1 = !brandtab1" class="marginTwoFiveLeft floatRight 
-                                 positionBeforeIcon
-                                 positionAbsolute zindexOne widthTwoFivevh heightTwoFive"><img ng:show="!brandtab1" src="./svg/arrow-down.svg" class="positionCenter positionAbsolute widthHalfFlex heightHalfFlex">
-                                 <img ng:show="brandtab1" src="./svg/one/close.svg" class="positionCenter positionAbsolute widthHalfFlex heightHalfFlex"></span>
-
-                                 <span class="">
-
-                                 Available for
-                                 <b class="fontColorTwo backgroundGridColorWhite paddingTwoFive border-radius1 ">Full-Time & Contract </b>
-
-                                 </span></span>
-
-                           </span>
-                        </p>
-
+                                       </span>
+                                    </p>
                      </h3>
 
                   </span>
 
+         </span>
+
+         <ul class="positionRelative widthStatic marginauto text-align-center">
+
+            <span ng-repeat="cats in meta | filter:cats.category = filters.category | limitTo:1:0 " class="text-align-center zindexTen positionRelative heightFullFlex floatLeft easing">
+
+               <span class="fontColorFour fontSizeFour floatLeft lineHeightFour ">
+                  <span class="textOnHoverSwitch paddingTwoFive positionRelative border-radius1 centerdiv fontSizeTwoFive fontColorFour fontColorFiveOnHover lineHeightTwoFive easing">
+                  including:
+                  <span class="floatRight animated enterUpObject delay025 zindexOne positionRelative widthTwoFive heightTwoFive marginSevenFiveRight"><img src="./svg/arrow-right.svg" class="widthFullFlex heightFullFlex"></span>
+                  </span>
+               </span>
+               
+
+               <span ng-repeat="subs in cats.subcategories" class="centerdiv text-align-center zindexTen positionRelative heightFullFlex marginTwoFiveBottomRight floatLeft easing">
+                  <span ng:click="filters.category = cats.category;
+                        filters.subcategory = subs.name;
+                        filters.tag = '';"
+
+                        ng:class="{
+                     'backgroundColorTwo box-shadowSixStraight border-radius' : filters.subcategory == subs.name
+                     }"
+
+                      class="centerdiv textOnHoverSwitch paddingTwoFive positionRelative border-radius1 backgroundColorWhite backgroundColorTwoOnHover centerdiv fontSizeTwoFive fontColorOne fontColorFiveOnHover lineHeightTwoFive easing">
+                  {{subs.name}}
+                  <span class="floatLeft animated enterUpObject delay025 zindexOne positionRelative widthTwoFive heightTwoFive marginSevenFiveRight"><img src="./svg/close.svg" class="widthFullFlex heightFullFlex"></span>
+                  </span>
+               </span>
+
             </span>
+
+         </ul>
 
 
             <h4 class="positionAbsolute
@@ -125,7 +128,7 @@
 
       </span>
 
-      <ul class="zindexOne positionAbsolute positionOverBottomLeft widthQuarterFlex floatLeft easing zindexFive">
+   <ul class="zindexOne positionAbsolute positionOverBottomLeft widthQuarterFlex floatLeft easing">
       <li ng:click="learnmore = !learnmore" class="centerdiv text-align-center positionRelative heightFullFlex marginTwoFive paddingTwoFive easing">
          <span class="textOnHoverSwitch paddingTwoFive positionRelative bordered-Six box-shadowSix box-shadowSixLeaveOnHover backgroundColorFive centerdiv fontSizeTwoFive fontColorWhite fontColorOneOnHover lineHeightFive easing">
          Hire Us
@@ -143,7 +146,7 @@
       'widthFullFlex' : !componentMenu,
       'widthThreeQuarterFlex' : componentMenu
       }"
-      class="positionRelative heightThreeQuarterFlex floatRight zindexOne">
+      class="positionRelative heightThreeQuarterFlex floatRight">
       
 
       <hr class="horline marginauto positionAbsolute positionBottomLeft animated growhor ColorOneLeftClearGradient">

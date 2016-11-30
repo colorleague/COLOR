@@ -306,11 +306,15 @@ $scope.trustSrc = function(src) {
 		$scope.startAnimationLeftPreview = false,
 		$scope.startAnimationRightPreview = false,
 		$scope.popclear = false,
-		$scope.aboutpage = false
+		$scope.aboutpage = false,
+		$scope.homepage = true,
+		$scope.learnmore = false,
+		$scope.learnmore = false
 	}
 
 	$scope.homestart = function() {
-		$scope.homepage = true
+		$scope.homepage = true,
+		$scope.aboutpage = true
 	};
 
 	$scope.resetsubstart = function() {

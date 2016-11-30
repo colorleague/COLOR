@@ -1,5 +1,5 @@
 <!-- menu -->
-   <span ng:mouseleave="menuOne = false;" ng:class="{'active' : menuOne}" class="pop popleft positionFixed positionRight widthFull heightFull box-shadowFiveStraight zindexOne easing">
+   <span ng:class="{'active' : menuOne}" class="pop popleft positionFixed positionRight widthFull heightFull box-shadowFiveStraight zindexOne easing">
    <!-- washout background -->
    <span class="positionAbsolute positionCenter opacity075
       backgroundColorWhite widthFullFlex heightFullFlex">
@@ -98,35 +98,7 @@
                   <span
                   class="positionRelative widthFullFlex heightFullFlex backgroundColorWhite floatLeft easing zindexOne">
 
-                        <!-- categories -->
-                        <li class="positionRelative zindexOne floatLeft widthFullFlex" ng:click="resetstart(); paginationToggle(19); startAnimationUnder = true; homepage =  false; startAnimationUnder = true; aboutpage = true;" ng:mouseenter="ourTeamMenuPreview = true; ourServicesMenuPreview = false; ourTimelineMenuPreview = false; ourOfficeMenuPreview = false; ourBrandsMenuPreview = false; ourProcessMenuPreview = false;">
-                           <span class="text-align-left backgroundColorFour spacedBorderLeft bordered-leftWhiteOnHover floatLeft fontSizeTwoFive fontColorFour lineHeightTen easing">
-                              
-                              <span class="floatLeft positionAbsolute positionTopRight widthTenvh heightTen">
-                                 <img src="./svg/pageend.svg" class="positionAbsolute positionTopRight widthThreeQuarterFlex">
-                              </span>
-
-                              <!-- menu title -->
-                              <span class="marginTwoFiveLeft fontColorWhite text-shadow025Dark positionRelative zindexOne">ALL</span>
-
-                              <!-- menu arrow/close -->
-                              <span class="marginTwoFiveLeft floatLeft zindexOne positionRelative widthTwoFive heightTen"><img src="./svg/arrow-left.svg" class="positionAbsolute positionCenter widthHalfFlex heightHalfFlex">
-                              </span>
-
-                              <!-- washout background -->
-                              <span class="positionAbsolute positionCenter
-                                 ColorOneRightClearGradient widthFullFlex heightFullFlex">
-                              </span>
-
-                              <!-- washout background -->
-                              <span class="positionAbsolute positionCenter
-                                 backgroundColorWhite opacity01 widthFullFlex heightFullFlex">
-                              </span>
-
-                           </span>
-                        </li>
-
-                        <li class="positionRelative zindexOne floatLeft widthFullFlex" ng:click="resetstart(); paginationToggle(20); startAnimationUnder = true; homepage =  false; startAnimationUnder = true; aboutpage = true;" ng:mouseenter="ourTeamMenuPreview = true; ourServicesMenuPreview = false; ourTimelineMenuPreview = false; ourOfficeMenuPreview = false; ourBrandsMenuPreview = false; ourProcessMenuPreview = false;">
+                        <li class="positionRelative zindexOne floatLeft widthFullFlex" ng:click="resetstart(); paginationToggle(20); startAnimationUnder = true; homepage =  false; startAnimationUnder = true; aboutpage = true; menuOne = false;" ng:mouseenter="ourTeamMenuPreview = true; ourServicesMenuPreview = false; ourTimelineMenuPreview = false; ourOfficeMenuPreview = false; ourBrandsMenuPreview = false; ourProcessMenuPreview = false;">
                            <span class="text-align-left backgroundColorFour spacedBorderLeft bordered-leftWhiteOnHover floatLeft fontSizeTwoFive fontColorFour lineHeightTen easing">
                               
                               <!-- menu title -->
@@ -596,7 +568,7 @@
                                        'backgroundColorOffWhite box-shadowSixStraight border-radius' : filters.tag == tag.name
 
                                        }" class="positionRelative spacedSmall floatLeft">
-                                          <p ng:click="filters.category = '';
+                                          <p ng:click="filters.category = cats.category;
                                           filters.subcategory = subs.name;
                                           filters.tag = '';" class="fontSizeTwo fontColorOne lineHeightThree floatLeft">{{subs.name}}
                                           </p>
@@ -1320,203 +1292,365 @@
          </li>
       </ul>
    </ul>
-   <ul ng:mouseenter="menuOne = false;" class="positionRelative floatRight widthThreeQuarter heightFull backgroundGridColorThree zindexOne overflowy easing floatLeft">
+   <ul class="positionRelative floatRight widthThreeQuarter heightFull backgroundGridColorThree zindexOne overflowy easing floatLeft">
 
       <span class="positionAbsolute positionCenter opacity075
          ColorOneToClearGradient widthFullFlex heightFullFlex">
       </span>
 
-      <markdark class="opacity025 positionAbsolute positionCenter widthQuarter heightQuarter overflowy easing floatLeft"></markdark>
+      <markone class="opacity05 positionAbsolute positionCenter widthQuarter heightQuarter overflowy easing floatLeft"></markone>
 
-      <li ng:show="ourTeamMenuPreview == true" class="showOnHoverSwitch centerdiv text-align-center positionRelative spacedLarge border-radius1 overflowhidden backgroundGridColorOffWhite floatLeft easing">
+      <ul ng:hide="ourTeamMenuPreview == true" class="positionAbsolute positionBottom widthFullFlex floatLeft easing">
+                  
+         <span class="widthFullFlex positionRelative centerdiv marginauto">
 
-         <span
-            class="positionRelative widthFullFlex heightFullFlex floatLeft easing zindexOne">
-            <span
-               class="positionRelative spacedMid backgroundGridColorFour floatLeft easing zindexOne overflowhidden">
-
-               <span class="
-                  WhiteToClearGradient
-                  overflowhidden
-                  positionAbsolute positionBottom widthFullFlex heightFullFlex">
+            <h4 class="positionAbsolute
+            positionRight widthQuarterFlex heightFifteen lineHeightFifteen fontSizeFifteen text-align-left fontColorOne">
+               <span class="floatLeft positionRelative opacity025">
+               <b>.00</b>
                </span>
+            </h4>
 
-               <!-- washout background -->
-               <span class="positionAbsolute positionCenter
-                  ColorOneRightClearGradient widthFullFlex heightFullFlex">
-               </span>
+            <span class="spacedMid positionRelative floatLeft easing">
 
-               <span 
-                  class="opacity01 spacedHuge backgroundGridColorWhite border-radius1 positionAbsolute positionCenter easing">
-               </span>
-
-               <span class="floatLeft animated enterUpObject delay025 positionAbsolute positionTopRight widthTenvh heightTen">
-                  <img src="./svg/pageend.svg" class="positionAbsolute positionTopRight widthThreeQuarterFlex">
-               </span>
-
-
-               <span
-                  class="positionRelative widthFullFlex heightFullFlex floatLeft easing zindexOne">
-
-                     <span class="
-                        WhiteToClearGradient
-                        overflowhidden
-                        positionAbsolute positionBottom widthFullFlex heightFullFlex">
-                     </span>
-
-                     <span 
-                        class="opacity01 spacedHuge backgroundGridColorWhite border-radius1 positionAbsolute positionCenter easing">
-                     </span>
-
-                     <span class="floatLeft animated enterUpObject delay025 positionAbsolute positionTopRight widthTenvh heightTen">
-                        <img src="./svg/pageend.svg" class="positionAbsolute positionTopRight widthThreeQuarterFlex">
-                     </span>
-
-                     <span ng:click="menuThree = false" class="animated enterUpObject delay025 zindexOne positionAbsolute positionTopRight widthTenvh heightTen">
-                        <img src="./svg/four/close.svg" class="
-                        positionAbsolute positionCenter marginauto widthHalfFlex heightHalfFlex">
-                     </span>
-
-                     <span class="widthFullFlex heightTen positionRelative marginauto floatLeft text-align-left">
-
-                     </span>
-
-                      <span class="widthFullFlex positionRelative marginauto floatLeft text-align-left">
-
-                           <span class="spacedSmall positionRelative floatLeft easing">
-
-                              <h3 class="floatLeft centerdiv widthFullFlex positionRelative text-align-left zindexOne">
-
-                                 <p>
-
-                                    <!-- layer -->
-                                    <span class="
-                                       zindexFive positionRelative heightFive widthFullFlex floatLeft">
-                                    </span>
-                                    
-                                    <span class="positionRelative floatLeft text-shadow01Dark">
-
-                                       <b class="lineHeightFifteen fontSizeFifteen floatLeft text-shadow075Dark zindexFive positionRelative fontColorTwo">
-                                       <span class="centerdiv marginauto positionRelative">
-                                          <span class="positionRelative zindexOne">
-                                          <span class="animated enterUpObject floatLeft">B</span>
-                                          <span class="animated enterUpObject delay025 floatLeft">r</span>
-                                          <span class="animated enterUpObject delay05 floatLeft">a</span>
-                                          <span class="animated enterUpObject delay075 floatLeft">n</span>
-                                          <span class="animated enterUpObject delay025 floatLeft">d</span>
-                                          
-                                          </span>
-                                       </span>
-                                       </b>
-
-                                       <br>
-                                       
-                                       <b class="lineHeightTen fontSizeTen floatLeft text-shadow075Dark zindexFive positionRelative fontColorOne">
-                                        <span class="centerdiv marginauto positionRelative">
-                                          <span class="positionRelative zindexOne">
-
-                                          <span class="animated enterUpObject floatLeft">G</span>
-
-                                          <span class="animated enterUpObject delay025 floatLeft">u</span>
-
-                                          <span class="animated enterUpObject delay05 floatLeft">i</span>
-
-                                          <span class="animated enterUpObject delay075 floatLeft">l</span>
-
-                                          <span class="animated enterUpObject delay025 floatLeft">d</span>
-
-                                          <span class="animated enterUpObject delay05 floatLeft">l</span>
-
-                                          <span class="animated enterUpObject delay05 floatLeft">i</span>
-
-                                          <span class="animated enterUpObject delay05 floatLeft">n</span>
-
-                                          <span class="animated enterUpObject delay05 floatLeft">e</span>
-
-                                          <span class="animated enterUpObject delay05 floatLeft">s</span>
-
-                                          </span>
-                                       </span>
-
-                                       </b>
-
-                                       <span class="positionAbsolute positionOverFiveTopRightOutro fontColorTwo fontSizeTwoFive lineHeightTwoFive floatLeft">
-                                       <b class="fontColorOne">Our Standards</b> & <span class="font-family-snippet"> Unique set of</span> </span>
-
-                                    </span>
-                                 </p>
-                              </h3>
-
-                           </span>
-
-                     </span>
-            
-
-               </span>
-
-               <ul class="positionAbsolute positionBottom widthFullFlex floatLeft easing">
-               
+               <ul class="positionRelative widthFullFlex floatLeft easing">
+                              
                   <span class="widthFullFlex positionRelative centerdiv marginauto">
 
-                     <h4 class="positionAbsolute
-                     positionRight widthQuarterFlex heightFifteen lineHeightFifteen fontSizeFifteen text-align-left fontColorOne">
-                        <span class="floatLeft positionRelative opacity025">
-                        <b>.04</b>
-                        </span>
-                     </h4>
+                     <h3 class="floatLeft widthFullFlex positionRelative lineHeightFive fontSizeFive text-align-left fontColorThree zindexOne">
 
-                     <span class="spacedMid positionRelative floatLeft easing">
+                        <p>
 
-                        <ul class="positionRelative widthFullFlex floatLeft easing">
-                     
-                           <span class="widthFullFlex positionRelative centerdiv marginauto">
+                           <!-- layer -->
+                           <span class="positionRelative floatLeft">
 
-                              <span class="positionAbsolute positionBottom widthFullFlex heightFullFlex">
-                                 <hr class="vertline marginauto positionAbsolute positionBottom animated growvert backgroundGridColorWhite">
-                              </span>
-
-                              <h3 class="floatLeft widthFullFlex positionRelative lineHeightFour fontSizeThree text-align-left fontColorThree zindexOne">
-
-                                 <p>
-
-                                    <!-- layer -->
-                                    <span class="positionRelative floatLeft text-shadow01Dark">
-
-                                       <b class="opacity075 floatLeft text-shadow05Four zindexFive positionRelative">Our Approach</b>
-                                    </span>
-                                 </p>
-                              </h3>
-
+                              <b class="opacity075 floatLeft zindexFive positionRelative">Our Goal</b>
                            </span>
-
-                        </ul>
-
-                        <h3 class="floatLeft centerdiv widthFullFlex positionRelative lineHeightFive fontSizeFour text-align-left fontColorOne zindexOne">
-
-                           <p>
-                              
-                              <span class="positionRelative floatLeft text-shadow01Dark">
-
-                                 <b class="floatLeft text-shadow025Dark zindexFive positionRelative">Couldn't resist taking a quick shot at this. expanding on <span class="fontColorTwo">@Von Glitschka</span> icon he put out yesterday, fixing some of the path work.</b>
-                              </span>
-                           </p>
-                        </h3>
-                     </span>
+                        </p>
+                     </h3>
 
                   </span>
 
                </ul>
 
+               <h3 class="floatLeft centerdiv widthFullFlex positionRelative lineHeightFive fontSizeFour text-align-left fontColorOne zindexOne">
+
+                  <p>
+                     
+                     <span class="positionRelative floatLeft text-shadow01Dark">
+
+                        <b class="floatLeft text-shadow025Dark zindexFive positionRelative">Couldn't resist taking a quick shot at this. expanding on <span class="fontColorTwo">@Von Glitschka</span> icon he put out yesterday, fixing some of the path work.</b>
+                     </span>
+                  </p>
+               </h3>
+
+               <hr>
+               <hr>
+               <hr>
+               <hr>
+               <hr>
+         
+               <span 
+               class="positionRelative widthThirdFlex floatLeft easing zindexFive">
+         
+                  <ul class="positionRelative widthFullFlex floatLeft easing">
+                     
+                     <span class="widthFullFlex positionRelative marginauto">
+
+                        <h3 class="floatLeft widthFullFlex positionRelative lineHeightFour fontSizeThree text-align-left fontColorOne zindexOne">
+
+                           <p>
+
+                              <!-- layer -->
+                              <span class="positionRelative floatLeft">
+
+                                 <b class="opacity075 floatLeft text-shadow05Three zindexFive positionRelative">Our Phone</b>
+                              </span>
+                           </p>
+                        </h3>
+
+                     </span>
+
+                  </ul>
+
+                  <h3 class="floatLeft centerdiv widthFullFlex positionRelative lineHeightFive fontSizeTwo text-align-left fontColorThree zindexOne">
+
+                     <p>
+                        
+                        <span class="positionRelative floatLeft">
+
+                           <b class="floatLeft zindexFive positionRelative">(770) - 289 7482<span class=""><img src="./svg/arrow-left.svg" class="widthTwoFivevh heightTwoFive"></span></b>
+                        </span>
+                     </p>
+                  </h3>
+
+               </span>
+
+               <span 
+               class="positionRelative widthThirdFlex floatLeft easing zindexFive">
+         
+                  <ul class="positionRelative widthFullFlex floatLeft easing">
+                     
+                     <span class="widthFullFlex positionRelative marginauto">
+
+                        <h3 class="floatLeft widthFullFlex positionRelative lineHeightFour fontSizeThree text-align-left fontColorOne zindexOne">
+
+                           <p>
+
+                              <!-- layer -->
+                              <span class="positionRelative floatLeft">
+
+                                 <b class="opacity075 floatLeft text-shadow05Three zindexFive positionRelative">Our Email</b>
+                              </span>
+                           </p>
+                        </h3>
+
+                     </span>
+
+                  </ul>
+
+                  <h3 class="floatLeft centerdiv widthFullFlex positionRelative lineHeightFive fontSizeTwo text-align-left fontColorThree zindexOne">
+
+                     <p>
+                        
+                        <span class="positionRelative floatLeft">
+
+                           <b class="floatLeft zindexFive positionRelative">hi@colorleague.com<span class=""><img src="./svg/arrow-left.svg" class="widthTwoFivevh heightTwoFive"></span></b>
+                        </span>
+                     </p>
+
+                  </h3>
+
+               </span>
+
+               <span 
+               class="positionRelative widthThirdFlex floatLeft easing zindexFive">
+         
+                  <ul class="positionRelative widthFullFlex floatLeft easing">
+                     
+                     <span class="widthFullFlex positionRelative marginauto">
+
+                        <h3 class="floatLeft widthFullFlex positionRelative lineHeightFour fontSizeThree text-align-left fontColorOne zindexOne">
+
+                           <p>
+
+                              <!-- layer -->
+                              <span class="positionRelative floatLeft text-shadow01Dark">
+
+                                 <b class="opacity075 floatLeft text-shadow05Three zindexFive positionRelative">Our Office</b>
+                              </span>
+                           </p>
+                        </h3>
+
+                     </span>
+
+                  </ul>
+
+                  <h3 class="floatLeft centerdiv widthFullFlex positionRelative lineHeightFive fontSizeTwo text-align-left fontColorThree zindexOne">
+
+                     <p>
+                        
+                        <span class="positionRelative floatLeft">
+
+                           <b class="floatLeft zindexFive positionRelative">2025 peachtree road ne<span class=""><img src="./svg/arrow-left.svg" class="widthTwoFivevh heightTwoFive"></span></b>
+                        </span>
+                     </p>
+                  </h3>
+
+               </span>
+
             </span>
 
+         </span>
 
-            <span class="animated enterUp positionBottom positionAbsolute widthThirdFlex heightFullFlex zindexOne">
-               <manatdesk class="animated enterUpBounce delay05 positionAbsolute positionBottom widthFullFlex "></manatdesk>
+      </ul>
+
+      <li ng:show="ourTeamMenuPreview == true" class="showOnHoverSwitch centerdiv text-align-center positionRelative spacedLarge overflowhidden floatLeft easing">
+
+         <span
+            class="positionRelative widthFullFlex heightFullFlex floatLeft easing zindexOne">
+
+            
+            <span
+            class="positionRelative widthFullFlex heightHalfFlex floatLeft easing zindexOne">
+
+               <span
+                  class="positionRelative spacedMid floatLeft easing zindexOne overflowhidden">
+
+                  <span
+                     class="positionRelative widthFullFlex heightFullFlex floatLeft easing zindexOne">
+
+                        <span ng:click="menuThree = false" class="animated enterUpObject delay025 zindexOne positionAbsolute positionTopRight widthTenvh heightTen">
+                           <img src="./svg/four/close.svg" class="
+                           positionAbsolute positionCenter marginauto widthHalfFlex heightHalfFlex">
+                        </span>
+
+                         <span class="widthFullFlex centerdiv positionRelative marginauto floatLeft text-align-left">
+
+                              <span class="spacedSmall positionRelative floatLeft easing">
+
+                                 <h3 class="floatLeft centerdiv widthFullFlex positionRelative text-align-left zindexOne">
+
+                                    <p>
+                                       
+                                       <span class="positionRelative floatLeft">
+
+                                          <b class="lineHeightFifteen fontSizeFifteen floatLeft text-shadow1Three zindexFive positionRelative fontColorTwo">
+                                          <span class="centerdiv marginauto positionRelative">
+                                             <span class="positionRelative zindexOne">
+                                             <span class="animated enterUpObject floatLeft">O</span>
+                                             <span class="animated enterUpObject delay025 floatLeft">u</span>
+                                             <span class="animated enterUpObject delay05 floatLeft">r</span>
+                                             <span class="marginTwoFiveLeft animated enterUpObject delay075 floatLeft">T</span>
+                                             <span class="animated enterUpObject delay025 floatLeft">e</span>
+                                             <span class="animated enterUpObject delay075 floatLeft">a</span>
+                                             <span class="animated enterUpObject delay025 floatLeft">m</span>
+                                             
+                                             </span>
+                                          </span>
+                                          </b>
+
+                                          <br>
+                                          
+                                          <b class="lineHeightEight fontSizeEight floatLeft text-shadow05Three zindexFive positionRelative fontColorOne">
+                                           <span class="centerdiv marginauto positionRelative">
+                                             <span class="positionRelative zindexOne">
+
+                                             <span class="animated enterUpObject floatLeft">&</span>
+
+                                             <span class="marginTwoFiveLeft animated enterUpObject delay025 floatLeft">C</span>
+
+                                             <span class="animated enterUpObject delay05 floatLeft">u</span>
+
+                                             <span class="animated enterUpObject delay05 floatLeft">r</span>
+
+                                             <span class="animated enterUpObject delay05 floatLeft">r</span>
+
+                                             <span class="animated enterUpObject delay05 floatLeft">e</span>
+
+                                             <span class="animated enterUpObject delay05 floatLeft">n</span>
+
+                                             <span class="animated enterUpObject delay05 floatLeft">t</span>
+
+                                             <span class="marginTwoFiveLeft animated enterUpObject delay025 floatLeft">R</span>
+
+                                             <span class="animated enterUpObject delay05 floatLeft">o</span>
+
+                                             <span class="animated enterUpObject delay075 floatLeft">s</span>
+
+                                             <span class="animated enterUpObject delay025 floatLeft">t</span>
+
+                                             <span class="animated enterUpObject delay05 floatLeft">e</span>
+
+                                             <span class="animated enterUpObject delay05 floatLeft">r</span>
+
+                                             <span class="marginTwoFiveLeft animated enterUpObject delay025 floatLeft">O</span>
+
+                                             <span class="animated enterUpObject delay05 floatLeft">f</span>
+
+                                             </span>
+                                          </span>
+
+                                          </b>
+
+                                       </span>
+                                    </p>
+                                 </h3>
+
+                              </span>
+
+                        </span>
+               
+
+                  </span>
+
+               </span>
+
+
+               
+
+               <span class="positionAbsolute positionBottom widthFullFlex heightTenFlex zindexOne">
+                  <hr class="vertline marginauto positionAbsolute positionBottom animated growvert backgroundColorWhite">
+               </span>
+
             </span>
 
-            <span class="positionAbsolute positionBottom widthFullFlex heightTenFlex zindexOne">
-               <hr class="vertline marginauto positionAbsolute positionBottom animated growvert backgroundColorWhite">
+            <span
+            class="positionRelative widthFullFlex floatLeft easing zindexOne">
+
+               <span
+                  class="positionRelative spacedMid floatLeft easing zindexOne overflowhidden">
+
+                  <span class="floatLeft animated enterUpObject delay025 positionAbsolute positionTopRight widthTenvh heightTen">
+                     <img src="./svg/pageend.svg" class="positionAbsolute positionTopRight widthThreeQuarterFlex">
+                  </span>
+
+                  <span
+                     class="positionRelative widthFullFlex floatLeft easing zindexOne">
+
+                        <ul class="positionRelative widthFullFlex floatLeft easing">
+                  
+                           <span class="widthFullFlex positionRelative centerdiv marginauto">
+
+                              <h4 class="positionAbsolute
+                              positionRight widthQuarterFlex heightFifteen lineHeightFifteen fontSizeFifteen text-align-left fontColorOne">
+                                 <span class="floatLeft positionRelative opacity025">
+                                 <b>.04</b>
+                                 </span>
+                              </h4>
+
+                              <span class="spacedMid positionRelative floatLeft easing">
+
+                                 <ul class="positionRelative widthFullFlex floatLeft easing">
+                              
+                                    <span class="widthFullFlex positionRelative centerdiv marginauto">
+
+                                       <h3 class="floatLeft widthFullFlex positionRelative lineHeightFive fontSizeFive text-align-left fontColorThree zindexOne">
+
+                                          <p>
+
+                                             <!-- layer -->
+                                             <span class="positionRelative floatLeft">
+
+                                                <b class="opacity075 floatLeft zindexFive positionRelative">Available Creative</b>
+                                             </span>
+                                          </p>
+                                       </h3> 
+
+                                    </span>
+
+                                 </ul>
+
+                                 <h3 class="floatLeft centerdiv widthFullFlex positionRelative lineHeightFive fontSizeFour text-align-left fontColorOne zindexOne">
+
+                                    <p>
+                                       
+                                       <span class="positionRelative floatLeft text-shadow01Dark">
+
+                                          <b class="floatLeft text-shadow025Dark zindexFive positionRelative">Couldn't resist taking a quick shot at this. expanding on <span class="fontColorTwo">@Von Glitschka</span> icon he put out yesterday, fixing some of the path work.</b>
+                                       </span>
+                                    </p>
+                                 </h3>
+                              </span>
+
+                           </span>
+
+                        </ul>
+               
+
+                  </span>
+
+                  
+
+               </span>
+
             </span>
+
+         </span>
+
+         <span class="animated enterUp positionBottom positionAbsolute widthHalfFlex heightHalfFlex opacity025">
+            <manatdesk class="animated enterUpBounce delay05 positionAbsolute positionBottom widthFullFlex "></manatdesk>
+         </span>
 
       </li>
 
@@ -1579,65 +1713,65 @@
 
                               <h3 class="floatLeft centerdiv widthFullFlex positionRelative text-align-left zindexOne">
 
-                                 <p>
+                                    <p>
 
-                                    <!-- layer -->
-                                    <span class="
-                                       zindexFive positionRelative heightFive widthFullFlex floatLeft">
-                                    </span>
-                                    
-                                    <span class="positionRelative floatLeft text-shadow01Dark">
-
-                                       <b class="lineHeightFifteen fontSizeFifteen floatLeft text-shadow075Dark zindexFive positionRelative fontColorTwo">
-                                       <span class="centerdiv marginauto positionRelative">
-                                          <span class="positionRelative zindexOne">
-                                          <span class="animated enterUpObject floatLeft">B</span>
-                                          <span class="animated enterUpObject delay025 floatLeft">r</span>
-                                          <span class="animated enterUpObject delay05 floatLeft">a</span>
-                                          <span class="animated enterUpObject delay075 floatLeft">n</span>
-                                          <span class="animated enterUpObject delay025 floatLeft">d</span>
-                                          
-                                          </span>
+                                       <!-- layer -->
+                                       <span class="
+                                          zindexFive positionRelative heightFive widthFullFlex floatLeft">
                                        </span>
-                                       </b>
-
-                                       <br>
                                        
-                                       <b class="lineHeightTen fontSizeTen floatLeft text-shadow075Dark zindexFive positionRelative fontColorOne">
-                                        <span class="centerdiv marginauto positionRelative">
-                                          <span class="positionRelative zindexOne">
+                                       <span class="positionRelative floatLeft text-shadow01Dark">
 
-                                          <span class="animated enterUpObject floatLeft">G</span>
-
-                                          <span class="animated enterUpObject delay025 floatLeft">u</span>
-
-                                          <span class="animated enterUpObject delay05 floatLeft">i</span>
-
-                                          <span class="animated enterUpObject delay075 floatLeft">l</span>
-
-                                          <span class="animated enterUpObject delay025 floatLeft">d</span>
-
-                                          <span class="animated enterUpObject delay05 floatLeft">l</span>
-
-                                          <span class="animated enterUpObject delay05 floatLeft">i</span>
-
-                                          <span class="animated enterUpObject delay05 floatLeft">n</span>
-
-                                          <span class="animated enterUpObject delay05 floatLeft">e</span>
-
-                                          <span class="animated enterUpObject delay05 floatLeft">s</span>
-
+                                          <b class="lineHeightSeven fontSizeSeven floatLeft text-shadow075Dark zindexFive positionRelative fontColorTwo">
+                                          <span class="centerdiv marginauto positionRelative">
+                                             <span class="positionRelative zindexOne">
+                                             <span class="animated enterUpObject floatLeft">B</span>
+                                             <span class="animated enterUpObject delay025 floatLeft">r</span>
+                                             <span class="animated enterUpObject delay05 floatLeft">a</span>
+                                             <span class="animated enterUpObject delay075 floatLeft">n</span>
+                                             <span class="animated enterUpObject delay025 floatLeft">d</span>
+                                             
+                                             </span>
                                           </span>
+                                          </b>
+
+                                          <br>
+                                          
+                                          <b class="lineHeightSeven fontSizeSeven floatLeft text-shadow075Dark zindexFive positionRelative fontColorOne">
+                                           <span class="centerdiv marginauto positionRelative">
+                                             <span class="positionRelative zindexOne">
+
+                                             <span class="animated enterUpObject floatLeft">G</span>
+
+                                             <span class="animated enterUpObject delay025 floatLeft">u</span>
+
+                                             <span class="animated enterUpObject delay05 floatLeft">i</span>
+
+                                             <span class="animated enterUpObject delay075 floatLeft">l</span>
+
+                                             <span class="animated enterUpObject delay025 floatLeft">d</span>
+
+                                             <span class="animated enterUpObject delay05 floatLeft">l</span>
+
+                                             <span class="animated enterUpObject delay05 floatLeft">i</span>
+
+                                             <span class="animated enterUpObject delay05 floatLeft">n</span>
+
+                                             <span class="animated enterUpObject delay05 floatLeft">e</span>
+
+                                             <span class="animated enterUpObject delay05 floatLeft">s</span>
+
+                                             </span>
+                                          </span>
+
+                                          </b>
+
+                                          <span class="positionAbsolute positionOverFiveTopRightOutro fontColorTwo fontSizeTwoFive lineHeightTwoFive floatLeft">
+                                          <b class="fontColorOne">Our Standards</b> & <span class="font-family-snippet"> Unique set of</span> </span>
+
                                        </span>
-
-                                       </b>
-
-                                       <span class="positionAbsolute positionOverFiveTopRightOutro fontColorTwo fontSizeTwoFive lineHeightTwoFive floatLeft">
-                                       <b class="fontColorOne">Our Standards</b> & <span class="font-family-snippet"> Unique set of</span> </span>
-
-                                    </span>
-                                 </p>
-                              </h3>
+                                    </p>
+                                 </h3>
 
                            </span>
 
@@ -1646,58 +1780,7 @@
 
                </span>
 
-               <ul class="positionAbsolute positionBottom widthFullFlex floatLeft easing">
                
-                  <span class="widthFullFlex positionRelative centerdiv marginauto">
-
-                     <h4 class="positionAbsolute
-                     positionRight widthQuarterFlex heightFifteen lineHeightFifteen fontSizeFifteen text-align-left fontColorOne">
-                        <span class="floatLeft positionRelative opacity025">
-                        <b>.04</b>
-                        </span>
-                     </h4>
-
-                     <span class="spacedMid positionRelative floatLeft easing">
-
-                        <ul class="positionRelative widthFullFlex floatLeft easing">
-                     
-                           <span class="widthFullFlex positionRelative centerdiv marginauto">
-
-                              <span class="positionAbsolute positionBottom widthFullFlex heightFullFlex">
-                                 <hr class="vertline marginauto positionAbsolute positionBottom animated growvert backgroundGridColorWhite">
-                              </span>
-
-                              <h3 class="floatLeft widthFullFlex positionRelative lineHeightFour fontSizeThree text-align-left fontColorThree zindexOne">
-
-                                 <p>
-
-                                    <!-- layer -->
-                                    <span class="positionRelative floatLeft text-shadow01Dark">
-
-                                       <b class="opacity075 floatLeft text-shadow05Four zindexFive positionRelative">Our Approach</b>
-                                    </span>
-                                 </p>
-                              </h3>
-
-                           </span>
-
-                        </ul>
-
-                        <h3 class="floatLeft centerdiv widthFullFlex positionRelative lineHeightFive fontSizeFour text-align-left fontColorOne zindexOne">
-
-                           <p>
-                              
-                              <span class="positionRelative floatLeft text-shadow01Dark">
-
-                                 <b class="floatLeft text-shadow025Dark zindexFive positionRelative">Couldn't resist taking a quick shot at this. expanding on <span class="fontColorTwo">@Von Glitschka</span> icon he put out yesterday, fixing some of the path work.</b>
-                              </span>
-                           </p>
-                        </h3>
-                     </span>
-
-                  </span>
-
-               </ul>
 
             </span>
 
@@ -1838,58 +1921,7 @@
 
                </span>
 
-               <ul class="positionAbsolute positionBottom widthFullFlex floatLeft easing">
                
-                  <span class="widthFullFlex positionRelative centerdiv marginauto">
-
-                     <h4 class="positionAbsolute
-                     positionRight widthQuarterFlex heightFifteen lineHeightFifteen fontSizeFifteen text-align-left fontColorOne">
-                        <span class="floatLeft positionRelative opacity025">
-                        <b>.04</b>
-                        </span>
-                     </h4>
-
-                     <span class="spacedMid positionRelative floatLeft easing">
-
-                        <ul class="positionRelative widthFullFlex floatLeft easing">
-                     
-                           <span class="widthFullFlex positionRelative centerdiv marginauto">
-
-                              <span class="positionAbsolute positionBottom widthFullFlex heightFullFlex">
-                                 <hr class="vertline marginauto positionAbsolute positionBottom animated growvert backgroundGridColorWhite">
-                              </span>
-
-                              <h3 class="floatLeft widthFullFlex positionRelative lineHeightFour fontSizeThree text-align-left fontColorThree zindexOne">
-
-                                 <p>
-
-                                    <!-- layer -->
-                                    <span class="positionRelative floatLeft text-shadow01Dark">
-
-                                       <b class="opacity075 floatLeft text-shadow05Four zindexFive positionRelative">Our Approach</b>
-                                    </span>
-                                 </p>
-                              </h3>
-
-                           </span>
-
-                        </ul>
-
-                        <h3 class="floatLeft centerdiv widthFullFlex positionRelative lineHeightFive fontSizeFour text-align-left fontColorOne zindexOne">
-
-                           <p>
-                              
-                              <span class="positionRelative floatLeft text-shadow01Dark">
-
-                                 <b class="floatLeft text-shadow025Dark zindexFive positionRelative">Couldn't resist taking a quick shot at this. expanding on <span class="fontColorTwo">@Von Glitschka</span> icon he put out yesterday, fixing some of the path work.</b>
-                              </span>
-                           </p>
-                        </h3>
-                     </span>
-
-                  </span>
-
-               </ul>
 
             </span>
 
