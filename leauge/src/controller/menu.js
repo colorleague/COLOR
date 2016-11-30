@@ -47,7 +47,6 @@ $scope.trustSrc = function(src) {
 
     // 1 key
     if ($scope.lastKey === 49) {
-        $scope.startAnimation =  true;
         $scope.positionLight1lighton = true;
         $scope.positionLight1lightoff = false;
         $scope.playAudio();
@@ -55,7 +54,6 @@ $scope.trustSrc = function(src) {
 
     // 2 key
     if ($scope.lastKey === 50) {
-        $scope.startAnimation =  true;
         $scope.positionLight2lighton = true;
         $scope.positionLight2lightoff = false;
         $scope.playAudio();
@@ -63,7 +61,6 @@ $scope.trustSrc = function(src) {
 
     // 3 key
     if ($scope.lastKey === 51) {
-        $scope.startAnimation =  true;
         $scope.positionLight3lighton = true;
         $scope.positionLight3lightoff = false;
         $scope.playAudio();
@@ -71,7 +68,6 @@ $scope.trustSrc = function(src) {
 
     // 4 key
     if ($scope.lastKey === 52) {
-        $scope.startAnimation =  true;
         $scope.positionLight4lighton = true;
         $scope.positionLight4lightoff = false;
         $scope.playAudio();
@@ -311,6 +307,14 @@ $scope.trustSrc = function(src) {
 		$scope.learnmore = false,
 		$scope.learnmore = false
 	}
+
+	$scope.menuOneClose = function() {
+		$scope.menuOne = false;
+	}
+
+	$scope.homeClose = function() {
+		$scope.homepage = false;
+	};
 
 	$scope.homestart = function() {
 		$scope.homepage = true,

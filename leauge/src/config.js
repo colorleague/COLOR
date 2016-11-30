@@ -922,6 +922,34 @@ app.directive("brandonestack", function(){
   }
 });
 
+app.directive("brandninefull", function(){
+  return {
+    restrict: 'E',
+    template: require('svg/brandninefull.html')
+  }
+});
+
+app.directive("brandninestack", function(){
+  return {
+    restrict: 'E',
+    template: require('svg/brandninestack.html')
+  }
+});
+
+app.directive("brandninestackanimation", function(){
+  return {
+    restrict: 'E',
+    template: require('svg/brandninestackanimation.html')
+  }
+});
+
+app.directive("brandninelong", function(){
+  return {
+    restrict: 'E',
+    template: require('svg/brandninelong.html')
+  }
+});
+
 app.directive("brandsixstack", function(){
   return {
     restrict: 'E',
@@ -1244,6 +1272,47 @@ app.directive("desklightmac", function(){
   }
 });
 
+app.directive("desklightimac", function(){
+  return {
+    restrict: 'E',
+    template: require('svg/desklightimac.html')
+  }
+});
+
+app.directive("desklightimacbook", function(){
+  return {
+    restrict: 'E',
+    template: require('svg/desklightimacbook.html')
+  }
+});
+
+app.directive("desklightpencil1", function(){
+  return {
+    restrict: 'E',
+    template: require('svg/desklightpencil1.html')
+  }
+});
+
+app.directive("desklightpencil2", function(){
+  return {
+    restrict: 'E',
+    template: require('svg/desklightpencil2.html')
+  }
+});
+
+app.directive("desklightpencil3", function(){
+  return {
+    restrict: 'E',
+    template: require('svg/desklightpencil3.html')
+  }
+});
+
+app.directive("desklight", function(){
+  return {
+    restrict: 'E',
+    template: require('svg/desklight.html')
+  }
+});
 
 app.directive("light", function(){
   return {
@@ -1298,6 +1367,13 @@ app.directive("manatdesk", function(){
   return {
     restrict: 'E',
     template: require('svg/manatdesk.html')
+  }
+});
+
+app.directive("manatdeskman", function(){
+  return {
+    restrict: 'E',
+    template: require('svg/manatdeskman.html')
   }
 });
 

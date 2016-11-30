@@ -1,11 +1,13 @@
    <!-- Top Menu -->
-   <span class="animated enterUpObject delay025 zindexOne positionAbsolute positionTop widthFull heightTen zindexOne">
+   <span class="zindexOne positionAbsolute positionTop widthFull heightTen zindexOne">
       <ul class="floatLeft widthFullFlex heightTen">
          
          <!-- GO HOME -->
          <li ng:class="{
          'backgroundColorOneThree' : startAnimation,
          'backgroundColorOneTwo' : !startAnimation}" ng:click="resetstart(); homepage =  true; startAnimationLeft = false; aboutpage = false; paginationToggle(0);" class="
+            
+            animated enterUpObject delay1
             positionRelative border-radius1Bottom buttonbox-shadowDark overflowhidden floatLeft zindexTen easing marginTwoFiveLeft">
             <span class="
                positionRelative widthTenvh heightTen floatLeft zindexTen">
@@ -20,7 +22,7 @@
          </li>
 
          <!-- ng:show="homepage == true" -->
-         <li ng:show="homepage == true" ng:show="startAnimation" ng:click="menuFour = true" class="centerdiv text-align-center positionRelative heightFullFlex marginTwoFiveLeft floatLeft">
+         <li ng:show="homepage == true" ng:show="startAnimation" ng:click="menuFour = true" class="animated enterUpObject delay12 centerdiv text-align-center positionRelative heightFullFlex marginTwoFiveLeft floatLeft">
             <span
             ng:class="{'fontColorOffWhite' : !startAnimation, 'fontColorWhite' : startAnimation}"
             class="centerdiv textOnHoverSwitch paddingTwoFive positionRelative border-radius1 centerdiv fontSizeTwoFive fontColorFourOnHover lineHeightTwoFive easing">
@@ -49,7 +51,7 @@
          </li>
 
          <!-- GO HOME -->
-         <li ng:click="resetstart(); homepage =  true; startAnimationLeft = false; aboutpage = false; paginationToggle(0);" class="
+         <li ng:click="resetstart(); homepage =  true; startAnimationLeft = false; aboutpage = false; paginationToggle(0);" class=" animated enterUpObject delay2
             positionRelative border-radius1BottomLeft marginTwoFiveRight overflowhidden floatRight zindexTen easing">
             <span class="
                positionRelative widthTenvh heightTen floatLeft zindexTen">
@@ -64,21 +66,27 @@
          </li>
 
          <!-- ng:show="homepage == true" -->
-         <li ng:click="menustart();" class="centerdiv text-align-center positionRelative heightFullFlex marginTwoFiveRight easing floatRight">
+         <li ng:click="menustart();" class="animated enterUpObject delay18 centerdiv text-align-center positionRelative heightFullFlex marginTwoFiveRight easing floatRight">
             <span class="centerdiv textOnHoverSwitch widthFivevh heightFive positionRelative buttonbox-shadowDark border-radius1 backgroundColorThree centerdiv fontSizeTwoFive fontColorFive fontColorFiveOnHover lineHeightFive easing">
-            <span class="floatLeft animated enterUpObject delay025 zindexOne positionAbsolute positionCenter widthTwoFivevh heightTwoFive"><img src="./svg/close.svg" class="floatLeft widthFullFlex heightFullFlex"></span>
+            <span class="floatLeft animated enterUpObject delay025 zindexOne positionAbsolute positionCenter widthTwoFivevh heightTwoFive"><img src="./svg/nine/circle.svg" class="floatLeft widthFullFlex heightFullFlex"></span>
             </span>
          </li>
 
-         <li ng:show="homepage == true" ng:click="popsearch = true" class="centerdiv text-align-center positionRelative heightFullFlex marginTwoFiveRight easing floatRight">
+         <li ng:show="homepage == true" ng:click="popsearch = true" class="animated enterUpObject delay16 centerdiv text-align-center positionRelative heightFullFlex marginTwoFiveRight easing floatRight">
             <span class="centerdiv textOnHoverSwitch paddingTwoFive positionRelative border-radius1 backgroundColorTwoOnHover centerdiv fontSizeTwoFive fontColorWhite fontColorFourOnHover lineHeightTwoFive easing">
-               <span class="floatLeft animated enterUpObject delay025 zindexOne positionRelative widthTwoFivevh heightTwoFive"><img src="./svg/white/close.svg" class="widthFullFlex heightFullFlex"></span>
+               <span class="floatLeft animated enterUpObject delay025 zindexOne positionRelative widthFivevh heightFive"><img src="./svg/nine/search.svg" class="positionAbsolute positionCenter widthHalfFlex heightHalfFlex"></span>
+            </span>
+         </li>
+
+         <li ng:show="homepage == true" ng:click="popsearch = true" class="animated enterUpObject delay16 centerdiv text-align-center positionRelative heightFullFlex marginTwoFiveRight easing floatRight">
+            <span class="centerdiv textOnHoverSwitch paddingTwoFive positionRelative border-radius1 backgroundColorTwoOnHover centerdiv fontSizeTwoFive fontColorWhite fontColorFourOnHover lineHeightTwoFive easing">
+               <span class="floatLeft animated enterUpObject delay025 zindexOne positionRelative widthFivevh heightFive"><img src="./svg/nine/dots.svg" class="positionAbsolute positionCenter widthHalfFlex heightHalfFlex"></span>
             </span>
          </li>
 
          <!-- menuThree -->
          <!-- ng:show="homepage == true" -->
-         <li ng:show="homepage == true" ng:click="menuThree = true" class="centerdiv text-align-center positionRelative heightFullFlex marginTwoFiveRight easing floatRight">
+         <li ng:show="homepage == true" ng:click="menuThree = true" class="animated enterUpObject delay14 centerdiv text-align-center positionRelative heightFullFlex marginTwoFiveRight easing floatRight">
             <span
             ng:class="{'fontColorOffWhite' : !startAnimation, 'fontColorWhite' : startAnimation}"
 
@@ -113,9 +121,9 @@
       <ul class="floatLeft heightTen">
 
          <!-- ng:show="homepage == true" -->
-         <li ng:show="homepage == true" ng:show="startAnimation" ng:click="popin = !popin;" class="centerdiv text-align-center positionRelative heightFullFlex marginTwoFiveLeft floatLeft">
+         <li ng:show="homepage == true" ng:show="startAnimation" ng:click="popin = !popin;" class="animated enterUp delay32 centerdiv text-align-center positionRelative heightFullFlex marginTwoFiveLeft floatLeft">
             
-            <b class="centerdiv textOnHoverSwitch paddingTwoFive positionRelative centerdiv fontSizeTwoFive fontColorWhite fontColorFiveOnHover lineHeightTwoFive easing">
+            <b class="centerdiv textOnHoverSwitch paddingTwoFive positionRelative centerdiv fontSizeTwoFive fontColorNine fontColorFiveOnHover lineHeightTwoFive easing">
             Mail <span class="font-family-snippet bordered-bottomOne">Us</span>
             <span class="floatRight animated enterUpObject delay025 zindexOne positionRelative widthTwoFive heightTwoFive marginSevenFiveRight"><img src="./svg/arrow-left.svg" class="widthFullFlex heightFullFlex">
             </span>

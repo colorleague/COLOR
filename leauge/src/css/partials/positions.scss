@@ -717,6 +717,19 @@ top: 1.5vh;
   @include positionOverBottomThreeQuarter;
 }
 
+@mixin positionOverBottomFiftyEight {
+  top: auto;
+  bottom: -58%;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.positionOverBottomFiftyEight {
+  @include positionOverBottomFiftyEight;
+}
+
+
 @mixin positionOverBottomHover {
   top: 50%;
   bottom: -50%;

@@ -1190,6 +1190,38 @@ $ColorEight: #1E3745;
     text-shadow: 1vh 1vh $ColorEight;
 }
 
+// dark orange
+$ColorNine: #f9c04e;
+
+.backgroundColorNine, .backgroundColorNineOnHover:hover {
+    background: $ColorNine;
+}
+
+.backgroundGridColorNine {
+    background: $ColorNine url("/svg/grid.svg");
+    background-repeat: repeat;
+    background-position: 50% 0;
+}
+.fontColorNine {
+    color: $ColorNine;
+}
+
+.text-shadow01Nine {
+    text-shadow: .1vh .1vh $ColorNine;
+}
+
+.text-shadow025Nine {
+    text-shadow: .25vh .25vh $ColorNine;
+}
+
+.text-shadow05Nine {
+    text-shadow: .5vh .5vh $ColorNine;
+}
+
+.text-shadow1Nine {
+    text-shadow: 1vh 1vh $ColorNine;
+}
+
 body {
 }
 
