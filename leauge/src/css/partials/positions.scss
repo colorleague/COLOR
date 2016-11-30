@@ -398,6 +398,18 @@ top: 1.5vh;
   @include positionOverFiveTopRightOutro ;
 }
 
+@mixin positionOverFiveTopLeftOutro {
+    top: -2.5vh;
+    bottom: auto;
+    right: 0vh;
+    left: auto;
+    margin: auto;
+}
+
+.positionOverFiveTopLeftOutro {
+  @include positionOverFiveTopLeftOutro ;
+}
+
 @mixin positionOverFiveTopLeftIndex {
     top: -2.5vh;
     bottom: auto;
@@ -420,6 +432,17 @@ top: 1.5vh;
 
 .positionOverTenTopLeftIndex {
   @include positionOverTenTopLeftIndex ;
+}
+
+@mixin positionOverLeftIndexArrow {
+    left: -10vh;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.positionOverLeftIndexArrow {
+  @include positionOverLeftIndexArrow ;
 }
 
 @mixin positionOverFiveTopLeft {

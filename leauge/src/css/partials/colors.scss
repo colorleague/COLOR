@@ -25,6 +25,8 @@
   color: #ffffff;
 }
 
+
+
 .backgroundGrid {
     background: url("/svg/grid.svg");
     background-repeat: repeat;
@@ -109,6 +111,10 @@ $ColorOneTwo: #ffd370;
 $ColorOneThree: #ffdb8b;
 $ColorOneFour: #ffe5a6;
 $ColorOneFive: #feeec2;
+
+body {
+    background: $ColorOne;
+}
 
 .placeholderOne::-webkit-input-placeholder { /* Chrome/Opera/Safari */
   color: $ColorOne;
@@ -834,14 +840,6 @@ $ColorSix: #1a2d3d;
 
 .bordered-rightSix, .bordered-rightSixOnHover:hover  {
     border-right: 1vh solid $ColorSix;
-}
-
-.lightoffice {
-    background: $ColorOneTwo;
-}
-
-.darkoffice {
-    background: $ColorSix;
 }
 
 .beforeArrow:before {

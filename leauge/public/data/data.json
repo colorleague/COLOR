@@ -2,10 +2,490 @@
 	"records":[
 
 		{
+			"type":3,
+			"title":"jQuery",
+			"category":"content",
+			"subcategory":"tutorial",
+			"tag":"greet",
+
+			"brand":"Mermaid Nook",
+			"brandinfo":"The Mermaid Nook is disrupting the traditional idea of higher education. They specialize in providing industry-prepared courses and “nanodegrees” to help students learn the skills they need to get a job. They challenged us to create an experience that elevates Udacity from the sea of ed-tech startups into a league of their own, while communicating the accessibility and affordability of their new style of higher education.",
+			"location":"Orlando, Fl",
+			"subtitle":"Using Jquery to Superpower you UI/UX",
+			"tagline":"This is just a bit of text summizing the project at hand, enjoyed?",
+			"description":"Udacity is disrupting the traditional idea of higher education. They specialize in providing industry-prepared courses and “nanodegrees” to help students learn the skills they need to get a job. They challenged us to create an experience that elevates Udacity from the sea of ed-tech startups into a league of their own, while communicating the accessibility and affordability of their new style of higher education.",
+			"review":"afforded us an oportunity to provide all branding materials for an unreleased product.",
+			"videodescription":"afforded us an oportunity to provide all branding materials for an unreleased product.",
+			"approach":"We created a comprehensive brand experience that is clean, simple, honest, and professional. The vantage point of the logo mark embodies Udacity’s non-traditional approach to education. Paired with the logomark, the logotype gives a subtle nod to the ownability of the brand.",
+			"plan":"An effort to either migrate assets to SVGs or appraoch any & every future project with intention to produce and distrute assets using the lightest & most optimized asset format available, SVG use is your goal.",
+			"prep":"Adobe Illustartor Creative Cloud aids in the production of SVG assets. Begin you rough drafts of icons & icon sets, develope your digital assets.",
+			"perform":"Most of all, SVGs make animation easy! CSS Animations & Javascript play very well with SVG.",
+			"perfect":"SVG's are Light, Responsive.",
+			"photo": "dash.jpg",
+			"author":"nigel",
+			"previewgif":"avocado.gif",
+			"authorfull":"Nigel Johnson",
+			"authorquote":"The first freelance project of 2017, The new visual storytelling is evocative, real, and clear, and the voice captures Udacity’s devotion to the success of its students, collaborative spirit, and integrity.",
+			"slidephotos": [
+				{
+					"slide": "cards.jpg"
+				},
+				{
+					"slide": "screen.jpg"
+				},
+				{
+					"slide": "sketch.jpg"
+				},
+				{
+					"slide": "social.jpg"
+				}
+			],
+
+			"services": [
+				{	"icon":"imacone",
+					"name":"Development Services",
+					"task": [
+						{
+						"name":"Baseline Evaluation",
+						"active": false
+						},
+						{
+						"name":"Baseline Evaluation",
+						"active": true
+						},
+						{
+						"name":"Baseline Evaluation",
+						"active": false
+						},
+						{
+						"name":"Baseline Evaluation",
+						"active": false
+						},
+						{
+						"name":"Baseline Evaluation",
+						"active": true
+						}
+					]
+				},
+
+				{	"icon":"imacone",
+					"name":"Design Services",
+					"task": [
+						{
+						"name":"Baseline Evaluation",
+						"active": true
+						},
+						{
+						"name":"Baseline Evaluation",
+						"active": true
+						},
+						{
+						"name":"Baseline Evaluation",
+						"active": false
+						},
+						{
+						"name":"Baseline Evaluation",
+						"active": true
+						},
+						{
+						"name":"Baseline Evaluation",
+						"active": false
+						}
+					]
+				},
+				{	"icon":"imacone",
+					"name":"Development Services",
+					"task": [
+						{
+						"name":"Baseline Evaluation",
+						"active": false
+						},
+						{
+						"name":"Baseline Evaluation",
+						"active": true
+						},
+						{
+						"name":"Baseline Evaluation",
+						"active": false
+						},
+						{
+						"name":"Baseline Evaluation",
+						"active": false
+						},
+						{
+						"name":"Baseline Evaluation",
+						"active": true
+						}
+					]
+				},
+
+				{	"icon":"imacone",
+					"name":"Design Services",
+					"task": [
+						{
+						"name":"Baseline Evaluation",
+						"active": true
+						},
+						{
+						"name":"Baseline Evaluation",
+						"active": true
+						},
+						{
+						"name":"Baseline Evaluation",
+						"active": false
+						},
+						{
+						"name":"Baseline Evaluation",
+						"active": true
+						},
+						{
+						"name":"Baseline Evaluation",
+						"active": false
+						}
+					]
+				}
+			],
+			"meta": {
+				"likes": 114,
+				"hates": 7,
+				"views": 10006,
+				"tags": [
+					{
+					"name":"3d"
+					},
+					{
+					"name":"2d"
+					},
+					{
+					"name":"flat"
+					},
+					{
+					"name":"icon"
+					},
+					{
+					"name":"model"
+					},
+					{
+					"name":"render"
+					}
+				]
+			},
+			"planphotos": [
+				{
+					"photoplan": "plan1.jpg"
+				}
+			],
+
+			"prepphotos": [
+				{
+					"photoprep": "prep1.jpg"
+				},
+				{
+					"photoprep": "prep2.jpg"
+				}
+			],
+
+
+			"performphotos": [
+				{
+					"photoperform": "perform1.jpg"
+				},
+				{
+					"photoperform": "perform2.jpg"
+				}
+			],
+
+			"perfectphotos": [
+				{
+					"photoperfect": "perfect1.jpg"
+				},
+				{
+					"photoperfect": "perfect2.jpg"
+				},
+				{
+					"photoperfect": "perfect1.jpg"
+				},
+				{
+					"photoperfect": "perfect2.jpg"
+				}
+			],
+			"postcomments": [
+				{	
+					"author":"maisie",
+					"date":"01/01/2016",
+					"title": "concerns",
+					"subtitle": "restful api",
+					"likes": 1,
+					"content": "Hover This was a opportunity for our team to take control of an anguylar assignment",
+					
+					"postcommentsreplies": [
+						{	
+							"author":"DJ",
+							"date":"01/01/2016",
+							"title": "concerns",
+							"subtitle": "restful api",
+							"content": "Reply Hover This was a opportunity for our team to take control of an anguylar assignment"
+						},
+
+						{	
+							"author":"maisie",
+							"date":"01/01/2016",
+							"title": "concerns",
+							"subtitle": "restful api",
+							"content": "Reply Hover This was a opportunity for our team to take control of an anguylar assignment"
+						}
+
+					]
+
+				},
+				{	
+					"author":"nigel",
+					"date":"01/01/2016",
+					"title": "concerns",
+					"subtitle": "restful api",
+					"content": "Hover This was a opportunity for our team to take control of an anguylar assignment"
+				},
+				{	
+					"author":"nigel",
+					"date":"01/01/2016",
+					"title": "concerns",
+					"subtitle": "restful api",
+					"content": "Hover This was a opportunity for our team to take control of an anguylar assignment"
+				},
+				{	
+					"author":"nigel",
+					"date":"01/01/2016",
+					"title": "concerns",
+					"subtitle": "restful api",
+					"content": "Hover This was a opportunity for our team to take control of an anguylar assignment"
+				}
+			],
+			"video":"https://player.vimeo.com/video/155330725",
+			"authors": [
+				{
+				"name":"maisie",
+				"involvement":"Front-end Developer"
+				},
+				{
+				"name":"nigel",
+				"involvement":"Back-end Developer"
+				},
+				{
+				"name":"maisie",
+				"involvement":"Designer"
+				},
+				{
+				"name":"nigel",
+				"involvement":"Content"
+				}
+			],
+			"twitter":"nownigel",
+			"dribbble":"https://dribbble.com/shots/2285558-HEI",
+			"date":"October 1, 2016",
+			
+			"tags":[
+				{
+				"name":"greet"
+				}
+			],
+			"testimonal":[
+				{
+				"date":"October, 1, 2016",
+				"rep":"David Summers",
+				"quote":"He was an offal employee",
+				"position":"Lead Product Engineer",
+				"site":"RentPath",
+				"photo": "dash.jpg",
+				"authorphoto": "david.png",
+				"linkedin": "https://www.linkedin.com/in/nownigel"
+				},
+				{
+				"rep":"David Summers",
+				"quote":"We build thoughtful identities and experiences to elevate and empower organizations.",
+				"position":"Lead Developer",
+				"site":"Rent",
+				"photo": "dash.jpg",
+				"authorphoto": "david.png",
+				"linkedin": "https://www.linkedin.com/in/nownigel"
+				},
+				{
+				"rep":"Joesph Peters",
+				"quote":"I’m running out of variations on “you rock.” How about “thou igneous!",
+				"position":"Lead Developer",
+				"site":"Rent",
+				"photo": "dash.jpg",
+				"authorphoto": "david.png",
+				"linkedin": "https://www.linkedin.com/in/nownigel"
+				}
+			],
+			"price": 44,
+			"comments":[
+				{
+				"name":"angular"
+				},
+				{
+				"name":"android"
+				},
+				{
+				"name":"backbone"
+				},
+				{
+				"name":"clojure"
+				},
+				{
+				"name":"django"
+				},
+				{
+				"name":"drupal"
+				},
+				{
+				"name":"ember"
+				},
+				{
+				"name":"erlang"
+				},
+				{
+				"name":"express"
+				},
+				{
+				"name":"flash"
+				},
+				{
+				"name":"flask"
+				},
+				{
+				"name":"haskell"
+				},
+				{
+				"name":"ios"
+				},
+				{
+				"name":"java"
+				},
+				{
+				"name":"javascript"
+				},
+				{
+				"name":"laravel"
+				},
+				{
+				"name":"meteor"
+				},
+				{
+				"name":"net"
+				},
+				{
+				"name":"node"
+				},
+				{
+				"name":"php"
+				},
+				{
+				"name":"pyramid"
+				},
+				{
+				"name":"python"
+				},
+				{
+				"name":"rails"
+				},
+				{
+				"name":"react"
+				},
+				{
+				"name":"ruby"
+				},
+				{
+				"name":"wordpress"
+				}
+			],
+			"tools":[
+				{
+				"name":"angular"
+				},
+				{
+				"name":"android"
+				},
+				{
+				"name":"backbone"
+				},
+				{
+				"name":"clojure"
+				},
+				{
+				"name":"django"
+				},
+				{
+				"name":"drupal"
+				},
+				{
+				"name":"ember"
+				},
+				{
+				"name":"erlang"
+				},
+				{
+				"name":"express"
+				},
+				{
+				"name":"flash"
+				},
+				{
+				"name":"flask"
+				},
+				{
+				"name":"haskell"
+				},
+				{
+				"name":"ios"
+				},
+				{
+				"name":"java"
+				},
+				{
+				"name":"javascript"
+				},
+				{
+				"name":"laravel"
+				},
+				{
+				"name":"meteor"
+				},
+				{
+				"name":"net"
+				},
+				{
+				"name":"node"
+				},
+				{
+				"name":"php"
+				},
+				{
+				"name":"pyramid"
+				},
+				{
+				"name":"python"
+				},
+				{
+				"name":"rails"
+				},
+				{
+				"name":"react"
+				},
+				{
+				"name":"ruby"
+				},
+				{
+				"name":"wordpress"
+				}
+			]
+		},
+
+		{
 			"type":7,
 
 			"tag":"angular",
-			"category":"development",
+			"category":"develope",
 			"subcategory":"front-end",
 
 
@@ -647,7 +1127,7 @@
 			"twitter":"nownigel",
 			"date":"Oct 1, 2016",
 			"meta": {
-				"views": 1000,
+				"views": 100,
 				"likes": 0,
 				"hates": 1
 			},
@@ -6396,7 +6876,7 @@
 			"meta": {
 				"likes": 114,
 				"hates": 7,
-				"views": 1000000,
+				"views": 10011,
 				"tags": [
 					{
 					"name":"3d"
@@ -6874,9 +7354,9 @@
 				}
 			],
 			"meta": {
-				"likes": 10000,
+				"likes": 100,
 				"hates": 20,
-				"views": 1000000,
+				"views": 2000,
 				"tags": [
 					{
 					"name":"3d"
@@ -7354,9 +7834,9 @@
 				}
 			],
 			"meta": {
-				"likes": 10000,
+				"likes": 100,
 				"hates": 20,
-				"views": 1000000,
+				"views": 10009,
 				"tags": [
 					{
 					"name":"3d"
@@ -7834,9 +8314,9 @@
 				}
 			],
 			"meta": {
-				"likes": 10000,
+				"likes": 100,
 				"hates": 20,
-				"views": 1000000,
+				"views": 10044,
 				"tags": [
 					{
 					"name":"3d"
@@ -8314,9 +8794,9 @@
 				}
 			],
 			"meta": {
-				"likes": 10000,
+				"likes": 100,
 				"hates": 20,
-				"views": 1000000,
+				"views": 10001,
 				"tags": [
 					{
 					"name":"3d"

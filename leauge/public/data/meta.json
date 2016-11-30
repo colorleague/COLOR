@@ -1,7 +1,70 @@
 {
 	"categories":[
 		{
-			"category":"products",
+			"category":"Content",
+			"page": 16,
+			"meta": {
+				"likes": 0,
+				"hates": 1
+			},
+
+			"subcategories":[
+					{
+					"name":"Interviews",
+					"tags":[
+						{
+						"name":"greet"
+						}
+					]
+					},
+
+					{
+					"name":"Tutorials",
+					"tags":[
+						{
+						"name":"greet"
+						}
+					]
+					}
+				
+			],
+			"description":"There is no perfect answer but I am going to do my best to give you my thoughts on this and hopefully help you draw your own conclusions."
+		},
+		{
+			"category":"Products",
+			"page": 15,
+			"meta": {
+				"likes": 0,
+				"hates": 1
+			},
+			"subcategories":[
+				{
+				"name":"Branding",
+					"tags":[
+					{
+					"name":"Angular"
+					},
+					{
+					"name":"React"
+					}
+				]
+				},
+				{
+				"name":"Marketing",
+					"tags":[
+					{
+					"name":"Angular"
+					},
+					{
+					"name":"React"
+					}
+				]
+				}
+			],
+			"description":"There is no perfect answer but I am going to do my best to give you my thoughts on this and hopefully help you draw your own conclusions."
+		},
+		{
+			"category":"Develope",
 			"page": 15,
 			"meta": {
 				"likes": 0,
@@ -85,91 +148,7 @@
 			"description":"There is no perfect answer but I am going to do my best to give you my thoughts on this and hopefully help you draw your own conclusions."
 		},
 		{
-			"category":"development",
-			"page": 15,
-			"meta": {
-				"likes": 0,
-				"hates": 1
-			},
-			"subcategories":[
-				{
-				"name":"tutorial",
-					"tags":[
-					{
-					"name":"Angular"
-					},
-					{
-					"name":"React"
-					}
-				]
-				},
-				{
-				"name":"Front-End",
-					"tags":[
-					{
-					"name":"Angular"
-					},
-					{
-					"name":"React"
-					}
-				]
-				},
-				{
-				"name":"Back-End",
-					"tags":[
-					{
-					"name":"Python"
-					},
-					{
-					"name":"React"
-					}
-				]
-				},
-
-				{
-				"name":"Mobile Apps",
-					"tags":[
-					{
-					"name":"Python"
-					},
-					{
-					"name":"React"
-					}
-				]
-				},
-
-				{
-				"name":"Databases",
-					"tags":[
-					{
-					"name":"Python"
-					},
-					{
-					"name":"React"
-					}
-				]
-				},
-
-				{
-				"name":"E-commerce",
-					"tags":[
-					{
-					"name":"Python"
-					},
-					{
-					"name":"React"
-					}
-				]
-				},
-
-				{
-				"name":"Full-Stack"
-				}
-			],
-			"description":"There is no perfect answer but I am going to do my best to give you my thoughts on this and hopefully help you draw your own conclusions."
-		},
-		{
-			"category":"design",
+			"category":"Design",
 			"page": 15,
 			"meta": {
 				"likes": 0,
@@ -275,37 +254,7 @@
 			"description":"There is no perfect answer but I am going to do my best to give you my thoughts on this and hopefully help you draw your own conclusions."
 		},
 		{
-			"category":"content",
-			"page": 16,
-			"meta": {
-				"likes": 0,
-				"hates": 1
-			},
-
-			"subcategories":[
-					{
-					"name":"interviews",
-					"tags":[
-						{
-						"name":"greet"
-						}
-					]
-					},
-
-					{
-					"name":"tutorials",
-					"tags":[
-						{
-						"name":"greet"
-						}
-					]
-					}
-				
-			],
-			"description":"There is no perfect answer but I am going to do my best to give you my thoughts on this and hopefully help you draw your own conclusions."
-		},
-		{
-			"category":"strategy",
+			"category":"Strategy",
 			"page": 15,
 			"meta": {
 				"likes": 0,

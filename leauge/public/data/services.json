@@ -2,6 +2,10 @@
 	"records":[
 		{
 			"category":"Development",
+			"plus1":"Web",
+			"plus2":"Mobile",
+			"description":"From Front to Back",
+			"longdescription":"There is no perfect answer but I am going to do my best to give you my thoughts on this and hopefully help you draw your own conclusions.",
 			"icon":"imacone.svg",
 			"meta": {
 				"likes": 0,
@@ -9,7 +13,11 @@
 			},
 			"subcategories":[
 				{
-				"name":"tutorial",
+				"name":"Front-End",
+				"plus1":"Wireframes",
+				"plus2":"Prototypes",
+				"description":"Analiyics powered solutions",
+				"longdescription":"There is no perfect answer but I am going to do my best to give you my thoughts on this and hopefully help you draw your own conclusions.",
 				"icon":"imacone.svg",
 					"tags":[
 					{
@@ -21,18 +29,12 @@
 				]
 				},
 				{
-				"name":"Front-End",
-					"tags":[
-					{
-					"name":"Angular"
-					},
-					{
-					"name":"React"
-					}
-				]
-				},
-				{
 				"name":"Back-End",
+				"plus1":"Data",
+				"plus2":"Hydration",
+				"description":"Analiyics powered solutions",
+				"longdescription":"There is no perfect answer but I am going to do my best to give you my thoughts on this and hopefully help you draw your own conclusions.",
+				"icon":"imacone.svg",
 					"tags":[
 					{
 					"name":"Python"
@@ -45,6 +47,11 @@
 
 				{
 				"name":"Mobile Apps",
+				"plus1":"Responsive",
+				"plus2":"Adaptive",
+				"description":"Analiyics powered solutions",
+				"longdescription":"There is no perfect answer but I am going to do my best to give you my thoughts on this and hopefully help you draw your own conclusions.",
+				"icon":"imacone.svg",
 					"tags":[
 					{
 					"name":"Python"
@@ -57,6 +64,11 @@
 
 				{
 				"name":"Databases",
+				"plus1":"Data Types",
+				"plus2":"Migration",
+				"description":"Analiyics powered solutions",
+				"longdescription":"There is no perfect answer but I am going to do my best to give you my thoughts on this and hopefully help you draw your own conclusions.",
+				"icon":"imacone.svg",
 					"tags":[
 					{
 					"name":"Python"
@@ -69,6 +81,107 @@
 
 				{
 				"name":"E-commerce",
+				"plus1":"Growth",
+				"plus2":"Collections",
+				"description":"Analiyics powered solutions",
+				"longdescription":"There is no perfect answer but I am going to do my best to give you my thoughts on this and hopefully help you draw your own conclusions.",
+				"icon":"imacone.svg",
+					"tags":[
+					{
+					"name":"Python"
+					},
+					{
+					"name":"React"
+					}
+				]
+				},
+
+				{
+			"name":"Full-Stack",
+			"plus1":"Front-End",
+			"plus2":"Back-End",
+			"description":"From Front to Back",
+			"longdescription":"There is no perfect answer but I am going to do my best to give you my thoughts on this and hopefully help you draw your own conclusions.",
+			"icon":"imacone.svg",
+			"meta": {
+				"likes": 0,
+				"hates": 1
+			},
+			"subcategories":[
+				{
+				"name":"Front-End",
+				"plus1":"Wireframes",
+				"plus2":"Prototypes",
+				"description":"Analiyics powered solutions",
+				"longdescription":"There is no perfect answer but I am going to do my best to give you my thoughts on this and hopefully help you draw your own conclusions.",
+				"icon":"imacone.svg",
+					"tags":[
+					{
+					"name":"Angular"
+					},
+					{
+					"name":"React"
+					}
+				]
+				},
+				{
+				"name":"Back-End",
+				"plus1":"Data",
+				"plus2":"Hydration",
+				"description":"Analiyics powered solutions",
+				"longdescription":"There is no perfect answer but I am going to do my best to give you my thoughts on this and hopefully help you draw your own conclusions.",
+				"icon":"imacone.svg",
+					"tags":[
+					{
+					"name":"Python"
+					},
+					{
+					"name":"React"
+					}
+				]
+				},
+
+				{
+				"name":"Mobile Apps",
+				"plus1":"Responsive",
+				"plus2":"Adaptive",
+				"description":"Analiyics powered solutions",
+				"longdescription":"There is no perfect answer but I am going to do my best to give you my thoughts on this and hopefully help you draw your own conclusions.",
+				"icon":"imacone.svg",
+					"tags":[
+					{
+					"name":"Python"
+					},
+					{
+					"name":"React"
+					}
+				]
+				},
+
+				{
+				"name":"Databases",
+				"plus1":"Data Types",
+				"plus2":"Migration",
+				"description":"Analiyics powered solutions",
+				"longdescription":"There is no perfect answer but I am going to do my best to give you my thoughts on this and hopefully help you draw your own conclusions.",
+				"icon":"imacone.svg",
+					"tags":[
+					{
+					"name":"Python"
+					},
+					{
+					"name":"React"
+					}
+				]
+				},
+
+				{
+				"name":"E-commerce",
+				"plus1":"Growth",
+				"plus2":"Collections",
+				"description":"Analiyics powered solutions",
+				"longdescription":"There is no perfect answer but I am going to do my best to give you my thoughts on this and hopefully help you draw your own conclusions.",
+				"icon":"imacone.svg",
 					"tags":[
 					{
 					"name":"Python"
@@ -83,10 +196,16 @@
 				"name":"Full-Stack"
 				}
 			],
-			"description":"There is no perfect answer but I am going to do my best to give you my thoughts on this and hopefully help you draw your own conclusions."
+			"longdescription":"There is no perfect answer but I am going to do my best to give you my thoughts on this and hopefully help you draw your own conclusions."
+		}
+			],
+			"longdescription":"There is no perfect answer but I am going to do my best to give you my thoughts on this and hopefully help you draw your own conclusions."
 		},
 		{
 			"category":"Design",
+			"plus1":"Graphic",
+			"plus2":"UI/UX",
+			"description":"Colors, Layouts & Animation",
 			"icon":"imacone.svg",
 			"meta": {
 				"likes": 0,
@@ -96,6 +215,11 @@
 			"subcategories":[
 				{
 				"name":"Web Design",
+				"plus1":"Responsive",
+				"plus2":"Adaptive",
+				"description":"Analiyics powered solutions",
+				"longdescription":"There is no perfect answer but I am going to do my best to give you my thoughts on this and hopefully help you draw your own conclusions.",
+				"icon":"imacone.svg",
 					"tags":[
 					{
 					"name":"Angular"
@@ -106,7 +230,12 @@
 				]
 				},
 				{
-				"name":"Graphic Design",
+				"name":"Graphics",
+				"plus1":"Svgs",
+				"plus2":"Icons",
+				"description":"Analiyics powered solutions",
+				"longdescription":"There is no perfect answer but I am going to do my best to give you my thoughts on this and hopefully help you draw your own conclusions.",
+				"icon":"imacone.svg",
 					"tags":[
 					{
 					"name":"Angular"
@@ -118,6 +247,11 @@
 				},
 				{
 				"name":"Design Tools",
+				"plus1":"Editing",
+				"plus2":"Production",
+				"description":"Analiyics powered solutions",
+				"longdescription":"There is no perfect answer but I am going to do my best to give you my thoughts on this and hopefully help you draw your own conclusions.",
+				"icon":"imacone.svg",
 					"tags":[
 					{
 					"name":"Angular"
@@ -128,7 +262,12 @@
 				]
 				},
 				{
-				"name":"User Experience",
+				"name":"User Exp.",
+				"plus1":"Usability",
+				"plus2":"Scalability",
+				"description":"Analiyics powered solutions",
+				"longdescription":"There is no perfect answer but I am going to do my best to give you my thoughts on this and hopefully help you draw your own conclusions.",
+				"icon":"imacone.svg",
 					"tags":[
 					{
 					"name":"Angular"
@@ -140,6 +279,11 @@
 				},
 				{
 				"name":"Game Design",
+				"plus1":"Assets",
+				"plus2":"Motion",
+				"description":"Analiyics powered solutions",
+				"longdescription":"There is no perfect answer but I am going to do my best to give you my thoughts on this and hopefully help you draw your own conclusions.",
+				"icon":"imacone.svg",
 					"tags":[
 					{
 					"name":"Angular"
@@ -150,7 +294,12 @@
 				]
 				},
 				{
-				"name":"Design Thinking",
+				"name":"Methodologies",
+				"plus1":"Scalability",
+				"plus2":"Migration",
+				"description":"Analiyics powered solutions",
+				"longdescription":"There is no perfect answer but I am going to do my best to give you my thoughts on this and hopefully help you draw your own conclusions.",
+				"icon":"imacone.svg",
 					"tags":[
 					{
 					"name":"Angular"
@@ -163,6 +312,11 @@
 
 				{
 				"name":"3D & 2D",
+				"plus1":"Motion",
+				"plus2":"Static",
+				"description":"Analiyics powered solutions",
+				"longdescription":"There is no perfect answer but I am going to do my best to give you my thoughts on this and hopefully help you draw your own conclusions.",
+				"icon":"imacone.svg",
 					"tags":[
 					{
 					"name":"Angular"
@@ -174,6 +328,11 @@
 				},
 				{
 				"name":"Animation",
+				"plus1":"Promotional",
+				"plus2":"Content",
+				"description":"Analiyics powered solutions",
+				"longdescription":"There is no perfect answer but I am going to do my best to give you my thoughts on this and hopefully help you draw your own conclusions.",
+				"icon":"imacone.svg",
 					"tags":[
 					{
 					"name":"Angular"
@@ -189,10 +348,13 @@
 				"name":"Angular"
 				}
 			],
-			"description":"There is no perfect answer but I am going to do my best to give you my thoughts on this and hopefully help you draw your own conclusions."
+			"longdescription":"long description for Strategy"
 		},
 		{
 			"category":"Content",
+			"plus1":"Production",
+			"plus2":"Distribution",
+			"description":"Reaching all audiences",
 			"icon":"imacone.svg",
 			"meta": {
 				"likes": 0,
@@ -219,13 +381,16 @@
 					}
 				
 			],
-			"description":"There is no perfect answer but I am going to do my best to give you my thoughts on this and hopefully help you draw your own conclusions."
+			"longdescription":"There is no perfect answer but I am going to do my best to give you my thoughts on this and hopefully help you draw your own conclusions."
 		},
 		{
 			"category":"Strategy",
+			"plus1":"Retention",
+			"plus2":"Scalability",
+			"description":"Analiyics powered solutions",
 			"icon":"imacone.svg",
 			"meta": {
-				"likes": 0,
+				"projetcs": 0,
 				"hates": 1
 			},
 			"subcategories":[
@@ -247,7 +412,7 @@
 				}
 				
 			],
-			"description":"There is no perfect answer but I am going to do my best to give you my thoughts on this and hopefully help you draw your own conclusions."
+			"longdescription":"There is no perfect answer but I am going to do my best to give you my thoughts on this and hopefully help you draw your own conclusions."
 		}
 	]
 }

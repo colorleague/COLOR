@@ -1,16 +1,457 @@
 {
 	"records":[
 		{
+		"subtitle":"Building a Product",
 		"name":"Development",
 		"nametwo":"Design",
+		"icon":"imacone.svg",
+		"description": "Getting to production.",
 		"subs":[
 				{
-				"name":"subDevelopment",
-				"nametwo":"subDesign",
+				"name":"Methodologies",
+				"nametwo":"Languages",
+				"icon":"imacone.svg",
+				"description": "Test doubles are often compared to stunt doubles, as they replace one object with another for testing purposes, similar to how actors and actresses are replaced with stunt doubles for dangerous action scenes. In Jasmine, test doubles come in the form of spies. A spy is a function that replaces a particular function where you want to control its behavior in a test and record how that function is used during the execution of that test. Some of the things you can do with spies include:",
 				"pre":[
 						{
-						"name":"preDevelopment",
-						"nametwo":"preDesign"
+						"name":"R.E.S.T.ful",
+						"nametwo":"Testing",
+						"icon":"imacone.svg",
+						"steps":[
+								{
+								"stepsname":"preDevelopment22",
+								"stepsnametwo":"preDesign",
+								"icon":"imacone.svg"
+								},
+								{
+								"stepsname":"preDevelopment",
+								"stepsnametwo":"preDesign",
+								"icon":"imacone.svg"
+								}
+							]
+						},
+						{
+						"name":"M.E.A.N.",
+						"nametwo":"Testing",
+						"icon":"imacone.svg",
+						"steps":[
+								{
+								"stepsname":"Using NPM",
+								"stepsnametwo":"Node",
+								"icon":"imacone.svg"
+								},
+								{
+								"stepsname":"Prep for testing",
+								"stepsnametwo":"JavaScript test runner",
+								"icon":"imacone.svg"
+								}
+							]
+						},
+						{
+						"name":"HTML",
+						"nametwo":"Testing",
+						"icon":"imacone.svg",
+						"steps":[
+								{
+								"stepsname":"preDevelopment22",
+								"stepsnametwo":"preDesign",
+								"icon":"imacone.svg"
+								},
+								{
+								"stepsname":"preDevelopment",
+								"stepsnametwo":"preDesign",
+								"icon":"imacone.svg"
+								}
+							]
+						},
+						{
+						"name":"CSS/SASS",
+						"nametwo":"CSS/SASS",
+						"icon":"imacone.svg",
+						"steps":[
+								{
+								"stepsname":"Using NPM",
+								"stepsnametwo":"Node",
+								"icon":"imacone.svg"
+								},
+								{
+								"stepsname":"Prep for testing",
+								"stepsnametwo":"JavaScript test runner",
+								"icon":"imacone.svg"
+								}
+							]
+						},
+						{
+						"name":"React",
+						"nametwo":"Testing",
+						"icon":"imacone.svg",
+						"steps":[
+								{
+								"stepsname":"Using NPM",
+								"stepsnametwo":"Node",
+								"icon":"imacone.svg"
+								},
+								{
+								"stepsname":"Prep for testing",
+								"stepsnametwo":"JavaScript test runner",
+								"icon":"imacone.svg"
+								}
+							]
+						},
+						{
+						"name":"Meteor",
+						"nametwo":"Testing",
+						"icon":"imacone.svg",
+						"steps":[
+								{
+								"stepsname":"Using NPM",
+								"stepsnametwo":"Node",
+								"icon":"imacone.svg"
+								},
+								{
+								"stepsname":"Prep for testing",
+								"stepsnametwo":"JavaScript test runner",
+								"icon":"imacone.svg"
+								}
+							]
+						},
+						{
+						"name":"React",
+						"nametwo":"Testing",
+						"icon":"imacone.svg",
+						"steps":[
+								{
+								"stepsname":"Using NPM",
+								"stepsnametwo":"Node",
+								"icon":"imacone.svg"
+								},
+								{
+								"stepsname":"Prep for testing",
+								"stepsnametwo":"JavaScript test runner",
+								"icon":"imacone.svg"
+								}
+							]
+						}
+					]
+				},
+				{
+				"name":"Packages",
+				"nametwo":"Inline Tools",
+				"icon":"imacone.svg",
+				"description": "Test doubles are often compared to stunt doubles, as they replace one object with another for testing purposes, similar to how actors and actresses are replaced with stunt doubles for dangerous action scenes. In Jasmine, test doubles come in the form of spies. A spy is a function that replaces a particular function where you want to control its behavior in a test and record how that function is used during the execution of that test. Some of the things you can do with spies include:",
+				"pre":[
+						{
+						"name":"Modulizer",
+						"nametwo":"Testing",
+						"icon":"imacone.svg",
+						"steps":[
+								{
+								"stepsname":"preDevelopment22",
+								"stepsnametwo":"preDesign",
+								"icon":"imacone.svg"
+								},
+								{
+								"stepsname":"preDevelopment",
+								"stepsnametwo":"preDesign",
+								"icon":"imacone.svg"
+								}
+							]
+						},
+						{
+						"name":"Webpack",
+						"nametwo":"Testing",
+						"icon":"imacone.svg",
+						"steps":[
+								{
+								"stepsname":"Using NPM",
+								"stepsnametwo":"Node",
+								"icon":"imacone.svg"
+								},
+								{
+								"stepsname":"Prep for testing",
+								"stepsnametwo":"JavaScript test runner",
+								"icon":"imacone.svg"
+								}
+							]
+						},
+						{
+						"name":"Bower",
+						"nametwo":"Testing",
+						"icon":"imacone.svg",
+						"steps":[
+								{
+								"stepsname":"preDevelopment22",
+								"stepsnametwo":"preDesign",
+								"icon":"imacone.svg"
+								},
+								{
+								"stepsname":"preDevelopment",
+								"stepsnametwo":"preDesign",
+								"icon":"imacone.svg"
+								}
+							]
+						},
+						{
+						"name":"Node",
+						"nametwo":"Testing",
+						"icon":"imacone.svg",
+						"steps":[
+								{
+								"stepsname":"Using NPM",
+								"stepsnametwo":"Node",
+								"icon":"imacone.svg"
+								},
+								{
+								"stepsname":"Prep for testing",
+								"stepsnametwo":"JavaScript test runner",
+								"icon":"imacone.svg"
+								}
+							]
+						},
+						{
+						"name":"Slush",
+						"nametwo":"Testing",
+						"icon":"imacone.svg",
+						"steps":[
+								{
+								"stepsname":"Using NPM",
+								"stepsnametwo":"Node",
+								"icon":"imacone.svg"
+								},
+								{
+								"stepsname":"Prep for testing",
+								"stepsnametwo":"JavaScript test runner",
+								"icon":"imacone.svg"
+								}
+							]
+						},
+						{
+						"name":"Gulp",
+						"nametwo":"Testing",
+						"icon":"imacone.svg",
+						"steps":[
+								{
+								"stepsname":"Using NPM",
+								"stepsnametwo":"Node",
+								"icon":"imacone.svg"
+								},
+								{
+								"stepsname":"Prep for testing",
+								"stepsnametwo":"JavaScript test runner",
+								"icon":"imacone.svg"
+								}
+							]
+						},
+						{
+						"name":"Grunt",
+						"nametwo":"Testing",
+						"icon":"imacone.svg",
+						"steps":[
+								{
+								"stepsname":"Using NPM",
+								"stepsnametwo":"Node",
+								"icon":"imacone.svg"
+								},
+								{
+								"stepsname":"Prep for testing",
+								"stepsnametwo":"JavaScript test runner",
+								"icon":"imacone.svg"
+								}
+							]
+						}
+					]
+				},
+				{
+				"name":"Wireframes",
+				"nametwo":"Frameworks",
+				"icon":"imacone.svg",
+				"description": "Test doubles are often compared to stunt doubles, as they replace one object with another for testing purposes, similar to how actors and actresses are replaced with stunt doubles for dangerous action scenes. In Jasmine, test doubles come in the form of spies. A spy is a function that replaces a particular function where you want to control its behavior in a test and record how that function is used during the execution of that test. Some of the things you can do with spies include:",
+				"pre":[
+						{
+						"name":"Python",
+						"nametwo":"Testing",
+						"icon":"imacone.svg",
+						"steps":[
+								{
+								"stepsname":"preDevelopment22",
+								"stepsnametwo":"preDesign",
+								"icon":"imacone.svg"
+								},
+								{
+								"stepsname":"preDevelopment",
+								"stepsnametwo":"preDesign",
+								"icon":"imacone.svg"
+								}
+							]
+						},
+						{
+						"name":"Java",
+						"nametwo":"Testing",
+						"icon":"imacone.svg",
+						"steps":[
+								{
+								"stepsname":"Using NPM",
+								"stepsnametwo":"Node",
+								"icon":"imacone.svg"
+								},
+								{
+								"stepsname":"Prep for testing",
+								"stepsnametwo":"JavaScript test runner",
+								"icon":"imacone.svg"
+								}
+							]
+						},
+						{
+						"name":"Angular",
+						"nametwo":"Testing",
+						"icon":"imacone.svg",
+						"steps":[
+								{
+								"stepsname":"preDevelopment22",
+								"stepsnametwo":"preDesign",
+								"icon":"imacone.svg"
+								},
+								{
+								"stepsname":"preDevelopment",
+								"stepsnametwo":"preDesign",
+								"icon":"imacone.svg"
+								}
+							]
+						},
+						{
+						"name":"Angular",
+						"nametwo":"Testing",
+						"icon":"imacone.svg",
+						"steps":[
+								{
+								"stepsname":"Using NPM",
+								"stepsnametwo":"Node",
+								"icon":"imacone.svg"
+								},
+								{
+								"stepsname":"Prep for testing",
+								"stepsnametwo":"JavaScript test runner",
+								"icon":"imacone.svg"
+								}
+							]
+						},
+						{
+						"name":"React",
+						"nametwo":"Testing",
+						"icon":"imacone.svg",
+						"steps":[
+								{
+								"stepsname":"Using NPM",
+								"stepsnametwo":"Node",
+								"icon":"imacone.svg"
+								},
+								{
+								"stepsname":"Prep for testing",
+								"stepsnametwo":"JavaScript test runner",
+								"icon":"imacone.svg"
+								}
+							]
+						},
+						{
+						"name":"Meteor",
+						"nametwo":"Testing",
+						"icon":"imacone.svg",
+						"steps":[
+								{
+								"stepsname":"Using NPM",
+								"stepsnametwo":"Node",
+								"icon":"imacone.svg"
+								},
+								{
+								"stepsname":"Prep for testing",
+								"stepsnametwo":"JavaScript test runner",
+								"icon":"imacone.svg"
+								}
+							]
+						},
+						{
+						"name":"React",
+						"nametwo":"Testing",
+						"icon":"imacone.svg",
+						"steps":[
+								{
+								"stepsname":"Using NPM",
+								"stepsnametwo":"Node",
+								"icon":"imacone.svg"
+								},
+								{
+								"stepsname":"Prep for testing",
+								"stepsnametwo":"JavaScript test runner",
+								"icon":"imacone.svg"
+								}
+							]
+						}
+					]
+				},
+
+				{
+				"name":"Angular",
+				"nametwo":"Angular 2",
+				"icon":"imacone.svg",
+				"description": "Test doubles are often compared to stunt doubles, as they replace one object with another for testing purposes, similar to how actors and actresses are replaced with stunt doubles for dangerous action scenes. In Jasmine, test doubles come in the form of spies. A spy is a function that replaces a particular function where you want to control its behavior in a test and record how that function is used during the execution of that test. Some of the things you can do with spies include:",
+				"pre":[
+						{
+						"name":"End-2-End",
+						"nametwo":"Testing",
+						"icon":"imacone.svg",
+						"steps":[
+								{
+								"stepsname":"preDevelopment22",
+								"stepsnametwo":"preDesign",
+								"icon":"imacone.svg"
+								},
+								{
+								"stepsname":"preDevelopment",
+								"stepsnametwo":"preDesign",
+								"icon":"imacone.svg"
+								}
+							]
+						},
+						{
+						"name":"Unit",
+						"nametwo":"Testing",
+						"icon":"imacone.svg",
+						"steps":[
+								{
+								"stepsname":"Using NPM",
+								"stepsnametwo":"Node",
+								"icon":"imacone.svg"
+								},
+								{
+								"stepsname":"Prep for testing",
+								"stepsnametwo":"JavaScript test runner",
+								"icon":"imacone.svg"
+								}
+							]
+						}
+					]
+				},
+				{
+				"name":"React",
+				"nametwo":"Redux",
+				"icon":"imacone.svg",
+				"pre":[
+						{
+						"name":"React",
+						"nametwo":"E2E Testing",
+						"icon":"imacone.svg",
+						"steps":[
+								{
+								"stepsname":"preDevelopment22",
+								"stepsnametwo":"preDesign",
+								"icon":"imacone.svg"
+								},
+								{
+								"stepsname":"preDevelopment",
+								"stepsnametwo":"preDesign",
+								"icon":"imacone.svg"
+								}
+							]
 						},
 						{
 						"name":"preDevelopment",
@@ -19,22 +460,2481 @@
 					]
 				},
 				{
-				"name":"Development",
-				"nametwo":"Design"
+				"name":"Ruby",
+				"nametwo":"Rails",
+				"icon":"imacone.svg",
+				"description": "Test doubles are often compared to stunt doubles, as they replace one object with another for testing purposes, similar to how actors and actresses are replaced with stunt doubles for dangerous action scenes. In Jasmine, test doubles come in the form of spies. A spy is a function that replaces a particular function where you want to control its behavior in a test and record how that function is used during the execution of that test. Some of the things you can do with spies include:",
+				"pre":[
+						{
+						"name":"Ruby",
+						"nametwo":"Building with",
+						"icon":"imacone.svg",
+						"steps":[
+								{
+								"stepsname":"preDevelopment22",
+								"stepsnametwo":"preDesign",
+								"icon":"imacone.svg"
+								},
+								{
+								"stepsname":"preDevelopment",
+								"stepsnametwo":"preDesign",
+								"icon":"imacone.svg"
+								}
+							]
+						},
+						{
+						"name":"Ruby on Rails",
+						"nametwo":"Building with",
+						"icon":"imacone.svg",
+						"steps":[
+								{
+								"stepsname":"Using NPM",
+								"stepsnametwo":"Node",
+								"icon":"imacone.svg"
+								},
+								{
+								"stepsname":"Prep for testing",
+								"stepsnametwo":"JavaScript test runner",
+								"icon":"imacone.svg"
+								}
+							]
+						}
+					]
+				},
+				{
+				"name":"Testing",
+				"nametwo":"Security",
+				"icon":"imacone.svg",
+				"description": "Test doubles are often compared to stunt doubles, as they replace one object with another for testing purposes, similar to how actors and actresses are replaced with stunt doubles for dangerous action scenes. In Jasmine, test doubles come in the form of spies. A spy is a function that replaces a particular function where you want to control its behavior in a test and record how that function is used during the execution of that test. Some of the things you can do with spies include:",
+				"pre":[
+						{
+						"name":"Jasmine",
+						"nametwo":"Testing Language",
+						"icon":"imacone.svg",
+						"steps":[
+								{
+								"stepsname":"The API",
+								"stepsnametwo":"& using it",
+								"description": "expect(calculator.add(1, 4)).toEqual(5);",
+								"icon":"imacone.svg"
+								},
+								{
+								"stepsname":"Test Doubles",
+								"stepsnametwo":"preDesign",
+								"description": "expect(calculator.add(1, 4)).toEqual(5);",
+								"icon":"imacone.svg"
+								},
+								{
+								"stepsname":"Asynchronous Testing",
+								"stepsnametwo":"preDesign",
+								"description": "expect(calculator.add(1, 4)).toEqual(5);",
+								"icon":"imacone.svg"
+								}
+							]
+						},
+						{
+						"name":"Chai",
+						"nametwo":"Testing Language",
+						"icon":"imacone.svg",
+						"steps":[
+								{
+								"stepsname":"preDevelopment22",
+								"stepsnametwo":"preDesign",
+								"icon":"imacone.svg"
+								},
+								{
+								"stepsname":"preDevelopment",
+								"stepsnametwo":"preDesign",
+								"icon":"imacone.svg"
+								}
+							]
+						},
+						{
+						"name":"Sinon",
+						"nametwo":"Testing Language",
+						"icon":"imacone.svg",
+						"steps":[
+								{
+								"stepsname":"preDevelopment22",
+								"stepsnametwo":"preDesign",
+								"icon":"imacone.svg"
+								},
+								{
+								"stepsname":"preDevelopment",
+								"stepsnametwo":"preDesign",
+								"icon":"imacone.svg"
+								}
+							]
+						},
+						{
+						"name":"Mocha",
+						"nametwo":"Testing Language",
+						"icon":"imacone.svg",
+						"steps":[
+								{
+								"stepsname":"The API",
+								"stepsnametwo":"preDesign",
+								"icon":"imacone.svg"
+								},
+								{
+								"stepsname":"Test Doubles",
+								"stepsnametwo":"preDesign",
+								"icon":"imacone.svg",
+								"description": "Test doubles are often compared to stunt doubles, as they replace one object with another for testing purposes, similar to how actors and actresses are replaced with stunt doubles for dangerous action scenes. In Jasmine, test doubles come in the form of spies. A spy is a function that replaces a particular function where you want to control its behavior in a test and record how that function is used during the execution of that test. Some of the things you can do with spies include:"
+								},
+								{
+								"stepsname":"Asynchronous Testing",
+								"stepsnametwo":"preDesign",
+								"icon":"imacone.svg"
+								}
+							]
+						},
+						{
+						"name":"Karma",
+						"nametwo":"JS Task Runner",
+						"icon":"imacone.svg",
+						"steps":[
+								{
+								"stepsname":"preDevelopment22",
+								"stepsnametwo":"preDesign",
+								"icon":"imacone.svg"
+								},
+								{
+								"stepsname":"preDevelopment",
+								"stepsnametwo":"preDesign",
+								"icon":"imacone.svg"
+								}
+							]
+						}
+					]
+				},
+				{
+				"name":"Styling",
+				"nametwo":"Layouts",
+				"icon":"imacone.svg",
+				"description": "Test doubles are often compared to stunt doubles, as they replace one object with another for testing purposes, similar to how actors and actresses are replaced with stunt doubles for dangerous action scenes. In Jasmine, test doubles come in the form of spies. A spy is a function that replaces a particular function where you want to control its behavior in a test and record how that function is used during the execution of that test. Some of the things you can do with spies include:",
+				"pre":[
+						{
+						"name":"Sass/Less",
+						"nametwo":"Testing Language",
+						"icon":"imacone.svg",
+						"steps":[
+								{
+								"stepsname":"The API",
+								"stepsnametwo":"& using it",
+								"description": "expect(calculator.add(1, 4)).toEqual(5);",
+								"icon":"imacone.svg"
+								},
+								{
+								"stepsname":"Test Doubles",
+								"stepsnametwo":"preDesign",
+								"description": "expect(calculator.add(1, 4)).toEqual(5);",
+								"icon":"imacone.svg"
+								},
+								{
+								"stepsname":"Asynchronous Testing",
+								"stepsnametwo":"preDesign",
+								"description": "expect(calculator.add(1, 4)).toEqual(5);",
+								"icon":"imacone.svg"
+								}
+							]
+						},
+						{
+						"name":"Adaptive",
+						"nametwo":"Testing Language",
+						"icon":"imacone.svg",
+						"steps":[
+								{
+								"stepsname":"preDevelopment22",
+								"stepsnametwo":"preDesign",
+								"icon":"imacone.svg"
+								},
+								{
+								"stepsname":"preDevelopment",
+								"stepsnametwo":"preDesign",
+								"icon":"imacone.svg"
+								}
+							]
+						},
+						{
+						"name":"Responsive",
+						"nametwo":"Testing Language",
+						"icon":"imacone.svg",
+						"steps":[
+								{
+								"stepsname":"preDevelopment22",
+								"stepsnametwo":"preDesign",
+								"icon":"imacone.svg"
+								},
+								{
+								"stepsname":"preDevelopment",
+								"stepsnametwo":"preDesign",
+								"icon":"imacone.svg"
+								}
+							]
+						},
+						{
+						"name":"Animation",
+						"nametwo":"Testing Language",
+						"icon":"imacone.svg",
+						"steps":[
+								{
+								"stepsname":"The API",
+								"stepsnametwo":"preDesign",
+								"icon":"imacone.svg"
+								},
+								{
+								"stepsname":"Test Doubles",
+								"stepsnametwo":"preDesign",
+								"icon":"imacone.svg",
+								"description": "Test doubles are often compared to stunt doubles, as they replace one object with another for testing purposes, similar to how actors and actresses are replaced with stunt doubles for dangerous action scenes. In Jasmine, test doubles come in the form of spies. A spy is a function that replaces a particular function where you want to control its behavior in a test and record how that function is used during the execution of that test. Some of the things you can do with spies include:"
+								},
+								{
+								"stepsname":"Asynchronous Testing",
+								"stepsnametwo":"preDesign",
+								"icon":"imacone.svg"
+								}
+							]
+						},
+						{
+						"name":"Icons & SVGs",
+						"nametwo":"JS Task Runner",
+						"icon":"imacone.svg",
+						"steps":[
+								{
+								"stepsname":"preDevelopment22",
+								"stepsnametwo":"preDesign",
+								"icon":"imacone.svg"
+								},
+								{
+								"stepsname":"preDevelopment",
+								"stepsnametwo":"preDesign",
+								"icon":"imacone.svg"
+								}
+							]
+						},
+						{
+						"name":"Material",
+						"nametwo":"Industy Design",
+						"icon":"imacone.svg",
+						"steps":[
+								{
+								"stepsname":"preDevelopment22",
+								"stepsnametwo":"preDesign",
+								"icon":"imacone.svg"
+								},
+								{
+								"stepsname":"preDevelopment",
+								"stepsnametwo":"preDesign",
+								"icon":"imacone.svg"
+								}
+							]
+						}
+					]
 				}
 			]
 		},
 		{
+		"subtitle":"Producing Content",
 		"name":"Sound",
-		"nametwo":"Video"
+		"nametwo":"Video",
+		"icon":"imacone.svg",
+		"description": "Getting to production.",
+		"subs":[
+				{
+				"name":"Audio",
+				"nametwo":"Podcasts",
+				"icon":"imacone.svg",
+				"description": "Test doubles are often compared to stunt doubles, as they replace one object with another for testing purposes, similar to how actors and actresses are replaced with stunt doubles for dangerous action scenes. In Jasmine, test doubles come in the form of spies. A spy is a function that replaces a particular function where you want to control its behavior in a test and record how that function is used during the execution of that test. Some of the things you can do with spies include:",
+				"pre":[
+						{
+						"name":"R.E.S.T.ful",
+						"nametwo":"Testing",
+						"icon":"imacone.svg",
+						"steps":[
+								{
+								"stepsname":"preDevelopment22",
+								"stepsnametwo":"preDesign",
+								"icon":"imacone.svg"
+								},
+								{
+								"stepsname":"preDevelopment",
+								"stepsnametwo":"preDesign",
+								"icon":"imacone.svg"
+								}
+							]
+						},
+						{
+						"name":"M.E.A.N.",
+						"nametwo":"Testing",
+						"icon":"imacone.svg",
+						"steps":[
+								{
+								"stepsname":"Using NPM",
+								"stepsnametwo":"Node",
+								"icon":"imacone.svg"
+								},
+								{
+								"stepsname":"Prep for testing",
+								"stepsnametwo":"JavaScript test runner",
+								"icon":"imacone.svg"
+								}
+							]
+						},
+						{
+						"name":"HTML",
+						"nametwo":"Testing",
+						"icon":"imacone.svg",
+						"steps":[
+								{
+								"stepsname":"preDevelopment22",
+								"stepsnametwo":"preDesign",
+								"icon":"imacone.svg"
+								},
+								{
+								"stepsname":"preDevelopment",
+								"stepsnametwo":"preDesign",
+								"icon":"imacone.svg"
+								}
+							]
+						},
+						{
+						"name":"CSS/SASS",
+						"nametwo":"CSS/SASS",
+						"icon":"imacone.svg",
+						"steps":[
+								{
+								"stepsname":"Using NPM",
+								"stepsnametwo":"Node",
+								"icon":"imacone.svg"
+								},
+								{
+								"stepsname":"Prep for testing",
+								"stepsnametwo":"JavaScript test runner",
+								"icon":"imacone.svg"
+								}
+							]
+						},
+						{
+						"name":"React",
+						"nametwo":"Testing",
+						"icon":"imacone.svg",
+						"steps":[
+								{
+								"stepsname":"Using NPM",
+								"stepsnametwo":"Node",
+								"icon":"imacone.svg"
+								},
+								{
+								"stepsname":"Prep for testing",
+								"stepsnametwo":"JavaScript test runner",
+								"icon":"imacone.svg"
+								}
+							]
+						},
+						{
+						"name":"Meteor",
+						"nametwo":"Testing",
+						"icon":"imacone.svg",
+						"steps":[
+								{
+								"stepsname":"Using NPM",
+								"stepsnametwo":"Node",
+								"icon":"imacone.svg"
+								},
+								{
+								"stepsname":"Prep for testing",
+								"stepsnametwo":"JavaScript test runner",
+								"icon":"imacone.svg"
+								}
+							]
+						},
+						{
+						"name":"React",
+						"nametwo":"Testing",
+						"icon":"imacone.svg",
+						"steps":[
+								{
+								"stepsname":"Using NPM",
+								"stepsnametwo":"Node",
+								"icon":"imacone.svg"
+								},
+								{
+								"stepsname":"Prep for testing",
+								"stepsnametwo":"JavaScript test runner",
+								"icon":"imacone.svg"
+								}
+							]
+						}
+					]
+				},
+				{
+				"name":"Packages",
+				"nametwo":"Inline Tools",
+				"icon":"imacone.svg",
+				"description": "Test doubles are often compared to stunt doubles, as they replace one object with another for testing purposes, similar to how actors and actresses are replaced with stunt doubles for dangerous action scenes. In Jasmine, test doubles come in the form of spies. A spy is a function that replaces a particular function where you want to control its behavior in a test and record how that function is used during the execution of that test. Some of the things you can do with spies include:",
+				"pre":[
+						{
+						"name":"Modulizer",
+						"nametwo":"Testing",
+						"icon":"imacone.svg",
+						"steps":[
+								{
+								"stepsname":"preDevelopment22",
+								"stepsnametwo":"preDesign",
+								"icon":"imacone.svg"
+								},
+								{
+								"stepsname":"preDevelopment",
+								"stepsnametwo":"preDesign",
+								"icon":"imacone.svg"
+								}
+							]
+						},
+						{
+						"name":"Webpack",
+						"nametwo":"Testing",
+						"icon":"imacone.svg",
+						"steps":[
+								{
+								"stepsname":"Using NPM",
+								"stepsnametwo":"Node",
+								"icon":"imacone.svg"
+								},
+								{
+								"stepsname":"Prep for testing",
+								"stepsnametwo":"JavaScript test runner",
+								"icon":"imacone.svg"
+								}
+							]
+						},
+						{
+						"name":"Bower",
+						"nametwo":"Testing",
+						"icon":"imacone.svg",
+						"steps":[
+								{
+								"stepsname":"preDevelopment22",
+								"stepsnametwo":"preDesign",
+								"icon":"imacone.svg"
+								},
+								{
+								"stepsname":"preDevelopment",
+								"stepsnametwo":"preDesign",
+								"icon":"imacone.svg"
+								}
+							]
+						},
+						{
+						"name":"Node",
+						"nametwo":"Testing",
+						"icon":"imacone.svg",
+						"steps":[
+								{
+								"stepsname":"Using NPM",
+								"stepsnametwo":"Node",
+								"icon":"imacone.svg"
+								},
+								{
+								"stepsname":"Prep for testing",
+								"stepsnametwo":"JavaScript test runner",
+								"icon":"imacone.svg"
+								}
+							]
+						},
+						{
+						"name":"Slush",
+						"nametwo":"Testing",
+						"icon":"imacone.svg",
+						"steps":[
+								{
+								"stepsname":"Using NPM",
+								"stepsnametwo":"Node",
+								"icon":"imacone.svg"
+								},
+								{
+								"stepsname":"Prep for testing",
+								"stepsnametwo":"JavaScript test runner",
+								"icon":"imacone.svg"
+								}
+							]
+						},
+						{
+						"name":"Gulp",
+						"nametwo":"Testing",
+						"icon":"imacone.svg",
+						"steps":[
+								{
+								"stepsname":"Using NPM",
+								"stepsnametwo":"Node",
+								"icon":"imacone.svg"
+								},
+								{
+								"stepsname":"Prep for testing",
+								"stepsnametwo":"JavaScript test runner",
+								"icon":"imacone.svg"
+								}
+							]
+						},
+						{
+						"name":"Grunt",
+						"nametwo":"Testing",
+						"icon":"imacone.svg",
+						"steps":[
+								{
+								"stepsname":"Using NPM",
+								"stepsnametwo":"Node",
+								"icon":"imacone.svg"
+								},
+								{
+								"stepsname":"Prep for testing",
+								"stepsnametwo":"JavaScript test runner",
+								"icon":"imacone.svg"
+								}
+							]
+						}
+					]
+				},
+				{
+				"name":"Wireframes",
+				"nametwo":"Frameworks",
+				"icon":"imacone.svg",
+				"description": "Test doubles are often compared to stunt doubles, as they replace one object with another for testing purposes, similar to how actors and actresses are replaced with stunt doubles for dangerous action scenes. In Jasmine, test doubles come in the form of spies. A spy is a function that replaces a particular function where you want to control its behavior in a test and record how that function is used during the execution of that test. Some of the things you can do with spies include:",
+				"pre":[
+						{
+						"name":"Python",
+						"nametwo":"Testing",
+						"icon":"imacone.svg",
+						"steps":[
+								{
+								"stepsname":"preDevelopment22",
+								"stepsnametwo":"preDesign",
+								"icon":"imacone.svg"
+								},
+								{
+								"stepsname":"preDevelopment",
+								"stepsnametwo":"preDesign",
+								"icon":"imacone.svg"
+								}
+							]
+						},
+						{
+						"name":"Java",
+						"nametwo":"Testing",
+						"icon":"imacone.svg",
+						"steps":[
+								{
+								"stepsname":"Using NPM",
+								"stepsnametwo":"Node",
+								"icon":"imacone.svg"
+								},
+								{
+								"stepsname":"Prep for testing",
+								"stepsnametwo":"JavaScript test runner",
+								"icon":"imacone.svg"
+								}
+							]
+						},
+						{
+						"name":"Angular",
+						"nametwo":"Testing",
+						"icon":"imacone.svg",
+						"steps":[
+								{
+								"stepsname":"preDevelopment22",
+								"stepsnametwo":"preDesign",
+								"icon":"imacone.svg"
+								},
+								{
+								"stepsname":"preDevelopment",
+								"stepsnametwo":"preDesign",
+								"icon":"imacone.svg"
+								}
+							]
+						},
+						{
+						"name":"Angular",
+						"nametwo":"Testing",
+						"icon":"imacone.svg",
+						"steps":[
+								{
+								"stepsname":"Using NPM",
+								"stepsnametwo":"Node",
+								"icon":"imacone.svg"
+								},
+								{
+								"stepsname":"Prep for testing",
+								"stepsnametwo":"JavaScript test runner",
+								"icon":"imacone.svg"
+								}
+							]
+						},
+						{
+						"name":"React",
+						"nametwo":"Testing",
+						"icon":"imacone.svg",
+						"steps":[
+								{
+								"stepsname":"Using NPM",
+								"stepsnametwo":"Node",
+								"icon":"imacone.svg"
+								},
+								{
+								"stepsname":"Prep for testing",
+								"stepsnametwo":"JavaScript test runner",
+								"icon":"imacone.svg"
+								}
+							]
+						},
+						{
+						"name":"Meteor",
+						"nametwo":"Testing",
+						"icon":"imacone.svg",
+						"steps":[
+								{
+								"stepsname":"Using NPM",
+								"stepsnametwo":"Node",
+								"icon":"imacone.svg"
+								},
+								{
+								"stepsname":"Prep for testing",
+								"stepsnametwo":"JavaScript test runner",
+								"icon":"imacone.svg"
+								}
+							]
+						},
+						{
+						"name":"React",
+						"nametwo":"Testing",
+						"icon":"imacone.svg",
+						"steps":[
+								{
+								"stepsname":"Using NPM",
+								"stepsnametwo":"Node",
+								"icon":"imacone.svg"
+								},
+								{
+								"stepsname":"Prep for testing",
+								"stepsnametwo":"JavaScript test runner",
+								"icon":"imacone.svg"
+								}
+							]
+						}
+					]
+				},
+
+				{
+				"name":"Angular",
+				"nametwo":"Angular 2",
+				"icon":"imacone.svg",
+				"description": "Test doubles are often compared to stunt doubles, as they replace one object with another for testing purposes, similar to how actors and actresses are replaced with stunt doubles for dangerous action scenes. In Jasmine, test doubles come in the form of spies. A spy is a function that replaces a particular function where you want to control its behavior in a test and record how that function is used during the execution of that test. Some of the things you can do with spies include:",
+				"pre":[
+						{
+						"name":"End-2-End",
+						"nametwo":"Testing",
+						"icon":"imacone.svg",
+						"steps":[
+								{
+								"stepsname":"preDevelopment22",
+								"stepsnametwo":"preDesign",
+								"icon":"imacone.svg"
+								},
+								{
+								"stepsname":"preDevelopment",
+								"stepsnametwo":"preDesign",
+								"icon":"imacone.svg"
+								}
+							]
+						},
+						{
+						"name":"Unit",
+						"nametwo":"Testing",
+						"icon":"imacone.svg",
+						"steps":[
+								{
+								"stepsname":"Using NPM",
+								"stepsnametwo":"Node",
+								"icon":"imacone.svg"
+								},
+								{
+								"stepsname":"Prep for testing",
+								"stepsnametwo":"JavaScript test runner",
+								"icon":"imacone.svg"
+								}
+							]
+						}
+					]
+				},
+				{
+				"name":"React",
+				"nametwo":"Redux",
+				"icon":"imacone.svg",
+				"pre":[
+						{
+						"name":"React",
+						"nametwo":"E2E Testing",
+						"icon":"imacone.svg",
+						"steps":[
+								{
+								"stepsname":"preDevelopment22",
+								"stepsnametwo":"preDesign",
+								"icon":"imacone.svg"
+								},
+								{
+								"stepsname":"preDevelopment",
+								"stepsnametwo":"preDesign",
+								"icon":"imacone.svg"
+								}
+							]
+						},
+						{
+						"name":"preDevelopment",
+						"nametwo":"preDesign"
+						}
+					]
+				},
+				{
+				"name":"Ruby",
+				"nametwo":"Rails",
+				"icon":"imacone.svg",
+				"description": "Test doubles are often compared to stunt doubles, as they replace one object with another for testing purposes, similar to how actors and actresses are replaced with stunt doubles for dangerous action scenes. In Jasmine, test doubles come in the form of spies. A spy is a function that replaces a particular function where you want to control its behavior in a test and record how that function is used during the execution of that test. Some of the things you can do with spies include:",
+				"pre":[
+						{
+						"name":"Ruby",
+						"nametwo":"Building with",
+						"icon":"imacone.svg",
+						"steps":[
+								{
+								"stepsname":"preDevelopment22",
+								"stepsnametwo":"preDesign",
+								"icon":"imacone.svg"
+								},
+								{
+								"stepsname":"preDevelopment",
+								"stepsnametwo":"preDesign",
+								"icon":"imacone.svg"
+								}
+							]
+						},
+						{
+						"name":"Ruby on Rails",
+						"nametwo":"Building with",
+						"icon":"imacone.svg",
+						"steps":[
+								{
+								"stepsname":"Using NPM",
+								"stepsnametwo":"Node",
+								"icon":"imacone.svg"
+								},
+								{
+								"stepsname":"Prep for testing",
+								"stepsnametwo":"JavaScript test runner",
+								"icon":"imacone.svg"
+								}
+							]
+						}
+					]
+				},
+				{
+				"name":"Testing",
+				"nametwo":"Security",
+				"icon":"imacone.svg",
+				"description": "Test doubles are often compared to stunt doubles, as they replace one object with another for testing purposes, similar to how actors and actresses are replaced with stunt doubles for dangerous action scenes. In Jasmine, test doubles come in the form of spies. A spy is a function that replaces a particular function where you want to control its behavior in a test and record how that function is used during the execution of that test. Some of the things you can do with spies include:",
+				"pre":[
+						{
+						"name":"Jasmine",
+						"nametwo":"Testing Language",
+						"icon":"imacone.svg",
+						"steps":[
+								{
+								"stepsname":"The API",
+								"stepsnametwo":"& using it",
+								"description": "expect(calculator.add(1, 4)).toEqual(5);",
+								"icon":"imacone.svg"
+								},
+								{
+								"stepsname":"Test Doubles",
+								"stepsnametwo":"preDesign",
+								"description": "expect(calculator.add(1, 4)).toEqual(5);",
+								"icon":"imacone.svg"
+								},
+								{
+								"stepsname":"Asynchronous Testing",
+								"stepsnametwo":"preDesign",
+								"description": "expect(calculator.add(1, 4)).toEqual(5);",
+								"icon":"imacone.svg"
+								}
+							]
+						},
+						{
+						"name":"Chai",
+						"nametwo":"Testing Language",
+						"icon":"imacone.svg",
+						"steps":[
+								{
+								"stepsname":"preDevelopment22",
+								"stepsnametwo":"preDesign",
+								"icon":"imacone.svg"
+								},
+								{
+								"stepsname":"preDevelopment",
+								"stepsnametwo":"preDesign",
+								"icon":"imacone.svg"
+								}
+							]
+						},
+						{
+						"name":"Sinon",
+						"nametwo":"Testing Language",
+						"icon":"imacone.svg",
+						"steps":[
+								{
+								"stepsname":"preDevelopment22",
+								"stepsnametwo":"preDesign",
+								"icon":"imacone.svg"
+								},
+								{
+								"stepsname":"preDevelopment",
+								"stepsnametwo":"preDesign",
+								"icon":"imacone.svg"
+								}
+							]
+						},
+						{
+						"name":"Mocha",
+						"nametwo":"Testing Language",
+						"icon":"imacone.svg",
+						"steps":[
+								{
+								"stepsname":"The API",
+								"stepsnametwo":"preDesign",
+								"icon":"imacone.svg"
+								},
+								{
+								"stepsname":"Test Doubles",
+								"stepsnametwo":"preDesign",
+								"icon":"imacone.svg",
+								"description": "Test doubles are often compared to stunt doubles, as they replace one object with another for testing purposes, similar to how actors and actresses are replaced with stunt doubles for dangerous action scenes. In Jasmine, test doubles come in the form of spies. A spy is a function that replaces a particular function where you want to control its behavior in a test and record how that function is used during the execution of that test. Some of the things you can do with spies include:"
+								},
+								{
+								"stepsname":"Asynchronous Testing",
+								"stepsnametwo":"preDesign",
+								"icon":"imacone.svg"
+								}
+							]
+						},
+						{
+						"name":"Karma",
+						"nametwo":"JS Task Runner",
+						"icon":"imacone.svg",
+						"steps":[
+								{
+								"stepsname":"preDevelopment22",
+								"stepsnametwo":"preDesign",
+								"icon":"imacone.svg"
+								},
+								{
+								"stepsname":"preDevelopment",
+								"stepsnametwo":"preDesign",
+								"icon":"imacone.svg"
+								}
+							]
+						}
+					]
+				},
+				{
+				"name":"Styling",
+				"nametwo":"Layouts",
+				"icon":"imacone.svg",
+				"description": "Test doubles are often compared to stunt doubles, as they replace one object with another for testing purposes, similar to how actors and actresses are replaced with stunt doubles for dangerous action scenes. In Jasmine, test doubles come in the form of spies. A spy is a function that replaces a particular function where you want to control its behavior in a test and record how that function is used during the execution of that test. Some of the things you can do with spies include:",
+				"pre":[
+						{
+						"name":"Sass/Less",
+						"nametwo":"Testing Language",
+						"icon":"imacone.svg",
+						"steps":[
+								{
+								"stepsname":"The API",
+								"stepsnametwo":"& using it",
+								"description": "expect(calculator.add(1, 4)).toEqual(5);",
+								"icon":"imacone.svg"
+								},
+								{
+								"stepsname":"Test Doubles",
+								"stepsnametwo":"preDesign",
+								"description": "expect(calculator.add(1, 4)).toEqual(5);",
+								"icon":"imacone.svg"
+								},
+								{
+								"stepsname":"Asynchronous Testing",
+								"stepsnametwo":"preDesign",
+								"description": "expect(calculator.add(1, 4)).toEqual(5);",
+								"icon":"imacone.svg"
+								}
+							]
+						},
+						{
+						"name":"Adaptive",
+						"nametwo":"Testing Language",
+						"icon":"imacone.svg",
+						"steps":[
+								{
+								"stepsname":"preDevelopment22",
+								"stepsnametwo":"preDesign",
+								"icon":"imacone.svg"
+								},
+								{
+								"stepsname":"preDevelopment",
+								"stepsnametwo":"preDesign",
+								"icon":"imacone.svg"
+								}
+							]
+						},
+						{
+						"name":"Responsive",
+						"nametwo":"Testing Language",
+						"icon":"imacone.svg",
+						"steps":[
+								{
+								"stepsname":"preDevelopment22",
+								"stepsnametwo":"preDesign",
+								"icon":"imacone.svg"
+								},
+								{
+								"stepsname":"preDevelopment",
+								"stepsnametwo":"preDesign",
+								"icon":"imacone.svg"
+								}
+							]
+						},
+						{
+						"name":"Animation",
+						"nametwo":"Testing Language",
+						"icon":"imacone.svg",
+						"steps":[
+								{
+								"stepsname":"The API",
+								"stepsnametwo":"preDesign",
+								"icon":"imacone.svg"
+								},
+								{
+								"stepsname":"Test Doubles",
+								"stepsnametwo":"preDesign",
+								"icon":"imacone.svg",
+								"description": "Test doubles are often compared to stunt doubles, as they replace one object with another for testing purposes, similar to how actors and actresses are replaced with stunt doubles for dangerous action scenes. In Jasmine, test doubles come in the form of spies. A spy is a function that replaces a particular function where you want to control its behavior in a test and record how that function is used during the execution of that test. Some of the things you can do with spies include:"
+								},
+								{
+								"stepsname":"Asynchronous Testing",
+								"stepsnametwo":"preDesign",
+								"icon":"imacone.svg"
+								}
+							]
+						},
+						{
+						"name":"Icons & SVGs",
+						"nametwo":"JS Task Runner",
+						"icon":"imacone.svg",
+						"steps":[
+								{
+								"stepsname":"preDevelopment22",
+								"stepsnametwo":"preDesign",
+								"icon":"imacone.svg"
+								},
+								{
+								"stepsname":"preDevelopment",
+								"stepsnametwo":"preDesign",
+								"icon":"imacone.svg"
+								}
+							]
+						},
+						{
+						"name":"Material",
+						"nametwo":"Industy Design",
+						"icon":"imacone.svg",
+						"steps":[
+								{
+								"stepsname":"preDevelopment22",
+								"stepsnametwo":"preDesign",
+								"icon":"imacone.svg"
+								},
+								{
+								"stepsname":"preDevelopment",
+								"stepsnametwo":"preDesign",
+								"icon":"imacone.svg"
+								}
+							]
+						}
+					]
+				}
+			]
 		},
 		{
+		"subtitle":"Designing Media",
 		"name":"Graphics",
-		"nametwo":"Illustration"
+		"nametwo":"Illustrations",
+		"icon":"imacone.svg",
+		"description": "Getting to production.",
+		"subs":[
+				{
+				"name":"Web",
+				"nametwo":"Assets",
+				"icon":"imacone.svg",
+				"description": "Test doubles are often compared to stunt doubles, as they replace one object with another for testing purposes, similar to how actors and actresses are replaced with stunt doubles for dangerous action scenes. In Jasmine, test doubles come in the form of spies. A spy is a function that replaces a particular function where you want to control its behavior in a test and record how that function is used during the execution of that test. Some of the things you can do with spies include:",
+				"pre":[
+						{
+						"name":"R.E.S.T.ful",
+						"nametwo":"Testing",
+						"icon":"imacone.svg",
+						"steps":[
+								{
+								"stepsname":"preDevelopment22",
+								"stepsnametwo":"preDesign",
+								"icon":"imacone.svg"
+								},
+								{
+								"stepsname":"preDevelopment",
+								"stepsnametwo":"preDesign",
+								"icon":"imacone.svg"
+								}
+							]
+						},
+						{
+						"name":"M.E.A.N.",
+						"nametwo":"Testing",
+						"icon":"imacone.svg",
+						"steps":[
+								{
+								"stepsname":"Using NPM",
+								"stepsnametwo":"Node",
+								"icon":"imacone.svg"
+								},
+								{
+								"stepsname":"Prep for testing",
+								"stepsnametwo":"JavaScript test runner",
+								"icon":"imacone.svg"
+								}
+							]
+						},
+						{
+						"name":"HTML",
+						"nametwo":"Testing",
+						"icon":"imacone.svg",
+						"steps":[
+								{
+								"stepsname":"preDevelopment22",
+								"stepsnametwo":"preDesign",
+								"icon":"imacone.svg"
+								},
+								{
+								"stepsname":"preDevelopment",
+								"stepsnametwo":"preDesign",
+								"icon":"imacone.svg"
+								}
+							]
+						},
+						{
+						"name":"CSS/SASS",
+						"nametwo":"CSS/SASS",
+						"icon":"imacone.svg",
+						"steps":[
+								{
+								"stepsname":"Using NPM",
+								"stepsnametwo":"Node",
+								"icon":"imacone.svg"
+								},
+								{
+								"stepsname":"Prep for testing",
+								"stepsnametwo":"JavaScript test runner",
+								"icon":"imacone.svg"
+								}
+							]
+						},
+						{
+						"name":"React",
+						"nametwo":"Testing",
+						"icon":"imacone.svg",
+						"steps":[
+								{
+								"stepsname":"Using NPM",
+								"stepsnametwo":"Node",
+								"icon":"imacone.svg"
+								},
+								{
+								"stepsname":"Prep for testing",
+								"stepsnametwo":"JavaScript test runner",
+								"icon":"imacone.svg"
+								}
+							]
+						},
+						{
+						"name":"Meteor",
+						"nametwo":"Testing",
+						"icon":"imacone.svg",
+						"steps":[
+								{
+								"stepsname":"Using NPM",
+								"stepsnametwo":"Node",
+								"icon":"imacone.svg"
+								},
+								{
+								"stepsname":"Prep for testing",
+								"stepsnametwo":"JavaScript test runner",
+								"icon":"imacone.svg"
+								}
+							]
+						},
+						{
+						"name":"React",
+						"nametwo":"Testing",
+						"icon":"imacone.svg",
+						"steps":[
+								{
+								"stepsname":"Using NPM",
+								"stepsnametwo":"Node",
+								"icon":"imacone.svg"
+								},
+								{
+								"stepsname":"Prep for testing",
+								"stepsnametwo":"JavaScript test runner",
+								"icon":"imacone.svg"
+								}
+							]
+						}
+					]
+				},
+				{
+				"name":"Packages",
+				"nametwo":"Inline Tools",
+				"icon":"imacone.svg",
+				"description": "Test doubles are often compared to stunt doubles, as they replace one object with another for testing purposes, similar to how actors and actresses are replaced with stunt doubles for dangerous action scenes. In Jasmine, test doubles come in the form of spies. A spy is a function that replaces a particular function where you want to control its behavior in a test and record how that function is used during the execution of that test. Some of the things you can do with spies include:",
+				"pre":[
+						{
+						"name":"Modulizer",
+						"nametwo":"Testing",
+						"icon":"imacone.svg",
+						"steps":[
+								{
+								"stepsname":"preDevelopment22",
+								"stepsnametwo":"preDesign",
+								"icon":"imacone.svg"
+								},
+								{
+								"stepsname":"preDevelopment",
+								"stepsnametwo":"preDesign",
+								"icon":"imacone.svg"
+								}
+							]
+						},
+						{
+						"name":"Webpack",
+						"nametwo":"Testing",
+						"icon":"imacone.svg",
+						"steps":[
+								{
+								"stepsname":"Using NPM",
+								"stepsnametwo":"Node",
+								"icon":"imacone.svg"
+								},
+								{
+								"stepsname":"Prep for testing",
+								"stepsnametwo":"JavaScript test runner",
+								"icon":"imacone.svg"
+								}
+							]
+						},
+						{
+						"name":"Bower",
+						"nametwo":"Testing",
+						"icon":"imacone.svg",
+						"steps":[
+								{
+								"stepsname":"preDevelopment22",
+								"stepsnametwo":"preDesign",
+								"icon":"imacone.svg"
+								},
+								{
+								"stepsname":"preDevelopment",
+								"stepsnametwo":"preDesign",
+								"icon":"imacone.svg"
+								}
+							]
+						},
+						{
+						"name":"Node",
+						"nametwo":"Testing",
+						"icon":"imacone.svg",
+						"steps":[
+								{
+								"stepsname":"Using NPM",
+								"stepsnametwo":"Node",
+								"icon":"imacone.svg"
+								},
+								{
+								"stepsname":"Prep for testing",
+								"stepsnametwo":"JavaScript test runner",
+								"icon":"imacone.svg"
+								}
+							]
+						},
+						{
+						"name":"Slush",
+						"nametwo":"Testing",
+						"icon":"imacone.svg",
+						"steps":[
+								{
+								"stepsname":"Using NPM",
+								"stepsnametwo":"Node",
+								"icon":"imacone.svg"
+								},
+								{
+								"stepsname":"Prep for testing",
+								"stepsnametwo":"JavaScript test runner",
+								"icon":"imacone.svg"
+								}
+							]
+						},
+						{
+						"name":"Gulp",
+						"nametwo":"Testing",
+						"icon":"imacone.svg",
+						"steps":[
+								{
+								"stepsname":"Using NPM",
+								"stepsnametwo":"Node",
+								"icon":"imacone.svg"
+								},
+								{
+								"stepsname":"Prep for testing",
+								"stepsnametwo":"JavaScript test runner",
+								"icon":"imacone.svg"
+								}
+							]
+						},
+						{
+						"name":"Grunt",
+						"nametwo":"Testing",
+						"icon":"imacone.svg",
+						"steps":[
+								{
+								"stepsname":"Using NPM",
+								"stepsnametwo":"Node",
+								"icon":"imacone.svg"
+								},
+								{
+								"stepsname":"Prep for testing",
+								"stepsnametwo":"JavaScript test runner",
+								"icon":"imacone.svg"
+								}
+							]
+						}
+					]
+				},
+				{
+				"name":"Wireframes",
+				"nametwo":"Frameworks",
+				"icon":"imacone.svg",
+				"description": "Test doubles are often compared to stunt doubles, as they replace one object with another for testing purposes, similar to how actors and actresses are replaced with stunt doubles for dangerous action scenes. In Jasmine, test doubles come in the form of spies. A spy is a function that replaces a particular function where you want to control its behavior in a test and record how that function is used during the execution of that test. Some of the things you can do with spies include:",
+				"pre":[
+						{
+						"name":"Python",
+						"nametwo":"Testing",
+						"icon":"imacone.svg",
+						"steps":[
+								{
+								"stepsname":"preDevelopment22",
+								"stepsnametwo":"preDesign",
+								"icon":"imacone.svg"
+								},
+								{
+								"stepsname":"preDevelopment",
+								"stepsnametwo":"preDesign",
+								"icon":"imacone.svg"
+								}
+							]
+						},
+						{
+						"name":"Java",
+						"nametwo":"Testing",
+						"icon":"imacone.svg",
+						"steps":[
+								{
+								"stepsname":"Using NPM",
+								"stepsnametwo":"Node",
+								"icon":"imacone.svg"
+								},
+								{
+								"stepsname":"Prep for testing",
+								"stepsnametwo":"JavaScript test runner",
+								"icon":"imacone.svg"
+								}
+							]
+						},
+						{
+						"name":"Angular",
+						"nametwo":"Testing",
+						"icon":"imacone.svg",
+						"steps":[
+								{
+								"stepsname":"preDevelopment22",
+								"stepsnametwo":"preDesign",
+								"icon":"imacone.svg"
+								},
+								{
+								"stepsname":"preDevelopment",
+								"stepsnametwo":"preDesign",
+								"icon":"imacone.svg"
+								}
+							]
+						},
+						{
+						"name":"Angular",
+						"nametwo":"Testing",
+						"icon":"imacone.svg",
+						"steps":[
+								{
+								"stepsname":"Using NPM",
+								"stepsnametwo":"Node",
+								"icon":"imacone.svg"
+								},
+								{
+								"stepsname":"Prep for testing",
+								"stepsnametwo":"JavaScript test runner",
+								"icon":"imacone.svg"
+								}
+							]
+						},
+						{
+						"name":"React",
+						"nametwo":"Testing",
+						"icon":"imacone.svg",
+						"steps":[
+								{
+								"stepsname":"Using NPM",
+								"stepsnametwo":"Node",
+								"icon":"imacone.svg"
+								},
+								{
+								"stepsname":"Prep for testing",
+								"stepsnametwo":"JavaScript test runner",
+								"icon":"imacone.svg"
+								}
+							]
+						},
+						{
+						"name":"Meteor",
+						"nametwo":"Testing",
+						"icon":"imacone.svg",
+						"steps":[
+								{
+								"stepsname":"Using NPM",
+								"stepsnametwo":"Node",
+								"icon":"imacone.svg"
+								},
+								{
+								"stepsname":"Prep for testing",
+								"stepsnametwo":"JavaScript test runner",
+								"icon":"imacone.svg"
+								}
+							]
+						},
+						{
+						"name":"React",
+						"nametwo":"Testing",
+						"icon":"imacone.svg",
+						"steps":[
+								{
+								"stepsname":"Using NPM",
+								"stepsnametwo":"Node",
+								"icon":"imacone.svg"
+								},
+								{
+								"stepsname":"Prep for testing",
+								"stepsnametwo":"JavaScript test runner",
+								"icon":"imacone.svg"
+								}
+							]
+						}
+					]
+				},
+
+				{
+				"name":"Angular",
+				"nametwo":"Angular 2",
+				"icon":"imacone.svg",
+				"description": "Test doubles are often compared to stunt doubles, as they replace one object with another for testing purposes, similar to how actors and actresses are replaced with stunt doubles for dangerous action scenes. In Jasmine, test doubles come in the form of spies. A spy is a function that replaces a particular function where you want to control its behavior in a test and record how that function is used during the execution of that test. Some of the things you can do with spies include:",
+				"pre":[
+						{
+						"name":"End-2-End",
+						"nametwo":"Testing",
+						"icon":"imacone.svg",
+						"steps":[
+								{
+								"stepsname":"preDevelopment22",
+								"stepsnametwo":"preDesign",
+								"icon":"imacone.svg"
+								},
+								{
+								"stepsname":"preDevelopment",
+								"stepsnametwo":"preDesign",
+								"icon":"imacone.svg"
+								}
+							]
+						},
+						{
+						"name":"Unit",
+						"nametwo":"Testing",
+						"icon":"imacone.svg",
+						"steps":[
+								{
+								"stepsname":"Using NPM",
+								"stepsnametwo":"Node",
+								"icon":"imacone.svg"
+								},
+								{
+								"stepsname":"Prep for testing",
+								"stepsnametwo":"JavaScript test runner",
+								"icon":"imacone.svg"
+								}
+							]
+						}
+					]
+				},
+				{
+				"name":"React",
+				"nametwo":"Redux",
+				"icon":"imacone.svg",
+				"pre":[
+						{
+						"name":"React",
+						"nametwo":"E2E Testing",
+						"icon":"imacone.svg",
+						"steps":[
+								{
+								"stepsname":"preDevelopment22",
+								"stepsnametwo":"preDesign",
+								"icon":"imacone.svg"
+								},
+								{
+								"stepsname":"preDevelopment",
+								"stepsnametwo":"preDesign",
+								"icon":"imacone.svg"
+								}
+							]
+						},
+						{
+						"name":"preDevelopment",
+						"nametwo":"preDesign"
+						}
+					]
+				},
+				{
+				"name":"Ruby",
+				"nametwo":"Rails",
+				"icon":"imacone.svg",
+				"description": "Test doubles are often compared to stunt doubles, as they replace one object with another for testing purposes, similar to how actors and actresses are replaced with stunt doubles for dangerous action scenes. In Jasmine, test doubles come in the form of spies. A spy is a function that replaces a particular function where you want to control its behavior in a test and record how that function is used during the execution of that test. Some of the things you can do with spies include:",
+				"pre":[
+						{
+						"name":"Ruby",
+						"nametwo":"Building with",
+						"icon":"imacone.svg",
+						"steps":[
+								{
+								"stepsname":"preDevelopment22",
+								"stepsnametwo":"preDesign",
+								"icon":"imacone.svg"
+								},
+								{
+								"stepsname":"preDevelopment",
+								"stepsnametwo":"preDesign",
+								"icon":"imacone.svg"
+								}
+							]
+						},
+						{
+						"name":"Ruby on Rails",
+						"nametwo":"Building with",
+						"icon":"imacone.svg",
+						"steps":[
+								{
+								"stepsname":"Using NPM",
+								"stepsnametwo":"Node",
+								"icon":"imacone.svg"
+								},
+								{
+								"stepsname":"Prep for testing",
+								"stepsnametwo":"JavaScript test runner",
+								"icon":"imacone.svg"
+								}
+							]
+						}
+					]
+				},
+				{
+				"name":"Testing",
+				"nametwo":"Security",
+				"icon":"imacone.svg",
+				"description": "Test doubles are often compared to stunt doubles, as they replace one object with another for testing purposes, similar to how actors and actresses are replaced with stunt doubles for dangerous action scenes. In Jasmine, test doubles come in the form of spies. A spy is a function that replaces a particular function where you want to control its behavior in a test and record how that function is used during the execution of that test. Some of the things you can do with spies include:",
+				"pre":[
+						{
+						"name":"Jasmine",
+						"nametwo":"Testing Language",
+						"icon":"imacone.svg",
+						"steps":[
+								{
+								"stepsname":"The API",
+								"stepsnametwo":"& using it",
+								"description": "expect(calculator.add(1, 4)).toEqual(5);",
+								"icon":"imacone.svg"
+								},
+								{
+								"stepsname":"Test Doubles",
+								"stepsnametwo":"preDesign",
+								"description": "expect(calculator.add(1, 4)).toEqual(5);",
+								"icon":"imacone.svg"
+								},
+								{
+								"stepsname":"Asynchronous Testing",
+								"stepsnametwo":"preDesign",
+								"description": "expect(calculator.add(1, 4)).toEqual(5);",
+								"icon":"imacone.svg"
+								}
+							]
+						},
+						{
+						"name":"Chai",
+						"nametwo":"Testing Language",
+						"icon":"imacone.svg",
+						"steps":[
+								{
+								"stepsname":"preDevelopment22",
+								"stepsnametwo":"preDesign",
+								"icon":"imacone.svg"
+								},
+								{
+								"stepsname":"preDevelopment",
+								"stepsnametwo":"preDesign",
+								"icon":"imacone.svg"
+								}
+							]
+						},
+						{
+						"name":"Sinon",
+						"nametwo":"Testing Language",
+						"icon":"imacone.svg",
+						"steps":[
+								{
+								"stepsname":"preDevelopment22",
+								"stepsnametwo":"preDesign",
+								"icon":"imacone.svg"
+								},
+								{
+								"stepsname":"preDevelopment",
+								"stepsnametwo":"preDesign",
+								"icon":"imacone.svg"
+								}
+							]
+						},
+						{
+						"name":"Mocha",
+						"nametwo":"Testing Language",
+						"icon":"imacone.svg",
+						"steps":[
+								{
+								"stepsname":"The API",
+								"stepsnametwo":"preDesign",
+								"icon":"imacone.svg"
+								},
+								{
+								"stepsname":"Test Doubles",
+								"stepsnametwo":"preDesign",
+								"icon":"imacone.svg",
+								"description": "Test doubles are often compared to stunt doubles, as they replace one object with another for testing purposes, similar to how actors and actresses are replaced with stunt doubles for dangerous action scenes. In Jasmine, test doubles come in the form of spies. A spy is a function that replaces a particular function where you want to control its behavior in a test and record how that function is used during the execution of that test. Some of the things you can do with spies include:"
+								},
+								{
+								"stepsname":"Asynchronous Testing",
+								"stepsnametwo":"preDesign",
+								"icon":"imacone.svg"
+								}
+							]
+						},
+						{
+						"name":"Karma",
+						"nametwo":"JS Task Runner",
+						"icon":"imacone.svg",
+						"steps":[
+								{
+								"stepsname":"preDevelopment22",
+								"stepsnametwo":"preDesign",
+								"icon":"imacone.svg"
+								},
+								{
+								"stepsname":"preDevelopment",
+								"stepsnametwo":"preDesign",
+								"icon":"imacone.svg"
+								}
+							]
+						}
+					]
+				},
+				{
+				"name":"Styling",
+				"nametwo":"Layouts",
+				"icon":"imacone.svg",
+				"description": "Test doubles are often compared to stunt doubles, as they replace one object with another for testing purposes, similar to how actors and actresses are replaced with stunt doubles for dangerous action scenes. In Jasmine, test doubles come in the form of spies. A spy is a function that replaces a particular function where you want to control its behavior in a test and record how that function is used during the execution of that test. Some of the things you can do with spies include:",
+				"pre":[
+						{
+						"name":"Sass/Less",
+						"nametwo":"Testing Language",
+						"icon":"imacone.svg",
+						"steps":[
+								{
+								"stepsname":"The API",
+								"stepsnametwo":"& using it",
+								"description": "expect(calculator.add(1, 4)).toEqual(5);",
+								"icon":"imacone.svg"
+								},
+								{
+								"stepsname":"Test Doubles",
+								"stepsnametwo":"preDesign",
+								"description": "expect(calculator.add(1, 4)).toEqual(5);",
+								"icon":"imacone.svg"
+								},
+								{
+								"stepsname":"Asynchronous Testing",
+								"stepsnametwo":"preDesign",
+								"description": "expect(calculator.add(1, 4)).toEqual(5);",
+								"icon":"imacone.svg"
+								}
+							]
+						},
+						{
+						"name":"Adaptive",
+						"nametwo":"Testing Language",
+						"icon":"imacone.svg",
+						"steps":[
+								{
+								"stepsname":"preDevelopment22",
+								"stepsnametwo":"preDesign",
+								"icon":"imacone.svg"
+								},
+								{
+								"stepsname":"preDevelopment",
+								"stepsnametwo":"preDesign",
+								"icon":"imacone.svg"
+								}
+							]
+						},
+						{
+						"name":"Responsive",
+						"nametwo":"Testing Language",
+						"icon":"imacone.svg",
+						"steps":[
+								{
+								"stepsname":"preDevelopment22",
+								"stepsnametwo":"preDesign",
+								"icon":"imacone.svg"
+								},
+								{
+								"stepsname":"preDevelopment",
+								"stepsnametwo":"preDesign",
+								"icon":"imacone.svg"
+								}
+							]
+						},
+						{
+						"name":"Animation",
+						"nametwo":"Testing Language",
+						"icon":"imacone.svg",
+						"steps":[
+								{
+								"stepsname":"The API",
+								"stepsnametwo":"preDesign",
+								"icon":"imacone.svg"
+								},
+								{
+								"stepsname":"Test Doubles",
+								"stepsnametwo":"preDesign",
+								"icon":"imacone.svg",
+								"description": "Test doubles are often compared to stunt doubles, as they replace one object with another for testing purposes, similar to how actors and actresses are replaced with stunt doubles for dangerous action scenes. In Jasmine, test doubles come in the form of spies. A spy is a function that replaces a particular function where you want to control its behavior in a test and record how that function is used during the execution of that test. Some of the things you can do with spies include:"
+								},
+								{
+								"stepsname":"Asynchronous Testing",
+								"stepsnametwo":"preDesign",
+								"icon":"imacone.svg"
+								}
+							]
+						},
+						{
+						"name":"Icons & SVGs",
+						"nametwo":"JS Task Runner",
+						"icon":"imacone.svg",
+						"steps":[
+								{
+								"stepsname":"preDevelopment22",
+								"stepsnametwo":"preDesign",
+								"icon":"imacone.svg"
+								},
+								{
+								"stepsname":"preDevelopment",
+								"stepsnametwo":"preDesign",
+								"icon":"imacone.svg"
+								}
+							]
+						},
+						{
+						"name":"Material",
+						"nametwo":"Industy Design",
+						"icon":"imacone.svg",
+						"steps":[
+								{
+								"stepsname":"preDevelopment22",
+								"stepsnametwo":"preDesign",
+								"icon":"imacone.svg"
+								},
+								{
+								"stepsname":"preDevelopment",
+								"stepsnametwo":"preDesign",
+								"icon":"imacone.svg"
+								}
+							]
+						}
+					]
+				}
+			]
 		},
 		{
+		"subtitle":"Maximizing Oppurtuniy",
 		"name":"Strategy",
-		"nametwo":"Analytics"
+		"nametwo":"Analytics",
+		"icon":"imacone.svg",
+		"description": "Getting to production.",
+		"subs":[
+				{
+				"name":"Brands",
+				"nametwo":"Marketing",
+				"icon":"imacone.svg",
+				"description": "Test doubles are often compared to stunt doubles, as they replace one object with another for testing purposes, similar to how actors and actresses are replaced with stunt doubles for dangerous action scenes. In Jasmine, test doubles come in the form of spies. A spy is a function that replaces a particular function where you want to control its behavior in a test and record how that function is used during the execution of that test. Some of the things you can do with spies include:",
+				"pre":[
+						{
+						"name":"R.E.S.T.ful",
+						"nametwo":"Testing",
+						"icon":"imacone.svg",
+						"steps":[
+								{
+								"stepsname":"preDevelopment22",
+								"stepsnametwo":"preDesign",
+								"icon":"imacone.svg"
+								},
+								{
+								"stepsname":"preDevelopment",
+								"stepsnametwo":"preDesign",
+								"icon":"imacone.svg"
+								}
+							]
+						},
+						{
+						"name":"M.E.A.N.",
+						"nametwo":"Testing",
+						"icon":"imacone.svg",
+						"steps":[
+								{
+								"stepsname":"Using NPM",
+								"stepsnametwo":"Node",
+								"icon":"imacone.svg"
+								},
+								{
+								"stepsname":"Prep for testing",
+								"stepsnametwo":"JavaScript test runner",
+								"icon":"imacone.svg"
+								}
+							]
+						},
+						{
+						"name":"HTML",
+						"nametwo":"Testing",
+						"icon":"imacone.svg",
+						"steps":[
+								{
+								"stepsname":"preDevelopment22",
+								"stepsnametwo":"preDesign",
+								"icon":"imacone.svg"
+								},
+								{
+								"stepsname":"preDevelopment",
+								"stepsnametwo":"preDesign",
+								"icon":"imacone.svg"
+								}
+							]
+						},
+						{
+						"name":"CSS/SASS",
+						"nametwo":"CSS/SASS",
+						"icon":"imacone.svg",
+						"steps":[
+								{
+								"stepsname":"Using NPM",
+								"stepsnametwo":"Node",
+								"icon":"imacone.svg"
+								},
+								{
+								"stepsname":"Prep for testing",
+								"stepsnametwo":"JavaScript test runner",
+								"icon":"imacone.svg"
+								}
+							]
+						},
+						{
+						"name":"React",
+						"nametwo":"Testing",
+						"icon":"imacone.svg",
+						"steps":[
+								{
+								"stepsname":"Using NPM",
+								"stepsnametwo":"Node",
+								"icon":"imacone.svg"
+								},
+								{
+								"stepsname":"Prep for testing",
+								"stepsnametwo":"JavaScript test runner",
+								"icon":"imacone.svg"
+								}
+							]
+						},
+						{
+						"name":"Meteor",
+						"nametwo":"Testing",
+						"icon":"imacone.svg",
+						"steps":[
+								{
+								"stepsname":"Using NPM",
+								"stepsnametwo":"Node",
+								"icon":"imacone.svg"
+								},
+								{
+								"stepsname":"Prep for testing",
+								"stepsnametwo":"JavaScript test runner",
+								"icon":"imacone.svg"
+								}
+							]
+						},
+						{
+						"name":"React",
+						"nametwo":"Testing",
+						"icon":"imacone.svg",
+						"steps":[
+								{
+								"stepsname":"Using NPM",
+								"stepsnametwo":"Node",
+								"icon":"imacone.svg"
+								},
+								{
+								"stepsname":"Prep for testing",
+								"stepsnametwo":"JavaScript test runner",
+								"icon":"imacone.svg"
+								}
+							]
+						}
+					]
+				},
+				{
+				"name":"Packages",
+				"nametwo":"Inline Tools",
+				"icon":"imacone.svg",
+				"description": "Test doubles are often compared to stunt doubles, as they replace one object with another for testing purposes, similar to how actors and actresses are replaced with stunt doubles for dangerous action scenes. In Jasmine, test doubles come in the form of spies. A spy is a function that replaces a particular function where you want to control its behavior in a test and record how that function is used during the execution of that test. Some of the things you can do with spies include:",
+				"pre":[
+						{
+						"name":"Modulizer",
+						"nametwo":"Testing",
+						"icon":"imacone.svg",
+						"steps":[
+								{
+								"stepsname":"preDevelopment22",
+								"stepsnametwo":"preDesign",
+								"icon":"imacone.svg"
+								},
+								{
+								"stepsname":"preDevelopment",
+								"stepsnametwo":"preDesign",
+								"icon":"imacone.svg"
+								}
+							]
+						},
+						{
+						"name":"Webpack",
+						"nametwo":"Testing",
+						"icon":"imacone.svg",
+						"steps":[
+								{
+								"stepsname":"Using NPM",
+								"stepsnametwo":"Node",
+								"icon":"imacone.svg"
+								},
+								{
+								"stepsname":"Prep for testing",
+								"stepsnametwo":"JavaScript test runner",
+								"icon":"imacone.svg"
+								}
+							]
+						},
+						{
+						"name":"Bower",
+						"nametwo":"Testing",
+						"icon":"imacone.svg",
+						"steps":[
+								{
+								"stepsname":"preDevelopment22",
+								"stepsnametwo":"preDesign",
+								"icon":"imacone.svg"
+								},
+								{
+								"stepsname":"preDevelopment",
+								"stepsnametwo":"preDesign",
+								"icon":"imacone.svg"
+								}
+							]
+						},
+						{
+						"name":"Node",
+						"nametwo":"Testing",
+						"icon":"imacone.svg",
+						"steps":[
+								{
+								"stepsname":"Using NPM",
+								"stepsnametwo":"Node",
+								"icon":"imacone.svg"
+								},
+								{
+								"stepsname":"Prep for testing",
+								"stepsnametwo":"JavaScript test runner",
+								"icon":"imacone.svg"
+								}
+							]
+						},
+						{
+						"name":"Slush",
+						"nametwo":"Testing",
+						"icon":"imacone.svg",
+						"steps":[
+								{
+								"stepsname":"Using NPM",
+								"stepsnametwo":"Node",
+								"icon":"imacone.svg"
+								},
+								{
+								"stepsname":"Prep for testing",
+								"stepsnametwo":"JavaScript test runner",
+								"icon":"imacone.svg"
+								}
+							]
+						},
+						{
+						"name":"Gulp",
+						"nametwo":"Testing",
+						"icon":"imacone.svg",
+						"steps":[
+								{
+								"stepsname":"Using NPM",
+								"stepsnametwo":"Node",
+								"icon":"imacone.svg"
+								},
+								{
+								"stepsname":"Prep for testing",
+								"stepsnametwo":"JavaScript test runner",
+								"icon":"imacone.svg"
+								}
+							]
+						},
+						{
+						"name":"Grunt",
+						"nametwo":"Testing",
+						"icon":"imacone.svg",
+						"steps":[
+								{
+								"stepsname":"Using NPM",
+								"stepsnametwo":"Node",
+								"icon":"imacone.svg"
+								},
+								{
+								"stepsname":"Prep for testing",
+								"stepsnametwo":"JavaScript test runner",
+								"icon":"imacone.svg"
+								}
+							]
+						}
+					]
+				},
+				{
+				"name":"Wireframes",
+				"nametwo":"Frameworks",
+				"icon":"imacone.svg",
+				"description": "Test doubles are often compared to stunt doubles, as they replace one object with another for testing purposes, similar to how actors and actresses are replaced with stunt doubles for dangerous action scenes. In Jasmine, test doubles come in the form of spies. A spy is a function that replaces a particular function where you want to control its behavior in a test and record how that function is used during the execution of that test. Some of the things you can do with spies include:",
+				"pre":[
+						{
+						"name":"Python",
+						"nametwo":"Testing",
+						"icon":"imacone.svg",
+						"steps":[
+								{
+								"stepsname":"preDevelopment22",
+								"stepsnametwo":"preDesign",
+								"icon":"imacone.svg"
+								},
+								{
+								"stepsname":"preDevelopment",
+								"stepsnametwo":"preDesign",
+								"icon":"imacone.svg"
+								}
+							]
+						},
+						{
+						"name":"Java",
+						"nametwo":"Testing",
+						"icon":"imacone.svg",
+						"steps":[
+								{
+								"stepsname":"Using NPM",
+								"stepsnametwo":"Node",
+								"icon":"imacone.svg"
+								},
+								{
+								"stepsname":"Prep for testing",
+								"stepsnametwo":"JavaScript test runner",
+								"icon":"imacone.svg"
+								}
+							]
+						},
+						{
+						"name":"Angular",
+						"nametwo":"Testing",
+						"icon":"imacone.svg",
+						"steps":[
+								{
+								"stepsname":"preDevelopment22",
+								"stepsnametwo":"preDesign",
+								"icon":"imacone.svg"
+								},
+								{
+								"stepsname":"preDevelopment",
+								"stepsnametwo":"preDesign",
+								"icon":"imacone.svg"
+								}
+							]
+						},
+						{
+						"name":"Angular",
+						"nametwo":"Testing",
+						"icon":"imacone.svg",
+						"steps":[
+								{
+								"stepsname":"Using NPM",
+								"stepsnametwo":"Node",
+								"icon":"imacone.svg"
+								},
+								{
+								"stepsname":"Prep for testing",
+								"stepsnametwo":"JavaScript test runner",
+								"icon":"imacone.svg"
+								}
+							]
+						},
+						{
+						"name":"React",
+						"nametwo":"Testing",
+						"icon":"imacone.svg",
+						"steps":[
+								{
+								"stepsname":"Using NPM",
+								"stepsnametwo":"Node",
+								"icon":"imacone.svg"
+								},
+								{
+								"stepsname":"Prep for testing",
+								"stepsnametwo":"JavaScript test runner",
+								"icon":"imacone.svg"
+								}
+							]
+						},
+						{
+						"name":"Meteor",
+						"nametwo":"Testing",
+						"icon":"imacone.svg",
+						"steps":[
+								{
+								"stepsname":"Using NPM",
+								"stepsnametwo":"Node",
+								"icon":"imacone.svg"
+								},
+								{
+								"stepsname":"Prep for testing",
+								"stepsnametwo":"JavaScript test runner",
+								"icon":"imacone.svg"
+								}
+							]
+						},
+						{
+						"name":"React",
+						"nametwo":"Testing",
+						"icon":"imacone.svg",
+						"steps":[
+								{
+								"stepsname":"Using NPM",
+								"stepsnametwo":"Node",
+								"icon":"imacone.svg"
+								},
+								{
+								"stepsname":"Prep for testing",
+								"stepsnametwo":"JavaScript test runner",
+								"icon":"imacone.svg"
+								}
+							]
+						}
+					]
+				},
+
+				{
+				"name":"Angular",
+				"nametwo":"Angular 2",
+				"icon":"imacone.svg",
+				"description": "Test doubles are often compared to stunt doubles, as they replace one object with another for testing purposes, similar to how actors and actresses are replaced with stunt doubles for dangerous action scenes. In Jasmine, test doubles come in the form of spies. A spy is a function that replaces a particular function where you want to control its behavior in a test and record how that function is used during the execution of that test. Some of the things you can do with spies include:",
+				"pre":[
+						{
+						"name":"End-2-End",
+						"nametwo":"Testing",
+						"icon":"imacone.svg",
+						"steps":[
+								{
+								"stepsname":"preDevelopment22",
+								"stepsnametwo":"preDesign",
+								"icon":"imacone.svg"
+								},
+								{
+								"stepsname":"preDevelopment",
+								"stepsnametwo":"preDesign",
+								"icon":"imacone.svg"
+								}
+							]
+						},
+						{
+						"name":"Unit",
+						"nametwo":"Testing",
+						"icon":"imacone.svg",
+						"steps":[
+								{
+								"stepsname":"Using NPM",
+								"stepsnametwo":"Node",
+								"icon":"imacone.svg"
+								},
+								{
+								"stepsname":"Prep for testing",
+								"stepsnametwo":"JavaScript test runner",
+								"icon":"imacone.svg"
+								}
+							]
+						}
+					]
+				},
+				{
+				"name":"React",
+				"nametwo":"Redux",
+				"icon":"imacone.svg",
+				"pre":[
+						{
+						"name":"React",
+						"nametwo":"E2E Testing",
+						"icon":"imacone.svg",
+						"steps":[
+								{
+								"stepsname":"preDevelopment22",
+								"stepsnametwo":"preDesign",
+								"icon":"imacone.svg"
+								},
+								{
+								"stepsname":"preDevelopment",
+								"stepsnametwo":"preDesign",
+								"icon":"imacone.svg"
+								}
+							]
+						},
+						{
+						"name":"preDevelopment",
+						"nametwo":"preDesign"
+						}
+					]
+				},
+				{
+				"name":"Ruby",
+				"nametwo":"Rails",
+				"icon":"imacone.svg",
+				"description": "Test doubles are often compared to stunt doubles, as they replace one object with another for testing purposes, similar to how actors and actresses are replaced with stunt doubles for dangerous action scenes. In Jasmine, test doubles come in the form of spies. A spy is a function that replaces a particular function where you want to control its behavior in a test and record how that function is used during the execution of that test. Some of the things you can do with spies include:",
+				"pre":[
+						{
+						"name":"Ruby",
+						"nametwo":"Building with",
+						"icon":"imacone.svg",
+						"steps":[
+								{
+								"stepsname":"preDevelopment22",
+								"stepsnametwo":"preDesign",
+								"icon":"imacone.svg"
+								},
+								{
+								"stepsname":"preDevelopment",
+								"stepsnametwo":"preDesign",
+								"icon":"imacone.svg"
+								}
+							]
+						},
+						{
+						"name":"Ruby on Rails",
+						"nametwo":"Building with",
+						"icon":"imacone.svg",
+						"steps":[
+								{
+								"stepsname":"Using NPM",
+								"stepsnametwo":"Node",
+								"icon":"imacone.svg"
+								},
+								{
+								"stepsname":"Prep for testing",
+								"stepsnametwo":"JavaScript test runner",
+								"icon":"imacone.svg"
+								}
+							]
+						}
+					]
+				},
+				{
+				"name":"Testing",
+				"nametwo":"Security",
+				"icon":"imacone.svg",
+				"description": "Test doubles are often compared to stunt doubles, as they replace one object with another for testing purposes, similar to how actors and actresses are replaced with stunt doubles for dangerous action scenes. In Jasmine, test doubles come in the form of spies. A spy is a function that replaces a particular function where you want to control its behavior in a test and record how that function is used during the execution of that test. Some of the things you can do with spies include:",
+				"pre":[
+						{
+						"name":"Jasmine",
+						"nametwo":"Testing Language",
+						"icon":"imacone.svg",
+						"steps":[
+								{
+								"stepsname":"The API",
+								"stepsnametwo":"& using it",
+								"description": "expect(calculator.add(1, 4)).toEqual(5);",
+								"icon":"imacone.svg"
+								},
+								{
+								"stepsname":"Test Doubles",
+								"stepsnametwo":"preDesign",
+								"description": "expect(calculator.add(1, 4)).toEqual(5);",
+								"icon":"imacone.svg"
+								},
+								{
+								"stepsname":"Asynchronous Testing",
+								"stepsnametwo":"preDesign",
+								"description": "expect(calculator.add(1, 4)).toEqual(5);",
+								"icon":"imacone.svg"
+								}
+							]
+						},
+						{
+						"name":"Chai",
+						"nametwo":"Testing Language",
+						"icon":"imacone.svg",
+						"steps":[
+								{
+								"stepsname":"preDevelopment22",
+								"stepsnametwo":"preDesign",
+								"icon":"imacone.svg"
+								},
+								{
+								"stepsname":"preDevelopment",
+								"stepsnametwo":"preDesign",
+								"icon":"imacone.svg"
+								}
+							]
+						},
+						{
+						"name":"Sinon",
+						"nametwo":"Testing Language",
+						"icon":"imacone.svg",
+						"steps":[
+								{
+								"stepsname":"preDevelopment22",
+								"stepsnametwo":"preDesign",
+								"icon":"imacone.svg"
+								},
+								{
+								"stepsname":"preDevelopment",
+								"stepsnametwo":"preDesign",
+								"icon":"imacone.svg"
+								}
+							]
+						},
+						{
+						"name":"Mocha",
+						"nametwo":"Testing Language",
+						"icon":"imacone.svg",
+						"steps":[
+								{
+								"stepsname":"The API",
+								"stepsnametwo":"preDesign",
+								"icon":"imacone.svg"
+								},
+								{
+								"stepsname":"Test Doubles",
+								"stepsnametwo":"preDesign",
+								"icon":"imacone.svg",
+								"description": "Test doubles are often compared to stunt doubles, as they replace one object with another for testing purposes, similar to how actors and actresses are replaced with stunt doubles for dangerous action scenes. In Jasmine, test doubles come in the form of spies. A spy is a function that replaces a particular function where you want to control its behavior in a test and record how that function is used during the execution of that test. Some of the things you can do with spies include:"
+								},
+								{
+								"stepsname":"Asynchronous Testing",
+								"stepsnametwo":"preDesign",
+								"icon":"imacone.svg"
+								}
+							]
+						},
+						{
+						"name":"Karma",
+						"nametwo":"JS Task Runner",
+						"icon":"imacone.svg",
+						"steps":[
+								{
+								"stepsname":"preDevelopment22",
+								"stepsnametwo":"preDesign",
+								"icon":"imacone.svg"
+								},
+								{
+								"stepsname":"preDevelopment",
+								"stepsnametwo":"preDesign",
+								"icon":"imacone.svg"
+								}
+							]
+						}
+					]
+				},
+				{
+				"name":"Styling",
+				"nametwo":"Layouts",
+				"icon":"imacone.svg",
+				"description": "Test doubles are often compared to stunt doubles, as they replace one object with another for testing purposes, similar to how actors and actresses are replaced with stunt doubles for dangerous action scenes. In Jasmine, test doubles come in the form of spies. A spy is a function that replaces a particular function where you want to control its behavior in a test and record how that function is used during the execution of that test. Some of the things you can do with spies include:",
+				"pre":[
+						{
+						"name":"Sass/Less",
+						"nametwo":"Testing Language",
+						"icon":"imacone.svg",
+						"steps":[
+								{
+								"stepsname":"The API",
+								"stepsnametwo":"& using it",
+								"description": "expect(calculator.add(1, 4)).toEqual(5);",
+								"icon":"imacone.svg"
+								},
+								{
+								"stepsname":"Test Doubles",
+								"stepsnametwo":"preDesign",
+								"description": "expect(calculator.add(1, 4)).toEqual(5);",
+								"icon":"imacone.svg"
+								},
+								{
+								"stepsname":"Asynchronous Testing",
+								"stepsnametwo":"preDesign",
+								"description": "expect(calculator.add(1, 4)).toEqual(5);",
+								"icon":"imacone.svg"
+								}
+							]
+						},
+						{
+						"name":"Adaptive",
+						"nametwo":"Testing Language",
+						"icon":"imacone.svg",
+						"steps":[
+								{
+								"stepsname":"preDevelopment22",
+								"stepsnametwo":"preDesign",
+								"icon":"imacone.svg"
+								},
+								{
+								"stepsname":"preDevelopment",
+								"stepsnametwo":"preDesign",
+								"icon":"imacone.svg"
+								}
+							]
+						},
+						{
+						"name":"Responsive",
+						"nametwo":"Testing Language",
+						"icon":"imacone.svg",
+						"steps":[
+								{
+								"stepsname":"preDevelopment22",
+								"stepsnametwo":"preDesign",
+								"icon":"imacone.svg"
+								},
+								{
+								"stepsname":"preDevelopment",
+								"stepsnametwo":"preDesign",
+								"icon":"imacone.svg"
+								}
+							]
+						},
+						{
+						"name":"Animation",
+						"nametwo":"Testing Language",
+						"icon":"imacone.svg",
+						"steps":[
+								{
+								"stepsname":"The API",
+								"stepsnametwo":"preDesign",
+								"icon":"imacone.svg"
+								},
+								{
+								"stepsname":"Test Doubles",
+								"stepsnametwo":"preDesign",
+								"icon":"imacone.svg",
+								"description": "Test doubles are often compared to stunt doubles, as they replace one object with another for testing purposes, similar to how actors and actresses are replaced with stunt doubles for dangerous action scenes. In Jasmine, test doubles come in the form of spies. A spy is a function that replaces a particular function where you want to control its behavior in a test and record how that function is used during the execution of that test. Some of the things you can do with spies include:"
+								},
+								{
+								"stepsname":"Asynchronous Testing",
+								"stepsnametwo":"preDesign",
+								"icon":"imacone.svg"
+								}
+							]
+						},
+						{
+						"name":"Icons & SVGs",
+						"nametwo":"JS Task Runner",
+						"icon":"imacone.svg",
+						"steps":[
+								{
+								"stepsname":"preDevelopment22",
+								"stepsnametwo":"preDesign",
+								"icon":"imacone.svg"
+								},
+								{
+								"stepsname":"preDevelopment",
+								"stepsnametwo":"preDesign",
+								"icon":"imacone.svg"
+								}
+							]
+						},
+						{
+						"name":"Material",
+						"nametwo":"Industy Design",
+						"icon":"imacone.svg",
+						"steps":[
+								{
+								"stepsname":"preDevelopment22",
+								"stepsnametwo":"preDesign",
+								"icon":"imacone.svg"
+								},
+								{
+								"stepsname":"preDevelopment",
+								"stepsnametwo":"preDesign",
+								"icon":"imacone.svg"
+								}
+							]
+						}
+					]
+				}
+			]
 		}
 	]
 }

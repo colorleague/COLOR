@@ -1,19 +1,14 @@
    <!-- Bread Bottom Menu -->
    <span ng:show="homepage == true" class="animated enterUpObject delay025 positionAbsolute positionBreadBottomLeft heightTen zindexOne">
       <ul class="floatLeft heightTen">
-                  <!-- dark show -->
-         <li ng:show="!startAnimation" ng:click="startAnimation = !startAnimation" class="centerdiv text-align-center positionRelative heightFullFlex marginTwoFiveLeft floatLeft easing">
-            <span class="centerdiv textOnHoverSwitch paddingTwoFive positionRelative buttonbox-shadowDark border-radius1 backgroundColorFive backgroundColorTwoOnHover centerdiv fontSizeTwoFive fontColorOne fontColorFiveOnHover lineHeightTwoFive easing">
-            esc
-            <span class="floatLeft animated enterUpObject delay025 zindexOne positionRelative widthTwoFive heightTwoFive marginSevenFiveRight"><img src="./svg/close.svg" class="widthFullFlex heightFullFlex"></span>
-            </span>
-         </li>
+
          <!-- light show -->
-         <li ng:show="startAnimation" ng:click="startAnimation = !startAnimation" class="centerdiv text-align-center positionRelative heightFullFlex marginTwoFiveLeft floatLeft easing">
-            <span class="centerdiv textOnHoverSwitch paddingTwoFive positionRelative buttonbox-shadowDark border-radius1 backgroundColorTwo backgroundColorTwoOnHover centerdiv fontSizeTwoFive fontColorWhite fontColorFiveOnHover lineHeightTwoFive easing">
-            esc
-            <span class="floatLeft animated enterUpObject delay025 zindexOne positionRelative widthTwoFive heightTwoFive marginSevenFiveRight"><img src="./svg/close.svg" class="widthFullFlex heightFullFlex"></span>
+         <li ng:show="!startAnimation" ng:click="startAnimation = !startAnimation" class="centerdiv text-align-center positionRelative heightFullFlex marginTwoFiveLeft floatLeft easing">
+            <b class="centerdiv textOnHoverSwitch paddingTwoFive positionRelative centerdiv fontSizeTwoFive fontColorWhite fontColorFiveOnHover lineHeightTwoFive easing">
+            Made using <span class="font-family-snippet bordered-bottomOne">Angular</span>
+            <span class="floatRight animated enterUpObject delay025 zindexOne positionRelative widthTwoFive heightTwoFive marginSevenFiveRight"><img src="./svg/arrow-left.svg" class="widthFullFlex heightFullFlex">
             </span>
+            </b>
          </li>
 
       </ul>
@@ -22,6 +17,31 @@
    <!-- Bread Bottom Menu -->
    <span ng:show="homepage == true" class="animated enterUpObject delay025 positionAbsolute positionBreadBottomRight heightTen zindexOne">
       <ul class="floatLeft heightTen">
+
+         <!-- light show -->
+         <li ng:show="!startAnimation" ng:click="pophelp = true;" class="centerdiv text-align-center positionRelative heightFullFlex floatLeft easing">
+
+            <span class="centerdiv textOnHoverSwitch positionRelative centerdiv fontSizeTwoFive fontColorWhite fontColorFourOnHover lineHeightTwoFive box-shadowFiveStraight">
+                  
+               <span class="centerdiv textOnHoverSwitch positionRelative border-radius1 centerdiv fontSizeTwoFive fontColorFive fontColorFiveOnHover lineHeightFive easing">
+                  <span class="floatLeft zindexOne positionRelative paddingTwoFive widthTwoFive heightTwoFive"><img src="./svg/social/instagram.svg" class="positionCenter positionAbsolute floatLeft widthHalfFlex heightHalfFlex"></span>
+               </span>
+
+            </span>
+
+         </li>
+
+         <li ng:show="!startAnimation" ng:click="pophelp = true;" class="centerdiv text-align-center positionRelative heightFullFlex marginTwoFiveRight floatLeft easing">
+
+            <span class="centerdiv textOnHoverSwitch positionRelative centerdiv fontSizeTwoFive fontColorWhite fontColorFourOnHover lineHeightTwoFive box-shadowFiveStraight">
+                  
+               <span class="centerdiv textOnHoverSwitch positionRelative border-radius1 centerdiv fontSizeTwoFive fontColorFive fontColorFiveOnHover lineHeightFive easing">
+                  <span class="floatLeft zindexOne positionRelative paddingTwoFive widthTwoFive heightTwoFive"><img src="./svg/social/dribbble.svg" class="positionCenter positionAbsolute floatLeft widthHalfFlex heightHalfFlex"></span>
+               </span>
+
+            </span>
+
+         </li>
 
          <!-- light show -->
          <li ng:show="startAnimation" ng:click="pophelp = true;" class="centerdiv text-align-center positionRelative heightFullFlex marginTwoFiveRight floatLeft easing">
@@ -45,19 +65,17 @@
       <ul class="floatLeft widthFullFlex heightTen">
 
          <!-- GO HOME -->
-         <li ng:class="{
-         'backgroundColorOneFour' : startAnimation,
-         'backgroundColorSix' : !startAnimation}" ng:click="resetstart(); homepage =  true; startAnimationLeft = false; aboutpage = false; paginationToggle(0);" class="
-            positionRelative border-radius1TopRight buttonbox-shadowDarkBottom overflowhidden floatLeft zindexTen easing">
+         <li ng:click="resetstart(); homepage =  true; startAnimationLeft = false; aboutpage = false; paginationToggle(0);" class="
+            positionRelative border-radius1TopRight buttonbox-shadowDarkBottom overflowhidden floatLeft zindexTen easing marginTwoFiveLeft">
             <span class="
                positionRelative widthTenvh heightTen floatLeft zindexTen">
-               <markwhite ng:show="startAnimation" class="
+               <brandonestack ng:show="startAnimation" class="
                   positionAbsolute positionCenter widthFullFlex heightHalfFlex">
-               </markwhite>
+               </brandonestack>
 
-               <markdark ng:show="!startAnimation" class="
+               <brandonestack ng:show="!startAnimation" class="opacity025
                   positionAbsolute positionCenter widthFullFlex heightHalfFlex">
-               </markdark>
+               </brandonestack>
             </span>
          </li>
 
@@ -95,17 +113,17 @@
          <!-- GO HOME -->
          <li ng:class="{
          'backgroundColorOneFour' : startAnimation,
-         'backgroundColorSix' : !startAnimation}" ng:click="resetstart(); homepage =  true; startAnimationLeft = false; aboutpage = false; paginationToggle(0);" class="
+         'backgroundColorOneThree' : !startAnimation}" ng:click="resetstart(); homepage =  true; startAnimationLeft = false; aboutpage = false; paginationToggle(0);" class="
             positionRelative border-radius1Top buttonbox-shadowDarkBottom overflowhidden floatRight zindexTen easing marginTwoFiveRight">
             <span class="
                positionRelative widthTenvh heightTen floatLeft zindexTen">
-               <markwhite ng:show="startAnimation" class="
+               <markwhite ng:show="!startAnimation" class="
                   positionAbsolute positionCenter widthFullFlex heightHalfFlex">
                </markwhite>
 
-               <markdark ng:show="!startAnimation" class="
+               <markone ng:show="startAnimation" class="
                   positionAbsolute positionCenter widthFullFlex heightHalfFlex">
-               </markdark>
+               </markone>
             </span>
          </li>
 

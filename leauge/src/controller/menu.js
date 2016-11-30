@@ -475,6 +475,8 @@ $scope.trustSrc = function(src) {
     	$scope.filters.tag = x;
     }
 
+    $scope.orderpiece = {option1:'views'};
+
     $scope.menuOne = [
         {name: 'Apple', category: 'Fruit'},
         {name: 'Pear', category: 'Fruit'},

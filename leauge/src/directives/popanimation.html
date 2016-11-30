@@ -1,25 +1,26 @@
 <span class="positionFixed positionCenter widthFull heightFull easing">
 
       <span ng:hide="startAnimationUnder == true" ng:class="{'ColorOneFromClearGradient' : startAnimation,
-         'ColorFiveFromClearGradient' : !startAnimation}" class=" positionTop positionFixed widthFull heightTen easing"></span>
+         'ColorOneFromClearGradient' : !startAnimation}" class=" positionTop positionFixed widthFull heightTen easing"></span>
       <span ng:hide="startAnimationUnder == true" ng:class="{'ColorOneRightClearGradient' : startAnimation,
-         'ColorFiveRightClearGradient' : !startAnimation}" class=" positionRight positionFixed widthTen heightFull easing"></span>
+         'ColorOneRightClearGradient' : !startAnimation}" class=" positionRight positionFixed widthTen heightFull easing"></span>
       <span ng:hide="startAnimationUnder == true" ng:class="{'ColorOneLeftClearGradient' : startAnimation,
-         'ColorFiveLeftClearGradient' : !startAnimation}" class=" positionLeft positionFixed widthTen heightFull easing"></span>
+         'ColorOneLeftClearGradient' : !startAnimation}" class=" positionLeft positionFixed widthTen heightFull easing"></span>
       <span ng:hide="startAnimationUnder == true" ng:class="{'ColorOneToClearGradient' : startAnimation,
-         'ColorFiveToClearGradient' : !startAnimation}" class=" positionBottom positionFixed widthFull heightTen easing"></span>
+         'ColorOneToClearGradient' : !startAnimation}" class=" positionBottom positionFixed widthFull heightTen easing"></span>
 
       <span 
          ng:class="{
-         'backgroundGridColorFive' : !startAnimation,
-         'backgroundGridColorOneTwo' : (startAnimation == true && positionLight1lighton == false),
-         'spacedLarge' : !startAnimation,
-         'spacedMid' : startAnimation,
+         'spacedLarge backgroundGridColorOne' : !startAnimation,
+         'spacedMid backgroundGridColorOne' : startAnimation,
          'backgroundGridColorOne' : startAnimationOver,
          'backgroundGridColorTwo' : startAnimationUnder,
          'backgroundGridColorThree' : startAnimationLeft,
          'backgroundGridColorFour' : startAnimationRight,
-         'backgroundGridColorWhite' : positionLight1lighton
+         'backgroundGridColorOneTwo' : positionLight1lighton,
+         'backgroundGridColorOneTwo' : positionLight2lighton,
+         'backgroundGridColorOneThree' : positionLight3lighton,
+         'backgroundGridColorOneThree' : positionLight4lighton
          }" 
          class="border-radius1 positionAbsolute positionCenter easing">
       </span>
@@ -52,8 +53,8 @@
 
       <!-- gradient -->
       <span ng:hide="startAnimationUnder == true" ng:class="{'ColorOneRightClearGradient' : startAnimation,
-         'ColorFiveRightClearGradient' : !startAnimation}" class=" positionRight positionFixed widthTen heightFull easing"></span>
+         'ColorOneRightClearGradient' : startAnimation}" class=" positionRight positionFixed widthTen heightFull easing"></span>
       <span ng:hide="startAnimationUnder == true" ng:class="{'ColorOneLeftClearGradient' : startAnimation,
-         'ColorFiveLeftClearGradient' : !startAnimation}" class=" positionLeft positionFixed widthTen heightFull easing"></span>
+         'ColorOneLeftClearGradient' : startAnimation}" class=" positionLeft positionFixed widthTen heightFull easing"></span>
       
    </span>

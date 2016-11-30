@@ -1,4 +1,4 @@
-<ul ng:init="fixedbackgroundone = true; listholdergrid = true;" class="positionRelative floatLeft widthFull heightFull easing text-align-center zindexFive overflowy">
+<ul ng:init="fixedbackgroundone = true; listholdergrid = true; filters.category = 'products'" class="positionRelative floatLeft widthFull heightFull easing text-align-center zindexFive overflowy">
    <!-- fixed background -->
    <span ng:show="fixedbackgroundone" class="
       positionFixed
@@ -65,7 +65,7 @@
                                        </span>
                                        
                                        <span class="positionRelative floatLeft">             
-                                          <b class="floatLeft fontColorThree text-shadow1Two zindexFive positionRelative">Products </b>
+                                          <b ng-repeat="cats in meta | filter:cats.category = filters.category" class="floatLeft fontColorThree text-shadow1Two zindexFive positionRelative">{{cats.category}}</b>
 
                                           <span class="positionAbsolute positionOverFiveTopRightOutro fontColorOffWhite fontSizeTwoFive lineHeightTwoFive floatLeft">
                                           <b class="opacity05">Our Availability</b> & <span class="font-family-snippet opacity075"> Talent Breakdowns of</span> </span>
@@ -123,7 +123,7 @@
 
          <ul class="zindexOne positionAbsolute positionOverBottomLeft widthFullFlex floatLeft easing zindexTen">
          <li ng:click="learnmore = !learnmore" class="floatLeft text-align-center positionRelative heightFullFlex marginHeaderOverButton paddingTwoFive easing">
-            <span class="textOnHoverSwitch paddingTwoFive positionRelative bordered-Six box-shadowSix box-shadowSixLeaveOnHover backgroundColorFive backgroundColorTwoOnHover floatLeft fontSizeTwoFive fontColorWhite fontColorOneOnHover lineHeightFive easing">
+            <span class="textOnHoverSwitch paddingTwoFive positionRelative bordered-Six box-shadowSix box-shadowSixLeaveOnHover backgroundColorFive floatLeft fontSizeTwoFive fontColorWhite fontColorOneOnHover lineHeightFive easing">
             Hire Us
             <span class="bordered-Six box-shadowSix beforeArrow margintwofive beforetext backgroundColorOne fontSizeTwoFive fontColorFive fontColorFiveOnHover lineHeightFive easing">before</span>
             
@@ -168,18 +168,34 @@
 
                      <span class="text-align-center zindexTen positionRelative heightFullFlex floatRight easing">
 
-                        <span ng-repeat="cats in meta" class="centerdiv text-align-center zindexTen positionRelative heightTen marginTwoFiveLeft floatLeft easing">
+                        <span class="centerdiv text-align-center zindexTen positionRelative heightTen marginTwoFiveLeft floatLeft easing">
 
-                           <span ng:click="filters.category = cats.category;
-                                 filters.subcategory = '';
-                                 filters.tag = '';"
+                           <span
 
                                  ng:class="{
                               'backgroundColorTwo box-shadowSixStraight border-radius' : filters.category == cats.category
                               }"
 
                                class="centerdiv textOnHoverSwitch paddingTwoFive positionRelative border-radius1 backgroundColorWhite backgroundColorTwoOnHover centerdiv fontSizeTwoFive fontColorOne fontColorFiveOnHover lineHeightTwoFive easing">
-                              {{cats.category}}
+                              latest
+                              <span class="floatLeft animated enterUpObject delay025 zindexOne positionRelative widthTwoFive heightTwoFive marginSevenFiveRight"><img src="./svg/close.svg" class="widthFullFlex heightFullFlex"></span>
+                           </span>
+                        </span>
+
+                     </span>
+
+                     <span class="text-align-center zindexTen positionRelative heightFullFlex floatRight easing">
+
+                        <span class="centerdiv text-align-center zindexTen positionRelative heightTen marginTwoFiveLeft floatLeft easing">
+
+                           <span
+
+                                 ng:class="{
+                              'backgroundColorTwo box-shadowSixStraight border-radius' : filters.category == cats.category
+                              }"
+
+                               class="centerdiv textOnHoverSwitch paddingTwoFive positionRelative border-radius1 backgroundColorWhite backgroundColorTwoOnHover centerdiv fontSizeTwoFive fontColorOne fontColorFiveOnHover lineHeightTwoFive easing">
+                              views
                               <span class="floatLeft animated enterUpObject delay025 zindexOne positionRelative widthTwoFive heightTwoFive marginSevenFiveRight"><img src="./svg/close.svg" class="widthFullFlex heightFullFlex"></span>
                            </span>
                         </span>

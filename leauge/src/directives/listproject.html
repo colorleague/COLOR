@@ -10,7 +10,7 @@
    <span class="positionRelative widthStatic heightFull marginauto">
 
    <!-- post type decided by postination.count -->
-   <li ng:if="!postpreview" id="listitem" class="positionRelative floatLeft" ng-repeat="post in data | filter:filters | limitTo:projectination.count">
+   <li ng:if="!postpreview" id="listitem" class="positionRelative floatLeft" ng-repeat="post in data | filter:filters | limitTo:projectination.count | orderBy:orderpiece">
       
       <!-- index -->
       <span class="positionRelative 
@@ -18,7 +18,7 @@
 
          <span class="positionAbsolute positionCenter
             spacedSmall floatLeft easing">
-            {{$index}}
+            {{$index + 1}}
             </span>
 
       </span>

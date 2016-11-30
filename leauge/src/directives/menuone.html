@@ -41,7 +41,7 @@
             <ul class="floatLeft heightFive widthFullFlex backgroundColorWhite">
                         
                         <!-- light show -->
-                        <li ng:click="popup = !popup" class="centerdiv text-align-center positionRelative heightFive widthFullFlex easing box-shadowFiveStraight fontColorOne  fontSizeTwoFive fontColorFiveOnHover floatLeft">
+                        <li ng:click="popup = !popup" class="centerdiv text-align-center positionRelative heightFive widthFullFlex easing box-shadowFiveStraight fontColorOne  fontSizeTwo fontColorFiveOnHover floatLeft">
                            <span class="centerdiv textOnHoverSwitch positionRelative 
                            centerdiv lineHeightTwoFive easing">
                            1 (770) 289-7481
@@ -311,7 +311,7 @@
                   <span
                   class="positionRelative widthFullFlex heightFullFlex backgroundColorWhite floatLeft easing zindexOne">
 
-                        <li class="positionRelative zindexOne floatLeft widthFullFlex" ng:click="resetstart(); paginationToggle(30); startAnimationUnder = true; homepage =  false; startAnimationUnder = true; aboutpage = true;" ng:mouseenter="ourTeamMenuPreview = true; ourServicesMenuPreview = false; ourTimelineMenuPreview = false; ourOfficeMenuPreview = false; ourBrandsMenuPreview = false; ourProcessMenuPreview = false;">
+                        <li class="positionRelative zindexOne floatLeft widthFullFlex" ng:click="resetstart(); paginationToggle(30); startAnimationUnder = true; homepage =  false; startAnimationUnder = true; aboutpage = true; servicespage = true; abilitiespage = false;" ng:mouseenter="ourTeamMenuPreview = true; ourServicesMenuPreview = false; ourTimelineMenuPreview = false; ourOfficeMenuPreview = false; ourBrandsMenuPreview = false; ourProcessMenuPreview = false;">
                            <span class="text-align-left backgroundColorFour spacedBorderLeft bordered-leftWhiteOnHover floatLeft fontSizeTwoFive fontColorFour lineHeightTen easing">
                               
                               <span class="floatLeft positionAbsolute positionTopRight widthTenvh heightTen">
@@ -319,7 +319,115 @@
                               </span>
 
                               <!-- menu title -->
-                              <span class="marginTwoFiveLeft fontColorWhite text-shadow025Dark positionRelative zindexOne">SERVICES</span>
+                              <span class="marginTwoFiveLeft fontColorWhite text-shadow025Dark positionRelative zindexOne">All Services</span>
+
+                              <!-- menu arrow/close -->
+                              <span class="marginTwoFiveLeft floatLeft zindexOne positionRelative widthTwoFive heightTen"><img src="./svg/arrow-left.svg" class="positionAbsolute positionCenter widthHalfFlex heightHalfFlex">
+                              </span>
+
+                              <!-- washout background -->
+                              <span class="positionAbsolute positionCenter
+                                 ColorOneRightClearGradient widthFullFlex heightFullFlex">
+                              </span>
+
+                              <!-- washout background -->
+                              <span class="positionAbsolute positionCenter
+                                 backgroundColorWhite opacity01 widthFullFlex heightFullFlex">
+                              </span>
+
+                           </span>
+                        </li>
+
+                        <li class="positionRelative zindexOne floatLeft widthFullFlex" ng:click="resetstart(); paginationToggle(30); startAnimationUnder = true; homepage =  false; startAnimationUnder = true; aboutpage = true; servicespage = false; abilitiespage = true; allservicesplaceholder = 0" ng:mouseenter="ourTeamMenuPreview = true; ourServicesMenuPreview = false; ourTimelineMenuPreview = false; ourOfficeMenuPreview = false; ourBrandsMenuPreview = false; ourProcessMenuPreview = false;">
+                           <span class="text-align-left backgroundColorFour spacedBorderLeft bordered-leftWhiteOnHover floatLeft fontSizeTwoFive fontColorFour lineHeightTen easing">
+                              
+                              <span class="floatLeft positionAbsolute positionTopRight widthTenvh heightTen">
+                                 <img src="./svg/pageend.svg" class="positionAbsolute positionTopRight widthThreeQuarterFlex">
+                              </span>
+
+                              <!-- menu title -->
+                              <span class="marginTwoFiveLeft fontColorWhite text-shadow025Dark positionRelative zindexOne">Development</span>
+
+                              <!-- menu arrow/close -->
+                              <span class="marginTwoFiveLeft floatLeft zindexOne positionRelative widthTwoFive heightTen"><img src="./svg/arrow-left.svg" class="positionAbsolute positionCenter widthHalfFlex heightHalfFlex">
+                              </span>
+
+                              <!-- washout background -->
+                              <span class="positionAbsolute positionCenter
+                                 ColorOneRightClearGradient widthFullFlex heightFullFlex">
+                              </span>
+
+                              <!-- washout background -->
+                              <span class="positionAbsolute positionCenter
+                                 backgroundColorWhite opacity01 widthFullFlex heightFullFlex">
+                              </span>
+
+                           </span>
+                        </li>
+
+                        <li class="positionRelative zindexOne floatLeft widthFullFlex" ng:click="resetstart(); paginationToggle(30); startAnimationUnder = true; homepage =  false; startAnimationUnder = true; aboutpage = true; servicespage = false; abilitiespage = true; allservicesplaceholder = 1" ng:mouseenter="ourTeamMenuPreview = true; ourServicesMenuPreview = false; ourTimelineMenuPreview = false; ourOfficeMenuPreview = false; ourBrandsMenuPreview = false; ourProcessMenuPreview = false;">
+                           <span class="text-align-left backgroundColorFour spacedBorderLeft bordered-leftWhiteOnHover floatLeft fontSizeTwoFive fontColorFour lineHeightTen easing">
+                              
+                              <span class="floatLeft positionAbsolute positionTopRight widthTenvh heightTen">
+                                 <img src="./svg/pageend.svg" class="positionAbsolute positionTopRight widthThreeQuarterFlex">
+                              </span>
+
+                              <!-- menu title -->
+                              <span class="marginTwoFiveLeft fontColorWhite text-shadow025Dark positionRelative zindexOne">Design</span>
+
+                              <!-- menu arrow/close -->
+                              <span class="marginTwoFiveLeft floatLeft zindexOne positionRelative widthTwoFive heightTen"><img src="./svg/arrow-left.svg" class="positionAbsolute positionCenter widthHalfFlex heightHalfFlex">
+                              </span>
+
+                              <!-- washout background -->
+                              <span class="positionAbsolute positionCenter
+                                 ColorOneRightClearGradient widthFullFlex heightFullFlex">
+                              </span>
+
+                              <!-- washout background -->
+                              <span class="positionAbsolute positionCenter
+                                 backgroundColorWhite opacity01 widthFullFlex heightFullFlex">
+                              </span>
+
+                           </span>
+                        </li>
+
+                        <li class="positionRelative zindexOne floatLeft widthFullFlex" ng:click="resetstart(); paginationToggle(30); startAnimationUnder = true; homepage =  false; startAnimationUnder = true; aboutpage = true; servicespage = false; abilitiespage = true; allservicesplaceholder = 2" ng:mouseenter="ourTeamMenuPreview = true; ourServicesMenuPreview = false; ourTimelineMenuPreview = false; ourOfficeMenuPreview = false; ourBrandsMenuPreview = false; ourProcessMenuPreview = false;">
+                           <span class="text-align-left backgroundColorFour spacedBorderLeft bordered-leftWhiteOnHover floatLeft fontSizeTwoFive fontColorFour lineHeightTen easing">
+                              
+                              <span class="floatLeft positionAbsolute positionTopRight widthTenvh heightTen">
+                                 <img src="./svg/pageend.svg" class="positionAbsolute positionTopRight widthThreeQuarterFlex">
+                              </span>
+
+                              <!-- menu title -->
+                              <span class="marginTwoFiveLeft fontColorWhite text-shadow025Dark positionRelative zindexOne">Content</span>
+
+                              <!-- menu arrow/close -->
+                              <span class="marginTwoFiveLeft floatLeft zindexOne positionRelative widthTwoFive heightTen"><img src="./svg/arrow-left.svg" class="positionAbsolute positionCenter widthHalfFlex heightHalfFlex">
+                              </span>
+
+                              <!-- washout background -->
+                              <span class="positionAbsolute positionCenter
+                                 ColorOneRightClearGradient widthFullFlex heightFullFlex">
+                              </span>
+
+                              <!-- washout background -->
+                              <span class="positionAbsolute positionCenter
+                                 backgroundColorWhite opacity01 widthFullFlex heightFullFlex">
+                              </span>
+
+                           </span>
+                        </li>
+
+                        <li class="positionRelative zindexOne floatLeft widthFullFlex" ng:click="resetstart(); paginationToggle(30); startAnimationUnder = true; homepage =  false; startAnimationUnder = true; aboutpage = true; servicespage = false; abilitiespage = true; allservicesplaceholder = 3" ng:mouseenter="ourTeamMenuPreview = true; ourServicesMenuPreview = false; ourTimelineMenuPreview = false; ourOfficeMenuPreview = false; ourBrandsMenuPreview = false; ourProcessMenuPreview = false;">
+                           <span class="text-align-left backgroundColorFour spacedBorderLeft bordered-leftWhiteOnHover floatLeft fontSizeTwoFive fontColorFour lineHeightTen easing">
+                              
+                              <span class="floatLeft positionAbsolute positionTopRight widthTenvh heightTen">
+                                 <img src="./svg/pageend.svg" class="positionAbsolute positionTopRight widthThreeQuarterFlex">
+                              </span>
+
+                              <!-- menu title -->
+                              <span class="marginTwoFiveLeft fontColorWhite text-shadow025Dark positionRelative zindexOne">Strategy</span>
 
                               <!-- menu arrow/close -->
                               <span class="marginTwoFiveLeft floatLeft zindexOne positionRelative widthTwoFive heightTen"><img src="./svg/arrow-left.svg" class="positionAbsolute positionCenter widthHalfFlex heightHalfFlex">
@@ -412,6 +520,104 @@
                   <span
                   class="positionRelative widthFullFlex heightFullFlex backgroundColorWhite floatLeft easing zindexOne">
 
+                        <!-- category -->
+                        <span ng:init="filterbytags = false" ng:click="filterbytags = !filterbytags" class=" showOnHoverSwitch
+                           widthFullFlex backgroundColorWhite
+                           positionRelative floatLeft easing">
+
+                           <span ng-repeat="cats in meta | limitTo:4:2" ng:init="filterbytags = false"  class="showOnHoverSwitch
+                              widthFullFlex backgroundColorWhite
+                              positionRelative floatLeft easing">
+
+                              <span class="
+                              widthFullFlex backgroundColorFour 
+                              positionRelative floatLeft easing">
+
+                                    <!-- washout background -->
+                                                <span class="positionAbsolute positionCenter
+                                                   ColorOneRightClearGradient widthFullFlex heightFullFlex">
+                                                </span>
+
+                                                <!-- washout background -->
+                                                <span class="positionAbsolute positionCenter
+                                                   backgroundColorWhite opacity01 widthFullFlex heightFullFlex">
+                                                </span>
+
+                                 
+                                    <span ng:click="
+                                             $parent.homepage =  false;
+                                             resetstart(); paginationToggle(14); $parent.startAnimationUnder = true;
+
+                                             filters.category = cats.category;
+                                             filters.subcategory = '';
+                                             filters.tag = '';
+                                             filterbytags = !filterbytags" class="positionRelative
+                                          border-radius1 overflowhidden widthFullFlex">
+
+                                          <span ng:class="{'bordered-leftWhite' : filterbytags}" class="text-align-left  spacedBorderLeft bordered-leftWhiteOnHover floatLeft fontSizeTwoFive fontColorFour lineHeightTen easing">
+
+                                                <!-- menu title -->
+                                                <span class="marginTwoFiveLeft fontColorWhite text-shadow025Dark positionRelative zindexOne">{{cats.category}}</span>
+
+                                                <!-- menu arrow/close -->
+                                                <span class="marginTwoFiveLeft floatLeft zindexOne positionRelative widthTwoFive heightTen"><img src="./svg/arrow-left.svg" class="positionAbsolute positionCenter widthHalfFlex heightHalfFlex">
+                                                </span>
+
+                                                <!-- washout background -->
+                                                <span class="positionAbsolute positionCenter
+                                                   ColorOneRightClearGradient widthFullFlex heightFullFlex">
+                                                </span>
+
+                                                <!-- washout background -->
+                                                <span class="positionAbsolute positionCenter
+                                                   backgroundColorWhite opacity01 widthFullFlex heightFullFlex">
+                                                </span>
+
+                                             </span>
+                                 </span>
+
+                              </span>
+
+                              <span class="
+                              widthFullFlex backgroundColorWhite
+                              positionRelative floatLeft easing">
+
+                              <span ng:show="filterbytags == true" class="backgroundColorWhite positionRelative
+                              spacedSmall floatLeft">
+
+                                 <span
+                                 ng-repeat="subs in cats.subcategories" class="positionRelative widthFullFlex floatLeft">
+                                    <span ng:class="{
+
+                                       'backgroundColorOffWhite box-shadowSixStraight border-radius' : filters.category == category.name,
+
+                                       'backgroundColorOffWhite box-shadowSixStraight border-radius' : filters.subcategory == subcategory.name,
+
+                                       'backgroundColorOffWhite box-shadowSixStraight border-radius' : filters.tag == tag.name
+
+                                       }" class="positionRelative spacedSmall floatLeft">
+                                          <p ng:click="filters.category = '';
+                                          filters.subcategory = subs.name;
+                                          filters.tag = '';" class="fontSizeTwo fontColorOne lineHeightThree floatLeft">{{subs.name}}
+                                          </p>
+                                          <span class="
+                                             positionAbsolute positionRight
+                                             heightTwoFive widthTwoFivevh border-radius
+                                             floatRight" style="background-image: url('/tools/{{tool.name}}.svg');
+                                             background-size: 100% 100%;">
+                                          </span>
+                                       
+                                    </span>
+
+                                 </span>
+
+                              </span>
+
+                              </span>
+
+                           </span>
+                        </span>
+
                         <!-- categories -->
                         <li class="positionRelative zindexOne floatLeft widthFullFlex" ng:click="resetstart(); paginationToggle(14); startAnimationUnder = true; homepage =  false; startAnimationUnder = true; aboutpage = false;" ng:mouseenter="ourTeamMenuPreview = true; ourServicesMenuPreview = false; ourTimelineMenuPreview = false; ourOfficeMenuPreview = false; ourBrandsMenuPreview = false; ourProcessMenuPreview = false;">
                            <span class="text-align-left backgroundColorFour spacedBorderLeft bordered-leftWhiteOnHover floatLeft fontSizeTwoFive fontColorFour lineHeightTen easing">
@@ -421,7 +627,7 @@
                               </span>
 
                               <!-- menu title -->
-                              <span class="marginTwoFiveLeft fontColorWhite text-shadow025Dark positionRelative zindexOne">ALL PROJECTS</span>
+                              <span class="marginTwoFiveLeft fontColorWhite text-shadow025Dark positionRelative zindexOne">All Projects</span>
 
                               <!-- menu arrow/close -->
                               <span class="marginTwoFiveLeft floatLeft zindexOne positionRelative widthTwoFive heightTen"><img src="./svg/arrow-left.svg" class="positionAbsolute positionCenter widthHalfFlex heightHalfFlex">
@@ -489,6 +695,69 @@
                   <span
                   class="positionRelative widthFullFlex heightFullFlex backgroundColorWhite floatLeft easing zindexOne">
 
+                        <!-- category -->
+                        <span ng:init="filterbytags = false" ng:click="resetstart(); paginationToggle(14); startAnimationUnder = true; homepage =  false; startAnimationUnder = true; aboutpage = false;" class=" showOnHoverSwitch
+                           widthFullFlex backgroundColorWhite
+                           positionRelative floatLeft easing">
+
+                           <span ng-repeat="cats in meta | limitTo:1:1" ng:init="filterbytags = true"  class="showOnHoverSwitch
+                              widthFullFlex backgroundColorWhite
+                              positionRelative floatLeft easing">
+
+                              <span class="
+                              widthFullFlex backgroundColorWhite
+                              positionRelative floatLeft easing">
+
+                              <span ng:show="filterbytags == true" class="backgroundColorFour positionRelative
+                              widthFullFlex floatLeft">
+
+                                 <span
+                                 ng-repeat="subs in cats.subcategories" class="
+                                 widthFullFlex
+                                 positionRelative floatLeft easing">
+
+                                    
+                                    <span ng:click="filters.category = cats.category;
+                                          filters.subcategory = subs.name;
+                                          filters.tag = '';" class="positionRelative widthFullFlex floatLeft">
+                                          
+
+                                          <span class="text-align-left backgroundColorFour spacedBorderLeft bordered-leftWhiteOnHover floatLeft fontSizeTwoFive fontColorFour lineHeightTen easing">
+                              
+                              <span class="floatLeft positionAbsolute positionTopRight widthTenvh heightTen">
+                                 <img src="./svg/pageend.svg" class="positionAbsolute positionTopRight widthThreeQuarterFlex">
+                              </span>
+
+                              <!-- menu title -->
+                              <span class="marginTwoFiveLeft fontColorWhite text-shadow025Dark positionRelative zindexOne">{{subs.name}}</span>
+
+                              <!-- menu arrow/close -->
+                              <span class="marginTwoFiveLeft floatLeft zindexOne positionRelative widthTwoFive heightTen"><img src="./svg/arrow-left.svg" class="positionAbsolute positionCenter widthHalfFlex heightHalfFlex">
+                              </span>
+
+                              <!-- washout background -->
+                              <span class="positionAbsolute positionCenter
+                                 ColorOneRightClearGradient widthFullFlex heightFullFlex">
+                              </span>
+
+                              <!-- washout background -->
+                              <span class="positionAbsolute positionCenter
+                                 backgroundColorWhite opacity01 widthFullFlex heightFullFlex">
+                              </span>
+
+                           </span>
+                                       
+                                    </span>
+
+                                 </span>
+
+                              </span>
+
+                              </span>
+
+                           </span>
+                        </span>
+
                         <!-- categories -->
                         <li class="positionRelative zindexOne floatLeft widthFullFlex" ng:click="resetstart(); paginationToggle(15); startAnimationUnder = true; homepage =  false; startAnimationUnder = true; aboutpage = true;" ng:mouseenter="ourTeamMenuPreview = true; ourServicesMenuPreview = false; ourTimelineMenuPreview = false; ourOfficeMenuPreview = false; ourBrandsMenuPreview = false; ourProcessMenuPreview = false;">
                            <span class="text-align-left backgroundColorFour spacedBorderLeft bordered-leftWhiteOnHover floatLeft fontSizeTwoFive fontColorFour lineHeightTen easing">
@@ -498,7 +767,7 @@
                               </span>
 
                               <!-- menu title -->
-                              <span class="marginTwoFiveLeft fontColorWhite text-shadow025Dark positionRelative zindexOne">ALL PRODUCTS</span>
+                              <span class="marginTwoFiveLeft fontColorWhite text-shadow025Dark positionRelative zindexOne">All Products</span>
 
                               <!-- menu arrow/close -->
                               <span class="marginTwoFiveLeft floatLeft zindexOne positionRelative widthTwoFive heightTen"><img src="./svg/arrow-left.svg" class="positionAbsolute positionCenter widthHalfFlex heightHalfFlex">
@@ -561,72 +830,104 @@
                <!-- list -->
                <ul ng:show="videomenu" class="positionRelative floatLeft backgroundColorFour widthFullFlex easing ">
 
-                  <!-- categories -->
-                  <li class="positionRelative zindexOne floatLeft widthFullFlex" ng:click="
-                     $parent.homepage =  false;
-                     resetstart(); paginationToggle(16); startAnimationUnder = true;
+                  <span
+                  class="positionRelative widthFullFlex heightFullFlex backgroundColorWhite floatLeft easing zindexOne">
 
-                     filters.category = 'content';
-                     filters.subcategory = '';
-                     filters.tag = ''">
-                     <span class="text-align-left backgroundColorFour spacedBorderLeft bordered-leftWhiteOnHover floatLeft fontSizeTwoFive fontColorFour lineHeightTen easing">
-                        
-                        <span class="floatLeft positionAbsolute positionTopRight widthTenvh heightTen">
-                           <img src="./svg/pageend.svg" class="positionAbsolute positionTopRight widthThreeQuarterFlex">
+                        <!-- category -->
+                        <span ng:init="filterbytags = false" ng:click="resetstart(); paginationToggle(16); startAnimationUnder = true; homepage =  false; startAnimationUnder = true; aboutpage = false;" class=" showOnHoverSwitch
+                           widthFullFlex backgroundColorWhite
+                           positionRelative floatLeft easing">
+
+                           <span
+                              ng-repeat="cats in meta | limitTo:1:0"
+                              ng:init="filterbytags = true"  class="showOnHoverSwitch
+                              widthFullFlex backgroundColorWhite
+                              positionRelative floatLeft easing">
+
+                              <span class="
+                              widthFullFlex backgroundColorWhite
+                              positionRelative floatLeft easing">
+
+                              <span ng:show="filterbytags == true" class="backgroundColorFour positionRelative
+                              widthFullFlex floatLeft">
+
+                                 <span
+                                 ng-repeat="subs in cats.subcategories" class="
+                                 widthFullFlex
+                                 positionRelative floatLeft easing">
+
+                                    
+                                    <span ng:click="filters.category = cats.category;
+                                          filters.subcategory = subs.name;
+                                          filters.tag = '';" class="positionRelative widthFullFlex floatLeft">
+                                          
+
+                                          <span class="text-align-left backgroundColorFour spacedBorderLeft bordered-leftWhiteOnHover floatLeft fontSizeTwoFive fontColorFour lineHeightTen easing">
+                              
+                              <span class="floatLeft positionAbsolute positionTopRight widthTenvh heightTen">
+                                 <img src="./svg/pageend.svg" class="positionAbsolute positionTopRight widthThreeQuarterFlex">
+                              </span>
+
+                              <!-- menu title -->
+                              <span class="marginTwoFiveLeft fontColorWhite text-shadow025Dark positionRelative zindexOne">{{subs.name}}</span>
+
+                              <!-- menu arrow/close -->
+                              <span class="marginTwoFiveLeft floatLeft zindexOne positionRelative widthTwoFive heightTen"><img src="./svg/arrow-left.svg" class="positionAbsolute positionCenter widthHalfFlex heightHalfFlex">
+                              </span>
+
+                              <!-- washout background -->
+                              <span class="positionAbsolute positionCenter
+                                 ColorOneRightClearGradient widthFullFlex heightFullFlex">
+                              </span>
+
+                              <!-- washout background -->
+                              <span class="positionAbsolute positionCenter
+                                 backgroundColorWhite opacity01 widthFullFlex heightFullFlex">
+                              </span>
+
+                           </span>
+                                       
+                                    </span>
+
+                                 </span>
+
+                              </span>
+
+                              </span>
+
+                           </span>
                         </span>
 
-                        <!-- menu title -->
-                        <span class="marginTwoFiveLeft fontColorWhite text-shadow025Dark positionRelative zindexOne">All Catgories</span>
+                        <!-- categories -->
+                        <li class="positionRelative zindexOne floatLeft widthFullFlex" ng:click="resetstart(); paginationToggle(16); startAnimationUnder = true; homepage =  false; startAnimationUnder = true; aboutpage = true; filters.category = 'content';
+                        filters.subcategory = '';
+                        filters.tag = '';" ng:mouseenter="ourTeamMenuPreview = true; ourServicesMenuPreview = false; ourTimelineMenuPreview = false; ourOfficeMenuPreview = false; ourBrandsMenuPreview = false; ourProcessMenuPreview = false;">
+                           <span class="text-align-left backgroundColorFour spacedBorderLeft bordered-leftWhiteOnHover floatLeft fontSizeTwoFive fontColorFour lineHeightTen easing">
+                              
+                              <span class="floatLeft positionAbsolute positionTopRight widthTenvh heightTen">
+                                 <img src="./svg/pageend.svg" class="positionAbsolute positionTopRight widthThreeQuarterFlex">
+                              </span>
 
-                        <!-- menu arrow/close -->
-                        <span class="marginTwoFiveLeft floatLeft zindexOne positionRelative widthTwoFive heightTen"><img src="./svg/arrow-left.svg" class="positionAbsolute positionCenter widthHalfFlex heightHalfFlex">
-                        </span>
+                              <!-- menu title -->
+                              <span class="marginTwoFiveLeft fontColorWhite text-shadow025Dark positionRelative zindexOne">All Videos</span>
 
-                        <!-- washout background -->
-                        <span class="positionAbsolute positionCenter
-                           ColorOneRightClearGradient widthFullFlex heightFullFlex">
-                        </span>
+                              <!-- menu arrow/close -->
+                              <span class="marginTwoFiveLeft floatLeft zindexOne positionRelative widthTwoFive heightTen"><img src="./svg/arrow-left.svg" class="positionAbsolute positionCenter widthHalfFlex heightHalfFlex">
+                              </span>
 
-                        <!-- washout background -->
-                        <span class="positionAbsolute positionCenter
-                           backgroundColorWhite opacity01 widthFullFlex heightFullFlex">
-                        </span>
+                              <!-- washout background -->
+                              <span class="positionAbsolute positionCenter
+                                 ColorOneRightClearGradient widthFullFlex heightFullFlex">
+                              </span>
 
-                     </span>
-                  </li>
+                              <!-- washout background -->
+                              <span class="positionAbsolute positionCenter
+                                 backgroundColorWhite opacity01 widthFullFlex heightFullFlex">
+                              </span>
 
-                  <li class="positionRelative zindexOne floatLeft widthFullFlex" ng:click="
-                     $parent.homepage =  false;
-                     resetstart(); paginationToggle(16); startAnimationUnder = true;
-
-                     filters.category = 'content';
-                     filters.subcategory = 'interviews';
-                     filters.tag = ''">
-                     <span class="text-align-left backgroundColorFour spacedBorderLeft bordered-leftWhiteOnHover floatLeft fontSizeTwoFive fontColorFour lineHeightTen easing">
-                        
-                        <span class="floatLeft positionAbsolute positionTopRight widthTenvh heightTen">
-                           <img src="./svg/pageend.svg" class="positionAbsolute positionTopRight widthThreeQuarterFlex">
-                        </span>
-
-                        <!-- menu title -->
-                        <span class="marginTwoFiveLeft fontColorWhite text-shadow025Dark positionRelative zindexOne">Interviews</span>
-
-                        <!-- menu arrow/close -->
-                        <span class="marginTwoFiveLeft floatLeft zindexOne positionRelative widthTwoFive heightTen"><img src="./svg/arrow-left.svg" class="positionAbsolute positionCenter widthHalfFlex heightHalfFlex">
-                        </span>
-
-                        <!-- washout background -->
-                        <span class="positionAbsolute positionCenter
-                           ColorOneRightClearGradient widthFullFlex heightFullFlex">
-                        </span>
-
-                        <!-- washout background -->
-                        <span class="positionAbsolute positionCenter
-                           backgroundColorWhite opacity01 widthFullFlex heightFullFlex">
-                        </span>
-
-                     </span>
-                  </li>
+                           </span>
+                        </li>
+                  </span>
 
                </ul>
 
@@ -676,7 +977,7 @@
                   class="positionRelative widthFullFlex heightFullFlex backgroundColorWhite floatLeft easing zindexOne">
 
                         <!-- categories -->
-                        <li class="positionRelative zindexOne floatLeft widthFullFlex" ng:click="resetstart(); paginationToggle(17); startAnimationUnder = true; homepage =  false; startAnimationUnder = true; aboutpage = true;" ng:mouseenter="ourTeamMenuPreview = true; ourServicesMenuPreview = false; ourTimelineMenuPreview = false; ourOfficeMenuPreview = false; ourBrandsMenuPreview = false; ourProcessMenuPreview = false;">
+                        <li class="positionRelative zindexOne floatLeft widthFullFlex" ng:click="processsingle = false; processstart = true; resetstart(); paginationToggle(17); startAnimationUnder = true; homepage =  false; startAnimationUnder = true; aboutpage = true;" ng:mouseenter="ourTeamMenuPreview = true; ourServicesMenuPreview = false; ourTimelineMenuPreview = false; ourOfficeMenuPreview = false; ourBrandsMenuPreview = false; ourProcessMenuPreview = false;">
                            <span class="text-align-left backgroundColorFour spacedBorderLeft bordered-leftWhiteOnHover floatLeft fontSizeTwoFive fontColorFour lineHeightTen easing">
                               
                               <span class="floatLeft positionAbsolute positionTopRight widthTenvh heightTen">
@@ -703,11 +1004,15 @@
                            </span>
                         </li>
 
-                        <li class="positionRelative zindexOne floatLeft widthFullFlex" ng:click="resetstart(); paginationToggle(21); startAnimationUnder = true; homepage =  false; startAnimationUnder = true; aboutpage = true;" ng:mouseenter="ourTeamMenuPreview = true; ourServicesMenuPreview = false; ourTimelineMenuPreview = false; ourOfficeMenuPreview = false; ourBrandsMenuPreview = false; ourProcessMenuPreview = false;">
+                        <li class="positionRelative zindexOne floatLeft widthFullFlex" ng:click="processsingle = true; processstart = false; resetstart(); paginationToggle(17); startAnimationUnder = true; homepage =  false; startAnimationUnder = true; aboutpage = true;" ng:mouseenter="ourTeamMenuPreview = true; ourServicesMenuPreview = false; ourTimelineMenuPreview = false; ourOfficeMenuPreview = false; ourBrandsMenuPreview = false; ourProcessMenuPreview = false;">
                            <span class="text-align-left backgroundColorFour spacedBorderLeft bordered-leftWhiteOnHover floatLeft fontSizeTwoFive fontColorFour lineHeightTen easing">
                               
+                              <span class="floatLeft positionAbsolute positionTopRight widthTenvh heightTen">
+                                 <img src="./svg/pageend.svg" class="positionAbsolute positionTopRight widthThreeQuarterFlex">
+                              </span>
+
                               <!-- menu title -->
-                              <span class="marginTwoFiveLeft fontColorWhite text-shadow025Dark positionRelative zindexOne">OUR TEAM</span>
+                              <span class="marginTwoFiveLeft fontColorWhite text-shadow025Dark positionRelative zindexOne">Development</span>
 
                               <!-- menu arrow/close -->
                               <span class="marginTwoFiveLeft floatLeft zindexOne positionRelative widthTwoFive heightTen"><img src="./svg/arrow-left.svg" class="positionAbsolute positionCenter widthHalfFlex heightHalfFlex">
@@ -720,126 +1025,12 @@
 
                               <!-- washout background -->
                               <span class="positionAbsolute positionCenter
-                                 backgroundColorWhite opacity025 widthFullFlex heightFullFlex">
+                                 backgroundColorWhite opacity01 widthFullFlex heightFullFlex">
                               </span>
 
                            </span>
                         </li>
 
-                        <li class="positionRelative zindexOne floatLeft widthFullFlex" ng:click="resetstart(); paginationToggle(21); startAnimationUnder = true; homepage =  false; startAnimationUnder = true; aboutpage = true;" ng:mouseenter="ourTeamMenuPreview = true; ourServicesMenuPreview = false; ourTimelineMenuPreview = false; ourOfficeMenuPreview = false; ourBrandsMenuPreview = false; ourProcessMenuPreview = false;">
-                           <span class="text-align-left backgroundColorFour spacedBorderLeft bordered-leftWhiteOnHover floatLeft fontSizeTwoFive fontColorFour lineHeightTen easing">
-                              
-                              <!-- menu title -->
-                              <span class="marginTwoFiveLeft fontColorWhite text-shadow025Dark positionRelative zindexOne">OUR SERVICES</span>
-
-                              <!-- menu arrow/close -->
-                              <span class="marginTwoFiveLeft floatLeft zindexOne positionRelative widthTwoFive heightTen"><img src="./svg/arrow-left.svg" class="positionAbsolute positionCenter widthHalfFlex heightHalfFlex">
-                              </span>
-
-                              <!-- washout background -->
-                              <span class="positionAbsolute positionCenter
-                                 ColorOneRightClearGradient widthFullFlex heightFullFlex">
-                              </span>
-
-                              <!-- washout background -->
-                              <span class="positionAbsolute positionCenter
-                                 backgroundColorWhite opacity025 widthFullFlex heightFullFlex">
-                              </span>
-
-                           </span>
-                        </li>
-
-                        <li class="positionRelative zindexOne floatLeft widthFullFlex" ng:click="resetstart(); paginationToggle(22); startAnimationUnder = true; homepage =  false; startAnimationUnder = true; aboutpage = true;" ng:mouseenter="ourTeamMenuPreview = true; ourServicesMenuPreview = false; ourTimelineMenuPreview = false; ourOfficeMenuPreview = false; ourBrandsMenuPreview = false; ourProcessMenuPreview = false;">
-                           <span class="text-align-left backgroundColorFour spacedBorderLeft bordered-leftWhiteOnHover floatLeft fontSizeTwoFive fontColorFour lineHeightTen easing">
-                              
-                              <!-- menu title -->
-                              <span class="marginTwoFiveLeft fontColorWhite text-shadow025Dark positionRelative zindexOne">OUR TIMELINE</span>
-
-                              <!-- menu arrow/close -->
-                              <span class="marginTwoFiveLeft floatLeft zindexOne positionRelative widthTwoFive heightTen"><img src="./svg/arrow-left.svg" class="positionAbsolute positionCenter widthHalfFlex heightHalfFlex">
-                              </span>
-
-                              <!-- washout background -->
-                              <span class="positionAbsolute positionCenter
-                                 ColorOneRightClearGradient widthFullFlex heightFullFlex">
-                              </span>
-
-                              <!-- washout background -->
-                              <span class="positionAbsolute positionCenter
-                                 backgroundColorWhite opacity025 widthFullFlex heightFullFlex">
-                              </span>
-
-                           </span>
-                        </li>
-
-                        <li class="positionRelative zindexOne floatLeft widthFullFlex" ng:click="resetstart(); paginationToggle(25); startAnimationUnder = true; homepage =  false; startAnimationUnder = true; aboutpage = true;" ng:mouseenter="ourTeamMenuPreview = true; ourServicesMenuPreview = false; ourTimelineMenuPreview = false; ourOfficeMenuPreview = false; ourBrandsMenuPreview = false; ourProcessMenuPreview = false;">
-                           <span class="text-align-left backgroundColorFour spacedBorderLeft bordered-leftWhiteOnHover floatLeft fontSizeTwoFive fontColorFour lineHeightTen easing">
-                              
-                              <!-- menu title -->
-                              <span class="marginTwoFiveLeft fontColorWhite text-shadow025Dark positionRelative zindexOne">OUR OFFICE</span>
-
-                              <!-- menu arrow/close -->
-                              <span class="marginTwoFiveLeft floatLeft zindexOne positionRelative widthTwoFive heightTen"><img src="./svg/arrow-left.svg" class="positionAbsolute positionCenter widthHalfFlex heightHalfFlex">
-                              </span>
-
-                              <!-- washout background -->
-                              <span class="positionAbsolute positionCenter
-                                 ColorOneRightClearGradient widthFullFlex heightFullFlex">
-                              </span>
-
-                              <!-- washout background -->
-                              <span class="positionAbsolute positionCenter
-                                 backgroundColorWhite opacity025 widthFullFlex heightFullFlex">
-                              </span>
-
-                           </span>
-                        </li>
-
-                        <li class="positionRelative zindexOne floatLeft widthFullFlex" ng:click="resetstart(); paginationToggle(23); startAnimationUnder = true; homepage =  false; startAnimationUnder = true; aboutpage = true;" ng:mouseenter="ourTeamMenuPreview = true; ourServicesMenuPreview = false; ourTimelineMenuPreview = false; ourOfficeMenuPreview = false; ourBrandsMenuPreview = false; ourProcessMenuPreview = false;">
-                           <span class="text-align-left backgroundColorFour spacedBorderLeft bordered-leftWhiteOnHover floatLeft fontSizeTwoFive fontColorFour lineHeightTen easing">
-                              
-                              <!-- menu title -->
-                              <span class="marginTwoFiveLeft fontColorWhite text-shadow025Dark positionRelative zindexOne">OUR BRANDS</span>
-
-                              <!-- menu arrow/close -->
-                              <span class="marginTwoFiveLeft floatLeft zindexOne positionRelative widthTwoFive heightTen"><img src="./svg/arrow-left.svg" class="positionAbsolute positionCenter widthHalfFlex heightHalfFlex">
-                              </span>
-
-                              <!-- washout background -->
-                              <span class="positionAbsolute positionCenter
-                                 ColorOneRightClearGradient widthFullFlex heightFullFlex">
-                              </span>
-
-                              <!-- washout background -->
-                              <span class="positionAbsolute positionCenter
-                                 backgroundColorWhite opacity025 widthFullFlex heightFullFlex">
-                              </span>
-
-                           </span>
-                        </li>
-
-                        <li class="positionRelative zindexOne floatLeft widthFullFlex" ng:click="resetstart(); paginationToggle(24); startAnimationUnder = true; homepage =  false; startAnimationUnder = true; aboutpage = true;" ng:mouseenter="ourTeamMenuPreview = true; ourServicesMenuPreview = false; ourTimelineMenuPreview = false; ourOfficeMenuPreview = false; ourBrandsMenuPreview = false; ourProcessMenuPreview = false;">
-                           <span class="text-align-left backgroundColorFour spacedBorderLeft bordered-leftWhiteOnHover floatLeft fontSizeTwoFive fontColorFour lineHeightTen easing">
-                              
-                              <!-- menu title -->
-                              <span class="marginTwoFiveLeft fontColorWhite text-shadow025Dark positionRelative zindexOne">OUR PROCESS</span>
-
-                              <!-- menu arrow/close -->
-                              <span class="marginTwoFiveLeft floatLeft zindexOne positionRelative widthTwoFive heightTen"><img src="./svg/arrow-left.svg" class="positionAbsolute positionCenter widthHalfFlex heightHalfFlex">
-                              </span>
-
-                              <!-- washout background -->
-                              <span class="positionAbsolute positionCenter
-                                 ColorOneRightClearGradient widthFullFlex heightFullFlex">
-                              </span>
-
-                              <!-- washout background -->
-                              <span class="positionAbsolute positionCenter
-                                 backgroundColorWhite opacity025 widthFullFlex heightFullFlex">
-                              </span>
-
-                           </span>
-                        </li>
                   </span>
                </ul>
 
@@ -985,6 +1176,13 @@
          <li>
             <span class="text-align-left widthFullFlex backgroundColorFive floatLeft fontSizeTwoFive fontColorWhite fontColorThreeOnHover lineHeightTen easing"><img src="./svg/arrow-left.svg" class="marginTwoFive widthTwoFive heightSevenFive floatLeft">All projects<img src="./svg/close.svg" class="marginTwoFive widthTwoFive heightSevenFive floatRight"></span>
          </li>
+
+         <li class="widthFullFlex" ng-repeat="cats in meta">
+            <li ng-repeat="subs in cats.subcategories">
+            <span class="text-align-left widthFullFlex backgroundColorFive floatLeft fontSizeTwoFive fontColorWhite fontColorThreeOnHover lineHeightTen easing"><img src="./svg/arrow-left.svg" class="marginTwoFive widthTwoFive heightSevenFive floatLeft">{{subs.name}}<img src="./svg/close.svg" class="marginTwoFive widthTwoFive heightSevenFive floatRight"></span>
+         </li>
+         </li>
+
          <!-- categories -->
          <li ng-repeat="cats in meta" class="positionRelative widthFullFlex
             floatLeft easing">
@@ -1003,14 +1201,6 @@
             </ul>
          </li>
          <hr>
-         <li class="centerdiv text-align-center positionRelative heightFullFlex marginTwoFive paddingTwoFive easing">
-            <span class="textOnHoverSwitch paddingTwoFive positionRelative buttonbox-shadowSix border-radius1 backgroundColorFive backgroundColorTwoOnHover centerdiv fontSizeTwoFive fontColorWhite fontColorOneOnHover lineHeightFive easing">
-            enter
-            <span class="beforetext fontSizeTwoFive fontColorSix fontColorFiveOnHover lineHeightFive easing">Click</span>
-            <span class="aftertext fontSizeTwoFive fontColorSix fontColorFiveOnHover lineHeightFive easing">Press</span>
-            <span class="marginTwoFiveLeft floatRight animated enterUpObject delay025 zindexOne positionRelative widthTwoFive heightFive"><img src="./svg/arrow-down.svg" class="widthFullFlex heightFullFlex"></span>
-            </span>
-         </li>
       </ul>
       <!-- list -->
       <ul ng:show="productsmenu" class="positionRelative floatLeft widthFullFlex heightFullFlex easing ">
@@ -1049,15 +1239,6 @@
          <!-- categories -->
          <li>
             <span class="text-align-left widthFullFlex backgroundColorFive floatLeft fontSizeTwoFive fontColorWhite fontColorThreeOnHover lineHeightTen easing"><img src="./svg/arrow-left.svg" class="marginTwoFive widthTwoFive heightSevenFive floatLeft">Process<img src="./svg/close.svg" class="marginTwoFive widthTwoFive heightSevenFive floatRight"></span>
-         </li>
-         <hr>
-         <li class="centerdiv text-align-center positionRelative heightFullFlex marginTwoFive paddingTwoFive easing">
-            <span class="textOnHoverSwitch paddingTwoFive positionRelative buttonbox-shadowSix border-radius1 backgroundColorFive backgroundColorTwoOnHover centerdiv fontSizeTwoFive fontColorWhite fontColorOneOnHover lineHeightFive easing">
-            enter
-            <span class="beforetext fontSizeTwoFive fontColorSix fontColorFiveOnHover lineHeightFive easing">Click</span>
-            <span class="aftertext fontSizeTwoFive fontColorSix fontColorFiveOnHover lineHeightFive easing">Press</span>
-            <span class="marginTwoFiveLeft floatRight animated enterUpObject delay025 zindexOne positionRelative widthTwoFive heightFive"><img src="./svg/arrow-down.svg" class="widthFullFlex heightFullFlex"></span>
-            </span>
          </li>
       </ul>
       <!-- list -->
@@ -1098,15 +1279,6 @@
          <li>
             <span class="text-align-left widthFullFlex backgroundColorFive floatLeft fontSizeTwoFive fontColorWhite fontColorThreeOnHover lineHeightTen easing"><img src="./svg/arrow-left.svg" class="marginTwoFive widthTwoFive heightSevenFive floatLeft">Process<img src="./svg/close.svg" class="marginTwoFive widthTwoFive heightSevenFive floatRight"></span>
          </li>
-         <hr>
-         <li class="centerdiv text-align-center positionRelative heightFullFlex marginTwoFive paddingTwoFive easing">
-            <span class="textOnHoverSwitch paddingTwoFive positionRelative buttonbox-shadowSix border-radius1 backgroundColorFive backgroundColorTwoOnHover centerdiv fontSizeTwoFive fontColorWhite fontColorOneOnHover lineHeightFive easing">
-            enter
-            <span class="beforetext fontSizeTwoFive fontColorSix fontColorFiveOnHover lineHeightFive easing">Click</span>
-            <span class="aftertext fontSizeTwoFive fontColorSix fontColorFiveOnHover lineHeightFive easing">Press</span>
-            <span class="marginTwoFiveLeft floatRight animated enterUpObject delay025 zindexOne positionRelative widthTwoFive heightFive"><img src="./svg/arrow-down.svg" class="widthFullFlex heightFullFlex"></span>
-            </span>
-         </li>
       </ul>
       <!-- list -->
       <ul ng:show="processmenu" class="positionRelative floatLeft widthFullFlex heightFullFlex easing ">
@@ -1145,15 +1317,6 @@
          <!-- categories -->
          <li>
             <span class="text-align-left widthFullFlex backgroundColorFive floatLeft fontSizeTwoFive fontColorWhite fontColorThreeOnHover lineHeightTen easing"><img src="./svg/arrow-left.svg" class="marginTwoFive widthTwoFive heightSevenFive floatLeft">Process<img src="./svg/close.svg" class="marginTwoFive widthTwoFive heightSevenFive floatRight"></span>
-         </li>
-         <hr>
-         <li class="centerdiv text-align-center positionRelative heightFullFlex marginTwoFive paddingTwoFive easing">
-            <span class="textOnHoverSwitch paddingTwoFive positionRelative buttonbox-shadowSix border-radius1 backgroundColorFive backgroundColorTwoOnHover centerdiv fontSizeTwoFive fontColorWhite fontColorOneOnHover lineHeightFive easing">
-            enter
-            <span class="beforetext fontSizeTwoFive fontColorSix fontColorFiveOnHover lineHeightFive easing">Click</span>
-            <span class="aftertext fontSizeTwoFive fontColorSix fontColorFiveOnHover lineHeightFive easing">Press</span>
-            <span class="marginTwoFiveLeft floatRight animated enterUpObject delay025 zindexOne positionRelative widthTwoFive heightFive"><img src="./svg/arrow-down.svg" class="widthFullFlex heightFullFlex"></span>
-            </span>
          </li>
       </ul>
    </ul>

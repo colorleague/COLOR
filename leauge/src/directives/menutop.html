@@ -4,8 +4,8 @@
          
          <!-- GO HOME -->
          <li ng:class="{
-         'backgroundColorOneFour' : startAnimation,
-         'backgroundColorEight' : !startAnimation}" ng:click="resetstart(); homepage =  true; startAnimationLeft = false; aboutpage = false; paginationToggle(0);" class="
+         'backgroundColorOneThree' : startAnimation,
+         'backgroundColorOneTwo' : !startAnimation}" ng:click="resetstart(); homepage =  true; startAnimationLeft = false; aboutpage = false; paginationToggle(0);" class="
             positionRelative border-radius1Bottom buttonbox-shadowDark overflowhidden floatLeft zindexTen easing marginTwoFiveLeft">
             <span class="
                positionRelative widthTenvh heightTen floatLeft zindexTen">
@@ -13,18 +13,20 @@
                   positionAbsolute positionCenter widthFullFlex heightHalfFlex">
                </markone>
 
-               <markdark ng:show="!startAnimation" class="
+               <markwhite ng:show="!startAnimation" class="
                   positionAbsolute positionCenter widthFullFlex heightHalfFlex">
-               </markdark>
+               </markwhite>
             </span>
          </li>
 
          <!-- ng:show="homepage == true" -->
          <li ng:show="homepage == true" ng:show="startAnimation" ng:click="menuFour = true" class="centerdiv text-align-center positionRelative heightFullFlex marginTwoFiveLeft floatLeft">
             <span
-            ng:class="{'fontColorSix' : !startAnimation, 'fontColorWhite' : startAnimation}"
-            class="centerdiv textOnHoverSwitch paddingTwoFive positionRelative border-radius1 centerdiv fontSizeTwo fontColorFourOnHover lineHeightTwoFive easing">
-            categories
+            ng:class="{'fontColorOffWhite' : !startAnimation, 'fontColorWhite' : startAnimation}"
+            class="centerdiv textOnHoverSwitch paddingTwoFive positionRelative border-radius1 centerdiv fontSizeTwoFive fontColorFourOnHover lineHeightTwoFive easing">
+            <b>Categories</b>
+
+            <span class="font-family-snippet bordered-bottomOne">Us</span>
 
             <span class="positionAbsolute
                positionBeforeIconNotice
@@ -47,19 +49,17 @@
          </li>
 
          <!-- GO HOME -->
-         <li ng:class="{
-         'backgroundColorOne' : startAnimation,
-         'backgroundColorEight' : !startAnimation}" ng:click="resetstart(); homepage =  true; startAnimationLeft = false; aboutpage = false; paginationToggle(0);" class="
-            positionRelative border-radius1BottomLeft overflowhidden floatRight zindexTen easing">
+         <li ng:click="resetstart(); homepage =  true; startAnimationLeft = false; aboutpage = false; paginationToggle(0);" class="
+            positionRelative border-radius1BottomLeft marginTwoFiveRight overflowhidden floatRight zindexTen easing">
             <span class="
                positionRelative widthTenvh heightTen floatLeft zindexTen">
-               <markwhite ng:show="startAnimation" class="
+               <brandwhitestack ng:show="startAnimation" class="
                   positionAbsolute positionCenter widthFullFlex heightHalfFlex">
-               </markwhite>
+               </brandwhitestack>
 
-               <markdark ng:show="!startAnimation" class="
+               <brandwhitestack ng:show="!startAnimation" class="opacity025
                   positionAbsolute positionCenter widthFullFlex heightHalfFlex">
-               </markdark>
+               </brandwhitestack>
             </span>
          </li>
 
@@ -80,9 +80,9 @@
          <!-- ng:show="homepage == true" -->
          <li ng:show="homepage == true" ng:click="menuThree = true" class="centerdiv text-align-center positionRelative heightFullFlex marginTwoFiveRight easing floatRight">
             <span
-            ng:class="{'fontColorSix' : !startAnimation, 'fontColorWhite' : startAnimation}"
+            ng:class="{'fontColorOffWhite' : !startAnimation, 'fontColorWhite' : startAnimation}"
 
-            class="centerdiv textOnHoverSwitch paddingTwoFive positionRelative border-radius1 backgroundColorTwoOnHover centerdiv fontSizeTwo fontColorFourOnHover lineHeightTwoFive easing">
+            class="centerdiv textOnHoverSwitch paddingTwoFive positionRelative border-radius1 backgroundColorOneOnHover centerdiv fontSizeTwoFive fontColorFourOnHover lineHeightTwoFive easing">
 
                <span class="font-family-snippet positionAbsolute
                positionBeforeBubbleNotice
@@ -97,7 +97,10 @@
                   </span>
                </span>
 
-               about
+                  <b>about</b>
+
+                  <span class="font-family-snippet bordered-bottomOne">Us</span>
+
                <span class="floatLeft animated enterUpObject delay025 zindexOne positionRelative widthTwoFive heightTwoFive marginauto"><img src="./svg/arrow-left.svg" class="positionAbsolute positionCenter widthHalfFlex heightHalfFlex"></span>
             </span>
          </li>
@@ -110,37 +113,13 @@
       <ul class="floatLeft heightTen">
 
          <!-- ng:show="homepage == true" -->
-         <li ng:show="homepage == true" ng:mouseenter="extraMenu = true" ng:class="{'backgroundColorOne' : extraMenu}" ng:show="startAnimation" class="centerdiv text-align-center positionRelative heightFullFlex marginTwoFiveLeft floatLeft">
-            <span ng:click="popin = !popin;" class="centerdiv textOnHoverSwitch paddingTwoFive positionRelative border-radius1 centerdiv fontSizeTwo backgroundColorOffWhite backgroundColorTwoOnHover fontColorOne fontColorFourOnHover lineHeightTwoFive">
-            <span class="floatLeft animated enterUpObject delay025 zindexOne positionRelative widthTwoFivevh heightTwoFive marginSevenFiveRight"><img src="./svg/close.svg" class="positionAbsolute positionCenter widthHalfFlex heightHalfFlex"></span>
+         <li ng:show="homepage == true" ng:show="startAnimation" ng:click="popin = !popin;" class="centerdiv text-align-center positionRelative heightFullFlex marginTwoFiveLeft floatLeft">
+            
+            <b class="centerdiv textOnHoverSwitch paddingTwoFive positionRelative centerdiv fontSizeTwoFive fontColorWhite fontColorFiveOnHover lineHeightTwoFive easing">
+            Mail <span class="font-family-snippet bordered-bottomOne">Us</span>
+            <span class="floatRight animated enterUpObject delay025 zindexOne positionRelative widthTwoFive heightTwoFive marginSevenFiveRight"><img src="./svg/arrow-left.svg" class="widthFullFlex heightFullFlex">
             </span>
-
-            <span ng:mouseleave="extraMenu = false" ng:show="extraMenu" class="zindexTen positionAbsolute positionBottomOff floatRight widthFullFlex backgroundColorOne box-shadowFiveStraight">
-                     
-               <span ng:click="filters.category = 'development'; resetstart(); paginationToggle(15); startAnimationUnder = true;" class="centerdiv textOnHoverSwitch paddingTwoFive positionRelative backgroundColorTwoOnHover centerdiv fontSizeTwoFive fontColorWhite fontColorFourOnHover lineHeightTwoFive">
-                  Develope
-                  
-               </span>
-
-               <span ng:click="resetstart(); paginationToggle(14); startAnimationUnder = true; homepage =  false; startAnimationUnder = true; aboutpage = true;" class="centerdiv textOnHoverSwitch paddingTwoFive positionRelative backgroundColorTwoOnHover centerdiv fontSizeTwoFive fontColorWhite fontColorFourOnHover lineHeightTwoFive">
-                  Design
-                  
-               </span>
-
-               <span ng:click="resetstart(); paginationToggle(14); startAnimationUnder = true; homepage =  false; startAnimationUnder = true; aboutpage = true;" class="centerdiv textOnHoverSwitch paddingTwoFive positionRelative backgroundColorTwoOnHover centerdiv fontSizeTwoFive fontColorWhite fontColorFourOnHover lineHeightTwoFive">
-                  Graphics
-                  
-               </span>
-
-               <span ng:click="resetstart(); paginationToggle(14); startAnimationUnder = true; homepage =  false; startAnimationUnder = true; aboutpage = true;" class="centerdiv textOnHoverSwitch paddingTwoFive positionRelative backgroundColorTwoOnHover centerdiv fontSizeTwoFive fontColorWhite fontColorFourOnHover lineHeightTwoFive">
-                  Icons
-                  
-               </span>
-
-
-               
-
-            </span>
+            </b>
             
          </li>
          
@@ -154,10 +133,12 @@
          
          <!-- light show -->
          <li ng:show="startAnimation" ng:click="popup = !popup" class="centerdiv text-align-center positionRelative heightFullFlex marginTwoFiveRight floatLeft easing">
-            <span class="centerdiv textOnHoverSwitch paddingTwoFive positionRelative border-radius1 backgroundColorTwoOnHover centerdiv fontSizeTwo fontColorWhite fontColorFiveOnHover lineHeightTwoFive easing">
-            login
-            <span class="floatLeft animated enterUpObject delay025 zindexOne positionRelative widthTwoFivevh heightTwoFive marginSevenFiveRight"><img src="./svg/close.svg" class="positionAbsolute positionCenter widthHalfFlex heightHalfFlex"></span>
+            <b class="centerdiv textOnHoverSwitch paddingTwoFive positionRelative centerdiv fontSizeTwoFive fontColorWhite fontColorFiveOnHover lineHeightTwoFive easing">
+            Mail <span class="font-family-snippet bordered-bottomOne">Us</span>
+            <span class="floatLeft animated enterUpObject delay025 zindexOne positionRelative widthTwoFive heightTwoFive marginSevenFiveLeft"><img src="./svg/arrow-right.svg" class="widthFullFlex heightFullFlex">
             </span>
+            </b>
+
          </li>
 
       </ul>
