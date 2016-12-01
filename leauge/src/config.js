@@ -1034,10 +1034,24 @@ app.directive("thinkingman1", function(){
   }
 });
 
+app.directive("deskonemid", function(){
+  return {
+    restrict: 'E',
+    template: require('svg/deskonemid.html')
+  }
+});
+
 app.directive("deskoneflat", function(){
   return {
     restrict: 'E',
     template: require('svg/deskoneflat.html')
+  }
+});
+
+app.directive("deskoneback", function(){
+  return {
+    restrict: 'E',
+    template: require('svg/deskoneback.html')
   }
 });
 

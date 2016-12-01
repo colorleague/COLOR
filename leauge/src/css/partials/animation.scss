@@ -833,3 +833,28 @@
   -webkit-animation-name: growvert;
   animation-name: growvert;
 }
+
+@-webkit-keyframes shrinkvert {
+  from {
+    height: 100%;
+  }
+
+  to {
+    height: 10%;
+  }
+}
+
+@keyframes shrinkvert {
+  from {
+    height: 100%;
+  }
+
+  to {
+    height: 10%;
+  }
+}
+
+.shrinkvert {
+  -webkit-animation-name: shrinkvert;
+  animation-name: shrinkvert;
+}

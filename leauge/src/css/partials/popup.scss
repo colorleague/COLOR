@@ -176,36 +176,69 @@
   bottom: 0;
 }
 
-  .leaveLeftOnstartAnimationOver {
+.leaveLeftOnstartAnimationOver, .leaveLeftOnstartAnimationUnder {
+  top: auto;
+  right: 0vw;
+  left: 0vw;
+  bottom: 0;
+}
+
+.leaveRightOnstartAnimationOver {
+  top: auto;
+  right: 0vw;
+  left: 0vw;
+  bottom: 0;
+}
+
+// leave BottomOn startAnimation
+.leaveBottomOnstartAnimationOver, .leaveBottomOnstartAnimationUnder {
+  top: auto;
+  right: 0vw;
+  left: 0vw;
+  bottom: 0;
+}
+
+// leave TopOn startAnimation
+.leaveTopOnstartAnimationOver, .leaveTopOnstartAnimationUnder {
+  top: auto;
+  right: 0vw;
+  left: 0vw;
+  bottom: 0;
+}
+
+.startAnimationUnder {
+  // down
+  .leaveLeftOnstartAnimationUnder {
     top: auto;
     right: 0vw;
-    left: 0vw;
+    left: -100vw;
     bottom: 0;
   }
 
-  .leaveRightOnstartAnimationOver {
+  .leaveRightOnstartAnimationUnder {
     top: auto;
     right: 0vw;
-    left: 0vw;
+    left: 100vw;
     bottom: 0;
   }
 
-  .leaveBottomOnstartAnimationOver {
+  .leaveTopOnstartAnimationUnder {
     top: auto;
     right: 0vw;
     left: 0vw;
-    bottom: 0;
+    bottom: 200vh;
   }
 
-  .leaveTopOnstartAnimationOver {
+  .leaveBottomOnstartAnimationUnder {
     top: auto;
     right: 0vw;
     left: 0vw;
-    bottom: 0;
+    bottom: -200vh;
   }
+
+}
 
 .startAnimationOver {
-
   // down
   .startAnimationOfficeOver {
     top: 0vh;

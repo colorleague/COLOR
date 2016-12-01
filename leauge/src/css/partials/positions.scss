@@ -818,7 +818,7 @@ top: 1.5vh;
 
 @mixin positionBottomCenterLeftThreeQuarter {
   bottom: 0%;
-  left: 0;
+  left: auto;
   right: 75%;
   margin: auto;
 }
@@ -863,7 +863,7 @@ top: 1.5vh;
 @mixin positionBottomCenterRightThreeQuarter {
   bottom: 0%;
   left: 75%;
-  right: 0;
+  right: auto;
   margin: auto;
 }
 

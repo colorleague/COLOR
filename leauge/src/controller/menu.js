@@ -305,7 +305,7 @@ $scope.trustSrc = function(src) {
 		$scope.aboutpage = false,
 		$scope.homepage = true,
 		$scope.learnmore = false,
-		$scope.learnmore = false
+		$scope.startAnimationPopWhite = false
 	}
 
 	$scope.menuOneClose = function() {
