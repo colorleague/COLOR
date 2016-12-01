@@ -1,6 +1,9 @@
+// import webpack functions
 var webpack = require('webpack');
+// manage file paths
 var path = require('path');
 
+// make code avaiable in externals
 module.exports = {
 	devtool: 'inline-source-map',
 	entry: [
@@ -31,6 +34,13 @@ module.exports = {
 		}
 		]
 	},
+	node: {
+	    console: 'empty',
+	    console: true,
+	    fs: 'empty',
+	    net: 'empty',
+	    tls: 'empty'
+	  },
 	plugins: [
 		new webpack.HotModuleReplacementPlugin(),
 		new webpack.NoErrorsPlugin()

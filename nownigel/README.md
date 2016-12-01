@@ -1,6 +1,7 @@
 # NowNigel - React Product
 ## The second largest heading
-###### The smallest heading
+###### npm i -D css-loader style-loader sass-loader node-sass autoprefixer-loader
+
 **This is bold text**
 *This text is italicized*
 ~~This was mistaken text~~
