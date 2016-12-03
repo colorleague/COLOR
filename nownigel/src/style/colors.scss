@@ -1,0 +1,62 @@
+// colors
+
+$colorwhite: #f5f5f5;
+.textshadow01one {
+    text-shadow: .1vh .1vh $colorwhite;
+}
+.fontcolorwhite, .fontcolorwhitennhover:hover {
+    color: $colorwhite;
+}
+.backgroundcolorwhite, .backgroundcolorwhitennhover:hover {
+    background: $colorwhite;
+    background-repeat: repeat;
+    background-position: 50% 0;
+}
+.backgroundgridcolorwhite {
+    background: $colorwhite url("/svg/grid.svg");
+    background-repeat: repeat;
+    background-position: 50% 0;
+}
+
+$colorone: #77c0a3;
+.textshadow01one {
+    text-shadow: .1vh .1vh $colorone;
+}
+.fontcolorone, .fontcoloronennhover:hover {
+    color: $colorone;
+}
+.backgroundcolorone, .backgroundcoloronennhover:hover {
+    background: $colorone;
+    background-repeat: repeat;
+    background-position: 50% 0;
+}
+.backgroundgridcolorone {
+    background: $colorone url("/svg/grid.svg");
+    background-repeat: repeat;
+    background-position: 50% 0;
+}
+
+.backgroundsvgmanstand {
+	background-image: url('/svg/svgmanstand.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.backgroundsvgwomanstand {
+	background-image: url('/svg/svgwomanstand.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+
+.buttonOneUnpressed {
+	background-image: url('/svg/buttonOneUnpressed.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.buttonOneUnpressed:hover {
+	background-image: url('/svg/buttonOnePressed.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}

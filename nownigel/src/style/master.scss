@@ -1,3 +1,98 @@
-#nav {
+@import './colors.scss';
+@import './animation.scss';
+@import './reset.scss';
+@import './structure.scss';
+
+
+// positions
+.positionabsolute {
+	position: absolute;
+}
+
+.positionrelative {
+	position: relative;
+}
+
+.positioncenter {
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+}
+
+.positiontop {
+	top: 0;
+	bottom: auto;
+	left: 0;
+	right: 0;
+	margin: auto;
+}
+
+.positiontopleft {
+	top: 0;
+	bottom: auto;
+	left: 0;
+	right: auto;
+	margin: auto;
+}
+
+.positiontopright {
+	top: 0;
+	bottom: auto;
+	left: auto;
+	right: 0;
+	margin: auto;
+}
+
+.positionbottom {
+	top: auto;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+}
+
+.positionbottomleft {
+	top: auto;
+	bottom: 0;
+	left: 0;
+	right: auto;
+	margin: auto;
+}
+
+.positionbottomright {
+	top: auto;
+	bottom: 0;
+	left: auto;
+	right: 0;
+	margin: auto;
+}
+
+.positionleft {
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: auto;
+	margin: auto;
+}
+
+.positionright {
+	top: 0;
+	bottom: 0;
+	left: auto;
+	right: 0;
+	margin: auto;
+}
+
+.navtwo {
 	color: #f5f5f5;
+}
+
+
+
+
+
+.blacker {
+	background: #000;
 }

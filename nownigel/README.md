@@ -2,7 +2,13 @@
 ## The second largest heading
 ###### npm i -D css-loader style-loader sass-loader node-sass autoprefixer-loader
 
-**This is bold text**
+**All or nothing?
+
+What we refer to as "style" actually includes quite a few concepts:
+
+Layout — how an element/component looks in relationship to others
+Appearance — the characteristics of an element/component
+Behavior and state — how an element/component looks in a given stat**
 *This text is italicized*
 ~~This was mistaken text~~
 **This text is _extremely_ important**
