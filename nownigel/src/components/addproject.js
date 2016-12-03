@@ -1,88 +1,75 @@
+// a from to add new projects
+
 import React from 'react'
-import uuid from 'uuid'
-import ProjectItem from './projectitem'
-export default class AddProject extends React.Component {
 
-	// like ng-repeat: this component will be used in iteration, displaying called Data "props"
-	constructor(props) {
-		super(props);
+export default class AddProject extends React.Component{
 
-		//placeholder
-		this.state = {
-			newProject:{
-			}
-		}
-	};
+  constructor(props) {
+    super(props);
 
-	//static data for "Select iteration"
-	static get defaultProps() {
+    this.state = {
+      newProject: {}
+    }
+  }
+
+  static get defaultProps() {
     return {
-			categories: ['Web Design', 'Mobile Dev', 'Web Development', 'Graphic Design' ]
+			categories: ['Front-End', 'Back-End', 'Content', 'Graphics' ]
 		}
 	}
 
-	//pass event (e) to preventDefault
-	handleSubmit(e) {
-		console.log('from submit');
-		console.log(this.refs.title.value);
-		e.preventDefault();
+  handleSubmit(e) {
 
-		if (this.refs.title.value === '') {
-			console.log('nope, title is required!');
-		} else {
-			this.setState ({
-				newProject: {
-					id:uuid.v4(),
-					title: this.refs.title.value,
-					category: this.refs.category.value
-				}
-			},
-				function() {
-					console.log(this.state);
+    e.preventDefault();
 
-					//passdata up to app.js | with addProject={this.handleAddProject.bind(this)} (this function is now accessable to parent importer)
-					this.props.addProject(this.state.newProject);
-				})
-		}
+    console.log('submitted' + this.refs.title.value);
+    console.log(this.refs.title.value);
 
-	}
+    //validation
+    if(this.refs.title.value === '') {
+      alert('naw');
+    } else {
+      this.setState({ newProject:{
+        title: this.refs.title.value,
+        category: this.refs.category.value
+      }}, function () {
+        console.log(this.state);
 
-	render() {
+        //send data up
+        this.props.addProject(this.state.newProject);
+      });
+    }
 
+  }
 
-		//iterate through static default data and create "option" directives
-		let categoryOptions = this.props.categories.map(category => {
-			return <option key={category} value={category}>{category}</option>
-		});
+  render() {
 
-		//app return
-		return(
-			<div className="positionrelative floatleft">
+    let categoryOptions = this.props.categories.map(category => {
+      return (
+        <option key={category} value={category}>{category}</option>
+      )
+    });
 
-				//app title
-				<h3 className="fontcolorwhite"> add project </h3>
+    return(
+      <div className="Projects">
+        <h3> add project </h3>
+        <form onSubmit={this.handleSubmit.bind(this)}>
+          <div>
+            <label>title</label><br />
+            <input type="text" ref="title" />
+          </div>
 
-				//iterated Items from app.js PROP > .map iteration in hello (using projectitem component) to spin up final component {ProjectItem}
-        {ProjectItem}
+          <div>
+            <label>category</label><br />
+            <select type="text" ref="category">
+              {categoryOptions}
+            </select>
+          </div>
+          <input type="submit" value="submit" />
 
-				<form onSubmit={this.handleSubmit.bind(this)}>
-					<div>
-						<label>Title</label><br/>
-						<input type="text" ref="title" />
-					</div>
+        </form>
+      </div>
 
-					<div>
-						<label>Category</label><br/>
-
-						<select ref="category">
-							{categoryOptions}
-						</select>
-
-					</div>
-
-					<input type="submit" value="submit" />
-				</form>
-			</div>
-		)
-	}
+    );
+  }
 }

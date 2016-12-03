@@ -14,7 +14,7 @@ export default class Scene extends React.Component {
 			<div className="positioncenter positionabsolute heightfull widthfull">
 
 				<div className="positioncenter positionabsolute heightfull widthfull backgroundcolorone">
-
+					<h1>Max Holiway</h1>
 					<Svgmanstand />
 
 				</div>

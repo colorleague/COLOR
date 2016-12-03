@@ -38,8 +38,8 @@ export default class Navigation extends React.Component {
 
 				<ul className="positiontopright positionabsolute heightten widthtwentyfive floatleft animated1 topdown delay02 zindexone">
 
-					<li onClick="starter()" className="lineheightten fonsizetwofive fontcolorwhite floatleft zindexone font-family-arvo marginonerightvh">contact</li>
-					<li onClick="starter()" className="lineheightten fonsizetwofive fontcolorwhite floatleft zindexone font-family-arvo marginonerightvh">home</li>
+					<li className="lineheightten fonsizetwofive fontcolorwhite floatleft zindexone font-family-arvo marginonerightvh">contact</li>
+					<li className="lineheightten fonsizetwofive fontcolorwhite floatleft zindexone font-family-arvo marginonerightvh">home</li>
 					<div className="positionrelative heightten widthtenvh floatright animated1 topdown delay02 zindexone">
 						<span className="positionabsolute positioncenter buttonOneUnpressed heightfive widthfivevh floatleft zindexone"></span>
 					</div>

@@ -1,0 +1,181 @@
+// fonts
+
+@import url(https://fonts.googleapis.com/css?family=Arvo:400,700italic,700,400italic);
+@import url(https://fonts.googleapis.com/css?family=Josefin+Sans:400,600,400italic,600italic,300italic,300);
+@import url(https://fonts.googleapis.com/css?family=Snippet);
+
+p, body {
+}
+
+.font-family-arvo {
+	font-family: 'Arvo', sans-serif;
+}
+
+.font-family-snippet {
+	font-family: 'Snippet', sans-serif;
+}
+
+.font-family-josefin {
+	font-family: 'Josefin Sans', sans-serif;
+}
+
+br {
+	line-height: 1vh;
+}
+
+/* Font Sizes */
+b, strong {
+	font-weight: 800;
+}
+
+a {
+	font-weight: 800;
+	color: $colorwhite;
+}
+
+i {
+	font-style: italic;
+}
+
+.text-align-center {
+	text-align: center;
+}
+
+.text-align-left {
+	text-align: left;
+}
+
+.text-align-right {
+	text-align: right;
+}
+
+.lineheighttwofive {
+	line-height: 2.5vh;
+}
+
+.lineheightfive {
+	line-height: 5vh;
+}
+
+.lineheightten {
+	line-height: 10vh;
+}
+
+.fonsizetwofive {
+	font-size: 2.5vh;
+}
+
+.fonsizefive {
+	font-size: 5vh;
+}
+
+.fonsizeten {
+	font-size: 10vh;
+}
+
+
+// floats
+
+.floatleft {
+	float: left;
+}
+
+.floatright {
+	float: right;
+}
+
+// structure
+
+li {
+	list-style: none;
+}
+
+.zindexunder {
+	z-index: -1;
+}
+
+.zindex {
+	z-index: 0;
+}
+
+.zindexone {
+	z-index: 1;
+}
+
+.opacity01 {
+	opacity: .1;
+}
+
+.opacity05 {
+	opacity: .5;
+}
+
+.opacity09 {
+	opacity: .9;
+}
+
+//heights
+
+.heightfull {
+	height: 100vh;
+}
+
+.heightfullflex {
+	height: 100%;
+}
+
+.heighthalf {
+	height: 50vh;
+}
+
+.widthfull {
+	width: 100vw;
+}
+
+.widthfullflex {
+	width: 100%;
+}
+
+.widthtwentyfive {
+	width: 25vw;
+}
+
+.widthten {
+	width: 10vw;
+}
+
+.heightfive {
+	height: 5vh;
+}
+
+.heightten {
+	height: 10vh;
+}
+
+.widthfive {
+	width: 5vw;
+}
+
+.widthfivevh {
+	width: 5vh;
+}
+
+.widthten {
+	width: 10vw;
+}
+
+.widthtenvh {
+	width: 10vh;
+}
+
+.marginonerightvh {
+	margin-right: 1vh;
+}
+
+.margintwofiverightvh {
+	margin-right: 2.5vh;
+}
+
+.marginfiverightvh {
+	margin-right: 5vh;
+}
